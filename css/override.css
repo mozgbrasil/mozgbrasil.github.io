@@ -1,0 +1,37 @@
+/*******************************
+ override template
+*******************************/
+
+#example.index .intro.bg {
+	background-image: linear-gradient(to bottom, #4e6656, #fff) !important;
+	border: medium none !important;
+}
+
+#example .alternate.vertical {
+    background-color: #f2f3f5;
+}
+/*******************************
+ semantic-ui
+*******************************/
+
+.ui.card, .ui.cards > .card {
+	width: 359px !important;
+}
+
+/*******************************
+ override google custom search
+*******************************/
+
+.cse .gsc-control-cse, .gsc-control-cse { 
+	background:none !important;
+	border:none !important;
+}
+
+input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+	box-sizing: content-box !important;
+}
+
+
+input.gsc-input { 
+	color:black;
+}

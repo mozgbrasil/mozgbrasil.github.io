@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    
+    <url>
+        <loc>http://mozgbrasil.github.io//instala%C3%A7%C3%A3o/instalando-modulos-recomendados</loc>
+        <lastmod>2016-02-15T12:30:51-02:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    
+    <url>
+        <loc>http://mozgbrasil.github.io//instala%C3%A7%C3%A3o/instalando-modulo-mozg</loc>
+        <lastmod>2016-02-15T12:30:51-02:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    
+    <url>
+        <loc>http://mozgbrasil.github.io//instala%C3%A7%C3%A3o/ativando-zend-guard-loader</loc>
+        <lastmod>2016-02-15T12:30:51-02:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    
+    <url>
+        <loc>http://mozgbrasil.github.io//instala%C3%A7%C3%A3o/instalando-magento2</loc>
+        <lastmod>2016-02-15T12:30:51-02:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    
+    <url>
+        <loc>http://mozgbrasil.github.io//instala%C3%A7%C3%A3o/bem-vindos</loc>
+        <lastmod>2016-02-15T12:30:51-02:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</urlset>

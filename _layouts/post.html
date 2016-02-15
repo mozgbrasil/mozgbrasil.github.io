@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<div class="zoomed masthead segment">
+    <div class="ui inverted header">
+        <p>
+            &nbsp;
+        </p>
+    </div>
+</div>
+<div class="ui alternate vertical segment">
+    <div id="metrics-list" class="ui page grid">
+        <div class="ui container">&nbsp;</div>
+        <div class="ui container">&nbsp;</div>
+        <div class="ui huge breadcrumb">
+            <a class="section" href="/">Home</a>
+            <i class="right chevron icon divider"></i>
+            {% for path in page.parent_paths %}
+            <a class="section" href="{{ path }}">{{ page.parents[forloop.index0] }}</a>
+            <i class="right chevron icon divider"></i>
+            {% endfor %}
+            <div class="active section">{{ page.title }}</div>
+        </div>
+        <article class="row">
+            <div class="ui container">
+                <div class="ui raised segment">
+                    <header class="post-header">
+                        <h1 class="post-title">{{ page.title }}</h1>
+                        <h2 class="">{{ page.description }}</h2>
+                        <p class="post-meta">{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+                        <p>
+                            <i class="icon calendar"></i> {{ page.date | date: "%d %b/%Y %H:%M" }}
+                            • <i class="edit icon"></i> {% if page.author %} {{ page.author }} {% endif %}
+                            <!-- Based on https://andytaylor.me/2013/04/07/reading-time/ -->
+                            <!-- • <i class="icon clock"></i> ~ <span class="time">{{ page.date | timeago }}</span> -->
+                            • <i class="icon tags"></i> 
+                            {% for tag in page.tags %}
+                            <a href="/tag/#{{ tag }}" class="ui tag label mini orange">{{ tag }}</a>
+                            {% endfor %}
+                        </p>
+                    </header>
+                    <article class="post-content">
+                        {{ content }}
+                    </article>
+                    {% include snippet-disqus.html %}
+                </div>
+            </div>
+        </article>
+    </div>
+</div>

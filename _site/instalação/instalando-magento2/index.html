@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+    <head prefix="og: http://ogp.me/ns#">
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- Refer HTML5BP and https://developers.google.com/speed/docs/insights/ConfigureViewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!-- Site Properities -->
+    
+    
+    
+    <title>Instalando o Magento2 &middot; MOZG</title>
+    <link rel="canonical" href="http://mozgbrasil.github.io//instala%C3%A7%C3%A3o/instalando-magento2">
+    <link rel="canonical" href="http://mozgbrasil.github.io//instala%C3%A7%C3%A3o/instalando-magento2">
+    <!-- Open Graph. Refer https://developers.facebook.com/docs/web/tutorials/scrumptious/open-graph-object -->
+    
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="http://mozgbrasil.github.io//instala%C3%A7%C3%A3o/instalando-magento2">
+    <meta property="og:title" content="Instalando o Magento2">
+    <meta property="og:site_name" content="MOZG">
+    <meta property="og:description" content="55 (11) 2056-1559 Dias Úteis - Segunda-Feira à Sexta-Feira - 09:00hs às 12:00hs (meio-dia) - 14:00hs às 18:00hs">
+    <meta property="og:image" content="http://mozgbrasil.github.io/">
+    <meta property="og:image:width" content="640">
+    <meta property="og:image:height" content="300">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@open_theme">
+    <meta name="twitter:creator" content="@mozgbrasil">
+    
+    <meta property="og:type" content="website" />
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="description" content="55 (11) 2056-1559 Dias Úteis - Segunda-Feira à Sexta-Feira - 09:00hs às 12:00hs (meio-dia) - 14:00hs às 18:00hs">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" class="ui" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.7/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/override.css">
+    <script>
+        (function () {
+        var
+        eventSupport = ('querySelector' in document && 'addEventListener' in window)
+        jsonSupport  = (typeof JSON !== 'undefined'),
+        jQuery       = (eventSupport && jsonSupport)
+        ? '//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'
+        : '//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js'
+        ;
+        document.write('<script src="' + jQuery + '"><\/script>');
+        }());
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.7/semantic.min.js"></script>
+
+    
+	<script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+	<script>
+	// http://bryanbraun.github.io/anchorjs/#basic-usage
+	$( document ).ready(function() {
+		anchors.add();	  
+	});
+	</script>
+    
+
+	
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71979046-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</head>
+
+    <body id="example" class="index" ontouchstart="">
+		<noscript>Your browser does not support JavaScript!</noscript>
+        <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '200145210331773',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+        <div class="ui vertical inverted sidebar menu" id="toc">
+            <div class="item">
+                <a class="ui logo icon image" href="/">
+                <img class="ui image" src="/images/Lobes_of_the_brain_NL.svg" width="40" height="40">
+                </a>
+                <a href="/"><b>mozgbrasil.github.io</b></a>
+            </div>
+            <!--<a class="item" href="http://www.mozg.com.br/">
+                <b>Institucional</b>
+                </a>-->
+            <div class="item">
+                <div class="header">Comercial</div>
+                <div class="menu">
+                    <a class="item" href="http://www.mozg.com.br/"><i class="icon home"></i>Institucional</a>
+                    <a class="item" href="http://www.mozg.com.br/loja/"><i class="icon shop"></i>Loja Virtual</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">Social</div>
+                <div class="menu">
+                    
+                    <a class="item" href="https://twitter.com/mozgbrasil"><i class="icon twitter"></i>mozgbrasil</a>
+                    
+                    
+                    <a class="item" href="https://github.com/mozgbrasil"><i class="icon github"></i>mozgbrasil</a>
+                    
+                    
+                    <a class="item" href="https://www.facebook.com/mozgbrasil"><i class="icon facebook"></i>mozgbrasil</a>
+                    
+                    
+                    <a class="item" href="https://plus.google.com/+mozgbrasil"><i class="icon google plus"></i>mozgbrasil</a>
+                    
+                    
+                    <a class="item" href="https://www.youtube.com/user/mozgbrasil"><i class="icon youtube"></i>mozgbrasil</a>
+                    
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">Páginas</div>
+                <div class="menu">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <a class="item" href="/index.html"><i class="home icon"></i>Página inicial</a>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <a class="item" href="/about/"><i class="copyright icon"></i>Sobre Nós</a>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <a class="item" href="/contact/"><i class="at icon"></i>Contato</a>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <a class="item" href="/category/"><i class="idea icon"></i>Categorias</a>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <a class="item" href="/tag/"><i class="tag icon"></i>Tags</a>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <a class="item" href="/acordo-licenca-usuario-final/"><i class="home icon"></i>Acordo de licença do usuário final</a>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <a class="item" href="/requirements/"><i class="home icon"></i>Pré-requisitos e sugestões</a>
+                    
+                    
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">Web Content</div>
+                <div class="menu">
+                    <a class="item" href="/feed.xml"><i class="icon rss"></i>RSS</a>
+                    <a class="item" href="/sitemap.xml"><i class="icon sitemap"></i>Sitemap</a>
+                </div>
+            </div>
+        </div>
+        <div class="ui black big launch right attached fixed button">
+            <i class="content icon"></i>
+            <span class="text">Menu</span>
+        </div>
+        <div class="ui fixed inverted main menu">
+            <div class="ui container">
+                <a class="launch icon item">
+                <i class="content icon"></i>
+                </a>
+                <div class="right menu">
+                    <div class="vertically fitted borderless item">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pusher">
+            <div class="full height">
+                <div class="following bar">
+                    <div class="ui container">
+						<div class="ui error message">
+							<i class="close icon"></i>
+							<div class="header">
+								Aviso
+							</div>
+							<ul class="list">
+								<li>Os módulos para Magento 2 se encontra em desenvolvimento e não está liberado para testes, favor aguardar estamos trabalhando para oferecer inovações.</li>
+							</ul>
+						</div>
+                        <div class="ui large inverted secondary network menu">
+                            <div class="item">
+                                <div class="ui logo shape">
+                                    <div class="sides">
+                                        <div class="active ui side">
+                                            <a class="ui logo icon image" href="/">
+                                            <img class="ui image" src="/images/Lobes_of_the_brain_NL.svg" width="40" height="40">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="view-ui item">
+                            <i class="sidebar icon"></i> Menu
+                            </a>
+                            <div class="right menu">
+                                <div class="item" style="width:120px !important;padding-bottom:13px;">
+                                    <!-- https://developers.facebook.com/docs/plugins/like-button -->
+<div
+    class="fb-like"
+    data-width="100"
+    data-layout="button_count" 
+    data-action="like" 
+    data-share="true"
+    data-show-faces="true">
+</div>
+
+                                </div>
+                                <div class="item" style="width:55px !important;">
+                                    <a data-via="mozgbrasil" data-url="http://mozgbrasil.github.io/" data-text="MOZG & Magento 2.0 is out!" href="http://twitter.com/share" class="twitter-share-button twitter"></a>
+<script type="text/javascript">
+    window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+    	t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+     
+      t._e = [];
+      t.ready = function(f) {
+    	t._e.push(f);
+      };
+     
+      return t;
+    }(document, "script", "twitter-wjs"));
+</script>
+
+                                </div>
+                                <div class="item" style="width:60px !important;">
+                                    <iframe width="100" height="20" frameborder="0" scrolling="0" allowtransparency="true" src="http://ghbtns.com/github-btn.html?user=mozgbrasil&repo=magento2-bundle-php56&type=watch&count=true" class="github"></iframe>
+
+                                </div>
+                                <div class="item" style="width:310px !important;">
+                                    
+<script>
+  (function() {
+    var cx = '009610575284599996357:uoh5lgm8wfq';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="zoomed masthead segment">
+    <div class="ui inverted header">
+        <p>
+            &nbsp;
+        </p>
+    </div>
+</div>
+<div class="ui alternate vertical segment">
+    <div id="metrics-list" class="ui page grid">
+        <div class="ui container">&nbsp;</div>
+        <div class="ui container">&nbsp;</div>
+        <div class="ui huge breadcrumb">
+            <a class="section" href="/">Home</a>
+            <i class="right chevron icon divider"></i>
+            
+            <div class="active section">Instalando o Magento2</div>
+        </div>
+        <article class="row">
+            <div class="ui container">
+                <div class="ui raised segment">
+                    <header class="post-header">
+                        <h1 class="post-title">Instalando o Magento2</h1>
+                        <h2 class=""></h2>
+                        <p class="post-meta"></p>
+                        <p>
+                            <i class="icon calendar"></i> 04 Jan/2016 15:36
+                            • <i class="edit icon"></i>  Marcio Amorim 
+                            <!-- Based on https://andytaylor.me/2013/04/07/reading-time/ -->
+                            <!-- • <i class="icon clock"></i> ~ <span class="time">1 month and 1 week ago</span> -->
+                            • <i class="icon tags"></i> 
+                            
+                            <a href="/tag/#magento2" class="ui tag label mini orange">magento2</a>
+                            
+                            <a href="/tag/#php" class="ui tag label mini orange">php</a>
+                            
+                        </p>
+                    </header>
+                    <article class="post-content">
+                        
+<p>Ola Boa Tarde</p>
+
+<p>Veja na apresentação os processos executados</p>
+
+<p>Foi feito acesso via terminal ao servidor da amazon onde na execução dos comandos foi feito a instalação do Magento 2 sobre o <a href="http://ec2-54-232-215-118.sa-east-1.compute.amazonaws.com/public_html/phpinfo.php">Servidor</a></p>
+
+<div class="ui raised padded container segment">
+	<h2 class="ui header">Slide</h2>
+	<div class="ui embed" data-url="//www.slideshare.net/slideshow/embed_code/key/wyMu0TDKvB6X5W"></div>
+	<script>
+	$('.ui.embed').embed();
+	</script>
+</div>
+
+<p>Execute os comandos efetuando as devidas alterações personalizando para seu projeto</p>
+
+<div class="ui raised padded container segment">
+	<h2 class="ui header">Comandos</h2>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">pwd</span>
+
+<span class="n">ls</span>
+
+<span class="n">cd</span> <span class="n">public_html</span>
+
+<span class="n">mkdir</span> <span class="n">magento</span><span class="o">-</span><span class="mi">2</span><span class="o">.</span><span class="mi">0</span><span class="o">.</span><span class="mi">2</span><span class="o">-</span><span class="n">dev20</span>
+
+<span class="n">cd</span> <span class="n">magento</span><span class="o">-</span><span class="mi">2</span><span class="o">.</span><span class="mi">0</span><span class="o">.</span><span class="mi">2</span><span class="o">-</span><span class="n">dev20</span>
+
+<span class="n">composer</span> <span class="o">--</span><span class="n">version</span> <span class="o">&amp;&amp;</span> <span class="n">sudo</span> <span class="n">composer</span> <span class="nb">self</span><span class="o">-</span><span class="n">update</span> <span class="o">&amp;&amp;</span> <span class="n">composer</span> <span class="n">clear</span><span class="o">-</span><span class="n">cache</span>
+
+<span class="n">composer</span> <span class="n">create</span><span class="o">-</span><span class="n">project</span> <span class="o">--</span><span class="n">repository</span><span class="o">-</span><span class="n">url</span><span class="o">=</span><span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">repo</span><span class="p">.</span><span class="nf">magento</span><span class="p">.</span><span class="nf">com</span><span class="o">/</span> <span class="n">magento</span><span class="o">/</span><span class="n">project</span><span class="o">-</span><span class="n">community</span><span class="o">-</span><span class="n">edition</span> <span class="n">magento2</span>
+
+<span class="n">ls</span>
+
+<span class="n">mv</span> <span class="n">magento2</span><span class="o">/</span><span class="p">{.</span><span class="nf">[</span><span class="o">!.</span><span class="p">],}</span><span class="o">*</span> <span class="p">.</span>
+
+<span class="nf">sudo</span> <span class="n">chown</span> <span class="o">-</span><span class="no">R</span> <span class="ss">:www</span><span class="o">-</span><span class="n">data</span> <span class="p">.</span>
+
+<span class="nf">sudo</span> <span class="n">find</span> <span class="p">.</span> <span class="nf">-</span><span class="n">type</span> <span class="n">d</span> <span class="o">-</span><span class="nb">exec</span> <span class="n">chmod</span> <span class="mi">770</span> <span class="p">{}</span> <span class="p">\;</span> <span class="o">&amp;&amp;</span> <span class="n">sudo</span> <span class="n">find</span> <span class="p">.</span> <span class="nf">-</span><span class="n">type</span> <span class="n">f</span> <span class="o">-</span><span class="nb">exec</span> <span class="n">chmod</span> <span class="mi">660</span> <span class="p">{}</span> <span class="p">\;</span> <span class="o">&amp;&amp;</span> <span class="n">sudo</span> <span class="n">chmod</span> <span class="n">u</span><span class="o">+</span><span class="n">x</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span>
+
+<span class="n">mysqladmin</span> <span class="o">-</span><span class="n">u</span> <span class="n">root</span> <span class="o">-</span><span class="nb">p</span> <span class="no">CREATE</span> <span class="s2">"magento202dev20"</span><span class="p">;</span>
+
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="n">setup</span><span class="ss">:install</span> <span class="p">\</span>
+<span class="o">--</span><span class="n">base</span><span class="o">-</span><span class="n">url</span><span class="o">=</span><span class="n">http</span><span class="ss">:/</span><span class="o">/</span><span class="n">ec2</span><span class="o">-</span><span class="mi">54</span><span class="o">-</span><span class="mi">232</span><span class="o">-</span><span class="mi">215</span><span class="o">-</span><span class="mi">118</span><span class="p">.</span><span class="nf">sa</span><span class="o">-</span><span class="n">east</span><span class="o">-</span><span class="mi">1</span><span class="p">.</span><span class="nf">compute</span><span class="p">.</span><span class="nf">amazonaws</span><span class="p">.</span><span class="nf">com</span><span class="o">/</span><span class="n">public_html</span><span class="o">/</span><span class="n">magento</span><span class="o">-</span><span class="mi">2</span><span class="o">.</span><span class="mi">0</span><span class="o">.</span><span class="mi">2</span><span class="o">-</span><span class="n">dev20</span><span class="o">/</span> <span class="p">\</span>
+<span class="o">--</span><span class="n">backend</span><span class="o">-</span><span class="n">frontname</span><span class="o">=</span><span class="n">admin</span> <span class="p">\</span>
+<span class="o">--</span><span class="n">db</span><span class="o">-</span><span class="n">host</span><span class="o">=</span><span class="mi">127</span><span class="o">.</span><span class="mi">0</span><span class="o">.</span><span class="mi">0</span><span class="o">.</span><span class="mi">1</span> <span class="o">--</span><span class="n">db</span><span class="o">-</span><span class="nb">name</span><span class="o">=</span><span class="n">magento202dev20</span> <span class="o">--</span><span class="n">db</span><span class="o">-</span><span class="n">user</span><span class="o">=</span><span class="n">root</span> <span class="o">--</span><span class="n">db</span><span class="o">-</span><span class="n">password</span><span class="o">=</span><span class="sc">??</span><span class="p">?</span> <span class="p">\</span>
+<span class="o">--</span><span class="n">admin</span><span class="o">-</span><span class="n">firstname</span><span class="o">=</span><span class="no">Marcio</span> <span class="o">--</span><span class="n">admin</span><span class="o">-</span><span class="n">lastname</span><span class="o">=</span><span class="no">Amorim</span> <span class="o">--</span><span class="n">admin</span><span class="o">-</span><span class="n">email</span><span class="o">=</span><span class="n">email</span><span class="vi">@gmail</span><span class="p">.</span><span class="nf">com</span><span class="p">.</span><span class="nf">br</span> <span class="p">\</span>
+<span class="o">--</span><span class="n">admin</span><span class="o">-</span><span class="n">user</span><span class="o">=</span><span class="n">admin</span> <span class="o">--</span><span class="n">admin</span><span class="o">-</span><span class="n">password</span><span class="o">=</span><span class="mi">123456</span><span class="n">a</span> <span class="o">--</span><span class="n">language</span><span class="o">=</span><span class="n">pt_BR</span> <span class="p">\</span>
+<span class="o">--</span><span class="n">currency</span><span class="o">=</span><span class="no">BRL</span> <span class="o">--</span><span class="n">timezone</span><span class="o">=</span><span class="no">America</span><span class="o">/</span><span class="no">Sao_Paulo</span> <span class="p">\</span>
+<span class="o">--</span><span class="n">use</span><span class="o">-</span><span class="n">sample</span><span class="o">-</span><span class="n">data</span> <span class="p">\</span>
+<span class="o">--</span><span class="n">use</span><span class="o">-</span><span class="n">rewrites</span><span class="o">=</span><span class="mi">1</span> <span class="p">\</span>
+<span class="o">--</span><span class="n">cleanup</span><span class="o">-</span><span class="n">database</span>
+
+<span class="n">sudo</span> <span class="n">chmod</span> <span class="mi">777</span> <span class="o">-</span><span class="no">R</span> <span class="p">.</span><span class="nf">/</span><span class="n">var</span> <span class="p">.</span><span class="nf">/</span><span class="n">pub</span>
+
+<span class="n">php</span> <span class="n">index</span><span class="p">.</span><span class="nf">php</span>
+
+<span class="n">sudo</span> <span class="n">rm</span> <span class="o">-</span><span class="n">fR</span> <span class="n">var</span><span class="o">/</span><span class="n">cache</span><span class="o">/*</span> <span class="n">var</span><span class="o">/</span><span class="n">page_cache</span><span class="o">/*</span> <span class="n">var</span><span class="o">/</span><span class="n">generation</span><span class="o">/*</span>
+
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="n">sampledata</span><span class="ss">:deploy</span>
+
+<span class="n">composer</span> <span class="o">--</span><span class="n">version</span> <span class="o">&amp;&amp;</span> <span class="n">sudo</span> <span class="n">composer</span> <span class="nb">self</span><span class="o">-</span><span class="n">update</span> <span class="o">&amp;&amp;</span> <span class="n">composer</span> <span class="n">clear</span><span class="o">-</span><span class="n">cache</span> <span class="o">&amp;&amp;</span> <span class="n">composer</span> <span class="n">update</span>
+
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 1)-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">sudo</span> <span class="n">chmod</span> <span class="mi">777</span> <span class="o">-</span><span class="no">R</span> <span class="o">.</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 2)-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">cache</span><span class="ss">:disable</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 3)-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">cache</span><span class="ss">:clean</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 4)-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">cache</span><span class="ss">:flush</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 5)-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">cache</span><span class="ss">:status</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 6)-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">deploy</span><span class="ss">:mode:show</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 7)-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">indexer</span><span class="ss">:reindex</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 8)-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">indexer</span><span class="ss">:status</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 9)-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">maintenance</span><span class="ss">:disable</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 10)-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">maintenance</span><span class="ss">:status</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 11)-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">module</span><span class="ss">:status</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 12)-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">setup</span><span class="ss">:db:status</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 13)-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">setup</span><span class="ss">:di:compile</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 14)-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">setup</span><span class="ss">:upgrade</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 15)-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="n">setup</span><span class="ss">:static</span><span class="o">-</span><span class="n">content</span><span class="ss">:deploy</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 16)-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">sudo</span> <span class="n">chmod</span> <span class="mi">777</span> <span class="o">-</span><span class="no">R</span> <span class="o">.</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 17)-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">pwd</span></code></pre></div>
+
+</div>
+
+<h1 class="ui header">Pacote de tradução pt_BR</h1>
+
+<p>Recomendo utilizar o seguinte pacote de tradução pt_BR que se encontra em</p>
+
+<p><a href="https://crowdin.com/project/magento-2/pt-BR">https://crowdin.com/project/magento-2/pt-BR</a></p>
+
+<p>A comunidade do Magento2 agradece aos que tiverem a atitude de contribuir com a tradução</p>
+
+<p>Execute os comandos efetuando as devidas alterações personalizando para seu projeto</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">mkdir</span> <span class="o">-</span><span class="nb">p</span> <span class="n">i18n</span><span class="o">/</span><span class="n">pt_BR</span>
+
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="n">i18n</span><span class="ss">:collect</span><span class="o">-</span><span class="n">phrases</span> <span class="o">--</span><span class="n">output</span><span class="o">=</span><span class="s2">"i18n/pt_BR/pt_BR.csv"</span> <span class="o">--</span><span class="n">magento</span> <span class="p">.</span>
+
+<span class="nf">nano</span> <span class="n">i18n</span><span class="o">/</span><span class="n">pt_BR</span><span class="o">/</span><span class="n">pt_BR</span><span class="p">.</span><span class="nf">csv</span>
+
+<span class="c1"># Para cada alteração no arquivo de tradução deve ser executado o seguinte comando</span>
+
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 'Remove Cache')-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">rm</span> <span class="o">-</span><span class="no">R</span> <span class="o">-</span><span class="n">f</span> <span class="p">.</span><span class="nf">/</span><span class="n">var</span><span class="o">/*</span> <span class="p">.</span><span class="nf">/</span><span class="n">pub</span><span class="o">/</span><span class="n">static</span><span class="o">/*</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 'setup:static-content:deploy')-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="n">setup</span><span class="ss">:static</span><span class="o">-</span><span class="n">content</span><span class="ss">:deploy</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 'setup:static-content:deploy pt_BR')-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="n">setup</span><span class="ss">:static</span><span class="o">-</span><span class="n">content</span><span class="ss">:deploy</span> <span class="n">pt_BR</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 'chmod')-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">sudo</span> <span class="n">chmod</span> <span class="mi">777</span> <span class="o">-</span><span class="no">R</span> <span class="o">.</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 'cache:disable')-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">cache</span><span class="ss">:disable</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 'cache:clean')-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">cache</span><span class="ss">:clean</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 'cache:flush')-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">cache</span><span class="ss">:flush</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 'cache:status')-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">cache</span><span class="ss">:status</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 'deploy:mode:show')-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">deploy</span><span class="ss">:mode:show</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 'indexer:reindex')-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">indexer</span><span class="ss">:reindex</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 'indexer:status')-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">indexer</span><span class="ss">:status</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 'maintenance:disable')-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">maintenance</span><span class="ss">:disable</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 'maintenance:status')-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">maintenance</span><span class="ss">:status</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 'module:status')-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">module</span><span class="ss">:status</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 'setup:db:status')-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">setup</span><span class="ss">:db:status</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 'setup:di:compile')-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">setup</span><span class="ss">:di:compile</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 'setup:upgrade')-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">php</span> <span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="o">-</span><span class="n">vvv</span> <span class="n">setup</span><span class="ss">:upgrade</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 'chmod')-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">sudo</span> <span class="n">chmod</span> <span class="mi">777</span> <span class="o">-</span><span class="no">R</span> <span class="o">.</span> <span class="p">;\</span>
+<span class="n">echo</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[1;31m --(Processo 'pwd')-- </span><span class="se">\e</span><span class="s2">[0m"</span> <span class="p">;\</span>
+<span class="n">pwd</span>
+
+
+
+<span class="n">wget</span> <span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">crowdin</span><span class="p">.</span><span class="nf">com</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="n">project</span><span class="o">/</span><span class="n">magento</span><span class="o">-</span><span class="mi">2</span><span class="o">/</span><span class="n">pt</span><span class="o">-</span><span class="no">BR</span><span class="p">.</span><span class="nf">zip</span>
+
+<span class="n">unzip</span> <span class="n">pt</span><span class="o">-</span><span class="no">BR</span><span class="p">.</span><span class="nf">zip</span>
+
+<span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="n">i18n</span><span class="ss">:pack</span> <span class="o">--</span><span class="n">mode</span><span class="o">=</span><span class="n">replace</span> <span class="o">-</span><span class="n">d</span> <span class="p">.</span><span class="nf">/</span><span class="n">source</span><span class="p">.</span><span class="nf">csv</span> <span class="p">.</span> <span class="nf">pt_BR</span>
+
+<span class="n">bin</span><span class="o">/</span><span class="n">magento</span> <span class="n">setup</span><span class="ss">:static</span><span class="o">-</span><span class="n">content</span><span class="ss">:deploy</span> <span class="n">pt_BR</span></code></pre></div>
+
+
+                    </article>
+                    <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+
+var disqus_config = function () {
+this.page.url = 'http://mozgbrasil.github.io//instala%C3%A7%C3%A3o/instalando-magento2'; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = ''; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//mozgbrasilgithubio.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+<script id="dsq-count-scr" src="//mozgbrasilgithubio.disqus.com/count.js" async></script>
+
+                </div>
+            </div>
+        </article>
+    </div>
+</div>
+
+            </div>
+            <div class="ui black inverted vertical footer segment">
+                <div class="ui center aligned container">
+                    <div class="ui horizontal inverted small divided link list">
+                        <a class="item" href="http://mozg.com.br/" target="_blank">Copyright © 2015 MOZG</a>
+                        <br>
+                        <i class="br flag patria"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            // intro
+            var
+              $header        = $('.masthead'),
+              handler
+            ;
+            
+            handler = {
+              getRandomInt: function(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+              },
+              introduction: function() {
+                var
+                  background = 'bg' + handler.getRandomInt(1, 2)
+                ;
+                // zoom out
+                $header
+                  .addClass(background)
+                  .removeClass('zoomed')
+                ;
+                // 
+                $('.intro')
+                  .addClass('bg')
+                ;
+              }
+            }
+            
+            // intro
+            handler.introduction();
+        </script>
+        <script>
+            if($(window).width() > 600) {
+              $('body')
+                .visibility({
+                  offset         : -10,
+                  observeChanges : false,
+                  once           : false,
+                  continuous     : false,
+                  onTopPassed: function() {
+                    requestAnimationFrame(function() {
+                      $('.following.bar')
+                        .addClass('light fixed')
+                        .find('.menu')
+                          .removeClass('inverted')
+                      ;
+                      $('.following .additional.item')
+                        .transition('scale in', 750)
+                      ;
+                    });
+                  },
+                  onTopPassedReverse: function() {
+                    requestAnimationFrame(function() {
+                      $('.following.bar')
+                        .removeClass('light fixed')
+                        .find('.menu')
+                          .addClass('inverted')
+                          .find('.additional.item')
+                            .transition('hide')
+                      ;
+                    });
+                  }
+                })
+              ;
+            }     
+        </script>
+        <script>
+		// http://semantic-ui.com/modules/sidebar.html
+            // selector cache
+            var
+            $menu                = $('#toc')
+            ;
+            // main sidebar
+            $menu
+              .sidebar({
+                dimPage          : true,
+                transition       : 'overlay',
+                mobileTransition : 'uncover'
+              })
+            ;
+            
+            // launch buttons
+            $menu
+              .sidebar('attach events', '.launch.button, .view-ui, .launch.item')
+            ;
+        </script>
+        <script>
+			// http://semantic-ui.com/modules/popup.html
+			$('.tooltip')
+				.popup()
+			;
+        </script>
+        <script>
+			// http://semantic-ui.com/modules/shape.html#/usage
+			$('.shape').shape();
+
+			function shape() {
+				$('.shape').shape('flip up');
+			}
+
+			function loader() {
+				_function = shape;
+				milliseconds = 3000; // 1000 ms = 1 second.
+				_setInterval = setInterval(_function, milliseconds);
+			}
+
+			window.addEventListener("load", function(){ loader(); });
+        </script>
+        <script>
+			// http://semantic-ui.com/modules/transition.html
+			function transition_1() {
+				$('.logo')
+					.transition('jiggle')
+				;
+				$('.library')
+					.transition('jiggle')
+				;
+			}
+			_function = transition_1;	
+			milliseconds = 1000; // 1000 ms = 1 second.
+			_setTimeout = setTimeout(_function, milliseconds);
+
+			function transition_2() {
+				$('.library')
+					.transition('pulse')
+				;
+				$('.foguete')
+					.transition('pulse')
+				;
+				$('.patria')
+					.transition('pulse')
+				;
+			}
+			_function = transition_2;	
+			milliseconds = 2000; // 1000 ms = 1 second.
+			_setInterval = setInterval(_function, milliseconds);
+        </script>
+    </body>
+</html>

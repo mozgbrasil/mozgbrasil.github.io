@@ -1,0 +1,45 @@
+# Build settings
+
+highlighter: rouge
+markdown: kramdown
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+gems: [jekyll-paginate]
+paginate: 30
+paginate_path: "page:num"
+layout: default
+permalink: /:categories/:title
+excerpt_separator: "[-----]"
+
+# Site settings
+
+# mode: product
+url: http://mozgbrasil.github.io/
+mode: dev
+devurl: http://127.0.0.1:4000/
+baseurl: "" # the subpath of your site, e.g. /blog/
+title: MOZG
+tagline: Módulos para Magento 2
+email: mozgbrasil@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  55 (11) 2056-1559
+  Dias Úteis - Segunda-Feira à Sexta-Feira - 09:00hs às 12:00hs (meio-dia) - 14:00hs às 18:00hs
+twitter_username: mozgbrasil
+github_username:  mozgbrasil
+facebook_username:  mozgbrasil
+plusgoogle_username:  mozgbrasil
+youtube_username:  mozgbrasil
+
+## API Keys.
+
+google_api_key: "AIzaSyCs4J9bKJwDrZjIWADv5QNORo7_0O6HFDc" # https://code.google.com/apis/console/ -> Project Name -> APIs -> Credenciais
+google_cse_id: "009610575284599996357:uoh5lgm8wfq" # https://cse.google.com/ -> Google Custom Search Engine unique id
+google_analytics_ua: "UA-57703915-1" # https://www.google.com/analytics/web/ -> Google Analytics site specific id
+facebook_app: "200145210331773" # https://developers.facebook.com/
+
+## Embeds
+
+google_map_zoom: 16               # 1=Global zoom 18=Street Level
+google_map_view: satellite        # hybrid | satellite | roadmap
+google_map_height: 450            # Default map height. Width adjusts to container.
+

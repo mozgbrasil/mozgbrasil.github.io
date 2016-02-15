@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<div class="zoomed masthead segment">
+    <div class="ui inverted header">
+        <p>
+            &nbsp;
+        </p>
+    </div>
+</div>
+<div class="ui alternate vertical segment">
+    <div id="metrics-list" class="ui page grid">
+        <div class="ui container">&nbsp;</div>
+        <div class="ui huge breadcrumb">
+            <a class="section" href="/">Home</a>
+            <i class="right chevron icon divider"></i>
+            {% for path in page.parent_paths %}
+            <a class="section" href="{{ path }}">{{ page.parents[forloop.index0] }}</a>
+            <i class="right chevron icon divider"></i>
+            {% endfor %}
+            <div class="active section">{{ page.title }}</div>
+        </div>
+        <article class="row">
+            <div class="ui container">
+                <div class="ui raised segment">
+                    <header class="post-header">
+                        <h1 class="post-title">{{ page.title }}</h1>
+                        <h2 class="">{{ page.description }}</h2>
+                    </header>
+                    <article class="post-content">
+                        {{ content }}
+                    </article>
+                </div>
+            </div>
+        </article>
+    </div>
+</div>
