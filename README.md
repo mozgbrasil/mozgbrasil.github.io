@@ -45,9 +45,19 @@ https://www.google.com/analytics/web/
 
 https://developers.facebook.com/
 
-https://disqus.com
+https://disqus.com/
 
 http://www.freeformatter.com/html-formatter.html
+
+https://pt.wikipedia.org/wiki/Estrela_vermelha
+
+https://cloudconvert.com/svg-to-ico
+
+http://willianjusten.com.br/dominio-proprio-no-github-pages/
+
+http://mozgbrasil.github.io/
+
+http://mozg.com.br/
 
 ## License
 
