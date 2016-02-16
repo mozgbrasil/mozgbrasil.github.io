@@ -1,5 +1,5 @@
 ![valid XHTML][checkmark]
-[checkmark]: http://www.mozg.com.br/assets/logo.png "MOZG"
+[checkmark]: https://raw.githubusercontent.com/mozgbrasil/mozgbrasil.github.io/master/images/Red_star_32_32.png "MOZG"
 
 # http://mozgbrasil.github.io/
 
