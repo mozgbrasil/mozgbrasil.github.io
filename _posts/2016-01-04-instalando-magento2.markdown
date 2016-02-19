@@ -2,7 +2,7 @@
 layout: post
 title:  "Instalando o Magento2"
 date:   2016-01-04 17:36:06
-category: instalação
+category: Magento2
 author: Marcio Amorim
 tags: [magento2, php]
 excerpt: "Nesse artigo será exibido detalhadamente os processos feito via terminal para a instalação do Magento2"
@@ -11,24 +11,21 @@ excerpt: "Nesse artigo será exibido detalhadamente os processos feito via termi
 [phpinfo]:http://ec2-54-232-215-118.sa-east-1.compute.amazonaws.com/public_html/phpinfo.php
 [crowdin]:https://crowdin.com/project/magento-2/pt-BR
 
+## Introdução
+
 Ola Boa Tarde
 
 Veja na apresentação os processos executados
 
 Foi feito acesso via terminal ao servidor da amazon onde na execução dos comandos foi feito a instalação do Magento 2 sobre o [Servidor][phpinfo]
 
-<div class="ui raised padded container segment">
-	<h2 class="ui header">Slide</h2>
-	<div class="ui embed" data-url="//www.slideshare.net/slideshow/embed_code/key/wyMu0TDKvB6X5W"></div>
-	<script>
-	$('.ui.embed').embed();
-	</script>
-</div>
+<div class="ui embed" data-url="//www.slideshare.net/slideshow/embed_code/key/wyMu0TDKvB6X5W"></div>
+<script>
+$('.ui.embed').embed();
+</script>
 
 Execute os comandos efetuando as devidas alterações personalizando para seu projeto
 
-<div class="ui raised padded container segment">
-	<h2 class="ui header">Comandos</h2>
 {% highlight ruby %}
 
 pwd
@@ -112,7 +109,6 @@ echo -e "\e[1;31m --(Processo 17)-- \e[0m" ;\
 pwd
 
 {% endhighlight %}
-</div>
 
 <h1 class="ui header">Pacote de tradução pt_BR</h1>
 

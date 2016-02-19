@@ -105,6 +105,12 @@
 #example.index .masthead.bg14:after {
   background-image: url("/images/backgrounds/14.jpg");
 }
+#example.index .masthead.bg15:after {
+  background-image: url("/images/backgrounds/15.jpg");
+}
+#example.index .masthead.bg16:after {
+  background-image: url("/images/backgrounds/16.jpg");
+}
 
 
 #example.index .masthead,

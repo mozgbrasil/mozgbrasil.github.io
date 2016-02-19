@@ -16,23 +16,23 @@ order: 1
                 <span class="library">
                 MOZG
                 </span>
-                <span class="tagline">                
-					<div class="ui shape">
-						<div class="sides">
-							<div class="active side">Modulos para Magento 2</div>
-							<div class="side">Compre somente após testar o módulo</div>
-						</div>
-					</div>
+                <span class="tagline">
+                    <div class="ui shape">
+                        <div class="sides">
+                            <div class="active side">Modulos para Magento 2</div>
+                            <div class="side">Compre somente após testar o módulo</div>
+                        </div>
+                    </div>
                 </span>
             </h1>
             <div class="ui hidden divider"></div>
             <div class="ui compact menu tooltip" data-content="Verifique a versão do seu PHP e acesse o repositório correspondente">
                 <div class="ui simple dropdown item">
                     <div class="ui labeled button" tabindex="0">
-                        <div class="ui basic blue button">
+                        <div class="ui basic red button">
                             <i class="github icon"></i> Download
                         </div>
-                        <a class="ui basic left pointing blue label">
+                        <a class="ui basic left pointing red label">
                         <i class="right arrow icon"></i>
                         </a>
                     </div>
@@ -46,10 +46,10 @@ order: 1
             <div class="ui compact menu tooltip" data-content="Acesse o projeto demonstrativo e veja os nossos módulos em funcionamento">
                 <div class="ui simple dropdown item">
                     <div class="ui labeled button" tabindex="0">
-                        <div class="ui basic blue button">
+                        <div class="ui basic red button">
                             <i class="line chart icon"></i> Avaliar
                         </div>
-                        <a class="ui basic left pointing blue label">
+                        <a class="ui basic left pointing red label">
                         <i class="right arrow icon"></i>
                         </a>
                     </div>
@@ -63,8 +63,7 @@ order: 1
         </div>
     </div>
 </div>
-<div class="ui vertical intro segment">
-</div>
+<div class="ui vertical intro segment"></div>
 <!-- <div class="ui vertical stripe intro segment">
     include
                 </div> -->
@@ -96,3 +95,56 @@ order: 1
         </div>
     </div>
 </div>
+<script>
+    // http://semantic-ui.com/modules/popup.html
+    $('.tooltip')
+    	.popup()
+    ;
+         
+</script>
+<script>
+    // http://semantic-ui.com/modules/shape.html#/usage
+    $('.shape').shape();
+    
+    function shape() {
+    	console.log(arguments.callee.name);
+    	$('.shape').shape('flip up');
+    }
+    
+    function loader() {
+    	_function = shape;
+    	milliseconds = 3000; // 1000 ms = 1 second.
+    	_setInterval = setInterval(_function, milliseconds);
+    }
+    
+    window.addEventListener("load", function(){ loader(); });
+         
+</script>
+<script>
+    // http://semantic-ui.com/modules/transition.html
+    function transition_library() {
+    	console.log(arguments.callee.name);
+    	$('.library')
+    		.transition('jiggle')
+    	;
+    }
+    _function = transition_library;	
+    milliseconds = 1000; // 1000 ms = 1 second.
+    _setTimeout = setTimeout(_function, milliseconds);
+         
+</script>
+<script>
+    function transition_library_foguete() {
+    	console.log(arguments.callee.name);
+    	$('.library')
+    		.transition('pulse')
+    	;
+    	$('.foguete')
+    		.transition('pulse')
+    	;
+    }
+    _function = transition_library_foguete;	
+    milliseconds = 2000; // 1000 ms = 1 second.
+    _setInterval = setInterval(_function, milliseconds);
+         
+</script>

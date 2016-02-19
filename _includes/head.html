@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <!-- Refer HTML5BP and https://developers.google.com/speed/docs/insights/ConfigureViewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
     <!-- Site Properities -->
     {% if page.title == "Página inicial" %}
     {% capture title_tag %}{{ site.tagline }}{% endcapture %}
@@ -11,36 +12,61 @@
     {% capture title_tag %}{{ page.title }}{% endcapture %}
     {% endif %}
     <title>{{ title_tag }} &middot; {{ site.title }}</title>
-    <link rel="canonical" href="{{ page.url | prepend: site.url }}">
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="keywords" content="{% if page.layout != 'post' %}{{ site.keywords }}{% else %}{{ page.tags | join: ', ' }}, {{ page.categories | join: ', ' }}{% endif %}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <!-- Open Graph. Refer https://developers.facebook.com/docs/web/tutorials/scrumptious/open-graph-object -->
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" type="text/css" class="ui" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Orbitron">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,800">
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/override.css">
+
+    <!-- Google Authorship Markup -->
+    <link rel="author" href="https://plus.google.com/117231578401378218759?rel=author">
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+    <meta itemprop="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta itemprop="image" content="{{ "/images/logos/Red_star_32_32.png" | prepend: site.baseurl | prepend: site.url }}"/>
+
+    <!-- Social: Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@mozgbrasil">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    {% if page.image %}
+    <meta property="twitter:image:src" content="{{ site.url }}{{page.image }}">
+    {% else %}
+    <meta property="twitter:image:src" content="{{ "/images/logos/Red_star_32_32.png" | prepend: site.baseurl | prepend: site.url }}">
+    {% endif %}
+   <meta name="twitter:creator" content="@{{ site.twitter_username }}">
+
+    <!-- Social: Facebook / Open Graph -->
+    <!-- https://developers.facebook.com/docs/web/tutorials/scrumptious/open-graph-object -->
     {% if site.facebook %}
     <meta property="fb:app_id" content="{{ site.facebook_app }}">
     {% endif %}
-    <meta property="og:locale" content="en_US">
-    <meta property="og:url" content="{{ page.url | prepend: site.url }}">
-    <meta property="og:title" content="{{ title_tag }}">
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    {% if page.image %}
+    <meta property="og:image" content="{{ site.url }}{{page.image }}">
+    {% else %}
+    <meta property="og:image" content="{{ "/assets/img/blog-image.png" | prepend: site.baseurl | prepend: site.url }}">
+    {% endif %}
+    <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:description" content="{% if page.layout != 'post' %}{{ site.description | strip_newlines }}{% else %}{{ page.excerpt | strip_html | strip_newlines }}{% endif %}">
-    <meta property="og:image" content="{% if page.image %}{{ page.image | prepend: site.url }}{% else %}{{ site.default_image | prepend: site.url }}{% endif %}">
-    <meta property="og:image:width" content="640">
-    <meta property="og:image:height" content="300">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@open_theme">
-    <meta name="twitter:creator" content="@{{ site.twitter_username }}">
     {% if page.layout == 'post' %}
     <meta property="og:type" content="article" />
     {% else %}
     <meta property="og:type" content="website" />
     {% endif %}
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <meta name="description" content="{% if page.layout != 'post' %}{{ site.description | strip_newlines }}{% else %}{{ page.excerpt | strip_html | strip_newlines }}{% endif %}">
-    <meta name="keywords" content="{% if page.layout != 'post' %}{{ site.keywords }}{% else %}{{ page.tags | join: ', ' }}, {{ page.categories | join: ', ' }}{% endif %}">
-    <link rel="stylesheet" type="text/css" class="ui" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.7/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/home.css">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/css/override.css">
+
+    <!-- Javascript -->
     <script>
         (function () {
         var
@@ -53,7 +79,7 @@
         document.write('<script src="' + jQuery + '"><\/script>');
         }());
     </script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.7/semantic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
 
     {% if page.title != "Página inicial" %}
 	<script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>

@@ -22,8 +22,8 @@ title: MOZG
 tagline: Módulos para Magento 2
 email: mozgbrasil@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  55 (11) 2056-1559
-  Dias Úteis - Segunda-Feira à Sexta-Feira - 09:00hs às 12:00hs (meio-dia) - 14:00hs às 18:00hs
+  +55 11 977072339
+  Dias Úteis - Segunda-Feira à Sexta-Feira - 09:00 às 12:00 - 14:00 às 18:00
 twitter_username: mozgbrasil
 github_username:  mozgbrasil
 facebook_username:  mozgbrasil
@@ -32,10 +32,10 @@ youtube_username:  mozgbrasil
 
 ## API Keys.
 
-google_api_key: "AIzaSyCs4J9bKJwDrZjIWADv5QNORo7_0O6HFDc" # https://code.google.com/apis/console/ -> Project Name -> APIs -> Credenciais
-google_cse_id: "009610575284599996357:uoh5lgm8wfq" # https://cse.google.com/ -> Google Custom Search Engine unique id
-google_analytics_ua: "UA-57703915-1" # https://www.google.com/analytics/web/ -> Google Analytics site specific id
-facebook_app: "200145210331773" # https://developers.facebook.com/
+google_api_key: "AIzaSyBngTQOddD3rxUGFNsh4JSC5gkEJPGo6BQ" # https://code.google.com/apis/console/ -> Project Name -> APIs -> Credenciais
+google_cse_id: "013400461319534586214:elspbzci0nc" # https://cse.google.com/ -> Google Custom Search Engine unique id
+google_analytics_ua: "UA-73869264-1" # https://www.google.com/analytics/web/ -> Google Analytics site specific id
+facebook_app: "200145210331773" # https://developers.facebook.com/ ????
 
 ## Embeds
 

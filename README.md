@@ -1,5 +1,5 @@
 ![valid XHTML][checkmark]
-[checkmark]: https://raw.githubusercontent.com/mozgbrasil/mozgbrasil.github.io/master/images/Red_star_32_32.png "MOZG"
+[checkmark]: https://raw.githubusercontent.com/mozgbrasil/mozgbrasil.github.io/master/images/logos/Red_star_32_32.png "MOZG"
 
 # http://mozgbrasil.github.io/
 
@@ -58,6 +58,8 @@ http://willianjusten.com.br/dominio-proprio-no-github-pages/
 http://mozgbrasil.github.io/
 
 http://mozg.com.br/
+
+https://support.google.com/plus/answer/2676340?hl=pt-BR
 
 ## License
 

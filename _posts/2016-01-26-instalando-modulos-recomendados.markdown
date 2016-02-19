@@ -2,7 +2,7 @@
 layout: post
 title:  "Instalando módulos de terceiros no Magento2"
 date:   2016-01-26 16:20:11
-category: instalação
+category: Módulos
 author: Marcio Amorim
 tags: [magento2, composer]
 excerpt: "Nesse artigo é exibido o uso do composer para a instalação de módulos de terceiros que estou testando"

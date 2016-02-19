@@ -2,7 +2,7 @@
 layout: post
 title:  "Ativando o Zend Guard Loader sob o servidor web"
 date:   2016-01-07 15:36:06
-category: instalação
+category: Zend Guard Loader
 author: Marcio Amorim
 tags: [magento2, php]
 excerpt: "Nesse artigo será exibido detalhadamente o processo usado para ativar o Zend Guard Loader no servidor"
@@ -37,13 +37,10 @@ Veja no video que é exibido diversas imagens relativas aos processos executados
 
 Foi feito acesso via terminal ao servidor da amazon onde na execução dos comandos foi ativação da extensão "Zend Guard Loader" sobre o [Servidor][phpinfo]
 
-<div class="ui raised padded container segment">
-	<h2 class="ui header">Slide</h2>
-	<div class="ui embed" data-url="//www.slideshare.net/slideshow/embed_code/key/xQKJHQJf7aM3vQ"></div>
-	<script>
-	$('.ui.embed').embed();
-	</script>
-</div>
+<div class="ui embed" data-url="//www.slideshare.net/slideshow/embed_code/key/xQKJHQJf7aM3vQ"></div>
+<script>
+$('.ui.embed').embed();
+</script>
 
 Executando o seguinte comando temos o resultado se está ativo o recurso no ambiente client
 

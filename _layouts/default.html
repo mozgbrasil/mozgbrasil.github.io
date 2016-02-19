@@ -2,25 +2,23 @@
 <html>
     {% include head.html %}
     <body id="example" class="index" ontouchstart="">
-		<noscript>Your browser does not support JavaScript!</noscript>
-
-	<div style="position: fixed; bottom: 0px; left: 0px; padding: 5px; margin: 5px; display: inline; z-index:3;">
-		<div class="ui error message">
-			<i class="close icon"></i>
-			<div class="header">
-				Aviso
-			</div>
-			<ul class="list">
-				<li>Os módulos para Magento 2 se encontra em desenvolvimento e não está liberado para testes, favor aguardar estamos trabalhando para oferecer inovações.</li>
-			</ul>
-		</div>
-	</div>
-
+        <noscript>Your browser does not support JavaScript!</noscript>
+        <div style="position: fixed; bottom: 0px; left: 0px; padding: 5px; margin: 5px; display: inline; z-index:3;">
+            <div class="ui error message">
+                <i class="close icon"></i>
+                <div class="header">
+                    Aviso
+                </div>
+                <ul class="list">
+                    <li>Os módulos para Magento 2 se encontra em desenvolvimento e não está liberado para testes, favor aguardar estamos trabalhando para oferecer inovações.</li>
+                </ul>
+            </div>
+        </div>
         {% include snippet-facebook-setup-SDK.html %}
         <div class="ui vertical inverted sidebar menu" id="toc">
             <div class="item">
                 <a class="ui logo icon image" href="/">
-                <img class="ui image" src="/images/Red_star.svg" width="40" height="40">
+                <img class="ui image" src="/images/logos/Red_star.svg" width="40" height="40">
                 </a>
                 <a href="/"><b>mozgbrasil.github.io</b></a>
             </div>
@@ -44,15 +42,19 @@
                     <a class="item" href="https://github.com/{{ site.github_username }}"><i class="icon github"></i>{{ site.github_username }}</a>
                     {% endif %}
                     {% if site.facebook_username %}
-                    <a class="item" href="https://www.facebook.com/{{ site.facebook_username }}"><i class="icon facebook"></i>{{ site.facebook_username }}</a>
-                    {% endif %}
-                    {% if site.plusgoogle_username %}
-                    <a class="item" href="https://plus.google.com/+{{ site.plusgoogle_username }}"><i class="icon google plus"></i>{{ site.plusgoogle_username }}</a>
+                    <!--<a class="item" href="https://www.facebook.com/{{ site.facebook_username }}"><i class="icon facebook"></i>{{ site.facebook_username }}</a>-->
+                    <a class="item" href="https://pt-br.facebook.com/people/Mozg-Dos-Santos-Amorim/100011302182650"><i class="icon facebook"></i>{{ site.facebook_username }}</a>
                     {% endif %}
                     {% if site.youtube_username %}
-                    <a class="item" href="https://www.youtube.com/user/{{ site.youtube_username }}"><i class="icon youtube"></i>{{ site.youtube_username }}</a>
+                    <!--<a class="item" href="https://www.youtube.com/user/{{ site.youtube_username }}"><i class="icon youtube"></i>{{ site.youtube_username }}</a>-->
+                    <a class="item" href="https://www.youtube.com/channel/UCiXR9cKwxNKMehSnqXvhtug"><i class="icon youtube"></i>{{ site.youtube_username }}</a>
+                    {% endif %}
+                    {% if site.plusgoogle_username %}
+                    <!--<a class="item" href="https://plus.google.com/+{{ site.plusgoogle_username }}"><i class="icon google plus"></i>{{ site.plusgoogle_username }}</a>-->
+                    <a class="item" href="https://plus.google.com/117231578401378218759"><i class="icon google plus"></i>{{ site.plusgoogle_username }}</a>
                     {% endif %}
                     <a class="item" href="https://mozgbrasil.wordpress.com/"><i class="icon wordpress"></i>mozgbrasil</a>
+                    <a class="item" href="http://mozgbrasil.blogspot.com.br/"><i class="icon blogspot"></i>mozgbrasil</a>
                 </div>
             </div>
             <div class="item">
@@ -112,7 +114,7 @@
                                     <div class="sides">
                                         <div class="active ui side">
                                             <a class="ui logo icon image" href="/">
-                                            <img class="ui image" src="/images/Red_star.svg" width="40" height="40">
+                                            <img class="ui image" src="/images/logos/Red_star.svg" width="40" height="40">
                                             </a>
                                         </div>
                                     </div>
@@ -170,6 +172,20 @@
                     </div>
                 </div>
             </div>
+            <div class="ui segment">
+                <div class="ui center aligned container">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- modulo-magento2 -->
+                    <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-client="ca-pub-7927094983433027"
+                        data-ad-slot="4647140192"
+                        data-ad-format="auto"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
         </div>
         <script>
             // intro
@@ -184,8 +200,9 @@
               },
               introduction: function() {
                 var
-                  background = 'bg' + handler.getRandomInt(1, 2)
+                  background = 'bg' + handler.getRandomInt(1, 16)
                 ;
+            console.log(background);
                 // zoom out
                 $header
                   .addClass(background)
@@ -237,75 +254,51 @@
             }     
         </script>
         <script>
-		// http://semantic-ui.com/modules/sidebar.html
-            // selector cache
-            var
-            $menu                = $('#toc')
-            ;
-            // main sidebar
-            $menu
-              .sidebar({
-                dimPage          : true,
-                transition       : 'overlay',
-                mobileTransition : 'uncover'
-              })
-            ;
-            
-            // launch buttons
-            $menu
-              .sidebar('attach events', '.launch.button, .view-ui, .launch.item')
-            ;
+            // http://semantic-ui.com/modules/sidebar.html
+                      // selector cache
+                      var
+                      $menu                = $('#toc')
+                      ;
+                      // main sidebar
+                      $menu
+                        .sidebar({
+                          dimPage          : true,
+                          transition       : 'overlay',
+                          mobileTransition : 'uncover'
+                        })
+                      ;
+                      
+                      // launch buttons
+                      $menu
+                        .sidebar('attach events', '.launch.button, .view-ui, .launch.item')
+                      ;
+                  
         </script>
         <script>
-			// http://semantic-ui.com/modules/popup.html
-			$('.tooltip')
-				.popup()
-			;
+            // http://semantic-ui.com/modules/transition.html
+            function transition_logo() {
+            	console.log(arguments.callee.name);
+            	$('.logo')
+            		.transition('jiggle')
+            	;
+            }
+            _function = transition_logo;	
+            milliseconds = 1000; // 1000 ms = 1 second.
+            _setTimeout = setTimeout(_function, milliseconds);
+                 
         </script>
         <script>
-			// http://semantic-ui.com/modules/shape.html#/usage
-			$('.shape').shape();
-
-			function shape() {
-				$('.shape').shape('flip up');
-			}
-
-			function loader() {
-				_function = shape;
-				milliseconds = 3000; // 1000 ms = 1 second.
-				_setInterval = setInterval(_function, milliseconds);
-			}
-
-			window.addEventListener("load", function(){ loader(); });
-        </script>
-        <script>
-			// http://semantic-ui.com/modules/transition.html
-			function transition_1() {
-				$('.logo')
-					.transition('jiggle')
-				;
-				$('.library')
-					.transition('jiggle')
-				;
-			}
-			_function = transition_1;	
-			milliseconds = 1000; // 1000 ms = 1 second.
-			_setTimeout = setTimeout(_function, milliseconds);
-
-			function transition_2() {
-				$('.library')
-					.transition('pulse')
-				;
-				$('.foguete')
-					.transition('pulse')
-				;
-				$('.patria')
-					.transition('pulse')
-				;
-			}
-			_function = transition_2;	
-			milliseconds = 2000; // 1000 ms = 1 second.
-			_setInterval = setInterval(_function, milliseconds);
+            function transition_patria() {
+            	console.log(arguments.callee.name);
+            	$('.patria')
+            		.transition('pulse')
+            	;
+            }
+            _function = transition_patria;	
+            milliseconds = 2000; // 1000 ms = 1 second.
+            _setInterval = setInterval(_function, milliseconds);
+                 
         </script>
     </body>
 </html>
+

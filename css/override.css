@@ -1,6 +1,47 @@
 /*******************************
+ CSS
+*******************************/
+
+
+
+.tagline {
+	font-family: 'Lobster', cursive !important;
+}
+
+.post-title {
+	font-family: 'Lobster', cursive !important;
+	text-shadow: 3px 3px #24809c;
+	font-size: 2.5em !important;
+	padding: 20px;
+}
+
+.post-date {
+	font-family: 'Lobster', cursive !important;
+	font-size: 0.8em !important;
+}
+
+.post-excerpt {
+	font-family: 'Lobster', cursive !important;
+    font-size: 1.1em !important;
+    margin: 0 auto;
+}
+
+.post-content {
+	font-family: "Open Sans",sans-serif !important;
+	font-size: 1.25rem;
+	margin: 0 auto 1.875rem;
+    max-width: 60rem;
+    padding: 0 1.25rem;
+}
+
+/*******************************
  override template
 *******************************/
+
+#example.index .masthead.segment h1 > .library {
+	font-family: 'Lobster', cursive !important;
+	text-shadow: 3px 3px #24809c;
+}
 
 #example.index .intro.bg {
 	background-image: linear-gradient(to bottom, #4e6656, #fff) !important;
@@ -11,11 +52,19 @@
     background-color: #f2f3f5;
 }
 /*******************************
- semantic-ui
+ override semantic-ui
 *******************************/
 
 .ui.card, .ui.cards > .card {
 	width: 359px !important;
+}
+
+.ui.card > .content > .header:not(.ui), .ui.cards > .card > .content > .header:not(.ui) {
+	font-size: 0.8em !important;
+}
+
+.ui.embed {
+    margin-bottom: 15px;
 }
 
 /*******************************
@@ -30,7 +79,6 @@
 input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
 	box-sizing: content-box !important;
 }
-
 
 input.gsc-input { 
 	color:black;

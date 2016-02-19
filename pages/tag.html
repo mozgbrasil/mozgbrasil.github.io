@@ -20,7 +20,7 @@ order: 5
 <div class="ui {% if inverted == '0' %} white {% endif %}vertical segment">
     <div class="ui raised segment">
         <a id="{{ tag.first }}"></a>
-        <a class="ui blue ribbon label" href="/tag/#{{ tag.first }}"">{{ tag.first | capitalize }}</a>
+        <a class="ui red ribbon label" href="/tag/#{{ tag.first }}"">{{ tag.first | capitalize }}</a>
         <span>&nbsp;</span>
         {% for post in site.tags[tag.first] %}
         <p>&nbsp;</p>
@@ -37,10 +37,10 @@ order: 5
         <h1 class="ui header"><a href="{{ post.url }}">{{ post.title }}</a></h1>
         <p>{{ post.excerpt | strip_html | newline_to_br }}</p>
         <div class="ui labeled button" tabindex="0">
-            <div class="ui basic blue button">
+            <div class="ui basic red button">
                 <i class="comments icon"></i> <a class="" href="{{ post.url }}">Leia mais</a>
             </div>
-            <a class="ui basic left pointing blue label">
+            <a class="ui basic left pointing red label">
             <i class="right arrow icon"></i>
             </a>
         </div>
