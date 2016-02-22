@@ -3,7 +3,7 @@
     {% include head.html %}
     <body id="example" class="index" ontouchstart="">
         <noscript>Your browser does not support JavaScript!</noscript>
-        <div style="position: fixed; bottom: 0px; left: 0px; padding: 5px; margin: 5px; display: inline; z-index:3;">
+        <!--<div style="position: fixed; bottom: 0px; left: 0px; padding: 5px; margin: 5px; display: inline; z-index:3;">
             <div class="ui error message">
                 <i class="close icon"></i>
                 <div class="header">
@@ -13,14 +13,14 @@
                     <li>Os módulos para Magento 2 se encontra em desenvolvimento e não está liberado para testes, favor aguardar estamos trabalhando para oferecer inovações.</li>
                 </ul>
             </div>
-        </div>
+        </div>-->
         {% include snippet-facebook-setup-SDK.html %}
         <div class="ui vertical inverted sidebar menu" id="toc">
             <div class="item">
                 <a class="ui logo icon image" href="/">
                 <img class="ui image" src="/images/logos/Red_star.svg" width="40" height="40">
                 </a>
-                <a href="/"><b>mozgbrasil.github.io</b></a>
+                <a href="/"><b>{{ site.url }}</b></a>
             </div>
             <!--<a class="item" href="http://www.mozg.com.br/">
                 <b>Institucional</b>
@@ -54,7 +54,7 @@
                     <a class="item" href="https://plus.google.com/117231578401378218759"><i class="icon google plus"></i>{{ site.plusgoogle_username }}</a>
                     {% endif %}
                     <a class="item" href="https://mozgbrasil.wordpress.com/"><i class="icon wordpress"></i>mozgbrasil</a>
-                    <a class="item" href="http://mozgbrasil.blogspot.com.br/"><i class="icon blogspot"></i>mozgbrasil</a>
+                    <a class="item" href="http://mozgbrasil.blogspot.com.br/"><i class="icon google"></i>mozgbrasil</a>
                 </div>
             </div>
             <div class="item">
@@ -174,16 +174,7 @@
             </div>
             <div class="ui segment">
                 <div class="ui center aligned container">
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- modulo-magento2 -->
-                    <ins class="adsbygoogle"
-                        style="display:block"
-                        data-ad-client="ca-pub-7927094983433027"
-                        data-ad-slot="4647140192"
-                        data-ad-format="auto"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
+        			{% include snippet-google-ads.html %}
                 </div>
             </div>
         </div>
