@@ -26,10 +26,11 @@ mode: dev
 devurl: http://127.0.0.1:4000/
 baseurl: "" # the subpath of your site, e.g. /blog/
 title: MOZG
-tagline: Módulos para Magento 2
+tagline: Módulos para Magento
 email: mozgbrasil@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Módulos para Magento 2
+  Módulos para Magento
+  Nossa motivação é atender o mercado de módulos para Magento oferecendo melhorias e um excelente suporte
   Compre somente após testar o módulo
   Atendimento, Segunda-Feira à Sexta-Feira, 09:00 às 12:00 e 14:00 às 18:00
   mozgbrasil@gmail.com
