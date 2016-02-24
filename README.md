@@ -1,16 +1,6 @@
 ![valid XHTML][checkmark]
 [checkmark]: https://raw.githubusercontent.com/mozgbrasil/mozgbrasil.github.io/master/images/logos/Red_star_32_32.png "MOZG"
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- modulo-magento2 -->
-<ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-7927094983433027"
-    data-ad-slot="4647140192"
-    data-ad-format="auto"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 # http://mozgbrasil.github.io/
 
