@@ -108,7 +108,11 @@ order: 1
     
     function shape() {
     	console.log(arguments.callee.name);
-    	$('.shape').shape('flip up');
+
+		if( !ifvisible.now('hidden') ){
+  		// execute if page is not hidden
+    		$('.shape').shape('flip up');
+		}
     }
     
     function loader() {
@@ -144,6 +148,17 @@ order: 1
     	;
     }
     _function = transition_library_foguete;	
+    milliseconds = 2000; // 1000 ms = 1 second.
+    _setInterval = setInterval(_function, milliseconds);
+         
+</script>
+
+<script>
+    function check_ifvisible() {
+    	console.log(arguments.callee.name);
+		console.log(ifvisible.now());
+    }
+    _function = check_ifvisible;	
     milliseconds = 2000; // 1000 ms = 1 second.
     _setInterval = setInterval(_function, milliseconds);
          
