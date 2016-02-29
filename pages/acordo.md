@@ -2,8 +2,8 @@
 layout: page
 title: Acordo de licença do usuário final
 permalink: /acordo-licenca-usuario-final/
-description: 
 order: 6
+excerpt: "Para utilizar o(s) módulo(s) da MOZG é necessário aceitar esse Acordo de licença do usuário final"
 ---
 
 [magento-download]: https://www.magentocommerce.com/download

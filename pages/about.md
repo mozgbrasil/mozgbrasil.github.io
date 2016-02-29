@@ -3,6 +3,7 @@ layout: page
 title: Sobre Nós
 permalink: /about/
 order: 2
+excerpt: "Conheça um pouco mais sobre a MOZG"
 ---
 
 No mercado brasileiro desde 2005 a CEREBRUM vem se especializando exclusivamente em comércio eletrônico com foco desde 2008 na renomada plataforma de comércio eletrônico Magento Ecommerce.

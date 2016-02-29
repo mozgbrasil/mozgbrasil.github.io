@@ -20,21 +20,22 @@ compress_html:
 
 # Site settings
 
-# mode: product
-url: http://mozg.com.br/
-mode: dev
-devurl: http://127.0.0.1:4000/
+# mode: dev | product
+url: http://mozg.com.br
+mode: product
+devurl: http://127.0.0.1:4000
 baseurl: "" # the subpath of your site, e.g. /blog/
 title: MOZG
 tagline: Módulos para Magento
 email: mozgbrasil@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Módulos para Magento
+  Comercializamos módulos para Magento
   Nossa motivação é atender o mercado de módulos para Magento oferecendo melhorias e um excelente suporte
   Compre somente após testar o módulo
   Atendimento, Segunda-Feira à Sexta-Feira, 09:00 às 12:00 e 14:00 às 18:00
   mozgbrasil@gmail.com
   +55 11 977072339
+keywords: magento theme, magento download, magento extension, magento admin, magento template, magento store, magento ecommerce, ecommerce , magento connect, magento install
 twitter_username: mozgbrasil
 github_username:  mozgbrasil
 facebook_username:  mozgbrasil

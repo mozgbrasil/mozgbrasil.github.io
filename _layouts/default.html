@@ -13,8 +13,9 @@
                     <li>Os módulos para Magento 2 se encontra em desenvolvimento e não está liberado para testes, favor aguardar estamos trabalhando para oferecer inovações.</li>
                 </ul>
             </div>
-        </div>-->
+            </div>-->
         {% include snippet-facebook-setup-SDK.html %}
+        {% include snippet-twitter-setup-SDK.html %}
         <div class="ui vertical inverted sidebar menu" id="toc">
             <div class="item">
                 <a class="ui logo icon image" href="/">
@@ -42,8 +43,7 @@
                     <a class="item" href="https://github.com/{{ site.github_username }}"><i class="icon github"></i>{{ site.github_username }}</a>
                     {% endif %}
                     {% if site.facebook_username %}
-                    <!--<a class="item" href="https://www.facebook.com/{{ site.facebook_username }}"><i class="icon facebook"></i>{{ site.facebook_username }}</a>-->
-                    <a class="item" href="https://pt-br.facebook.com/people/Mozg-Dos-Santos-Amorim/100011302182650"><i class="icon facebook"></i>{{ site.facebook_username }}</a>
+                    <a class="item" href="https://www.facebook.com/{{ site.facebook_username }}"><i class="icon facebook"></i>{{ site.facebook_username }}</a>
                     {% endif %}
                     {% if site.youtube_username %}
                     <!--<a class="item" href="https://www.youtube.com/user/{{ site.youtube_username }}"><i class="icon youtube"></i>{{ site.youtube_username }}</a>-->
@@ -124,16 +124,19 @@
                             <i class="sidebar icon"></i> Menu
                             </a>
                             <div class="right menu">
-                                <div class="item" style="width:120px !important;padding-bottom:13px;">
+                                <div class="item" style="width:170px !important;">
                                     {% include snippet-facebook-like-button.html %}
+                                    <img class="ui image" src="/images/template/1x1px.png" width="1" height="2">
+                                    {% include snippet-facebook-send-button.html %}
                                 </div>
-                                <div class="item" style="width:55px !important;">
-                                    {% include snippet-twitter.html %}
+                                <div class="item" style="width:190px !important;">
+                                    {% include snippet-twitter-follow-button.html %}
+                                    {% include snippet-twitter-tweet-button.html %}
                                 </div>
-                                <div class="item" style="width:60px !important;">
+                                <div class="item" style="width:60px !important; margin-top:-22px;">
                                     {% include snippet-github.html %}
                                 </div>
-                                <div class="item" style="width:310px !important;">
+                                <div class="item" style="width:310px !important; margin-top:-22px;">
                                     {% include snippet-google-custom-search.html %}
                                 </div>
                                 {% comment %}
@@ -163,6 +166,28 @@
                 </div>
                 {{ content }}
             </div>
+            {% comment %}
+            <div class="feature alternate ui stripe vertical segment">
+                <div class="ui three column center aligned divided relaxed stackable grid container">
+                    <div class="row">
+                        <div class="column">
+                            {% include snippet-google-ads.html %}
+                        </div>
+                        <div class="column">
+                            {% include snippet-google-ads.html %}
+                        </div>
+                        <div class="column">
+                            {% include snippet-google-ads.html %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endcomment %}
+            <div class="ui segment">
+                <div class="ui center aligned container">
+                    {% include snippet-google-ads.html %}
+                </div>
+            </div>
             <div class="ui black inverted vertical footer segment">
                 <div class="ui center aligned container">
                     <div class="ui horizontal inverted small divided link list">
@@ -170,11 +195,6 @@
                         <br>
                         <i class="br flag patria"></i>
                     </div>
-                </div>
-            </div>
-            <div class="ui segment">
-                <div class="ui center aligned container">
-        			{% include snippet-google-ads.html %}
                 </div>
             </div>
         </div>
@@ -246,23 +266,23 @@
         </script>
         <script>
             // http://semantic-ui.com/modules/sidebar.html
-                      // selector cache
-                      var
-                      $menu                = $('#toc')
-                      ;
-                      // main sidebar
-                      $menu
-                        .sidebar({
-                          dimPage          : true,
-                          transition       : 'overlay',
-                          mobileTransition : 'uncover'
-                        })
-                      ;
-                      
-                      // launch buttons
-                      $menu
-                        .sidebar('attach events', '.launch.button, .view-ui, .launch.item')
-                      ;
+			// selector cache
+			var
+			$menu                = $('#toc')
+			;
+			// main sidebar
+			$menu
+			.sidebar({
+				dimPage          : true,
+				transition       : 'overlay',
+				mobileTransition : 'uncover'
+			})
+			;
+
+			// launch buttons
+			$menu
+			.sidebar('attach events', '.launch.button, .view-ui, .launch.item')
+			;
                   
         </script>
         <script>

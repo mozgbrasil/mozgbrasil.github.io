@@ -6,8 +6,6 @@ category: Saudação
 author: Marcio Amorim
 tags: [magento2, php]
 excerpt: "Salve camaradas, vamos falar de Magento"
-description: "É com grande satisfação que iniciamos nossas atividades"
-color: '#B31917'
 ---
 
 Ola Bom dia

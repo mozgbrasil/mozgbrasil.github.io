@@ -3,6 +3,7 @@ layout: page
 title: Pré-requisitos e sugestões
 permalink: /requirements/
 order: 7
+excerpt: "Antes de executar os processos, e leia os pré-requisitos e sugestões"
 ---
 [ativando-zend-guard-loader]: http://mozgbrasil.github.io/instala%C3%A7%C3%A3o/ativando-zend-guard-loader
 [acordo]: /acordo

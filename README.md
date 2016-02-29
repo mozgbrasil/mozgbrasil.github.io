@@ -1,7 +1,6 @@
 ![valid XHTML][checkmark]
 [checkmark]: https://raw.githubusercontent.com/mozgbrasil/mozgbrasil.github.io/master/images/logos/Red_star_32_32.png "MOZG"
 
-
 # http://mozgbrasil.github.io/
 
 ## Sinopse
