@@ -61,25 +61,7 @@ order: 1
                     </div>
                 </div>
             </div>
-            <div class="ui " style="margin:1em 0 0;">
-                <div class="ui large inverted secondary network menu">
-                    <div class="right menu">
-                        <div class="item" >
-                            {% include snippet-facebook-like-button.html %}
-                            <img class="ui image" src="/images/template/1x1px.png" width="5" height="1">
-                            {% include snippet-facebook-send-button.html %}
-                        </div>
-                        <div class="item" >
-                            {% include snippet-twitter-follow-button.html %}
-                            <img class="ui image" src="/images/template/1x1px.png" width="5" height="1">
-                            {% include snippet-twitter-tweet-button.html %}
-                        </div>
-                        <div class="item" >
-                            {% include snippet-github.html %}
-                        </div>                                    
-                     </div>
-                </div>
-            </div>
+			{% include snippet-social-plugins.html %}
         </div>
     </div>
 </div>
@@ -129,10 +111,7 @@ order: 1
     function shape() {
     	console.log(arguments.callee.name);
 
-		if( !ifvisible.now('hidden') ){
-  		// execute if page is not hidden
-    		$('.shape').shape('flip up');
-		}
+		$('.shape').shape('flip up');
     }
     
     function loader() {
