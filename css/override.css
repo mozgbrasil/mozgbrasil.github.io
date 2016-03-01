@@ -31,7 +31,7 @@
 	font-size: 1.25rem;
 	margin: 0 auto 1.875rem;
     max-width: 60rem;
-    padding: 0 1.25rem;
+    padding: 2.5rem 0;
 }
 
 /*******************************
@@ -51,6 +51,15 @@
 #example .alternate.vertical {
     background-color: #f2f3f5;
 }
+
+#example.index .following.bar > .menu .item {
+    color: black;
+}
+
+.ui.attached.inverted.menu {
+    background: white none repeat scroll 0 0;
+}
+
 /*******************************
  override semantic-ui
 *******************************/

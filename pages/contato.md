@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contato
-permalink: /contact/
+permalink: /contato/
 order: 3
 excerpt: "Fale conosco e tire suas dúvidas"
 ---

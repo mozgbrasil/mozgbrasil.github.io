@@ -37,10 +37,12 @@ description: > # this means to ignore newlines until "baseurl:"
   +55 11 977072339
 keywords: magento theme, magento download, magento extension, magento admin, magento template, magento store, magento ecommerce, ecommerce , magento connect, magento install
 twitter_username: mozgbrasil
-github_username:  mozgbrasil
-facebook_username:  mozgbrasil
-plusgoogle_username:  mozgbrasil
-youtube_username:  mozgbrasil
+github_username: mozgbrasil
+facebook_username: mozgbrasil
+plusgoogle_username: mozgbrasil
+youtube_username: mozgbrasil
+
+top_menu: snippet-top-menu-2.html
 
 ## API Keys.
 
