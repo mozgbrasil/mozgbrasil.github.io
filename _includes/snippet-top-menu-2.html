@@ -1,5 +1,5 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/0.6.0/lunr.min.js"></script>
-<script src="/js/search.js"></script>
+<script src="/assets/js/search.js"></script>
 
 <div class="ui attached stackable menu">
     <div class="ui container">
@@ -10,7 +10,7 @@
         <i class="sidebar icon"></i> Menu
         </a>
         <div class="ui simple dropdown item">
-            Produtos
+            <i class="add to cart icon"></i> Produtos
             <i class="dropdown icon"></i>
             <div class="menu">
                 <h1 class="ui header"><strong>Métodos de entrega</strong></h1>
@@ -50,9 +50,15 @@
                 </div>
             </div>
         </div>
-        <a class="item" href="/contato">
-        <i class="mail icon"></i> Contato
-        </a>
+        <div class="ui simple dropdown item">
+		    <i class="google icon"></i> Hangout
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <div class="item">
+                    <span class="text">{% include snippet-google-hangout-button.html %}</span>
+                </div>
+            </div>
+        </div>
         <div class="right item">
             <div class="ui input">
                 <form action="get" id="site_search">

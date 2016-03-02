@@ -22,9 +22,9 @@
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster">
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Orbitron">
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,800">
-    <link rel="stylesheet" type="text/css" href="/css/home.css">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/css/override.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/home.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/override.css">
 
     <!-- Google Authorship Markup -->
     <link rel="author" href="https://plus.google.com/117231578401378218759?rel=author">
@@ -32,7 +32,7 @@
     <!-- Social: Google+ / Schema.org  -->
     <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
     <meta itemprop="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta itemprop="image" content="{{ "/images/logos/Red_star_32_32.png" | prepend: site.baseurl | prepend: site.url }}"/>
+    <meta itemprop="image" content="{{ "/assets/images/logos/Red_star_32_32.png" | prepend: site.baseurl | prepend: site.url }}"/>
 
     <!-- Social: Twitter -->
     <meta name="twitter:card" content="summary_large_image">
@@ -42,7 +42,7 @@
     {% if page.image %}
     <meta property="twitter:image:src" content="{{ site.url }}{{page.image }}">
     {% else %}
-    <meta property="twitter:image:src" content="{{ "/images/logos/Red_star_32_32.png" | prepend: site.baseurl | prepend: site.url }}">
+    <meta property="twitter:image:src" content="{{ "/assets/images/logos/Red_star_32_32.png" | prepend: site.baseurl | prepend: site.url }}">
     {% endif %}
    <meta name="twitter:creator" content="@{{ site.twitter_username }}">
 
