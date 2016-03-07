@@ -34,9 +34,9 @@ ls
 
 cd public_html
 
-mkdir magento-2.0.2-dev20
+mkdir magento-2.0.2-dev22
 
-cd magento-2.0.2-dev20
+cd magento-2.0.2-dev22
 
 composer --version && sudo composer self-update && composer clear-cache
 
@@ -50,12 +50,12 @@ sudo chown -R :www-data .
 
 sudo find . -type d -exec chmod 770 {} \; && sudo find . -type f -exec chmod 660 {} \; && sudo chmod u+x bin/magento
 
-mysqladmin -u root -p CREATE "magento202dev20";
+mysqladmin -u root -p CREATE "magento202dev22";
 
 php bin/magento setup:install \
---base-url=http://ec2-54-232-215-118.sa-east-1.compute.amazonaws.com/public_html/magento-2.0.2-dev20/ \
+--base-url=http://ec2-54-232-215-118.sa-east-1.compute.amazonaws.com/public_html/magento-2.0.2-dev22/ \
 --backend-frontname=admin \
---db-host=127.0.0.1 --db-name=magento202dev20 --db-user=root --db-password=??? \
+--db-host=127.0.0.1 --db-name=magento202dev22 --db-user=root --db-password=??? \
 --admin-firstname=Marcio --admin-lastname=Amorim --admin-email=email@gmail.com.br \
 --admin-user=admin --admin-password=123456a --language=pt_BR \
 --currency=BRL --timezone=America/Sao_Paulo \
@@ -97,12 +97,8 @@ echo -e "\e[1;31m --(Processo 11)-- \e[0m" ;\
 php bin/magento -vvv module:status ;\
 echo -e "\e[1;31m --(Processo 12)-- \e[0m" ;\
 php bin/magento -vvv setup:db:status ;\
-echo -e "\e[1;31m --(Processo 13)-- \e[0m" ;\
-php bin/magento -vvv setup:di:compile ;\
 echo -e "\e[1;31m --(Processo 14)-- \e[0m" ;\
 php bin/magento -vvv setup:upgrade ;\
-echo -e "\e[1;31m --(Processo 15)-- \e[0m" ;\
-php bin/magento setup:static-content:deploy ;\
 echo -e "\e[1;31m --(Processo 16)-- \e[0m" ;\
 sudo chmod 777 -R . ;\
 echo -e "\e[1;31m --(Processo 17)-- \e[0m" ;\
