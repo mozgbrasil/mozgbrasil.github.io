@@ -17,12 +17,14 @@
         <style type="text/css">
         </style>
         <!-- Following Menu -->
-		    <div class="ui large top fixed hidden menu">
+        <div class="following bar">
+		    <div class="ui attached stackable menu">
 		        <div class="ui container">
 		            {% assign variable = site.top_menu %}
 		            {% include {{variable}} %}
 		        </div>
 		    </div>
+        </div>
         <!-- Sidebar Menu -->
         <div class="ui vertical inverted sidebar menu">
             {% include snippet-sidebar-menu.html %}
@@ -167,31 +169,43 @@
             </div>
         </div>
 
-  <script>
-  $(document)
-    .ready(function() {
-
-      // fix menu when passed
-      $('.masthead')
-        .visibility({
-          once: false,
-          onBottomPassed: function() {
-            $('.fixed.menu').transition('fade in');
-          },
-          onBottomPassedReverse: function() {
-            $('.fixed.menu').transition('fade out');
-          }
-        })
-      ;
-
-      // create sidebar and attach to menu open
-      $('.ui.sidebar')
-        .sidebar('attach events', '.toc.item')
-      ;
-
-    })
-  ;
-  </script>
+        <script>
+            if($(window).width() > 600) {
+              $('body')
+                .visibility({
+                  offset         : -10,
+                  observeChanges : false,
+                  once           : false,
+                  continuous     : false,
+                  onTopPassed: function() {
+                    requestAnimationFrame(function() {
+    					console.log(arguments.callee.name);
+                      $('.following.bar')
+                        .addClass('light fixed')
+                        .find('.menu')
+                          .removeClass('inverted')
+                      ;
+                      $('.following .additional.item')
+                        .transition('scale in', 750)
+                      ;
+                    });
+                  },
+                  onTopPassedReverse: function() {
+                    requestAnimationFrame(function() {
+    					console.log(arguments.callee.name);
+                      $('.following.bar')
+                        .removeClass('light fixed')
+                        .find('.menu')
+                          .addClass('')
+                          .find('.additional.item')
+                            .transition('hide')
+                      ;
+                    });
+                  }
+                })
+              ;
+            }     
+        </script>
 
         <script>
             // http://semantic-ui.com/modules/sidebar.html

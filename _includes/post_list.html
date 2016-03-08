@@ -1,6 +1,6 @@
 {% include mode_switcher.html %}
 <div class="ui container">
-	<div class="ui four cards">
+<div class="ui four stackable cards">
 		{% if paginator %}
 		{% for post in paginator.posts %}
 		{% include post_list_item.html %}
@@ -13,7 +13,7 @@
 		{% endif %}
 		{% endfor %}
 		{% endif %}
-	</div>
+</div>
 </div>
 {% if displayPagi or paginator %}
 {% if paginator.total_pages > 1 %}
