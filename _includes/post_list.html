@@ -1,17 +1,19 @@
 {% include mode_switcher.html %}
-<div class="ui cards container">
-    {% if paginator %}
-    {% for post in paginator.posts %}
-    {% include post_list_item.html %}
-    {% endfor %}
-    {% else %}
-    {% for post in include.posts %}
-    {% if post.tags or post.category %}
-    {% include post_list_item.html %}
-    {% assign displayPagi = true %}
-    {% endif %}
-    {% endfor %}
-    {% endif %}
+<div class="ui container">
+	<div class="ui four cards">
+		{% if paginator %}
+		{% for post in paginator.posts %}
+		{% include post_list_item.html %}
+		{% endfor %}
+		{% else %}
+		{% for post in include.posts %}
+		{% if post.tags or post.category %}
+		{% include post_list_item.html %}
+		{% assign displayPagi = true %}
+		{% endif %}
+		{% endfor %}
+		{% endif %}
+	</div>
 </div>
 {% if displayPagi or paginator %}
 {% if paginator.total_pages > 1 %}
