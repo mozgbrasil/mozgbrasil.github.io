@@ -61,6 +61,10 @@ pre {
     padding: 1em;
 }
 
+figure {
+    margin: 0 auto !important;
+}
+
 /*******************************
  override google custom search
 *******************************/
