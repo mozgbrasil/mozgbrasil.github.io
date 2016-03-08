@@ -9,21 +9,16 @@ order: 1
 {{ site.posts | debug }}
 {{ paginator | debug }}
 {% endcomment %}
-
 <div class="ui center aligned masthead segment">
-
     <div class="ui container">
-      <div class="ui large secondary inverted pointing menu">
-        <a class="toc item">
-          <i class="sidebar icon"></i>
-        </a>
-
-		            {% assign variable = site.top_menu %}
-		            {% include {{variable}} %}
-
-      </div>
+        <div class="ui large secondary inverted pointing menu">
+            <a class="toc item">
+            <i class="sidebar icon"></i>
+            </a>
+            {% assign variable = site.top_menu %}
+            {% include {{variable}} %}
+        </div>
     </div>
-
     <div class="ui text container">
         <h1 class="ui inverted header">
             <p class="company-name">MOZG</p>
@@ -76,7 +71,6 @@ order: 1
         {% include snippet-social-plugins.html %}
     </div>
 </div>
-
 <div class="ui community vertical segment">
     <div class="ui container">
         <h2 class="ui header">
@@ -90,7 +84,6 @@ order: 1
     <div class="ui divider"></div>
     {% include post_list.html %}
 </div>
-
 <script>
     // http://semantic-ui.com/modules/shape.html#/usage
     $('.shape').shape();
@@ -110,5 +103,4 @@ order: 1
     window.addEventListener("load", function(){ loader(); });
          
 </script>
-
 

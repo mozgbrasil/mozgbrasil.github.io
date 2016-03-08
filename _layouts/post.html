@@ -9,6 +9,15 @@ layout: default
 {% endcomment %}
 
 <div class="ui inverted vertical masthead center aligned segment">
+    <div class="ui container">
+        <div class="ui large secondary inverted pointing menu">
+            <a class="toc item">
+            <i class="sidebar icon"></i>
+            </a>
+            {% assign variable = site.top_menu %}
+            {% include {{variable}} %}
+        </div>
+    </div>
     <div class="ui text container">
         <img class="ui image" src="/assets/images/template/1x1px.png" width="1" height="200">
         <span class="tagline">
@@ -30,7 +39,7 @@ layout: default
         {% include snippet-social-plugins.html %}
     </div>
 </div>
-<div class="ui raised very padded text container segment">
+<div class="ui container segment">
     {{ content }}
 </div>
 <div class="ui divider"></div>

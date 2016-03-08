@@ -27,8 +27,16 @@ jQuery(function() {
         });
     });
 
+console.log($("#site_search"));
+
+$( "#site_search" ).each(function( index, value ) {
+  console.log( index + ": " + value );
+  console.log( index );
+
     // Event when the form is submitted
-    $("#site_search").submit(function(event) {
+    index.submit(function(event) {
+		console.log('');
+		exit;
         event.preventDefault();
         var query = $("#search_box").val(); // Get the value for the text field
         var results = window.idx.search(query); // Get lunr to perform a search
@@ -36,6 +44,10 @@ jQuery(function() {
 
         $('.ui.modal').modal('show'); // FIX: CEREBRUM
     });
+
+});
+
+
 
     function display_search_results(results) {
         var $search_results = $("#search_results");

@@ -17,12 +17,12 @@
         <style type="text/css">
         </style>
         <!-- Following Menu -->
-		    <div class="ui large top fixed hidden menu">
-		        <div class="ui container">
-		            {% assign variable = site.top_menu %}
-		            {% include {{variable}} %}
-		        </div>
-		    </div>
+        <div class="ui large top fixed hidden menu">
+            <div class="ui container">
+                {% assign variable = site.top_menu %}
+                {% include {{variable}} %}
+            </div>
+        </div>
         <!-- Sidebar Menu -->
         <div class="ui vertical inverted sidebar menu">
             {% include snippet-sidebar-menu.html %}
@@ -159,40 +159,38 @@
                     <div class="ui center aligned container">
                         <div class="ui horizontal inverted small divided link list">
                             <a class="item" href="http://mozg.com.br/" target="_blank">Copyright © 2015 MOZG</a>
-		                    <br>
-		                    <i class="br flag patria"></i>
+                            <br>
+                            <i class="br flag patria"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-  <script>
-  $(document)
-    .ready(function() {
-
-      // fix menu when passed
-      $('.masthead')
-        .visibility({
-          once: false,
-          onBottomPassed: function() {
-            $('.fixed.menu').transition('fade in');
-          },
-          onBottomPassedReverse: function() {
-            $('.fixed.menu').transition('fade out');
-          }
-        })
-      ;
-
-      // create sidebar and attach to menu open
-      $('.ui.sidebar')
-        .sidebar('attach events', '.toc.item')
-      ;
-
-    })
-  ;
-  </script>
-
+        <script>
+            $(document)
+            .ready(function() {
+            
+            
+            })
+            ;
+        </script>
+        <script>
+            // fix menu when passed
+            $('.masthead')
+              .visibility({
+                once: false,
+                onBottomPassed: function() {
+                  $('.fixed.menu').transition('fade in');
+                },
+                onBottomPassedReverse: function() {
+                  $('.fixed.menu').transition('fade out');
+                }
+              })
+            ;
+            
+                          
+                
+        </script>
         <script>
             // http://semantic-ui.com/modules/sidebar.html
             // selector cache
@@ -208,7 +206,7 @@
             })
             ;
             
-            // launch buttons
+            // launch buttons - create sidebar and attach to menu open
             $menu
             .sidebar('attach events', '.launch.button, .view-ui, .launch.item, .toc.item')
             ;  
@@ -216,25 +214,25 @@
         </script>
         <script>
             // http://semantic-ui.com/modules/transition.html
-			$('.company-name')
-			  .transition('set looping')
-			  .transition('pulse', '2000ms')
-			;
-
-			$('.foguete')
-			  .transition('set looping')
-			  .transition('bounce', '2000ms')
-			;
-
-			$('.image.logo')
-			  .transition('set looping')
-			  .transition('pulse', '2000ms')
-			;
-
-			$('.flag.patria')
-			  .transition('set looping')
-			  .transition('pulse', '2000ms')
-			;
+            $('.company-name')
+            .transition('set looping')
+            .transition('pulse', '2000ms')
+            ;
+            
+            $('.foguete')
+            .transition('set looping')
+            .transition('bounce', '2000ms')
+            ;
+            
+            $('.image.logo')
+            .transition('set looping')
+            .transition('pulse', '2000ms')
+            ;
+            
+            $('.flag.patria')
+            .transition('set looping')
+            .transition('pulse', '2000ms')
+            ;
                  
         </script>
         <script>
@@ -272,3 +270,4 @@
         </script>
     </body>
 </html>
+
