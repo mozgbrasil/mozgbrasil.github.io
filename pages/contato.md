@@ -6,6 +6,8 @@ order: 3
 excerpt: "Fale conosco e tire suas dúvidas"
 ---
 
-{% include snippet-disqus.html %}
+{% include snippet-social-plugins.html %}
 
-{% include snippet-google-map.html location="Itaquera+Brasil" %}
+{% comment %}
+{% include snippet-google-map.html location="Rua Luiz de Almeida Fernandes, 272, Itaquera, Brasil" %}
+{% endcomment %}

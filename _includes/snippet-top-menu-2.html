@@ -1,96 +1,103 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/0.6.0/lunr.min.js"></script>
 <script src="/assets/js/search.js"></script>
 
-<a class="active item" href="/">
-<i class="home icon"></i> Home
-</a>
-<a class="view-ui item">
-<i class="sidebar icon"></i> Menu
-</a>
-<div class="ui simple dropdown item">
-    <i class="add to cart icon"></i> Produtos
-    <i class="dropdown icon"></i>
-    <div class="menu">
-        <h1 class="ui header"><strong>Métodos de entrega</strong></h1>
-        <div class="item">
+<div class="ui attached stackable menu">
+    <div class="ui container">
+        <a class="item" href="/">
+        <i class="home icon"></i> Home
+        </a>
+        <a class="view-ui item">
+        <i class="sidebar icon"></i> Menu
+        </a>
+        <div class="ui simple dropdown item">
+            <i class="add to cart icon"></i> Produtos
             <i class="dropdown icon"></i>
-            <span class="text">Correios</span>
             <div class="menu">
-                <a class="item" href="https://github.com/mozgbrasil/magento2-correios-php55">PHP 5.5</a>
-                <a class="item" href="https://github.com/mozgbrasil/magento2-correios-php56">PHP 5.6</a>
+                <h1 class="ui header"><strong>Métodos de entrega</strong></h1>
+                <div class="item">
+                    <i class="dropdown icon"></i>
+                    <span class="text">Correios</span>
+                    <div class="menu">
+                        <a class="item" href="https://github.com/mozgbrasil/magento2-correios-php55">PHP 5.5</a>
+                        <a class="item" href="https://github.com/mozgbrasil/magento2-correios-php56">PHP 5.6</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="dropdown icon"></i>
+                    <span class="text">Correios Exporta Fácil</span>
+                    <div class="menu">
+                        <a class="item" href="https://github.com/mozgbrasil/magento2-correios-php55">PHP 5.5</a>
+                        <a class="item" href="https://github.com/mozgbrasil/magento2-correios-php56">PHP 5.6</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="dropdown icon"></i>
+                    <span class="text">Jadlog</span>
+                    <div class="menu">
+                        <a class="item" href="https://github.com/mozgbrasil/magento2-jadlog-php55">PHP 5.5</a>
+                        <a class="item" href="https://github.com/mozgbrasil/magento2-jadlog-php56">PHP 5.6</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="dropdown icon"></i>
+                    <span class="text">Jamef</span>
+                    <div class="menu">
+                        <a class="item" href="https://github.com/mozgbrasil/magento2-jamef-php55">PHP 5.5</a>
+                        <a class="item" href="https://github.com/mozgbrasil/magento2-jamef-php56">PHP 5.6</a>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <h2 class="ui header"><strong>Métodos de pagamento</strong></h2>
+                <div class="item">
+                    <i class="dropdown icon"></i>
+                    <span class="text">Banco Itau</span>
+                    <div class="menu">
+                        <a class="item" href="https://github.com/mozgbrasil/magento2-jamef-php55">PHP 5.5</a>
+                        <a class="item" href="https://github.com/mozgbrasil/magento2-jamef-php56">PHP 5.6</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="dropdown icon"></i>
+                    <span class="text">Banco Bradesco</span>
+                    <div class="menu">
+                        <a class="item" href="https://github.com/mozgbrasil/magento2-jamef-php55">PHP 5.5</a>
+                        <a class="item" href="https://github.com/mozgbrasil/magento2-jamef-php56">PHP 5.6</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="item">
+
+        <a class="item" href="/contato/">
+        <i class="at icon"></i> Contato
+        </a>
+
+		{% comment %}
+        <div class="ui simple dropdown item">
+		    <i class="google icon"></i> Hangout
             <i class="dropdown icon"></i>
-            <span class="text">Correios Exporta Fácil</span>
             <div class="menu">
-                <a class="item" href="https://github.com/mozgbrasil/magento2-correios-php55">PHP 5.5</a>
-                <a class="item" href="https://github.com/mozgbrasil/magento2-correios-php56">PHP 5.6</a>
+                <div class="item">
+                    <span class="text">{% include snippet-google-hangout-button.html %}</span>
+                </div>
             </div>
         </div>
-        <div class="item">
-            <i class="dropdown icon"></i>
-            <span class="text">Jadlog</span>
-            <div class="menu">
-                <a class="item" href="https://github.com/mozgbrasil/magento2-jadlog-php55">PHP 5.5</a>
-                <a class="item" href="https://github.com/mozgbrasil/magento2-jadlog-php56">PHP 5.6</a>
-            </div>
-        </div>
-        <div class="item">
-            <i class="dropdown icon"></i>
-            <span class="text">Jamef</span>
-            <div class="menu">
-                <a class="item" href="https://github.com/mozgbrasil/magento2-jamef-php55">PHP 5.5</a>
-                <a class="item" href="https://github.com/mozgbrasil/magento2-jamef-php56">PHP 5.6</a>
-            </div>
-        </div>
-        <div class="divider"></div>
-        <h1 class="ui header"><strong>Métodos de pagamento</strong></h1>
-        <div class="item">
-            <i class="dropdown icon"></i>
-            <span class="text">Banco Itau</span>
-            <div class="menu">
-                <a class="item" href="https://github.com/mozgbrasil/magento2-jamef-php55">PHP 5.5</a>
-                <a class="item" href="https://github.com/mozgbrasil/magento2-jamef-php56">PHP 5.6</a>
-            </div>
-        </div>
-        <div class="item">
-            <i class="dropdown icon"></i>
-            <span class="text">Banco Bradesco</span>
-            <div class="menu">
-                <a class="item" href="https://github.com/mozgbrasil/magento2-jamef-php55">PHP 5.5</a>
-                <a class="item" href="https://github.com/mozgbrasil/magento2-jamef-php56">PHP 5.6</a>
+		{% endcomment %}
+        <div class="right item">
+            <div class="ui input">
+                <form action="get" id="site_search">
+				    <input placeholder="Pesquise aqui..." type="text" id="search_box">
+				    <i class="search link icon"></i>
+                </form>
+                <div class="ui modal">
+                    <i class="close icon"></i>
+                    <div class="header">
+                        Resultados da busca:
+                    </div>
+                    <div class="image content">
+                        <ul id="search_results"></ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="ui simple dropdown item">
-    <i class="google icon"></i> Hangout
-    <i class="dropdown icon"></i>
-    <div class="menu">
-        <div class="item">
-            {% include snippet-google-hangout-button.html %}
-        </div>
-    </div>
-</div>
-<div class="right item">
-        <form action="get" id="site_search">
-    <div class="ui icon input">
-
-            <input placeholder="Pesquise aqui..." type="text" id="search_box">
-            <i class="search link icon"></i>
-
-    </div>
-
-        </form>
-        <div class="ui modal">
-            <i class="close icon"></i>
-            <div class="header">
-                Resultados da busca:
-            </div>
-            <div class="image content">
-                <ul id="search_results"></ul>
-            </div>
-        </div>
-
 </div>

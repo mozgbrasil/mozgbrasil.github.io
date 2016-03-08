@@ -8,16 +8,7 @@ layout: default
 {{ paginator | debug }}
 {% endcomment %}
 
-<div class="ui inverted vertical masthead center aligned segment">
-    <div class="ui container">
-        <div class="ui large secondary inverted pointing menu">
-            <a class="toc item">
-            <i class="sidebar icon"></i>
-            </a>
-            {% assign variable = site.top_menu %}
-            {% include {{variable}} %}
-        </div>
-    </div>
+<div class="zoomed masthead segment">
     <div class="ui text container">
         <img class="ui image" src="/assets/images/template/1x1px.png" width="1" height="200">
         <span class="tagline">
@@ -36,7 +27,9 @@ layout: default
             </div>
         </span>
         <div class="ui hidden divider"></div>
-        {% include snippet-social-plugins.html %}
+		{% comment %}
+		{% include snippet-social-plugins.html %}
+		{% endcomment %}
     </div>
 </div>
 <div class="ui container segment">

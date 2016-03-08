@@ -2,33 +2,8 @@
  CSS
 *******************************/
 
-.following.bar {
-    border-bottom: 1px solid transparent;
-    box-shadow: 0 0 0 0 transparent;
-    left: 0;
-    padding: 2em 0;
-    position: fixed;
-    top: 0;
-    transition: padding 0.5s ease 0s, background 0.5s ease 0s, box-shadow 0.5s ease 0s, border 0.5s ease 0s;
-    width: 100%;
-    z-index: 900;
-}
-
-.light.following.bar {
-  padding: 1em 0em;
-  background-color: #FFFFFF;
-  border-bottom: 1px solid #DDDDDD;
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.04);
-}
-
-.masthead.segment h1 > .company-name {
+.tagline {
 	font-family: 'Lobster', cursive !important;
-	text-shadow: 3px 3px #24809c;
-}
-
-.masthead.segment h2 {
-	font-family: 'Lobster', cursive !important;
-	text-shadow: 3px 3px #24809c;
 }
 
 .post-title {
@@ -36,6 +11,9 @@
 	text-shadow: 3px 3px #24809c;
 	font-size: 2.5em !important;
 	padding: 20px;
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
 }
 
 .post-date {
@@ -49,6 +27,40 @@
     margin: 0 auto;
 }
 
+.post-content {
+	font-family: "Open Sans",sans-serif !important;
+	font-size: 1.25rem;
+	margin: 0 auto 1.875rem;
+    max-width: 60rem;
+    padding: 2.5rem 0;
+}
+
+/*******************************
+ override template
+*******************************/
+
+#example.index .masthead.segment h1 > .library {
+	font-family: 'Lobster', cursive !important;
+	text-shadow: 3px 3px #24809c;
+}
+
+#example.index .intro.bg {
+	background-image: linear-gradient(to bottom, #4e6656, #fff) !important;
+	border: medium none !important;
+}
+
+#example .alternate.vertical {
+    background-color: #f2f3f5;
+}
+
+#example.index .following.bar > .menu .item {
+    color: black;
+}
+
+.ui.attached.inverted.menu {
+    background: white none repeat scroll 0 0;
+}
+
 /*******************************
  override semantic-ui
 *******************************/
@@ -57,16 +69,16 @@
 	font-size: 0.8em !important;
 }
 
+.ui.embed {
+    margin-bottom: 15px;
+}
+
 pre {
     padding: 1em;
 }
 
 figure {
     margin: 0 auto !important;
-}
-
-.ui.menu.inverted { 
-	background-color:transparent;
 }
 
 /*******************************
