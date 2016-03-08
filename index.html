@@ -11,7 +11,10 @@ order: 1
 {% endcomment %}
 <div class="ui center aligned masthead segment">
     <div class="ui container">
-        <div class="ui large inverted menu">
+        <div class="ui large secondary inverted pointing menu">
+            <a class="toc item">
+            <i class="sidebar icon"></i>
+            </a>
             {% assign variable = site.top_menu %}
             {% include {{variable}} %}
         </div>
