@@ -8,6 +8,8 @@ tags: [magento2, php]
 excerpt: "Salve camaradas, vamos falar de Magento"
 ---
 
-Ola Bom dia
+Ola Bom dia camaradas
+
+Vamos falar de Magento
 
 Deixe sua sugestão
