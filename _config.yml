@@ -43,6 +43,10 @@ plusgoogle_username: mozgbrasil
 youtube_username: mozgbrasil
 
 top_menu: snippet-top-menu-2.html
+#src_lib_js: //cdnjs.cloudflare.com/ajax
+#src_lib_css: //cdnjs.cloudflare.com/ajax
+src_lib_js: /assets/js/web
+src_lib_css: /assets/css/web
 
 ## API Keys.
 
