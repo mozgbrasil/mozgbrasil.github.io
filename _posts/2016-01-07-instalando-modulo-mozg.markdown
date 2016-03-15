@@ -18,7 +18,7 @@ Veja na apresentação os processos executados
 
 Foi feito acesso via terminal ao servidor da amazon onde na execução dos comandos foi instalado via composer os módulos no Magento 2
 
-<div class="ui embed" data-url="//www.slideshare.net/slideshow/embed_code/key/LjBUlmiPDuf2VE"></div>
+<div class="ui embed" data-source="youtube" data-id="Nl8WY1_REig"></div>
 <script>
 $('.ui.embed').embed();
 </script>

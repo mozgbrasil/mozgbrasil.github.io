@@ -37,7 +37,7 @@ Veja no video que é exibido diversas imagens relativas aos processos executados
 
 Foi feito acesso via terminal ao servidor da amazon onde na execução dos comandos foi ativação da extensão "Zend Guard Loader" sobre o [Servidor][phpinfo]
 
-<div class="ui embed" data-url="//www.slideshare.net/slideshow/embed_code/key/xQKJHQJf7aM3vQ"></div>
+<div class="ui embed" data-source="youtube" data-id="sUfE6Rf7w14"></div>
 <script>
 $('.ui.embed').embed();
 </script>

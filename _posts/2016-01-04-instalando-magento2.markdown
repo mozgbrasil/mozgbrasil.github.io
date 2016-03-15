@@ -19,7 +19,7 @@ Veja na apresentação os processos executados
 
 Foi feito acesso via terminal ao servidor da amazon onde na execução dos comandos foi feito a instalação do Magento 2 sobre o [Servidor][phpinfo]
 
-<div class="ui embed" data-url="//www.slideshare.net/slideshow/embed_code/key/wyMu0TDKvB6X5W"></div>
+<div class="ui embed" data-source="youtube" data-id="7vXrTYFPJt0"></div>
 <script>
 $('.ui.embed').embed();
 </script>
