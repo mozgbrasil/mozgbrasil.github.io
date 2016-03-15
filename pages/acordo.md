@@ -11,11 +11,11 @@ excerpt: "Para utilizar o(s) módulo(s) da MOZG é necessário aceitar esse Acor
 
 ACORDO DE LICENÇA DO USUÁRIO FINAL
 
-Este Acordo de Licença do Usuário Final poderá ser atualizado ou editado à qualquer momento, servindo como acordo legal entre você (pessoa física ou jurídica) e a MOZG, empresa situada na Rua Luiz de Almeida Fernandes, 272 – Itaquera – São Paulo – SP – Brasil, inscrita sob o CNPJ 07.361.259/0001-07 – IE 148.089.020.112
+Este Acordo de Licença do Usuário Final poderá ser atualizado ou editado à qualquer momento, servindo como acordo legal entre você (pessoa física ou jurídica) e a CEREBRUM Comércio e Desenvolvimento de Sistemas de Informática Ltda ME, empresa situada na Rua Luiz de Almeida Fernandes, 272 – Itaquera – São Paulo – SP – Brasil, inscrita sob o CNPJ 07.361.259/0001-07 – IE 148.089.020.112
 
 # Apresentação
 
-- O(s) módulo(s) para Magento2 desenvolvidos pela MOZG é propriedade particular da MOZG.
+- O(s) módulo(s) para Magento desenvolvidos pela MOZG é propriedade particular da MOZG.
 - A MOZG comercializa o direito de utilização, atualização e suporte técnico para o(s) módulo(s).
 
 # Criptografia do Código Fonte
