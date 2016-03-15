@@ -23,7 +23,9 @@
 <div class="item">
     <div class="header">Social</div>
     <div class="menu">
-        <a class="item" href="https://packagist.org/packages/mozgbrasil/"><i class="icon github"></i>mozgbrasil</a>
+        {% if site.github_username %}
+        <a class="item" href="https://github.com/{{ site.github_username }}"><i class="icon github"></i>{{ site.github_username }}</a>
+        {% endif %}
 	<a class="item" href="https://packagist.org/packages/mozgbrasil/"><i class="icon cloud"></i>mozgbrasil</a>	<a class="item" href="https://www.dropbox.com/sh/dxc36kklk2hidbo/AAAsOlRCENRvPl8NPFqHUfAza?dl=0"><i class="icon cloud"></i>mozgbrasil</a>
         <a class="item" href="http://mozgbrasil.blogspot.com.br/"><i class="icon google"></i>mozgbrasil</a>
         <a class="item" href="https://plus.google.com/117231578401378218759"><i class="icon google plus"></i>{{ site.plusgoogle_username }}</a>
