@@ -61,6 +61,12 @@ http://mozg.com.br/
 
 https://support.google.com/plus/answer/2676340?hl=pt-BR
 
+http://all-free-download.com/free-vector/download/obama_58569.html
+
+http://all-free-download.com/free-vector/download/barack_obama_58568.html
+
+http://all-free-download.com/free-vector/download/pop_art_star_burst_58134.html
+
 ## License
 
 [Comercial License] (LICENSE.txt)

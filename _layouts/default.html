@@ -1,200 +1,198 @@
 <!DOCTYPE html>
 <html>
-    {% include head.html %}
-    <body id="example" class="index" ontouchstart="">
-        <noscript>Your browser does not support JavaScript!</noscript>
-        <!--<div style="position: fixed; bottom: 0px; left: 0px; padding: 5px; margin: 5px; display: inline; z-index:3;">
-            <div class="ui error message">
-                <i class="close icon"></i>
-                <div class="header">
-                    Aviso
-                </div>
-                <ul class="list">
-                    <li>Os módulos para Magento 2 se encontra em desenvolvimento e não está liberado para testes, favor aguardar estamos trabalhando para oferecer inovações.</li>
-                </ul>
-            </div>
-            </div>-->
-        <div class="ui vertical inverted sidebar menu" id="toc">
-            {% include snippet-sidebar-menu.html %}
-        </div>
-        <div class="ui black big launch right attached fixed button">
-            <i class="content icon"></i>
-            <span class="text">Menu</span>
-        </div>
-        <div class="ui fixed inverted main menu">
-            <div class="ui container">
-                <a class="launch icon item">
-                <i class="content icon"></i>
-                </a>
-                <div class="right menu">
-                    <div class="vertically fitted borderless item">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="pusher">
-            <div class="full height">
-                <div class="following bar">
+	{% include head.html %}
+	<body id="example" class="index" ontouchstart="">
+		<noscript>Your browser does not support JavaScript!</noscript>
+		<!--<div style="position: fixed; bottom: 0px; left: 0px; padding: 5px; margin: 5px; display: inline; z-index:3;">
+			<div class="ui error message">
+			    <i class="close icon"></i>
+			    <div class="header">
+			        Aviso
+			    </div>
+			    <ul class="list">
+			        <li>Os módulos para Magento 2 se encontra em desenvolvimento e não está liberado para testes, favor aguardar estamos trabalhando para oferecer inovações.</li>
+			    </ul>
+			</div>
+			</div>-->
+		<div class="ui vertical inverted sidebar menu" id="toc">
+			{% include snippet-sidebar-menu.html %}
+		</div>
+		<div class="ui black big launch right attached fixed button">
+			<i class="content icon"></i>
+			<span class="text">Menu</span>
+		</div>
+		<div class="ui fixed inverted main menu">
+			<div class="ui container">
+				<a class="launch icon item">
+				<i class="content icon"></i>
+				</a>
+				<div class="right menu">
+					<div class="vertically fitted borderless item">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pusher">
+			<div class="full height">
+				<div class="following bar">
 					{% assign variable = site.top_menu %}
 					{% include {{variable}} %}
-                </div>
+				</div>
 				{{ content }}
-            </div>
-
-            <div class="ui  segment">
-                <div class="ui stackable center aligned grid container">
-                    <div class="fourteen wide column">
-                        <h1 class="ui icon header">
-                            <img class="ui inline icon image foguete" src="/assets/images/icons/rocket.png">
-                            Impulsione seu e-commerce com os módulos da MOZG
-                        </h1>
-                    </div>
-                </div>
-            </div>
-            <div class="ui inverted vertical footer segment">
-                <div class="ui container">
-                    <div class="ui stackable inverted divided grid">
-                        <div class="three wide column">
-                            <h4 class="ui inverted header">Social</h4>
-                            <div class="ui inverted link list">
-                                {% if site.twitter_username %}
-                                <a class="item" href="https://twitter.com/{{ site.twitter_username }}"><i class="icon twitter"></i>{{ site.twitter_username }}</a>
-                                {% endif %}
-                                {% if site.github_username %}
-                                <a class="item" href="https://github.com/{{ site.github_username }}"><i class="icon github"></i>{{ site.github_username }}</a>
-                                {% endif %}
-                                {% if site.facebook_username %}
-                                <a class="item" href="https://www.facebook.com/{{ site.facebook_username }}"><i class="icon facebook"></i>{{ site.facebook_username }}</a>
-                                {% endif %}
-                                {% if site.youtube_username %}
-                                <!--<a class="item" href="https://www.youtube.com/user/{{ site.youtube_username }}"><i class="icon youtube"></i>{{ site.youtube_username }}</a>-->
-                                <a class="item" href="https://www.youtube.com/channel/UCiXR9cKwxNKMehSnqXvhtug"><i class="icon youtube"></i>{{ site.youtube_username }}</a>
-                                {% endif %}
-                                {% if site.plusgoogle_username %}
-                                <!--<a class="item" href="https://plus.google.com/+{{ site.plusgoogle_username }}"><i class="icon google plus"></i>{{ site.plusgoogle_username }}</a>-->
-                                <a class="item" href="https://plus.google.com/117231578401378218759"><i class="icon google plus"></i>{{ site.plusgoogle_username }}</a>
-                                {% endif %}
-                                <a class="item" href="https://mozgbrasil.wordpress.com/"><i class="icon wordpress"></i>mozgbrasil</a>
-                                <a class="item" href="http://mozgbrasil.blogspot.com.br/"><i class="icon google"></i>mozgbrasil</a>
-                            </div>
-                        </div>
-                        <div class="three wide column">
-                            <h4 class="ui inverted header">Páginas</h4>
-                            <div class="ui inverted link list">
-                                {% assign sorted_pages = site.pages | sort:"order" %}
-                                {% for node in sorted_pages %}
-                                {% if node.title %}
-                                {% if node.permalink == "" %}
-                                {% capture icon_tag %}home{% endcapture %}
-                                {% elsif node.permalink == '/sobre-nos/' %}
-                                {% capture icon_tag %}copyright{% endcapture %}
-                                {% elsif node.permalink == '/contato/' %}
-                                {% capture icon_tag %}at{% endcapture %}
-                                {% elsif node.permalink == '/category/' %}
-                                {% capture icon_tag %}idea{% endcapture %}
-                                {% elsif node.permalink == '/tag/' %}
-                                {% capture icon_tag %}tag{% endcapture %}
-                                {% else %}
-                                {% capture icon_tag %}home{% endcapture %}
-                                {% endif %}
-                                <a class="item" href="{{ node.url | prepend: site.baseurl }}"><i class="{{ icon_tag }} icon"></i>{{ node.title }}</a>
-                                {% endif %}
-                                {% endfor %}
-                            </div>
-                        </div>
-                        <div class="three wide column">
-                            <h4 class="ui inverted header">Web Content</h4>
-                            <div class="ui inverted link list">
-                                <a class="item" href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="icon rss"></i>RSS</a>
-                                <a class="item" href="{{ "/sitemap.xml" | prepend: site.baseurl }}"><i class="icon sitemap"></i>Sitemap</a>
-                            </div>
-                        </div>
-                        <div class="seven wide column">
-                            <h4 class="ui inverted header">ADS</h4>
-                            {% include snippet-google-ads.html %}
-                        </div>
-                    </div>
-                    <div class="ui inverted section divider"></div>
-                    <img class="ui centered mini image logo" src="/assets/images/logos/Red_star.svg" width="40" height="40">
-                    <div class="ui center aligned container">
-                        <div class="ui horizontal inverted small divided link list">
-                            <a class="item" href="http://mozg.com.br/" target="_blank">Copyright © 2015 MOZG</a>
-                            <br>
-                            <i class="br flag patria"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <script>
-            // intro
-            var
-              $header        = $('.masthead'),
-              handler
-            ;
-            
-            handler = {
-              getRandomInt: function(min, max) {
-                return Math.floor(Math.random() * (max - min + 1)) + min;
-              },
-              introduction: function() {
-                var
-                  background = 'bg' + handler.getRandomInt(1, 2)
-                ;
-            console.log(background);
-                // zoom out
-                $header
-                  .addClass(background)
-                  .removeClass('zoomed')
-                ;
-                // 
-                $('.intro')
-                  .addClass('bg')
-                ;
-              }
-            }
-            
-            // intro
-            handler.introduction();
-        </script>
-        <script>
-            if($(window).width() > 600) {
-              $('body')
-                .visibility({
-                  offset         : -10,
-                  observeChanges : false,
-                  once           : false,
-                  continuous     : false,
-                  onTopPassed: function() {
-                    requestAnimationFrame(function() {
-                      $('.following.bar')
-                        .addClass('light fixed')
-                        .find('.menu')
-                          .removeClass('inverted')
-                      ;
-                      $('.following .additional.item')
-                        .transition('scale in', 750)
-                      ;
-                    });
-                  },
-                  onTopPassedReverse: function() {
-                    requestAnimationFrame(function() {
-                      $('.following.bar')
-                        .removeClass('light fixed')
-                        .find('.menu')
-                          .addClass('inverted')
-                          .find('.additional.item')
-                            .transition('hide')
-                      ;
-                    });
-                  }
-                })
-              ;
-            }     
-        </script>
-        <script>
-            // http://semantic-ui.com/modules/sidebar.html
+			</div>
+			<div class="ui  segment">
+				<div class="ui stackable center aligned grid container">
+					<div class="fourteen wide column">
+						<h1 class="ui icon header">
+							<img class="ui inline icon image foguete" src="/assets/images/icons/rocket.png">
+							Impulsione seu e-commerce com os módulos da MOZG
+						</h1>
+					</div>
+				</div>
+			</div>
+			<div class="ui inverted vertical footer segment">
+				<div class="ui container">
+					<div class="ui stackable inverted divided grid">
+						<div class="three wide column">
+							<h4 class="ui inverted header">Social</h4>
+							<div class="ui inverted link list">
+								{% if site.twitter_username %}
+								<a class="item" href="https://twitter.com/{{ site.twitter_username }}"><i class="icon twitter"></i>{{ site.twitter_username }}</a>
+								{% endif %}
+								{% if site.github_username %}
+								<a class="item" href="https://github.com/{{ site.github_username }}"><i class="icon github"></i>{{ site.github_username }}</a>
+								{% endif %}
+								{% if site.facebook_username %}
+								<a class="item" href="https://www.facebook.com/{{ site.facebook_username }}"><i class="icon facebook"></i>{{ site.facebook_username }}</a>
+								{% endif %}
+								{% if site.youtube_username %}
+								<!--<a class="item" href="https://www.youtube.com/user/{{ site.youtube_username }}"><i class="icon youtube"></i>{{ site.youtube_username }}</a>-->
+								<a class="item" href="https://www.youtube.com/channel/UCiXR9cKwxNKMehSnqXvhtug"><i class="icon youtube"></i>{{ site.youtube_username }}</a>
+								{% endif %}
+								{% if site.plusgoogle_username %}
+								<!--<a class="item" href="https://plus.google.com/+{{ site.plusgoogle_username }}"><i class="icon google plus"></i>{{ site.plusgoogle_username }}</a>-->
+								<a class="item" href="https://plus.google.com/117231578401378218759"><i class="icon google plus"></i>{{ site.plusgoogle_username }}</a>
+								{% endif %}
+								<a class="item" href="https://mozgbrasil.wordpress.com/"><i class="icon wordpress"></i>mozgbrasil</a>
+								<a class="item" href="http://mozgbrasil.blogspot.com.br/"><i class="icon google"></i>mozgbrasil</a>
+							</div>
+						</div>
+						<div class="three wide column">
+							<h4 class="ui inverted header">Páginas</h4>
+							<div class="ui inverted link list">
+								{% assign sorted_pages = site.pages | sort:"order" %}
+								{% for node in sorted_pages %}
+								{% if node.title %}
+								{% if node.permalink == "" %}
+								{% capture icon_tag %}home{% endcapture %}
+								{% elsif node.permalink == '/sobre-nos/' %}
+								{% capture icon_tag %}copyright{% endcapture %}
+								{% elsif node.permalink == '/contato/' %}
+								{% capture icon_tag %}at{% endcapture %}
+								{% elsif node.permalink == '/category/' %}
+								{% capture icon_tag %}idea{% endcapture %}
+								{% elsif node.permalink == '/tag/' %}
+								{% capture icon_tag %}tag{% endcapture %}
+								{% else %}
+								{% capture icon_tag %}home{% endcapture %}
+								{% endif %}
+								<a class="item" href="{{ node.url | prepend: site.baseurl }}"><i class="{{ icon_tag }} icon"></i>{{ node.title }}</a>
+								{% endif %}
+								{% endfor %}
+							</div>
+						</div>
+						<div class="three wide column">
+							<h4 class="ui inverted header">Web Content</h4>
+							<div class="ui inverted link list">
+								<a class="item" href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="icon rss"></i>RSS</a>
+								<a class="item" href="{{ "/sitemap.xml" | prepend: site.baseurl }}"><i class="icon sitemap"></i>Sitemap</a>
+							</div>
+						</div>
+						<div class="seven wide column">
+							<h4 class="ui inverted header">ADS</h4>
+							{% include snippet-google-ads.html %}
+						</div>
+					</div>
+					<div class="ui inverted section divider"></div>
+					<img class="ui centered mini image logo" src="/assets/images/logos/Red_star.svg" width="40" height="40">
+					<div class="ui center aligned container">
+						<div class="ui horizontal inverted small divided link list">
+							<a class="item" href="http://mozg.com.br/" target="_blank">Copyright © 2015 MOZG</a>
+							<br>
+							<i class="br flag patria"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			// intro
+			var
+			$header        = $('.masthead'),
+			handler
+			;
+			
+			handler = {
+			getRandomInt: function(min, max) {
+			return Math.floor(Math.random() * (max - min + 1)) + min;
+			},
+			introduction: function() {
+			var
+			  background = 'bg' + handler.getRandomInt(1, 3)
+			;
+			console.log(background);
+			// zoom out
+			$header
+			  .addClass(background)
+			  .removeClass('zoomed')
+			;
+			// 
+			$('.intro')
+			  .addClass('bg')
+			;
+			}
+			}
+			
+			// intro
+			handler.introduction();
+		</script>
+		<script>
+			if($(window).width() > 600) {
+			$('body')
+			.visibility({
+			  offset         : -10,
+			  observeChanges : false,
+			  once           : false,
+			  continuous     : false,
+			  onTopPassed: function() {
+			    requestAnimationFrame(function() {
+			      $('.following.bar')
+				.addClass('light fixed')
+				.find('.menu')
+				  .removeClass('inverted')
+			      ;
+			      $('.following .additional.item')
+				.transition('scale in', 750)
+			      ;
+			    });
+			  },
+			  onTopPassedReverse: function() {
+			    requestAnimationFrame(function() {
+			      $('.following.bar')
+				.removeClass('light fixed')
+				.find('.menu')
+				  .addClass('inverted')
+				  .find('.additional.item')
+				    .transition('hide')
+			      ;
+			    });
+			  }
+			})
+			;
+			}     
+		</script>
+		<script>
+			// http://semantic-ui.com/modules/sidebar.html
 			// selector cache
 			var
 			$menu                = $('#toc')
@@ -207,35 +205,31 @@
 				mobileTransition : 'uncover'
 			})
 			;
-
+			
 			// launch buttons
 			$menu
 			.sidebar('attach events', '.launch.button, .view-ui, .launch.item')
 			;
-                  
-        </script>
-
-
-        <script>
-            // http://semantic-ui.com/modules/transition.html
-           
-            $('.foguete')
-            .transition('set looping')
-            .transition('bounce', '2000ms')
-            ;
-            
-            $('.image.logo')
-            .transition('set looping')
-            .transition('pulse', '2000ms')
-            ;
-            
-            $('.flag.patria')
-            .transition('set looping')
-            .transition('pulse', '2000ms')
-            ;
-                 
-        </script>
-
-    </body>
+			  
+		</script>
+		<script>
+			// http://semantic-ui.com/modules/transition.html
+			
+			$('.foguete')
+			.transition('set looping')
+			.transition('bounce', '2000ms')
+			;
+			
+			$('.image.logo')
+			.transition('set looping')
+			.transition('pulse', '2000ms')
+			;
+			
+			$('.flag.patria')
+			.transition('set looping')
+			.transition('pulse', '2000ms')
+			;
+			 
+		</script>
+	</body>
 </html>
-
