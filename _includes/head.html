@@ -69,6 +69,52 @@
     <meta property="og:type" content="website" />
     {% endif %}
 
+	<!-- https://developers.google.com/structured-data/testing-tool/ -->
+	<!-- Logotipos -->
+	<script type="application/ld+json">
+	{
+	  "@context": "http://schema.org",
+	  "@type": "Organization",
+	  "url": "http://mozg.com.br/",
+	  "logo": "http://mozg.com.br/assets/images/logos/Red_star.svg"
+	}
+	</script>
+	<!-- Contatos corporativos -->
+	<script type="application/ld+json">
+	{ "@context" : "http://schema.org",
+	  "@type" : "Organization",
+	  "url" : "http://mozg.com.br/",
+	  "contactPoint" : [
+	    { "@type" : "ContactPoint",
+	      "telephone" : "+5511977072339",
+	      "contactType" : "customer service"
+	    } ] }
+	</script>
+	<!-- Links de perfil social -->
+	<script type="application/ld+json">
+	{ "@context" : "http://schema.org",
+	  "@type" : "Organization",
+	  "name" : "Your Organization Name",
+	  "url" : "http://mozg.com.br/",
+	  "sameAs" : [ "https://www.facebook.com/mozgbrasil",
+	    "https://twitter.com/mozgbrasil",
+	    "https://plus.google.com/117231578401378218759"]
+	}
+	</script>
+	<!-- Caixa de pesquisa de sitelinks -->
+	<script type="application/ld+json">
+	{
+	   "@context": "http://schema.org",
+	   "@type": "WebSite",
+	   "url": "http://mozg.com.br/",
+	   "potentialAction": {
+	     "@type": "SearchAction",
+	     "target": "https://query.example-petstore.com/search?q={search_term_string}",
+	     "query-input": "required name=search_term_string"
+	   }
+	}
+	</script>
+
     <!-- Javascript -->
     <script>
         (function () {
