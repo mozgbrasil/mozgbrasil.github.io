@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Instalando o Magento1 via composer"
+title:  "Instalando o Magento1"
 date:   2016-01-04 17:36:05
 category: Magento2
 author: Marcio Amorim
