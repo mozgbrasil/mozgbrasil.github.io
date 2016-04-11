@@ -73,6 +73,42 @@ php bin/magento sampledata:deploy
 
 composer --version && sudo composer self-update && composer clear-cache && composer update
 
+# Para cada procedimento deve ser executado os comandos de atualização da plataforma
+
+{% endhighlight %}
+
+{% comment %}
+
+<h1 class="ui header">Pacote de tradução pt_BR</h1>
+
+Recomendo utilizar o seguinte pacote de tradução pt_BR que se encontra em 
+
+[https://crowdin.com/project/magento-2/pt-BR][crowdin]
+
+A comunidade do Magento2 agradece aos que tiverem a atitude de contribuir com a tradução
+
+Execute os comandos efetuando as devidas alterações personalizando para seu projeto
+
+{% highlight ruby %}
+
+cd magento-2.0.2-dev22
+
+mkdir -p i18n/pt_BR
+
+cd i18n/pt_BR
+
+wget https://crowdin.com/download/project/magento-2/pt-BR.zip
+
+unzip pt-BR.zip
+
+# Para cada procedimento deve ser executado os comandos de atualização da plataforma
+
+{% endhighlight %}
+
+Para atualizar a plataforma deve se executar o comando a seguir
+
+{% highlight ruby %}
+
 echo -e "\e[1;31m --(Processo 1)-- \e[0m" ;\
 sudo chmod 777 -R . ;\
 echo -e "\e[1;31m --(Processo 2)-- \e[0m" ;\
@@ -102,77 +138,10 @@ php bin/magento -vvv setup:upgrade ;\
 echo -e "\e[1;31m --(Processo 14)-- \e[0m" ;\
 sudo chmod 777 -R . ;\
 echo -e "\e[1;31m --(Processo 15)-- \e[0m" ;\
-pwd
+pwd ;\
+echo -e "\e[1;31m --(Processo 16)-- \e[0m" ;\
+php bin/magento && php bin/magento cron:run && php update/cron.php && php bin/magento setup:cron:run && sudo chmod 777 -R .
 
 {% endhighlight %}
 
-<h1 class="ui header">Pacote de tradução pt_BR</h1>
-
-Recomendo utilizar o seguinte pacote de tradução pt_BR que se encontra em 
-
-[https://crowdin.com/project/magento-2/pt-BR][crowdin]
-
-A comunidade do Magento2 agradece aos que tiverem a atitude de contribuir com a tradução
-
-Execute os comandos efetuando as devidas alterações personalizando para seu projeto
-
-{% highlight ruby %}
-
-mkdir -p i18n/pt_BR
-
-php bin/magento i18n:collect-phrases --output="i18n/pt_BR/pt_BR.csv" --magento .
-
-nano i18n/pt_BR/pt_BR.csv
-
-# Para cada alteração no arquivo de tradução deve ser executado o seguinte comando
-
-echo -e "\e[1;31m --(Processo 'Remove Cache')-- \e[0m" ;\
-rm -R -f ./var/* ./pub/static/* ;\
-echo -e "\e[1;31m --(Processo 'setup:static-content:deploy')-- \e[0m" ;\
-php bin/magento setup:static-content:deploy ;\
-echo -e "\e[1;31m --(Processo 'setup:static-content:deploy pt_BR')-- \e[0m" ;\
-php bin/magento setup:static-content:deploy pt_BR ;\
-echo -e "\e[1;31m --(Processo 'chmod')-- \e[0m" ;\
-sudo chmod 777 -R . ;\
-echo -e "\e[1;31m --(Processo 'cache:disable')-- \e[0m" ;\
-php bin/magento -vvv cache:disable ;\
-echo -e "\e[1;31m --(Processo 'cache:clean')-- \e[0m" ;\
-php bin/magento -vvv cache:clean ;\
-echo -e "\e[1;31m --(Processo 'cache:flush')-- \e[0m" ;\
-php bin/magento -vvv cache:flush ;\
-echo -e "\e[1;31m --(Processo 'cache:status')-- \e[0m" ;\
-php bin/magento -vvv cache:status ;\
-echo -e "\e[1;31m --(Processo 'deploy:mode:show')-- \e[0m" ;\
-php bin/magento -vvv deploy:mode:show ;\
-echo -e "\e[1;31m --(Processo 'indexer:reindex')-- \e[0m" ;\
-php bin/magento -vvv indexer:reindex ;\
-echo -e "\e[1;31m --(Processo 'indexer:status')-- \e[0m" ;\
-php bin/magento -vvv indexer:status ;\
-echo -e "\e[1;31m --(Processo 'maintenance:disable')-- \e[0m" ;\
-php bin/magento -vvv maintenance:disable ;\
-echo -e "\e[1;31m --(Processo 'maintenance:status')-- \e[0m" ;\
-php bin/magento -vvv maintenance:status ;\
-echo -e "\e[1;31m --(Processo 'module:status')-- \e[0m" ;\
-php bin/magento -vvv module:status ;\
-echo -e "\e[1;31m --(Processo 'setup:db:status')-- \e[0m" ;\
-php bin/magento -vvv setup:db:status ;\
-echo -e "\e[1;31m --(Processo 'setup:di:compile')-- \e[0m" ;\
-php bin/magento -vvv setup:di:compile ;\
-echo -e "\e[1;31m --(Processo 'setup:upgrade')-- \e[0m" ;\
-php bin/magento -vvv setup:upgrade ;\
-echo -e "\e[1;31m --(Processo 'chmod')-- \e[0m" ;\
-sudo chmod 777 -R . ;\
-echo -e "\e[1;31m --(Processo 'pwd')-- \e[0m" ;\
-pwd
-
-
-
-wget https://crowdin.com/download/project/magento-2/pt-BR.zip
-
-unzip pt-BR.zip
-
-bin/magento i18n:pack --mode=replace -d ./source.csv . pt_BR
-
-bin/magento setup:static-content:deploy pt_BR
-
-{% endhighlight %}
+{% endcomment %}

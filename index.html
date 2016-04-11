@@ -70,76 +70,75 @@ order: 1
 </div>
 <!-- e-mail -->
 <script>
-    jQuery(document).ready(function() {
+jQuery(document).ready(function() {
 
-        //
+//-
 
-        $('.ui.form')
-            .form({
-                fields: {
-                    email: {
-                        identifier: 'entry.907967587',
-                        rules: [{
-                            type: 'empty',
-                            prompt: 'Por favor informe o seu e-mail'
-                        }, {
-                            type: 'email',
-                            prompt: 'Por favor digite um email válido'
-                        }]
-                    }
-                }
-            });
+$('.ui.form')
+.form({
+  fields: {
+      email: {
+          identifier: 'entry.907967587',
+          rules: [{
+              type: 'empty',
+              prompt: 'Por favor informe o seu e-mail'
+          }, {
+              type: 'email',
+              prompt: 'Por favor digite um email válido'
+          }]
+      }
+  }
+});
 
-        //
+//-
 
-	function isValid() {
-		console.log(arguments.callee.name);
+function isValid() {
+  console.log(arguments.callee.name);
 
-		var field1 = $("[name='entry.907967587']").val('');
-		$("[name='entry.907967587']")[0].disabled = true;
-	}
+  var field1 = $("[name='entry.907967587']").val('');
+  $("[name='entry.907967587']")[0].disabled = true;
+}
 
-	function _isValid() {
-		_function = isValid;
-		milliseconds = 1000; // 1000 ms = 1 second.
-		_setInterval = setTimeout(_function, milliseconds);
-	}
+function _isValid() {
+  _function = isValid;
+  milliseconds = 1000; // 1000 ms = 1 second.
+  _setInterval = setTimeout(_function, milliseconds);
+}
 
-        function postToGoogle() {
-            var field1 = $("[name='entry.907967587']").val();
-            var url = "https://docs.google.com/forms/d/1WNUjjupDJ4YZ6GBwlpRX1QmQdzwdVztOUdqMithw4pU/formResponse?entry.907967587=" + field1;
+function postToGoogle() {
+  var field1 = $("[name='entry.907967587']").val();
+  var url = "https://docs.google.com/forms/d/1WNUjjupDJ4YZ6GBwlpRX1QmQdzwdVztOUdqMithw4pU/formResponse?entry.907967587=" + field1;
 
-            console.log(field1);
+  console.log(field1);
 
-            if ($('.ui.form').form('is valid')) {
-                // do something
-		_isValid();
-            }
+  if ($('.ui.form').form('is valid')) {
+  // do something
+  _isValid();
+}
 
-            /*jQuery.ajax({
-            url: url,
-            type: "GET",
-            success: function( data ) {
-            console.log( data );
-            },
-            error : function( result ){
-            console.log( result );
-            },
-            });
+/*jQuery.ajax({
+url: url,
+type: "GET",
+success: function( data ) {
+console.log( data );
+},
+error : function( result ){
+console.log( result );
+},
+});
 
 
-            return false;*/
+return false;*/
 
-        }
+}
 
-        jQuery('#form').submit(function() {
-            postToGoogle();
+jQuery('#form').submit(function() {
+  postToGoogle();
+});
 
-        });
+//-
 
-        //
-
-    });
+});
 </script>
 <div class="ui email alternate stripe vertical segment">
    <div class="ui center aligned grid container">

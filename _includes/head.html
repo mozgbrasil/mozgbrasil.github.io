@@ -14,6 +14,7 @@
     <title>{{ title_tag }} &middot; {{ site.title }}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="keywords" content="{% if page.layout != 'post' %}{{ site.keywords }}{% else %}{{ page.tags | join: ', ' }}, {{ page.categories | join: ', ' }}{% endif %}">
+
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
@@ -114,6 +115,11 @@
 	   }
 	}
 	</script>
+
+    <link href="https://plus.google.com/117178438811960262290" rel="publisher" />
+
+    <script type="text/javascript" async defer
+  src="https://apis.google.com/js/platform.js?publisherid=117178438811960262290"></script>
 
     <!-- Javascript -->
     <script>

@@ -67,7 +67,7 @@ composer require mirasvit/module-profiler:dev-master
 
 {% endhighlight %}
 
-Para registrar o módulo no Magento2 deve executar o comando a seguir
+Para registrar o módulo e atualizar a plataforma deve se executar o comando a seguir
 
 {% highlight ruby %}
 
@@ -96,14 +96,10 @@ php bin/magento -vvv module:status ;\
 echo -e "\e[1;31m --(Processo 12)-- \e[0m" ;\
 php bin/magento -vvv setup:db:status ;\
 echo -e "\e[1;31m --(Processo 13)-- \e[0m" ;\
-php bin/magento -vvv setup:di:compile ;\
-echo -e "\e[1;31m --(Processo 14)-- \e[0m" ;\
 php bin/magento -vvv setup:upgrade ;\
-echo -e "\e[1;31m --(Processo 15)-- \e[0m" ;\
-php bin/magento setup:static-content:deploy ;\
-echo -e "\e[1;31m --(Processo 16)-- \e[0m" ;\
+echo -e "\e[1;31m --(Processo 14)-- \e[0m" ;\
 sudo chmod 777 -R . ;\
-echo -e "\e[1;31m --(Processo 17)-- \e[0m" ;\
+echo -e "\e[1;31m --(Processo 15)-- \e[0m" ;\
 pwd
 
 {% endhighlight %}
