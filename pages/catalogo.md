@@ -1,0 +1,194 @@
+---
+layout: page
+title: Catálogo
+permalink: /catalogo/
+order: 3
+excerpt: "Veja nosso catálogo de softwares"
+---
+
+<table class="ui compact celled table">
+   <thead>
+      <tr>
+         <th></th>
+         <th class="center aligned"><a href="http://ec2-54-232-215-118.sa-east-1.compute.amazonaws.com/public_html/magento-1.9.2.4-dev30/index.php/admin/">Magento 1</a></th>
+         <th class="center aligned"><a href="">Magento 2</a></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Bundle</td>
+         <td>
+            <table class="ui red table">
+               <thead>
+                  <tr>
+                     <th>PHP 5.5</th>
+                     <th>PHP 5.6</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-bundle-php55#mozgbundle"><i class="large external icon"></i></a></td>
+                     <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-bundle-php56#mozgbundle"><i class="large external icon"></i></a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+         <td>
+            <table class="ui red table">
+               <thead>
+                  <tr>
+                     <th>PHP 5.5</th>
+                     <th>PHP 5.6</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="center aligned"><a href="https://github.com/mozgbrasil/magento2-bundle-php55#mozgbundle"><i class="large external icon"></i></a></td>
+                     <td class="center aligned"><a href="https://github.com/mozgbrasil/magento2-bundle-php56#mozgbundle"><i class="large external icon"></i></a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+      </tr>
+      <tr>
+         <td>Correios</td>
+         <td>
+            <table class="ui red table">
+               <thead>
+                  <tr>
+                     <th>PHP 5.5</th>
+                     <th>PHP 5.6</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-correios-php55#mozgcorreios"><i class="large external icon"></i></a></td>
+                     <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-correios-php56#mozgcorreios"><i class="large external icon"></i></a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+         <td>
+            <table class="ui red table">
+               <thead>
+                  <tr>
+                     <th>PHP 5.5</th>
+                     <th>PHP 5.6</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="center aligned"><a href="https://github.com/mozgbrasil/magento2-correios-php55#mozgcorreios"><i class="large external icon"></i></a></td>
+                     <td class="center aligned"><a href="https://github.com/mozgbrasil/magento2-correios-php56#mozgcorreios"><i class="large external icon"></i></a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+      </tr>
+      <tr>
+         <td>Correios Exporta Fácil</td>
+         <td>
+            <table class="ui red table">
+               <thead>
+                  <tr>
+                     <th>PHP 5.5</th>
+                     <th>PHP 5.6</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-correios-php55/blob/master/README_ExportaFacil.md#mozgcorreios"><i class="large external icon"></i></a></td>
+                     <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-correios-php56/blob/master/README_ExportaFacil.md#mozgcorreios"><i class="large external icon"></i></a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+         <td>
+            <table class="ui red table">
+               <thead>
+                  <tr>
+                     <th>PHP 5.5</th>
+                     <th>PHP 5.6</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="center aligned"><a href="https://github.com/mozgbrasil/magento2-correios-php55/blob/master/README_ExportaFacil.md#mozgcorreios"><i class="large external icon"></i></a></td>
+                     <td class="center aligned"><a href="https://github.com/mozgbrasil/magento2-correios-php56/blob/master/README_ExportaFacil.md#mozgcorreios"><i class="large external icon"></i></a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+      </tr>
+      <tr>
+         <td>Jadlog</td>
+         <td>
+            <table class="ui red table">
+               <thead>
+                  <tr>
+                     <th>PHP 5.5</th>
+                     <th>PHP 5.6</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-jadlog-php55#mozgjadlog"><i class="large external icon"></i></a></td>
+                     <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-jadlog-php56#mozgjadlog"><i class="large external icon"></i></a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+         <td>
+            <table class="ui red table">
+               <thead>
+                  <tr>
+                     <th>PHP 5.5</th>
+                     <th>PHP 5.6</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="center aligned"><a href="https://github.com/mozgbrasil/magento2-jadlog-php55#mozgjadlog"><i class="large external icon"></i></a></td>
+                     <td class="center aligned"><a href="https://github.com/mozgbrasil/magento2-jadlog-php56#mozgjadlog"><i class="large external icon"></i></a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+      </tr>
+      <tr>
+         <td>Jamef</td>
+         <td>
+            <table class="ui red table">
+               <thead>
+                  <tr>
+                     <th>PHP 5.5</th>
+                     <th>PHP 5.6</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-jamef-php55#mozgjamef"><i class="large external icon"></i></a></td>
+                     <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-jamef-php56#mozgjamef"><i class="large external icon"></i></a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+         <td>
+            <table class="ui red table">
+               <thead>
+                  <tr>
+                     <th>PHP 5.5</th>
+                     <th>PHP 5.6</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="center aligned"><a href="https://github.com/mozgbrasil/magento2-jamef-php55#mozgjamef"><i class="large external icon"></i></a></td>
+                     <td class="center aligned"><a href="https://github.com/mozgbrasil/magento2-jamef-php56#mozgjamef"><i class="large external icon"></i></a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+      </tr>
+   </tbody>
+</table>
