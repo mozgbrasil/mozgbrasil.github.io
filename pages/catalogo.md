@@ -10,7 +10,7 @@ excerpt: "Veja nosso catálogo de softwares"
    <thead>
       <tr>
          <th></th>
-         <th class="center aligned"><a href="http://ec2-54-232-215-118.sa-east-1.compute.amazonaws.com/public_html/magento-1.9.2.4-dev30/index.php/admin/">Magento 1</a></th>
+         <th class="center aligned"><a href="http://ec2-54-233-196-70.sa-east-1.compute.amazonaws.com/public_html/magento-1.9.2.4-dev30/index.php/admin">Magento 1</a></th>
          <th class="center aligned"><a href="">Magento 2</a></th>
       </tr>
    </thead>

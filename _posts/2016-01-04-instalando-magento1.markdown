@@ -8,8 +8,6 @@ tags: [magento2, php]
 excerpt: "Nesse artigo será exibido detalhadamente os processos feito via terminal para a instalação do Magento1"
 ---
 
-[phpinfo]:http://ec2-54-232-215-118.sa-east-1.compute.amazonaws.com/public_html/phpinfo.php
-
 ## Introdução
 
 Ola Boa Tarde
@@ -27,6 +25,9 @@ composer --version && composer self-update && composer clear-cache
 
 # Download Magento
 # https://razbakov.com/blog/install-magento-via-composer
+# Quando aparecer 
+# please define your magento root dir [root]
+# tecle ENTER, isso irá instalar o Magento nessa pasta root
 
 composer require magento-hackathon/magento-composer-installer ~3.0 ;\
 composer require aydin-hassan/magento-core-composer-installer ~1.2 ;\
@@ -68,7 +69,7 @@ php -f install.php -- \
 --db_name "magento-1.9.2.4-dev30" \
 --db_user "root" \
 --db_pass "???" \
---url "http://ec2-54-232-215-118.sa-east-1.compute.amazonaws.com/public_html/magento-1.9.2.4-dev30/" \
+--url "http://ec2-54-233-196-70.sa-east-1.compute.amazonaws.com/public_html/magento-1.9.2.4-dev30/" \
 --skip_url_validation "yes" \
 --use_rewrites "yes" \
 --use_secure "no" \
@@ -76,7 +77,7 @@ php -f install.php -- \
 --use_secure_admin "no" \
 --admin_firstname "Marcio" \
 --admin_lastname "Amorim" \
---admin_email "suporte@cerebrum.com.br" \
+--admin_email "mailer@mozg.com.br" \
 --admin_username "admin" \
 --admin_password "123456a"
 
@@ -100,14 +101,26 @@ php shell/indexer.php --reindexall
 ./mage sync ;\
 ./mage list-installed ;\
 ./mage list-upgrades ;\
-./mage install http://connect20.magentocommerce.com/community Mage_Locale_pt_BR ;\
+./mage install http://connect20.magentocommerce.com/community Mage_Locale_pt_BR
 
 # Install Extensions via Composer
 
 # Certique se que no arquivo composer.json tenha o trecho "stability" e "repositories", conforme
 # https://gist.github.com/mozgbrasil/0c9bb8792ea6273ea24aed30b0fbcfba
 
+nano composer.json ;\
+composer require aschroder/smtp_pro ;\
 composer require aoepeople/aoe_scheduler ;\
 composer require mozgbrasil/magento-bundle-php56
+
+# Caso venha a ocorrer o erro abaixo eu editei o compose.json e retirei o suporte ao "repositories" packages.magento.com
+# 
+# Installation failed, reverting ./composer.json to its original content. The following exception is caused by a lack of memory and not having swap configured Check https://getcomposer.org/doc/articles/troubleshooting.md#proc-open-fork-failed-errors for details
+
+# Install Cerebrum_Telencephalon
+
+wget --no-check-certificate https://raw.githubusercontent.com/cerebrumgit/cerebrum/master/wizard_module.sh ;\
+chmod +x ./wizard_module.sh ;\
+./wizard_module.sh 5.5
 
 {% endhighlight %}
