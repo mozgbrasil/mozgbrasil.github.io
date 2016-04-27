@@ -28,16 +28,11 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 {% highlight ruby %}
 
-pwd
-
-ls
-
-cd public_html
-
-mkdir magento-2.0.2-dev22
-
-cd magento-2.0.2-dev22
-
+cd ~/dados/public_html ;\
+pwd ;\
+ls ;\
+mkdir magento-2.0.2-dev23 ;\
+cd magento-2.0.2-dev23 ;\
 composer --version && sudo composer self-update && composer clear-cache
 
 composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition magento2
@@ -50,12 +45,12 @@ sudo chown -R :www-data .
 
 sudo find . -type d -exec chmod 770 {} \; && sudo find . -type f -exec chmod 660 {} \; && sudo chmod u+x bin/magento
 
-mysqladmin -u root -p CREATE "magento202dev22";
+mysqladmin -u root -p CREATE "magento202dev23";
 
 php bin/magento setup:install \
---base-url=http://ec2-54-232-215-118.sa-east-1.compute.amazonaws.com/public_html/magento-2.0.2-dev22/ \
+--base-url=http://127.0.0.1/public_html/magento-2.0.2-dev23/ \
 --backend-frontname=admin \
---db-host=127.0.0.1 --db-name=magento202dev22 --db-user=root --db-password=??? \
+--db-host=127.0.0.1 --db-name=magento202dev23 --db-user=root --db-password=??? \
 --admin-firstname=Marcio --admin-lastname=Amorim --admin-email=email@gmail.com.br \
 --admin-user=admin --admin-password=123456a --language=pt_BR \
 --currency=BRL --timezone=America/Sao_Paulo \
@@ -81,7 +76,7 @@ composer --version && sudo composer self-update && composer clear-cache && compo
 
 <h1 class="ui header">Pacote de tradução pt_BR</h1>
 
-Recomendo utilizar o seguinte pacote de tradução pt_BR que se encontra em 
+Recomendo utilizar o seguinte pacote de tradução pt_BR que se encontra em
 
 [https://crowdin.com/project/magento-2/pt-BR][crowdin]
 

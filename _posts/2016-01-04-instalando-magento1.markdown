@@ -16,16 +16,16 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 {% highlight ruby %}
 
+cd ~/dados/public_html ;\
 pwd ;\
 ls ;\
-cd public_html ;\
-mkdir magento-1.9.2.4-dev30 ;\
-cd magento-1.9.2.4-dev30 ;\
+mkdir magento-1.9.2.4-dev31 ;\
+cd magento-1.9.2.4-dev31 ;\
 composer --version && composer self-update && composer clear-cache
 
 # Download Magento
 # https://razbakov.com/blog/install-magento-via-composer
-# Quando aparecer 
+# Quando aparecer
 # please define your magento root dir [root]
 # tecle ENTER, isso irá instalar o Magento nessa pasta root
 
@@ -46,8 +46,8 @@ nano composer.json
 
 # Create Database
 
-mysqladmin -u root -p DROP "magento-1.9.2.4-dev30" ;\
-mysqladmin -u root -p CREATE "magento-1.9.2.4-dev30"
+mysqladmin -u root -p DROP "magento-1.9.2.4-dev31" ;\
+mysqladmin -u root -p CREATE "magento-1.9.2.4-dev31"
 
 # Sample Data
 
@@ -55,7 +55,7 @@ wget https://raw.githubusercontent.com/Vinai/compressed-magento-sample-data/1.9.
 7za x compressed-no-mp3-magento-sample-data-1.9.1.0.tar.7z ;\
 tar -xvf compressed-no-mp3-magento-sample-data-1.9.1.0.tar ;\
 cp -ri magento-sample-data-1.9.1.0/media/* ./media/ ;\
-mysql -h 'localhost' -u 'root' -p 'magento-1.9.2.4-dev30' < 'magento-sample-data-1.9.1.0/magento_sample_data_for_1.9.1.0.sql' ;\
+mysql -h 'localhost' -u 'root' -p 'magento-1.9.2.4-dev31' < 'magento-sample-data-1.9.1.0/magento_sample_data_for_1.9.1.0.sql' ;\
 rm -fr compressed-no-mp3-magento-sample-data-1.9.1.0.tar compressed-no-mp3-magento-sample-data-1.9.1.0.tar.7z magento-sample-data-1.9.1.0
 
 # Install Magento
@@ -66,10 +66,10 @@ php -f install.php -- \
 --timezone "America/Sao_Paulo" \
 --default_currency "BRL" \
 --db_host "localhost" \
---db_name "magento-1.9.2.4-dev30" \
+--db_name "magento-1.9.2.4-dev31" \
 --db_user "root" \
 --db_pass "???" \
---url "http://ec2-54-233-196-70.sa-east-1.compute.amazonaws.com/public_html/magento-1.9.2.4-dev30/" \
+--url "http://127.0.0.1/public_html/magento-1.9.2.4-dev31/" \
 --skip_url_validation "yes" \
 --use_rewrites "yes" \
 --use_secure "no" \
@@ -114,7 +114,7 @@ composer require aoepeople/aoe_scheduler ;\
 composer require mozgbrasil/magento-bundle-php56
 
 # Caso venha a ocorrer o erro abaixo eu editei o compose.json e retirei o suporte ao "repositories" packages.magento.com
-# 
+#
 # Installation failed, reverting ./composer.json to its original content. The following exception is caused by a lack of memory and not having swap configured Check https://getcomposer.org/doc/articles/troubleshooting.md#proc-open-fork-failed-errors for details
 
 # Install Cerebrum_Telencephalon
