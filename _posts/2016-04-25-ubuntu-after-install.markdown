@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Instalando o Magento1"
-date:   2016-04-26 17:36:05
-category: Magento2
+title:  "Ambiente de desenvolvimento no Ubuntu"
+date:   2016-04-25 17:36:05
+category: Ubuntu
 author: Marcio Amorim
 tags: [magento2, php]
 excerpt: "Nesse artigo será exibido detalhadamente os processos feito via terminal para a instalação dos programas usado para desenvolvimento de softwares"

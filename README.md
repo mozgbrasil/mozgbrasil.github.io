@@ -33,8 +33,6 @@ http://semantic-ui.com/
 
 https://github.com/plusjade/jekyll-bootstrap/blob/master/_plugins/debug.rb
 
-https://github.com/markets/jekyll-timeago
-
 https://github.com/bryanbraun/anchorjs
 
 https://code.google.com/apis/console/

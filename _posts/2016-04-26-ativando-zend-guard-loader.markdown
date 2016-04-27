@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ativando o Zend Guard Loader sob o servidor web"
-date:   2016-04-27 15:36:06
+date:   2016-04-26 14:01:01
 category: Zend Guard Loader
 author: Marcio Amorim
 tags: [magento2, php]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Instalando o Magento2"
-date:   2016-04-27 17:36:06
+date:   2016-04-26 14:01:03
 category: Magento2
 author: Marcio Amorim
 tags: [magento2, php]

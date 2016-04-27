@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Instalando os módulos da MOZG no Magento2"
-date:   2016-04-27 15:52:52
+date:   2016-04-26 14:01:04
 category: Módulos
 author: Marcio Amorim
 tags: [magento2, composer]

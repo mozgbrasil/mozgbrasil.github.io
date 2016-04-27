@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Instalando o Magento1"
-date:   2016-04-27 17:36:05
-category: Magento2
+date:   2016-04-26 14:01:02
+category: Magento1
 author: Marcio Amorim
 tags: [magento2, php]
 excerpt: "Nesse artigo será exibido detalhadamente os processos feito via terminal para a instalação do Magento1"

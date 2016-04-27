@@ -18,7 +18,7 @@
     <div class="content">
         <div class="header">
 			<a class="ui red ribbon label" href="/category/#{{ post.category }}">{{ post.category }}</a>
-			<i class="icon calendar"></i> {% include snippet-post-date.html %}<!-- {{ post.date | date: "%d %b/%Y %H:%M" }} -->
+			<i class="icon calendar"></i> {% include snippet-post-date.html %}
 		</div>
     </div>
     <div class="content">
@@ -55,9 +55,7 @@
     <p>
         <i class="icon calendar"></i> {% include snippet-post-date.html %}<!-- {{ post.date | date: "%d %b/%Y %H:%M" }} -->
         • <i class="edit icon"></i> {% if post.author %} {{ post.author }} {% endif %}
-        <!-- Based on https://andytaylor.me/2013/04/07/reading-time/ -->
-        <!-- • <i class="icon clock"></i> ~ <span class="time">{{ post.date | timeago }}</span> -->
-        • <i class="icon tags"></i> 
+        • <i class="icon tags"></i>
         {% for tag in post.tags %}
         <a href="/tag/#{{ tag }}" class="ui tag label mini orange">{{ tag }}</a>
         {% endfor %}

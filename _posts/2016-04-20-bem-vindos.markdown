@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sejam Bem Vindos"
-date:   2016-04-25 09:00:00
+date:   2016-04-20 09:00:00
 category: Saudação
 author: Marcio Amorim
 tags: [magento2, php]
