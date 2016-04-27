@@ -76,7 +76,7 @@ composer --version && sudo composer self-update && composer clear-cache && compo
 
 <h1 class="ui header">Pacote de tradução pt_BR</h1>
 
-Recomendo utilizar o seguinte pacote de tradução pt_BR que se encontra em
+Recomendo utilizar o seguinte pacote de tradução pt_BR que se encontra em 
 
 [https://crowdin.com/project/magento-2/pt-BR][crowdin]
 

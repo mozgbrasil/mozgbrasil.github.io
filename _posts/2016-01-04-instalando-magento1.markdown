@@ -121,6 +121,6 @@ composer require mozgbrasil/magento-bundle-php56
 
 wget --no-check-certificate https://raw.githubusercontent.com/cerebrumgit/cerebrum/master/wizard_module.sh ;\
 chmod +x ./wizard_module.sh ;\
-./wizard_module.sh 5.5
+./wizard_module.sh 5.6
 
 {% endhighlight %}
