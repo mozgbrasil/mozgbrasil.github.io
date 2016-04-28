@@ -124,3 +124,14 @@ chmod +x ./wizard_module.sh ;\
 ./wizard_module.sh 5.6
 
 {% endhighlight %}
+
+
+### Habilitar exibição do erro no Magento
+
+No magento edite o arquivo index.php e retire o comentário # devendo ficar como abaixo
+
+	ini_set('display_errors', 1);
+
+Edite o arquivo .htacces e adicione 
+
+	SetEnv MAGE_IS_DEVELOPER_MODE "true"
