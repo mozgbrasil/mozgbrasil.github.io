@@ -20,12 +20,16 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 # Dev Server
 
-sudo apt install mysql-server mysql-client phpmyadmin php-cli php-curl php-sqlite3 php-mcrypt php-mbstring php-gettext php-gd php-intl php-xsl php-zip ;\
+sudo apt install mysql-server mysql-client phpmyadmin php-cli php-curl php-sqlite3 php-mcrypt php-mbstring php-gettext php-gd php-intl php-xsl php-zip php-soap ;\
 
 mkdir -p ~/dados/public_html ;\
 sudo ln -s ~/dados/public_html /var/www/html ;\
 echo "<?php phpinfo(); ?>" | sudo tee ~/dados/public_html/phpinfo.php > /dev/null ;\
 php -l ~/dados/public_html/phpinfo.php
+
+sudo a2enmod rewrite
+
+sudo usermod -g www-data $USER ; # FIX: Magento2
 
 # Composer
 
@@ -37,7 +41,7 @@ sudo mv composer.phar /usr/local/bin/composer
 
 # Basic
 
-sudo apt install build-essential ubuntu-restricted-extras ubuntu-sdk ubuntu-make juju python-software-properties filezilla git nautilus-dropbox p7zip-full keepassx meld curl gufw gimp gimp-plugin-registry shutter ffmpeg lame links links2 elinks lynx openssh-server ruby-dev nodejs chromium-browser inkscape && php -v && sudo service ssh start ;\
+sudo apt install build-essential ubuntu-restricted-extras ubuntu-sdk ubuntu-make juju python-software-properties filezilla git nautilus-dropbox p7zip-full keepassx meld curl gufw gimp gimp-plugin-registry shutter ffmpeg lame links links2 elinks lynx openssh-server ruby-dev nodejs chromium-browser inkscape jq && php -v && sudo service ssh start ;\
 
 sudo add-apt-repository ppa:webupd8team/sublime-text-3 && sudo apt-get update && sudo apt-get install sublime-text-installer
 

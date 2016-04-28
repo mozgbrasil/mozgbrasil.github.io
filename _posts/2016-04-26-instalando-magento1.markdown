@@ -21,7 +21,7 @@ pwd ;\
 ls ;\
 mkdir magento-1.9.2.4-dev31 ;\
 cd magento-1.9.2.4-dev31 ;\
-composer --version && composer self-update && composer clear-cache
+composer --version && sudo composer self-update && composer clear-cache
 
 # Download Magento
 # https://razbakov.com/blog/install-magento-via-composer

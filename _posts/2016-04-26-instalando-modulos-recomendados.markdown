@@ -18,7 +18,9 @@ Cada bloco de comando abaixo instala o devido módulo no Magento2, devendo em se
 
 {% highlight ruby %}
 
-composer require esilvajr/pagseguro-magento2:dev-master
+composer require magento2translations/language_pt_br:dev-master
+
+composer require pagseguro/magento2:dev-master
 
 composer require sebwite/magento2-smartsearch:*
 
@@ -44,7 +46,6 @@ composer require nabooru/module-address-validation-adapter-dummy:dev-master
 
 composer require scandiweb/facebook-login:*
 
-# ERRO AO USAR O COMPILER
 composer require richdynamix/personalised-products:*
 
 composer config repositories.ultimatemodulecreator-umc-base git git@github.com:UltimateModuleCreator/Umc_Base.git

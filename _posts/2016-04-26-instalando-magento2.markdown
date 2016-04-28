@@ -35,23 +35,20 @@ mkdir magento-2.0.2-dev23 ;\
 cd magento-2.0.2-dev23 ;\
 composer --version && sudo composer self-update && composer clear-cache
 
-composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition magento2
 
-ls
+composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition magento2 ;\
+ls ;\
+mv magento2/{.[!.],}* . ;\
+sudo chown -R :www-data . ;\
+sudo find . -type d -exec chmod 770 {} \; && sudo find . -type f -exec chmod 660 {} \; && sudo chmod u+x bin/magento ;\
+mysqladmin -u root -p CREATE "magento202dev23"
 
-mv magento2/{.[!.],}* .
-
-sudo chown -R :www-data .
-
-sudo find . -type d -exec chmod 770 {} \; && sudo find . -type f -exec chmod 660 {} \; && sudo chmod u+x bin/magento
-
-mysqladmin -u root -p CREATE "magento202dev23";
 
 php bin/magento setup:install \
 --base-url=http://127.0.0.1/public_html/magento-2.0.2-dev23/ \
 --backend-frontname=admin \
 --db-host=127.0.0.1 --db-name=magento202dev23 --db-user=root --db-password=??? \
---admin-firstname=Marcio --admin-lastname=Amorim --admin-email=email@gmail.com.br \
+--admin-firstname=Marcio --admin-lastname=Amorim --admin-email=mailer@mozg.com.br \
 --admin-user=admin --admin-password=123456a --language=pt_BR \
 --currency=BRL --timezone=America/Sao_Paulo \
 --use-sample-data \
@@ -72,8 +69,6 @@ composer --version && sudo composer self-update && composer clear-cache && compo
 
 {% endhighlight %}
 
-{% comment %}
-
 <h1 class="ui header">Pacote de tradução pt_BR</h1>
 
 Recomendo utilizar o seguinte pacote de tradução pt_BR que se encontra em 
@@ -86,15 +81,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 {% highlight ruby %}
 
-cd magento-2.0.2-dev22
-
-mkdir -p i18n/pt_BR
-
-cd i18n/pt_BR
-
-wget https://crowdin.com/download/project/magento-2/pt-BR.zip
-
-unzip pt-BR.zip
+composer require magento2translations/language_pt_br:dev-master
 
 # Para cada procedimento deve ser executado os comandos de atualização da plataforma
 
@@ -138,5 +125,3 @@ echo -e "\e[1;31m --(Processo 16)-- \e[0m" ;\
 php bin/magento && php bin/magento cron:run && php update/cron.php && php bin/magento setup:cron:run && sudo chmod 777 -R .
 
 {% endhighlight %}
-
-{% endcomment %}
