@@ -16,7 +16,7 @@ excerpt: "Veja nosso catálogo de softwares"
    </thead>
    <tbody>
       <tr>
-         <td>Bundle</td>
+         <td>Pacote completo</td>
          <td>
             <table class="ui red table">
                <thead>
