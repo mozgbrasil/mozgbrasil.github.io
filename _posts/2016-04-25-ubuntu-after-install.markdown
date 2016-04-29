@@ -59,33 +59,37 @@ sudo apt update && sudo apt upgrade && sudo apt dist-upgrade
 
 https://console.aws.amazon.com/
 
-	AWS Management Console
+{% highlight ruby %}
 
-		Compute		 
-			EC2
-			Virtual Servers in the Cloud
+    AWS Management Console
 
-				Create Instance
-					Launch Instance
+        Compute      
+            EC2
+            Virtual Servers in the Cloud
 
-					Step 1:
-						Ubuntu Server 14.04 LTS
-						Select
+                Create Instance
+                    Launch Instance
 
-					Step 2:
-						t2.micro
-						Review and Launch
-						Launch
-						Create a new key pair: Name = cerkeypair
-						Download Key Pair
-						Launch Instance
+                    Step 1:
+                        Ubuntu Server 14.04 LTS
+                        Select
 
-					Step 3:
-						Instances
-						Select
-						Collum -> Security Groups
-								Launc Wizard
-									Inbound -> Edit -> Add -> Custom TCP Rule = 80
+                    Step 2:
+                        t2.micro
+                        Review and Launch
+                        Launch
+                        Create a new key pair: Name = cerkeypair
+                        Download Key Pair
+                        Launch Instance
+
+                    Step 3:
+                        Instances
+                        Select
+                        Collum -> Security Groups
+                                Launc Wizard
+                                    Inbound -> Edit -> Add -> Custom TCP Rule = 80
+                                    
+{% endhighlight %}
 
 SSH
 
