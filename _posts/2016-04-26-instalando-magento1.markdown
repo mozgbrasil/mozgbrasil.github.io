@@ -111,9 +111,7 @@ php shell/indexer.php --reindexall
 nano composer.json ;\
 composer require aschroder/smtp_pro ;\
 composer require aoepeople/aoe_scheduler ;\
-composer require mozgbrasil/magento-bundle-php55 ;\
-composer require connect20/ricardomartins_pagseguro ;\
-composer require deniscsz/magento-jamef-carrier:dev-master
+composer require mozgbrasil/magento-bundle-php55
 
 # Install Cerebrum_Telencephalon
 
