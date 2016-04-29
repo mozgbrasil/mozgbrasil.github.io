@@ -68,9 +68,7 @@ composer --version && sudo composer self-update && composer clear-cache && compo
 # Install Extensions via Composer
 
 composer require magento2translations/language_pt_br:dev-master ;\
-composer require magepal/magento2-gmailsmtpapp ;\
 composer require mozgbrasil/magento-bundle-php55 ;\
-composer require pagseguro/magento2:dev-master
 
 # Para cada procedimento deve ser executado os comandos de atualização da plataforma
 
