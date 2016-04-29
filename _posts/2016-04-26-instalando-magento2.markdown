@@ -36,7 +36,7 @@ cd magento-2.0.2-dev23 ;\
 composer --version && sudo composer self-update && composer clear-cache
 
 
-composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition magento2 ;\
+composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition magento2 -vvv ;\
 ls ;\
 mv magento2/{.[!.],}* . ;\
 sudo chown -R :www-data . ;\
