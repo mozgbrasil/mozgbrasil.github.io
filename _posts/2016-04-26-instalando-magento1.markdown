@@ -111,17 +111,15 @@ php shell/indexer.php --reindexall
 nano composer.json ;\
 composer require aschroder/smtp_pro ;\
 composer require aoepeople/aoe_scheduler ;\
-composer require mozgbrasil/magento-bundle-php56
-
-# Caso venha a ocorrer o erro abaixo eu editei o compose.json e retirei o suporte ao "repositories" packages.magento.com
-#
-# Installation failed, reverting ./composer.json to its original content. The following exception is caused by a lack of memory and not having swap configured Check https://getcomposer.org/doc/articles/troubleshooting.md#proc-open-fork-failed-errors for details
+composer require mozgbrasil/magento-bundle-php55 ;\
+composer require connect20/ricardomartins_pagseguro ;\
+composer require deniscsz/magento-jamef-carrier:dev-master
 
 # Install Cerebrum_Telencephalon
 
 wget --no-check-certificate https://raw.githubusercontent.com/cerebrumgit/cerebrum/master/wizard_module.sh ;\
 chmod +x ./wizard_module.sh ;\
-./wizard_module.sh 5.6
+./wizard_module.sh 5.5
 
 {% endhighlight %}
 
@@ -135,3 +133,7 @@ No magento edite o arquivo index.php e retire o comentário # devendo ficar como
 Edite o arquivo .htacces e adicione 
 
 	SetEnv MAGE_IS_DEVELOPER_MODE "true"
+
+No terminal pode ser o comando para a visualização do log de erro do servidor
+
+	tail -f /var/log/apache2/error.log

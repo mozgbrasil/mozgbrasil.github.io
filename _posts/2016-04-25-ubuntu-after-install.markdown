@@ -12,6 +12,8 @@ excerpt: "Nesse artigo será exibido detalhadamente os processos feito via termi
 
 Ola Boa Tarde
 
+<h1 class="ui header">Montando ambiente local</h1>
+
 Execute os comandos efetuando as devidas alterações personalizando para seu projeto
 
 {% highlight ruby %}
@@ -33,10 +35,8 @@ sudo usermod -g www-data $USER ; # FIX: Magento2
 
 # Composer
 
-php -r "readfile('https://getcomposer.org/installer');" > composer-setup.php
-php -r "if (hash_file('SHA384', 'composer-setup.php') === '7228c001f88bee97506740ef0888240bd8a760b046ee16db8f4095c0d8d525f2367663f22a46b48d072c816e7fe19959') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;" ;\
-php composer-setup.php ;\
-php -r "unlink('composer-setup.php');" ;\
+https://getcomposer.org/download/
+
 sudo mv composer.phar /usr/local/bin/composer
 
 # Basic
@@ -52,5 +52,72 @@ sudo gem install jekyll && sudo gem install github-pages && sudo gem install rou
 # OS Update
 
 sudo apt update && sudo apt upgrade && sudo apt dist-upgrade
+
+{% endhighlight %}
+
+<h1 class="ui header">Montando ambiente na Amazon</h1>
+
+https://console.aws.amazon.com/
+
+	AWS Management Console
+
+		Compute		 
+			EC2
+			Virtual Servers in the Cloud
+
+				Create Instance
+					Launch Instance
+
+					Step 1:
+						Ubuntu Server 14.04 LTS
+						Select
+
+					Step 2:
+						t2.micro
+						Review and Launch
+						Launch
+						Create a new key pair: Name = cerkeypair
+						Download Key Pair
+						Launch Instance
+
+					Step 3:
+						Instances
+						Select
+						Collum -> Security Groups
+								Launc Wizard
+									Inbound -> Edit -> Add -> Custom TCP Rule = 80
+
+SSH
+
+{% highlight ruby %}
+
+ssh -i cerkeypair.pem ubuntu@52.67.52.67
+
+# Ubuntu 14.04
+
+sudo apt update && sudo apt upgrade && sudo apt dist-upgrade
+
+# Dev Server
+
+sudo apt-get install mysql-server-5.6 mysql-client-5.6 mysql-client-core-5.6 apache2 php5 libapache2-mod-php5 php5-common php5-mcrypt php5-curl php5-cli php5-mysql php5-sqlite php5-gd php5-intl php5-xsl php5-dev phpmyadmin p7zip-full unzip
+
+mkdir -p ~/public_html ;\
+sudo ln -s ~/public_html /var/www/html ;\
+echo "<?php phpinfo(); ?>" | sudo tee ~/public_html/phpinfo.php > /dev/null ;\
+php -l ~/public_html/phpinfo.php
+
+sudo a2enmod rewrite  # FIX: Rewrite
+
+sudo php5enmod mcrypt  # FIX: PHP Fatal error:  Call to undefined function mcrypt_module_open
+
+sudo service apache2 restart
+
+sudo usermod -g www-data $USER ; # FIX: Magento2
+
+# Composer
+
+https://getcomposer.org/download/
+
+sudo mv composer.phar /usr/local/bin/composer
 
 {% endhighlight %}

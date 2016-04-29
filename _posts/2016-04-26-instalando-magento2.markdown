@@ -35,6 +35,7 @@ mkdir magento-2.0.2-dev23 ;\
 cd magento-2.0.2-dev23 ;\
 composer --version && sudo composer self-update && composer clear-cache
 
+# Download Magento
 
 composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition magento2 -vvv ;\
 ls ;\
@@ -43,6 +44,7 @@ sudo chown -R :www-data . ;\
 sudo find . -type d -exec chmod 770 {} \; && sudo find . -type f -exec chmod 660 {} \; && sudo chmod u+x bin/magento ;\
 mysqladmin -u root -p CREATE "magento202dev23"
 
+# Install Magento
 
 php bin/magento setup:install \
 --base-url=http://127.0.0.1/public_html/magento-2.0.2-dev23/ \
@@ -55,39 +57,26 @@ php bin/magento setup:install \
 --use-rewrites=1 \
 --cleanup-database
 
-sudo chmod 777 -R ./var ./pub
+# Sample Data
 
-php index.php
-
-sudo rm -fR var/cache/* var/page_cache/* var/generation/*
-
-php bin/magento sampledata:deploy
-
+sudo chmod 777 -R ./var ./pub ;\
+php index.php ;\
+sudo rm -fR var/cache/* var/page_cache/* var/generation/* ;\
+php bin/magento sampledata:deploy ;\
 composer --version && sudo composer self-update && composer clear-cache && composer update
 
-# Para cada procedimento deve ser executado os comandos de atualização da plataforma
+# Install Extensions via Composer
 
-{% endhighlight %}
-
-<h1 class="ui header">Pacote de tradução pt_BR</h1>
-
-Recomendo utilizar o seguinte pacote de tradução pt_BR que se encontra em 
-
-[https://crowdin.com/project/magento-2/pt-BR][crowdin]
-
-A comunidade do Magento2 agradece aos que tiverem a atitude de contribuir com a tradução
-
-Execute os comandos efetuando as devidas alterações personalizando para seu projeto
-
-{% highlight ruby %}
-
-composer require magento2translations/language_pt_br:dev-master
+composer require magento2translations/language_pt_br:dev-master ;\
+composer require magepal/magento2-gmailsmtpapp ;\
+composer require mozgbrasil/magento-bundle-php55 ;\
+composer require pagseguro/magento2:dev-master
 
 # Para cada procedimento deve ser executado os comandos de atualização da plataforma
 
 {% endhighlight %}
 
-Para atualizar a plataforma deve se executar o comando a seguir
+<h1 class="ui header">Para atualizar a plataforma deve se executar o comando a seguir</h1>
 
 {% highlight ruby %}
 

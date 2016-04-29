@@ -10,8 +10,8 @@ excerpt: "Veja nosso catálogo de softwares"
    <thead>
       <tr>
          <th></th>
-         <th class="center aligned">Magento 1 <a href="http://ec2-54-233-196-70.sa-east-1.compute.amazonaws.com/public_html/magento-1.9.2.4-dev30/index.php/admin"><i class="large external icon"></i></a></th>
-         <th class="center aligned">Magento 2</th>
+         <th class="center aligned">Magento 1 <a href="http://ec2-52-67-41-87.sa-east-1.compute.amazonaws.com/public_html/magento-1.9.2.4-dev31/index.php/admin"><i class="large external icon"></i></a></th>
+         <th class="center aligned">Magento 2 <a href="http://ec2-52-67-41-87.sa-east-1.compute.amazonaws.com/public_html/magento-2.0.2-dev23/admin"><i class="large external icon"></i></a></th>
       </tr>
    </thead>
    <tbody>
