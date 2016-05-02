@@ -12,88 +12,88 @@ excerpt: "Nesse artigo é exibido diversas dicas relativa ao Apache, PHP e Magen
 
 :: Habilitando moedas
 
-	Assim que instalamos o Magento, por padrão, ele carrega diversas moedas. Mas o normal seria utilizarmos apenas uma (ou duas) moedas no sistema.
+Assim que instalamos o Magento, por padrão, ele carrega diversas moedas. Mas o normal seria utilizarmos apenas uma (ou duas) moedas no sistema.
 
-	Então carregar menos moedas no sistema é mais inteligente e otimizado para sua loja. Para isso acesse:
+Então carregar menos moedas no sistema é mais inteligente e otimizado para sua loja. Para isso acesse:
 
-	No Backend do Magento, acesse o menu: Sistema -> Configuração -> Avançado -> Sistema -> Moeda
+No Backend do Magento, acesse o menu: Sistema -> Configuração -> Avançado -> Sistema -> Moeda
 
-	Na lista de moedas instaladas você deve selecionar apenas as que deseja usar no sistema, para que ele não carregue opções desnecessárias.
+Na lista de moedas instaladas você deve selecionar apenas as que deseja usar no sistema, para que ele não carregue opções desnecessárias.
 
-	Neste exemplo iremos trabalhar com Real Brasileiro e Dólar Norte-Americano.
+Neste exemplo iremos trabalhar com Real Brasileiro e Dólar Norte-Americano.
 
 :: Exibindo moedas na vitrine
 
-	Por padrão, o sistema exibe apenas uma moeda na sua visão de loja, apenas a moeda padrão – informada durante a instalação do Magento.
+Por padrão, o sistema exibe apenas uma moeda na sua visão de loja, apenas a moeda padrão – informada durante a instalação do Magento.
 
-	Para ter outras opções de moeda, você deve acessar:
+Para ter outras opções de moeda, você deve acessar:
 
-	No Backend do Magento, acesse o menu: Sistema -> Configuração -> Geral -> Configuração de Moedas [Opções e Moeda]
+No Backend do Magento, acesse o menu: Sistema -> Configuração -> Geral -> Configuração de Moedas [Opções e Moeda]
 
-	No campo "Moedas Permitidas" serão listados todas as moedas do sistema, aquelas que você configurou anteriormente. Basta selecionar as opções que deseja disponibilizar em frontend.
+No campo "Moedas Permitidas" serão listados todas as moedas do sistema, aquelas que você configurou anteriormente. Basta selecionar as opções que deseja disponibilizar em frontend.
 
-	O campo "Moeda Base" é referente à cobrança dos produtos, como os clientes devem considerar a compra/pagamento dos itens, então mesmo visualizando em outra moeda o formato válido para pagamento é o da moeda base. Por padrão você tem apenas uma moeda base para todo o sistema, caso queira ter uma moeda base para cada website, você deve primeiro ir em:
+O campo "Moeda Base" é referente à cobrança dos produtos, como os clientes devem considerar a compra/pagamento dos itens, então mesmo visualizando em outra moeda o formato válido para pagamento é o da moeda base. Por padrão você tem apenas uma moeda base para todo o sistema, caso queira ter uma moeda base para cada website, você deve primeiro ir em:
 
-	No Backend do Magento, acesse o menu: Sistema -> Configuração -> Catálogo -> Catálogo [Preço]
+No Backend do Magento, acesse o menu: Sistema -> Configuração -> Catálogo -> Catálogo [Preço]
 
-	E alterar o escopo de preços para "Website".
+E alterar o escopo de preços para "Website".
 
-	Em seguida você deve reindexar os índices das tabelas conforme solicitado pelo sistema.
+Em seguida você deve reindexar os índices das tabelas conforme solicitado pelo sistema.
 
-	Se você alterar o escopo para "website" durante a criação/edição de um produto, pode definir preços diferentes para o mesmo produto. (exemplo no vídeo)
+Se você alterar o escopo para "website" durante a criação/edição de um produto, pode definir preços diferentes para o mesmo produto. (exemplo no vídeo)
 
-	Já o campo "Exibir Moeda Padrão" influencia apenas na forma como seus produtos serão apresentados durante a navegação do usuário. Assim que ele entrar na sua loja, antes dele escolher o formato de moeda que deseja visualizar, qual a moeda será apresentada? Você decide neste campo.
+Já o campo "Exibir Moeda Padrão" influencia apenas na forma como seus produtos serão apresentados durante a navegação do usuário. Assim que ele entrar na sua loja, antes dele escolher o formato de moeda que deseja visualizar, qual a moeda será apresentada? Você decide neste campo.
 
 :: Fazendo a cotação
 
-	Não basta apenas selecionar as opções de moedas para o sistema, é preciso informar o valor cambial de cada nova cifra. Para isso você precisa acessar:
+Não basta apenas selecionar as opções de moedas para o sistema, é preciso informar o valor cambial de cada nova cifra. Para isso você precisa acessar:
 
-	No Backend do Magento, acesse o menu: Sistema -> Gerenciar Moeda -> Tarifas
+No Backend do Magento, acesse o menu: Sistema -> Gerenciar Moeda -> Tarifas
 
-	Alguns campos estarão em branco para você preencher manualmente, ou… basta clicar no botão [+ Importar]. E a cotação será importada automaticamente do serviço Webservicex.
+Alguns campos estarão em branco para você preencher manualmente, ou… basta clicar no botão [+ Importar]. E a cotação será importada automaticamente do serviço Webservicex.
 
-	Se você estiver de acordo com o valor informado, basta clicar em Salvar.
+Se você estiver de acordo com o valor informado, basta clicar em Salvar.
 
-	Agora que o sistema conhece os valores de cada moeda, ele deve ser exibido na visão da sua loja as opções para o cliente escolher como deseja visualizar os preços.
+Agora que o sistema conhece os valores de cada moeda, ele deve ser exibido na visão da sua loja as opções para o cliente escolher como deseja visualizar os preços.
 
 
 :: Controle de câmbio
 
-	Você provavelmente não deseja fazer esse controle manualmente, todo dia acessando o backend para atualizar os preços do dólar/euro/real, etc. Por isso vamos a mais algumas configurações, em:
+Você provavelmente não deseja fazer esse controle manualmente, todo dia acessando o backend para atualizar os preços do dólar/euro/real, etc. Por isso vamos a mais algumas configurações, em:
 
-	No Backend do Magento, acesse o menu: Sistema -> Configuração -> Geral -> Configuração de Moedas [Webservicex]
+No Backend do Magento, acesse o menu: Sistema -> Configuração -> Geral -> Configuração de Moedas [Webservicex]
 
-	Você tem apenas um campo, no qual não precisa se preocupar.
+Você tem apenas um campo, no qual não precisa se preocupar.
 
-	tempo conexao webservicex
+tempo conexao webservicex
 
-	Este campo informa em segundos, por quanto tempo ele vai tentar uma conexão com o webservice da Webservicex para obter atualização dos valores. Mas você pode aumentar esse número caso queira uma garantia maior de resposta do servidores deles.
+Este campo informa em segundos, por quanto tempo ele vai tentar uma conexão com o webservice da Webservicex para obter atualização dos valores. Mas você pode aumentar esse número caso queira uma garantia maior de resposta do servidores deles.
 
-	Agora a configuração que realmente interessa fica em:
+Agora a configuração que realmente interessa fica em:
 
-	No Backend do Magento, acesse o menu: Sistema -> Configuração -> Geral -> Configuração de Moedas [Opções de Importação Agendadas]
+No Backend do Magento, acesse o menu: Sistema -> Configuração -> Geral -> Configuração de Moedas [Opções de Importação Agendadas]
 
-	Aqui não tem muito o que explicar, é tudo bem sugestivo na verdade – sem truques.
+Aqui não tem muito o que explicar, é tudo bem sugestivo na verdade – sem truques.
 
-	configuracoes de agendamento webservicex
+configuracoes de agendamento webservicex
 
-	Basta “habilitar” o módulo. O serviço disponível é apenas o “Webservicex“, pelo menos até a versão 1.7.0.2 do Magento CE. A frequência normalmente será “Diariamente“, pois os valores são sempre atualizados. O horário é uma decisão mais administrativa, você pode fazer isso todo dia à meia-noite, ou então após o fechamento do pregão.
+Basta “habilitar” o módulo. O serviço disponível é apenas o “Webservicex“, pelo menos até a versão 1.7.0.2 do Magento CE. A frequência normalmente será “Diariamente“, pois os valores são sempre atualizados. O horário é uma decisão mais administrativa, você pode fazer isso todo dia à meia-noite, ou então após o fechamento do pregão.
 
-	Os últimos 3 (três) campos referentes ao campo email, são para os casos em que a cotação automática falhar – assim você pode ser avisado por email.
+Os últimos 3 (três) campos referentes ao campo email, são para os casos em que a cotação automática falhar – assim você pode ser avisado por email.
 
 :: Os arquivos de leiaute
 
-	No template padrão do Magento, este campo de seleção de moedas é apresentado sempre na coluna da esquerda. Caso queira modificar isso, saiba que o arquivo responsável por ele é o directory.xml que fica em:
+No template padrão do Magento, este campo de seleção de moedas é apresentado sempre na coluna da esquerda. Caso queira modificar isso, saiba que o arquivo responsável por ele é o directory.xml que fica em:
 
-	app -> design -> frontend -> base -> default -> layout -> directory.xml
+app -> design -> frontend -> base -> default -> layout -> directory.xml
 
-	E o arquivo currency.phtml é quem carrega as informações na tela:
+E o arquivo currency.phtml é quem carrega as informações na tela:
 
-	app -> design -> frontend -> base -> default -> template -> directory -> currency.phtml
+app -> design -> frontend -> base -> default -> template -> directory -> currency.phtml
 
-	Lembre-se de nunca alterar o arquivo em base/default, faça sempre uma cópia dele para default/default, ou então para seu template/tema customizado.
+Lembre-se de nunca alterar o arquivo em base/default, faça sempre uma cópia dele para default/default, ou então para seu template/tema customizado.
 
-	E basicamente é isso que você precisa saber sobre o controle de moedas no Magento. Qualquer dúvida basta acessar o fórum da Escola Magento.
+E basicamente é isso que você precisa saber sobre o controle de moedas no Magento. Qualquer dúvida basta acessar o fórum da Escola Magento.
 
 Fonte: http://mariosam.com.br/magento/cotar-moedas/
 
