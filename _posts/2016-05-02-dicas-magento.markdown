@@ -10,7 +10,7 @@ excerpt: "Nesse artigo é exibido diversas dicas relativa ao Apache, PHP e Magen
 
 # Cotação de Moedas, Magento Cambio
 
-:: Habilitando moedas
+## Habilitando moedas
 
 Assim que instalamos o Magento, por padrão, ele carrega diversas moedas. Mas o normal seria utilizarmos apenas uma (ou duas) moedas no sistema.
 
@@ -22,7 +22,7 @@ Na lista de moedas instaladas você deve selecionar apenas as que deseja usar no
 
 Neste exemplo iremos trabalhar com Real Brasileiro e Dólar Norte-Americano.
 
-:: Exibindo moedas na vitrine
+## Exibindo moedas na vitrine
 
 Por padrão, o sistema exibe apenas uma moeda na sua visão de loja, apenas a moeda padrão – informada durante a instalação do Magento.
 
@@ -44,7 +44,7 @@ Se você alterar o escopo para "website" durante a criação/edição de um prod
 
 Já o campo "Exibir Moeda Padrão" influencia apenas na forma como seus produtos serão apresentados durante a navegação do usuário. Assim que ele entrar na sua loja, antes dele escolher o formato de moeda que deseja visualizar, qual a moeda será apresentada? Você decide neste campo.
 
-:: Fazendo a cotação
+## Fazendo a cotação
 
 Não basta apenas selecionar as opções de moedas para o sistema, é preciso informar o valor cambial de cada nova cifra. Para isso você precisa acessar:
 
@@ -56,8 +56,7 @@ Se você estiver de acordo com o valor informado, basta clicar em Salvar.
 
 Agora que o sistema conhece os valores de cada moeda, ele deve ser exibido na visão da sua loja as opções para o cliente escolher como deseja visualizar os preços.
 
-
-:: Controle de câmbio
+## Controle de câmbio
 
 Você provavelmente não deseja fazer esse controle manualmente, todo dia acessando o backend para atualizar os preços do dólar/euro/real, etc. Por isso vamos a mais algumas configurações, em:
 
