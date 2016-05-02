@@ -73,16 +73,13 @@ https://console.aws.amazon.com/
                     Launch Instance
 
                     Step 1:
-                        Ubuntu Server 14.04 LTS
-                        Select
+                        Ubuntu Server 14.04 LTS -> Select
 
                     Step 2:
-                        t2.micro
-                        Review and Launch
+                        t2.micro -> Review and Launch
                         Launch
-                        Create a new key pair: Name = cerkeypair
-                        Download Key Pair
-                        Launch Instance
+                        Create a new key pair: Name = cerkeypair4 -> Download Key Pair -> Launch Instance
+                        View Instances
 
                     Step 3:
                         Instances
@@ -112,13 +109,13 @@ sudo ln -s ~/public_html /var/www/html ;\
 echo "<?php phpinfo(); ?>" | sudo tee ~/public_html/phpinfo.php > /dev/null ;\
 php -l ~/public_html/phpinfo.php
 
-sudo a2enmod rewrite  # FIX: Rewrite
-
 sudo php5enmod mcrypt  # FIX: PHP Fatal error:  Call to undefined function mcrypt_module_open
 
-sudo service apache2 restart
+sudo a2enmod rewrite  # FIX: Rewrite
 
 sudo usermod -g www-data $USER ; # FIX: Magento2
+
+sudo service apache2 restart
 
 # Composer
 
