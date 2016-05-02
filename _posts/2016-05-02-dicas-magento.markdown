@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Dicas para o Magento2"
-date:   2016-04-26 14:01:03
+date:   2016-05-02 16:01:03
 category: dicas
 author: Marcio Amorim
 tags: [magento, php, apache, mysql]
