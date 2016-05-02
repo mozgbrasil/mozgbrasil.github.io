@@ -1,13 +1,12 @@
 ---
 layout: post
 title:  "Dicas para o Magento2"
-date:   2015-05-02 10:46:02
+date:   2016-04-26 14:01:03
 category: dicas
 author: Marcio Amorim
-tags: [magento2, php, apache, mysql]
+tags: [magento, php, apache, mysql]
 excerpt: "Nesse artigo é exibido diversas dicas relativa ao Apache, PHP e Magento 2"
 ---
-
 
 # Cotação de Moedas, Magento Cambio
 
