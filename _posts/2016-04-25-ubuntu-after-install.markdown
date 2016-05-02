@@ -37,7 +37,9 @@ sudo usermod -g www-data $USER ; # FIX: Magento2
 
 https://getcomposer.org/download/
 
-sudo mv composer.phar /usr/local/bin/composer
+sudo mv composer.phar /usr/local/bin/composer ; # FIX: https://getcomposer.org/doc/00-intro.md#globally
+
+sudo chown -R $USER $HOME/.composer ; # FIX: https://github.com/thomaszbz/native-dockerfiles-typo3/issues/19
 
 # Basic
 
@@ -121,7 +123,5 @@ sudo usermod -g www-data $USER ; # FIX: Magento2
 # Composer
 
 https://getcomposer.org/download/
-
-sudo mv composer.phar /usr/local/bin/composer
 
 {% endhighlight %}
