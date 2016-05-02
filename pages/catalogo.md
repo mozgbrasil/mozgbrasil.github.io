@@ -3,7 +3,7 @@ layout: page
 title: Catálogo
 permalink: /catalogo/
 order: 3
-excerpt: "Veja nosso catálogo de softwares"
+excerpt: "Veja nosso catálogo de módulos para Magento e instale em seu projeto, efetue os devidos testes comprovando as funcionalidades presentes no módulo."
 ---
 
 <table class="ui compact celled table">
