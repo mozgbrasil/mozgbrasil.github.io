@@ -1,16 +1,38 @@
 ---
 layout: post
-title:  "Dicas para o Magento2"
+title:  "Dicas para o Magento"
 date:   2016-05-02 16:01:03
 category: dicas
 author: Marcio Amorim
 tags: [magento, php, apache, mysql]
-excerpt: "Nesse artigo é exibido diversas dicas relativa ao Apache, PHP e Magento 2"
+excerpt: "Nesse artigo é exibido diversas dicas relativa ao Apache, PHP e Magento"
 ---
 
-# Cotação de Moedas, Magento Cambio
+# Magento 1
 
-## Habilitando moedas
+## Erro de servidor: "error 500" ou "tela branca"
+
+A informação "error 500" se trata da omissão do erro devendo ser analisado o erro no log do servidor
+
+Todo o erro gerado no servidor é armazenado no log a causa do erro
+
+Execute o seguinte comando no terminal do seu servidor  
+
+	tail -f /var/log/apache2/error.log
+
+	tail -f /home/user/var/php-fpm/error.log
+
+Acesse o projeto até gerar o erro 
+
+Será exibido no log a causa do erro 
+
+Efetuando pesquisa sobre o erro geralmente é encontrado a solução 
+
+Agora é somente aplicar a devida correção sobre o seu servidor
+
+## Cotação de Moedas, Magento Cambio
+
+### Habilitando moedas
 
 Assim que instalamos o Magento, por padrão, ele carrega diversas moedas. Mas o normal seria utilizarmos apenas uma (ou duas) moedas no sistema.
 
@@ -44,7 +66,7 @@ Se você alterar o escopo para "website" durante a criação/edição de um prod
 
 Já o campo "Exibir Moeda Padrão" influencia apenas na forma como seus produtos serão apresentados durante a navegação do usuário. Assim que ele entrar na sua loja, antes dele escolher o formato de moeda que deseja visualizar, qual a moeda será apresentada? Você decide neste campo.
 
-## Fazendo a cotação
+### Fazendo a cotação
 
 Não basta apenas selecionar as opções de moedas para o sistema, é preciso informar o valor cambial de cada nova cifra. Para isso você precisa acessar:
 
@@ -80,7 +102,7 @@ Basta “habilitar” o módulo. O serviço disponível é apenas o “Webservic
 
 Os últimos 3 (três) campos referentes ao campo email, são para os casos em que a cotação automática falhar – assim você pode ser avisado por email.
 
-:: Os arquivos de leiaute
+### Os arquivos de leiaute
 
 No template padrão do Magento, este campo de seleção de moedas é apresentado sempre na coluna da esquerda. Caso queira modificar isso, saiba que o arquivo responsável por ele é o directory.xml que fica em:
 
@@ -102,13 +124,13 @@ O script a seguir é um modelo para a execução do procedimento de backup a ser
 
 	tar -cvpzf EMPRESA_$(date +%Y.%m.%d_%H.%M.%S).tgz /DIRETORIO
 
-# Como efetuar backup do banco de dados ?
+## Como efetuar backup do banco de dados ?
 
 O script a seguir é um modelo para a execução do procedimento de backup compactado a ser executado via terminal do servidor
 
 	mysqldump -h 'HOST' -u 'USER' -p'PASS' 'DBNAME' | gzip > EMPRESA_$(date +%Y.%m.%d_%H.%M.%S).sql.gz
 
-### Ativar debug do template no backend
+## Ativar debug do template no backend
 
 Edite o arquivo /app/code/core/Mage/Core/etc/system.xml
 
@@ -133,7 +155,7 @@ Atualizando para
 		<show_in_store>1</show_in_store>
 	</template_hints_blocks>
 
-# Sobre como cadastrar o peso do produto
+## Sobre como cadastrar o peso do produto
 
 O método de entrega já vem como default o formato do peso como Kilos, caso tenha preenchido o peso do produto no formato de gramas na configuração do método deve alterar o Formato do Peso para Gramas
 
@@ -147,7 +169,7 @@ Peso preenchido no formato "Alternativo" em gramas
 	Para um peso de 800 gramas, para isso devemos informar 800.0000
 	Para um peso de 1 kilo, para isso devemos informar 1000 onde deve ser convertido pelo Magento para 1000.0000
 
-# Exibir horário corrente no backend
+## Exibir horário corrente no backend
 
 Edite o arquivo /app/design/adminhtml/default/default/template/page/header.phtml
 
@@ -161,13 +183,13 @@ PARA
 
 $this->formatDate(null, 'full', true)
 
-# Ativar debug
+## Ativar debug
 
 No Backend do Magento, acesse o menu: System -> Configuration -> Developer -> Debug -> Template Path Hints = Yes  
 
 Para ser exibido a opção "Template Path Hints" em Debug, deve ser selecionado a configuração para o website, selecionando o mesmo no SelectBox "Configuration Scope:"
 
-# Desabilitando a compilação do Magento pelo código
+## Desabilitando a compilação do Magento pelo código
 
 Para desabilitar a compilação sem ter acesso pelo admin do magento basta ir em /includes editar o arquivo chamado config.php comentando a linha abaixo com # na frente  
 
@@ -179,18 +201,18 @@ Com o compilador desligado
 
 	#define('COMPILER_INCLUDE_PATH', dirname(__FILE__).DIRECTORY_SEPARATOR.'src');
 
-# Forçar Recompilação do Magento pelo código
+## Forçar Recompilação do Magento pelo código
 
 A pasta que fica localizada dentro da pasta /includes chamada de SRC é onde se encontra todos os arquivos compilados pelo Magento, para forçar pelo código uma nova compilação do Magento, basta renomear essa pasta ou removela. 
 Obs: (Recomendo antes só renomear e se tudo der certo e uma nova pasta SRC for criada automaticamente, ai sim pode remover ela)
 
-# Obs. no uso do Compiler do Magento
+### Obs. no uso do Compiler do Magento
 
 No processo "Compilação" nunca apenas clique no botão "Ativar" pois pode ser ativado uma versão em Cache
 
 Sempre antes clique no botão "Executar o processo de compilação", dessa forma em seguida deve ser ativado automaticamente o Compiler do Magento
 
-# Como limpar o cache do Magento?
+## Como limpar o cache do Magento?
 
 Se você tiver feito alterações em sua loja Magento, e elas não aparecerão imediatamente, pode ser necessário que você limpe o cache.  
 O Magento mantém seu cache em /var/cache localizado dentro do diretório de instalação do Magento.  
@@ -198,7 +220,7 @@ Assim, por exemplo, se o Magento é instalado na pasta principal public_html/, o
 Para limpar o cache, simplesmente apague tudo do diretório public_html/var/cache e recarregue seu site no seu browser.  
 Para limpar todas as sessões, você também pode excluir tudo do diretório public_html/var/session.
 
-# Como depurar problemas Magento MySQL
+## Como depurar problemas Magento MySQL
 
 Assim como qualquer aplicação PHP moderna o Magento armazena a maioria de suas informações no banco de dados (exceto mídia e configurações XML).
 
@@ -209,7 +231,7 @@ Para este efeito, abra o arquivo lib/Varien/Db/Adapter/Pdo/Mysql.php e altere o 
 
 Você também pode alterar o valor de US $ _logQueryTime que é especialmente útil quando a depuração lentidão. Uma vez que você fizer essa alteração todas as consultas serão registradas no arquivo var/debug/sql.txt
 
-# Como adicionar o rastreamento(tracking)?
+## Como adicionar o rastreamento(tracking)?
 
 No Backend do Magento, acesse o menu: Sales -> Order -> Acesse o pedido em seguida clique no botão "Ship", no bloco "Shipping Information" clque no botão "Add Tracking Number", selecione o método de entrega e informe o número para rastreamento, adicione um comentário caso ache necessário e clique em "Submit Shipment"
 
@@ -217,18 +239,56 @@ No Backend do Magento, na visualização do pedido no bloco "Shipping & Handling
 
 No frontend do Magento, acessando o menu: Minha conta -> Meus pedidos -> onde ao visualizar o pedido deve ser exibido o link "Rastrear o seu pedido" onde clicando no mesmo deve ser aberto Popup apresentado o processo do rastreamento
 
-# Como redefinir a senha do administrador em Magento?
+## Como redefinir a senha do administrador em Magento?
 
 	UPDATE `admin_user` SET `password` = MD5('NEWPASSWORD') WHERE `username` = 'ADMINUSERNAME';
 
-# Exibir cabeçalho "Esta é uma loja de demonstração. ..."
+## Exibir cabeçalho "Esta é uma loja de demonstração. ..."
 
 No Backend do Magento, acesse o menu: System -> Configuration -> General -> Design -> HTML Head -> Display demo store notice = YES
 
-# Erro 404 Página não encontrada
+## Erro 404 Página não encontrada
 
 Geralmente é exibido a pagina 404 após a instalação de módulos, onde é necessário apenas se deslogar e logar novamente no sistema
 
-# Modo de manutenção
+## Modo de manutenção
 
 Para habilitar o modo de manutenção no Magento, basta criar um arquivo vazio na raiz de sua loja Magento nomeado como "maintenance.flag"
+
+# Reexecutar os scripts de setup do módulo
+
+Execute o comando a seguir no MySQL para reexecutar os scripts de setup
+
+	SELECT * FROM `core_resource` WHERE `code` like '%mozg%';
+
+	DELETE FROM core_resource WHERE code like '%mozg%';
+
+## Como redefinir a senha do administrador em Magento?
+
+	UPDATE `admin_user` SET `password` = MD5('123456a') WHERE `username` = 'admin';
+
+# Magento 2
+
+## Registros Cron
+
+A tabela `cron_schedule` armazena as tarefas a executar e executadas
+
+	TRUNCATE `cron_schedule`;
+	SELECT * FROM `cron_schedule`;
+	SELECT * FROM `cron_schedule` WHERE `job_code` like '%mozg%' AND `status` != 'success';
+
+## Reexecutar os scripts de setup do módulo
+
+	SELECT * FROM `setup_module` WHERE `module` like '%Mozg_%';
+
+	DELETE FROM `setup_module` WHERE `module` like '%Mozg_%';
+
+## Limpando arquivos de cache
+
+sudo rm -R -f ./var/log \
+./var/report \
+./var/cache \
+./var/di \
+./var/generation \
+./var/page_cache \
+./pub/static/*
