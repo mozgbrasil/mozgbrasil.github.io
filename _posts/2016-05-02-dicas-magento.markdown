@@ -177,11 +177,11 @@ Atualizando
 
 DE
 
-$this->formatDate(null, 'full')
+	$this->formatDate(null, 'full')
 
 PARA
 
-$this->formatDate(null, 'full', true)
+	$this->formatDate(null, 'full', true)
 
 ## Ativar debug
 
