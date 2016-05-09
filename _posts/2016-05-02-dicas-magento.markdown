@@ -285,10 +285,10 @@ A tabela `cron_schedule` armazena as tarefas a executar e executadas
 
 ## Limpando arquivos de cache
 
-sudo rm -R -f ./var/log \
-./var/report \
-./var/cache \
-./var/di \
-./var/generation \
-./var/page_cache \
-./pub/static/*
+	sudo rm -R -f ./var/log \
+	./var/report \
+	./var/cache \
+	./var/di \
+	./var/generation \
+	./var/page_cache \
+	./pub/static/*
