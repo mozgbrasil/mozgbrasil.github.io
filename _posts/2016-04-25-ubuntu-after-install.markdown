@@ -111,9 +111,19 @@ php -l ~/public_html/phpinfo.php
 
 sudo php5enmod mcrypt  # FIX: PHP Fatal error:  Call to undefined function mcrypt_module_open
 
-sudo a2enmod rewrite  # FIX: Rewrite
+# FIX: Rewrite
 
-sudo usermod -g www-data $USER ; # FIX: Magento2
+sudo a2enmod rewrite
+
+sudo nano /etc/apache2/sites-available/000-default.conf
+
+    <Directory "/var/www/html">
+    AllowOverride All
+    </Directory>
+
+# FIX: Magento2
+
+sudo usermod -g www-data $USER
 
 sudo service apache2 restart
 
@@ -127,6 +137,7 @@ wget http://downloads.zend.com/guard/7.0.0/zend-loader-php5.5-linux-x86_64.tar.g
 
 tar -zxvf zend-loader-php5.5-linux-x86_64.tar.gz
 
+sudo nano /etc/php5/cli/php.ini
 sudo nano /etc/php5/apache2/php.ini
 
     [zendloader]
