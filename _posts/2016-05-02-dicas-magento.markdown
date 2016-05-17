@@ -159,14 +159,14 @@ Atualizando para
 
 O método de entrega já vem como default o formato do peso como Kilos, caso tenha preenchido o peso do produto no formato de gramas na configuração do método deve alterar o Formato do Peso para Gramas
 
-Peso preenchido no formato "Default" em Kilos
-	Para um peso de 80 gramas, para isso devemos informar 0.0800
-	Para um peso de 800 gramas, para isso devemos informar 0.8000
+Peso preenchido no formato "Default" em Kilos  
+	Para um peso de 80 gramas, para isso devemos informar 0.0800  
+	Para um peso de 800 gramas, para isso devemos informar 0.8000  
 	Para um peso de 1 kilo, para isso devemos informar 1 onde deve ser convertido pelo Magento para 1.0000
 
-Peso preenchido no formato "Alternativo" em gramas
-	Para um peso de 80 gramas, para isso devemos informar 80.0000
-	Para um peso de 800 gramas, para isso devemos informar 800.0000
+Peso preenchido no formato "Alternativo" em gramas  
+	Para um peso de 80 gramas, para isso devemos informar 80.0000  
+	Para um peso de 800 gramas, para isso devemos informar 800.0000  
 	Para um peso de 1 kilo, para isso devemos informar 1000 onde deve ser convertido pelo Magento para 1000.0000
 
 ## Exibir horário corrente no backend
@@ -268,6 +268,49 @@ Execute o comando a seguir no MySQL para reexecutar os scripts de setup
 	UPDATE `admin_user` SET `password` = MD5('123456a') WHERE `username` = 'admin';
 
 # Magento 2
+
+## Composer não está baixando a ultima versão do módulo
+
+Conforme issue
+
+https://github.com/composer/composer/issues/5259#issuecomment-215372345
+
+No uso do comando
+
+	composer show -i
+
+É exibido o módulo e sua versão
+
+Vemos em
+
+https://packagist.org/packages/mozgbrasil/framework-php56
+
+Que a ultima versão é a 1.0.0-rc.4
+
+Vemos na issue que o criador do composer aplicou um suporte no composer devido a essa falha que relatei onde ele pede para usar o seguinte comando
+
+	composer why-not mozgbrasil/framework-php56:1.0.0-rc.4
+
+Onde deve ser exibido o motivo para não ter baixado essa versão
+
+Vejo que em seu servidor é usado o composer 1.0.2 e o composer está na versão 1.1.0, mas não consigo atualizar o composer em seu servidor, entre com o administrador do servidor para que seja feito a atualização do composer, não é obrigatório isso, mas sempre é bom
+
+Como provavelmente se trata da ausencia de componente de servidor com o comando a seguir podemos ver se o mesmo se encontra habilitado em seu servidor
+
+	php -i | grep -i 'Zend Guard Loader'
+
+Vemos que o Zend Guard Loader' não foi habilitado no php-client, foi somente habilitado no php-web
+
+http://magento-12167-29282-97450.cloudwaysapps.com/phpinfo.php
+
+Precisa habilitar no php-client e em seguida usar o comando para baixar módulos atualizados
+
+Obs.
+
+No seguinte artigo informa que o Zend Guard Loader deve ser habilitado em ambos casos
+
+http://mozg.com.br/zend%20guard%20loader/ativando-zend-guard-loader
+
 
 ## Registros Cron
 

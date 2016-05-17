@@ -78,7 +78,7 @@ https://console.aws.amazon.com/
                     Step 2:
                         t2.micro -> Review and Launch
                         Launch
-                        Create a new key pair: Name = cerkeypair4 -> Download Key Pair -> Launch Instance
+                        Create a new key pair: Name = cerkeypair -> Download Key Pair -> Launch Instance
                         View Instances
 
                     Step 3:
@@ -94,7 +94,7 @@ SSH
 
 {% highlight ruby %}
 
-ssh -i cerkeypair.pem ubuntu@52.67.52.67
+ssh -i cerkeypair.pem ubuntu@52.67.2.27
 
 # Ubuntu 14.04
 
@@ -120,5 +120,19 @@ sudo service apache2 restart
 # Composer
 
 https://getcomposer.org/download/
+
+# Zend Guard Loader
+
+wget http://downloads.zend.com/guard/7.0.0/zend-loader-php5.5-linux-x86_64.tar.gz
+
+tar -zxvf zend-loader-php5.5-linux-x86_64.tar.gz
+
+sudo nano /etc/php5/apache2/php.ini
+
+    [zendloader]
+    zend_extension=/home/ubuntu/zend-loader-php5.5-linux-x86_64/ZendGuardLoader.so
+    zend_extension=/home/ubuntu/zend-loader-php5.5-linux-x86_64/opcache.so
+
+sudo service apache2 restart
 
 {% endhighlight %}

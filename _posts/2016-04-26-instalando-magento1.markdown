@@ -69,7 +69,7 @@ php -f install.php -- \
 --db_name "magento-1.9.2.4-dev31" \
 --db_user "root" \
 --db_pass "???" \
---url "http://127.0.0.1/public_html/magento-1.9.2.4-dev31/" \
+--url "http://52.67.2.27/public_html/magento-1.9.2.4-dev31/" \
 --skip_url_validation "yes" \
 --use_rewrites "yes" \
 --use_secure "no" \
@@ -87,10 +87,15 @@ chmod 777 -R .
 
 # Magento /shell
 
+echo -e "\e[1;31m --(Processo 1)-- \e[0m" ;\
 php shell/compiler.php --state ;\
+echo -e "\e[1;31m --(Processo 2)-- \e[0m" ;\
 php shell/log.php --clean ;\
+echo -e "\e[1;31m --(Processo 3)-- \e[0m" ;\
 php shell/indexer.php --status ;\
+echo -e "\e[1;31m --(Processo 4)-- \e[0m" ;\
 php shell/indexer.php --info ;\
+echo -e "\e[1;31m --(Processo 5)-- \e[0m" ;\
 php shell/indexer.php --reindexall
 
 # Magento ./mage command-line
@@ -109,6 +114,7 @@ php shell/indexer.php --reindexall
 # https://gist.github.com/mozgbrasil/0c9bb8792ea6273ea24aed30b0fbcfba
 
 nano composer.json ;\
+composer diagnose && composer show -i ;\
 composer require aschroder/smtp_pro ;\
 composer require aoepeople/aoe_scheduler ;\
 composer require mozgbrasil/magento-bundle-php55
