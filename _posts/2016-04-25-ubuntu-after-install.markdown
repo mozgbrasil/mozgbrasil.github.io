@@ -102,7 +102,7 @@ sudo apt update && sudo apt upgrade && sudo apt dist-upgrade
 
 # Dev Server
 
-sudo apt-get install mysql-server-5.6 mysql-client-5.6 mysql-client-core-5.6 apache2 php5 libapache2-mod-php5 php5-common php5-mcrypt php5-curl php5-cli php5-mysql php5-sqlite php5-gd php5-intl php5-xsl php5-dev phpmyadmin p7zip-full unzip
+sudo apt-get install mysql-server-5.6 mysql-client-5.6 mysql-client-core-5.6 apache2 php5 libapache2-mod-php5 php5-common php5-mcrypt php5-curl php5-cli php5-mysql php5-sqlite php5-gd php5-intl php5-xsl php5-dev phpmyadmin p7zip-full unzip git
 
 mkdir -p ~/public_html ;\
 sudo ln -s ~/public_html /var/www/html ;\

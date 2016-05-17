@@ -47,7 +47,7 @@ mysqladmin -u root -p CREATE "magento202dev23"
 # Install Magento
 
 php bin/magento setup:install \
---base-url=http://127.0.0.1/public_html/magento-2.0.2-dev23/ \
+--base-url=http://52.67.2.27/public_html/magento-2.0.2-dev23/ \
 --backend-frontname=admin \
 --db-host=127.0.0.1 --db-name=magento202dev23 --db-user=root --db-password=??? \
 --admin-firstname=Marcio --admin-lastname=Amorim --admin-email=mailer@mozg.com.br \
@@ -68,7 +68,7 @@ composer --version && sudo composer self-update && composer clear-cache && compo
 # Install Extensions via Composer
 
 composer require magento2translations/language_pt_br:dev-master ;\
-composer require mozgbrasil/magento-bundle-php55 ;\
+composer require mozgbrasil/magento2-bundle-php55
 
 # Para cada procedimento deve ser executado os comandos de atualização da plataforma
 
