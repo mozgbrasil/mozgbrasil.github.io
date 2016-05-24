@@ -1,4 +1,18 @@
 <head prefix="og: http://ogp.me/ns#">
+    <!-- onesignal -->
+    <link rel="manifest" href="/manifest.json">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+    <script>
+    var OneSignal = OneSignal || [];
+    OneSignal.push(["init", {
+        appId: "0178c901-be8a-4f5d-91c6-3af1dc5c8897",
+        autoRegister: false,
+        notifyButton: {
+            enable: true /* Set to false to hide */
+        }
+    }]);
+    </script>
+    <!-- onesignal -->
     <!-- Standard Meta -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
