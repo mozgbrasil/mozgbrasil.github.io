@@ -59,9 +59,8 @@ sudo usermod -g www-data $USER
 
 # Zend Guard Loader
 
-cd ~/dados/public_htmll ;\
-wget http://downloads.zend.com/guard/7.0.0/zend-loader-php5.6-linux-x86_64.tar.gz
-
+cd ~/dados/public_html ;\
+wget http://downloads.zend.com/guard/7.0.0/zend-loader-php5.6-linux-x86_64.tar.gz ;\
 tar -zxvf zend-loader-php5.6-linux-x86_64.tar.gz
 
 sudo nano /etc/php/5.6/cli/php.ini
