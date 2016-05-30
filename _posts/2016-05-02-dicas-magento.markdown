@@ -229,7 +229,7 @@ Assim, para a depuração de problemas no Magento é útil saber algumas coisas:
 1. Todas as consultas do MySQL podem ser registrados e analisados. 
 Para este efeito, abra o arquivo lib/Varien/Db/Adapter/Pdo/Mysql.php e altere o valor da propriedade protegida $ _debug para true, também a propriedade protegida $_logAllQuerie para true. 
 
-Você também pode alterar o valor de US $ _logQueryTime que é especialmente útil quando a depuração lentidão. Uma vez que você fizer essa alteração todas as consultas serão registradas no arquivo var/debug/sql.txt
+Você também pode alterar o valor de US $_logQueryTime que é especialmente útil quando a depuração lentidão. Uma vez que você fizer essa alteração todas as consultas serão registradas no arquivo var/debug/sql.txt
 
 ## Como adicionar o rastreamento(tracking)?
 

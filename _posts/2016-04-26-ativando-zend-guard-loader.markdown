@@ -51,13 +51,17 @@ Na ocorrência de problemas certifique se foi informado o caminho correto em "ze
 Na ocorrência de problemas de servidor, sugiro analisar o log do servidor onde deve ser apontado o motivo da ocorrência
 Certifique se de ter reiniciado o servidor
 
-Devido o "Zend Guard Loader" se tratar de ferramenta de terceiros, dúvidas ou problemas sugiro entrar em contato direto com a Zend, abrindo uma interação no forum do "Zend Guard"
+Devido o "Zend Guard Loader" se tratar de ferramenta de terceiros, dúvidas ou problemas sugiro entrar em contato direto com a Zend, abrindo uma interação no forum do "Zend Guard Loader"
 
 http://forums.zend.com/viewforum.php?f=57&sid=8556b95ded7978a11c27ca31de8592d4
 
 Para usuários do "Zend Server" o módulo "Zend Guard Loader" já vem instalado no servidor, necessitando somente de ativar o mesmo.
 
 http://www.zend.com/en/products/server/
+
+Veja que esses procedimentos está documentado em
+
+http://files.zend.com/help/Zend-Guard/content/installing_zend_guard_loader.htm
 
 # Processos executados sobre o Servidor Apache
 
