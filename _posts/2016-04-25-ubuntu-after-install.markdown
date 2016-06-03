@@ -22,7 +22,7 @@ sudo apt update && sudo apt upgrade && sudo apt dist-upgrade
 
 # Ubuntu 16.04 - Local Server - PHP 7
 
-sudo apt install mysql-server mysql-client phpmyadmin php-cli php-curl php-sqlite3 php-mcrypt php-mbstring php-gettext php-gd php-intl php-xsl php-zip php-soap
+sudo apt install mysql-server mysql-client php-cli php-curl php-sqlite3 php-mcrypt php-mbstring php-gettext php-gd php-intl php-xsl php-zip php-soap && sudo add-apt-repository ppa:nijel/phpmyadmin && sudo apt-get update && sudo apt install phpmyadmin
 
 # Ubuntu 16.04 - Local Server - PHP 5.6
 

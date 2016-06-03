@@ -263,6 +263,16 @@ Execute o comando a seguir no MySQL para reexecutar os scripts de setup
 
 	DELETE FROM core_resource WHERE code like '%mozg%';
 
+
+	-- add table prefix if you have one
+	DROP TABLE IF EXISTS mozg_boxpacker_packing_comment_store;
+	DROP TABLE IF EXISTS mozg_boxpacker_packing_comment;
+	DROP TABLE IF EXISTS mozg_boxpacker_packing_store;
+	DROP TABLE IF EXISTS mozg_boxpacker_packing;
+	SELECT * FROM `core_resource` WHERE `code` like '%mozg%';
+	DELETE FROM core_resource WHERE code like '%mozg%';
+	DELETE FROM core_config_data WHERE path like '%mozg%';
+
 ## Como redefinir a senha do administrador em Magento?
 
 	UPDATE `admin_user` SET `password` = MD5('123456a') WHERE `username` = 'admin';
