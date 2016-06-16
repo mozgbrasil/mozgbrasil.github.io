@@ -299,7 +299,7 @@ Agora você precisa reiniciar o servidor apache usando o seguinte comando
 Fonte: http://stackoverflow.com/questions/30088776/apache-2-4-x-override-charset-after-update-to-ubuntu-15-04
 
 
--
+--
 
 
 # Magento 2
