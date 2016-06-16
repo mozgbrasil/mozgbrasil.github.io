@@ -276,7 +276,7 @@ Execute o comando a seguir no MySQL para reexecutar os scripts de setup
 
 O erro de caracteres é gerado por definição de charset no servidor onde o mesmo deve ser configurado para aceitar qualquer charset
 
-Se você quiser alterar o charset no Apache no Ubuntu tente esse procedimento
+Para alterar o charset no Apache no Ubuntu tente esse procedimento
 
 	sudo nano /etc/apache2/conf.d/charset
 
@@ -372,9 +372,3 @@ A tabela `cron_schedule` armazena as tarefas a executar e executadas
 	./var/generation \
 	./var/page_cache \
 	./pub/static/*
-
-**Mapear pasta vendor**
-
-vendor/composer/autoload_psr4.php
-vendor/composer/autoload_static.php
-vendor/composer/autoload_files.php
