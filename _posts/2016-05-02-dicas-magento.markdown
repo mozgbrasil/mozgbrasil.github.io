@@ -259,11 +259,6 @@ Para habilitar o modo de manutenção no Magento, basta criar um arquivo vazio n
 
 Execute o comando a seguir no MySQL para reexecutar os scripts de setup
 
-	SELECT * FROM `core_resource` WHERE `code` like '%mozg%';
-
-	DELETE FROM core_resource WHERE code like '%mozg%';
-
-
 	-- add table prefix if you have one
 	DROP TABLE IF EXISTS mozg_boxpacker_packing_comment_store;
 	DROP TABLE IF EXISTS mozg_boxpacker_packing_comment;
@@ -276,6 +271,36 @@ Execute o comando a seguir no MySQL para reexecutar os scripts de setup
 ## Como redefinir a senha do administrador em Magento?
 
 	UPDATE `admin_user` SET `password` = MD5('123456a') WHERE `username` = 'admin';
+
+## Problemas com caracteres
+
+O erro de caracteres é gerado por definição de charset no servidor onde o mesmo deve ser configurado para aceitar qualquer charset
+
+Se você quiser alterar o charset no Apache no Ubuntu tente esse procedimento
+
+	sudo nano /etc/apache2/conf.d/charset
+
+ou 
+
+	grep -ri 'AddDefaultCharset' /etc/apache2
+
+	sudo nano /etc/apache2/conf-available/charset.conf
+
+Em seguida, comente a linha
+
+	#AddDefaultCharset UTF-8
+
+salve e saia do arquivo
+
+Agora você precisa reiniciar o servidor apache usando o seguinte comando
+
+	sudo /etc/init.d/apache2 restart
+
+Fonte: http://stackoverflow.com/questions/30088776/apache-2-4-x-override-charset-after-update-to-ubuntu-15-04
+
+
+-
+
 
 # Magento 2
 
@@ -332,9 +357,11 @@ A tabela `cron_schedule` armazena as tarefas a executar e executadas
 
 ## Reexecutar os scripts de setup do módulo
 
-	SELECT * FROM `setup_module` WHERE `module` like '%Mozg_%';
-
-	DELETE FROM `setup_module` WHERE `module` like '%Mozg_%';
+	-- add table prefix if you have one
+	DROP TABLE IF EXISTS mozg_boxpacker_packing;
+	SELECT * FROM `setup_module` WHERE `module` like '%mozg%';
+	DELETE FROM setup_module WHERE module like '%mozg%';
+	DELETE FROM core_config_data WHERE path like '%mozg%';
 
 ## Limpando arquivos de cache
 
@@ -345,3 +372,9 @@ A tabela `cron_schedule` armazena as tarefas a executar e executadas
 	./var/generation \
 	./var/page_cache \
 	./pub/static/*
+
+**Mapear pasta vendor**
+
+vendor/composer/autoload_psr4.php
+vendor/composer/autoload_static.php
+vendor/composer/autoload_files.php

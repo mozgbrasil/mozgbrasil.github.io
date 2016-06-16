@@ -101,11 +101,17 @@ php shell/indexer.php --reindexall
 # Magento ./mage command-line
 # Install Extensions via MagentoConect
 
+echo -e "\e[1;31m --(Processo 1)-- \e[0m" ;\
 ./mage ;\
+echo -e "\e[1;31m --(Processo 2)-- \e[0m" ;\
 ./mage mage-setup ;\
+echo -e "\e[1;31m --(Processo 3)-- \e[0m" ;\
 ./mage sync ;\
+echo -e "\e[1;31m --(Processo 4)-- \e[0m" ;\
 ./mage list-installed ;\
+echo -e "\e[1;31m --(Processo 5)-- \e[0m" ;\
 ./mage list-upgrades ;\
+echo -e "\e[1;31m --(Processo 6)-- \e[0m" ;\
 ./mage install http://connect20.magentocommerce.com/community Mage_Locale_pt_BR
 
 # Install Extensions via Composer
@@ -115,8 +121,10 @@ php shell/indexer.php --reindexall
 
 nano composer.json ;\
 composer diagnose && composer show -i ;\
+composer require connect20/mage_locale_pt_br ;\
 composer require aschroder/smtp_pro ;\
 composer require aoepeople/aoe_scheduler ;\
+composer require connect20/pedroteixeira_correios ;\
 composer require mozgbrasil/magento-bundle-php55
 
 # Install Cerebrum_Telencephalon

@@ -92,7 +92,7 @@ sudo chown -R $USER $HOME/.composer
 
 # Local Desktop
 
-sudo apt install build-essential ubuntu-restricted-extras ubuntu-sdk ubuntu-make juju python-software-properties filezilla git nautilus-dropbox p7zip-full keepassx meld curl gufw gimp gimp-plugin-registry shutter ffmpeg lame links links2 elinks lynx openssh-server ruby-dev nodejs chromium-browser inkscape jq && sudo service ssh start
+sudo apt install build-essential ubuntu-restricted-extras ubuntu-sdk ubuntu-make juju python-software-properties filezilla git nautilus-dropbox p7zip-full keepassx meld curl gufw gimp gimp-plugin-registry shutter ffmpeg lame links links2 elinks lynx openssh-server ruby-dev nodejs chromium-browser inkscape jq npm && sudo service ssh start
 
 # Sublime Editor
 
@@ -110,7 +110,16 @@ sudo gem install jekyll && sudo gem install github-pages && sudo gem install rou
 
 # OS Update
 
-sudo apt update && sudo apt upgrade && sudo apt dist-upgrade
+echo -e "\e[1;31m --(Processo 1)-- \e[0m" ;\
+sudo apt update ;\
+echo -e "\e[1;31m --(Processo 2)-- \e[0m" ;\
+apt list --upgradable ;\
+echo -e "\e[1;31m --(Processo 3)-- \e[0m" ;\
+sudo apt upgrade ;\
+echo -e "\e[1;31m --(Processo 4)-- \e[0m" ;\
+sudo apt dist-upgrade ;\
+echo -e "\e[1;31m --(Processo 5)-- \e[0m" ;\
+sudo apt autoremove
 
 {% endhighlight %}
 

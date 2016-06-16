@@ -31,8 +31,8 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 cd ~/dados/public_html ;\
 pwd ;\
 ls ;\
-mkdir magento-2.0.2-dev23 ;\
-cd magento-2.0.2-dev23 ;\
+mkdir magento-2.0.7-dev24 ;\
+cd magento-2.0.7-dev24 ;\
 composer --version && sudo composer self-update && composer clear-cache
 
 # Download Magento
@@ -42,14 +42,14 @@ ls ;\
 mv magento2/{.[!.],}* . ;\
 sudo chown -R :www-data . ;\
 sudo find . -type d -exec chmod 770 {} \; && sudo find . -type f -exec chmod 660 {} \; && sudo chmod u+x bin/magento ;\
-mysqladmin -u root -p CREATE "magento202dev23"
+mysqladmin -u root -p CREATE "magento207dev24"
 
 # Install Magento
 
 php bin/magento setup:install \
---base-url=http://52.67.2.27/public_html/magento-2.0.2-dev23/ \
+--base-url=http://127.0.0.1/public_html/magento-2.0.7-dev24/ \
 --backend-frontname=admin \
---db-host=127.0.0.1 --db-name=magento202dev23 --db-user=root --db-password=??? \
+--db-host=127.0.0.1 --db-name=magento207dev24 --db-user=root --db-password=??? \
 --admin-firstname=Marcio --admin-lastname=Amorim --admin-email=mailer@mozg.com.br \
 --admin-user=admin --admin-password=123456a --language=pt_BR \
 --currency=BRL --timezone=America/Sao_Paulo \
@@ -63,16 +63,18 @@ sudo chmod 777 -R ./var ./pub ;\
 php index.php ;\
 sudo rm -fR var/cache/* var/page_cache/* var/generation/* ;\
 php bin/magento sampledata:deploy ;\
-composer --version && sudo composer self-update && composer clear-cache && composer update
+composer --version && sudo composer self-update && composer clear-cache && composer update -vvv
 
 # Install Extensions via Composer
 
 composer require magento2translations/language_pt_br:dev-master ;\
-composer require mozgbrasil/magento2-bundle-php55
+composer require mozgbrasil/magento2-bundle-php56
 
 # Para cada procedimento deve ser executado os comandos de atualização da plataforma
 
 {% endhighlight %}
+
+~~composer require mozgbrasil/magento2-bundle-php56 --ignore-platform-reqs~~
 
 <h1 class="ui header">Para atualizar a plataforma deve se executar o comando a seguir</h1>
 
@@ -81,34 +83,44 @@ composer require mozgbrasil/magento2-bundle-php55
 echo -e "\e[1;31m --(Processo 1)-- \e[0m" ;\
 sudo chmod 777 -R . ;\
 echo -e "\e[1;31m --(Processo 2)-- \e[0m" ;\
-php bin/magento -vvv cache:disable ;\
+php bin/magento cache:disable ;\
 echo -e "\e[1;31m --(Processo 3)-- \e[0m" ;\
-php bin/magento -vvv cache:clean ;\
+php bin/magento cache:clean ;\
 echo -e "\e[1;31m --(Processo 4)-- \e[0m" ;\
-php bin/magento -vvv cache:flush ;\
+php bin/magento cache:flush ;\
 echo -e "\e[1;31m --(Processo 5)-- \e[0m" ;\
-php bin/magento -vvv cache:status ;\
+php bin/magento cache:status ;\
 echo -e "\e[1;31m --(Processo 6)-- \e[0m" ;\
-php bin/magento -vvv deploy:mode:show ;\
+php bin/magento deploy:mode:show ;\
+echo -e "\e[1;31m --(Processo 6)-- \e[0m" ;\
+php bin/magento deploy:mode:set developer ;\
 echo -e "\e[1;31m --(Processo 7)-- \e[0m" ;\
-php bin/magento -vvv indexer:reindex ;\
+php bin/magento indexer:reindex ;\
 echo -e "\e[1;31m --(Processo 8)-- \e[0m" ;\
-php bin/magento -vvv indexer:status ;\
+php bin/magento indexer:status ;\
 echo -e "\e[1;31m --(Processo 9)-- \e[0m" ;\
-php bin/magento -vvv maintenance:disable ;\
+php bin/magento maintenance:disable ;\
 echo -e "\e[1;31m --(Processo 10)-- \e[0m" ;\
-php bin/magento -vvv maintenance:status ;\
+php bin/magento maintenance:status ;\
 echo -e "\e[1;31m --(Processo 11)-- \e[0m" ;\
-php bin/magento -vvv module:status ;\
+php bin/magento module:status ;\
 echo -e "\e[1;31m --(Processo 12)-- \e[0m" ;\
-php bin/magento -vvv setup:db:status ;\
+php bin/magento setup:db:status ;\
 echo -e "\e[1;31m --(Processo 13)-- \e[0m" ;\
-php bin/magento -vvv setup:upgrade ;\
+php bin/magento setup:upgrade ;\
 echo -e "\e[1;31m --(Processo 14)-- \e[0m" ;\
 sudo chmod 777 -R . ;\
 echo -e "\e[1;31m --(Processo 15)-- \e[0m" ;\
 pwd ;\
 echo -e "\e[1;31m --(Processo 16)-- \e[0m" ;\
-php bin/magento && php bin/magento cron:run && php update/cron.php && php bin/magento setup:cron:run && sudo chmod 777 -R .
+php bin/magento ;\
+echo -e "\e[1;31m --(Processo 17)-- \e[0m" ;\
+php bin/magento cron:run ;\
+echo -e "\e[1;31m --(Processo 18)-- \e[0m" ;\
+php update/cron.php ;\
+echo -e "\e[1;31m --(Processo 19)-- \e[0m" ;\
+php bin/magento setup:cron:run ;\
+echo -e "\e[1;31m --(Processo 20)-- \e[0m" ;\
+sudo chmod 777 -R .
 
 {% endhighlight %}
