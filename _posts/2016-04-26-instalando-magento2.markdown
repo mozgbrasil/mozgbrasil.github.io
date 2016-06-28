@@ -31,8 +31,8 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 cd ~/dados/public_html ;\
 pwd ;\
 ls ;\
-mkdir magento-2.0.7-dev24 ;\
-cd magento-2.0.7-dev24 ;\
+mkdir magento-2.1.0-dev36 ;\
+cd magento-2.1.0-dev36 ;\
 composer --version && sudo composer self-update && composer clear-cache
 
 # Download Magento
@@ -42,14 +42,14 @@ ls ;\
 mv magento2/{.[!.],}* . ;\
 sudo chown -R :www-data . ;\
 sudo find . -type d -exec chmod 770 {} \; && sudo find . -type f -exec chmod 660 {} \; && sudo chmod u+x bin/magento ;\
-mysqladmin -u root -p CREATE "magento207dev24"
+mysqladmin -u root -p CREATE "magento210dev36"
 
 # Install Magento
 
 php bin/magento setup:install \
---base-url=http://127.0.0.1/public_html/magento-2.0.7-dev24/ \
+--base-url=http://127.0.0.1/public_html/magento-2.1.0-dev36/ \
 --backend-frontname=admin \
---db-host=127.0.0.1 --db-name=magento207dev24 --db-user=root --db-password=??? \
+--db-host=127.0.0.1 --db-name=magento210dev36 --db-user=root --db-password=??? \
 --admin-firstname=Marcio --admin-lastname=Amorim --admin-email=mailer@mozg.com.br \
 --admin-user=admin --admin-password=123456a --language=pt_BR \
 --currency=BRL --timezone=America/Sao_Paulo \
@@ -63,7 +63,7 @@ sudo chmod 777 -R ./var ./pub ;\
 php index.php ;\
 sudo rm -fR var/cache/* var/page_cache/* var/generation/* ;\
 php bin/magento sampledata:deploy ;\
-composer --version && sudo composer self-update && composer clear-cache && composer update -vvv
+composer update -vvv
 
 # Install Extensions via Composer
 
@@ -74,7 +74,14 @@ composer require mozgbrasil/magento2-bundle-php56
 
 {% endhighlight %}
 
-~~composer require mozgbrasil/magento2-bundle-php56 --ignore-platform-reqs~~
+{% comment %}
+
+composer require magento2translations/language_pt_br:dev-master ;\
+composer require adyen/module-payment ;\
+composer require bleez/smtp ;\
+composer require mozgbrasil/framework-php56 --ignore-platform-reqs
+
+{% endcomment %}
 
 <h1 class="ui header">Para atualizar a plataforma deve se executar o comando a seguir</h1>
 
@@ -124,3 +131,9 @@ echo -e "\e[1;31m --(Processo 20)-- \e[0m" ;\
 sudo chmod 777 -R .
 
 {% endhighlight %}
+
+https://mirasvit.com/blog/7-ways-to-improve-your-magento-2-site-speed.html
+
+http://devdocs.magento.com/guides/v2.0/config-guide/memcache/memcache_ubuntu.html
+
+http://devdocs.magento.com/guides/v2.0/config-guide/redis/config-redis.html

@@ -20,7 +20,7 @@ Execute o seguinte comando no terminal do seu servidor
 
 	tail -f /var/log/apache2/error.log
 
-	tail -f /home/user/var/php-fpm/error.log
+	tail -f /home/marcio/var/php-fpm/error.log
 
 Acesse o projeto até gerar o erro 
 
