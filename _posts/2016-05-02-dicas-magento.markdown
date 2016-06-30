@@ -32,6 +32,8 @@ Veja que o terceiro modelo acessa via php-client o arquivo cron.php do Magento
 
 Você pode usar qualquer um dos modelos acima ou qualquer tecnologia que faz acesso ao devido arquivo do Magento
 
+Esse modelo está baseado em meu ambiente local, portanto pode haver variação para cada ambiente
+
 ## Erro de servidor: "error 500" ou "tela branca"
 
 A informação "error 500" se trata da omissão do erro devendo ser analisado o erro no log do servidor
@@ -325,6 +327,23 @@ Fonte: http://stackoverflow.com/questions/30088776/apache-2-4-x-override-charset
 
 
 # Magento 2
+
+
+## Como ativar a CRON no Magento
+
+No terminal ao executar o comando
+
+	crontab -e
+
+Informe 
+
+	*/1 * * * * /usr/bin/php -c /etc/php/7.0/apache2/php.ini /home/marcio/dados/public_html/magento-2.1.0-dev36/bin/magento cron:run >> /home/marcio/dados/public_html/magento-2.1.0-dev36/var/log/magento.cron.log&
+
+	*/1 * * * * /usr/bin/php -c /etc/php/7.0/apache2/php.ini /home/marcio/dados/public_html/magento-2.1.0-dev36/update/cron.php >> /home/marcio/dados/public_html/magento-2.1.0-dev36/var/log/update.cron.log&
+
+	*/1 * * * * /usr/bin/php -c /etc/php/7.0/apache2/php.ini /home/marcio/dados/public_html/magento-2.1.0-dev36/bin/magento setup:cron:run >> /home/marcio/dados/public_html/magento-2.1.0-dev36/var/log/setup.cron.log&
+
+Esse modelo está baseado em meu ambiente local, portanto pode haver variação para cada ambiente
 
 ## Composer não está baixando a ultima versão do módulo
 
