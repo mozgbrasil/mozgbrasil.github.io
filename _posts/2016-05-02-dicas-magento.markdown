@@ -10,6 +10,28 @@ excerpt: "Nesse artigo é exibido diversas dicas relativa ao Apache, PHP e Magen
 
 # Magento 1
 
+## Como ativar a CRON no Magento
+
+No terminal ao executar o comando
+
+	crontab -e
+
+Pode ser informado qualquer um dos modelos de comandos a seguir
+
+	*/1 * * * * /bin/sh /home/marcio/dados/public_html/magento-1.9.2.4-dev31/cron.sh >> /home/marcio/dados/public_html/magento-1.9.2.4-dev31/var/log/magento.cron.log&
+
+	*/1 * * * * curl -s -o /dev/null http://SUA_URL/magento-1.8.0.0-dev02/cron.php >> /home/marcio/dados/public_html/magento-1.9.2.4-dev31/var/log/magento.cron.log&
+
+	*/1 * * * * php /home/marcio/dados/public_html/magento-1.9.0.1-dev06/cron.php >> /home/marcio/dados/public_html/magento-1.9.2.4-dev31/var/log/magento.cron.log&
+
+Veja que o primeiro modelo acessa via shell o arquivo cron.sh do Magento
+
+Veja que o segundo modelo acessa via curl o arquivo cron.php do Magento
+
+Veja que o terceiro modelo acessa via php-client o arquivo cron.php do Magento
+
+Você pode usar qualquer um dos modelos acima ou qualquer tecnologia que faz acesso ao devido arquivo do Magento
+
 ## Erro de servidor: "error 500" ou "tela branca"
 
 A informação "error 500" se trata da omissão do erro devendo ser analisado o erro no log do servidor
