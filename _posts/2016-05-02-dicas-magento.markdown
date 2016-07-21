@@ -8,7 +8,27 @@ tags: [magento, php, apache, mysql]
 excerpt: "Nesse artigo é exibido diversas dicas relativa ao Apache, PHP e Magento"
 ---
 
+# Ubuntu
+
+## Conectar via SFTP pelo nautilus
+
+sftp://marcio@192.168.0.7
+
+## Conectar via Samba pelo nautilus
+
+smb://192.168.0.7
+
+## Conectar via ssh pelo terminal
+
+ssh marcio@192.168.0.7
+
 # Magento 1
+
+## Erro: Warning: inet_pton(): Unrecognized address 177.23.249.99, 127.0.0.1  in /app/code/core/Mage/Core/Helper/Http.php on line 149
+
+Esse erro foi exibido quando foi colocado o seguinte item no .htaccess
+
+	SetEnv MAGE_IS_DEVELOPER_MODE "true"
 
 ## Como ativar a CRON no Magento
 
@@ -148,11 +168,27 @@ O script a seguir é um modelo para a execução do procedimento de backup a ser
 
 	tar -cvpzf EMPRESA_$(date +%Y.%m.%d_%H.%M.%S).tgz /DIRETORIO
 
-## Como efetuar backup do banco de dados ?
+## Como exportar o backup do banco de dados ?
 
 O script a seguir é um modelo para a execução do procedimento de backup compactado a ser executado via terminal do servidor
 
 	mysqldump -h 'HOST' -u 'USER' -p'PASS' 'DBNAME' | gzip > EMPRESA_$(date +%Y.%m.%d_%H.%M.%S).sql.gz
+
+## Como importar o backup do banco de dados ?
+
+O script a seguir é um modelo a ser executado via terminal do servidor
+
+	mysql -h 'HOST' -u 'USER' -p 'DBNAME' < 'PATH_FILE';
+
+## Como alterar a URL_BASE do Magento no banco de dados ?
+
+O script a seguir é um modelo a ser executado via terminal do servidor
+
+mysql -h 'HOST' -u 'USER' -p 'DBNAME' -e "\
+    SELECT * FROM `core_config_data` WHERE `path` like '%base_url%'; \
+    UPDATE `core_config_data` SET `value` = 'http://SUA_URL/ambiente_01/ ' WHERE `path` like '%base_url%'; \
+    SELECT * FROM `core_config_data` WHERE `path` like '%base_url%'; \
+"
 
 ## Ativar debug do template no backend
 

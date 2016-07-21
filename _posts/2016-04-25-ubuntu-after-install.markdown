@@ -125,6 +125,10 @@ tar -zxvf zend-loader-php5.6-linux-x86_64.tar.gz
 sudo nano /etc/php/5.6/cli/php.ini
 sudo nano /etc/php/5.6/apache2/php.ini
 
+ou 
+
+sudo nano /etc/php/5.6/fpm/php.ini
+
     [zendloader]
     zend_extension=/home/marcio/dados/public_html/zend-loader-php5.6-linux-x86_64/ZendGuardLoader.so
     zend_extension=/home/marcio/dados/public_html/zend-loader-php5.6-linux-x86_64/opcache.so
@@ -171,7 +175,9 @@ sudo chown -R $USER $HOME/.composer
 
 # Local Desktop
 
-sudo apt install build-essential ubuntu-restricted-extras ubuntu-sdk ubuntu-make juju python-software-properties filezilla git nautilus-dropbox p7zip-full keepassx meld curl gufw gimp gimp-plugin-registry shutter ffmpeg lame links links2 elinks lynx openssh-server ruby-dev nodejs chromium-browser inkscape jq npm nmap ntp && sudo service ssh start
+sudo apt install build-essential ubuntu-restricted-extras ubuntu-sdk ubuntu-make juju python-software-properties filezilla git nautilus-dropbox p7zip-full keepassx meld curl gufw gimp gimp-plugin-registry shutter ffmpeg lame links links2 elinks lynx openssh-server ruby-dev nodejs chromium-browser inkscape jq npm nmap ntp vlc browser-plugin-vlc gedit-plugins && sudo service ssh start
+
+# vlc http://avenard.org/iptv/playlist-tpg-vlc.m3u
 
 # Sublime Editor
 

@@ -79,6 +79,7 @@ composer require mozgbrasil/magento2-bundle-php56
 composer require magento2translations/language_pt_br:dev-master ;\
 composer require adyen/module-payment ;\
 composer require bleez/smtp ;\
+composer require vpietri/adm-quickdevbar ;\
 composer require mozgbrasil/framework-php56 --ignore-platform-reqs
 
 {% endcomment %}

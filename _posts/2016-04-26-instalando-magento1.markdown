@@ -135,6 +135,16 @@ chmod +x ./wizard_module.sh ;\
 
 {% endhighlight %}
 
+{% comment %}
+
+wget --no-check-certificate https://www.dropbox.com/s/tsak00jso89ko5f/iwd_onepagecheckout_free-4.3.0_1.tgz
+./mage install-file iwd_onepagecheckout_free-4.3.0_1.tgz
+
+wget --no-check-certificate http://iwdextensions.com/media/modules/iwd_all.tgz
+./mage install-file iwd_all.tgz
+
+{% endcomment %}
+
 
 ### Habilitar exibição do erro no Magento
 
