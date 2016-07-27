@@ -88,47 +88,47 @@ composer require mozgbrasil/framework-php56 --ignore-platform-reqs
 
 {% highlight ruby %}
 
-echo -e "\e[1;31m --(Processo 1)-- \e[0m" ;\
+echo -e "\e[1;33m --(Processo 1)-- \e[0m" ;\
 sudo chmod 777 -R . ;\
-echo -e "\e[1;31m --(Processo 2)-- \e[0m" ;\
+echo -e "\e[1;33m --(Processo 2)-- \e[0m" ;\
 php bin/magento cache:disable ;\
-echo -e "\e[1;31m --(Processo 3)-- \e[0m" ;\
+echo -e "\e[1;33m --(Processo 3)-- \e[0m" ;\
 php bin/magento cache:clean ;\
-echo -e "\e[1;31m --(Processo 4)-- \e[0m" ;\
+echo -e "\e[1;33m --(Processo 4)-- \e[0m" ;\
 php bin/magento cache:flush ;\
-echo -e "\e[1;31m --(Processo 5)-- \e[0m" ;\
+echo -e "\e[1;33m --(Processo 5)-- \e[0m" ;\
 php bin/magento cache:status ;\
-echo -e "\e[1;31m --(Processo 6)-- \e[0m" ;\
+echo -e "\e[1;33m --(Processo 6)-- \e[0m" ;\
 php bin/magento deploy:mode:show ;\
-echo -e "\e[1;31m --(Processo 6)-- \e[0m" ;\
+echo -e "\e[1;33m --(Processo 6)-- \e[0m" ;\
 php bin/magento deploy:mode:set developer ;\
-echo -e "\e[1;31m --(Processo 7)-- \e[0m" ;\
+echo -e "\e[1;33m --(Processo 7)-- \e[0m" ;\
 php bin/magento indexer:reindex ;\
-echo -e "\e[1;31m --(Processo 8)-- \e[0m" ;\
+echo -e "\e[1;33m --(Processo 8)-- \e[0m" ;\
 php bin/magento indexer:status ;\
-echo -e "\e[1;31m --(Processo 9)-- \e[0m" ;\
+echo -e "\e[1;33m --(Processo 9)-- \e[0m" ;\
 php bin/magento maintenance:disable ;\
-echo -e "\e[1;31m --(Processo 10)-- \e[0m" ;\
+echo -e "\e[1;33m --(Processo 10)-- \e[0m" ;\
 php bin/magento maintenance:status ;\
-echo -e "\e[1;31m --(Processo 11)-- \e[0m" ;\
+echo -e "\e[1;33m --(Processo 11)-- \e[0m" ;\
 php bin/magento module:status ;\
-echo -e "\e[1;31m --(Processo 12)-- \e[0m" ;\
+echo -e "\e[1;33m --(Processo 12)-- \e[0m" ;\
 php bin/magento setup:db:status ;\
-echo -e "\e[1;31m --(Processo 13)-- \e[0m" ;\
+echo -e "\e[1;33m --(Processo 13)-- \e[0m" ;\
 php bin/magento setup:upgrade ;\
-echo -e "\e[1;31m --(Processo 14)-- \e[0m" ;\
+echo -e "\e[1;33m --(Processo 14)-- \e[0m" ;\
 sudo chmod 777 -R . ;\
-echo -e "\e[1;31m --(Processo 15)-- \e[0m" ;\
+echo -e "\e[1;33m --(Processo 15)-- \e[0m" ;\
 pwd ;\
-echo -e "\e[1;31m --(Processo 16)-- \e[0m" ;\
+echo -e "\e[1;33m --(Processo 16)-- \e[0m" ;\
 php bin/magento ;\
-echo -e "\e[1;31m --(Processo 17)-- \e[0m" ;\
+echo -e "\e[1;33m --(Processo 17)-- \e[0m" ;\
 php bin/magento cron:run ;\
-echo -e "\e[1;31m --(Processo 18)-- \e[0m" ;\
+echo -e "\e[1;33m --(Processo 18)-- \e[0m" ;\
 php update/cron.php ;\
-echo -e "\e[1;31m --(Processo 19)-- \e[0m" ;\
+echo -e "\e[1;33m --(Processo 19)-- \e[0m" ;\
 php bin/magento setup:cron:run ;\
-echo -e "\e[1;31m --(Processo 20)-- \e[0m" ;\
+echo -e "\e[1;33m --(Processo 20)-- \e[0m" ;\
 sudo chmod 777 -R .
 
 {% endhighlight %}
