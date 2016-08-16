@@ -24,6 +24,10 @@ ssh marcio@192.168.0.7
 
 # Magento 1
 
+## Login no backend não retorna nada
+
+A empresa de hospedagem aumentou o espaço em disco e funcionou como esperado
+
 ## Erro: Warning: inet_pton(): Unrecognized address 177.23.249.99, 127.0.0.1  in /app/code/core/Mage/Core/Helper/Http.php on line 149
 
 Esse erro foi exibido quando foi colocado o seguinte item no .htaccess
@@ -320,12 +324,16 @@ Para habilitar o modo de manutenção no Magento, basta criar um arquivo vazio n
 Execute o comando a seguir no MySQL para reexecutar os scripts de setup
 
 	-- add table prefix if you have one
+	DROP TABLE IF EXISTS mozg_api_debug;
+	DROP TABLE IF EXISTS mozg_event_data;
+	DROP TABLE IF EXISTS mozg_event_data_queue;
 	DROP TABLE IF EXISTS mozg_boxpacker_packing_comment_store;
 	DROP TABLE IF EXISTS mozg_boxpacker_packing_comment;
 	DROP TABLE IF EXISTS mozg_boxpacker_packing_store;
 	DROP TABLE IF EXISTS mozg_boxpacker_packing;
 	SELECT * FROM `core_resource` WHERE `code` like '%mozg%';
 	DELETE FROM core_resource WHERE code like '%mozg%';
+	SELECT * FROM `core_config_data` WHERE `path` like '%mozg%';
 	DELETE FROM core_config_data WHERE path like '%mozg%';
 
 ## Como redefinir a senha do administrador em Magento?

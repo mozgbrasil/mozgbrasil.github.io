@@ -5,8 +5,8 @@ permalink: /requirements/
 order: 7
 excerpt: "Antes de executar os processos, e leia os pré-requisitos e sugestões"
 ---
-[ativando-zend-guard-loader]: http://mozgbrasil.github.io/instala%C3%A7%C3%A3o/ativando-zend-guard-loader
-[acordo]: /acordo
+[ativando-zend-guard-loader]: /zend%20guard%20loader/ativando-zend-guard-loader
+[acordo]: /acordo-licenca-usuario-final/
 
 Leia atentamente cada tópico
 

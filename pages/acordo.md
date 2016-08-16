@@ -7,7 +7,7 @@ excerpt: "Para utilizar o(s) módulo(s) da MOZG é necessário aceitar esse Acor
 ---
 
 [magento-download]: https://www.magentocommerce.com/download
-[ativando-zend-guard-loader]: http://mozgbrasil.github.io/instala%C3%A7%C3%A3o/ativando-zend-guard-loader
+[ativando-zend-guard-loader]: /zend%20guard%20loader/ativando-zend-guard-loader
 
 ACORDO DE LICENÇA DO USUÁRIO FINAL
 
