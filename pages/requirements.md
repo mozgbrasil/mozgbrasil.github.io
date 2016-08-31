@@ -9,7 +9,7 @@ excerpt: "Antes de executar os processos, e leia os pré-requisitos e sugestões
 [ativando-zend-guard-loader]: /zend%20guard%20loader/ativando-zend-guard-loader
 [acordo]: /acordo-licenca-usuario-final/
 
-Leia atentamente cada tópico
+# Leia atentamente cada tópico
 
 ## Iniciando
 

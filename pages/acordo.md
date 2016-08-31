@@ -9,7 +9,7 @@ excerpt: "Para utilizar o(s) módulo(s) da MOZG é necessário aceitar esse Acor
 [magento-download]: https://www.magentocommerce.com/download
 [ativando-zend-guard-loader]: /zend%20guard%20loader/ativando-zend-guard-loader
 
-ACORDO DE LICENÇA DO USUÁRIO FINAL
+# ACORDO DE LICENÇA DO USUÁRIO FINAL
 
 Este Acordo de Licença do Usuário Final poderá ser atualizado ou editado à qualquer momento, servindo como acordo legal entre você (pessoa física ou jurídica) e a CEREBRUM Comércio e Desenvolvimento de Sistemas de Informática Ltda ME, empresa situada na Rua Luiz de Almeida Fernandes, 272 – Itaquera – São Paulo – SP – Brasil, inscrita sob o CNPJ 07.361.259/0001-07 – IE 148.089.020.112
 
