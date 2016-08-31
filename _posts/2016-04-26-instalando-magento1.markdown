@@ -137,6 +137,8 @@ chmod +x ./wizard_module.sh ;\
 
 {% comment %}
 
+composer require inchoo/php7
+
 wget --no-check-certificate https://www.dropbox.com/s/tsak00jso89ko5f/iwd_onepagecheckout_free-4.3.0_1.tgz
 ./mage install-file iwd_onepagecheckout_free-4.3.0_1.tgz
 

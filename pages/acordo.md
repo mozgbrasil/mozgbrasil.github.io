@@ -47,10 +47,6 @@ Este Acordo de Licença do Usuário Final poderá ser atualizado ou editado à q
 - A MOZG oferece módulo(s) para teste, permitindo o cliente efetuar os devidos testes antes de pagar pelo(s) módulo(s).
 - Recomendamos efetivar backup, instalar, configurar e homologar os módulos desejados em ambiente de testes e somente após os devidos testes, instalar, configurar e homologar os módulos desejados em ambiente de produção com prévio backup do ambiente de produção.
 
-# Compatibilidade
-
-- O(s) módulo(s) foi desenvolvido para funcionar sobre a plataforma "[Magento Community Edition][magento-download]" para as versões: 2.0.0
-
 # Sugestões
 
 - O(s) módulo(s) são comercializado com modelo de funcionamento pré-definido.
