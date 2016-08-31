@@ -21,7 +21,7 @@ Para saber a versão do seu PHP, execute o seguinte comando no terminal
 
 	php -v
 
-Esse comando deve exibir a versão do PHP e a presença da extensão de servidor Zend Guard Loader
+Esse comando deve exibir a versão do PHP e a presença da extensão de servidor [Zend Guard Loader][ativando-zend-guard-loader]
 
 Para visualizar se no servidor tem o suporte ao composer, execute o seguinte comando no terminal
 
