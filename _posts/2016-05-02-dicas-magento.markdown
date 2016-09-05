@@ -24,45 +24,6 @@ ssh marcio@192.168.0.7
 
 # Magento 1
 
-## Erro estranho com o composer
-
-Em 02/09/2016 ao atualizar via composer era exibido 
-
-  - Installing mozgbrasil/framework-php56 (dev-master 52f0272)
-    Cloning 52f02720104dcdbcfd669e59135708f8e4cf82ca from cache
-    52f02720104dcdbcfd669e59135708f8e4cf82ca is gone (history was rewritten?)
-    Failed to download mozgbrasil/framework-php56 from source: Failed to execute git checkout '52f02720104dcdbcfd669e59135708f8e4cf82ca' -- && git reset --hard '52f02720104dcdbcfd669e59135708f8e4cf82ca' --
-
-fatal: reference is not a tree: 52f02720104dcdbcfd669e59135708f8e4cf82ca
-
-    Now trying to download from dist
-  - Installing mozgbrasil/framework-php56 (dev-master 52f0272)
-    Downloading: 100% 
-
-
-Ao tentar limpar o cache e acessar o diretório via que os arquivos persisitiam
-
-marcio@marcio-Inspiron-5548:~/dados/public_html/test2$ composer clear-cache
-Clearing cache (cache-dir): /home/marcio/.composer/cache
-Clearing cache (cache-files-dir): /home/marcio/.composer/cache/files
-Clearing cache (cache-repo-dir): /home/marcio/.composer/cache/repo
-Clearing cache (cache-vcs-dir): /home/marcio/.composer/cache/vcs
-All caches cleared.
-
-Executei o comando novamente de limpar o cache
-
-marcio@marcio-Inspiron-5548:~/dados/public_html/test2$ composer clear-cache
-Clearing cache (cache-dir): /home/marcio/.cache/composer
-Clearing cache (cache-files-dir): /home/marcio/.cache/composer/files
-Clearing cache (cache-repo-dir): /home/marcio/.cache/composer/repo
-Cache directory does not exist (cache-vcs-dir): 
-All caches cleared.
-
-Vemos que agora está em outro diretório o cache do composer
-
-
-Então alterei a pasta cache nesse diretório
-
 ## Mage_Core_Exception: The requested Payment Method is not available. in /app/Mage.php:603
 
 Esse erro é ocasionado caso o módulo relacionado ao método de pagamento esteja ausente no projeto
