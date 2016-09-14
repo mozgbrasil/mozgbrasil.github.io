@@ -166,13 +166,17 @@ php -v
 
 https://getcomposer.org/download/
 
+https://getcomposer.org/doc/00-intro.md#locally
+
+    curl -sS https://getcomposer.org/installer | php
+
 ## FIX: https://getcomposer.org/doc/00-intro.md#globally
 
-sudo mv composer.phar /usr/local/bin/composer
+    sudo mv composer.phar /usr/local/bin/composer
 
 ## FIX: https://github.com/thomaszbz/native-dockerfiles-typo3/issues/19
 
-sudo chown -R $USER $HOME/.composer
+    sudo chown -R $USER $HOME/.composer
 
 # Local Desktop
 
@@ -184,15 +188,25 @@ sudo apt install build-essential ubuntu-restricted-extras ubuntu-sdk ubuntu-make
 
 sudo add-apt-repository ppa:webupd8team/sublime-text-3 && sudo apt-get update && sudo apt-get install sublime-text-installer
 
+# Jekyll
+
+sudo gem install jekyll && sudo gem install github-pages && sudo gem install rouge && jekyll -v && ruby --version && gem --version ;\
+
 # Google Chrome
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb ;\
 sudo dpkg -i --force-depends google-chrome-stable_current_amd64.deb ;\
 sudo apt-get install -f
 
-# jekyll
+# Google Web Designer
 
-sudo gem install jekyll && sudo gem install github-pages && sudo gem install rouge && jekyll -v && ruby --version && gem --version ;\
+wget https://dl.google.com/linux/direct/google-webdesigner_current_amd64.deb ;\
+sudo dpkg -i --force-depends google-webdesigner_current_amd64.deb ;\
+sudo apt-get install -f
+
+# Open Broadcaster Software
+
+sudo add-apt-repository ppa:obsproject/obs-studio && sudo apt-get update && sudo apt-get install obs-studio
 
 # OS Update
 

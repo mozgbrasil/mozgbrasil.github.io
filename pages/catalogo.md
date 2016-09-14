@@ -190,5 +190,44 @@ excerpt: "Veja nosso catálogo de módulos para Magento e instale em seu projeto
             </table>
          </td>
       </tr>
+
+
+      <tr>
+         <td>Estimativa de Frete na página de produto</td>
+         <td>
+            <table class="ui red table">
+               <thead>
+                  <tr>
+                     <th>PHP 5.5</th>
+                     <th>PHP 5.6</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-product-page-shipping-php55#mozgproductpageshipping"><i class="large external icon"></i></a></td>
+                     <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-product-page-shipping-php56#mozgproductpageshipping"><i class="large external icon"></i></a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+         <td>
+            <table class="ui red table">
+               <thead>
+                  <tr>
+                     <th>PHP 5.5</th>
+                     <th>PHP 5.6</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="center aligned"><a href="#">#</a></td>
+                     <td class="center aligned"><a href="#">#</a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+      </tr>
+
+
    </tbody>
 </table>

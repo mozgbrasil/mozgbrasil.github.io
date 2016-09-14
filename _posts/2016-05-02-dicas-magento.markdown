@@ -24,6 +24,28 @@ ssh marcio@192.168.0.7
 
 # Magento 1
 
+### Modificando a tradução do módulo para o template
+
+Cada módulo tem o seu arquivo de tradução com a mesma nomenclatura do módulo
+
+Os arquivos de tradução para português do Brasil no Magento é armazenado no diretório  
+
+	/app/locale/pt_BR/
+
+Recomendo não editar os arquivos nesse diretório pois em uma nova atualização de módulo esse arquivo deve ser atualizado com as informações do módulo
+
+Na necessidade de trocar algum item
+
+Edite o arquivo translate.csv presente no diretório do seu template para ser exibido um novo resultado
+
+	/app/design/frontend/default/default/locale/pt_BR/translate.csv
+
+Caso não exista a estrutura "/locale/pt_BR/translate.csv" em seu template apenas crie o arquivo nessa estrutura de diretório
+
+Obs.
+
+No Windows ou Mac sugiro usar o programa UltraEdit para edição do arquivo, dessa forma será mantido a codificação do arquivo em UTF-8
+
 ## Mage_Core_Exception: The requested Payment Method is not available. in /app/Mage.php:603
 
 Esse erro é ocasionado caso o módulo relacionado ao método de pagamento esteja ausente no projeto
