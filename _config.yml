@@ -21,9 +21,9 @@ compress_html:
 # Site settings
 
 # mode: dev | production
-url: //mozg.com.br
+url: https://mozg.com.br
 mode: production
-devurl: //127.0.0.1:4000
+devurl: http://127.0.0.1:4000
 baseurl: "" # the subpath of your site, e.g. /blog/
 title: MOZG
 tagline: Módulos para Magento
