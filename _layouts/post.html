@@ -17,6 +17,7 @@ layout: default
         </div>
         <div role="complementary" class="col-md-3">
             <nav class="bs-docs-sidebar hidden-print hidden-sm hidden-xs affix-top" style="">
+                {% comment %}
                 <ul class="nav bs-docs-sidenav">
                     <li class="">
                         <a href="#ancora-a-mozg">A MOZG</a> 
@@ -25,15 +26,128 @@ layout: default
                         </ul>
                     </li>
                 </ul>
+                {% endcomment %}
+                <div id="nav-post-sidebar"></div>
                 <a class="back-to-top" href="#top"> Ir ao topo </a>
             </nav>
         </div>
     </div>
     <hr class="half-rule">
 </div>
-<div class="bs-docs-featurette">
-    <div class="container">
-        {% include snippet-disqus.html %}
-        <hr class="half-rule">
-    </div>
-</div>
+
+<script type="text/javascript">
+
+/*
+var nav = [
+    {
+        label: 'Label 1',
+        value: 'Value 1',
+        children: [{
+            label: 'Label 1.1',
+            value: 'Value 1.1',
+            children: []
+        }]
+    },
+    {
+        label: 'Label 2',
+        value: 'Value 2.1',
+        children: [{
+            label: 'Label 2.1',
+            value: 'Value 1.1',
+            children: []
+        }]
+    },
+];
+
+console.log(nav);
+*/
+
+function findNodes(step, $this) {
+    var selector = null;
+    var object = {};
+    object['children'] = [];
+    if ($this) selector = $this.next('h' + step);
+    else selector = $("h" + step);
+
+    //console.log(tag);
+    //console.log(selector);
+
+    selector.each(function(){
+
+        var args = Array.slice(arguments);
+        //console.dir(args);
+
+        element = args[1];
+
+        //console.log(element);
+
+        //console.dir(element);
+        //console.dir($(this));
+
+        elementLabel = element.innerHTML;
+        elementLabel = element.innerText;
+        elementId = element.id;
+        elementValue = '#'+elementId;
+
+        if(!elementId){
+            return;
+        }
+
+        //console.warn(elementValue);
+        //console.log(elementLabel);
+
+        var innerObject = {
+            label: elementLabel,
+            value: elementValue
+        };
+        var nextHeading = findNodes(step + 1, $(this));
+        if (nextHeading.children.length > 0) {
+            innerObject.children = nextHeading['children'];
+        }
+        object['children'].push(innerObject);
+    });
+
+    return object;
+}
+
+nav = findNodes(1);
+
+nav = nav['children'];
+
+//console.log(nav);
+
+//-
+
+var menu = [];
+
+(function build(elements) {
+    menu.push('<ul class="nav bs-docs-sidenav">');
+    jQuery.each(elements, function (i, val) {
+
+        //console.log(i);
+        //console.log(val);
+
+        var itemLabel = val.label;
+        var itemValue = val.value;
+
+        //console.log(itemLabel);
+        //console.log(itemValue);
+
+        var itemElement = '<a href="'+itemValue+'">'+itemLabel+'</a>';
+        menu.push('<li>', itemElement);
+        build(val.children);
+        menu.push('</li>');
+    });
+    menu.push('</ul>');
+}(nav));
+
+//console.log(menu);
+
+newElementMenu = menu.join('');
+
+//console.log(newElementMenu);
+
+elementToInject = document.getElementById('nav-post-sidebar');
+elementToInject.innerHTML = newElementMenu;
+
+</script>

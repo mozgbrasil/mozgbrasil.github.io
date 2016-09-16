@@ -222,7 +222,9 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
     echo -e "\e[1;31m --(Processo 5)-- \e[0m" ;\
     sudo apt autoremove
 
-# Após criar uma pasta e compartilhar pelo Nautilus só deve funcionar a autenticação após ser criado o devido usuário no Samba
+# Dica: Samba
+
+    # Após criar uma pasta e compartilhar pelo Nautilus só deve funcionar a autenticação após ser criado o devido usuário no Samba
 
     sudo smbpasswd -a marcio
 

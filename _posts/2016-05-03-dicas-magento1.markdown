@@ -8,9 +8,9 @@ tags: [magento, php, apache, mysql]
 excerpt: "Nesse artigo é exibido diversas dicas relativa ao Magento 1"
 ---
 
-# Magento 1
+# Oi
 
-### Modificando a tradução do módulo para o template
+## Modificando a tradução do módulo para o template
 
 Cada módulo tem o seu arquivo de tradução com a mesma nomenclatura do módulo
 

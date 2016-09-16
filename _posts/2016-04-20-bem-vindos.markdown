@@ -8,9 +8,7 @@ tags: [magento2, php]
 excerpt: "Ola, vamos falar de Magento"
 ---
 
-# Saudações
-
-Ola
+# Oi
 
 Vamos falar de Magento
 

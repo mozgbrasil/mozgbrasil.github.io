@@ -8,7 +8,7 @@ tags: [magento, php, apache, mysql]
 excerpt: "Nesse artigo é exibido diversas dicas relativa ao Magento 2"
 ---
 
-# Magento 2
+# Oi
 
 ## Como ativar a CRON no Magento
 

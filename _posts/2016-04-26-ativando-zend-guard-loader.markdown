@@ -10,7 +10,7 @@ excerpt: "Nesse artigo será exibido detalhadamente o processo usado para ativar
 
 [phpinfo]:http://ec2-54-232-215-118.sa-east-1.compute.amazonaws.com/public_html/phpinfo.php
 
-Ola Boa Tarde
+# Oi
 
 # Como instalar o "Zend Guard Loader" em meu servidor?
 
@@ -24,27 +24,21 @@ Ao efetuar o download e extração do "Zend Guard Loader", leia o arquivo o "REA
 
 Veja que o processo é super simples devendo apenas editar os arquivos que aplicam o suporte da extensão de servidor para o ambiente cliente e web do PHP
 
-{% highlight ruby %}
-sudo nano /etc/php5/cli/php.ini
+	sudo nano /etc/php5/cli/php.ini
 
-sudo nano /etc/php5/apache2/php.ini
-{% endhighlight %}
+	sudo nano /etc/php5/apache2/php.ini
 
 e informar o conteúdo baseado no modelo a seguir
 
-{% highlight ruby %}
-[zendloader]
-zend_extension=/home/ubuntu/zend-loader-php5.5-linux-x86_64/ZendGuardLoader.so
-zend_extension=/home/ubuntu/zend-loader-php5.5-linux-x86_64/opcache.so
-{% endhighlight %}
+	[zendloader]
+	zend_extension=/home/ubuntu/zend-loader-php5.5-linux-x86_64/ZendGuardLoader.so
+	zend_extension=/home/ubuntu/zend-loader-php5.5-linux-x86_64/opcache.so
 
 Voce só deve alterar o caminho correspondente a seu ambiente
 
 Em seguida reiniciamos o servidor
 
-{% highlight ruby %}
-sudo service apache2 restart
-{% endhighlight %}
+	sudo service apache2 restart
 
 Obs. 
 Na ocorrência de problemas certifique se foi informado o caminho correto em "zend_extension"
@@ -69,19 +63,15 @@ Veja no video que é exibido diversas imagens relativas aos processos executados
 
 Foi feito acesso via terminal ao servidor da amazon onde na execução dos comandos foi ativação da extensão "Zend Guard Loader" sobre o [Servidor][phpinfo]
 
-<div class="ui embed" data-source="youtube" data-id="sUfE6Rf7w14"></div>
-<script>
-$('.ui.embed').embed();
-</script>
+
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="//www.youtube.com/watch?v=sUfE6Rf7w14"></iframe>
+</div>
 
 Executando o seguinte comando temos o resultado se está ativo o recurso no ambiente client
 
-{% highlight ruby %}
-php -i | grep -i 'Zend Guard Loader'
-{% endhighlight %}
+	php -i | grep -i 'Zend Guard Loader'
 
 Executando o seguinte comando temos o resultado se está ativo o recurso no ambiente web
 
-{% highlight ruby %}
-curl -v --silent http://52.67.2.27/public_html/phpinfo.php 2>&1 | grep 'Zend Guard Loader'
-{% endhighlight %}
+	curl -v --silent http://52.67.2.27/public_html/phpinfo.php 2>&1 | grep 'Zend Guard Loader'
