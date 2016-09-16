@@ -29,7 +29,7 @@
     <meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta itemprop="image" content="{{ "/assets/images/logos/Red_star_32_32.png" | prepend: site.baseurl | prepend: site.url }}"/>
 
-    <!-- Social: Twitter -->
+    <!-- TAGS TWITTER -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="{{ site.url }}">
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
@@ -40,8 +40,9 @@
     <meta property="twitter:image:src" content="{{ "/assets/images/logos/Red_star_32_32.png" | prepend: site.baseurl | prepend: site.url }}">
     {% endif %}
     <meta name="twitter:creator" content="@{{ site.twitter_username }}">
+    <!-- / TAGS TWITTER -->
 
-    <!-- Social: Facebook / Open Graph -->
+    <!-- FACEBOOK OG TAGS -->
     <!-- https://developers.facebook.com/docs/web/tutorials/scrumptious/open-graph-object -->
     {% if site.facebook %}
     <meta property="fb:app_id" content="{{ site.facebook_app }}">
@@ -60,6 +61,7 @@
     {% else %}
     <meta property="og:type" content="website" />
     {% endif %}
+    <!-- /FACEBOOK OG TAGS -->
 
 	<!-- https://developers.google.com/structured-data/testing-tool/ -->
 	<!-- Logotipos -->
@@ -67,15 +69,15 @@
 	{
 	  "@context": "http://schema.org",
 	  "@type": "Organization",
-	  "url": "http://mozg.com.br/",
-	  "logo": "http://mozg.com.br/assets/images/logos/Red_star.svg"
+	  "url": "https://mozg.com.br/",
+	  "logo": "https://mozg.com.br/assets/images/logos/Red_star.svg"
 	}
 	</script>
 	<!-- Contatos corporativos -->
 	<script type="application/ld+json">
 	{ "@context" : "http://schema.org",
 	  "@type" : "Organization",
-	  "url" : "http://mozg.com.br/",
+	  "url" : "https://mozg.com.br/",
 	  "contactPoint" : [
 	    { "@type" : "ContactPoint",
 	      "telephone" : "+5511977072339",
@@ -87,7 +89,7 @@
 	{ "@context" : "http://schema.org",
 	  "@type" : "Organization",
 	  "name" : "MOZG Comércio e Desenvolvimento de Sistemas de Informática",
-	  "url" : "http://mozg.com.br/",
+	  "url" : "https://mozg.com.br/",
 	  "sameAs" : [ "https://www.facebook.com/mozgbrasil",
 	    "https://twitter.com/mozgbrasil",
 	    "https://plus.google.com/117231578401378218759"]
