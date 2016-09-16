@@ -10,7 +10,7 @@ excerpt: "Nesse artigo é exibido diversas dicas relativa ao Magento 2"
 
 # Oi
 
-## Como ativar a CRON no Magento
+# Como ativar a CRON no Magento
 
 No terminal ao executar o comando
 

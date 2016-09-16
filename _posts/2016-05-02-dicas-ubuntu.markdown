@@ -10,14 +10,14 @@ excerpt: "Nesse artigo é exibido diversas dicas relativa ao Ubuntu"
 
 # Oi
 
-## Conectar via SFTP pelo nautilus
+# Conectar via SFTP pelo nautilus
 
 	sftp://marcio@192.168.0.7
 
-## Conectar via Samba pelo nautilus
+# Conectar via Samba pelo nautilus
 
 	smb://192.168.0.7
 
-## Conectar via ssh pelo terminal
+# Conectar via ssh pelo terminal
 
 	ssh marcio@192.168.0.7
