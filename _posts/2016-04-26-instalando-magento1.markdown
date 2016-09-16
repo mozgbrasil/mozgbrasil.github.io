@@ -122,7 +122,6 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	composer require connect20/mage_locale_pt_br ;\
 	composer require aschroder/smtp_pro ;\
 	composer require aoepeople/aoe_scheduler ;\
-	composer require connect20/pedroteixeira_correios ;\
 	composer require mozgbrasil/magento-bundle-php55
 
 # Install Cerebrum_Telencephalon
