@@ -8,7 +8,7 @@ tags: [magento2, php]
 excerpt: "Nesse artigo será exibido detalhadamente os processos feito via terminal para a instalação dos programas"
 ---
 
-# Introdução
+# Oi
 
 Execute os comandos efetuando as devidas alterações personalizando para seu projeto
 

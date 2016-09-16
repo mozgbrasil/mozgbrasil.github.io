@@ -26,7 +26,7 @@ Informe
 
 Esse modelo está baseado em meu ambiente local, portanto pode haver variação para cada ambiente
 
-## Composer não está baixando a ultima versão do módulo
+# Composer não está baixando a ultima versão do módulo
 
 Conforme issue
 
@@ -69,7 +69,7 @@ No seguinte artigo informa que o Zend Guard Loader deve ser habilitado em ambos 
 http://mozg.com.br/zend%20guard%20loader/ativando-zend-guard-loader
 
 
-## Registros Cron
+# Registros Cron
 
 A tabela `cron_schedule` armazena as tarefas a executar e executadas
 
@@ -77,7 +77,7 @@ A tabela `cron_schedule` armazena as tarefas a executar e executadas
 	SELECT * FROM `cron_schedule`;
 	SELECT * FROM `cron_schedule` WHERE `job_code` like '%mozg%' AND `status` != 'success';
 
-## Reexecutar os scripts de setup do módulo
+# Reexecutar os scripts de setup do módulo
 
 	-- add table prefix if you have one
 	DROP TABLE IF EXISTS mozg_boxpacker_packing;
@@ -85,7 +85,7 @@ A tabela `cron_schedule` armazena as tarefas a executar e executadas
 	DELETE FROM setup_module WHERE module like '%mozg%';
 	DELETE FROM core_config_data WHERE path like '%mozg%';
 
-## Limpando arquivos de cache
+# Limpando arquivos de cache
 
 	sudo rm -R -f ./var/log \
 	./var/report \
