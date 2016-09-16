@@ -177,15 +177,15 @@ Basta “habilitar” o módulo. O serviço disponível é apenas o “Webservic
 
 Os últimos 3 (três) campos referentes ao campo email, são para os casos em que a cotação automática falhar – assim você pode ser avisado por email.
 
-### Os arquivos de leiaute
+### Os arquivos de layout
 
 No template padrão do Magento, este campo de seleção de moedas é apresentado sempre na coluna da esquerda. Caso queira modificar isso, saiba que o arquivo responsável por ele é o directory.xml que fica em:
 
-app -> design -> frontend -> base -> default -> layout -> directory.xml
+	app/design/frontend/base/default/layout/directory.xml
 
 E o arquivo currency.phtml é quem carrega as informações na tela:
 
-app -> design -> frontend -> base -> default -> template -> directory -> currency.phtml
+	app/design/frontend/base/default/template/directory/currency.phtml
 
 Lembre-se de nunca alterar o arquivo em base/default, faça sempre uma cópia dele para default/default, ou então para seu template/tema customizado.
 

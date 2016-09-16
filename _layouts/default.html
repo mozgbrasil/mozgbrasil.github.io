@@ -23,8 +23,8 @@
                     {% comment %}
                     <h1>{{ page.date | date: "%d %b/%Y %H:%M" }}</h1>
                     {% endcomment %}                    
-                    <h1>{{ page.title }}</h1>
-                    <p>{{ page.excerpt }}</p>
+                    <h1><span class="label label-danger">{{ page.title }}</span></h1>
+                    <p><span class="label label-success">{{ page.excerpt }}</span></p>
                 </div>
             </div>
         </main>

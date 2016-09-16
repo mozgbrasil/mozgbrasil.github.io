@@ -5,10 +5,12 @@ date:   2016-04-20 09:00:00
 category: Saudação
 author: Marcio Amorim
 tags: [magento2, php]
-excerpt: "Salve camaradas, vamos falar de Magento"
+excerpt: "Ola, vamos falar de Magento"
 ---
 
-Ola Bom dia camaradas
+# Saudações
+
+Ola
 
 Vamos falar de Magento
 
