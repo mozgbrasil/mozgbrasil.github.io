@@ -73,6 +73,8 @@ https://archive.org/
 
 https://archive.org/web/
 
+https://cards-dev.twitter.com/validator
+
 ## License
 
 [Comercial License] (LICENSE.txt)
