@@ -8,34 +8,32 @@ layout: default
 {{ paginator | debug }}
 {% endcomment %}
 
-<div class="zoomed masthead segment">
-    <div class="ui text container">
-        <img class="ui image" src="/assets/images/template/1x1px.png" width="1" height="200">
-        <span class="tagline">
-            <div class="ui shape">
-                <div class="sides">
-				    <div class="post-date">
-				        {{ page.date | date: "%d %b/%Y %H:%M" }}
-				    </div>
-                    <div class="post-title">
-                        {{ page.title }}
-                    </div>
-                    <div class="post-excerpt">
-                        {{ page.excerpt }}
-                    </div>
-                </div>
+<div class="container bs-docs-container">
+    <div class="row">
+        <div role="main" class="col-md-9">
+            <div class="bs-docs-section">
+                {{ content }}
             </div>
-        </span>
-        <div class="ui hidden divider"></div>
-		{% comment %}
-		{% include snippet-social-plugins.html %}
-		{% endcomment %}
+        </div>
+        <div role="complementary" class="col-md-3">
+            <nav class="bs-docs-sidebar hidden-print hidden-sm hidden-xs affix-top" style="">
+                <ul class="nav bs-docs-sidenav">
+                    <li class="">
+                        <a href="#ancora-a-mozg">A MOZG</a> 
+                        <ul class="nav">
+                            <li class=""><a href="#ancora-a-cerebrum">A CEREBRUM</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="back-to-top" href="#top"> Ir ao topo </a>
+            </nav>
+        </div>
     </div>
+    <hr class="half-rule">
 </div>
-<div class="ui container segment">
-    {{ content }}
-</div>
-<div class="ui divider"></div>
-<div class="ui text container">
-	{% include snippet-disqus.html %}
+<div class="bs-docs-featurette">
+    <div class="container">
+        {% include snippet-disqus.html %}
+        <hr class="half-rule">
+    </div>
 </div>

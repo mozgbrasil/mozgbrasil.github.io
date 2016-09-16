@@ -1,13 +1,36 @@
 ---
-layout: page
+layout: articles
 title: Sobre Nós
 permalink: /sobre-nos/
 order: 2
 excerpt: "Conheça um pouco mais sobre a MOZG"
 ---
 
-A MOZG é uma subsidiária integral da CEREBRUM, a empresa holding do Grupo, e tem como ofertas a prestação de serviços profissionais de engenharia e soluções integradas para os setores estratégicos de comércio eletrônico, desenvolvimento de softwares e gestão. Além da atuação nesses setores estratégicos, a empresa busca identificar oportunidades para o desenvolvimento de empreendimentos.
-
-No mercado brasileiro desde 2005 a CEREBRUM vem se especializando exclusivamente em comércio eletrônico com foco desde 2008 na renomada plataforma de comércio eletrônico Magento Ecommerce.
-
-CEREBRUM Comércio e Desenvolvimento de Sistemas de Informática Ltda ME - CNPJ 07.361.259/0001-07
+<div class="container bs-docs-container">
+    <div class="row">
+        <div role="main" class="col-md-9">
+            <div class="bs-docs-section">
+                <h1 id="ancora-a-mozg" class="page-header">A MOZG</h1>
+                <p class="lead">A MOZG é o setor de desenvolvimento de módulos para magento da CEREBRUM.</p>
+                <div id="ancora-a-cerebrum" class="bs-callout bs-callout-warning">
+                    <h4>A CEREBRUM</h4>
+                    <p>No mercado brasileiro desde 2005 a CEREBRUM vem se especializando exclusivamente em comércio eletrônico com foco desde 2008 na renomada plataforma de comércio eletrônico Magento Ecommerce.</p>
+                </div>
+            </div>
+        </div>
+        <div role="complementary" class="col-md-3">
+            <nav class="bs-docs-sidebar hidden-print hidden-sm hidden-xs affix-top" style="">
+                <ul class="nav bs-docs-sidenav">
+                    <li class="">
+                        <a href="#ancora-a-mozg">A MOZG</a> 
+                        <ul class="nav">
+                            <li class=""><a href="#ancora-a-cerebrum">A CEREBRUM</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="back-to-top" href="#top"> Ir ao topo </a>
+            </nav>
+        </div>
+    </div>
+    <hr class="half-rule">
+</div>

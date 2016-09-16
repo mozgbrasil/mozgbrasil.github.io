@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Página inicial
+title: MOZG
 order: 1
+excerpt: "Impulsione seu e-commerce com os módulos da MOZG"
 ---
 {% comment %}
 {{ site | debug }}
@@ -9,169 +10,38 @@ order: 1
 {{ site.posts | debug }}
 {{ paginator | debug }}
 {% endcomment %}
-<!-- masthead -->
-<div class="zoomed masthead segment">
-   <div class="ui container">
-      <div class="introduction">
-         <h1 class="ui inverted header">
-            <span><img class="ui image" src="/assets/images/template/1x1px.png" width="1" height="100"></span>
-            <span class="library">
-            MOZG
-            </span>
-            <span class="tagline">
-               <div class="ui shape">
-                  <div class="sides">
-                     <div class="active side">Modulos para Magento</div>
-                     <div class="side">Compre somente após testar o módulo</div>
-                  </div>
-               </div>
-            </span>
-         </h1>
-         <div class="ui hidden divider"></div>
-         {% comment %}
-         {% include snippet-social-plugins.html %}
-         {% endcomment %}
-      </div>
-   </div>
-</div>
-<!-- e-mail -->
-<script>
-jQuery(document).ready(function() {
 
-//-
-
-$('.ui.form')
-.form({
-  fields: {
-      email: {
-          identifier: 'entry.907967587',
-          rules: [{
-              type: 'empty',
-              prompt: 'Por favor informe o seu e-mail'
-          }, {
-              type: 'email',
-              prompt: 'Por favor digite um email válido'
-          }]
-      }
-  }
-});
-
-//-
-
-function isValid() {
-  console.log(arguments.callee.name);
-
-  var field1 = $("[name='entry.907967587']").val('');
-  $("[name='entry.907967587']")[0].disabled = true;
-}
-
-function _isValid() {
-  _function = isValid;
-  milliseconds = 1000; // 1000 ms = 1 second.
-  _setInterval = setTimeout(_function, milliseconds);
-}
-
-function postToGoogle() {
-  var field1 = $("[name='entry.907967587']").val();
-  var url = "https://docs.google.com/forms/d/1WNUjjupDJ4YZ6GBwlpRX1QmQdzwdVztOUdqMithw4pU/formResponse?entry.907967587=" + field1;
-
-  console.log(field1);
-
-  if ($('.ui.form').form('is valid')) {
-  // do something
-  _isValid();
-}
-
-/*jQuery.ajax({
-url: url,
-type: "GET",
-success: function( data ) {
-console.log( data );
-},
-error : function( result ){
-console.log( result );
-},
-});
-
-
-return false;*/
-
-}
-
-jQuery('#form').submit(function() {
-  postToGoogle();
-});
-
-//-
-
-});
-</script>
-<div class="ui email alternate stripe vertical segment">
-   <div class="ui center aligned grid container">
-      <div class="column">
-         <h3 class="ui header">
-            Registre seu e-mail e para receber nossa Newsletter
-         </h3>
-         <form class="ui form" method="get" id="form" action="https://docs.google.com/forms/d/1WNUjjupDJ4YZ6GBwlpRX1QmQdzwdVztOUdqMithw4pU/formResponse" target="_blank">
-            <div class="field">
-               <div class="ui huge input">
-                  <input type="text" name="entry.907967587" data-validate="email" placeholder="E-mail">
-               </div>
-               <button type="submit" value="Subscribe" class="ui huge secondary submit button">
-               Inscrever-se
-               </button>
+        <div class="bs-docs-featurette">
+            <div class="container">
+                <h2 class="bs-docs-featurette-title">Métodos de entrega para Magento</h2>
+                <p class="lead">O único com sistema de distribuição de produtos em uma mesma embalagem gerando fretes mais preciso e mais barato, uma enorme vantagem aos lojistas e os seus clientes.</p>
+                <hr class="half-rule">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img alt="gerenciamento de embalagem" src="/assets/images/template/magento_box_packer.png" class="img-responsive img-rounded"> 
+                        <h3>Gerenciamento de embalagem</h3>
+                        <p>Para uma melhor experiência cadastre variedades de caixas.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img alt="Cálculo do frete" src="/assets/images/template/magento_shipping.png" class="img-responsive img-rounded">
+                        <h3>Cálculo do frete</h3>
+                        <p>Para cada embalagem é feito uma requisição a transportadora.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img alt="Cálculo do frete" src="/assets/images/template/magento_box_packer_3d.png" class="img-responsive img-rounded">
+                        <h3>3D</h3>
+                        <p>Visualização da embalagem e seus produtos em um ambiente 3D.</p>
+                    </div>
+                </div>
+                <hr class="half-rule">
+                <p class="lead">Sugiro sempre utilizar módulos atualizados pois os mesmos sempre contem melhorias e correções.</p>
+                <a href="/catalogo/" class="btn btn-outline btn-lg">Acesse nosso Catálogo</a> 
             </div>
-            <div class="ui error message"></div>
-         </form>
-      </div>
-   </div>
-</div>
-<!-- posts -->
-<div class="ui community vertical segment">
-   <div class="ui container">
-      <h2 class="ui header">
-         <img src="/assets/images/icons/school.png">
-         <div class="content">
-            Aprenda mais
-            <div class="sub header">Confira os artigos sobre o Magento</div>
-         </div>
-      </h2>
-   </div>
-   <div class="ui divider"></div>
-   {% include post_list.html %}
-</div>
-<!-- script -->
-<script>
-   // http://semantic-ui.com/modules/popup.html
-   $('.tooltip')
-   .popup()
-   ;
-   
-</script>
-<script>
-   // http://semantic-ui.com/modules/shape.html#/usage
-   $('.shape').shape();
-   
-   function shape() {
-   console.log(arguments.callee.name);
-   
-   $('.shape').shape('flip up');
-   }
-   
-   function loader() {
-   _function = shape;
-   milliseconds = 3000; // 1000 ms = 1 second.
-   _setInterval = setInterval(_function, milliseconds);
-   }
-   
-   window.addEventListener("load", function(){ loader(); });
-   
-</script>
-<script>
-   // http://semantic-ui.com/modules/transition.html
-   $('.library')
-   .transition('set looping')
-   .transition('pulse', '2000ms')
-   ;
-   
-</script>
+        </div>
+        <div class="bs-docs-featurette">
+            <div class="container">
+                <h2 class="bs-docs-featurette-title">Métodos de pagamento para Magento</h2>
+                <p class="lead">Em breve.</p>
+                <hr class="half-rule">
+            </div>
+        </div>

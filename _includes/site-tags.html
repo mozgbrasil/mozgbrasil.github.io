@@ -1,3 +1,9 @@
-{% for tag in site.tags limit:site.recent_items %}
-<a class="ui tag mini label orange" href="/tag/#{{ tag | first }}">{{ tag | first }} <div class="detail">{{ tag | last | size }}</div></a>
-{% endfor %}
+<ol class="breadcrumb">
+    {% for tag in site.tags limit:site.recent_items %}
+        <li>
+            <button class="btn btn-primary" type="button">
+              <a class="" style="color:white" href="/tag/#{{ tag | first }}">{{ tag | first }}</a> <span class="badge">{{ tag | last | size }}</span>
+            </button>
+        </li>
+    {% endfor %}
+</ol>

@@ -5,7 +5,7 @@
 
 ## Sinopse
 
-Site contendo as devidas instrução dos módulos da MOZG para o Magento 2
+Site contendo as devidas instrução dos módulos da MOZG para o Magento
 
 ## Motivação
 
@@ -16,6 +16,8 @@ Atender o mercado de módulos para Magento oferecendo um excelente suporte
 Caso queira contribuir para melhoria da documentação de um Fork no repositorio e envie um pull request ou edite no github
 
 ## Característica técnica
+
+### Backend
 
 https://pages.github.com/
 
@@ -29,9 +31,13 @@ http://jekyllthemes.org/
 
 https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/
 
-http://semantic-ui.com/
-
 https://github.com/plusjade/jekyll-bootstrap/blob/master/_plugins/debug.rb
+
+### Frontend
+
+http://getbootstrap.com/
+
+### Add-ons
 
 https://github.com/bryanbraun/anchorjs
 

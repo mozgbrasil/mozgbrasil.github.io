@@ -20,9 +20,9 @@ compress_html:
 
 # Site settings
 
-# mode: dev | product
+# mode: dev | production
 url: http://mozg.com.br
-mode: product
+mode: production
 devurl: http://127.0.0.1:4000
 baseurl: "" # the subpath of your site, e.g. /blog/
 title: MOZG

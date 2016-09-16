@@ -188,6 +188,10 @@ sudo apt install build-essential ubuntu-restricted-extras ubuntu-sdk ubuntu-make
 
 sudo add-apt-repository ppa:webupd8team/sublime-text-3 && sudo apt-get update && sudo apt-get install sublime-text-installer
 
+# Atom
+
+sudo add-apt-repository ppa:webupd8team/atom -y && sudo apt-get update && sudo apt-get install atom
+
 # Jekyll
 
 sudo gem install jekyll && sudo gem install github-pages && sudo gem install rouge && jekyll -v && ruby --version && gem --version ;\

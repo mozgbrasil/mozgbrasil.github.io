@@ -2,7 +2,7 @@
 layout: page
 title: Acordo de licença do usuário final
 permalink: /acordo-licenca-usuario-final/
-order: 6
+order: 5
 excerpt: "Para utilizar o(s) módulo(s) da MOZG é necessário aceitar esse Acordo de licença do usuário final"
 ---
 

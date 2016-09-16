@@ -1,34 +1,9 @@
-<div class="ui attached stackable menu">
-   <div class="ui container">
-      <a class="item" href="/">
-      <i class="home icon"></i> Home
-      </a>
-      <a class="view-ui item">
-      <i class="sidebar icon"></i> Menu
-      </a>
-      <a class="item" href="/catalogo/">
-      <i class="cubes icon"></i> Catálogo
-      </a>
-      <a class="item" href="/contato/">
-      <i class="at icon"></i> Contato
-      </a>
-      {% comment %}
-      <div class="ui simple dropdown item">
-         <i class="google icon"></i> Hangout
-         <i class="dropdown icon"></i>
-         <div class="menu">
-            <div class="item">
-               <span class="text">{% include snippet-google-hangout-button.html %}</span>
-            </div>
-         </div>
-      </div>
-      {% endcomment %}
-      <div class="right item" style="width: 200px;padding: 0px;">
-	{% include snippet-google-custom-search.html %}
-	{% comment %}
-	{% include snippet-jekyll-search.html %}
-	{% endcomment %}
-      </div>
-   </div>
-</div>
-
+                <nav class="collapse navbar-collapse" id="bs-navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/catalogo/">Catálogo</a></li>
+                        <li><a href="/contato/">Contato</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>{% include snippet-google-custom-search.html %}</li>
+                    </ul>
+                </nav>

@@ -1,0 +1,18 @@
+---
+layout: default
+---
+{% comment %}
+{{ site | debug }}
+{{ page | debug }}
+{{ site.posts | debug }}
+{{ paginator | debug }}
+{% endcomment %}
+
+
+        {{ content }}
+        <div class="bs-docs-featurette">
+            <div class="container">
+                {% include snippet-disqus.html %}
+                <hr class="half-rule">
+            </div>
+        </div>
