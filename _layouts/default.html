@@ -1,96 +1,87 @@
 <!DOCTYPE html>
 <html>
-   {% include head.html %}
-   <body id="" class="bs-docs-home" ontouchstart="">
-      <noscript>Your browser does not support JavaScript!</noscript>
-
-        <a href="#content" class="sr-only sr-only-focusable" id="skippy">
-            <div class="container"><span class="skiplink-text">Skip to main content</span></div>
-        </a>
-        {% comment %}
-        <a href="/" class="v4-tease">message</a> 
-        {% endcomment %}        
-        <header class="bs-docs-nav navbar navbar-static-top" id="top">
-            <div class="container">
-                <div class=navbar-header> <button aria-controls=bs-navbar aria-expanded=false class="collapsed navbar-toggle" data-target=#bs-navbar data-toggle=collapse type=button> <span class=sr-only>Toggle navigation</span> <span class=icon-bar></span> <span class=icon-bar></span> <span class=icon-bar></span> </button> <a href="/" class="navbar-brand"><img class="img-responsive" src="/assets/images/logos/Red_star.svg" width="20" height="20"></a> </div>
-               {% assign variable = site.top_menu %}
-               {% include {{variable}} %}
-            </div>
-        </header>
-        <main>
-            <div tabindex="-1" id="content" class="bs-docs-header">
-                <div class="container">
-                    {% comment %}
-                    <h1>{{ page.date | date: "%d %b/%Y %H:%M" }}</h1>
-                    {% endcomment %}                    
-                    <h1><span class="">{{ page.title }}</span></h1>
-                    <p><span class="">{{ page.excerpt }}</span></p>
-                </div>
-            </div>
-        </main>
-        {{ content }}
-        <footer class="bs-docs-footer">
-            <div class="container">
-                <ul class="bs-docs-footer-links">
-                    {% assign sorted_pages = site.pages | sort:"order" %}
-                    {% for node in sorted_pages %}
-                        {% if node.title %}
-                            {% if node.permalink == "" %}
-                                {% capture icon_tag %}home{% endcapture %}
-                            {% elsif node.permalink == '/sobre-nos/' %}
-                                {% capture icon_tag %}copyright{% endcapture %}
-                            {% elsif node.permalink == '/contato/' %}
-                                {% capture icon_tag %}at{% endcapture %}
-                            {% elsif node.permalink == '/category/' %}
-                                {% capture icon_tag %}idea{% endcapture %}
-                            {% elsif node.permalink == '/tag/' %}
-                                {% capture icon_tag %}tag{% endcapture %}
-                            {% else %}
-                                {% capture icon_tag %}home{% endcapture %}
-                            {% endif %}
-                            <li><a class="item" href="{{ node.url | prepend: site.baseurl }}"><i class="{{ icon_tag }} icon"></i>{{ node.title }}</a></li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-                <ul class="bs-docs-footer-links">
-                    <li><a class="item" href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="icon rss"></i>RSS</a></li>
-                    <li><a class="item" href="{{ "/sitemap.xml" | prepend: site.baseurl }}"><i class="icon sitemap"></i>Sitemap</a></li>
-                </ul>
-                <p><img class="img-responsive" src="/assets/images/logos/Red_star.svg" width="20" height="20" align="left"> &nbsp;Copyright © {{ site.time | date: '%Y' }} MOZG</p>
-                <p>&nbsp;</p>
-                <ul class="bs-docs-footer-links">
-                    {% if site.twitter_username %}
-                        <li><a class="item" href="https://twitter.com/{{ site.twitter_username }}"><i class="icon twitter"></i>twitter</a></li>
-                    {% endif %}
-                    {% if site.github_username %}
-                        <li><a class="item" href="https://github.com/{{ site.github_username }}"><i class="icon github"></i>github</a></li>
-                    {% endif %}
-                    {% if site.facebook_username %}
-                        <li><a class="item" href="https://www.facebook.com/{{ site.facebook_username }}"><i class="icon facebook"></i>facebook</a></li>
-                    {% endif %}
-                    {% if site.youtube_username %}
-                        <li><a class="item" href="https://www.youtube.com/channel/UCiXR9cKwxNKMehSnqXvhtug"><i class="icon youtube"></i>youtube</a></li>
-                    {% endif %}
-                    {% if site.plusgoogle_username %}
-                        <li><a class="item" href="https://plus.google.com/117231578401378218759"><i class="icon google plus"></i>plus.google</a></li>                    
-                    {% endif %}
-                        <li><a class="item" href="https://mozgbrasil.wordpress.com/"><i class="icon wordpress"></i>wordpress</a></li>
-                        <li><a class="item" href="http://mozgbrasil.blogspot.com.br/"><i class="icon google"></i>blogspot</a></li>
-                </ul>
-                {% include snippet-social-plugins.html %}
-                <p>{% include snippet-google-ads.html %}</p>
-            </div>
-        </footer>
-
-    <!-- ################## -->
-    <!-- ###### theme ###### -->
-    
-    <script src="/assets/js/web/libs/getbootstrap/docs.min.js"></script>
+<head prefix="og: http://ogp.me/ns#">
+{% include tags_head.html %}
+</head>
+<body id="" class="bs-docs-home" ontouchstart="">
+    <noscript>Your browser does not support JavaScript!</noscript>
+    <a href="#content" class="sr-only sr-only-focusable" id="skippy">
+        <div class="container"><span class="skiplink-text">Skip to main content</span></div>
+    </a>
     {% comment %}
-    {% endcomment %}    
-    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
-    <!-- ###### theme ###### -->
-    <!-- ################## --> 
-
-   </body>
+    <a href="/" class="v4-tease">message</a> 
+    {% endcomment %}        
+    <header class="bs-docs-nav navbar navbar-static-top" id="top">
+        <div class="container">
+            <div class=navbar-header> <button aria-controls=bs-navbar aria-expanded=false class="collapsed navbar-toggle" data-target=#bs-navbar data-toggle=collapse type=button> <span class=sr-only>Toggle navigation</span> <span class=icon-bar></span> <span class=icon-bar></span> <span class=icon-bar></span> </button> <a href="/" class="navbar-brand"><img class="img-responsive" src="/assets/images/logos/Red_star.svg" width="20" height="20"></a> </div>
+           {% assign variable = site.top_menu %}
+           {% include {{variable}} %}
+        </div>
+    </header>
+    <main>
+        <div tabindex="-1" id="content" class="bs-docs-header">
+            <div class="container">
+                {% comment %}
+                <h1>{{ page.date | date: "%d %b/%Y %H:%M" }}</h1>
+                {% endcomment %}                    
+                <h1><span class="">{{ page.title }}</span></h1>
+                <p><span class="">{{ page.excerpt }}</span></p>
+            </div>
+        </div>
+    </main>
+    {{ content }}
+    <footer class="bs-docs-footer">
+        <div class="container">
+            <ul class="bs-docs-footer-links">
+                {% assign sorted_pages = site.pages | sort:"order" %}
+                {% for node in sorted_pages %}
+                    {% if node.title %}
+                        {% if node.permalink == "" %}
+                            {% capture icon_tag %}home{% endcapture %}
+                        {% elsif node.permalink == '/sobre-nos/' %}
+                            {% capture icon_tag %}copyright{% endcapture %}
+                        {% elsif node.permalink == '/contato/' %}
+                            {% capture icon_tag %}at{% endcapture %}
+                        {% elsif node.permalink == '/category/' %}
+                            {% capture icon_tag %}idea{% endcapture %}
+                        {% elsif node.permalink == '/tag/' %}
+                            {% capture icon_tag %}tag{% endcapture %}
+                        {% else %}
+                            {% capture icon_tag %}home{% endcapture %}
+                        {% endif %}
+                        <li><a class="item" href="{{ node.url | prepend: site.baseurl }}"><i class="{{ icon_tag }} icon"></i>{{ node.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul class="bs-docs-footer-links">
+                <li><a class="item" href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="icon rss"></i>RSS</a></li>
+                <li><a class="item" href="{{ "/sitemap.xml" | prepend: site.baseurl }}"><i class="icon sitemap"></i>Sitemap</a></li>
+            </ul>
+            <p><img class="img-responsive" src="/assets/images/logos/Red_star.svg" width="20" height="20" align="left"> &nbsp;Copyright © {{ site.time | date: '%Y' }} MOZG</p>
+            <p>&nbsp;</p>
+            <ul class="bs-docs-footer-links">
+                {% if site.twitter_username %}
+                    <li><a class="item" href="https://twitter.com/{{ site.twitter_username }}"><i class="icon twitter"></i>twitter</a></li>
+                {% endif %}
+                {% if site.github_username %}
+                    <li><a class="item" href="https://github.com/{{ site.github_username }}"><i class="icon github"></i>github</a></li>
+                {% endif %}
+                {% if site.facebook_username %}
+                    <li><a class="item" href="https://www.facebook.com/{{ site.facebook_username }}"><i class="icon facebook"></i>facebook</a></li>
+                {% endif %}
+                {% if site.youtube_username %}
+                    <li><a class="item" href="https://www.youtube.com/channel/UCiXR9cKwxNKMehSnqXvhtug"><i class="icon youtube"></i>youtube</a></li>
+                {% endif %}
+                {% if site.plusgoogle_username %}
+                    <li><a class="item" href="https://plus.google.com/117231578401378218759"><i class="icon google plus"></i>plus.google</a></li>                    
+                {% endif %}
+                    <li><a class="item" href="https://mozgbrasil.wordpress.com/"><i class="icon wordpress"></i>wordpress</a></li>
+                    <li><a class="item" href="http://mozgbrasil.blogspot.com.br/"><i class="icon google"></i>blogspot</a></li>
+            </ul>
+            {% include snippet-social-plugins.html %}
+            <p>{% include snippet-google-ads.html %}</p>
+        </div>
+    </footer>
+    {% include tags_footer.html %}
+</body>
 </html>
