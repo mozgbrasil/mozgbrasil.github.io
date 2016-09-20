@@ -8,6 +8,48 @@ layout: default
 {{ paginator | debug }}
 {% endcomment %}
 
+<div role="main" class="main">
+    <section class="section section-success section-dark google-red">
+        <div class="site-width">
+            <div class="cols-row">
+                <div class="section-success-copy">
+                    <h1>
+                    {{ page.title }}
+                    </h1>
+                    <p class="font-large">
+                    {{ page.excerpt }}
+                    </p>
+                </div>
+                <div class="col-6 col-offset-1 align-self-end section-success-card hidden-xs"></div>
+            </div>
+        </div>
+    </section>
+    <div id="maia-signature"></div>
+    <section class="section section-customizable-api">
+        <div class="site-width">
+            <div class="cols-row">
+                <nav class="devsite-page-nav-embedded devsite-nav"></nav>
+                <div class="devsite-article-body clearfix" itemprop="articleBody">
+                    {{ content }}
+                </div>
+                <div class="devsite-content-footer nocontent">
+                    <p class="devsite-content-footer-date" itemprop="datePublished"
+                    content="{{ page.date | date: "%Y-%b-%bT%H:%M" }}">
+                    Última atualização: {{ page.date | date: "%d %b/%Y %H:%M" }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="maia-signature"></div>
+    <section class="section section-solutions light-gray">
+        <div class="site-width">
+            {% include snippet-disqus.html %}
+        </div>
+    </section>
+</div>
+
+{% comment %}
 <div class="container bs-docs-container">
     <div class="row">
         <div role="main" class="col-md-9">
@@ -151,3 +193,4 @@ elementToInject = document.getElementById('nav-post-sidebar');
 elementToInject.innerHTML = newElementMenu;
 
 </script>
+{% endcomment %}

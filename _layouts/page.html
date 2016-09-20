@@ -8,19 +8,37 @@ layout: default
 {{ paginator | debug }}
 {% endcomment %}
 
-<div class="container bs-docs-container">
-    <div class="row">
-        <div role="main" class="">
-            <div class="bs-docs-section">
-                {{ content }}
+<div role="main" class="main">
+    <section class="section section-success section-dark google-red">
+        <div class="site-width">
+            <div class="cols-row">
+                <div class="section-success-copy">
+                    <h1>
+                    {{ page.title }}
+                    </h1>
+                    <p class="font-large">
+                    {{ page.excerpt }}
+                    </p>
+                </div>
+                <div class="col-6 col-offset-1 align-self-end section-success-card hidden-xs"></div>
             </div>
         </div>
-    </div>
-    <hr class="half-rule">
-</div>
-<div class="bs-docs-featurette">
-    <div class="container">
-        {% include snippet-disqus.html %}
-        <hr class="half-rule">
-    </div>
+    </section>
+    <div id="maia-signature"></div>
+    <section class="section section-customizable-api">
+        <div class="site-width">
+            <div class="">
+                <nav class="devsite-page-nav-embedded devsite-nav"></nav>
+                <div class="devsite-article-body clearfix" itemprop="articleBody">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="maia-signature"></div>
+    <section class="section section-solutions light-gray">
+        <div class="site-width">
+            {% include snippet-disqus.html %}
+        </div>
+    </section>
 </div>

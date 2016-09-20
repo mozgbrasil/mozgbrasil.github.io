@@ -1,11 +1,38 @@
-                <nav class="collapse navbar-collapse" id="bs-navbar">
-                    <ul class="nav navbar-nav">
-                    	<li><a href="/sobre-nos/">Sobre Nós</a></li>
-                        <li><a href="/catalogo/">Catálogo</a></li>
-                        <li><a href="/artigos/">Artigos</a></li>
-                        <li><a href="/contato/">Contato</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><div style="width:200px;">{% include snippet-google-custom-search.html %}</div></li>
-                    </ul>
-                </nav>
+{% assign current = page.url | downcase | split: '/' %}
+
+{% comment %}
+{{ page.url }}
+{{ current }}
+{% endcomment %}
+
+            <nav class="main-navigation" data-ng-controller="rs.navigation.NavCtrl as navCtrl">
+                <h1>
+                    MOZG
+                </h1>
+                <ul>
+                    <li class="{% if page.url == '/' %} active{% endif %}"><a href="/">Visão geral</a>
+                    </li>
+                    <li class="{% if page.url == '/sobre-nos/' %} active{% endif %}" data-g-action="Global Nav" data-g-event="Tag Manager: Overview" data-g-label=
+                        "Sobre Nós">
+                        <a href="/sobre-nos/">Sobre Nós</a>
+                    </li>
+                    <li class="{% if page.url == '/catalogo/' %} active{% endif %}" data-g-action="Global Nav" data-g-event="Tag Manager: Overview" data-g-label=
+                        "Catálogo">
+                        <a href="/catalogo/">Catálogo</a>
+                    </li>
+                    <li class="{% if page.url == '/artigos/' %} active{% endif %}" data-g-action="Global Nav" data-g-event="Tag Manager: Overview" data-g-label=
+                        "Artigos">
+                        <a href="/artigos/">Artigos</a>
+                    </li>
+                    <li class="{% if page.url == '/contato/' %} active{% endif %}" class="dagger" data-g-action="Global Nav" data-g-event="Tag Manager: Overview" data-g-label="Contato">
+                        <a href="/contato/">Contato</a>
+                    </li>
+                </ul>
+                <div class="cta cta-wrapper">                    
+                    <div style="width:300px;">
+                        {% include snippet-google-custom-search.html %}
+                    </div>
+                    {% comment %}
+                    {% endcomment %}
+                </div>
+            </nav>

@@ -1,5 +1,5 @@
 {% include mode_switcher.html %}
-<div id="" class="">
+<div class="cols-row cards-row">
     {% if paginator %}
         {% for post in paginator.posts %}
           {% include post_list_item.html %}
@@ -16,7 +16,7 @@
 
 {% if displayPagi or paginator %}
 {% if paginator.total_pages > 1 %}
-<div id="" class="bs-callout bs-callout-warning">
+<div class="cols-row cards-row">
     {% if paginator.previous_page %}
         <a class="item" href="{{ paginator.previous_page_path | prepend: crturl }}">«</a>
     {% endif %}
