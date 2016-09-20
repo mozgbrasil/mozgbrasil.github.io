@@ -139,8 +139,12 @@
                         <label class="visually-hidden" for="footer-locales"><span>Copyright © {{ site.time | date: '%Y' }}</span></label> 
                     </div>
                 </div>
-            </div>
-            {% include snippet-google-ads.html %}
+                <div class="footer-lower cols-row">
+                    <div class="footer-meta-links col-8">
+                        {% include snippet-google-ads.html %}
+                    </div>
+                </div>
+            </div>            
         </footer>
         {% include tags_footer.html %}
     </body>
