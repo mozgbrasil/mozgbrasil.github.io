@@ -10,7 +10,7 @@ excerpt: "Nesse artigo será exibido detalhadamente o processo usado para ativar
 
 [phpinfo]:http://ec2-54-232-215-118.sa-east-1.compute.amazonaws.com/public_html/phpinfo.php
 
-# Oi
+Ola
 
 # Como instalar o "Zend Guard Loader" em meu servidor?
 

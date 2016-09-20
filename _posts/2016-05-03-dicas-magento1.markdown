@@ -8,7 +8,7 @@ tags: [magento, php, apache, mysql]
 excerpt: "Nesse artigo é exibido diversas dicas relativa ao Magento 1"
 ---
 
-# Oi
+Ola
 
 # Modificando a tradução do módulo para o template
 

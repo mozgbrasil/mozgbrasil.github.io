@@ -8,7 +8,7 @@ tags: [magento, php, apache, mysql]
 excerpt: "Nesse artigo é exibido diversas dicas relativa ao Ubuntu"
 ---
 
-# Oi
+Ola
 
 # Conectar via SFTP pelo nautilus
 

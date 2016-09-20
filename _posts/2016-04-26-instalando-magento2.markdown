@@ -11,7 +11,7 @@ excerpt: "Nesse artigo será exibido detalhadamente os processos feito via termi
 [phpinfo]:http://ec2-54-232-215-118.sa-east-1.compute.amazonaws.com/public_html/phpinfo.php
 [crowdin]:https://crowdin.com/project/magento-2/pt-BR
 
-# Oi
+Ola
 
 Execute os comandos efetuando as devidas alterações personalizando para seu projeto
 
