@@ -117,7 +117,7 @@
     <!-- TAGS FACEBOOK -->
 
     <!-- https://developers.facebook.com/docs/web/tutorials/scrumptious/open-graph-object -->
-    {% if site.facebook %}
+    {% if site.facebook_app %}
     <meta property="fb:app_id" content="{{ site.facebook_app }}">
     {% endif %}
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -127,6 +127,7 @@
     {% else %}
     <meta property="og:image" content="{{ "/assets/images/logos/Red_star_32_32.png" | prepend: site.baseurl | prepend: site.url }}">
     {% endif %}
+    <meta property="og:locale" content="pt_BR" />
     <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:site_name" content="{{ site.title }}">
     {% if page.layout == 'post' %}
