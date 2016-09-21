@@ -18,7 +18,8 @@
 <script>
 // http://bryanbraun.github.io/anchorjs/#basic-usage
 $( document ).ready(function() {
-    anchors.add();    
+    anchors.add('.devsite-article-body h1, .devsite-article-body h2, .devsite-article-body h3, .devsite-article-body h4, .devsite-article-body h5, .devsite-article-body h6');
+    //anchors.add('.devsite-article-body > p');   
 });
 </script>
 {% endif %}
