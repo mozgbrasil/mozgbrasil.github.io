@@ -25,20 +25,17 @@ layout: default
         </div>
     </section>
     <div id="maia-signature"></div>
-    <section class="section section-article">
+    <section id="section-one" class="section article-body">
         <div class="site-width">
-            <div class="cols-row">
-                <nav class="devsite-page-nav-embedded devsite-nav"></nav>
-                <div class="devsite-article-body clearfix" itemprop="articleBody">
-                    {{ content }}
-                </div>
-                <div class="devsite-content-footer nocontent">
-                    <p class="devsite-content-footer-date" itemprop="datePublished"
-                    content="{{ page.date | date: "%Y-%b-%bT%H:%M" }}">
-                    Última atualização: {{ page.date | date: "%d %b/%Y %H:%M" }}
+            {{ content }}
+            <cite class="font-medium">
+                <p class="devsite-content-footer-date" itemprop="datePublished"
+                content="{{ page.date | date: "%Y-%b-%bT%H:%M" }}">
+                    <p class="vertical-offset">
+                        <a data-g-label="datePublished" data-g-event="Tag Manager: Overview" data-g-action="Firebase" class="link-more">Última atualização: {{ page.date | date: "%d %b/%Y %H:%M" }}</a>
                     </p>
-                </div>
-            </div>
+                </p>
+            </cite>
         </div>
     </section>
     <div id="maia-signature"></div>
