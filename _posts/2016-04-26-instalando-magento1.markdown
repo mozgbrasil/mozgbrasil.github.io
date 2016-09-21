@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Instalando o Magento1"
+title:  "Instalando o Magento1 usando o Composer"
 date:   2016-04-26 14:01:02
 category: Magento1
 author: Marcio Amorim
 tags: [magento2, php]
-excerpt: "Nesse artigo será exibido detalhadamente os processos feito via terminal para a instalação do Magento1"
+excerpt: "Nesse artigo será exibido detalhadamente os processos feito via terminal para a instalação usando o Composer"
 ---
 
 # Oi
