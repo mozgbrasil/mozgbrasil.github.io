@@ -14,7 +14,8 @@ excerpt: "Fale conosco e tire suas dúvidas"
                 <p class="lead">Qualquer dúvida não deixe de nos comunicar.</p>
                 <div id="" class="bs-callout bs-callout-warning">
                     <p><div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://cerebrum.freshdesk.com/support/tickets/new"></iframe>
+					<iframe allowfullscreen="" frameborder="0" height="100%" type=
+            "text/html" width="100%" height="800" src="https://cerebrum.freshdesk.com/support/tickets/new"></iframe>
 					</div></p>
                 </div>
             </div>

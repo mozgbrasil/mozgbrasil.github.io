@@ -3,7 +3,7 @@ layout: page
 title: Acordo de licença do usuário final
 permalink: /acordo-licenca-usuario-final/
 order: 5
-excerpt: "Para utilizar o(s) módulo(s) da MOZG é necessário aceitar esse Acordo de licença do usuário final"
+excerpt: "Para utilizar o(s) módulo(s) da CEREBRUM é necessário aceitar esse Acordo de licença do usuário final"
 ---
 
 [magento-download]: https://www.magentocommerce.com/download
@@ -15,18 +15,18 @@ Este Acordo de Licença do Usuário Final poderá ser atualizado ou editado à q
 
 # Apresentação
 
-- O(s) módulo(s) para Magento desenvolvidos pela MOZG é propriedade particular da MOZG.
-- A MOZG comercializa o direito de utilização, atualização e suporte técnico para o(s) módulo(s).
+- O(s) módulo(s) para Magento desenvolvidos pela CEREBRUM é propriedade particular da CEREBRUM.
+- A CEREBRUM comercializa o direito de utilização, atualização e suporte técnico para o(s) módulo(s).
 
 # Criptografia do Código Fonte
 
-- Os módulos desenvolvidos pela MOZG são comercializados com o código-fonte encriptado usando o "Zend Guard Encoder".
+- Os módulos desenvolvidos pela CEREBRUM são comercializados com o código-fonte encriptado usando o "Zend Guard Encoder".
 - O "Zend Guard Encoder" encripta o código-fonte de scripts php e seus derivados, impossibilitando a manipulação do código-fonte.
-- Para funcionamento dos módulos desenvolvidos pela MOZG é necessário estar ativo no servidor de hospedagem o componente "[Zend Guard Loader][ativando-zend-guard-loader]".
+- Para funcionamento dos módulos desenvolvidos pela CEREBRUM é necessário estar ativo no servidor de hospedagem o componente "[Zend Guard Loader][ativando-zend-guard-loader]".
 
 # Licença Comercial
 
-- A função da licença comercial é simplesmente desabilitar os alertas descritivos de propaganda da MOZG.
+- A função da licença comercial é simplesmente desabilitar os alertas descritivos de propaganda da CEREBRUM.
 
 # Restrição de Funcionamento por Domínio / Subdomínio
 
@@ -36,7 +36,7 @@ Este Acordo de Licença do Usuário Final poderá ser atualizado ou editado à q
 
 # Dificuldades Técnicas
 
-- Não garantimos isenção de erros ou falhas nos módulos desenvolvidos pela MOZG.
+- Não garantimos isenção de erros ou falhas nos módulos desenvolvidos pela CEREBRUM.
 
 # Correções de Erros
 
@@ -44,7 +44,7 @@ Este Acordo de Licença do Usuário Final poderá ser atualizado ou editado à q
 
 # Módulos para Testes
 
-- A MOZG oferece módulo(s) para teste, permitindo o cliente efetuar os devidos testes antes de pagar pelo(s) módulo(s).
+- A CEREBRUM oferece módulo(s) para teste, permitindo o cliente efetuar os devidos testes antes de pagar pelo(s) módulo(s).
 - Recomendamos efetivar backup, instalar, configurar e homologar os módulos desejados em ambiente de testes e somente após os devidos testes, instalar, configurar e homologar os módulos desejados em ambiente de produção com prévio backup do ambiente de produção.
 
 # Sugestões
@@ -56,8 +56,8 @@ Este Acordo de Licença do Usuário Final poderá ser atualizado ou editado à q
 # Monitoramento
 
 - O recurso de monitoramento via HTTP é parte integrante do(s) módulo(s).
-- É enviado a MOZG dados como: DNS do servidor e URL.
-- Na identificação de tentativa de hackear ou burlar os módulos da MOZG, efetivaremos o bloqueio do(s) módulo(s) remotamente sem aviso prévio e a licença comercial será anulada.
+- É enviado a CEREBRUM dados como: DNS do servidor e URL.
+- Na identificação de tentativa de hackear ou burlar os módulos da CEREBRUM, efetivaremos o bloqueio do(s) módulo(s) remotamente sem aviso prévio e a licença comercial será anulada.
 - Não acessamos ou coletamos em nenhuma hipótese dados confidenciais de lojistas e seus respectivos clientes.
 
 # Atualização / Update
@@ -68,9 +68,9 @@ Este Acordo de Licença do Usuário Final poderá ser atualizado ou editado à q
 
 # Módulos / Serviços de Terceiros
 
-- Não efetivamos correções, manutenções, ajustes ou adequações em módulos de terceiros na incompatibilidade com os módulos desenvolvidos pela MOZG.
-- Não nos responsabilizamos por instabilidades em sistemas de terceiros integrados com os módulos desenvolvidos pela MOZG.
-- Não nos responsabilizamos por descontinuidade de sistemas de terceiros integrados com os módulos desenvolvidos pela MOZG.
+- Não efetivamos correções, manutenções, ajustes ou adequações em módulos de terceiros na incompatibilidade com os módulos desenvolvidos pela CEREBRUM.
+- Não nos responsabilizamos por instabilidades em sistemas de terceiros integrados com os módulos desenvolvidos pela CEREBRUM.
+- Não nos responsabilizamos por descontinuidade de sistemas de terceiros integrados com os módulos desenvolvidos pela CEREBRUM.
 
 # Desativação do(s) módulo(s)
 
