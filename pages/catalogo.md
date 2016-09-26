@@ -225,5 +225,44 @@ excerpt: "Instale nossos módulos sem compromisso."
                 </table>
             </td>
         </tr>
+
+
+        <tr>
+            <td>Loggi</td>
+            <td>
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-loggi-php55#mozgproductpageshipping">↓</a></td>
+                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-loggi-php56#mozgproductpageshipping">↓</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center aligned"> </td>
+                            <td class="center aligned"> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+
+
     </tbody>
 </table>
