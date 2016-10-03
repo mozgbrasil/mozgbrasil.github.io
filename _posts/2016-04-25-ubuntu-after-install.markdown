@@ -189,6 +189,18 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
     sudo add-apt-repository ppa:webupd8team/atom -y && sudo apt-get update && sudo apt-get install atom
 
+    ## Plugins
+
+    apm install open-on-bitbucket
+
+    apm install php-hyperclick
+
+    apm install php-cs-fixer
+    composer global require friendsofphp/php-cs-fixer
+    export PATH="$PATH:$HOME/.composer/vendor/bin"
+
+    apm install atom-autocomplete-php
+
 # Jekyll
 
     sudo gem install jekyll && sudo gem install github-pages && sudo gem install rouge && jekyll -v && ruby --version && gem --version ;\
