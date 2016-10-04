@@ -225,8 +225,6 @@ excerpt: "Instale nossos módulos sem compromisso."
                 </table>
             </td>
         </tr>
-
-
         <tr>
             <td>Loggi</td>
             <td>
@@ -262,6 +260,79 @@ excerpt: "Instale nossos módulos sem compromisso."
                 </table>
             </td>
         </tr>
+{% comment %}
+        <tr>
+            <td>Customer</td>
+            <td>
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-customer-php55#mozgcustomer">↓</a></td>
+                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-customer-php56#mozgcustomer">↓</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center aligned"> </td>
+                            <td class="center aligned"> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+{% endcomment %}
+        <tr>
+            <td>Clearsale</td>
+            <td>
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-clearsale-php55#mozgclearsale">↓</a></td>
+                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-clearsale-php56#mozgclearsale">↓</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center aligned"> </td>
+                            <td class="center aligned"> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+
 
 
     </tbody>

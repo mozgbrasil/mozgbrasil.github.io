@@ -191,15 +191,10 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
     ## Plugins
 
-    apm install open-on-bitbucket
-
-    apm install php-hyperclick
-
-    apm install php-cs-fixer
     composer global require friendsofphp/php-cs-fixer
     export PATH="$PATH:$HOME/.composer/vendor/bin"
 
-    apm install atom-autocomplete-php
+    apm install php-cs-fixer open-on-bitbucket php-hyperclick atom-autocomplete-php project-manager pigments atom-beautify minimap git-plus
 
 # Jekyll
 

@@ -12,6 +12,16 @@ excerpt: "Nesse artigo será exibido detalhadamente o processo usado para ativar
 
 Ola
 
+Acesse o terminal do seu servidor
+
+O terminal ou prompt de comando é o ambiente acessado via SSH
+
+Para saber a versão do seu PHP, execute o seguinte comando no terminal
+
+    php -v
+
+Esse comando deve exibir a versão do PHP e a presença da extensão de servidor Zend Guard Loader
+
 # Como instalar o "Zend Guard Loader" em meu servidor?
 
 Acesse
