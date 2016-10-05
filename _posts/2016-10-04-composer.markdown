@@ -8,7 +8,7 @@ tags: [magento2, php]
 excerpt: "Nesse artigo será exibido informações sobre a espetacular ferramenta Composer"
 ---
 
-[getcomposer]: https://getcomposer.org/
+[getcomposer]:https://getcomposer.org/
 
 Ola
 
