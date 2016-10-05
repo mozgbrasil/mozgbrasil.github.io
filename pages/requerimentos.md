@@ -14,7 +14,7 @@ excerpt: "Antes de executar os processos, e leia os pré-requisitos e sugestões
 
 ## Pré-requisitos
 
-- Usar a ferramenta [Composer][getcomposer]
+- Usar a ferramenta [Composer][composer]
 
 - Ativar a extensão de servidor [Zend Guard Loader][ativando-zend-guard-loader]
 
