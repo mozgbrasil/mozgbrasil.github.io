@@ -6,7 +6,7 @@ order: 6
 excerpt: "Antes de executar os processos, e leia os pré-requisitos e sugestões"
 ---
 
-[composer]: /ubuntu/composer/
+[composer]: /ubuntu/composer
 [ativando-zend-guard-loader]: /zend%20guard%20loader/ativando-zend-guard-loader
 [acordo]: /acordo-licenca-usuario-final/
 
