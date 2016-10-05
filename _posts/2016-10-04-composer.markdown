@@ -16,18 +16,18 @@ Para visualizar se no seu sistema tem o suporte ao [Composer][getcomposer] de fo
 
     composer --version
 
-Caso no seu sistema não tenha o suporte ao [Composer][getcomposer] você pode baixar o mesmo para rodar no diretório corrente, execute o seguinte comando no terminal
+Caso no seu sistema não tenha o suporte ao [Composer][getcomposer] você pode baixar o mesmo para rodar no diretório corrente, para isso execute o seguinte comando no terminal
 
     curl -sS https://getcomposer.org/installer | php
 
 Conforme documentado em https://getcomposer.org/doc/00-intro.md#locally
 
-Será baixado um arquivo "composer.phar" que se trata do Composer
+Será baixado um arquivo "composer.phar" que se trata do [Composer][getcomposer]
 
 Nesse caso por se tratar de uma instalação local, ao invés de usar o comando "composer" que se trata de um comando global, você terá de usar "composer.phar"
 
-Conforme documentado em https://getcomposer.org/doc/00-intro.md#globally
+Caso queira aplicar o uso global do [Composer][getcomposer] ao seu sistema, conforme documentado em https://getcomposer.org/doc/00-intro.md#globally
 
-Deve ser executado o seguinte comando no terminal, para um acesso global ao Composer
+Deve ser executado o seguinte comando no terminal, para um acesso global ao [Composer][getcomposer]
 
     sudo mv composer.phar /usr/local/bin/composer
