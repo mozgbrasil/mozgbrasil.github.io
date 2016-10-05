@@ -12,11 +12,11 @@ excerpt: "Nesse artigo será exibido informações sobre a espetacular ferrament
 
 Ola
 
-Para visualizar se no seu terminal tem o suporte ao [Composer][getcomposer] de forma global, execute o seguinte comando no terminal
+Para visualizar se no seu sistema tem o suporte ao [Composer][getcomposer] de forma global, execute o seguinte comando no terminal
 
     composer --version
 
-Caso no seu terminal não tenha o suporte ao [Composer][getcomposer] você pode baixar o mesmo para rodar no diretório corrente, execute o seguinte comando no terminal
+Caso no seu sistema não tenha o suporte ao [Composer][getcomposer] você pode baixar o mesmo para rodar no diretório corrente, execute o seguinte comando no terminal
 
     curl -sS https://getcomposer.org/installer | php
 
