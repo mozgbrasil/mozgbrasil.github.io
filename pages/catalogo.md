@@ -298,7 +298,7 @@ excerpt: "Instale nossos módulos sem compromisso."
         </tr>
 {% endcomment %}
         <tr>
-            <td>Clearsale</td>
+            <td>Total ClearSale, Total guaranted & Application</td>
             <td>
                 <table class="filho">
                     <thead>

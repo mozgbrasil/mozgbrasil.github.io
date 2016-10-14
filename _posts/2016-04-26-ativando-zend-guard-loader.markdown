@@ -105,4 +105,6 @@ Executando o seguinte comando temos o resultado se está ativo o recurso no ambi
 
 Executando o seguinte comando temos o resultado se está ativo o recurso no ambiente web
 
-	curl -v --silent http://52.67.2.27/public_html/phpinfo.php 2>&1 | grep 'Zend Guard Loader'
+    echo "<?php phpinfo(); ?>" >> phpinfo.php
+
+	curl -v --silent http://SEU_DNS/phpinfo.php 2>&1 | grep 'Zend Guard Loader'
