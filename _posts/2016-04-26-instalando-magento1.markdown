@@ -130,7 +130,8 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	composer require aoepeople/aoe_scheduler ;\
 	composer require magento-hackathon/hackathon_magemonitoring ;\
 	composer require jayelkaake/enhancedgrid ;\
-	composer require husseycoding/customordergrid
+	composer require husseycoding/customordergrid ;\
+	composer require mozgbrasil/magento-customer
 
 # Habilitar exibição do erro no Magento
 
