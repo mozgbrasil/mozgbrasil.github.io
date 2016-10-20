@@ -191,15 +191,18 @@ Configurações de Som -> Entrada -> Volume de entrada fica desativado
 
 Instalar o Pulse Audio Volume Control e configurar
 
-# Sublime Editor
+# Sublime - text editor
 
     sudo add-apt-repository ppa:webupd8team/sublime-text-3 && sudo apt-get update && sudo apt-get install sublime-text-installer
 
-# Atom
+    ## Plugins - https://packagecontrol.io/
+    ## Sublime Menu: (Tools > Command Palette…) search for "Package"
+
+# Atom - text editor
 
     sudo add-apt-repository ppa:webupd8team/atom -y && sudo apt-get update && sudo apt-get install atom
 
-    ## Plugins
+    ## Plugins - https://atom.io/packages
 
     composer global require friendsofphp/php-cs-fixer
     export PATH="$PATH:$HOME/.composer/vendor/bin"

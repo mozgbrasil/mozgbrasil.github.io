@@ -260,7 +260,6 @@ excerpt: "Instale nossos módulos sem compromisso."
                 </table>
             </td>
         </tr>
-{% comment %}
         <tr>
             <td>Customer</td>
             <td>
@@ -296,7 +295,6 @@ excerpt: "Instale nossos módulos sem compromisso."
                 </table>
             </td>
         </tr>
-{% endcomment %}
         <tr>
             <td>Total ClearSale, Total Guaranted & Application</td>
             <td>

@@ -134,6 +134,18 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	composer require mozgbrasil/magento-iwd-opc ;\
 	composer require connect20/customerattributes
 
+
+	# As Urls abaixo aponta para a descrição de cada módulo
+
+	# https://www.magentocommerce.com/magento-connect/magento-official-portuguese-translation.html
+	# http://packages.firegento.com/#aschroder/smtp_pro
+	# https://packagist.org/packages/aoepeople/aoe_scheduler
+	# http://packages.firegento.com/#magento-hackathon/hackathon_magemonitoring
+	# http://packages.firegento.com/#jayelkaake/enhancedgrid
+	# http://packages.firegento.com/#husseycoding/customordergrid
+	# https://packagist.org/packages/mozgbrasil/magento-iwd-opc
+	# https://www.magentocommerce.com/magento-connect/customer-attributes-extra-fields-for-registration-form-1.html
+
 # Habilitar exibição do erro no Magento
 
 No magento edite o arquivo index.php e retire o comentário # devendo ficar como abaixo
