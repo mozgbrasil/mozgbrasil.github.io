@@ -341,7 +341,7 @@ excerpt: "Instale nossos módulos sem compromisso."
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>Compra em 1 passo</td>
+            <td>Finalização em 1 passo</td>
             <td><a href="https://github.com/mozgbrasil/magento-iwd-opc#mozgiwd_opc">↓</a></td>
             <td>&nbsp;</td>
         </tr>
