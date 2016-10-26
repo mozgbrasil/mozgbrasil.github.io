@@ -10,6 +10,16 @@ excerpt: "Nesse artigo é exibido diversas dicas relativa ao Magento 1"
 
 Ola
 
+# Onde os atributos de clientes ficam armazenadaos ?
+
+É nativo do Magento que na tabela `eav_attribute` esteja registrado atributos e na tabela `eav_attribute_option_value` os registros para valores do tipo option "select"
+
+	SELECT * FROM `eav_attribute` WHERE `attribute_code` = 'rg';
+
+	SELECT * FROM `customer_eav_attribute` WHERE `attribute_id` = 218;
+
+	SELECT * FROM `customer_entity_varchar` WHERE `attribute_id` = 218;
+
 # Modificando a tradução do módulo para o template
 
 Cada módulo tem o seu arquivo de tradução com a mesma nomenclatura do módulo

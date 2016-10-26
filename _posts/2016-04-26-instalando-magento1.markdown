@@ -132,8 +132,8 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	composer require jayelkaake/enhancedgrid ;\
 	composer require husseycoding/customordergrid ;\
 	composer require mozgbrasil/magento-iwd-opc ;\
-	composer require connect20/customerattributes
-
+	composer require connect20/customerattributes ;\
+	composer require madalinoprea/magneto-debug
 
 	# As Urls abaixo aponta para a descrição de cada módulo
 

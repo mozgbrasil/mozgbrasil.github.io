@@ -261,7 +261,7 @@ excerpt: "Instale nossos módulos sem compromisso."
             </td>
         </tr>
         <tr>
-            <td>Customer</td>
+            <td>Cadastro de Clientes</td>
             <td>
                 <table class="filho">
                     <thead>
