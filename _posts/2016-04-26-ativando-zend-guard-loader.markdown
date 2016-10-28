@@ -51,8 +51,11 @@ Em seguida reiniciamos o servidor
 	sudo service apache2 restart
 
 Obs. 
+
 Na ocorrência de problemas certifique se foi informado o caminho correto em "zend_extension"
+
 Na ocorrência de problemas de servidor, sugiro analisar o log do servidor onde deve ser apontado o motivo da ocorrência
+
 Certifique se de ter reiniciado o servidor
 
 Devido o "Zend Guard Loader" se tratar de ferramenta de terceiros, dúvidas ou problemas sugiro entrar em contato direto com a Zend, abrindo uma interação no forum do "Zend Guard Loader"
