@@ -336,12 +336,12 @@ excerpt: "Instale nossos módulos sem compromisso."
 
 
         <tr>
-            <td>Estados do Brasil</td>
+            <td>Estados do Brasil (Free)</td>
             <td><a href="https://github.com/mozgbrasil/magento-brasil-regions#mozgbrregions">↓</a></td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>Finalização em 1 passo</td>
+            <td>Finalização em 1 passo (Free)</td>
             <td><a href="https://github.com/mozgbrasil/magento-iwd-opc#mozgiwd_opc">↓</a></td>
             <td>&nbsp;</td>
         </tr>
