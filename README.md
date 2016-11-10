@@ -17,6 +17,12 @@ Caso queira contribuir para melhoria da documentação de um Fork no repositorio
 
 ## Característica técnica
 
+### Execução em ambiente local
+
+	cd /home/marcio/dados/public_html/mozg/git/mozgbrasil.github.io
+
+	jekyll serve
+
 ### Backend
 
 https://pages.github.com/

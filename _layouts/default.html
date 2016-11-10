@@ -4,11 +4,13 @@
         {% include tags_head.html %}
     </head>
     <body data-ng-app="rs.analytics.tagmanager">
-        <header class="header google-blue" role="banner">
-            <h1 class="product-logo">
+        <header class="header google-blue" data-rs-header="" role="banner">
+            <div class="upper-header">
+                <h1 class="product-logo">
                 <a data-g-action="Analytics Overview" data-g-event="Tag Manager: Overview" data-g-label=
-                    "Global Nav Logo" href="/"><img alt="Mozg" src="/assets/images/logos/Red_star.svg" width="20" height="20"></a>
-            </h1>
+                "Global Nav Logo" href="/"><img alt="Mozg" src="/assets/images/logos/Red_star.svg" width="20" height="20"></a>
+                </h1>
+            </div>
            {% assign variable = site.top_menu %}
            {% include {{variable}} %}
             <button class="nav-toggle-button"><span class="icon-menu-els"><span class=
