@@ -10,6 +10,53 @@ excerpt: "Nesse artigo é exibido diversas dicas relativa ao Magento 1"
 
 Ola
 
+# Ocorreu erro na loja ou processo não está se comportando como deveria
+
+Sugiro seguir as orientações abaixo para resolução de ocorrências no Magento
+
+## PROCESSO RÁPIDO
+
+A intenção é desativar todos os módulos de terceiros até encontrar a causa da ocorrência
+
+A base dos módulos desenvolvidos por terceiros para a plataforma Magento é separado em 2 diretórios "community" e "local"
+
+Renomeie a seguinte pasta /app/code/community/, dessa forma todos os módulos do ambiente "community" não deve ser carregado no Magento  
+Renomeie as pastas abaixo de /app/code/local/, não renomeie a pasta do módulo suspeito, dessa forma todos os módulos do ambiente "local" não deve ser carregado no Magento, com exceção do módulo suspeito
+
+Efetue os testes
+
+Caso o processo venha a funcionar é provável estar ocorrendo conflitos entre módulos, então retorne um diretório de cada vez e efetue teste até encontrar o módulo causador da ocorrência
+
+Se o processo acima não funcionar tente o "Processo detalhado" abaixo
+
+## PROCESSO DETALHADO
+
+Sugiro que faça o seguinte.
+
+Veja qual é a versão do Magento utilizada no desenvolvimento da sua loja virtual.
+
+Depois baixe essa mesma versão por intermédio do link a seguir, clicando na aba "Release Archives"
+
+http://www.magentocommerce.com/download
+
+Monte um ambiente de teste com o MAGENTO "Cru" e instale somente o módulo suspeito e efetue os devidos testes.
+
+Se apresentar algum problema informe o desenvolvedor do módulo para analise da ocorrência.
+
+Em seguida você pode estar colocando cada módulo de terceiro e testando, dessa forma é possível encontrar a causa do problema.
+
+## COMPARAÇÔES DE PROJETOS
+
+Com o novo projeto de teste funcionando perfeitamente
+
+Agora caso queira falta encontrar a causa da ocorrência podendo ser algo em "banco de dados" ou nos "scripts do projeto"
+
+Efetue o backup do banco de dados do projeto que tem a ocorrência do erro e crie um novo banco de dados importando esse backup.
+
+Configure o projeto de teste para utilizar esse novo banco de dados e efetue os testes, dessa forma é possível saber se a ocorrência está relacionada a algo no "banco de dados" ou nos "scripts do projeto"
+
+Para comparação de scripts eu utilizo a Software Meld
+
 # Onde os atributos de clientes ficam armazenadaos ?
 
 É nativo do Magento que na tabela `eav_attribute` esteja registrado atributos e na tabela `eav_attribute_option_value` os registros para valores do tipo option "select"
