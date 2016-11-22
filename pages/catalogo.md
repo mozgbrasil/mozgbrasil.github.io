@@ -365,7 +365,41 @@ excerpt: "Instale nossos módulos sem compromisso."
                 </table>
             </td>
         </tr>
-
+        <tr>
+            <td>Braspag API V2</td>
+            <td>
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-braspag-php56#mozgbraspag">↓</a></td>
+                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-braspag-php56#mozgbraspag">↓</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center aligned"> </td>
+                            <td class="center aligned"> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
 
 
 
