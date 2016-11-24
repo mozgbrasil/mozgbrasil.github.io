@@ -25,8 +25,8 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	cd ~/dados/public_html ;\
 	pwd ;\
 	ls ;\
-	mkdir magento-1.9.3.0-dev33 ;\
-	cd magento-1.9.3.0-dev33 ;\
+	mkdir magento-1.9.3.1-dev34 ;\
+	cd magento-1.9.3.1-dev34 ;\
 	composer --version && sudo composer self-update && composer clear-cache
 
 # Download Magento
@@ -38,7 +38,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 	composer require magento-hackathon/magento-composer-installer ~3.0 ;\
 	composer require aydin-hassan/magento-core-composer-installer ~1.2 ;\
-	composer require firegento/magento ~1.9.3 ;\
+	composer require firegento/magento ~1.9.3.1 ;\
 	composer update -vvv --profile
 
 # FIX: new root folder to current folder
@@ -53,8 +53,8 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 # Create Database
 
-	mysqladmin -u root -p DROP "magento-1.9.3.0-dev33" ;\
-	mysqladmin -u root -p CREATE "magento-1.9.3.0-dev33"
+	mysqladmin -u root -p DROP "magento-1.9.3.1-dev34" ;\
+	mysqladmin -u root -p CREATE "magento-1.9.3.1-dev34"
 
 # Sample Data
 
@@ -62,7 +62,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	7za x compressed-no-mp3-magento-sample-data-1.9.1.0.tar.7z ;\
 	tar -xvf compressed-no-mp3-magento-sample-data-1.9.1.0.tar ;\
 	cp -ri magento-sample-data-1.9.1.0/media/* ./media/ ;\
-	mysql -h 'localhost' -u 'root' -p 'magento-1.9.3.0-dev33' < 'magento-sample-data-1.9.1.0/magento_sample_data_for_1.9.1.0.sql' ;\
+	mysql -h 'localhost' -u 'root' -p 'magento-1.9.3.1-dev34' < 'magento-sample-data-1.9.1.0/magento_sample_data_for_1.9.1.0.sql' ;\
 	rm -fr compressed-no-mp3-magento-sample-data-1.9.1.0.tar compressed-no-mp3-magento-sample-data-1.9.1.0.tar.7z magento-sample-data-1.9.1.0
 
 # Install Magento
@@ -73,10 +73,10 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	--timezone "America/Sao_Paulo" \
 	--default_currency "BRL" \
 	--db_host "localhost" \
-	--db_name "magento-1.9.3.0-dev33" \
+	--db_name "magento-1.9.3.1-dev34" \
 	--db_user "root" \
 	--db_pass "???" \
-	--url "http://127.0.0.1/public_html/magento-1.9.3.0-dev33/" \
+	--url "http://127.0.0.1/public_html/magento-1.9.3.1-dev34/" \
 	--skip_url_validation "yes" \
 	--use_rewrites "yes" \
 	--use_secure "no" \

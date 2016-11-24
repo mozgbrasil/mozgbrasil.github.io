@@ -21,3 +21,13 @@ Ola
 # Conectar via ssh pelo terminal
 
 	ssh marcio@192.168.0.7
+
+# Obter a versão do PHP via terminal
+
+	php -r \@phpinfo\(\)\; | grep 'PHP Version' -m 1
+
+	php -i | grep 'PHP Version' -m 1
+
+# Execução comando condicional em linha
+
+	sh -c 'if [ "$TRAVIS_PHP_VERSION" = "5.4" ] || [ "$TRAVIS_PHP_VERSION" = "5.5" ]; then echo '0'; else echo '1'; fi;'

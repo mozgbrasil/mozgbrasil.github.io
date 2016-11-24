@@ -31,3 +31,11 @@ Caso queira aplicar o uso global do [Composer][getcomposer] ao seu sistema, conf
 Deve ser executado o seguinte comando no terminal, para um acesso global ao [Composer][getcomposer]
 
     sudo mv composer.phar /usr/local/bin/composer
+
+A seguir alguns comandos úteis
+
+	composer show --platform
+
+	composer show --all
+
+	composer show --self
