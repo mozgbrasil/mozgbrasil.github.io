@@ -401,7 +401,7 @@ excerpt: "Instale nossos módulos sem compromisso."
             </td>
         </tr>
         <tr>
-            <td>Braspag API 3.0</td>
+            <td>Cielo API 3.0</td>
             <td>
                 <table class="filho">
                     <thead>
