@@ -51,7 +51,77 @@ excerpt: "Instale nossos módulos sem compromisso."
             </td>
         </tr>
         <tr>
-            <td>Correios</td>
+            <td>Cadastro de Clientes</td>
+            <td>
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-customer-php55#mozgcustomer">↓</a></td>
+                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-customer-php56#mozgcustomer">↓</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center aligned"> </td>
+                            <td class="center aligned"> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>Estimativa de Frete na página de produto</td>
+            <td>
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-product-page-shipping-php55#mozgproductpageshipping">↓</a></td>
+                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-product-page-shipping-php56#mozgproductpageshipping">↓</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center aligned"> </td>
+                            <td class="center aligned"> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>Correios & Correios Exporta Fácil</td>
             <td>
                 <table class="filho">
                     <thead>
@@ -80,41 +150,6 @@ excerpt: "Instale nossos módulos sem compromisso."
                         <tr>
                             <td class="center aligned"><a href="https://github.com/mozgbrasil/magento2-correios-php55#mozgcorreios">↓</a></td>
                             <td class="center aligned"><a href="https://github.com/mozgbrasil/magento2-correios-php56#mozgcorreios">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td>Correios Exporta Fácil</td>
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-correios-php55/blob/master/README_ExportaFacil.md#mozgcorreios">↓</a></td>
-                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-correios-php56/blob/master/README_ExportaFacil.md#mozgcorreios">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento2-correios-php55/blob/master/README_ExportaFacil.md#mozgcorreios">↓</a></td>
-                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento2-correios-php56/blob/master/README_ExportaFacil.md#mozgcorreios">↓</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -191,41 +226,6 @@ excerpt: "Instale nossos módulos sem compromisso."
             </td>
         </tr>
         <tr>
-            <td>Estimativa de Frete na página de produto</td>
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-product-page-shipping-php55#mozgproductpageshipping">↓</a></td>
-                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-product-page-shipping-php56#mozgproductpageshipping">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="center aligned"> </td>
-                            <td class="center aligned"> </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-        <tr>
             <td>Loggi</td>
             <td>
                 <table class="filho">
@@ -261,7 +261,7 @@ excerpt: "Instale nossos módulos sem compromisso."
             </td>
         </tr>
         <tr>
-            <td>Cadastro de Clientes</td>
+            <td>Total ClearSale & ClearSale Start</td>
             <td>
                 <table class="filho">
                     <thead>
@@ -272,78 +272,8 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-customer-php55#mozgcustomer">↓</a></td>
-                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-customer-php56#mozgcustomer">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="center aligned"> </td>
-                            <td class="center aligned"> </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td>Total ClearSale, Total Guaranted & Application</td>
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-clearsale-php55/blob/master/README_ClearsaleTotal.md#mozgclearsaletotal">↓</a></td>
-                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-clearsale-php56/blob/master/README_ClearsaleTotal.md#mozgclearsaletotal">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="center aligned"> </td>
-                            <td class="center aligned"> </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td>ClearSale Start</td>
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-clearsale-php55/blob/master/README_ClearsaleStart.md#mozgclearsalestart">↓</a></td>
-                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-clearsale-php56/blob/master/README_ClearsaleStart.md#mozgclearsalestart">↓</a></td>
+                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-clearsale-php55#mozgclearsale">↓</a></td>
+                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-clearsale-php56#mozgclearsale">↓</a></td>
                         </tr>
                     </tbody>
                 </table>

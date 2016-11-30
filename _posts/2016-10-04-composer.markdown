@@ -24,18 +24,10 @@ Conforme documentado em https://getcomposer.org/doc/00-intro.md#locally
 
 Será baixado um arquivo "composer.phar" que se trata do [Composer][getcomposer]
 
-Nesse caso por se tratar de uma instalação local, ao invés de usar o comando "composer" que se trata de um comando global, você terá de usar "composer.phar"
+Nesse caso por se tratar de uma instalação local, ao invés de usar o comando "composer" que se trata de um comando global, você terá de usar "php composer.phar"
 
 Caso queira aplicar o uso global do [Composer][getcomposer] ao seu sistema, conforme documentado em https://getcomposer.org/doc/00-intro.md#globally
 
 Deve ser executado o seguinte comando no terminal, para um acesso global ao [Composer][getcomposer]
 
     sudo mv composer.phar /usr/local/bin/composer
-
-A seguir alguns comandos úteis
-
-	composer show --platform
-
-	composer show --all
-
-	composer show --self
