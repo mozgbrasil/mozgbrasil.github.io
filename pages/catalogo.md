@@ -237,8 +237,8 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-loggi-php55#mozgproductpageshipping">↓</a></td>
-                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-loggi-php56#mozgproductpageshipping">↓</a></td>
+                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-loggi-php55#mozgloggi">↓</a></td>
+                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-loggi-php56#mozgloggi">↓</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -342,7 +342,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-cielo-php56#mozgcielo">↓</a></td>
+                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-cielo-php55#mozgcielo">↓</a></td>
                             <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-cielo-php56#mozgcielo">↓</a></td>
                         </tr>
                     </tbody>
