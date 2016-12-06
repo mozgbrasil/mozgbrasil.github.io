@@ -307,7 +307,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-braspag-php56#mozgbraspag">↓</a></td>
+                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-braspag-php55#mozgbraspag">↓</a></td>
                             <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-braspag-php56#mozgbraspag">↓</a></td>
                         </tr>
                     </tbody>
