@@ -365,7 +365,41 @@ excerpt: "Instale nossos módulos sem compromisso."
                 </table>
             </td>
         </tr>
-
+        <tr>
+            <td>Itaú Shopline</td>
+            <td>
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-itau-php55#mozgitau">↓</a></td>
+                            <td class="center aligned"><a href="https://github.com/mozgbrasil/magento-itau-php56#mozgitau">↓</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center aligned"> </td>
+                            <td class="center aligned"> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
 
         <tr>
             <td>Estados do Brasil (Free)</td>
