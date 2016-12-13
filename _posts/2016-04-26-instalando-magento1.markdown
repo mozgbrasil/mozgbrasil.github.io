@@ -41,6 +41,10 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	composer require firegento/magento ~1.9.3.1 ;\
 	composer update -vvv --profile
 
+<!--
+
+# Comentado devido ao erro https://github.com/firegento/magento/issues/51#
+
 # FIX: new root folder to current folder
 	# Na edição do composer.json altere para
 	# "magento-root-dir": "./"
@@ -50,14 +54,15 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	mv ./root/{.[!.],}* . ;\
 	rm -fr ./root ;\
 	nano composer.json
+-->
 
 # Create Database
 
-	mysqladmin -u root -p DROP "magento-1.9.3.1-dev34" ;\
 	mysqladmin -u root -p CREATE "magento-1.9.3.1-dev34"
 
 # Sample Data
 
+	cd root ;\
 	wget https://raw.githubusercontent.com/Vinai/compressed-magento-sample-data/1.9.1.0/compressed-no-mp3-magento-sample-data-1.9.1.0.tar.7z ;\
 	7za x compressed-no-mp3-magento-sample-data-1.9.1.0.tar.7z ;\
 	tar -xvf compressed-no-mp3-magento-sample-data-1.9.1.0.tar ;\
@@ -76,7 +81,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	--db_name "magento-1.9.3.1-dev34" \
 	--db_user "root" \
 	--db_pass "???" \
-	--url "http://127.0.0.1/public_html/magento-1.9.3.1-dev34/" \
+	--url "http://127.0.0.1/public_html/magento-1.9.3.1-dev34/root/" \
 	--skip_url_validation "yes" \
 	--use_rewrites "yes" \
 	--use_secure "no" \
@@ -123,7 +128,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 # Install Extensions via Composer
 
-	# Certique se da existencia do arquivo composer.json na raiz do projeto Magento e que o mesmo tenha os trechos "minimum-stability", "prefer-stable", "repositories" e '"magento-root-dir":"./"', conforme
+	# Certique se da existencia do arquivo composer.json na raiz do projeto Magento e que o mesmo tenha os trechos "minimum-stability", "prefer-stable", "repositories" e "magento-root-dir", conforme
 	#
 	# https://gist.github.com/mozgbrasil/0c9bb8792ea6273ea24aed30b0fbcfba
 	#
@@ -131,6 +136,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	#
 	# wget https://gist.githubusercontent.com/mozgbrasil/0c9bb8792ea6273ea24aed30b0fbcfba/raw/b53c403620c111c43834fec9aa025809d1cb96b1/composer.json
 
+	cd .. ;\
 	nano composer.json ;\
 	composer diagnose && composer show -i ;\
 	composer require connect20/mage_locale_pt_br ;\
@@ -143,7 +149,12 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	composer require mozgbrasil/magento-iwd-opc ;\
 	composer require connect20/clarion_customerattribute ;\
 	composer require madalinoprea/magneto-debug ;\
-	composer require connect20/fooman_sameorderinvoicenumber
+	composer require connect20/fooman_sameorderinvoicenumber ;\
+	composer require connect20/pedroteixeira_correios
+
+	# No uso do PHP 7
+
+	composer require inchoo/php7
 
 	# As Urls abaixo aponta para a descrição de cada módulo
 
@@ -170,6 +181,25 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 	# SELECT * FROM `core_config_data` WHERE `value` like '%@%';
 
+# Install Extensions via terminal
+
+	cd root ;\
+	wget http://mariosam.com.br/wp-content/uploads/2013/02/Traducao_Magento_ptBR_19xx_MarioSAM_v12.zip ;\
+	unzip Traducao_Magento_ptBR_19xx_MarioSAM_v12.zip ;\
+	cp -fr Traducao_Magento_ptBR_19xx_MarioSAM/pt_BR/* ./app/locale/pt_BR/ ;\
+	rm -fr Traducao_Magento_ptBR_19xx_MarioSAM __MACOSX Traducao_Magento_ptBR_19xx_MarioSAM_v12.zip
+
+{% comment %}
+
+	wget --no-check-certificate https://raw.githubusercontent.com/cerebrumgit/cerebrum/master/wizard_module.sh ;\
+	chmod +x ./wizard_module.sh ;\
+	./wizard_module.sh 5.6
+
+	cd ..
+	composer require mozgbrasil/magento-bundle-php56 --ignore-platform-reqs
+	composer update --ignore-platform-reqs
+
+{% endcomment %}
 
 # Habilitar exibição do erro no Magento
 
@@ -184,22 +214,3 @@ Edite o arquivo .htacces e adicione
 No terminal pode ser o comando para a visualização do log de erro do servidor
 
 	tail -f /var/log/apache2/error.log
-
-
-{% comment %}
-
-# Install Cerebrum_Telencephalon
-
-	wget --no-check-certificate https://raw.githubusercontent.com/cerebrumgit/cerebrum/master/wizard_module.sh ;\
-	chmod +x ./wizard_module.sh ;\
-	./wizard_module.sh 5.5
-
-composer require inchoo/php7
-
-wget --no-check-certificate https://www.dropbox.com/s/tsak00jso89ko5f/iwd_onepagecheckout_free-4.3.0_1.tgz
-./mage install-file iwd_onepagecheckout_free-4.3.0_1.tgz
-
-wget --no-check-certificate http://iwdextensions.com/media/modules/iwd_all.tgz
-./mage install-file iwd_all.tgz
-
-{% endcomment %}
