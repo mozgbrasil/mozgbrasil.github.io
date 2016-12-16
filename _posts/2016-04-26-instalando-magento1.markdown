@@ -56,7 +56,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	nano composer.json
 -->
 
-# Create Database
+# Criar Banco de dados
 
 	mysqladmin -u root -p CREATE "magento-1.9.3.1-dev34"
 
@@ -70,7 +70,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	mysql -h 'localhost' -u 'root' -p 'magento-1.9.3.1-dev34' < 'magento-sample-data-1.9.1.0/magento_sample_data_for_1.9.1.0.sql' ;\
 	rm -fr compressed-no-mp3-magento-sample-data-1.9.1.0.tar compressed-no-mp3-magento-sample-data-1.9.1.0.tar.7z magento-sample-data-1.9.1.0
 
-# Install Magento
+# Instalar Magento
 
 	php -f install.php -- \
 	--license_agreement_accepted "yes" \
@@ -93,7 +93,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	--admin_username "admin" \
 	--admin_password "123456a"
 
-# Permission
+# Permissões
 
 	chmod 777 -R .
 
@@ -126,7 +126,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	echo -e "\e[1;33m --(Processo 6)-- \e[0m" ;\
 	./mage install http://connect20.magentocommerce.com/community Mage_Locale_pt_BR
 
-# Install Extensions via Composer
+# Instalar extensões via Composer
 
 	# Certique se da existencia do arquivo composer.json na raiz do projeto Magento e que o mesmo tenha os trechos "minimum-stability", "prefer-stable", "repositories" e "magento-root-dir", conforme
 	#
@@ -181,7 +181,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 	# SELECT * FROM `core_config_data` WHERE `value` like '%@%';
 
-# Install Extensions via terminal
+# Instalar extensões via terminal
 
 	cd root ;\
 	wget http://mariosam.com.br/wp-content/uploads/2013/02/Traducao_Magento_ptBR_19xx_MarioSAM_v12.zip ;\
@@ -200,6 +200,20 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	composer update --ignore-platform-reqs
 
 {% endcomment %}
+
+# Usando links simbólicos no Magento
+
+Copie os arquivos .htaccess e index.php da pasta onde se encontra o Magento e coloque na raiz do projeto em seguida execute os comandos para criação dos links simbólicos
+
+	ln -s root/app
+	ln -s root/errors
+	ln -s root/includes
+	ln -s root/js
+	ln -s root/lib
+	ln -s root/media
+	ln -s root/skin
+	ln -s root/var
+	ln -s root/sitemap
 
 # Habilitar exibição do erro no Magento
 
