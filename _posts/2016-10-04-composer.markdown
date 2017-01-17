@@ -31,3 +31,17 @@ Caso queira aplicar o uso global do [Composer][getcomposer] ao seu sistema, conf
 Deve ser executado o seguinte comando no terminal, para um acesso global ao [Composer][getcomposer]
 
     sudo mv composer.phar /usr/local/bin/composer
+
+# Criando o manifesto de dependencias
+
+	cd /minha_pasta
+
+	echo '{
+		   "minimum-stability": "dev",
+		   "prefer-stable": true,
+		   "require": {
+		      "mozgbrasil/test": "dev-master"
+		   }
+		}' > composer.json
+
+	composer update
