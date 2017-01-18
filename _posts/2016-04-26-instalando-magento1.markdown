@@ -221,9 +221,23 @@ No magento edite o arquivo index.php e retire o comentário # devendo ficar como
 
 	ini_set('display_errors', 1);
 
+# Ativar modo desenvolvedor no Magento
+
 Edite o arquivo .htacces e adicione 
 
 	SetEnv MAGE_IS_DEVELOPER_MODE "true"
+
+Esse recurso é legal pois exibe os erros de scripts
+
+O uso desse recurso pode gerar alguns erros como por exemplo
+
+Warning: include(StaLib/Logger.php): failed to open stream: No such file or directory  in /home/marcio/dados/public_html/magento-1.9.3.1-dev34/root/lib/Varien/Autoload.php on line 94
+
+O fato de existir o script abaixo em qualquer controller já dispara o erro acima
+
+	if (class_exists('\StaLib_Logger')) {}
+
+# Visualizar erros do servidor
 
 No terminal pode ser o comando para a visualização do log de erro do servidor
 
