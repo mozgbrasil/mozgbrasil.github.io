@@ -51,76 +51,6 @@ excerpt: "Instale nossos módulos sem compromisso."
             </td>
         </tr>
         <tr>
-            <td>Cadastro de Clientes</td>
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-customer-php55#mozgcustomer">↓</a></td>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-customer-php56#mozgcustomer">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"> </td>
-                            <td style="text-align: center;"> </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td>Estimativa de Frete na página de produto</td>
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-product-page-shipping-php55#mozgproductpageshipping">↓</a></td>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-product-page-shipping-php56#mozgproductpageshipping">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"> </td>
-                            <td style="text-align: center;"> </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-        <tr>
             <td colspan="3"><h4 class="doctype-whitepaper-title">Métodos de entrega</h4></td>
         </tr>
         <tr>
@@ -388,6 +318,114 @@ excerpt: "Instale nossos módulos sem compromisso."
                         <tr>
                             <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-clearsale-php55#mozgclearsale">↓</a></td>
                             <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-clearsale-php56#mozgclearsale">↓</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;"> </td>
+                            <td style="text-align: center;"> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"><h4 class="doctype-whitepaper-title">Diversos</h4></td>
+        </tr>        
+        <tr>
+            <td>Cadastro de Clientes</td>
+            <td>
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-customer-php55#mozgcustomer">↓</a></td>
+                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-customer-php56#mozgcustomer">↓</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;"> </td>
+                            <td style="text-align: center;"> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>Estimativa de Frete na página de produto</td>
+            <td>
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-product-page-shipping-php55#mozgproductpageshipping">↓</a></td>
+                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-product-page-shipping-php56#mozgproductpageshipping">↓</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;"> </td>
+                            <td style="text-align: center;"> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>Filtros para o Checkout</td>
+            <td>
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-checkout-filters-php55#mozgcheckoutfilters">↓</a></td>
+                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-checkout-filters-php56#mozgcheckoutfilters">↓</a></td>
                         </tr>
                     </tbody>
                 </table>
