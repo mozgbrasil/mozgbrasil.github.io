@@ -413,7 +413,7 @@ excerpt: "Instale nossos módulos sem compromisso."
             </td>
         </tr>
         <tr>
-            <td>Filtros para o Checkout</td>
+            <td>Filtros para o Checkout <a class="anchorjs-link " href="#diversos" aria-label="Anchor link for: diversos" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;"></a></td>
             <td>
                 <table class="filho">
                     <thead>
