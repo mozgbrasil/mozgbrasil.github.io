@@ -19,7 +19,7 @@ excerpt: "Instale nossos módulos sem compromisso."
     <tbody>
         <tr>
             <td>Pacote completo</td>
-            <td>
+            <td align="center">
                 <table class="filho">
                     <thead>
                         <tr>
@@ -55,11 +55,11 @@ excerpt: "Instale nossos módulos sem compromisso."
             {% endcomment %}
         </tr>
         <tr>
-            <td colspan="3"><h4 class="doctype-whitepaper-title">Métodos de entrega</h4></td>
+            <td colspan="2"><h4 class="doctype-whitepaper-title">Métodos de entrega</h4></td>
         </tr>
         <tr>
             <td>Correios & Correios Exporta Fácil</td>
-            <td>
+            <td align="center">
                 <table class="filho">
                     <thead>
                         <tr>
@@ -96,7 +96,7 @@ excerpt: "Instale nossos módulos sem compromisso."
         </tr>
         <tr>
             <td>Jadlog</td>
-            <td>
+            <td align="center">
                 <table class="filho">
                     <thead>
                         <tr>
@@ -133,7 +133,7 @@ excerpt: "Instale nossos módulos sem compromisso."
         </tr>
         <tr>
             <td>Jamef</td>
-            <td>
+            <td align="center">
                 <table class="filho">
                     <thead>
                         <tr>
@@ -170,7 +170,7 @@ excerpt: "Instale nossos módulos sem compromisso."
         </tr>
         <tr>
             <td>Loggi</td>
-            <td>
+            <td align="center">
                 <table class="filho">
                     <thead>
                         <tr>
@@ -206,11 +206,11 @@ excerpt: "Instale nossos módulos sem compromisso."
             {% endcomment %}
         </tr>
         <tr>
-            <td colspan="3"><h4 class="doctype-whitepaper-title">Métodos de Pagamentos</h4></td>
+            <td colspan="2"><h4 class="doctype-whitepaper-title">Métodos de Pagamentos</h4></td>
         </tr>
         <tr>
             <td>Braspag API V2</td>
-            <td>
+            <td align="center">
                 <table class="filho">
                     <thead>
                         <tr>
@@ -247,7 +247,7 @@ excerpt: "Instale nossos módulos sem compromisso."
         </tr>
         <tr>
             <td>Cielo API 3.0</td>
-            <td>
+            <td align="center">
                 <table class="filho">
                     <thead>
                         <tr>
@@ -284,7 +284,7 @@ excerpt: "Instale nossos módulos sem compromisso."
         </tr>
         <tr>
             <td>Itaú Shopline</td>
-            <td>
+            <td align="center">
                 <table class="filho">
                     <thead>
                         <tr>
@@ -320,11 +320,11 @@ excerpt: "Instale nossos módulos sem compromisso."
             {% endcomment %}
         </tr>
         <tr>
-            <td colspan="3"><h4 class="doctype-whitepaper-title">Métodos de Antifraude</h4></td>
+            <td colspan="2"><h4 class="doctype-whitepaper-title">Métodos de Antifraude</h4></td>
         </tr>
         <tr>
             <td>Total ClearSale & ClearSale Start</td>
-            <td>
+            <td align="center">
                 <table class="filho">
                     <thead>
                         <tr>
@@ -360,11 +360,11 @@ excerpt: "Instale nossos módulos sem compromisso."
             {% endcomment %}
         </tr>
         <tr>
-            <td colspan="3"><h4 class="doctype-whitepaper-title">Diversos</h4></td>
+            <td colspan="2"><h4 class="doctype-whitepaper-title">Diversos  <a class="anchorjs-link " href="#diversos" aria-label="Anchor link for: diversos" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;"></a></h4></td>
         </tr>        
         <tr>
             <td>Cadastro de Clientes</td>
-            <td>
+            <td align="center">
                 <table class="filho">
                     <thead>
                         <tr>
@@ -401,7 +401,7 @@ excerpt: "Instale nossos módulos sem compromisso."
         </tr>
         <tr>
             <td>Estimativa de Frete na página de produto</td>
-            <td>
+            <td align="center">
                 <table class="filho">
                     <thead>
                         <tr>
@@ -437,8 +437,8 @@ excerpt: "Instale nossos módulos sem compromisso."
             {% endcomment %}
         </tr>
         <tr>
-            <td>Filtros para o Checkout <a class="anchorjs-link " href="#diversos" aria-label="Anchor link for: diversos" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;"></a></td>
-            <td>
+            <td>Filtros para o Checkout</td>
+            <td align="center">
                 <table class="filho">
                     <thead>
                         <tr>
@@ -474,17 +474,21 @@ excerpt: "Instale nossos módulos sem compromisso."
             {% endcomment %}
         </tr>
         <tr>
-            <td colspan="3"><h4 class="doctype-whitepaper-title">Módulos Open-Source</h4></td>
+            <td colspan="2"><h4 class="doctype-whitepaper-title">Módulos Open-Source</h4></td>
         </tr>
         <tr>
             <td>Estados do Brasil (Free)</td>
             <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-brasil-regions#mozgbrregions">↓</a></td>
+            {% comment %}
             <td style="text-align: center;">&nbsp;</td>
+            {% endcomment %}
         </tr>
         <tr>
             <td>Checkout da compra em 1 passo (Free)</td>
             <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-iwd-opc#mozgiwd_opc">↓</a></td>
+            {% comment %}
             <td style="text-align: center;">&nbsp;</td>
+            {% endcomment %}
         </tr>
 
     </tbody>
