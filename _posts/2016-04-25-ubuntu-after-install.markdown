@@ -225,6 +225,14 @@ Instalar o Pulse Audio Volume Control e configurar
     sudo dpkg -i --force-depends google-webdesigner_current_amd64.deb ;\
     sudo apt-get install -f
 
+# TeamViewer
+
+# https://www.teamviewer.com/pt/download/
+
+    wget https://download.teamviewer.com/download/teamviewer_i386.deb ;\
+    sudo dpkg -i teamviewer_i386.deb -y ;\
+    sudo apt-get install -f
+
 # Open Broadcaster Software
 
     sudo add-apt-repository ppa:obsproject/obs-studio && sudo apt-get update && sudo apt-get install obs-studio
