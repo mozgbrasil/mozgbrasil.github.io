@@ -10,8 +10,10 @@ excerpt: "Instale nossos módulos sem compromisso."
     <thead>
         <tr>
             <th></th>
-            <th style="text-align: center;">Magento 1 <a href="http://52.67.2.27/public_html/magento-1.9.2.4-dev31/index.php/admin">→</a></th>
+            <th style="text-align: center;">Magento 1 <a href="http://demomagento.cerebrum.com.br/">→</a></th>
+            {% comment %}
             <th style="text-align: center;">Magento 2 <a href="http://52.67.2.27/public_html/magento-2.0.2-dev23/index.php/admin">→</a></th>
+            {% endcomment %}
         </tr>
     </thead>
     <tbody>
@@ -33,6 +35,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% comment %}
             <td>
                 <table class="filho">
                     <thead>
@@ -49,6 +52,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% endcomment %}
         </tr>
         <tr>
             <td colspan="3"><h4 class="doctype-whitepaper-title">Métodos de entrega</h4></td>
@@ -71,6 +75,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% comment %}
             <td>
                 <table class="filho">
                     <thead>
@@ -87,6 +92,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% endcomment %}
         </tr>
         <tr>
             <td>Jadlog</td>
@@ -106,6 +112,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% comment %}
             <td>
                 <table class="filho">
                     <thead>
@@ -122,6 +129,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% endcomment %}
         </tr>
         <tr>
             <td>Jamef</td>
@@ -141,6 +149,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% comment %}
             <td>
                 <table class="filho">
                     <thead>
@@ -157,6 +166,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% endcomment %}
         </tr>
         <tr>
             <td>Loggi</td>
@@ -176,6 +186,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% comment %}
             <td>
                 <table class="filho">
                     <thead>
@@ -192,6 +203,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% endcomment %}
         </tr>
         <tr>
             <td colspan="3"><h4 class="doctype-whitepaper-title">Métodos de Pagamentos</h4></td>
@@ -214,6 +226,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% comment %}
             <td>
                 <table class="filho">
                     <thead>
@@ -230,6 +243,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% endcomment %}
         </tr>
         <tr>
             <td>Cielo API 3.0</td>
@@ -249,6 +263,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% comment %}
             <td>
                 <table class="filho">
                     <thead>
@@ -265,6 +280,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% endcomment %}
         </tr>
         <tr>
             <td>Itaú Shopline</td>
@@ -284,6 +300,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% comment %}
             <td>
                 <table class="filho">
                     <thead>
@@ -300,6 +317,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% endcomment %}
         </tr>
         <tr>
             <td colspan="3"><h4 class="doctype-whitepaper-title">Métodos de Antifraude</h4></td>
@@ -322,6 +340,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% comment %}
             <td>
                 <table class="filho">
                     <thead>
@@ -338,6 +357,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% endcomment %}
         </tr>
         <tr>
             <td colspan="3"><h4 class="doctype-whitepaper-title">Diversos</h4></td>
@@ -360,6 +380,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% comment %}
             <td>
                 <table class="filho">
                     <thead>
@@ -376,6 +397,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% endcomment %}
         </tr>
         <tr>
             <td>Estimativa de Frete na página de produto</td>
@@ -395,6 +417,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% comment %}
             <td>
                 <table class="filho">
                     <thead>
@@ -411,6 +434,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% endcomment %}
         </tr>
         <tr>
             <td>Filtros para o Checkout <a class="anchorjs-link " href="#diversos" aria-label="Anchor link for: diversos" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;"></a></td>
@@ -430,6 +454,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% comment %}
             <td>
                 <table class="filho">
                     <thead>
@@ -446,6 +471,7 @@ excerpt: "Instale nossos módulos sem compromisso."
                     </tbody>
                 </table>
             </td>
+            {% endcomment %}
         </tr>
         <tr>
             <td colspan="3"><h4 class="doctype-whitepaper-title">Módulos Open-Source</h4></td>
