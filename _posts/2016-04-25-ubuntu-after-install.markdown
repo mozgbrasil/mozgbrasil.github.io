@@ -14,7 +14,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 # Atualização do sistema operacional
 
-    sudo apt update && sudo apt upgrade && sudo apt dist-upgrade
+    sudo apt update && sudo apt upgrade && sudo apt dist-upgrade && sudo apt autoremove
 
 # Suporte a repositórios
 
@@ -25,7 +25,8 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 # Pesquisa sobre programas
 
     apt-cache search php-gd ;\
-    apt-cache show php-gd
+    apt-cache show php-gd ;\
+    apt search php7.0-*
 
 # Ubuntu 16.04 - Local Server - PHP 7
 
@@ -40,10 +41,13 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
     sudo apt-get install mysql-server-5.6 mysql-client-5.6 mysql-client-core-5.6 apache2 php5 php5-cli php5-curl php5-sqlite php5-mcrypt php5-gd php5-intl php5-xsl php5-common php5-mysql php5-dev php5-cgi libapache2-mod-php5 php5-fpm libapache2-mod-fastcgi memcached php5-memcache phpmyadmin p7zip-full unzip git
 
 # FIX: Apache Enable Module
+# NOTICE: To enable PHP 7.0 FPM in Apache2 do:
+# NOTICE: a2enmod proxy_fcgi setenvif
+# NOTICE: a2enconf php7.0-fpm
 
     sudo a2enconf php7.0-cgi
 
-    sudo a2enmod proxy_fcgi actions rewrite
+    sudo a2enmod proxy_fcgi setenvif actions rewrite
 
     sudo nano /etc/apache2/sites-available/000-default.conf
 
@@ -130,6 +134,21 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
         [zendloader]
         zend_extension=/home/marcio/dados/public_html/zend-loader-php5.6-linux-x86_64/ZendGuardLoader.so
         zend_extension=/home/marcio/dados/public_html/zend-loader-php5.6-linux-x86_64/opcache.so
+
+# FIX: Fatal error: Uncaught Error: Call to undefined function mcrypt_encrypt() in
+# FIX: Notice: Use of undefined constant MCRYPT_BLOWFISH - assumed 'MCRYPT_BLOWFISH'
+
+    sudo apt install php7.0-mcrypt
+
+# FIX: The mysqli extension is missing "phpmyadmin"
+
+    sudo apt install php7.0-mysql php7.0-sqlite3
+
+# FIX: pdo_mysql extension is not installed
+
+    sudo phpenmod pdo_mysql
+
+    #sudo phpdismod pdo_mysql
 
 # Restart Apache
 
