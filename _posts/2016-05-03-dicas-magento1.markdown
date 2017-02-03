@@ -120,6 +120,18 @@ Esse erro foi exibido quando foi colocado o seguinte item no .htaccess
 
 # Como ativar a CRON no Magento
 
+Sugiro instalar via composer o seguinte módulo para gerenciamento de serviços da CRON
+
+https://github.com/AOEpeople/Aoe_Scheduler
+
+No backend do Magento em Sistema -> Scheduler -> Instructions, está documentado o script para adicionar ao crontab
+
+Outra possibilidade
+
+Seria a configuração conforme documentação do magento
+
+http://devdocs.magento.com/guides/m1x/install/installing_install.html#install-cron
+
 No terminal ao executar o comando
 
 	crontab -e
