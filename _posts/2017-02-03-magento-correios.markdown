@@ -10,4 +10,4 @@ excerpt: "Veja o funcionamento passo a passo do módulo"
 
 <h1>Magento Correios</h1>
 
-<img src="/assets/images/docs/animation_2017-02-03_21-34-41.gif" width="100%" />
+<img src="/assets/images/docs/animation_2017-02-03_21-45-31.gif" width="100%" />
