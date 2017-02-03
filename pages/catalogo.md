@@ -58,7 +58,7 @@ excerpt: "Instale nossos módulos sem compromisso."
             <td colspan="2"><h4 class="doctype-whitepaper-title">Métodos de entrega</h4></td>
         </tr>
         <tr>
-            <td>Correios & Correios Exporta Fácil</td>
+            <td><a href="/magento/magento-correios" alt="Magento Correios">Correios & Correios Exporta Fácil</a></td>
             <td align="center">
                 <table class="filho">
                     <thead>
