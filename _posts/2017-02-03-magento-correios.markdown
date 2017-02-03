@@ -14,7 +14,7 @@ Instale nosso(s) módulo(s) em seu(s) projeto(s) sem compromisso
 
 Acesse nosso catalogo
 
-[https://mozg.com.br/catalogo/][https://mozg.com.br/catalogo/]
+<a href="https://mozg.com.br/catalogo/">https://mozg.com.br/catalogo/</a>
 
 Vemos no catalogo que é exibido o(s) módulo(s) com separação por versão do PHP, você deve clicar no item equivalente a versão do seu PHP onde será exibido o Manual do módulo
 
