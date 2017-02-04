@@ -5,7 +5,7 @@ date:   2017-02-03 21:18:47
 category: magento
 author: Marcio Amorim
 tags: [magento, correios]
-excerpt: "Veja o funcionamento passo a passo do módulo Magento Correios"
+excerpt: "Veja as funcionalidades do módulo Magento Correios"
 ---
 
 <h1>Magento Correios</h1>
