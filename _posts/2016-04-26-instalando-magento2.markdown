@@ -2,7 +2,7 @@
 layout: post
 title:  "Instalando o Magento2"
 date:   2016-04-26 14:01:03
-category: Magento2
+category: magento2
 author: Marcio Amorim
 tags: [magento2, php]
 excerpt: "Nesse artigo será exibido detalhadamente os processos feito via terminal para a instalação do Magento2"

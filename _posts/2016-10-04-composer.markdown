@@ -2,7 +2,7 @@
 layout: post
 title:  "Composer"
 date:   2016-10-04 17:22:40
-category: Ubuntu
+category: ubuntu
 author: Marcio Amorim
 tags: [magento2, php]
 excerpt: "Nesse artigo será exibido informações sobre a espetacular ferramenta Composer"

@@ -2,7 +2,7 @@
 layout: post
 title:  "Ambiente de desenvolvimento e execução no Ubuntu"
 date:   2016-04-25 17:36:05
-category: Ubuntu
+category: ubuntu
 author: Marcio Amorim
 tags: [magento2, php]
 excerpt: "Nesse artigo será exibido detalhadamente os processos feito via terminal para a instalação dos programas"
