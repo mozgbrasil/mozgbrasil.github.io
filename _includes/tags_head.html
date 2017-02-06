@@ -142,6 +142,8 @@
     {% if site.mode == 'dev' %}
 
     {% else %}
+
+        {% comment %}
         
         <!-- sumome -->
         <script src="//load.sumome.com/" data-sumo-site-id="f286e86d46628e3a3c294c988bb8f25ee8e517dd881ff60eb826c582aefb2d1f" async="async"></script>
@@ -160,7 +162,7 @@
         }]);
         </script>
         <!-- onesignal -->
-        {% comment %}
+        
         {% endcomment %}
 
     {% endif %}
