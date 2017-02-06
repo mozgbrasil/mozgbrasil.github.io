@@ -6,6 +6,12 @@ order: 3
 excerpt: "Instale nossos módulos sem compromisso."
 ---
 
+<h1>Atenção</h1>
+
+Vemos no catalogo que é exibido o(s) módulo(s) com separação por versão do PHP, você deve clicar no item equivalente a versão do seu PHP onde será exibido o Manual do módulo
+
+Siga as instruções para a instalação que deve ser feita via composer
+
 <table class="pai" width="100%">
     <thead>
         <tr>
@@ -95,7 +101,7 @@ excerpt: "Instale nossos módulos sem compromisso."
             {% endcomment %}
         </tr>
         <tr>
-            <td>Jadlog</td>
+            <td><a href="/magento/magento-jadlog" alt="Magento Jadlog">Jadlog</a></td>
             <td align="center">
                 <table class="filho">
                     <thead>
@@ -132,7 +138,7 @@ excerpt: "Instale nossos módulos sem compromisso."
             {% endcomment %}
         </tr>
         <tr>
-            <td>Jamef</td>
+            <td><a href="/magento/magento-jamef" alt="Magento Jamef">Jamef</a></td>
             <td align="center">
                 <table class="filho">
                     <thead>
@@ -169,7 +175,7 @@ excerpt: "Instale nossos módulos sem compromisso."
             {% endcomment %}
         </tr>
         <tr>
-            <td>Loggi</td>
+            <td><a href="/magento/magento-loggi" alt="Magento Loggi">Loggi</a></td>
             <td align="center">
                 <table class="filho">
                     <thead>
@@ -209,7 +215,7 @@ excerpt: "Instale nossos módulos sem compromisso."
             <td colspan="2"><h4 class="doctype-whitepaper-title">Métodos de Pagamentos</h4></td>
         </tr>
         <tr>
-            <td>Braspag API V2</td>
+            <td><a href="/magento/magento-braspag" alt="Magento Braspag">Braspag API V2</a></td>
             <td align="center">
                 <table class="filho">
                     <thead>
@@ -246,7 +252,7 @@ excerpt: "Instale nossos módulos sem compromisso."
             {% endcomment %}
         </tr>
         <tr>
-            <td>Cielo API 3.0</td>
+            <td><a href="/magento/magento-cielo" alt="Magento Cielo">Cielo API 3.0</a></td>
             <td align="center">
                 <table class="filho">
                     <thead>
@@ -283,7 +289,7 @@ excerpt: "Instale nossos módulos sem compromisso."
             {% endcomment %}
         </tr>
         <tr>
-            <td>Itaú Shopline</td>
+            <td><a href="/magento/magento-itau" alt="Magento Itau">Itaú Shopline</a></td>
             <td align="center">
                 <table class="filho">
                     <thead>
@@ -323,7 +329,7 @@ excerpt: "Instale nossos módulos sem compromisso."
             <td colspan="2"><h4 class="doctype-whitepaper-title">Métodos de Antifraude</h4></td>
         </tr>
         <tr>
-            <td>Total ClearSale & ClearSale Start</td>
+            <td><a href="/magento/magento-clearSale" alt="Magento ClearSale">Total ClearSale & ClearSale Start</a></td>
             <td align="center">
                 <table class="filho">
                     <thead>

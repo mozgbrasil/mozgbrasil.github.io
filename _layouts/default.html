@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html class="google mmfb" dir="ltr" lang="en">
-    <head prefix="og: http://ogp.me/ns#">
+    <head>
         {% include tags_head.html %}
     </head>
     <body data-ng-app="rs.analytics.tagmanager">
         <header class="header google-blue" data-rs-header="" role="banner">
-            <div class="upper-header">
+            <div class="upper-header google-blue">
                 <h1 class="product-logo">
                 <a data-g-action="Analytics Overview" data-g-event="Tag Manager: Overview" data-g-label=
                 "Global Nav Logo" href="/"><img alt="Mozg" src="/assets/images/logos/Red_star.svg" width="20" height="20"></a>
@@ -152,5 +152,21 @@
             </div>            
         </footer>
         {% include tags_footer.html %}
+        <script id="//www.google.com/glue/tabset/tabset-template.html" type="text/ng-template">
+            <div>
+            <div class="glue-tabset-nav">
+            <ul data-ng-if="!isAccordion">
+              <li data-ng-repeat="item in tabcordionCtrl.items"
+                  data-ng-class="tabcordionCtrl.isItemIndexSelected($index) ? 'glue-tabset-nav-active' : ''"
+                  data-ng-click="tabcordionCtrl.selectItemByIndex($index)"
+                  data-ng-bind-html="tabcordionCtrl.getItemHeaderHtmlByIndex($index)"
+                  tabindex="0">
+              </li>
+            </ul>
+            </div>
+            <ul class="glue-tabcordion-items" data-ng-transclude=""></ul>
+            </div>
+        </script>
     </body>
 </html>
+

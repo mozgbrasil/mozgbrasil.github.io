@@ -142,7 +142,7 @@
     {% if site.mode == 'dev' %}
 
     {% else %}
-
+        
         <!-- sumome -->
         <script src="//load.sumome.com/" data-sumo-site-id="f286e86d46628e3a3c294c988bb8f25ee8e517dd881ff60eb826c582aefb2d1f" async="async"></script>
 
@@ -160,6 +160,8 @@
         }]);
         </script>
         <!-- onesignal -->
+        {% comment %}
+        {% endcomment %}
 
     {% endif %}
 
@@ -170,8 +172,19 @@
     <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;lang=en" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Roboto+Slab:300,400,500&amp;lang=en" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Product+Sans:400&amp;lang=en" rel="stylesheet">
-    <link href="/assets/css/internal/tag-manager.min.css" rel="stylesheet">
+    {% comment %}
+    <link href="//www.google.com/analytics/css/tag-manager.min.css" rel="stylesheet">
+    {% endcomment %}
+     <link href="//www.google.com/analytics/css/optimize.min.css" rel="stylesheet">
+    <link href="/assets/css/internal/styles.css" rel="stylesheet">
     <script src="//www.gstatic.com/external_hosted/modernizr/v2_8_3/basic.js">
+    </script>
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-PNT4KQ');
     </script>
     <style>
     iframe.c2 {display:none;visibility:hidden}
