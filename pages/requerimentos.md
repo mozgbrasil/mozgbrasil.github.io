@@ -7,7 +7,7 @@ excerpt: "Antes de executar os processos, e leia os pré-requisitos e sugestões
 ---
 
 [composer]: /ubuntu/composer
-[ativando-zend-guard-loader]: /zend%20guard%20loader/ativando-zend-guard-loader
+[ativando-zend-guard-loader]: /ubuntu/ativando-zend-guard-loader
 [acordo]: /acordo-licenca-usuario-final/
 
 # Leia atentamente cada tópico
