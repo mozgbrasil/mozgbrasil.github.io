@@ -128,6 +128,14 @@ Para instalar o módulo execute o comando a seguir no terminal do seu servidor n
 
 No backend do Magento em Sistema -> Scheduler -> Instructions, está documentado o script para adicionar ao crontab
 
+No terminal ao executar o comando
+
+	crontab -e
+
+Pode ser informado a(s) linha(s) de comando a serem executadas
+
+Pode ocorrer de alguns servidores não permitiram o uso do crontab no formato nativo do sistema operacional, sendo oferecido essa configuração por algum painel de controle, nesses casos deve se entrar em contato com o suporte da hospedagem solicitando para eles adicionarem o script ao crontab ou instruções de como fazer o processo
+
 Outra possibilidade
 
 Seria a configuração conforme documentação do magento
