@@ -120,9 +120,11 @@ Esse erro foi exibido quando foi colocado o seguinte item no .htaccess
 
 # Como ativar a CRON no Magento
 
-Sugiro instalar via composer o seguinte módulo para gerenciamento de serviços da CRON
+Sugiro instalar via Composer o módulo <a href="https://github.com/AOEpeople/Aoe_Scheduler">Aoe_Scheduler</a> para Gerenciamento de serviços da <a href="https://pt.wikipedia.org/wiki/Crontab">CRON</a>
 
-https://github.com/AOEpeople/Aoe_Scheduler
+Para instalar o módulo execute o comando a seguir no terminal do seu servidor no diretório do seu projeto
+
+	composer require aoepeople/aoe_scheduler
 
 No backend do Magento em Sistema -> Scheduler -> Instructions, está documentado o script para adicionar ao crontab
 
@@ -130,7 +132,7 @@ Outra possibilidade
 
 Seria a configuração conforme documentação do magento
 
-http://devdocs.magento.com/guides/m1x/install/installing_install.html#install-cron
+<a href="http://devdocs.magento.com/guides/m1x/install/installing_install.html#install-cron">http://devdocs.magento.com/guides/m1x/install/installing_install.html#install-cron</a>
 
 No terminal ao executar o comando
 
@@ -149,6 +151,8 @@ Veja que o primeiro modelo acessa via shell o arquivo cron.sh do Magento
 Veja que o segundo modelo acessa via curl o arquivo cron.php do Magento
 
 Veja que o terceiro modelo acessa via php-client o arquivo cron.php do Magento
+
+Vemos que cada comando tem o armazenamento do resultado em arquivo, dessa forma podemos visualizar no horário do arquivo se foi feito alterações
 
 Você pode usar qualquer um dos modelos acima ou qualquer tecnologia que faz acesso ao devido arquivo do Magento
 
