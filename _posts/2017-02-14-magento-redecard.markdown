@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Magento Itaú"
-date:   2017-02-06 15:04:06
+date:   2017-02-14 16:44:29
 category: magento
 author: Marcio Amorim
 tags: [magento, itau]
-excerpt: "Veja as funcionalidades do módulo Magento Itaú Shopline, contemplando transações por Cartão ItauCard, Crediário Automático Itaú, Boleto Bancário e Pagamento à vista por transferência"
+excerpt: "Veja as funcionalidades do módulo Magento Redecard Komerci, contemplando transações por Cartão de Crédito"
 ---
 
 <h1>Magento Itaú</h1>
@@ -18,4 +18,4 @@ Acesse nosso catalogo
 
 Abaixo temos uma animação com uma base do funcionamento do módulo
 
-<img src="/assets/images/docs/2017-02-06-magento-itau.gif" width="100%" />
+<img src="/assets/images/docs/2017-02-14-magento-redecard.gif" width="100%" />
