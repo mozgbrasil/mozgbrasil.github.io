@@ -8,7 +8,7 @@ tags: [magento, braspag]
 excerpt: "Veja as funcionalidades do módulo Magento Braspag"
 ---
 
-<h1>Magento Braspag</h1>
+<h1>Magento Braspag API (V2)</h1>
 
 Instale nosso(s) módulo(s) em seu(s) projeto(s) sem compromisso
 
