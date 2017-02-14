@@ -5,7 +5,7 @@ date:   2017-02-06 15:04:07
 category: magento
 author: Marcio Amorim
 tags: [magento, clearsale]
-excerpt: "Veja as funcionalidades do módulo Magento ClearSale"
+excerpt: "Veja as funcionalidades do módulo Magento ClearSale Start e Total e tenha a segurança que você precisa para transacionar na sua loja virtual com praticidade e segurança"
 ---
 
 <h1>Magento ClearSale</h1>
