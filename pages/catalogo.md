@@ -252,7 +252,7 @@ Siga as instruções para a instalação que deve ser feita via composer
             {% endcomment %}
         </tr>
         <tr>
-            <td><a href="/magento/magento-cielo" alt="Magento Cielo">Cielo API 3.0</a></td>
+            <td><a href="/magento/magento-cielo" alt="Magento Cielo">Cielo API 3.0 &  Checkout Cielo</a></td>
             <td align="center">
                 <table class="filho">
                     <thead>
