@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Magento Braspag"
+title:  "Magento Braspag API (V2)"
 date:   2017-02-06 15:04:04
 category: magento
 author: Marcio Amorim
