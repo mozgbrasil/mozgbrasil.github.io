@@ -326,6 +326,43 @@ Siga as instruções para a instalação que deve ser feita via composer
             {% endcomment %}
         </tr>
         <tr>
+            <td><a href="/magento/magento-redecard" alt="Magento Redecard">Redecard Komerci</a></td>
+            <td align="center">
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-redecard-php55#mozgredecard">↓</a></td>
+                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-redecard-php56#mozgredecard">↓</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            {% comment %}
+            <td>
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;"> </td>
+                            <td style="text-align: center;"> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            {% endcomment %}
+        </tr>
+        <tr>
             <td colspan="2"><h4 class="doctype-whitepaper-title">Métodos de Antifraude</h4></td>
         </tr>
         <tr>
