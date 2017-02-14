@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Magento Braspag API (V2)"
+title:  "Magento Braspag API V2"
 date:   2017-02-06 15:04:04
 category: magento
 author: Marcio Amorim
@@ -8,7 +8,7 @@ tags: [magento, braspag]
 excerpt: "Veja as funcionalidades do módulo Magento Braspag"
 ---
 
-<h1>Magento Braspag API (V2)</h1>
+<h1>Magento Braspag API V2</h1>
 
 Instale nosso(s) módulo(s) em seu(s) projeto(s) sem compromisso
 
