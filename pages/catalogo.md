@@ -326,7 +326,7 @@ Siga as instruções para a instalação que deve ser feita via composer
             {% endcomment %}
         </tr>
         <tr>
-            <td><a href="/magento/magento-redecard" alt="Magento Redecard">Rede / WebService Komerci</a></td>
+            <td><a href="/magento/magento-redecard" alt="Magento Redecard">Rede / Komerci WebService</a></td>
             <td align="center">
                 <table class="filho">
                     <thead>
