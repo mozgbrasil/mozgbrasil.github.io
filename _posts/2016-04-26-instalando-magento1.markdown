@@ -25,8 +25,8 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	cd ~/dados/public_html ;\
 	pwd ;\
 	ls ;\
-	mkdir magento-1.9.3.1-dev34 ;\
-	cd magento-1.9.3.1-dev34 ;\
+	mkdir magento-1.9.3.2-dev35 ;\
+	cd magento-1.9.3.2-dev35 ;\
 	composer --version && sudo composer self-update && composer clear-cache
 
 # Download Magento
@@ -58,7 +58,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 # Criar Banco de dados
 
-	mysqladmin -u root -p CREATE "magento-1.9.3.1-dev34"
+	mysqladmin -u root -p CREATE "magento-1.9.3.2-dev35"
 
 # Sample Data
 
@@ -67,7 +67,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	7za x compressed-no-mp3-magento-sample-data-1.9.1.0.tar.7z ;\
 	tar -xvf compressed-no-mp3-magento-sample-data-1.9.1.0.tar ;\
 	cp -ri magento-sample-data-1.9.1.0/media/* ./media/ ;\
-	mysql -h 'localhost' -u 'root' -p 'magento-1.9.3.1-dev34' < 'magento-sample-data-1.9.1.0/magento_sample_data_for_1.9.1.0.sql' ;\
+	mysql -h 'localhost' -u 'root' -p 'magento-1.9.3.2-dev35' < 'magento-sample-data-1.9.1.0/magento_sample_data_for_1.9.1.0.sql' ;\
 	rm -fr compressed-no-mp3-magento-sample-data-1.9.1.0.tar compressed-no-mp3-magento-sample-data-1.9.1.0.tar.7z magento-sample-data-1.9.1.0
 
 # Instalar Magento
@@ -78,10 +78,10 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	--timezone "America/Sao_Paulo" \
 	--default_currency "BRL" \
 	--db_host "localhost" \
-	--db_name "magento-1.9.3.1-dev34" \
+	--db_name "magento-1.9.3.2-dev35" \
 	--db_user "root" \
 	--db_pass "???" \
-	--url "http://127.0.0.1/public_html/magento-1.9.3.1-dev34/root/" \
+	--url "http://127.0.0.1/public_html/magento-1.9.3.2-dev35/root/" \
 	--skip_url_validation "yes" \
 	--use_rewrites "yes" \
 	--use_secure "no" \
@@ -231,7 +231,7 @@ Esse recurso é legal pois exibe os erros de scripts
 
 O uso desse recurso pode gerar alguns erros como por exemplo
 
-Warning: include(StaLib/Logger.php): failed to open stream: No such file or directory  in /home/marcio/dados/public_html/magento-1.9.3.1-dev34/root/lib/Varien/Autoload.php on line 94
+Warning: include(StaLib/Logger.php): failed to open stream: No such file or directory  in /home/marcio/dados/public_html/magento-1.9.3.2-dev35/root/lib/Varien/Autoload.php on line 94
 
 O fato de existir o script abaixo em qualquer controller já dispara o erro acima
 

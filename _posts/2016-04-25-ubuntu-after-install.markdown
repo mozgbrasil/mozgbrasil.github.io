@@ -28,24 +28,34 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
     apt-cache show php-gd ;\
     apt search php7.0-*
 
+# TODO http://askubuntu.com/questions/761713/how-can-i-downgrade-from-php-7-to-php-5-6-on-ubuntu-16-04 
 # Ubuntu 16.04 - Local Server - PHP 7
 
     sudo apt install mysql-server mysql-client php php-cli php-curl php-sqlite3 php-mcrypt php-mbstring php-gd php-intl php-xml php-zip php-soap php-common php-gettext php-cgi libapache2-mod-php php-pear php-fpm libapache2-mod-fastcgi memcached php-memcache phpmyadmin
 
 # Ubuntu 16.04 - Local Server - PHP 5.6
 
-    sudo apt install mysql-server mysql-client php5.6 php5.6-cli php5.6-curl php5.6-sqlite3 php5.6-mcrypt php5.6-mbstring php5.6-gd php5.6-intl php5.6-xsl php5.6-zip php5.6-soap php5.6-common php5.6-json php5.6-mysql php-gettext php5.6-cgi libapache2-mod-php5.6 php-pear php5.6-fpm libapache2-mod-fastcgi memcached php-memcache phpmyadmin
+    sudo apt install mysql-server mysql-client php5.6 php5.6-cli php5.6-curl php5.6-sqlite3 php5.6-mcrypt php5.6-mbstring php5.6-gd php5.6-intl php5.6-xsl php5.6-zip php5.6-soap php5.6-common php5.6-json php5.6-mysql php-gettext php5.6-cgi libapache2-mod-php5.6 php-pear php5.6-fpm php5.6-bcmath libapache2-mod-fastcgi memcached php-memcache phpmyadmin
 
 # Ubuntu 14.04 - Amazon Server
 
     sudo apt-get install mysql-server-5.6 mysql-client-5.6 mysql-client-core-5.6 apache2 php5 php5-cli php5-curl php5-sqlite php5-mcrypt php5-gd php5-intl php5-xsl php5-common php5-mysql php5-dev php5-cgi libapache2-mod-php5 php5-fpm libapache2-mod-fastcgi memcached php5-memcache phpmyadmin p7zip-full unzip git
 
 # FIX: Apache Enable Module
+
 # NOTICE: To enable PHP 7.0 FPM in Apache2 do:
 # NOTICE: a2enmod proxy_fcgi setenvif
 # NOTICE: a2enconf php7.0-fpm
 
+# NOTICE: To enable PHP 5.6 FPM in Apache2 do:
+# NOTICE: a2enmod proxy_fcgi setenvif
+# NOTICE: a2enconf php5.6-fpm
+
     sudo a2enconf php7.0-cgi
+
+    # sudo a2enconf php5.6-fpm
+
+    # sudo a2disconf php7.0-cgi && sudo service apache2 restart
 
     sudo a2enmod proxy_fcgi setenvif actions rewrite
 
@@ -204,7 +214,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 # Local Desktop
 
-    sudo apt install build-essential ubuntu-restricted-extras ubuntu-sdk ubuntu-make juju python-software-properties filezilla git nautilus-dropbox p7zip-full keepassx meld curl gufw gimp gimp-plugin-registry shutter ffmpeg lame links links2 elinks lynx openssh-server ruby-dev nodejs chromium-browser inkscape jq npm nmap ntp vlc browser-plugin-vlc gedit-plugins kdenlive kde-runtime pavucontrol && sudo service ssh start
+    sudo apt install build-essential ubuntu-restricted-extras ubuntu-sdk ubuntu-make juju python-software-properties filezilla git nautilus-dropbox p7zip-full keepassx meld curl gufw gimp gimp-plugin-registry shutter ffmpeg lame links links2 elinks lynx openssh-server ruby-dev nodejs chromium-browser inkscape jq npm nmap ntp vlc browser-plugin-vlc gedit-plugins kdenlive kde-runtime pavucontrol sysvbanner && sudo service ssh start
 
     # vlc http://avenard.org/iptv/playlist-tpg-vlc.m3u
 

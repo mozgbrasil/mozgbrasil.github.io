@@ -10,6 +10,12 @@ excerpt: "Nesse artigo é exibido diversas dicas relativa ao Magento 1"
 
 Ola
 
+# Importar produtos do Magento para o Google Merchant Center
+
+https://support.google.com/merchants/answer/6351224?hl=pt-BR
+
+	composer require connect20/google_shoppingconnect
+
 # Ocorreu erro na loja ou processo não está se comportando como deveria
 
 Sugiro seguir as orientações abaixo para resolução de ocorrências no Magento
@@ -278,7 +284,7 @@ Fonte: http://mariosam.com.br/magento/cotar-moedas/
 
 O script a seguir é um modelo para a execução do procedimento de backup a ser executado via terminal do servidor
 
-	tar -cvpzf EMPRESA_$(date +%Y.%m.%d_%H.%M.%S).tgz /DIRETORIO
+	tar -cvpzf EMPRESA_$(date +%Y.%m.%d_%H.%M.%S).tgz ./DIRETORIO
 
 # Como exportar o backup do banco de dados ?
 
