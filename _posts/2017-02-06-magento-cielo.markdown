@@ -23,7 +23,7 @@ Abaixo temos uma animação com uma base do funcionamento do módulo
         data-g-event="Home" data-g-label="For Enterprise"
         data-glue-modal-disabled-on-mobile="true" data-glue-modal-trigger=
         "magento-cielo" href=
-        "/assets/images/docs/2017-02-06-magento-cielo.gif">
+        "/assets/images/docs/2017-02-06-magento-cielo.pdf">
         <svg class="icon-fab-video"
             enable-background="new 0 0 32 32" height="24px" version="1.1" viewbox=
             "0 0 32 32" width="24px" x="0px" xml:space="preserve" xmlns=
@@ -39,7 +39,7 @@ Abaixo temos uma animação com uma base do funcionamento do módulo
     <div data-glue-modal="magento-cielo" data-rs-modal="" id=
         "magento-cielo">
         <iframe allowfullscreen="" frameborder="0" height="100%" src=
-            "/assets/images/docs/2017-02-06-magento-cielo.gif" type=
+            "/assets/images/docs/2017-02-06-magento-cielo.pdf" type=
             "text/html" width="100%"></iframe>
     </div>
 </div>
