@@ -16,7 +16,7 @@ Acesse nosso catalogo
 
 <a href="https://mozg.com.br/catalogo/">https://mozg.com.br/catalogo/</a>
 
-Abaixo temos uma animação com uma base do funcionamento do módulo
+Abaixo temos uma demonstração do funcionamento do módulo
 
 <div class="">
     <a class="fab google-red" data-g-action="Anthem - Video Start"
