@@ -107,7 +107,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
     e retire o comentário ";"
 
         sudo nano /etc/php/7.0/cli/php.ini
-        sudo nano /etc/php/7.0/apache2/php.ini
+        sudo nano /etc/php/5.6/apache2/php.ini
 
     Atualize para
 
@@ -144,23 +144,6 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
         [zendloader]
         zend_extension=/home/marcio/dados/public_html/zend-loader-php5.6-linux-x86_64/ZendGuardLoader.so
         zend_extension=/home/marcio/dados/public_html/zend-loader-php5.6-linux-x86_64/opcache.so
-
-# FIX: Fatal error: Uncaught Error: Call to undefined function imagecreatetruecolor()
-
-    sudo apt install php7.0-gd
-
-# FIX: Fatal error: Uncaught Error: Class 'SoapClient' not found in
-
-    sudo apt install php7.0-soap
-
-# FIX: Fatal error: Uncaught Error: Call to undefined function mcrypt_encrypt() in
-# FIX: Notice: Use of undefined constant MCRYPT_BLOWFISH - assumed 'MCRYPT_BLOWFISH'
-
-    sudo apt install php7.0-mcrypt
-
-# FIX: The mysqli extension is missing "phpmyadmin"
-
-    sudo apt install php7.0-mysql php7.0-sqlite3
 
 # FIX: pdo_mysql extension is not installed
 
