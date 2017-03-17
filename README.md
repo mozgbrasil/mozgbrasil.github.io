@@ -83,6 +83,6 @@ https://cards-dev.twitter.com/validator
 
 ## License
 
-[Comercial License] (LICENSE.txt)
+[Comercial License](LICENSE.txt)
 
 :cat2:
