@@ -286,6 +286,12 @@ O script a seguir é um modelo para a execução do procedimento de backup a ser
 
 	tar -cvpzf EMPRESA_$(date +%Y.%m.%d_%H.%M.%S).tgz ./DIRETORIO
 
+# Como descompactar um arquivo ?
+
+O script a seguir é um modelo para a execução do procedimento de backup a ser executado via terminal do servidor
+
+	tar xvzf FILE.tgz
+
 # Como exportar o backup do banco de dados ?
 
 O script a seguir é um modelo para a execução do procedimento de backup compactado a ser executado via terminal do servidor
@@ -296,16 +302,18 @@ O script a seguir é um modelo para a execução do procedimento de backup compa
 
 O script a seguir é um modelo a ser executado via terminal do servidor
 
-	mysql -h 'HOST' -u 'USER' -p 'DBNAME' < 'PATH_FILE';
+	gunzip FILE.sql.gz
+
+	mysql -h 'HOST' -u 'USER' -p 'DBNAME' < 'FILE.sql';
 
 # Como alterar a URL_BASE do Magento no banco de dados ?
 
 O script a seguir é um modelo a ser executado via terminal do servidor
 
 	mysql -h 'HOST' -u 'USER' -p 'DBNAME' -e "\
-	    SELECT * FROM `core_config_data` WHERE `path` like '%base_url%'; \
-	    UPDATE `core_config_data` SET `value` = 'http://SUA_URL/ambiente_01/ ' WHERE `path` like '%base_url%'; \
-	    SELECT * FROM `core_config_data` WHERE `path` like '%base_url%'; \
+	    SELECT * FROM core_config_data WHERE path like '%base_url%'; \
+	    UPDATE core_config_data SET value = 'http://SUA_URL/ambiente_01/ ' WHERE path like '%base_url%'; \
+	    SELECT * FROM core_config_data WHERE path like '%base_url%'; \
 	"
 
 # Ativar debug do template no backend
