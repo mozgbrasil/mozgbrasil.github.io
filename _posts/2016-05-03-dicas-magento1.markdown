@@ -10,6 +10,22 @@ excerpt: "Nesse artigo é exibido diversas dicas relativa ao Magento 1"
 
 Ola
 
+# Cartões de crédito para testes
+
+	Amex            376488977091001
+	Visa            4073020000000002
+	MasterCard      5555666677778884
+	Discover        6011000990139424
+	Dinners         36201475131126
+	JCB             3566002020360505
+	ELO             4514166365215946
+	Aura            5078601800003247449
+	Maestro         6759649826438453
+	HiperCard       6062825624254001
+	Hiper(Other)    6370950000000000
+
+Encontrei o número para o cartão hiper pesquisando no google imagens onde é exibido uma imagem do itaú, o restante das numerações foram encontrada em sites diversos na NET
+
 # Importar produtos do Magento para o Google Merchant Center
 
 https://support.google.com/merchants/answer/6351224?hl=pt-BR
