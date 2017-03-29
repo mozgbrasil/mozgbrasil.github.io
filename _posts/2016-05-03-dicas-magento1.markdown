@@ -26,6 +26,22 @@ Ola
 
 Encontrei o número para o cartão hiper pesquisando no google imagens onde é exibido uma imagem do itaú, o restante das numerações foram encontrada em sites diversos na NET
 
+-
+
+Detectei que o validador do Magento 1.7.0.2 não funciona, fui informado de ocorrência relativo ao uso da bandeira ELO
+
+Como recomendado é sugerido sempre manter o projeto Magento atualizado devido as melhorias e correções
+
+É recomendado nunca alterar os arquivos nativo do Magento
+
+Mas como forma temporária pode ser usado o validador do Magento 1.9.3.1, nesse caso renomeie o arquivo em 
+
+/js/prototype/validation.js
+
+E utilize o arquivo relativo ao Magento 1.9.3.1
+
+https://raw.githubusercontent.com/tiagosampaio/Magento-CE-1.9.3.1/master/js/prototype/validation.js
+
 # Importar produtos do Magento para o Google Merchant Center
 
 https://support.google.com/merchants/answer/6351224?hl=pt-BR
