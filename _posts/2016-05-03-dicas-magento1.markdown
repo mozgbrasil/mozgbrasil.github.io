@@ -204,6 +204,28 @@ Você pode usar qualquer um dos modelos acima ou qualquer tecnologia que faz ace
 
 Esse modelo está baseado em meu ambiente local, portanto pode haver variação para cada ambiente
 
+_
+
+Para o caso de ambiente com versões discrepante entre o PHP WEB e CLI
+
+Deve ser editado o arquivo cron.sh
+
+Comentando a antiga variavel e adicionando a nova
+
+	PHP_BIN='/usr/bin/php56'
+
+Tive essa necessidade pois no ambiente PHP WEB foi exibido a versão 5.6 e no ambiente CLI exibido a versão 5.4
+
+Portanto quando executado o comando 
+
+	php -v
+
+Era retornado o PHP 5.4, consequentemente o script é processado sobre essa versão 5.4
+
+Fiz o uso do seguinte comando para o PHP ser processado sobre a versão 5.6
+
+	/usr/bin/php56 -v 
+
 # Erro de servidor: "error 500" ou "tela branca"
 
 A informação "error 500" se trata da omissão do erro devendo ser analisado o erro no log do servidor
