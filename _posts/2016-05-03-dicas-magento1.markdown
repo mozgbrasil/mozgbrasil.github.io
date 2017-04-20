@@ -10,6 +10,20 @@ excerpt: "Nesse artigo é exibido diversas dicas relativa ao Magento 1"
 
 Ola
 
+# Configuração não está sendo salva no Magento
+
+Analisando o log do servidor em /var/log/apache2/error.log
+
+Temos o armazenamento do seguinte erro
+
+	PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+
+Sugiro alterar no php.ini o parâmetro "max_input_vars" para "3000"
+
+Pode ser necessário reiniciar o servidor
+
+Acessando o phpinfo e pesquisando por "max_input_vars" podemos visualizar o valor
+
 # Cartões de crédito para testes
 
 	Amex            376488977091001
