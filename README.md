@@ -17,7 +17,11 @@ Caso queira contribuir para melhoria da documentação de um Fork no repositorio
 
 ## Característica técnica
 
-### Execução em ambiente local
+### Node -> 
+
+	npm update
+
+### Jekyll -> Execução em ambiente local
 
 	cd /home/marcio/dados/public_html/mozg/git/mozgbrasil.github.io
 
@@ -82,6 +86,10 @@ https://archive.org/
 https://archive.org/web/
 
 https://cards-dev.twitter.com/validator
+
+### 
+
+https://wiredcraft.com/blog/make-jekyll-fast/
 
 ## License
 

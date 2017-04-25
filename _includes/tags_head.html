@@ -1,4 +1,4 @@
-
+    
     <!-- Standard Meta -->
     <link rel="alternate" href="https://mozg.com.br/" />
     <meta charset="utf-8" />
@@ -20,29 +20,6 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-
-
-
-    <!-- THEME - https://www.google.com/analytics/tag-manager/ -->
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;lang=en">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab:300,400,500&amp;lang=en">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Product+Sans:400&amp;lang=en">
-    {% comment %}
-    <link rel="stylesheet" href="//www.google.com/analytics/css/tag-manager.min.css">
-    {% endcomment %}
-    <link rel="stylesheet" href="/assets/css/optimize.min.css">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <style type="text/css">
-    iframe.c2 {display:none;visibility:hidden}
-    svg.c1 {enable-background:new 0 0 23 15;}
-    </style>
-    <!-- THEME - https://www.google.com/analytics/tag-manager/ -->
-
-    <!-- https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css -->
-    <link rel="stylesheet" href="/assets/css/highlight.css">
-
-
-
 
     <!-- TAGS GOOGLE -->
 
@@ -191,6 +168,41 @@
     {% endif %}
 
     <!-- THEME - https://www.google.com/analytics/tag-manager/ -->
+
+    {% comment %}
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;lang=en" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Roboto+Slab:300,400,500&amp;lang=en" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Product+Sans:400&amp;lang=en" rel="stylesheet">
+    <link href="//www.google.com/analytics/css/tag-manager.min.css" rel="stylesheet">
+    <link href="/assets/css/optimize.min.css" rel="stylesheet">
+    <link href="/assets/css/styles.css" rel="stylesheet">
+    {% endcomment %}
+
+    <script type="text/javascript">
+        var itens = [
+        'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:300,400,500|Product+Sans:400', 
+        '/assets/css/optimize.min.css', 
+        '/assets/css/styles.css'];
+
+        for (var i in itens) {
+            item = itens[i];
+            if (document.createStyleSheet){
+                document.createStyleSheet(item);
+            } else {
+                link = document.createElement("link");
+                link.type = "text/css";
+                link.rel = "stylesheet";
+                link.href = item;
+                document.getElementsByTagName("head")[0].appendChild(link);
+            }
+        }
+    </script>
+    <style type="text/css">
+    iframe.c2 {display:none;visibility:hidden}
+    svg.c1 {enable-background:new 0 0 23 15;}
+    </style>
+
+
     <script type="text/javascript">
     (function(H){H.className=H.className.replace(/\bgoogle\b/,'google-js')})(document.documentElement)
     </script>
@@ -204,3 +216,6 @@
         })(window,document,'script','dataLayer','GTM-PNT4KQ');
     </script>
     <!-- THEME - https://www.google.com/analytics/tag-manager/ -->
+
+    <!-- https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css -->
+    <link rel="stylesheet" href="/assets/css/highlight.css">

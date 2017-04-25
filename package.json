@@ -1,0 +1,29 @@
+{
+  "name": "mozgbrasil",
+  "version": "0.0.1",
+  "description": "mozgbrasil",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mozgbrasil/mozgbrasil.github.io.git"
+  },
+  "keywords": [],
+  "author": "Marcio dos Santos Amorim",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/mozgbrasil/mozgbrasil.github.io/issues"
+  },
+  "homepage": "http://mozg.com.br/",
+  "dependencies": {
+    "bower": "*",
+    "gulp": "*",
+    "gulp-concat": "*",
+    "gulp-minify-css": "*",
+    "gulp-sass": "*",
+    "gulp-uglify": "*",
+    "node-bourbon": "*"
+  }
+}
