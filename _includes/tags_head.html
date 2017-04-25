@@ -13,6 +13,12 @@
     {% capture title_tag %}{{ page.title }}{% endcapture %}
     {% endif %}
     <title>{{ title_tag }} &middot; {{ site.title }}</title>
+
+    <meta http-equiv="expires" content="Tue, 05 Jan 2013 12:12:12 GMT">
+    <meta http-equiv="cache-control" content="public" /> <!-- reconhecida pelo HTTP 1.1 -->
+    <meta http-equiv="Pragma" content="public"> <!-- reconhecida por todas as versões do HTTP -->
+
+    
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="keywords" content="{% if page.layout != 'post' %}{{ site.keywords }}{% else %}{{ page.tags | join: ', ' }}, {{ page.categories | join: ', ' }}{% endif %}">
 
