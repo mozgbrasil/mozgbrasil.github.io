@@ -56,3 +56,14 @@ google_map_zoom: 16               # 1=Global zoom 18=Street Level
 google_map_view: satellite        # hybrid | satellite | roadmap
 google_map_height: 450            # Default map height. Width adjusts to container.
 
+## http://jch.penibelst.de/
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
