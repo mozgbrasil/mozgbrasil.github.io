@@ -34,9 +34,9 @@ Ao efetuar o download e extração do "Zend Guard Loader", leia o arquivo o "REA
 
 Veja que o processo é super simples devendo apenas editar os arquivos que aplicam o suporte da extensão de servidor para o ambiente cliente e web do PHP
 
-	sudo nano /etc/php5/cli/php.ini
+	sudo nano /etc/php/5.6/cli/php.ini
 
-	sudo nano /etc/php5/apache2/php.ini
+	sudo nano /etc/php/5.6/apache2/php.ini 
 
 e informar o conteúdo baseado no modelo a seguir
 
