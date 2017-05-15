@@ -380,7 +380,7 @@ O script a seguir é um modelo a ser executado via terminal do servidor
 
 	mysql -h 'HOST' -u 'USER' -p 'DBNAME' -e "\
 	    SELECT * FROM core_config_data WHERE path like '%secure/base_url%'; \
-	    UPDATE core_config_data SET value = 'http://SUA_URL/ambiente_01/ ' WHERE path like '%secure/base_url%'; \
+	    UPDATE core_config_data SET value = 'http://SUA_URL/ambiente_01/' WHERE path like '%secure/base_url%'; \
 	    SELECT * FROM core_config_data WHERE path like '%secure/base_url%'; \
 	"
 
