@@ -16,7 +16,7 @@ Analisando o log do servidor em /var/log/apache2/error.log
 
 Temos o armazenamento do seguinte erro
 
-	PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+    PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
 
 Sugiro alterar no php.ini o parâmetro "max_input_vars" para "3000"
 
@@ -26,17 +26,17 @@ Acessando o phpinfo e pesquisando por "max_input_vars" podemos visualizar o valo
 
 # Cartões de crédito para testes
 
-	Amex            376488977091001
-	Visa            4073020000000002
-	MasterCard      5555666677778884
-	Discover        6011000990139424
-	Dinners         36201475131126
-	JCB             3566002020360505
-	ELO             4514166365215946
-	Aura            5078601800003247449
-	Maestro         6759649826438453
-	HiperCard       6062825624254001
-	Hiper(Other)    6370950000000000
+    Amex            376488977091001
+    Visa            4073020000000002
+    MasterCard      5555666677778884
+    Discover        6011000990139424
+    Dinners         36201475131126
+    JCB             3566002020360505
+    ELO             4514166365215946
+    Aura            5078601800003247449
+    Maestro         6759649826438453
+    HiperCard       6062825624254001
+    Hiper(Other)    6370950000000000
 
 Encontrei o número para o cartão hiper pesquisando no google imagens onde é exibido uma imagem do itaú, o restante das numerações foram encontrada em sites diversos na NET
 
@@ -60,7 +60,7 @@ https://raw.githubusercontent.com/tiagosampaio/Magento-CE-1.9.3.1/master/js/prot
 
 https://support.google.com/merchants/answer/6351224?hl=pt-BR
 
-	composer require connect20/google_shoppingconnect
+    composer require connect20/google_shoppingconnect
 
 # Ocorreu erro na loja ou processo não está se comportando como deveria
 
@@ -113,11 +113,11 @@ Para comparação de scripts eu utilizo a Software Meld
 
 É nativo do Magento que na tabela `eav_attribute` esteja registrado atributos e na tabela `eav_attribute_option_value` os registros para valores do tipo option "select"
 
-	SELECT * FROM `eav_attribute` WHERE `attribute_code` = 'rg';
+    SELECT * FROM `eav_attribute` WHERE `attribute_code` = 'rg';
 
-	SELECT * FROM `customer_eav_attribute` WHERE `attribute_id` = 218;
+    SELECT * FROM `customer_eav_attribute` WHERE `attribute_id` = 218;
 
-	SELECT * FROM `customer_entity_varchar` WHERE `attribute_id` = 218;
+    SELECT * FROM `customer_entity_varchar` WHERE `attribute_id` = 218;
 
 # Modificando a tradução do módulo para o template
 
@@ -125,7 +125,7 @@ Cada módulo tem o seu arquivo de tradução com a mesma nomenclatura do módulo
 
 Os arquivos de tradução para português do Brasil no Magento é armazenado no diretório  
 
-	/app/locale/pt_BR/
+    /app/locale/pt_BR/
 
 Recomendo não editar os arquivos nesse diretório pois em uma nova atualização de módulo esse arquivo deve ser atualizado com as informações do módulo
 
@@ -133,7 +133,7 @@ Na necessidade de trocar algum item
 
 Edite o arquivo translate.csv presente no diretório do seu template para ser exibido um novo resultado
 
-	/app/design/frontend/default/default/locale/pt_BR/translate.csv
+    /app/design/frontend/default/default/locale/pt_BR/translate.csv
 
 Caso não exista a estrutura "/locale/pt_BR/translate.csv" em seu template apenas crie o arquivo nessa estrutura de diretório
 
@@ -156,9 +156,9 @@ vemos  que temos 2 opções:
 
 Simulei um exemplo em meu ambiente local, pois não pretendo usar o módulo Cerebrum_Telencephalon e quero usar somente o novo pacote Mozg
 
-	SELECT * FROM `sales_flat_order_payment` WHERE `method` like '%cerebrum%' ;
+    SELECT * FROM `sales_flat_order_payment` WHERE `method` like '%cerebrum%' ;
 
-	UPDATE `sales_flat_order_payment` SET `method`= 'mozg_cielo_cc'  WHERE `method` = 'cerebrum_cielo';
+    UPDATE `sales_flat_order_payment` SET `method`= 'mozg_cielo_cc'  WHERE `method` = 'cerebrum_cielo';
 
 # Login no backend não retorna nada
 
@@ -168,7 +168,7 @@ A empresa de hospedagem aumentou o espaço em disco e funcionou como esperado
 
 Esse erro foi exibido quando foi colocado o seguinte item no .htaccess
 
-	SetEnv MAGE_IS_DEVELOPER_MODE "true"
+    SetEnv MAGE_IS_DEVELOPER_MODE "true"
 
 # Como ativar a CRON no Magento
 
@@ -176,13 +176,13 @@ Sugiro instalar via Composer o módulo <a href="https://github.com/AOEpeople/Aoe
 
 Para instalar o módulo execute o comando a seguir no terminal do seu servidor no diretório do seu projeto
 
-	composer require aoepeople/aoe_scheduler
+    composer require aoepeople/aoe_scheduler
 
 No backend do Magento em Sistema -> Scheduler -> Instructions, está documentado o script para adicionar ao crontab
 
 No terminal ao executar o comando
 
-	crontab -e
+    crontab -e
 
 Pode ser informado a(s) linha(s) de comando a serem executadas
 
@@ -196,15 +196,15 @@ Seria a configuração conforme documentação do magento
 
 No terminal ao executar o comando
 
-	crontab -e
+    crontab -e
 
 Pode ser informado qualquer um dos modelos de comandos a seguir
 
-	*/1 * * * * /bin/sh /home/marcio/dados/public_html/magento-1.9.2.4-dev31/cron.sh >> /home/marcio/dados/public_html/magento-1.9.2.4-dev31/var/log/magento.cron.log&
+    */1 * * * * /bin/sh /home/marcio/dados/public_html/magento-1.9.2.4-dev31/cron.sh >> /home/marcio/dados/public_html/magento-1.9.2.4-dev31/var/log/magento.cron.log&
 
-	*/1 * * * * curl -s -o /dev/null http://SUA_URL/magento-1.8.0.0-dev02/cron.php >> /home/marcio/dados/public_html/magento-1.9.2.4-dev31/var/log/magento.cron.log&
+    */1 * * * * curl -s -o /dev/null http://SUA_URL/magento-1.8.0.0-dev02/cron.php >> /home/marcio/dados/public_html/magento-1.9.2.4-dev31/var/log/magento.cron.log&
 
-	*/1 * * * * php /home/marcio/dados/public_html/magento-1.9.0.1-dev06/cron.php >> /home/marcio/dados/public_html/magento-1.9.2.4-dev31/var/log/magento.cron.log&
+    */1 * * * * php /home/marcio/dados/public_html/magento-1.9.0.1-dev06/cron.php >> /home/marcio/dados/public_html/magento-1.9.2.4-dev31/var/log/magento.cron.log&
 
 Veja que o primeiro modelo acessa via shell o arquivo cron.sh do Magento
 
@@ -226,19 +226,19 @@ Deve ser editado o arquivo cron.sh
 
 Comentando a antiga variavel e adicionando a nova
 
-	PHP_BIN='/usr/bin/php56'
+    PHP_BIN='/usr/bin/php56'
 
 Tive essa necessidade pois no ambiente PHP WEB foi exibido a versão 5.6 e no ambiente CLI exibido a versão 5.4
 
 Portanto quando executado o comando 
 
-	php -v
+    php -v
 
 Era retornado o PHP 5.4, consequentemente o script é processado sobre essa versão 5.4
 
 Fiz o uso do seguinte comando para o PHP ser processado sobre a versão 5.6
 
-	/usr/bin/php56 -v 
+    /usr/bin/php56 -v 
 
 # Erro de servidor: "error 500" ou "tela branca"
 
@@ -248,9 +248,9 @@ Todo o erro gerado no servidor é armazenado no log a causa do erro
 
 Execute o seguinte comando no terminal do seu servidor  
 
-	tail -f /var/log/apache2/error.log
+    tail -f /var/log/apache2/error.log
 
-	tail -f /home/marcio/var/php-fpm/error.log
+    tail -f /home/marcio/var/php-fpm/error.log
 
 Acesse o projeto até gerar o erro 
 
@@ -336,11 +336,11 @@ Os últimos 3 (três) campos referentes ao campo email, são para os casos em qu
 
 No template padrão do Magento, este campo de seleção de moedas é apresentado sempre na coluna da esquerda. Caso queira modificar isso, saiba que o arquivo responsável por ele é o directory.xml que fica em:
 
-	app/design/frontend/base/default/layout/directory.xml
+    app/design/frontend/base/default/layout/directory.xml
 
 E o arquivo currency.phtml é quem carrega as informações na tela:
 
-	app/design/frontend/base/default/template/directory/currency.phtml
+    app/design/frontend/base/default/template/directory/currency.phtml
 
 Lembre-se de nunca alterar o arquivo em base/default, faça sempre uma cópia dele para default/default, ou então para seu template/tema customizado.
 
@@ -352,37 +352,37 @@ Fonte: http://mariosam.com.br/magento/cotar-moedas/
 
 O script a seguir é um modelo para a execução do procedimento de backup a ser executado via terminal do servidor
 
-	tar -cvpzf EMPRESA_$(date +%Y.%m.%d_%H.%M.%S).tgz ./DIRETORIO
+    tar -cvpzf EMPRESA_$(date +%Y.%m.%d_%H.%M.%S).tgz ./DIRETORIO
 
 # Como descompactar um arquivo ?
 
 O script a seguir é um modelo para a execução do procedimento de backup a ser executado via terminal do servidor
 
-	tar xvzf FILE.tgz
+    tar xvzf FILE.tgz
 
 # Como exportar o backup do banco de dados ?
 
 O script a seguir é um modelo para a execução do procedimento de backup compactado a ser executado via terminal do servidor
 
-	mysqldump -h 'HOST' -u 'USER' -p'PASS' 'DBNAME' | gzip > EMPRESA_$(date +%Y.%m.%d_%H.%M.%S).sql.gz
+    mysqldump -h 'HOST' -u 'USER' -p'PASS' 'DBNAME' | gzip > EMPRESA_$(date +%Y.%m.%d_%H.%M.%S).sql.gz
 
 # Como importar o backup do banco de dados ?
 
 O script a seguir é um modelo a ser executado via terminal do servidor
 
-	gunzip FILE.sql.gz
+    gunzip FILE.sql.gz
 
-	mysql -h 'HOST' -u 'USER' -p 'DBNAME' < 'FILE.sql';
+    mysql -h 'HOST' -u 'USER' -p 'DBNAME' < 'FILE.sql';
 
 # Como alterar a URL_BASE do Magento no banco de dados ?
 
 O script a seguir é um modelo a ser executado via terminal do servidor
 
-	mysql -h 'HOST' -u 'USER' -p 'DBNAME' -e "\
-	    SELECT * FROM core_config_data WHERE path like '%secure/base_url%'; \
-	    UPDATE core_config_data SET value = 'http://SUA_URL/ambiente_01/' WHERE path like '%secure/base_url%'; \
-	    SELECT * FROM core_config_data WHERE path like '%secure/base_url%'; \
-	"
+    mysql -h 'HOST' -u 'USER' -p 'DBNAME' -e "\
+        SELECT * FROM core_config_data WHERE path like '%secure/base_url%'; \
+        UPDATE core_config_data SET value = 'http://SUA_URL/ambiente_01/' WHERE path like '%secure/base_url%'; \
+        SELECT * FROM core_config_data WHERE path like '%secure/base_url%'; \
+    "
 
 # Ativar debug do template no backend
 
@@ -390,38 +390,38 @@ Edite o arquivo /app/code/core/Mage/Core/etc/system.xml
 
 Atualizando para
 
-	<template_hints translate="label">
-		<label>Template Path Hints</label>
-		<frontend_type>select</frontend_type>
-		<source_model>adminhtml/system_config_source_yesno</source_model>
-		<sort_order>20</sort_order>
-		<show_in_default>1</show_in_default>
-		<show_in_website>1</show_in_website>
-		<show_in_store>1</show_in_store>
-	</template_hints>
-	<template_hints_blocks translate="label">
-		<label>Add Block Names to Hints</label>
-		<frontend_type>select</frontend_type>
-		<source_model>adminhtml/system_config_source_yesno</source_model>
-		<sort_order>21</sort_order>
-		<show_in_default>1</show_in_default>
-		<show_in_website>1</show_in_website>
-		<show_in_store>1</show_in_store>
-	</template_hints_blocks>
+    <template_hints translate="label">
+        <label>Template Path Hints</label>
+        <frontend_type>select</frontend_type>
+        <source_model>adminhtml/system_config_source_yesno</source_model>
+        <sort_order>20</sort_order>
+        <show_in_default>1</show_in_default>
+        <show_in_website>1</show_in_website>
+        <show_in_store>1</show_in_store>
+    </template_hints>
+    <template_hints_blocks translate="label">
+        <label>Add Block Names to Hints</label>
+        <frontend_type>select</frontend_type>
+        <source_model>adminhtml/system_config_source_yesno</source_model>
+        <sort_order>21</sort_order>
+        <show_in_default>1</show_in_default>
+        <show_in_website>1</show_in_website>
+        <show_in_store>1</show_in_store>
+    </template_hints_blocks>
 
 # Sobre como cadastrar o peso do produto
 
 O método de entrega já vem como default o formato do peso como Kilos, caso tenha preenchido o peso do produto no formato de gramas na configuração do método deve alterar o Formato do Peso para Gramas
 
 Peso preenchido no formato "Default" em Kilos  
-	Para um peso de 80 gramas, para isso devemos informar 0.0800  
-	Para um peso de 800 gramas, para isso devemos informar 0.8000  
-	Para um peso de 1 kilo, para isso devemos informar 1 onde deve ser convertido pelo Magento para 1.0000
+    Para um peso de 80 gramas, para isso devemos informar 0.0800  
+    Para um peso de 800 gramas, para isso devemos informar 0.8000  
+    Para um peso de 1 kilo, para isso devemos informar 1 onde deve ser convertido pelo Magento para 1.0000
 
 Peso preenchido no formato "Alternativo" em gramas  
-	Para um peso de 80 gramas, para isso devemos informar 80.0000  
-	Para um peso de 800 gramas, para isso devemos informar 800.0000  
-	Para um peso de 1 kilo, para isso devemos informar 1000 onde deve ser convertido pelo Magento para 1000.0000
+    Para um peso de 80 gramas, para isso devemos informar 80.0000  
+    Para um peso de 800 gramas, para isso devemos informar 800.0000  
+    Para um peso de 1 kilo, para isso devemos informar 1000 onde deve ser convertido pelo Magento para 1000.0000
 
 # Exibir horário corrente no backend
 
@@ -431,11 +431,11 @@ Atualizando
 
 DE
 
-	$this->formatDate(null, 'full')
+    $this->formatDate(null, 'full')
 
 PARA
 
-	$this->formatDate(null, 'full', true)
+    $this->formatDate(null, 'full', true)
 
 # Ativar debug
 
@@ -449,11 +449,11 @@ Para desabilitar a compilação sem ter acesso pelo admin do magento basta ir em
 
 Com o compilador ligado
 
-	define('COMPILER_INCLUDE_PATH', dirname(__FILE__).DIRECTORY_SEPARATOR.'src');
+    define('COMPILER_INCLUDE_PATH', dirname(__FILE__).DIRECTORY_SEPARATOR.'src');
 
 Com o compilador desligado
 
-	#define('COMPILER_INCLUDE_PATH', dirname(__FILE__).DIRECTORY_SEPARATOR.'src');
+    #define('COMPILER_INCLUDE_PATH', dirname(__FILE__).DIRECTORY_SEPARATOR.'src');
 
 # Forçar Recompilação do Magento pelo código
 
@@ -495,7 +495,7 @@ No frontend do Magento, acessando o menu: Minha conta -> Meus pedidos -> onde ao
 
 # Como redefinir a senha do administrador em Magento?
 
-	UPDATE `admin_user` SET `password` = MD5('NEWPASSWORD') WHERE `username` = 'ADMINUSERNAME';
+    UPDATE `admin_user` SET `password` = MD5('NEWPASSWORD') WHERE `username` = 'ADMINUSERNAME';
 
 # Exibir cabeçalho "Esta é uma loja de demonstração. ..."
 
@@ -513,23 +513,23 @@ Para habilitar o modo de manutenção no Magento, basta criar um arquivo vazio n
 
 Execute o comando a seguir no MySQL para reexecutar os scripts de setup
 
-	-- add table prefix if you have one
-	DROP TABLE IF EXISTS mozg_boxpacker_packing_comment_store;
-	DROP TABLE IF EXISTS mozg_boxpacker_packing_comment;
-	DROP TABLE IF EXISTS mozg_boxpacker_packing_store;
-	DROP TABLE IF EXISTS mozg_boxpacker_packing;
-	DROP TABLE IF EXISTS mozg_api_debug;
-	DROP TABLE IF EXISTS mozg_event_data;
-	DROP TABLE IF EXISTS mozg_event_data_queue;
-	DROP TABLE IF EXISTS mozg_order_payment;
-	SELECT * FROM `core_resource` WHERE `code` like '%mozg%';
-	DELETE FROM core_resource WHERE code like '%mozg%';
-	SELECT * FROM `core_config_data` WHERE `path` like '%mozg%';
-	DELETE FROM core_config_data WHERE path like '%mozg%';
+    -- add table prefix if you have one
+    DROP TABLE IF EXISTS mozg_boxpacker_packing_comment_store;
+    DROP TABLE IF EXISTS mozg_boxpacker_packing_comment;
+    DROP TABLE IF EXISTS mozg_boxpacker_packing_store;
+    DROP TABLE IF EXISTS mozg_boxpacker_packing;
+    DROP TABLE IF EXISTS mozg_api_debug;
+    DROP TABLE IF EXISTS mozg_event_data;
+    DROP TABLE IF EXISTS mozg_event_data_queue;
+    DROP TABLE IF EXISTS mozg_order_payment;
+    SELECT * FROM `core_resource` WHERE `code` like '%mozg%';
+    DELETE FROM core_resource WHERE code like '%mozg%';
+    SELECT * FROM `core_config_data` WHERE `path` like '%mozg%';
+    DELETE FROM core_config_data WHERE path like '%mozg%';
 
 # Como redefinir a senha do administrador em Magento?
 
-	UPDATE `admin_user` SET `password` = MD5('123456a') WHERE `username` = 'admin';
+    UPDATE `admin_user` SET `password` = MD5('123456a') WHERE `username` = 'admin';
 
 # Problemas com caracteres
 
@@ -537,22 +537,22 @@ O erro de caracteres é gerado por definição de charset no servidor onde o mes
 
 Para alterar o charset no Apache no Ubuntu tente esse procedimento
 
-	sudo nano /etc/apache2/conf.d/charset
+    sudo nano /etc/apache2/conf.d/charset
 
 ou 
 
-	grep -ri 'AddDefaultCharset' /etc/apache2
+    grep -ri 'AddDefaultCharset' /etc/apache2
 
-	sudo nano /etc/apache2/conf-available/charset.conf
+    sudo nano /etc/apache2/conf-available/charset.conf
 
 Em seguida, comente a linha
 
-	#AddDefaultCharset UTF-8
+    #AddDefaultCharset UTF-8
 
 salve e saia do arquivo
 
 Agora você precisa reiniciar o servidor apache usando o seguinte comando
 
-	sudo /etc/init.d/apache2 restart
+    sudo /etc/init.d/apache2 restart
 
 Fonte: http://stackoverflow.com/questions/30088776/apache-2-4-x-override-charset-after-update-to-ubuntu-15-04
