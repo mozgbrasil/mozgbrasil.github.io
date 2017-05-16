@@ -31,7 +31,7 @@ excerpt: "Fale conosco e tire suas dúvidas"
 <a class="glue-filter-result card">
 <div class="card-inner">
 <p>
-(11) 97707-2339
+<a href="tel:+5511977072339">(11) 97707-2339</a>
 </p>
 </div>
 </a>
