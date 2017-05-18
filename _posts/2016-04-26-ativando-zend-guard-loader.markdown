@@ -36,7 +36,7 @@ Veja que o processo é super simples devendo apenas editar os arquivos que aplic
 
 	sudo nano /etc/php/5.6/cli/php.ini
 
-	sudo nano /etc/php/5.6/apache2/php.ini 
+	sudo nano /etc/php/5.6/apache2/php.ini
 
 e informar o conteúdo baseado no modelo a seguir
 
