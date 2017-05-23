@@ -19,13 +19,13 @@ Caso queira contribuir para melhoria da documentação de um Fork no repositorio
 
 ### Node -> 
 
-	npm update
+    npm update
 
 ### Jekyll -> Execução em ambiente local
 
-	cd /home/marcio/dados/public_html/mozg/git/mozgbrasil.github.io
+    cd ~/dados/public_html/git/mozgbrasil.github.io
 
-	jekyll serve
+    jekyll serve
 
 ### Backend
 
