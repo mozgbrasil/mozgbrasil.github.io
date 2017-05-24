@@ -1,5 +1,7 @@
+/.git
+/node_modules
+README_Dev.md
 .DS_Store
 _site
-node_modules
 _drafts
 .sass-cache
