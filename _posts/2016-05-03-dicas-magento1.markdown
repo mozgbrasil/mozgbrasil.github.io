@@ -481,7 +481,7 @@ Assim como qualquer aplicação PHP moderna o Magento armazena a maioria de suas
 Assim, para a depuração de problemas no Magento é útil saber algumas coisas:
 
 1. Todas as consultas do MySQL podem ser registrados e analisados. 
-Para este efeito, abra o arquivo lib/Varien/Db/Adapter/Pdo/Mysql.php e altere o valor da propriedade protegida $ _debug para true, também a propriedade protegida $_logAllQuerie para true. 
+Para este efeito, abra o arquivo lib/Varien/Db/Adapter/Pdo/Mysql.php e altere o valor da propriedade protegida $_debug para true, também a propriedade protegida $_logAllQuerie para true. 
 
 Você também pode alterar o valor de US $_logQueryTime que é especialmente útil quando a depuração lentidão. Uma vez que você fizer essa alteração todas as consultas serão registradas no arquivo var/debug/sql.txt
 
@@ -492,6 +492,26 @@ No Backend do Magento, acesse o menu: Sales -> Order -> Acesse o pedido em segui
 No Backend do Magento, na visualização do pedido no bloco "Shipping & Handling Information" deve ser exibido o link "Track Order" onde clicando no mesmo deve ser aberto Popup apresentado o processo do rastreamento
 
 No frontend do Magento, acessando o menu: Minha conta -> Meus pedidos -> onde ao visualizar o pedido deve ser exibido o link "Rastrear o seu pedido" onde clicando no mesmo deve ser aberto Popup apresentado o processo do rastreamento
+
+# Como analisar o andamento do MySQL
+
+Devido a demora da importação podemos efetuar analise do andamento do processamento no MySQL
+
+    mysqladmin -h 'localhost' -u 'root' -p status
+
+    mysql -h 'localhost' -u 'root' -p -e "\
+        SET GLOBAL general_log = 1; \
+        SET GLOBAL log_output = 'table'; \
+        SELECT * from mysql.general_log; \
+    "
+
+    mysql -h 'localhost' -u 'root' -p -e "\
+        SELECT VERSION(); \
+        SELECT LAST_INSERT_ID(); \
+        show status like '%onn%'; \
+        show processlist; \
+        KILL 23429; \
+    "   
 
 # Como redefinir a senha do administrador em Magento?
 
