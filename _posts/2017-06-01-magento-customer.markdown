@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Magento Bradesco"
-date:   2017-02-14 16:44:29
+title:  "Magento Cadastro de Clientes"
+date:   2017-06-01 10:21:50
 category: magento
 author: Marcio Amorim
-tags: [magento, bradesco]
-excerpt: "Veja as funcionalidades do módulo Magento Bradesco, contemplando Boleto e Transferência Eletrônica"
+tags: [magento, customer]
+excerpt: "Veja as funcionalidades do módulo Cadastro de Clientes"
 ---
 
-<h1>Magento Bradesco</h1>
+<h1>Magento Cadastro de Clientes</h1>
 
 Instale nosso(s) módulo(s) em seu(s) projeto(s) sem compromisso
 
@@ -23,7 +23,7 @@ Abaixo temos uma demonstração do funcionamento do módulo
         data-g-event="Home" data-g-label="For Enterprise"
         data-glue-modal-disabled-on-mobile="true" data-glue-modal-trigger=
         "magento-bradesco" href=
-        "/assets/images/docs/2017-03-20-magento-bradesco.pdf">
+        "/assets/images/docs/2017-06-01-magento-customer.pdf">
         <svg class="icon-fab-video"
             enable-background="new 0 0 32 32" height="24px" version="1.1" viewbox=
             "0 0 32 32" width="24px" x="0px" xml:space="preserve" xmlns=
@@ -39,7 +39,7 @@ Abaixo temos uma demonstração do funcionamento do módulo
     <div data-glue-modal="magento-bradesco" data-rs-modal="" id=
         "magento-bradesco">
         <iframe allowfullscreen="" frameborder="0" height="100%" src=
-            "/assets/images/docs/2017-03-20-magento-bradesco.pdf" type=
+            "/assets/images/docs/2017-06-01-magento-customer.pdf" type=
             "text/html" width="100%"></iframe>
     </div>
 </div>

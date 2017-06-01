@@ -443,7 +443,7 @@ Siga as instruções para a instalação que deve ser feita via composer
             <td colspan="2"><h4 class="doctype-whitepaper-title">Diversos  <a class="anchorjs-link " href="#diversos" aria-label="Anchor link for: diversos" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;"></a></h4></td>
         </tr>        
         <tr>
-            <td>Cadastro de Clientes</td>
+            <td><a href="/magento/magento-customer" alt="Magento Cadastro de Clientes">Cadastro de Clientes</a></td>
             <td align="center">
                 <table class="filho">
                     <thead>

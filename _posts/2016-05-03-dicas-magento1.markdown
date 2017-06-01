@@ -508,6 +508,7 @@ Devido a demora da importação podemos efetuar analise do andamento do processa
     mysql -h 'localhost' -u 'root' -p -e "\
         SELECT VERSION(); \
         SELECT LAST_INSERT_ID(); \
+        show global variables like '%show_compatibility_56%'; \
         show status like '%onn%'; \
         show processlist; \
         KILL 23429; \
