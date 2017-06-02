@@ -29,7 +29,7 @@
     <!-- Social: Google+ / Schema.org  -->
     <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
     <meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta itemprop="image" content="{{ "/assets/images/logos/Red_star_32_32.png" | prepend: site.baseurl | prepend: site.url }}"/>
+    <meta itemprop="image" content="{{ "/assets/images/logos/logo_32_32.png" | prepend: site.baseurl | prepend: site.url }}"/>
 
     <!-- https://developers.google.com/structured-data/testing-tool/ -->
     <!-- Logotipos -->
@@ -38,7 +38,7 @@
       "@context": "http://schema.org",
       "@type": "Organization",
       "url": "https://mozg.com.br/",
-      "logo": "https://mozg.com.br/assets/images/logos/Red_star.svg"
+      "logo": "https://mozg.com.br/assets/images/logos/logo.svg"
     }
     </script>
     <!-- Contatos corporativos -->
@@ -126,7 +126,7 @@
     {% if page.image %}
     <meta property="og:image" content="{{ site.url }}{{page.image }}">
     {% else %}
-    <meta property="og:image" content="{{ "/assets/images/logos/Red_star_32_32.png" | prepend: site.baseurl | prepend: site.url }}">
+    <meta property="og:image" content="{{ "/assets/images/logos/logo_32_32.png" | prepend: site.baseurl | prepend: site.url }}">
     {% endif %}
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
