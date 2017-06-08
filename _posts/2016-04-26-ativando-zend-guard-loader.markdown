@@ -30,6 +30,12 @@ http://www.zend.com/en/products/loader/downloads
 
 Deve ser feito o download do Zend Guard Loader baseado na versão do PHP do seu servidor
 
+ou 
+
+    wget http://downloads.zend.com/guard/7.0.0/zend-loader-php5.6-linux-x86_64.tar.gz
+
+    tar -zxf zend-loader-php5.6-linux-x86_64.tar.gz
+
 Ao efetuar o download e extração do "Zend Guard Loader", leia o arquivo o "README.txt", nele está contido a instrução para ativar o módulo para qualquer servidor
 
 Veja que o processo é super simples devendo apenas editar os arquivos que aplicam o suporte da extensão de servidor para o ambiente cliente e web do PHP
