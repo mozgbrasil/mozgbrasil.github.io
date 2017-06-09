@@ -128,13 +128,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 # Instalar extensões via Composer
 
-	# Certique se da existencia do arquivo composer.json na raiz do projeto Magento e que o mesmo tenha os trechos "minimum-stability", "prefer-stable", "repositories" e "magento-root-dir", conforme
-	#
-	# https://gist.github.com/mozgbrasil/0c9bb8792ea6273ea24aed30b0fbcfba
-	#
-	# Caso não exista o arquivo composer.json na raiz do projeto Magento, efetue o download
-	#
-	# wget https://gist.githubusercontent.com/mozgbrasil/0c9bb8792ea6273ea24aed30b0fbcfba/raw/b53c403620c111c43834fec9aa025809d1cb96b1/composer.json
+	# Certique se da existencia do arquivo composer.json na raiz do projeto Magento e que o mesmo tenha os trechos "minimum-stability", "prefer-stable", "repositories" e "magento-root-dir"
 
 	cd .. ;\
 	nano composer.json ;\
