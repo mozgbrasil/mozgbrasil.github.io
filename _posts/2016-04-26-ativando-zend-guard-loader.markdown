@@ -47,8 +47,8 @@ Veja que o processo é super simples devendo apenas editar os arquivos que aplic
 e informar o conteúdo baseado no modelo a seguir
 
 	[zendloader]
-	zend_extension=/home/ubuntu/zend-loader-php5.5-linux-x86_64/ZendGuardLoader.so
-	zend_extension=/home/ubuntu/zend-loader-php5.5-linux-x86_64/opcache.so
+    zend_extension=/home/marcio/dados/softwares/zend-loader-php5.6-linux-x86_64/ZendGuardLoader.so
+    zend_extension=/home/marcio/dados/softwares/zend-loader-php5.6-linux-x86_64/opcache.so
 
 Voce só deve alterar o caminho correspondente a seu ambiente
 
