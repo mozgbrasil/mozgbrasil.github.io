@@ -399,6 +399,44 @@ Siga as instruções para a instalação que deve ser feita via composer
             </td>
             {% endcomment %}
         </tr>
+
+        <tr>
+            <td><a href="/magento/magento-banco-do-brasil" alt="Magento Banco do Brasil">Banco do Brasil</a></td>
+            <td align="center">
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-bancodobrasil-php55#mozgbradesco">↓</a></td>
+                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-bancodobrasil-php56#mozgbradesco">↓</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            {% comment %}
+            <td>
+                <table class="filho">
+                    <thead>
+                        <tr>
+                            <th>PHP 5.5</th>
+                            <th>PHP 5.6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;"> </td>
+                            <td style="text-align: center;"> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            {% endcomment %}
+        </tr>
         <tr>
             <td colspan="2"><h4 class="doctype-whitepaper-title">Métodos de Antifraude</h4></td>
         </tr>
