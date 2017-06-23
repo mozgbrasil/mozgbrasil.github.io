@@ -202,7 +202,7 @@ No terminal ao executar o comando
 
 Pode ser informado qualquer um dos modelos de comandos a seguir
 
-    */1 * * * * /bin/sh /home/marcio/dados/public_html/magento-1.9.2.4-dev31/cron.sh >> /home/marcio/dados/public_html/magento-1.9.2.4-dev31/var/log/magento.cron.log&
+    */1 * * * * /bin/sh -x /home/marcio/dados/public_html/magento-1.9.2.4-dev31/cron.sh >> /home/marcio/dados/public_html/magento-1.9.2.4-dev31/var/log/magento.cron.log&
 
     */1 * * * * curl -s -o /dev/null http://SUA_URL/magento-1.8.0.0-dev02/cron.php >> /home/marcio/dados/public_html/magento-1.9.2.4-dev31/var/log/magento.cron.log&
 
