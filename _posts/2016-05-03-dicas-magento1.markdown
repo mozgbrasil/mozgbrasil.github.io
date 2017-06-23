@@ -10,6 +10,8 @@ excerpt: "Nesse artigo é exibido diversas dicas relativa ao Magento 1"
 
 Ola
 
+Abaixo varias dicas para o Magento
+
 # Configuração não está sendo salva no Magento
 
 Analisando o log do servidor em /var/log/apache2/error.log

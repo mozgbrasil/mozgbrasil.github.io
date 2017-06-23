@@ -10,6 +10,8 @@ excerpt: "Nesse artigo é exibido diversas dicas relativa ao Ubuntu"
 
 Ola
 
+Abaixo varias dicas para o uso no Linux
+
 # Conectar via SFTP pelo nautilus
 
 	sftp://marcio@192.168.0.7

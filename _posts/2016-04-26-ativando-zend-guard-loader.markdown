@@ -117,3 +117,41 @@ Executando o seguinte comando temos o resultado se está ativo o recurso no ambi
     echo "<?php phpinfo(); ?>" >> phpinfo.php
 
 	curl -v --silent http://SEU_DNS/phpinfo.php 2>&1 | grep 'Zend Guard Loader'
+
+## [core:notice] [pid 16387] AH00051: child pid 16530 exit signal Segmentation fault (11), possible coredump in /etc/apache2
+
+Esse erro foi gerado devido a mal configuração do módulo Zend Guard Loader
+
+No manual do Zend Guard Loader tem a instrução para usar as 2 bibliotecas que eles disponibilizam
+
+Para efeito de teste ao comentar o uso da biblioteca "opcache.so" vemos que foi gerado o erro
+
+[Fri Jun 23 11:57:58.914258 2017] [core:notice] [pid 16387] AH00051: child pid 16530 exit signal Segmentation fault (11), possible coredump in /etc/apache2
+
+Abaixo temos uma demonstração dessa ocorrência
+
+<div class="">
+    <a class="fab google-red" data-g-action="Anthem - Video Start"
+        data-g-event="Home" data-g-label="For Enterprise"
+        data-glue-modal-disabled-on-mobile="true" data-glue-modal-trigger=
+        "magento-bradesco" href=
+        "/assets/images/docs/2016-04-26-ativando-zend-guard-loader.pdf">
+        <svg class="icon-fab-video"
+            enable-background="new 0 0 32 32" height="24px" version="1.1" viewbox=
+            "0 0 32 32" width="24px" x="0px" xml:space="preserve" xmlns=
+            "http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y=
+            "0px">
+            <path d=
+                "M28.8,3.8c-1-0.3-6.9-0.6-12.8-0.6c-5.9,0-11.8,0.3-12.8,0.6C0.7,4.6,0,10.2,0,16s0.7,11.4,3.2,12.2c1,0.3,6.9,0.6,12.8,0.6 c5.9,0,11.8-0.3,12.8-0.6C31.3,27.4,32,21.8,32,16S31.3,4.7,28.8,3.8 M12.8,22.4V9.6l8.8,6.4L12.8,22.4z">
+            </path>
+        </svg>
+        <img alt="" class="icon-fab-video" height="24" src=
+            "//www.google.com/ads/images/icons/icon-fab-video.png" width="24">
+    </a>
+    <div data-glue-modal="magento-bradesco" data-rs-modal="" id=
+        "magento-bradesco">
+        <iframe allowfullscreen="" frameborder="0" height="100%" src=
+            "/assets/images/docs/2016-04-26-ativando-zend-guard-loader.pdf" type=
+            "text/html" width="100%"></iframe>
+    </div>
+</div>
