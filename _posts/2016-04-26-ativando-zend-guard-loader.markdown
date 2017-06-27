@@ -155,3 +155,9 @@ Abaixo temos uma demonstração dessa ocorrência
             "text/html" width="100%"></iframe>
     </div>
 </div>
+
+## PHP Fatal error:  Cannot run code from this file in conjunction with non encoded files in app/code/local/Mozg/Base/Model/Resource/Setup.php on line 8
+
+Já tivemos relatos de incompatibilidade entre o Zend Guard Loader e o Zend Opcache.
+
+Nesse tipo de eventualidade, desative o Zend Opache para efeitos de testes.
