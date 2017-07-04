@@ -262,6 +262,18 @@ Efetuando pesquisa sobre o erro geralmente é encontrado a solução
 
 Agora é somente aplicar a devida correção sobre o seu servidor
 
+### Habilitar exibição do erro no Magento
+
+No magento edite o arquivo index.php e atualize a linha 
+
+DE
+
+    #ini_set('display_errors', 1);
+
+PARA
+
+    ini_set('display_errors', 1);
+
 # Cotação de Moedas, Magento Cambio
 
 ## Habilitando moedas
