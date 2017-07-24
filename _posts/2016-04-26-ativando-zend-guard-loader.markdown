@@ -158,6 +158,18 @@ Abaixo temos uma demonstração dessa ocorrência
 
 ## PHP Fatal error:  Cannot run code from this file in conjunction with non encoded files in app/code/local/Mozg/Base/Model/Resource/Setup.php on line 8
 
-Já tivemos relatos de incompatibilidade entre o Zend Guard Loader e o Zend Opcache.
+Já tivemos relatos de incompatibilidade entre o Zend Guard Loader e o Zend Opcache
 
-Nesse tipo de eventualidade, desative o Zend Opache para efeitos de testes.
+Nesse tipo de eventualidade, desative o Zend Opache ou entre em contato com sua empresa de hospedagem solicitando essa ação
+
+## Use of undefined constant Zend - assumed 'Zend'
+
+Esse erro ocorre devido a ausência do Zend Guard Loader no ambiente PHP CLI
+
+No terminal ao digitar o comando 
+
+    php -v
+
+Deve ser exibido a ausência do Zend Guard Loader no ambiente PHP CLI
+
+Aplique o suporte do componente ao ambiente PHP CLI

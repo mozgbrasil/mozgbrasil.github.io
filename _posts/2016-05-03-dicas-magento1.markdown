@@ -230,17 +230,13 @@ Comentando a antiga variavel e adicionando a nova
 
     PHP_BIN='/usr/bin/php56'
 
-Tive essa necessidade pois no ambiente PHP WEB foi exibido a versão 5.6 e no ambiente CLI exibido a versão 5.4
+Isso é necessário pois no ambiente PHP WEB foi exibido a versão 5.6 e no ambiente CLI exibido a versão 5.4
 
 Portanto quando executado o comando 
 
     php -v
 
 Era retornado o PHP 5.4, consequentemente o script é processado sobre essa versão 5.4
-
-Fiz o uso do seguinte comando para o PHP ser processado sobre a versão 5.6
-
-    /usr/bin/php56 -v 
 
 # Erro de servidor: "error 500" ou "tela branca"
 
