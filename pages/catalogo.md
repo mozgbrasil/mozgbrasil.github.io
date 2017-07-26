@@ -595,6 +595,13 @@ Siga as instruções para a instalação que deve ser feita via composer
             <td colspan="2"><h4 class="doctype-whitepaper-title">Módulos Open-Source</h4></td>
         </tr>
         <tr>
+            <td>Pacote de tradução (Free)</td>
+            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-locale-pt_br#mozgmagentolocale">↓</a></td>
+            {% comment %}
+            <td style="text-align: center;">&nbsp;</td>
+            {% endcomment %}
+        </tr>
+        <tr>
             <td>Estados do Brasil (Free)</td>
             <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-brasil-regions#mozgbrregions">↓</a></td>
             {% comment %}
