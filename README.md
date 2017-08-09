@@ -95,4 +95,10 @@ https://wiredcraft.com/blog/make-jekyll-fast/
 
 [Comercial License](LICENSE.txt)
 
+## Badges
+
+| Desktop       | Mobile        |
+| ------------- |:-------------:|
+| ![GitHub PageSpeed](https://pagespeed-badges.herokuapp.com/?url=mozg.com.br&strat=desktop)      | ![GitHub PageSpeed](https://pagespeed-badges.herokuapp.com/?url=mozg.com.br&strat=mobile) |
+
 :cat2:
