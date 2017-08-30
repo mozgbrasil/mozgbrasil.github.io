@@ -25,39 +25,9 @@ Siga as instruções para a instalação que deve ser feita via composer
     <tbody>
         <tr>
             <td>Pacote completo</td>
-            <td align="center">
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-bundle-php55#mozgbundle">↓</a></td>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-bundle-php56#mozgbundle">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td align="center"><a href="https://github.com/mozgbrasil/magento-bundle#mozgbundle">↓</a></td>
             {% comment %}
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento2-bundle-php55#mozgbundle">↓</a></td>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento2-bundle-php56#mozgbundle">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td><a href="https://github.com/mozgbrasil/magento2-bundle#mozgbundle">↓</a></td>
             {% endcomment %}
         </tr>
         <tr>
@@ -66,148 +36,33 @@ Siga as instruções para a instalação que deve ser feita via composer
         <tr>
             <td><a href="/magento/magento-correios" alt="Magento Correios">Correios & Correios Exporta Fácil</a></td>
             <td align="center">
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-correios-php55#mozgcorreios">↓</a></td>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-correios-php56#mozgcorreios">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <table class="filho"><a href="https://github.com/mozgbrasil/magento-correios#mozgcorreios">↓</a></table>
             </td>
             {% comment %}
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento2-correios-php55#mozgcorreios">↓</a></td>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento2-correios-php56#mozgcorreios">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td><a href="https://github.com/mozgbrasil/magento2-correios#mozgcorreios">↓</a></td>
             {% endcomment %}
         </tr>
         <tr>
             <td><a href="/magento/magento-jadlog" alt="Magento Jadlog">Jadlog</a></td>
-            <td align="center">
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-jadlog-php55#mozgjadlog">↓</a></td>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-jadlog-php56#mozgjadlog">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <td align="center"><a href="https://github.com/mozgbrasil/magento-jadlog#mozgjadlog">↓</a></table>
             </td>
             {% comment %}
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento2-jadlog-php55#mozgjadlog">↓</a></td>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento2-jadlog-php56#mozgjadlog">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td><a href="https://github.com/mozgbrasil/magento2-jadlog#mozgjadlog">↓</a></td>
             {% endcomment %}
         </tr>
         <tr>
             <td><a href="/magento/magento-jamef" alt="Magento Jamef">Jamef</a></td>
-            <td align="center">
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-jamef-php55#mozgjamef">↓</a></td>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-jamef-php56#mozgjamef">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td align="center"><a href="https://github.com/mozgbrasil/magento-jamef#mozgjamef">↓</a></td>
             {% comment %}
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento2-jamef-php55#mozgjamef">↓</a></td>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento2-jamef-php56#mozgjamef">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td><a href="https://github.com/mozgbrasil/magento2-jamef#mozgjamef">↓</a></td>
             {% endcomment %}
         </tr>
         <tr>
             <td><a href="/magento/magento-loggi" alt="Magento Loggi">Loggi</a></td>
-            <td align="center">
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-loggi-php55#mozgloggi">↓</a></td>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-loggi-php56#mozgloggi">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td align="center"><a href="https://github.com/mozgbrasil/magento-loggi#mozgloggi">↓</a></td>
             {% comment %}
             <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"> </td>
-                            <td style="text-align: center;"> </td>
-                        </tr>
-                    </tbody>
-                </table>
+
             </td>
             {% endcomment %}
         </tr>
@@ -216,225 +71,47 @@ Siga as instruções para a instalação que deve ser feita via composer
         </tr>
         <tr>
             <td><a href="/magento/magento-braspag" alt="Magento Braspag">Braspag API V2</a></td>
-            <td align="center">
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-braspag-php55#mozgbraspag">↓</a></td>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-braspag-php56#mozgbraspag">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td align="center"><a href="https://github.com/mozgbrasil/magento-braspag#mozgbraspag">↓</a></td>
             {% comment %}
             <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"> </td>
-                            <td style="text-align: center;"> </td>
-                        </tr>
-                    </tbody>
-                </table>
+
             </td>
             {% endcomment %}
         </tr>
         <tr>
             <td><a href="/magento/magento-cielo" alt="Magento Cielo">Cielo API 3.0 &  Checkout Cielo</a></td>
-            <td align="center">
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-cielo-php55#mozgcielo">↓</a></td>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-cielo-php56#mozgcielo">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td align="center"><a href="https://github.com/mozgbrasil/magento-cielo#mozgcielo">↓</a></td>
             {% comment %}
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"> </td>
-                            <td style="text-align: center;"> </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td> </td>
             {% endcomment %}
         </tr>
         <tr>
             <td><a href="/magento/magento-itau" alt="Magento Itau">Itaú Shopline</a></td>
-            <td align="center">
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-itau-php55#mozgitau">↓</a></td>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-itau-php56#mozgitau">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td align="center"><a href="https://github.com/mozgbrasil/magento-itau#mozgitau">↓</a></td>
             {% comment %}
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"> </td>
-                            <td style="text-align: center;"> </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td> </td>
             {% endcomment %}
         </tr>
         <tr>
             <td><a href="/magento/magento-redecard" alt="Magento Redecard | Rede / Komerci WebService">Rede / Komerci WebService</a></td>
-            <td align="center">
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-redecard-php55#mozgredecard">↓</a></td>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-redecard-php56#mozgredecard">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td align="center"><a href="https://github.com/mozgbrasil/magento-redecard#mozgredecard">↓</a></td>
             {% comment %}
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"> </td>
-                            <td style="text-align: center;"> </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td> </td>
             {% endcomment %}
         </tr>
         <tr>
             <td><a href="/magento/magento-bradesco" alt="Magento Bradesco">Bradesco</a></td>
-            <td align="center">
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-bradesco-php55#mozgbradesco">↓</a></td>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-bradesco-php56#mozgbradesco">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td align="center"><a href="https://github.com/mozgbrasil/magento-bradesco#mozgbradesco">↓</a></td>
             {% comment %}
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"> </td>
-                            <td style="text-align: center;"> </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td> </td>
             {% endcomment %}
         </tr>
 
         <tr>
             <td><a href="/magento/magento-banco-do-brasil" alt="Magento Banco do Brasil">Banco do Brasil</a></td>
-            <td align="center">
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-bancodobrasil-php55#mozgbradesco">↓</a></td>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-bancodobrasil-php56#mozgbradesco">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td align="center"><a href="https://github.com/mozgbrasil/magento-bancodobrasil#mozgbradesco">↓</a></td>
             {% comment %}
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"> </td>
-                            <td style="text-align: center;"> </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td> </td>
             {% endcomment %}
         </tr>
         <tr>
@@ -442,39 +119,9 @@ Siga as instruções para a instalação que deve ser feita via composer
         </tr>
         <tr>
             <td><a href="/magento/magento-clearSale" alt="Magento ClearSale">Total ClearSale & ClearSale Start</a></td>
-            <td align="center">
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-clearsale-php55#mozgclearsale">↓</a></td>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-clearsale-php56#mozgclearsale">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td align="center"><a href="https://github.com/mozgbrasil/magento-clearsale#mozgclearsale">↓</a></td>
             {% comment %}
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"> </td>
-                            <td style="text-align: center;"> </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td> </td>
             {% endcomment %}
         </tr>
         <tr>
@@ -482,113 +129,23 @@ Siga as instruções para a instalação que deve ser feita via composer
         </tr>        
         <tr>
             <td><a href="/magento/magento-customer" alt="Magento Cadastro de Clientes">Cadastro de Clientes</a></td>
-            <td align="center">
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-customer-php55#mozgcustomer">↓</a></td>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-customer-php56#mozgcustomer">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td align="center"><a href="https://github.com/mozgbrasil/magento-customer#mozgcustomer">↓</a></td>
             {% comment %}
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"> </td>
-                            <td style="text-align: center;"> </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td> </td>
             {% endcomment %}
         </tr>
         <tr>
             <td>Estimativa de Frete na página de produto</td>
-            <td align="center">
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-product-page-shipping-php55#mozgproductpageshipping">↓</a></td>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-product-page-shipping-php56#mozgproductpageshipping">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td align="center"><a href="https://github.com/mozgbrasil/magento-product-page-shipping#mozgproductpageshipping">↓</a></td>
             {% comment %}
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"> </td>
-                            <td style="text-align: center;"> </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td> </td>
             {% endcomment %}
         </tr>
         <tr>
             <td>Filtros para o Checkout</td>
-            <td align="center">
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-checkout-filters-php55#mozgcheckoutfilters">↓</a></td>
-                            <td style="text-align: center;"><a href="https://github.com/mozgbrasil/magento-checkout-filters-php56#mozgcheckoutfilters">↓</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td align="center"><a href="https://github.com/mozgbrasil/magento-checkout-filters#mozgcheckoutfilters">↓</a></td>
             {% comment %}
-            <td>
-                <table class="filho">
-                    <thead>
-                        <tr>
-                            <th>PHP 5.5</th>
-                            <th>PHP 5.6</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="text-align: center;"> </td>
-                            <td style="text-align: center;"> </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <td> </td>
             {% endcomment %}
         </tr>
         <tr>
