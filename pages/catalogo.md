@@ -44,8 +44,7 @@ Siga as instruções para a instalação que deve ser feita via composer
         </tr>
         <tr>
             <td><a href="/magento/magento-jadlog" alt="Magento Jadlog">Jadlog</a></td>
-            <td align="center"><a href="https://github.com/mozgbrasil/magento-jadlog#mozgjadlog">↓</a></table>
-            </td>
+            <td align="center"><a href="https://github.com/mozgbrasil/magento-jadlog#mozgjadlog">↓</a></td>
             {% comment %}
             <td><a href="https://github.com/mozgbrasil/magento2-jadlog#mozgjadlog">↓</a></td>
             {% endcomment %}
