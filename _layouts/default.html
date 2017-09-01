@@ -2,177 +2,212 @@
 layout: compress
 ---
 <!DOCTYPE html>
-<html class="google mmfb" dir="ltr" lang="en">
+<html lang="pt" class="no-js">
     <head>
         {% include tags_head.html %}
     </head>
-    <body data-ng-app="rs.analytics.tagmanager">
-        <header class="header google-blue" data-rs-header="" role="banner">
-            <div class="upper-header google-blue">
-                <h1 class="product-logo">
-                <a data-g-action="Analytics Overview" data-g-event="Tag Manager: Overview" data-g-label=
-                "Global Nav Logo" href="/"><img alt="Mozg" src="/assets/images/logos/logo.svg" width="20" height="20"></a>
-                </h1>
+    <body>
+        <div class="site-wrapper blog-overview">
+            <nav class="navbar navbar-fixed-top navbar-transparent collapse" role="navigation">
+                <span role="button" aria-label="Toggle Navigation" class="navbar-toggle collapsed hidden-md-up x-button close" aria-exanded="false">
+                <span class="menu-lines"></span><span class="mobile-menu-text"> </span>
+                </span>
+                <div class="navbar-brand__logo-container text-center">
+                    <a href="#">
+                    <img src="/assets/images/logos/theme-logo-white.png" class="navbar-brand__logo navbar-brand__logo--mobile navbar-brand__logo-white--mobile hidden-md-up" alt="MOZG" title="MOZG">
+                    <img src="/assets/images/logos/theme-logo-green.png" class="navbar-brand__logo navbar-brand__logo--mobile navbar-brand__logo-green--mobile hidden-md-up" alt="MOZG" title="MOZG">
+                    </a>
+                </div>
+                <div class="navbar-inner">
+                    <a class="navbar-brand" href="#">
+                    <img src="/assets/images/logos/theme-logo-green.png" class="navbar-brand__logo-mozg logo-mozg--green" alt="Green MOZG Logo" title="MOZG">
+                    <img src="/assets/images/logos/theme-logo-white.png" class="navbar-brand__logo-mozg logo-mozg--white" alt="White MOZG Logo" title="MOZG">
+                    </a>
+                    {% assign variable = site.top_menu %}
+                    {% include {{variable}} %}
+                    {% comment %}
+                    <div class="main-navigation-right pull-right">
+                        <a class="menu__search-button" href="#"><i class="icon-theme-search-left"></i></a>
+                        <div class="btn-group">
+                            <span role="button" class="btn dropdown-toggle hidden-lg-up" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</span>
+                            <ul class="nav navbar-nav dropdown-menu">
+                                <div class="popover-arrow"></div>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" title="Developers">Developers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" title="Support">Support</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" id class="btn ">Criar conta teste</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    {% endcomment %}
+                </div>
+            </nav>
+            <div class="header header--big header--left" style="background-color: grey">
+                <div class="header__image lazy" data-src="/assets/images/backgrounds/mascote-cerebrum-3d.png">
+                    <noscript>
+                        <div class="header__image" src="/assets/images/backgrounds/mascote-cerebrum-3d.png" style="background-image:url('/assets/images/backgrounds/mascote-cerebrum-3d.png');">
+                    </noscript>
+                    <div class="header__overlay">
+                    <div class="inner-container">
+                    <div class="header__page-title">
+                    <h1>&nbsp;</h1>
+                    <p class="blog__header-summary">&nbsp;</p>
+                    {% comment %}
+                    <div class="header__actions header__actions--padding">
+                    <a href="#" id="read" class="btn">Leia mais</a>
+                    </div>
+                    {% endcomment %}
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
             </div>
-           {% assign variable = site.top_menu %}
-           {% include {{variable}} %}
-            <button class="nav-toggle-button"><span class="icon-menu-els"><span class=
-                "menu-bar"></span> <span class="menu-bar"></span> <span class=
-                "menu-bar"></span></span></button>
-        </header>
-        {{ content }}
-        <div id="maia-signature"></div>
-        <footer class="footer" id="footer" role="contentinfo">
-            <div class="site-width">
-                <div class="footer-upper cols-row">
-                    <div class="footer-social col-6">
-                        <dl>
-                            <dt>
-
-                            </dt>
-                            <dd>
-                                
-                            </dd>
-                        </dl>
+            <div class="container-fluid">
+                <div class="content">
+                    {{ content }}
+                    {% comment %}
+                    <div class="row area--white">
+                        <div class="inner-container div--no-padding-top">
+                            <div class="col-md-12 text-center">
+                                <a href="#" id="view-older" class="btn btn-blog">Posts antigos</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="footer-meta-links col-6">
-                        <ul>
-                            <li>
-                                <a href="https://bitbucket.org/mozgbrasil/">Bitbucket</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/mozgbrasil/">GitHub</a>
-                            </li>
-                            <li>
-                                <a href="https://packagist.org/packages/mozgbrasil/">Packagist</a>
-                            </li>
-                            <li>
-                                <a href="https://www.npmjs.com/~mozg">NPM</a>
-                            </li>
-                        </ul>
-                    </div>
+                    {% endcomment %}
                 </div>
-                <nav class="footer-nav cols-row">
-                    <dl class="col-3">
-                        <dt>
-                            Páginas
-                        </dt>
-                        {% assign sorted_pages = site.pages | sort:"order" %}
-                        {% for node in sorted_pages %}
-                            {% if node.title %}
+            </div>
+        </div>
+        <footer class="row footer area--dark">
+            <div class="inner-container">
+                <div class="row">
+                    <div>
+                        <div class="column col-md-2 col-md-offset-0 col-xs-6 col-xs-offset-0 footer__linklist">
+                            <ul>
+                                <li class="footer-title">
+                                    <a href="#" class="footer-link">Páginas</a>
+                                </li>
+                                {% assign sorted_pages = site.pages | sort:"order" %}
+                                {% for node in sorted_pages %}
+                                {% if node.title %}
                                 {% if node.permalink == "" %}
-                                    {% capture icon_tag %}home{% endcapture %}
+                                {% capture icon_tag %}home{% endcapture %}
                                 {% elsif node.permalink == '/sobre-nos/' %}
-                                    {% capture icon_tag %}copyright{% endcapture %}
+                                {% capture icon_tag %}copyright{% endcapture %}
                                 {% elsif node.permalink == '/contato/' %}
-                                    {% capture icon_tag %}at{% endcapture %}
+                                {% capture icon_tag %}at{% endcapture %}
                                 {% elsif node.permalink == '/category/' %}
-                                    {% capture icon_tag %}idea{% endcapture %}
+                                {% capture icon_tag %}idea{% endcapture %}
                                 {% elsif node.permalink == '/tag/' %}
-                                    {% capture icon_tag %}tag{% endcapture %}
+                                {% capture icon_tag %}tag{% endcapture %}
                                 {% else %}
-                                    {% capture icon_tag %}home{% endcapture %}
+                                {% capture icon_tag %}home{% endcapture %}
                                 {% endif %}
-                                <dd>
-                                    <a class="item" href="{{ node.url | prepend: site.baseurl }}"><i class="{{ icon_tag }} icon"></i>{{ node.title }}</a>
-                                </dd>
-                            {% endif %}
-                        {% endfor %}
-                    </dl>
-                    <dl class="col-3">
-                        <dt>
-                            RSS & Feed
-                        </dt>
-                        <dd>
-                            <a class="item" href="{{ "/sitemap.xml" | prepend: site.baseurl }}"><i class="icon sitemap"></i>Sitemap</a>
-                        </dd>
-                        <dd>
-                            <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
-                        </dd>
-                    </dl>
-                    <dl class="col-3">
-                        <dt>
-                            Social
-                        </dt>
-                        <dd>
-                            <a href="https://twitter.com/{{ site.twitter_username }}"><i class="icon twitter"></i>twitter</a>
-                        </dd>
-                        <dd>
-                            <a class="item" href="https://www.youtube.com/channel/UCiXR9cKwxNKMehSnqXvhtug"><i class="icon youtube"></i>youtube</a>
-                        </dd>
-                        <dd>
-                            <a href="https://github.com/{{ site.github_username }}"><i class="icon github"></i>github</a>
-                        </dd>
-                        <dd>
-                            <a href="https://www.facebook.com/{{ site.facebook_username }}"><i class="icon facebook"></i>facebook</a>
-                        </dd>
-                        <dd>
-                            <a href="https://plus.google.com/117231578401378218759"><i class="icon google plus"></i>plus.google</a>
-                        </dd>
-                        <dd>
-                            <a href="https://mozgbrasil.wordpress.com/"><i class="icon wordpress"></i>wordpress</a>
-                        </dd>
-                        <dd>
-                            <a href="http://mozgbrasil.blogspot.com.br/"><i class="icon google"></i>blogspot</a>
-                        </dd>
-                    </dl>
-                    <dl class="col-3">
-                        <dt>
-                            Widgets
-                        </dt>
-                        {% include snippet-social-plugins.html %}
-                    </dl>
-                </nav>
-                <div class="footer-lower cols-row">
-                    <div class="footer-meta-links col-8">
-                        <ul>
-                            <li>
-                                <a href="/contato/">
-                                    <svg class=
-                                        "icon-footer-help" enable-background="new 0 0 32 32" height="20px" version="1.1"
-                                        viewbox="0 0 32 32" width="20px" x="0px" xml:space="preserve" xmlns=
-                                        "http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
-                                        <path clip-rule="evenodd" d=
-                                            "M16,0C7.2,0,0,7.2,0,16c0,3,0.9,5.9,2.3,8.3L0,32l7.7-2.3 C10.2,31.1,13,32,16,32c8.8,0,16-7.2,16-16C32,7.2,24.8,0,16,0z M17.3,24.6c-0.3,0.3-0.7,0.5-1.2,0.5s-1-0.2-1.2-0.5 c-0.3-0.3-0.4-0.7-0.4-1.1c0-0.2,0-0.4,0.1-0.6c0.1-0.2,0.2-0.4,0.3-0.5c0.1-0.1,0.3-0.3,0.5-0.3c0.2-0.1,0.4-0.1,0.7-0.1 c0.3,0,0.5,0,0.7,0.1c0.2,0.1,0.4,0.2,0.5,0.3c0.1,0.1,0.3,0.3,0.3,0.5c0.1,0.2,0.1,0.4,0.1,0.6C17.7,24,17.6,24.3,17.3,24.6z M21.1,13.2c-0.2,0.5-0.4,0.9-0.6,1.3c-0.3,0.4-0.6,0.8-0.9,1.2c-0.3,0.4-0.7,0.8-1,1.1c-0.4,0.4-0.7,0.9-0.9,1.4 c-0.2,0.5-0.2,0.8-0.3,1.8h-2.8c0-1,0-1.2,0.1-1.6c0.1-0.4,0.2-1,0.3-1.3c0.2-0.3,0.4-0.7,0.6-1c0.2-0.3,0.6-0.7,0.9-1 c0.2-0.3,0.5-0.5,0.7-0.7c0.2-0.2,0.4-0.5,0.6-0.7c0.2-0.3,0.3-0.5,0.4-0.8c0.1-0.3,0.1-0.6,0.1-1c0-0.8-0.2-1.4-0.6-1.8 c-0.4-0.4-1-0.6-1.7-0.6c-0.3,0-0.6,0.1-0.9,0.1c-0.3,0.1-0.5,0.2-0.8,0.4s-0.4,0.6-0.5,0.8c-0.1,0.3-0.2,1.2-0.2,1.2h-3 c0-2,0.2-1.6,0.4-2.2c0.3-0.6,0.7-1.2,1.1-1.6c0.5-0.4,1-0.7,1.7-0.9C14.6,7,15.3,6.9,16,6.9c0.8,0,1.6,0.1,2.2,0.3 c0.7,0.2,1.2,0.5,1.7,0.9c0.5,0.4,0.8,0.9,1,1.5c0.2,0.6,0.4,1.3,0.4,2.1C21.3,12.3,21.2,12.8,21.1,13.2z"
-                                            fill-rule="evenodd"></path>
-                                    </svg>
-                                    <img alt="Help" class="icon-footer-help" height=
-                                        "20" src="//www.google.com/ads/images/icons/icon-footer-help.png" width="20">
-                                    Ajuda
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/">MOZG</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-locale-switcher col-4">
-                        <label class="visually-hidden" for="footer-locales"><span>Copyright © {{ site.time | date: '%Y' }}</span></label> 
-                    </div>
-                </div>
-                <div class="footer-lower cols-row">
-                    <div class="footer-meta-links col-8">
-                        {% include snippet-google-ads.html %}
+                                <li>
+                                    <a class="footer-link" href="{{ node.url | prepend: site.baseurl }}"><i class="{{ icon_tag }} icon"></i>{{ node.title }}</a>
+                                </li>
+                                {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="column col-md-2 col-md-offset-0 col-xs-6 col-xs-offset-0 footer__linklist">
+                            <ul>
+                                <li class="footer-title">
+                                    <a href="#" class="footer-link">RSS & Feed</a>
+                                </li>
+                                <li>
+                                    <a class="footer-link" href="{{ "/sitemap.xml" | prepend: site.baseurl }}"><i class="icon sitemap"></i>Sitemap</a>
+                                </li>
+                                <li>
+                                    <a class="footer-link" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column col-md-2 col-md-offset-0 col-xs-6 col-xs-offset-0 footer__linklist">
+                            <ul>
+                                <li class="footer-title">
+                                    <a href="#" class="footer-link">Social</a>
+                                </li>
+                                <li>
+                                    <a class="footer-link" href="https://twitter.com/{{ site.twitter_username }}"><i class="icon twitter"></i>twitter</a>
+                                </li>
+                                <li>
+                                    <a class="footer-link" class="item" href="https://www.youtube.com/channel/UCiXR9cKwxNKMehSnqXvhtug"><i class="icon youtube"></i>youtube</a>
+                                </li>
+                                <li>
+                                    <a class="footer-link" href="https://github.com/{{ site.github_username }}"><i class="icon github"></i>github</a>
+                                </li>
+                                <li>
+                                    <a class="footer-link" href="https://www.facebook.com/{{ site.facebook_username }}"><i class="icon facebook"></i>facebook</a>
+                                </li>
+                                <li>
+                                    <a class="footer-link" href="https://plus.google.com/117231578401378218759"><i class="icon google plus"></i>plus.google</a>
+                                </li>
+                                <li>
+                                    <a class="footer-link" href="https://mozgbrasil.wordpress.com/"><i class="icon wordpress"></i>wordpress</a>
+                                </li>
+                                <li>
+                                    <a class="footer-link" href="http://mozgbrasil.blogspot.com.br/"><i class="icon google"></i>blogspot</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column col-md-2 col-md-offset-0 col-xs-6 col-xs-offset-0 footer__linklist">
+                            <ul>
+                                <li class="footer-title">
+                                    <a href="#" class="footer-link">Widgets</a>
+                                </li>
+                                {% include snippet-social-plugins.html %}
+                            </ul>
+                        </div>
+                        <div class="column col-md-2 col-md-offset-2 col-xs-6 footer__language-selector ">
+                            <ul>
+                                <li class="footer-title">
+                                    <a href="#" class="footer-link">Repositórios</a>
+                                </li>
+                                <li>
+                                    <a class="footer-link" href="https://bitbucket.org/mozgbrasil/">Bitbucket</a>
+                                </li>
+                                <li>
+                                    <a class="footer-link" href="https://github.com/mozgbrasil/">GitHub</a>
+                                </li>
+                                <li>
+                                    <a class="footer-link" href="https://packagist.org/packages/mozgbrasil/">Packagist</a>
+                                </li>
+                                <li>
+                                    <a class="footer-link" href="https://www.npmjs.com/~mozg">NPM</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>            
+                <div class="row">
+                    <div class="column col-md-4 col-md-offset-0 col-xs-12 footer-buttons footer__sub-text">
+                        &nbsp;
+                    </div>
+                    <div class="footer__sub-text column col-md-4 col-md-offset-4 col-xs-12 text-right">
+                        <span class="footer-title">Copyright © {{ site.time | date: '%Y' }} MOZG</span>
+                    </div>
+                </div>
+                <div class="row">
+                    {% include snippet-google-ads.html %}
+                </div>
+            </div>
         </footer>
         {% include tags_footer.html %}
-        <script id="//www.google.com/glue/tabset/tabset-template.html" type="text/ng-template">
-            <div>
-            <div class="glue-tabset-nav">
-            <ul data-ng-if="!isAccordion">
-              <li data-ng-repeat="item in tabcordionCtrl.items"
-                  data-ng-class="tabcordionCtrl.isItemIndexSelected($index) ? 'glue-tabset-nav-active' : ''"
-                  data-ng-click="tabcordionCtrl.selectItemByIndex($index)"
-                  data-ng-bind-html="tabcordionCtrl.getItemHeaderHtmlByIndex($index)"
-                  tabindex="0">
-              </li>
-            </ul>
-            </div>
-            <ul class="glue-tabcordion-items" data-ng-transclude=""></ul>
-            </div>
+        <script src="/assets/js/jquery.lazy.min.js?6-5-0"></script>
+        <script src="/assets/js/jquery.ba-postmessage.min.js?6-5-0"></script>
+        <script src="/assets/js/bootstrap.min.js?6-5-0"></script>
+        <script src="/assets/js/application.js?6-5-0"></script>
+        <script>
+            var tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
         </script>
     </body>
 </html>
-

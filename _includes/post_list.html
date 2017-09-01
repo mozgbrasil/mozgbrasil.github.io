@@ -1,5 +1,7 @@
 {% include mode_switcher.html %}
-<div class="cols-row featuredcontent-list" rs-no-results-filter="">
+<div class="row area--white">
+    <div class="inner-container div--no-padding-top">
+        <div class="blog-list row">
     {% if paginator %}
         {% for post in paginator.posts %}
           {% include post_list_item.html %}
@@ -12,11 +14,15 @@
             {% endif %}
         {% endfor %}
     {% endif %}
+        </div>
+    </div>
 </div>
 
 {% if displayPagi or paginator %}
 {% if paginator.total_pages > 1 %}
-<div class="cols-row cards-row">
+<div class="row area--white">
+    <div class="inner-container div--no-padding-top">
+        <div class="blog-list row">
     {% if paginator.previous_page %}
         <a class="item" href="{{ paginator.previous_page_path | prepend: crturl }}">«</a>
     {% endif %}
@@ -36,6 +42,8 @@
     <script type="text/javascript" src="/assets/js/internal/pagination.js"></script>
     <script type="text/javascript" src="/assets/js/internal/listAndPagi.js"></script>
     {% assign jsPagiLoaded = true %}
+        </div>
+    </div>
 </div>
 {% endif %}
 {% endif %}

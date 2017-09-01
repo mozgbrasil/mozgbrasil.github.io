@@ -5,31 +5,23 @@
 {{ current }}
 {% endcomment %}
 
-            <nav class="main-navigation contains-sub-nav contains-double-cta">
-                <h1>
-                    MOZG
-                </h1>
-                <ul>
-                    <li class="{% if page.url == '/' %} active{% endif %}"><a href="/">Visão geral</a>
-                    </li>
-                    <li class="{% if page.url == '/sobre-nos/' %} active{% endif %}" data-g-action="Global Nav" data-g-event="Tag Manager: Overview" data-g-label=
-                        "Sobre Nós">
-                        <a href="/sobre-nos/">Sobre Nós</a>
-                    </li>
-                    <li class="{% if page.url == '/catalogo/' %} active{% endif %}" data-g-action="Global Nav" data-g-event="Tag Manager: Overview" data-g-label=
-                        "Catálogo">
-                        <a href="/catalogo/">Catálogo</a>
-                    </li>
-                    <li class="{% if page.url == '/artigos/' %} active{% endif %}" data-g-action="Global Nav" data-g-event="Tag Manager: Overview" data-g-label=
-                        "Artigos">
-                        <a href="/artigos/">Artigos</a>
-                    </li>
-                    <li class="{% if page.url == '/contato/' %} active{% endif %}" class="dagger" data-g-action="Global Nav" data-g-event="Tag Manager: Overview" data-g-label="Contato">
-                        <a href="/contato/">Contato</a>
-                    </li>
-                </ul>
-                <div class="cta cta-wrapper">                    
-                    {% comment %}
-                    {% endcomment %}
-                </div>
-            </nav>
+<ul class="nav navbar-nav">
+    <li class="nav-item {% if page.url == '/' %} active{% endif %}">
+        <a href="/" class="nav-link">Visão geral</a>
+    </li>
+    <li class="nav-item {% if page.url == '/sobre-nos/' %} active{% endif %}" data-g-action="Global Nav" data-g-event="Tag Manager: Overview" data-g-label=
+        "Sobre Nós">
+        <a href="/sobre-nos/" class="nav-link">Sobre Nós</a>
+    </li>
+    <li class="nav-item {% if page.url == '/catalogo/' %} active{% endif %}" data-g-action="Global Nav" data-g-event="Tag Manager: Overview" data-g-label=
+        "Catálogo">
+        <a href="/catalogo/" class="nav-link">Catálogo</a>
+    </li>
+    <li class="nav-item {% if page.url == '/artigos/' %} active{% endif %}" data-g-action="Global Nav" data-g-event="Tag Manager: Overview" data-g-label=
+        "Artigos">
+        <a href="/artigos/" class="nav-link">Artigos</a>
+    </li>
+    <li class="nav-item {% if page.url == '/contato/' %} active{% endif %}" class="dagger" data-g-action="Global Nav" data-g-event="Tag Manager: Overview" data-g-label="Contato">
+        <a href="/contato/" class="nav-link">Contato</a>
+    </li>
+</ul>

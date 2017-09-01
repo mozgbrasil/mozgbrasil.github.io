@@ -14,54 +14,13 @@
 {% when 12 %}{% capture var_color %}green{% endcapture %}
 {% endcase %}
 
-
-<a class="glue-filter-result col-6 col-m-4 card card-featuredcontent order-"
-data-g-action="Article" data-g-event="Resources" data-g-frtopic=
-"Market Research and Consumer Insights" data-g-frtype="Article" data-g-label=
-"Resource: {{ post.title }}"
-data-glue-filter-result-attrs=
-'{"topic": ["market-research-and-consumer-insights"], "type": ["article"]}' data-order=
-"1" href="{{ post.url }}">
-<div class="card-inner">
-<div class="doctype-container">
-<span class="doctype doctype-article">
-<svg enable-background="new 0 0 32 32"
-height="24px" version="1.1" viewbox="0 0 32 32" width="24px" x="0px" xml:space=
-"preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink=
-"http://www.w3.org/1999/xlink" y="0px">
-<path d=
-"M28.5,4.1H13.9H8.8c-1.9,0-3.5,1.6-3.5,3.5v0H3.5c-1.2,0-2.3,0.6-2.9,1.6C0.2,9.7,0,10.4,0,11.1v0v10.7 c0,3.7,1.7,6.2,5.8,6.2h22.7c1.9,0,3.5-1.6,3.5-3.5V7.6C32,5.6,30.4,4.1,28.5,4.1z M3.8,24.1c-0.8,0-1.5-0.7-1.5-1.5V11 c0.1-0.5,0.6-0.9,1.1-0.9h1.9v2.6H3.9v1.6h1.4v2H3.9v1.6h1.4v2H3.9v1.6h1.4v1.1C5.3,23.4,4.6,24.1,3.8,24.1z M29.8,23.3L29.8,23.3 c0,1.4-1.1,2.5-2.5,2.5l0,0H5.9c1.3-0.1,2.4-1.2,2.4-2.5l0-15.6c0-0.6,0.5-1.1,1.1-1.1h19.2c0.6,0,1.1,0.5,1.1,1.1L29.8,23.3z">
-</path>
-<rect height="9.6" width="7.3" x="10.6" y="8.8"></rect>
-<rect height="1.5" width="7.3" x="20.2" y="8.7"></rect>
-<rect height="1.5" width="7.3" x="20.2" y="12.8"></rect>
-<rect height="1.5" width="7.3" x="20.2" y="17"></rect>
-<rect height="1.5" width="17" x="10.5" y="21.1"></rect>
-</svg>
-<img alt="" height=
-"24" src="//www.google.com/ads/images/icons/icon-doctype-article.png" width=
-"24">
+<div class="blog-list__item column col-md-4 col-xs-12  text-center">
+<a href="{{ post.url }}" target="_blank" class="blog-list__item-link link--no-hover">
+<span class="blog-list__item-image-container">
+<img data-src="/assets/images/rocket.png" alt title class="lazy image--rounded image--margin"/>
 </span>
-<h4 class="doctype-article-title">
-Artigo
-</h4>
-</div>
-<p class="topic">
-{{ post.date | date: "%d %b/%Y %H:%M" }}
-</p>
-<h3>
-{{ post.title }}
-</h3>
-<p>
-{{ post.excerpt | strip_html | newline_to_br }}
-</p>
-<svg class="icon-arrow-related" enable-background="new 0 0 32 32" height="16px"
-version="1.1" viewbox="0 0 32 32" width="16px" x="0px" xml:space="preserve" xmlns=
-"http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
-<polygon points="16,0 13.2,2.8 24.3,14 0,14 0,18 24.3,18 13.2,29.2 16,32 32,16">
-</polygon>
-</svg>
-<img alt="" class="icon-arrow-related" height="16" src=
-"//www.google.com/ads/images/icons/icon-arrow-related.png" width="16">
-</div>
+<span class="blog-list__item-title">{{ post.title }}</span>
+<span class="blog-list__item-title">{{ post.date | date: "%d %b/%Y %H:%M" }}</span>
+<span class="blog-list__item-summary">{{ post.excerpt | strip_html | newline_to_br }}</span>
 </a>
+</div>

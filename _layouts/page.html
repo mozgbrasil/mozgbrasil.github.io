@@ -8,32 +8,33 @@ layout: default
 {{ paginator | debug }}
 {% endcomment %}
 
-<div role="main" class="main">
-    <section class="section section-dark section-need-help light-blue">
-        <div class="site-width">
-            <div class="cols-row">
-                <div class="section-success-copy">
-                    <h1>
+{% comment %}
+<div class="row area--white">
+    <div class="inner-container div--no-padding-top">
+        <div class="col-md-12">
+            <div class="section-success-copy">
+                <h1>
                     {{ page.title }}
-                    </h1>
-                    <p class="font-large">
+                </h1>
+                <p class="font-large">
                     {{ page.excerpt }}
-                    </p>
-                </div>
-                <div class="col-6 col-offset-1 align-self-end section-success-card hidden-xs"></div>
+                </p>
             </div>
         </div>
-    </section>
-    <div id="maia-signature"></div>
-    <section id="section-one" class="section article-body light-gray">
-        <div class="site-width">
+    </div>
+</div>
+{% endcomment %}
+<div class="row area--white">
+    <div class="inner-container div--half-padding-bottom area--padding-large">
+        <div class="col-md-12">
             {{ content }}
         </div>
-    </section>
-    <div id="maia-signature"></div>
-    <section class="section section-solutions ">
-        <div class="site-width">
+    </div>
+</div>
+<div class="row area--white">
+    <div class="inner-container div--no-padding-top">
+        <div class="col-md-12 text-center">
             {% include snippet-disqus.html %}
         </div>
-    </section>
+    </div>
 </div>

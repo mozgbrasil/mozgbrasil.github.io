@@ -1,221 +1,186 @@
-    
-    <!-- Standard Meta -->
-    <link rel="alternate" href="https://mozg.com.br/" />
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <!-- Refer HTML5BP and https://developers.google.com/speed/docs/insights/ConfigureViewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
-    <!-- Site Properities -->
-    {% if page.title == "Página inicial" %}
-    {% capture title_tag %}{{ site.tagline }}{% endcapture %}
-    {% else %}
-    {% capture title_tag %}{{ page.title }}{% endcapture %}
-    {% endif %}
-    <title>{{ title_tag }} &middot; {{ site.title }}</title>
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="keywords" content="{% if page.layout != 'post' %}{{ site.keywords }}{% else %}{{ page.tags | join: ', ' }}, {{ page.categories | join: ', ' }}{% endif %}">
+<!-- Standard Meta -->
+<link rel="alternate" href="https://mozg.com.br/" />
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<!-- Refer HTML5BP and https://developers.google.com/speed/docs/insights/ConfigureViewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+<!-- Site Properities -->
+{% if page.title == "Página inicial" %}
+{% capture title_tag %}{{ site.tagline }}{% endcapture %}
+{% else %}
+{% capture title_tag %}{{ page.title }}{% endcapture %}
+{% endif %}
+<title>{{ title_tag }} &middot; {{ site.title }}</title>
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta name="keywords" content="{% if page.layout != 'post' %}{{ site.keywords }}{% else %}{{ page.tags | join: ', ' }}, {{ page.categories | join: ', ' }}{% endif %}">
 
-    <!-- TAGS GOOGLE -->
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-    <!-- Google Authorship Markup -->
-    <link rel="author" href="https://plus.google.com/117231578401378218759?rel=author">
+<!-- TAGS GOOGLE -->
 
-    <!-- Social: Google+ / Schema.org  -->
-    <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
-    <meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta itemprop="image" content="{{ "/assets/images/logos/logo_32_32.png" | prepend: site.baseurl | prepend: site.url }}"/>
+<!-- Google Authorship Markup -->
+<link rel="author" href="https://plus.google.com/117231578401378218759?rel=author">
 
-    <!-- https://developers.google.com/structured-data/testing-tool/ -->
-    <!-- Logotipos -->
-    <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Organization",
-      "url": "https://mozg.com.br/",
-      "logo": "https://mozg.com.br/assets/images/logos/logo.svg"
-    }
-    </script>
-    <!-- Contatos corporativos -->
-    <script type="application/ld+json">
-    { "@context" : "http://schema.org",
-      "@type" : "Organization",
-      "url" : "https://mozg.com.br/",
-      "contactPoint" : [
-        { "@type" : "ContactPoint",
-          "telephone" : "+5511977072339",
-          "contactType" : "customer service"
-        } ] }
-    </script>
-    <!-- Links de perfil social -->
-    <script type="application/ld+json">
-    { "@context" : "http://schema.org",
-      "@type" : "Organization",
-      "name" : "MOZG Comércio e Desenvolvimento de Sistemas de Informática",
-      "url" : "https://mozg.com.br/",
-      "sameAs" : [ "https://www.facebook.com/mozgbrasil",
-        "https://twitter.com/mozgbrasil",
-        "https://plus.google.com/117231578401378218759"]
-    }
-    </script>
-    <!-- Caixa de pesquisa de sitelinks -->
-    <script type="application/ld+json">
-    {
-       "@context": "http://schema.org",
-       "@type": "WebSite",
-       "url": "https://mozg.com.br/",
-       "potentialAction": {
-         "@type": "SearchAction",
-         "target": "https://mozg.com.br/search?q={search_term_string}",
-         "query-input": "required name=search_term_string"
-       }
-    }
-    </script>
+<!-- Social: Google+ / Schema.org  -->
+<meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+<meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta itemprop="image" content="{{ "/assets/images/logos/logo_32_32.png" | prepend: site.baseurl | prepend: site.url }}"/>
 
-    <!-- publisher -->
-    <link href="https://plus.google.com/117178438811960262290" rel="publisher" />
+<!-- https://developers.google.com/structured-data/testing-tool/ -->
+<!-- Logotipos -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "https://mozg.com.br/",
+  "logo": "https://mozg.com.br/assets/images/logos/logo.svg"
+}
+</script>
+<!-- Contatos corporativos -->
+<script type="application/ld+json">
+{ "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "url" : "https://mozg.com.br/",
+  "contactPoint" : [
+    { "@type" : "ContactPoint",
+      "telephone" : "+5511977072339",
+      "contactType" : "customer service"
+    } ] }
+</script>
+<!-- Links de perfil social -->
+<script type="application/ld+json">
+{ "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "MOZG Comércio e Desenvolvimento de Sistemas de Informática",
+  "url" : "https://mozg.com.br/",
+  "sameAs" : [ "https://www.facebook.com/mozgbrasil",
+    "https://twitter.com/mozgbrasil",
+    "https://plus.google.com/117231578401378218759"]
+}
+</script>
+<!-- Caixa de pesquisa de sitelinks -->
+<script type="application/ld+json">
+{
+   "@context": "http://schema.org",
+   "@type": "WebSite",
+   "url": "https://mozg.com.br/",
+   "potentialAction": {
+     "@type": "SearchAction",
+     "target": "https://mozg.com.br/search?q={search_term_string}",
+     "query-input": "required name=search_term_string"
+   }
+}
+</script>
 
-    <!-- Google+ JavaScript API -->
-    <script type="text/javascript" async defer
-  src="https://apis.google.com/js/platform.js?publisherid=117178438811960262290"></script>
+<!-- publisher -->
+<link href="https://plus.google.com/117178438811960262290" rel="publisher" />
 
-    <!-- snippet-page-level ads -->
-    <script type="text/javascript" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-7927094983433027",
-        enable_page_level_ads: true
-      });
-    </script>
+<!-- Google+ JavaScript API -->
+<script type="text/javascript" async defer
+src="https://apis.google.com/js/platform.js?publisherid=117178438811960262290"></script>
 
-    <!-- snippet-google-analytics -->
-    {% include snippet-google-analytics.html %}
+<!-- snippet-page-level ads -->
+<script type="text/javascript" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-7927094983433027",
+    enable_page_level_ads: true
+  });
+</script>
 
-    <!-- /TAGS GOOGLE -->
+<!-- snippet-google-analytics -->
+{% include snippet-google-analytics.html %}
 
-    <!-- TAGS TWITTER -->
+<!-- /TAGS GOOGLE -->
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="{{ site.url }}">
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    {% if page.image %}
-    <meta property="twitter:image" content="{{ site.url }}{{page.image }}">
-    <meta property="twitter:image:src" content="{{ site.url }}{{page.image }}">
-    {% else %}
-    <meta property="twitter:image" content="{{ "/assets/images/backgrounds/background.jpg" | prepend: site.baseurl | prepend: site.url }}">
-    <meta property="twitter:image:src" content="{{ "/assets/images/backgrounds/background.jpg" | prepend: site.baseurl | prepend: site.url }}">
-    {% endif %}
-    <meta name="twitter:creator" content="@{{ site.twitter_username }}">
+<!-- TAGS TWITTER -->
 
-    <!-- / TAGS TWITTER -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="{{ site.url }}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+{% if page.image %}
+<meta property="twitter:image" content="{{ site.url }}{{page.image }}">
+<meta property="twitter:image:src" content="{{ site.url }}{{page.image }}">
+{% else %}
+<meta property="twitter:image" content="{{ "/assets/images/backgrounds/background.jpg" | prepend: site.baseurl | prepend: site.url }}">
+<meta property="twitter:image:src" content="{{ "/assets/images/backgrounds/background.jpg" | prepend: site.baseurl | prepend: site.url }}">
+{% endif %}
+<meta name="twitter:creator" content="@{{ site.twitter_username }}">
 
-    <!-- TAGS FACEBOOK -->
+<!-- / TAGS TWITTER -->
 
-    <!-- https://developers.facebook.com/docs/web/tutorials/scrumptious/open-graph-object -->
-    {% if site.facebook_app %}
-    <meta property="fb:app_id" content="{{ site.facebook_app }}">
-    {% endif %}
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    {% if page.image %}
-    <meta property="og:image" content="{{ site.url }}{{page.image }}">
-    {% else %}
-    <meta property="og:image" content="{{ "/assets/images/logos/logo_32_32.png" | prepend: site.baseurl | prepend: site.url }}">
-    {% endif %}
-    <meta property="og:locale" content="pt_BR" />
-    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta property="og:site_name" content="{{ site.title }}">
-    {% if page.layout == 'post' %}
-    <meta property="og:type" content="article" />
-    {% else %}
-    <meta property="og:type" content="website" />
-    {% endif %}
+<!-- TAGS FACEBOOK -->
 
-    <!-- /TAGS FACEBOOK -->   
+<!-- https://developers.facebook.com/docs/web/tutorials/scrumptious/open-graph-object -->
+{% if site.facebook_app %}
+<meta property="fb:app_id" content="{{ site.facebook_app }}">
+{% endif %}
+<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+{% if page.image %}
+<meta property="og:image" content="{{ site.url }}{{page.image }}">
+{% else %}
+<meta property="og:image" content="{{ "/assets/images/logos/logo_32_32.png" | prepend: site.baseurl | prepend: site.url }}">
+{% endif %}
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:site_name" content="{{ site.title }}">
+{% if page.layout == 'post' %}
+<meta property="og:type" content="article" />
+{% else %}
+<meta property="og:type" content="website" />
+{% endif %}
 
-    {% if site.mode == 'dev' %}
+<!-- /TAGS FACEBOOK -->   
 
-    {% else %}
+{% if site.mode == 'dev' %}
 
-        {% comment %}
-        
-        <!-- sumome -->
-        <script src="//load.sumome.com/" data-sumo-site-id="f286e86d46628e3a3c294c988bb8f25ee8e517dd881ff60eb826c582aefb2d1f" async="async"></script>
-
-        <!-- onesignal -->
-        <link rel="manifest" href="/manifest.json">
-        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
-        <script>
-        var OneSignal = OneSignal || [];
-        OneSignal.push(["init", {
-            appId: "0178c901-be8a-4f5d-91c6-3af1dc5c8897",
-            autoRegister: false,
-            notifyButton: {
-                enable: true /* Set to false to hide */
-            }
-        }]);
-        </script>
-        <!-- onesignal -->
-        
-        {% endcomment %}
-
-    {% endif %}
-
-    <!-- THEME - https://www.google.com/analytics/tag-manager/ -->
+{% else %}
 
     {% comment %}
-    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;lang=en" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Roboto+Slab:300,400,500&amp;lang=en" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Product+Sans:400&amp;lang=en" rel="stylesheet">
-    <link href="//www.google.com/analytics/css/tag-manager.min.css" rel="stylesheet">
-    <link href="/assets/css/optimize.min.css" rel="stylesheet">
-    <link href="/assets/css/styles.css" rel="stylesheet">
+    
+    <!-- sumome -->
+    <script src="//load.sumome.com/" data-sumo-site-id="f286e86d46628e3a3c294c988bb8f25ee8e517dd881ff60eb826c582aefb2d1f" async="async"></script>
+
+    <!-- onesignal -->
+    <link rel="manifest" href="/manifest.json">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+    <script>
+    var OneSignal = OneSignal || [];
+    OneSignal.push(["init", {
+        appId: "0178c901-be8a-4f5d-91c6-3af1dc5c8897",
+        autoRegister: false,
+        notifyButton: {
+            enable: true /* Set to false to hide */
+        }
+    }]);
+    </script>
+    <!-- onesignal -->
+    
     {% endcomment %}
 
-    <script type="text/javascript">
-        var itens = [
-        'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:300,400,500|Product+Sans:400', 
-        '/assets/css/optimize.min.css', 
-        '/assets/css/styles.css'];
+{% endif %}
 
-        for (var i in itens) {
-            item = itens[i];
-            if (document.createStyleSheet){
-                document.createStyleSheet(item);
-            } else {
-                link = document.createElement("link");
-                link.type = "text/css";
-                link.rel = "stylesheet";
-                link.href = item;
-                document.getElementsByTagName("head")[0].appendChild(link);
-            }
-        }
-    </script>
-    <style type="text/css">
-    iframe.c2 {display:none;visibility:hidden}
-    svg.c1 {enable-background:new 0 0 23 15;}
-    </style>
+<!-- THEME -->
+<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css?6-5-0">
+<link rel="stylesheet" type="text/css" href="/assets/css/theme.css?6-5-0">
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js?6-5-0" async></script>
+<script type="text/javascript" async>
+if (!window.html5) {
+    document.write('<script src="/assets/js/html5.js?6-5-0><\/script>');
+}
+</script>
+<![endif]-->
+<script src="/assets/js/jquery.js?6-5-0"></script>
+<script src="/assets/js/velocity.js?6-5-0"></script>
+<!-- THEME -->
 
-
-    <script type="text/javascript">
-    (function(H){H.className=H.className.replace(/\bgoogle\b/,'google-js')})(document.documentElement)
-    </script>
-    <script type="text/javascript" async src="//www.gstatic.com/external_hosted/modernizr/v2_8_3/basic.js">
-    </script>
-    <script type="text/javascript">
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-PNT4KQ');
-    </script>
-    <!-- THEME - https://www.google.com/analytics/tag-manager/ -->
-
-    <!-- https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css -->
-    <link rel="stylesheet" href="/assets/css/highlight.css">
+<!-- https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css -->
+<link rel="stylesheet" href="/assets/css/highlight.css">
