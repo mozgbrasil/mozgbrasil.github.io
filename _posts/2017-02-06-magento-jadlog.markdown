@@ -23,7 +23,7 @@ Abaixo temos uma demonstração do funcionamento do módulo
         data-g-event="Home" data-g-label="For Enterprise"
         data-glue-modal-disabled-on-mobile="true" data-glue-modal-trigger=
         "magento-jadlog" href=
-        "/assets/images/docs/2017-02-06-magento-jadlog.pdf">
+        "https://youtu.be/MKy1x01ZSq8">
         <svg class="icon-fab-video"
             enable-background="new 0 0 32 32" height="24px" version="1.1" viewbox=
             "0 0 32 32" width="24px" x="0px" xml:space="preserve" xmlns=
@@ -39,7 +39,7 @@ Abaixo temos uma demonstração do funcionamento do módulo
     <div data-glue-modal="magento-jadlog" data-rs-modal="" id=
         "magento-jadlog">
         <iframe allowfullscreen="" frameborder="0" height="100%" src=
-            "/assets/images/docs/2017-02-06-magento-jadlog.pdf" type=
+            "https://youtu.be/MKy1x01ZSq8" type=
             "text/html" width="100%"></iframe>
     </div>
 </div>

@@ -135,7 +135,7 @@ Abaixo temos uma demonstração dessa ocorrência
         data-g-event="Home" data-g-label="For Enterprise"
         data-glue-modal-disabled-on-mobile="true" data-glue-modal-trigger=
         "magento-bradesco" href=
-        "/assets/images/docs/2016-04-26-ativando-zend-guard-loader.pdf">
+        "https://youtu.be/dGImDka87mo">
         <svg class="icon-fab-video"
             enable-background="new 0 0 32 32" height="24px" version="1.1" viewbox=
             "0 0 32 32" width="24px" x="0px" xml:space="preserve" xmlns=
@@ -151,7 +151,7 @@ Abaixo temos uma demonstração dessa ocorrência
     <div data-glue-modal="magento-bradesco" data-rs-modal="" id=
         "magento-bradesco">
         <iframe allowfullscreen="" frameborder="0" height="100%" src=
-            "/assets/images/docs/2016-04-26-ativando-zend-guard-loader.pdf" type=
+            "https://youtu.be/dGImDka87mo" type=
             "text/html" width="100%"></iframe>
     </div>
 </div>
