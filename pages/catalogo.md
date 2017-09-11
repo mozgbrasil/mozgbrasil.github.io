@@ -68,13 +68,11 @@ my_array:
         <div class="blog-list row">
             {% for my_array in page.my_array %}
             <div class="blog-list__item column col-md-4 col-xs-12  text-center">
-                <a href="{{ my_array.url }}" target="_blank" class="blog-list__item-link link--no-hover">
                 <span class="blog-list__item-image-container">
                 <img data-src="/assets/images/rocket.png" alt title class="lazy image--rounded image--margin"/>
                 </span>
                 <span class="blog-list__item-title">{{ my_array.title }}</span>
-                <span class="blog-list__item-summary">{{ my_array.summary }} Clique aqui para acessar o Manual</span>
-                </a>
+                <span class="blog-list__item-summary">{{ my_array.summary }} <a href="{{ my_array.url | replace: '#', '-PHP_54#' }}" target="_blank" class="blog-list__item-link link--no-hover">PHP 5.4-5.5</a> <a href="{{ my_array.url | replace: '#', '-PHP_56#' }}" target="_blank" class="blog-list__item-link link--no-hover">PHP 5.6-7.0</a></span>
             </div>
             {% endfor %}
         </div>
