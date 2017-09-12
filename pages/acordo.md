@@ -7,7 +7,6 @@ excerpt: "Para utilizar o(s) módulo(s) da CEREBRUM é necessário aceitar esse 
 ---
 
 [magento-download]: https://www.magentocommerce.com/download
-[ativando-zend-guard-loader]: /zend%20guard%20loader/ativando-zend-guard-loader
 
 # ACORDO DE LICENÇA DO USUÁRIO FINAL
 
@@ -20,9 +19,9 @@ Este Acordo de Licença do Usuário Final poderá ser atualizado ou editado à q
 
 # Criptografia do Código Fonte
 
-- Os módulos desenvolvidos pela CEREBRUM são comercializados com o código-fonte encriptado usando o "Zend Guard Encoder".
-- O "Zend Guard Encoder" encripta o código-fonte de scripts php e seus derivados, impossibilitando a manipulação do código-fonte.
-- Para funcionamento dos módulos desenvolvidos pela CEREBRUM é necessário estar ativo no servidor de hospedagem o componente "[Zend Guard Loader][ativando-zend-guard-loader]".
+- Os módulos desenvolvidos pela CEREBRUM são comercializados com o código-fonte encriptado usando o "ionCube PHP Encoder".
+- O "ionCube PHP Encoder" encripta o código-fonte de scripts php e seus derivados, impossibilitando a manipulação do código-fonte.
+- Para funcionamento dos módulos desenvolvidos pela CEREBRUM é necessário estar ativo no servidor de hospedagem o componente "ionCube PHP Loader".
 
 # Licença Comercial
 
