@@ -28,64 +28,11 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
     apt-cache show php-gd ;\
     apt search php7.0-*
 
-# TODO http://askubuntu.com/questions/761713/how-can-i-downgrade-from-php-7-to-php-5-6-on-ubuntu-16-04 
-# Ubuntu 16.04 - Local Server - PHP 7
+# TODO http://askubuntu.com/questions/761713/how-can-i-downgrade-from-php-7-to-php-5-6-on-ubuntu-16-04
 
-    sudo apt install mysql-server mysql-client php php-cli php-curl php-sqlite3 php-mcrypt php-mbstring php-gd php-intl php-xml php-zip php-soap php-common php-gettext php-cgi libapache2-mod-php php-pear php-fpm libapache2-mod-fastcgi memcached php-memcache phpmyadmin
+# Ubuntu 17.04 - Local Server - PHP 5.6
 
-# Ubuntu 16.04 - Local Server - PHP 5.6
-
-    sudo apt install mysql-server mysql-client php5.6 php5.6-cli php5.6-curl php5.6-sqlite3 php5.6-mcrypt php5.6-mbstring php5.6-gd php5.6-intl php5.6-xsl php5.6-zip php5.6-soap php5.6-common php5.6-json php5.6-mysql php-gettext php5.6-cgi libapache2-mod-php5.6 php-pear php5.6-fpm php5.6-bcmath libapache2-mod-fastcgi memcached php-memcache phpmyadmin
-
-# Ubuntu 14.04 - Amazon Server
-
-    sudo apt-get install mysql-server-5.6 mysql-client-5.6 mysql-client-core-5.6 apache2 php5 php5-cli php5-curl php5-sqlite php5-mcrypt php5-gd php5-intl php5-xsl php5-common php5-mysql php5-dev php5-cgi libapache2-mod-php5 php5-fpm libapache2-mod-fastcgi memcached php5-memcache phpmyadmin p7zip-full unzip git
-
-# FIX: Apache Enable Module
-
-# NOTICE: To enable PHP 7.0 FPM in Apache2 do:
-# NOTICE: a2enmod proxy_fcgi setenvif
-# NOTICE: a2enconf php7.0-fpm
-
-# NOTICE: To enable PHP 5.6 FPM in Apache2 do:
-# NOTICE: a2enmod proxy_fcgi setenvif
-# NOTICE: a2enconf php5.6-fpm
-
-    sudo a2enconf php7.0-cgi
-
-    # sudo a2enconf php5.6-fpm
-
-    # sudo a2disconf php7.0-cgi && sudo service apache2 restart
-
-    sudo a2enmod proxy_fcgi setenvif actions rewrite
-
-    sudo nano /etc/apache2/sites-available/000-default.conf
-
-        <Directory "/var/www/html">
-        AllowOverride All
-        </Directory>
-
-# Config PHP-FPM (FPM : FastCGI Process Manager
-# http://www.server-world.info/en/note?os=Ubuntu_16.04&p=httpd&f=16
-
-    sudo nano /etc/php/7.0/fpm/pool.d/www.conf
-
-        # line 36: change
-
-        listen = 127.0.0.1:9000
-
-    sudo nano /etc/apache2/sites-enabled/000-default.conf
-
-        # add into <VirtualHost> - </VirtualHost>
-
-                <FilesMatch "\.php$">
-                    SetHandler "proxy:fcgi://127.0.0.1:9000/"
-                </FilesMatch>
-        </VirtualHost>
-
-    ## FIX: PHP Fatal error:  Call to undefined function mcrypt_module_open
-
-    sudo php5enmod mcrypt  
+    sudo apt install mysql-server mysql-client php5.6 php5.6-cli php5.6-curl php5.6-sqlite3 php5.6-mcrypt php5.6-mbstring php5.6-gd php5.6-intl php5.6-xsl php5.6-zip php5.6-soap php5.6-common php5.6-json php5.6-mysql php-gettext php5.6-cgi libapache2-mod-php5.6 php-pear php5.6-fpm php5.6-bcmath memcached php-memcache phpmyadmin
 
 # Symlink WWW
 
@@ -97,17 +44,64 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
     curl -I --compress http://127.0.0.1/public_html/phpinfo.php ;\
     GET -Used http://127.0.0.1/public_html/phpinfo.php
 
+# FIX: Apache Enable Module
+
+#NOTICE: Not enabling PHP 5.6 FPM by default.
+#NOTICE: To enable PHP 5.6 FPM in Apache2 do:
+#NOTICE: a2enmod proxy_fcgi setenvif
+#NOTICE: a2enconf php5.6-fpm
+#NOTICE: You are seeing this message because you have apache2 package installed.
+
+    sudo a2enmod proxy_fcgi setenvif actions rewrite
+
+    sudo a2enconf php5.6-fpm
+
+    sudo nano /etc/apache2/sites-available/000-default.conf
+
+        <Directory "/var/www/html">
+        AllowOverride All
+        </Directory>
+
+# Config PHP-FPM (FPM : FastCGI Process Manager
+# http://www.server-world.info/en/note?os=Ubuntu_16.04&p=httpd&f=16
+
+    sudo nano /etc/apache2/sites-enabled/000-default.conf
+
+        # add into <VirtualHost> - </VirtualHost>
+
+                <FilesMatch "\.php$">
+                    SetHandler "proxy:fcgi://127.0.0.1:9000/"
+                </FilesMatch>
+        </VirtualHost>
+
+    sudo nano /etc/php/5.6/fpm/pool.d/www.conf
+
+        # line 36: change
+
+        listen = 127.0.0.1:9000
+
+## FIX: PHP Fatal error:  Call to undefined function mcrypt_module_open
+
+    sudo php5enmod mcrypt  
+
+# To activate the new configuration, you need to run:
+  sudo systemctl restart apache2
+
 # FIX: Apache
 
-    No Magento2 no processo de instalação é exibido o retorno 
+    No Magento2 no processo de instalação é exibido o retorno
 
-    "$HTTP_RAW_POST_DATA is deprecated from PHP 5.6 onwards and will stop the installer from running. Please open your php.ini file and set always_populate_raw_post_data to -1.", 
-    pesquise por 
-    ";always_populate_raw_post_data = -1" 
+    "$HTTP_RAW_POST_DATA is deprecated from PHP 5.6 onwards and will stop the installer from running. Please open your php.ini file and set always_populate_raw_post_data to -1.",
+    pesquise por
+    ";always_populate_raw_post_data = -1"
     e retire o comentário ";"
 
         sudo nano /etc/php/7.0/cli/php.ini
         sudo nano /etc/php/5.6/apache2/php.ini
+
+        ou
+
+        sudo nano /etc/php/5.6/fpm/php.ini
 
     Atualize para
 
@@ -124,26 +118,9 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
     Atualize "KeepAliveTimeout 5" para "KeepAliveTimeout 2"
 
-# FIX: Magento2
+# FIX: Apache - Acesso aos arquivos de log
 
     sudo usermod -g www-data $USER
-
-# Zend Guard Loader
-
-    cd ~/dados/public_html ;\
-    wget http://downloads.zend.com/guard/7.0.0/zend-loader-php5.6-linux-x86_64.tar.gz ;\
-    tar -zxvf zend-loader-php5.6-linux-x86_64.tar.gz
-
-    sudo nano /etc/php/5.6/cli/php.ini
-    sudo nano /etc/php/5.6/apache2/php.ini
-
-    ou 
-
-    sudo nano /etc/php/5.6/fpm/php.ini
-
-        [zendloader]
-        zend_extension=/home/marcio/dados/public_html/zend-loader-php5.6-linux-x86_64/ZendGuardLoader.so
-        zend_extension=/home/marcio/dados/public_html/zend-loader-php5.6-linux-x86_64/opcache.so
 
 # FIX: pdo_mysql extension is not installed
 
@@ -166,9 +143,9 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
     echo -e "\e[1;31m --(Processo 6)-- \e[0m" ;\
     sudo service apache2 restart ;\
     echo -e "\e[1;31m --(Processo 7)-- \e[0m" ;\
-    sudo service php7.0-fpm restart ;\
+    sudo service php5.6-fpm restart ;\
     echo -e "\e[1;31m --(Processo 8)-- \e[0m" ;\
-    sudo service php7.0-fpm status
+    sudo service php5.6-fpm status
 
 # Versions
 
@@ -197,7 +174,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 # Local Desktop
 
-    sudo apt install build-essential ubuntu-restricted-extras ubuntu-sdk ubuntu-make juju python-software-properties filezilla git nautilus-dropbox p7zip-full keepassx meld curl gufw gimp gimp-plugin-registry shutter ffmpeg lame links links2 elinks lynx openssh-server ruby-dev nodejs chromium-browser inkscape jq npm nmap ntp vlc browser-plugin-vlc gedit-plugins kdenlive kde-runtime pavucontrol gifsicle && sudo service ssh start
+    sudo apt install build-essential ubuntu-restricted-extras python-software-properties filezilla git nautilus-dropbox p7zip-full keepassx meld curl gufw gimp gimp-plugin-registry shutter ffmpeg lame links links2 elinks lynx openssh-server ruby-dev nodejs chromium-browser inkscape jq npm nmap ntp vlc browser-plugin-vlc gedit-plugins kdenlive kde-runtime pavucontrol gifsicle && sudo service ssh start
 
     # vlc http://avenard.org/iptv/playlist-tpg-vlc.m3u
 
@@ -231,7 +208,7 @@ Instalar o Pulse Audio Volume Control e configurar
 
 # Jekyll
 
-    sudo gem install jekyll && sudo gem install github-pages && sudo gem install rouge && jekyll -v && ruby --version && gem --version ;\
+    sudo gem install jekyll && sudo gem install github-pages && sudo gem install rouge && jekyll -v && ruby --version && gem --version
 
 # Google Chrome
 
