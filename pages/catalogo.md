@@ -39,6 +39,9 @@ my_array:
   - title: 'Itaú'
     url: 'https://github.com/mozgbrasil/magento-itau#mozgitau'
     summary: ''
+    - title: 'PagSeguro'
+      url: 'https://github.com/mozgbrasil/magento-pagseguro#mozgpagseguro'
+      summary: ''
   - title: 'Total ClearSale & ClearSale Start'
     url: 'https://github.com/mozgbrasil/magento-clearsale#mozgclearsale'
     summary: ''
@@ -78,4 +81,3 @@ my_array:
         </div>
     </div>
 </div>
-
