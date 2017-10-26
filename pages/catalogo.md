@@ -55,13 +55,13 @@ my_array:
     url: 'https://github.com/mozgbrasil/magento-checkout-filters#mozgcheckoutfilters'
     summary: ''
   - title: 'Pacote de tradução (Free)'
-    url: 'https://github.com/mozgbrasil/magento-locale-pt_br#mozgmagentolocale'
+    url: 'https://github.com/mozgbrasil/magento-locale-pt_br'
     summary: ''
   - title: 'Estados do Brasil (Free)'
-    url: 'https://github.com/mozgbrasil/magento-brasil-regions#mozgbrregions'
+    url: 'https://github.com/mozgbrasil/magento-brasil-regions'
     summary: ''
   - title: 'Checkout da compra em 1 passo (Free)'
-    url: 'https://github.com/mozgbrasil/magento-iwd-opc#mozgiwd_opc'
+    url: 'https://github.com/mozgbrasil/magento-iwd-opc'
     summary: ''
 
 ---
