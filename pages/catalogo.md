@@ -61,7 +61,7 @@ my_array:
     url: 'https://github.com/mozgbrasil/magento-brasil-regions#mozgbrregions'
     summary: ''
   - title: 'Checkout da compra em 1 passo (Free)'
-    url: 'https://github.com/mozgbrasil/magento-iwd-opc#mozgiwd_opc'
+    url: 'https://github.com/mozgbrasil/magento-iwd-opc#iwdopc'
     summary: ''
 
 ---
