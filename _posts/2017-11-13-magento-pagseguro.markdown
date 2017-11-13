@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Magento Banco do Brasil"
-date:   2017-06-22 18:33:43
+title:  "Magento PagSeguro"
+date:   2017-11-13 10:41:12
 category: magento
 author: Marcio Amorim
-tags: [magento, bradesco]
-excerpt: "Veja as funcionalidades do módulo Magento Banco do Brasil, contemplando Boleto e Transferência Eletrônica"
+tags: [magento, pagseguro]
+excerpt: "Veja as funcionalidades do módulo Magento PagSeguro"
 ---
 
-<h1>Magento Bradesco</h1>
+<h1>Magento PagSeguro</h1>
 
 Instale nosso(s) módulo(s) em seu(s) projeto(s) sem compromisso
 
@@ -22,7 +22,7 @@ Abaixo temos uma demonstração do funcionamento do módulo
     <a class="fab google-red" data-g-action="Anthem - Video Start"
         data-g-event="Home" data-g-label="For Enterprise"
         data-glue-modal-disabled-on-mobile="true" data-glue-modal-trigger=
-        "magento-bradesco" href=
+        "magento-pagseguro" href=
         "https://youtu.be/1D9iz-nbuos">
         <svg class="icon-fab-video"
             enable-background="new 0 0 32 32" height="24px" version="1.1" viewbox=
@@ -36,8 +36,8 @@ Abaixo temos uma demonstração do funcionamento do módulo
         <img alt="" class="icon-fab-video" height="24" src=
             "//www.google.com/ads/images/icons/icon-fab-video.png" width="24">
     </a>
-    <div data-glue-modal="magento-bradesco" data-rs-modal="" id=
-        "magento-bradesco">
+    <div data-glue-modal="magento-pagseguro" data-rs-modal="" id=
+        "magento-pagseguro">
         <iframe allowfullscreen="" frameborder="0" height="100%" src=
             "https://youtu.be/1D9iz-nbuos" type=
             "text/html" width="100%"></iframe>
