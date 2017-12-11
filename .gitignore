@@ -1,6 +1,6 @@
 /.git
 /node_modules
-README_Dev.md
+*.dev.md
 .DS_Store
 _site
 _drafts
