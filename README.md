@@ -13,11 +13,11 @@ Atender o mercado de módulos para Magento oferecendo um excelente suporte
 
 ## Contribuição
 
-Caso queira contribuir para melhoria da documentação de um Fork no repositorio e envie um pull request ou edite no github
+Caso queira contribuir para melhoria da documentação de um Fork no repositório e envie um pull request ou edite no github
 
 ## Característica técnica
 
-### Node -> 
+### Node ->
 
     npm update
 
@@ -87,7 +87,7 @@ https://archive.org/web/
 
 https://cards-dev.twitter.com/validator
 
-### 
+###
 
 https://wiredcraft.com/blog/make-jekyll-fast/
 
