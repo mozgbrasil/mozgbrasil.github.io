@@ -50,7 +50,7 @@ Como recomendado é sugerido sempre manter o projeto Magento atualizado devido a
 
 É recomendado nunca alterar os arquivos nativo do Magento
 
-Mas como forma temporária pode ser usado o validador do Magento 1.9.3.1, nesse caso renomeie o arquivo em 
+Mas como forma temporária pode ser usado o validador do Magento 1.9.3.1, nesse caso renomeie o arquivo em
 
 /js/prototype/validation.js
 
@@ -144,6 +144,7 @@ Obs.
 No Windows ou Mac sugiro usar o programa UltraEdit para edição do arquivo, dessa forma será mantido a codificação do arquivo em UTF-8
 
 # Mage_Core_Exception: The requested Payment Method is not available. in /app/Mage.php:603
+# A forma de pagamento selecionada não está disponível
 
 Esse erro é ocasionado caso o módulo relacionado ao método de pagamento esteja ausente no projeto
 
@@ -232,7 +233,7 @@ Comentando a antiga variavel e adicionando a nova
 
 Isso é necessário pois no ambiente PHP WEB foi exibido a versão 5.6 e no ambiente CLI exibido a versão 5.4
 
-Portanto quando executado o comando 
+Portanto quando executado o comando
 
     php -v
 
@@ -250,17 +251,17 @@ Execute o seguinte comando no terminal do seu servidor
 
     tail -f /home/marcio/var/php-fpm/error.log
 
-Acesse o projeto até gerar o erro 
+Acesse o projeto até gerar o erro
 
-Será exibido no log a causa do erro 
+Será exibido no log a causa do erro
 
-Efetuando pesquisa sobre o erro geralmente é encontrado a solução 
+Efetuando pesquisa sobre o erro geralmente é encontrado a solução
 
 Agora é somente aplicar a devida correção sobre o seu servidor
 
 ### Habilitar exibição do erro no Magento
 
-No magento edite o arquivo index.php e atualize a linha 
+No magento edite o arquivo index.php e atualize a linha
 
 DE
 
@@ -467,7 +468,7 @@ Com o compilador desligado
 
 # Forçar Recompilação do Magento pelo código
 
-A pasta que fica localizada dentro da pasta /includes chamada de SRC é onde se encontra todos os arquivos compilados pelo Magento, para forçar pelo código uma nova compilação do Magento, basta renomear essa pasta ou removela. 
+A pasta que fica localizada dentro da pasta /includes chamada de SRC é onde se encontra todos os arquivos compilados pelo Magento, para forçar pelo código uma nova compilação do Magento, basta renomear essa pasta ou removela.
 Obs: (Recomendo antes só renomear e se tudo der certo e uma nova pasta SRC for criada automaticamente, ai sim pode remover ela)
 
 ## Obs. no uso do Compiler do Magento
@@ -490,8 +491,8 @@ Assim como qualquer aplicação PHP moderna o Magento armazena a maioria de suas
 
 Assim, para a depuração de problemas no Magento é útil saber algumas coisas:
 
-1. Todas as consultas do MySQL podem ser registrados e analisados. 
-Para este efeito, abra o arquivo lib/Varien/Db/Adapter/Pdo/Mysql.php e altere o valor da propriedade protegida $_debug para true, também a propriedade protegida $_logAllQuerie para true. 
+1. Todas as consultas do MySQL podem ser registrados e analisados.
+Para este efeito, abra o arquivo lib/Varien/Db/Adapter/Pdo/Mysql.php e altere o valor da propriedade protegida $_debug para true, também a propriedade protegida $_logAllQuerie para true.
 
 Você também pode alterar o valor de US $_logQueryTime que é especialmente útil quando a depuração lentidão. Uma vez que você fizer essa alteração todas as consultas serão registradas no arquivo var/debug/sql.txt
 
@@ -570,7 +571,7 @@ Para alterar o charset no Apache no Ubuntu tente esse procedimento
 
     sudo nano /etc/apache2/conf.d/charset
 
-ou 
+ou
 
     grep -ri 'AddDefaultCharset' /etc/apache2
 
