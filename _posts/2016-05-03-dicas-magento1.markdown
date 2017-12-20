@@ -111,58 +111,6 @@ Configure o projeto de teste para utilizar esse novo banco de dados e efetue os 
 
 Para comparação de scripts eu utilizo a Software Meld
 
-# Onde os atributos de clientes ficam armazenadaos ?
-
-É nativo do Magento que na tabela `eav_attribute` esteja registrado atributos e na tabela `eav_attribute_option_value` os registros para valores do tipo option "select"
-
-    SELECT * FROM `eav_attribute` WHERE `attribute_code` = 'rg';
-
-    SELECT * FROM `customer_eav_attribute` WHERE `attribute_id` = 218;
-
-    SELECT * FROM `customer_entity_varchar` WHERE `attribute_id` = 218;
-
-# Modificando a tradução do módulo para o template
-
-Cada módulo tem o seu arquivo de tradução com a mesma nomenclatura do módulo
-
-Os arquivos de tradução para português do Brasil no Magento é armazenado no diretório  
-
-    /app/locale/pt_BR/
-
-Recomendo não editar os arquivos nesse diretório pois em uma nova atualização de módulo esse arquivo deve ser atualizado com as informações do módulo
-
-Na necessidade de trocar algum item
-
-Edite o arquivo translate.csv presente no diretório do seu template para ser exibido um novo resultado
-
-    /app/design/frontend/default/default/locale/pt_BR/translate.csv
-
-Caso não exista a estrutura "/locale/pt_BR/translate.csv" em seu template apenas crie o arquivo nessa estrutura de diretório
-
-Obs.
-
-No Windows ou Mac sugiro usar o programa UltraEdit para edição do arquivo, dessa forma será mantido a codificação do arquivo em UTF-8
-
-# Mage_Core_Exception: The requested Payment Method is not available. in /app/Mage.php:603
-# A forma de pagamento selecionada não está disponível
-
-Esse erro é ocasionado caso o módulo relacionado ao método de pagamento esteja ausente no projeto
-
-em
-
-http://magento.stackexchange.com/questions/24307/the-requested-payment-method-is-not-available-on-order-details-page
-
-vemos  que temos 2 opções:
-
-- usar o módulo relacionado ao método de pagamento
-- alterar o relacionamento do método a um módulo via banco de dados
-
-Simulei um exemplo em meu ambiente local, pois não pretendo usar o módulo Cerebrum_Telencephalon e quero usar somente o novo pacote Mozg
-
-    SELECT * FROM `sales_flat_order_payment` WHERE `method` like '%cerebrum%' ;
-
-    UPDATE `sales_flat_order_payment` SET `method`= 'mozg_cielo_cc'  WHERE `method` = 'cerebrum_cielo';
-
 # Login no backend não retorna nada
 
 A empresa de hospedagem aumentou o espaço em disco e funcionou como esperado
