@@ -1,7 +1,10 @@
-/.git
-/node_modules
-*.dev.md
-.DS_Store
+node_modules
 _site
 _drafts
+*.dev.md
+.DS_Store
 .sass-cache
+*.gem
+Gemfile.lock
+assets/**/*.html
+assets/**/*.md

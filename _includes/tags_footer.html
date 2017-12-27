@@ -3,16 +3,13 @@
 {% include snippet-google-tag-manager.html %}
 
 {% if page.path contains '_posts' %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.1/anchor.js"></script>
+<!-- http://bryanbraun.github.io/anchorjs/#basic-usage -->
+<script src="{{ "assets/javascript/anchor-js/anchor.min.js" | relative_url }}"></script>
 <script>
-/* http://bryanbraun.github.io/anchorjs/#basic-usage */
-$( document ).ready(function() {
-    anchors.add('.article-body h1, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6');
-    /* anchors.add('.article-body > p'); */
-});
+anchors.add('.article-body h1, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6');
 </script>
 {% endif %}
-{% comment %}
-{% endcomment %}
 
+{% comment %}
 <script src="/assets/js/internal/utils.js"></script>
+{% endcomment %}

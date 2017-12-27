@@ -7,16 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
 <!-- Site Properities -->
-{% if page.title == "Página inicial" %}
-{% capture title_tag %}{{ site.tagline }}{% endcapture %}
-{% else %}
-{% capture title_tag %}{{ page.title }}{% endcapture %}
-{% endif %}
-<title>{{ title_tag }} &middot; {{ site.title }}</title>
-<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-<meta name="keywords" content="{% if page.layout != 'post' %}{{ site.keywords }}{% else %}{{ page.tags | join: ', ' }}, {{ page.categories | join: ', ' }}{% endif %}">
 
-<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+{% seo %}
+
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -30,52 +23,6 @@
 <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
 <meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 <meta itemprop="image" content="{{ "/assets/images/logos/logo_32_32.png" | prepend: site.baseurl | prepend: site.url }}"/>
-
-<!-- https://developers.google.com/structured-data/testing-tool/ -->
-<!-- Logotipos -->
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Organization",
-  "url": "https://mozg.com.br/",
-  "logo": "https://mozg.com.br/assets/images/logos/logo.svg"
-}
-</script>
-<!-- Contatos corporativos -->
-<script type="application/ld+json">
-{ "@context" : "http://schema.org",
-  "@type" : "Organization",
-  "url" : "https://mozg.com.br/",
-  "contactPoint" : [
-    { "@type" : "ContactPoint",
-      "telephone" : "+5511977072339",
-      "contactType" : "customer service"
-    } ] }
-</script>
-<!-- Links de perfil social -->
-<script type="application/ld+json">
-{ "@context" : "http://schema.org",
-  "@type" : "Organization",
-  "name" : "MOZG Comércio e Desenvolvimento de Sistemas de Informática",
-  "url" : "https://mozg.com.br/",
-  "sameAs" : [ "https://www.facebook.com/mozgbrasil",
-    "https://twitter.com/mozgbrasil",
-    "https://plus.google.com/117231578401378218759"]
-}
-</script>
-<!-- Caixa de pesquisa de sitelinks -->
-<script type="application/ld+json">
-{
-   "@context": "http://schema.org",
-   "@type": "WebSite",
-   "url": "https://mozg.com.br/",
-   "potentialAction": {
-     "@type": "SearchAction",
-     "target": "https://mozg.com.br/search?q={search_term_string}",
-     "query-input": "required name=search_term_string"
-   }
-}
-</script>
 
 <!-- publisher -->
 <link href="https://plus.google.com/117178438811960262290" rel="publisher" />
@@ -137,50 +84,8 @@ src="https://apis.google.com/js/platform.js?publisherid=117178438811960262290"><
 <meta property="og:type" content="website" />
 {% endif %}
 
-<!-- /TAGS FACEBOOK -->   
-
-{% if site.mode == 'dev' %}
-
-{% else %}
-
-    {% comment %}
-    
-    <!-- sumome -->
-    <script src="//load.sumome.com/" data-sumo-site-id="f286e86d46628e3a3c294c988bb8f25ee8e517dd881ff60eb826c582aefb2d1f" async="async"></script>
-
-    <!-- onesignal -->
-    <link rel="manifest" href="/manifest.json">
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
-    <script>
-    var OneSignal = OneSignal || [];
-    OneSignal.push(["init", {
-        appId: "0178c901-be8a-4f5d-91c6-3af1dc5c8897",
-        autoRegister: false,
-        notifyButton: {
-            enable: true /* Set to false to hide */
-        }
-    }]);
-    </script>
-    <!-- onesignal -->
-    
-    {% endcomment %}
-
-{% endif %}
+<!-- /TAGS FACEBOOK -->
 
 <!-- THEME -->
-<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css?6-5-0">
-<link rel="stylesheet" type="text/css" href="/assets/css/theme.css?6-5-0">
-<!--[if IE]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js?6-5-0" async></script>
-<script type="text/javascript" async>
-if (!window.html5) {
-    document.write('<script src="/assets/js/html5.js?6-5-0><\/script>');
-}
-</script>
-<![endif]-->
-<script src="/assets/js/jquery.js?6-5-0"></script>
-<script src="/assets/js/velocity.js?6-5-0"></script>
+<link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
 <!-- THEME -->
-
-<!-- https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css -->
-<link rel="stylesheet" href="/assets/css/highlight.css">

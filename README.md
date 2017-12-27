@@ -23,7 +23,7 @@ Caso queira contribuir para melhoria da documentação de um Fork no repositóri
 
 ### Jekyll -> Execução em ambiente local
 
-    cd ~/dados/public_html/git/mozgbrasil.github.io
+    cd ~/dados/public_html/git/automatic/mozgbrasil.github.io
 
     jekyll serve
 

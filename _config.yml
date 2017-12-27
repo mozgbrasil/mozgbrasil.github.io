@@ -1,10 +1,35 @@
+#
+
+exclude:
+  - node_modules
+  - script
+
+sass:
+  style: :compressed
+
+theme: jekyll-theme-primer
+show_downloads: true
+#theme: jekyll-theme-hacker
+
+github:
+  private: false
+  license:
+    name: MIT
+  source:
+    branch: "master"
+    path: "/"
+  repository_url: "https://github.com/pages-themes/primer"
+
+title: Jekyll Theme Primer
+description: Primer is a Jekyll theme for GitHub Pages
+
 # Build settings
 
 highlighter: rouge
 markdown: kramdown
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 paginate: 30
 paginate_path: "page:num"
 layout: default
@@ -12,11 +37,17 @@ permalink: /:categories/:title
 excerpt_separator: "[-----]"
 
 # html minify
+## http://jch.penibelst.de/
+
 compress_html:
   clippings: all
   comments: all
-  endings: []
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: false
   profile: true
+  startings: [html, head, body]
 
 # Site settings
 
@@ -56,14 +87,5 @@ google_map_zoom: 16               # 1=Global zoom 18=Street Level
 google_map_view: satellite        # hybrid | satellite | roadmap
 google_map_height: 450            # Default map height. Width adjusts to container.
 
-## http://jch.penibelst.de/
 
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
-  ignore:
-    envs: [local]
-  blanklines: false
-  profile: false
-  startings: [html, head, body]
+github: [metadata]

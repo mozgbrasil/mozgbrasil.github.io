@@ -1,12 +1,12 @@
-	{% if site.google_analytics_ua %}
-	<!-- https://developers.google.com/analytics/devguides/collection/analyticsjs/?hl=pt-br -->
-	<!-- Google Analytics -->
-	<script>
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', '{{ site.google_analytics_ua }}', 'auto');
-	ga('send', 'pageview');
-	ga('require', '{{ title_tag }}');
-	</script>
-	<script async src='//www.google-analytics.com/analytics.js'></script>
-	<!-- End Google Analytics -->
-	{% endif %}
+{% if site.google_analytics_ua %}
+<!-- https://developers.google.com/analytics/devguides/collection/analyticsjs/?hl=pt-br -->
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', '{{ site.google_analytics_ua }}', 'auto');
+ga('send', 'pageview');
+ga('require', '{{ title_tag }}');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+{% endif %}
