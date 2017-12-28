@@ -10,7 +10,7 @@ sass:
 #theme: jekyll-theme-minimal
 #theme: jekyll-theme-modernist
 #remote_theme: jekyll-theme-mozg
-remote_theme: mozgbrasil/jekyll-theme-mozg
+#remote_theme: mozgbrasil/jekyll-theme-mozg
 
 # Build settings
 

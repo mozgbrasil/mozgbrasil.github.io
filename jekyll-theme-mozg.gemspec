@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.homepage      = "https://github.com/mozgbrasil/mozgbrasil.github.io"
   s.summary       = "Mozg is a Jekyll theme for GitHub Pages based on GitHub's Primer styles"
   s.metadata    = { "source_code_uri" => "https://github.com/mozgbrasil/mozgbrasil.github.io" }
-  spec.metadata["plugin_type"] = "theme"
+  s.metadata["plugin_type"] = "theme"
 
   s.files         = `git ls-files -z`.split("\x0").select do |f|
     f.match(%r!^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md)|$)))!i)
