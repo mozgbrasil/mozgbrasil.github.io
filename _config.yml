@@ -11,6 +11,18 @@ exclude:
 #theme: jekyll-theme-modernist
 theme: jekyll-theme-mozg
 
+github:
+  private: false
+  license:
+    name: MIT
+  source:
+    branch: "master"
+    path: "/"
+  repository_url: "https://github.com/mozgbrasil/mozgbrasil.github.io"
+
+title: Jekyll Theme Primer
+description: Primer is a Jekyll theme for GitHub Pages
+
 # Build settings
 
 highlighter: rouge
