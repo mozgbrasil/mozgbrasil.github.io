@@ -69,7 +69,8 @@ deploy () {
 
     echo -e "${ONWHITE} - ${NORMAL}"
 
-    # Install NPM dependencies to _sass directory and symlink to node_modules
+    TERMINAL_INFO='Install NPM dependencies to _sass directory and symlink to node_modules'
+    echo -e "${YELLOW} '${TERMINAL_INFO}' ${NORMAL}"
 
     pwd
 
@@ -81,15 +82,21 @@ deploy () {
     cp -r node_modules _sass
     #rm -rf node_modules
 
-    # Normalize.css is distributed as CSS, which Sass dosen't like. Convert to scss.
+    TERMINAL_INFO="Normalize.css is distributed as CSS, which Sass dosen't like. Convert to scss."
+    echo -e "${YELLOW} '${TERMINAL_INFO}' ${NORMAL}"
+
     if test -e "_sass/normalize.css/normalize.css"; then
       mv -f _sass/normalize.css/normalize.css _sass/normalize.css/normalize.scss
     fi
 
-    # Create rouge stylesheet
+    TERMINAL_INFO="Create rouge stylesheet"
+    echo -e "${YELLOW} '${TERMINAL_INFO}' ${NORMAL}"
+
     rougify style github > _sass/rouge.scss
 
-    # Add our own theme scss file for consistency of naming in `assets/style.scss`
+    TERMINAL_INFO="Add our own theme scss file for consistency of naming in `assets/style.scss`"
+    echo -e "${YELLOW} '${TERMINAL_INFO}' ${NORMAL}"
+
     content='
 @import "primer-support/index.scss";
 @import "primer-base/index.scss";
@@ -100,7 +107,9 @@ deploy () {
 '
     echo "$content" >> _sass/jekyll-theme-primer.scss
 
-    # Add our own theme scss file for consistency of naming in `assets/style.scss`
+    TERMINAL_INFO="Add our own theme scss file for consistency of naming in `assets/style.scss`"
+    echo -e "${YELLOW} '${TERMINAL_INFO}' ${NORMAL}"
+
     content='
 //@import "bootstrap/dist/css/bootstrap.css";
 @import "bootstrap.css";
@@ -108,6 +117,9 @@ deploy () {
 @import "rouge";
 '
     echo "$content" >> _sass/jekyll-theme-mozg.scss
+
+    TERMINAL_INFO="Copys"
+    echo -e "${YELLOW} '${TERMINAL_INFO}' ${NORMAL}"
 
     cp -r node_modules/bootstrap assets/css
 
@@ -120,6 +132,9 @@ deploy () {
     find assets/ -type f -name '*.md'
 
     find assets/ -type f -name '*.md' | xargs rm -rf
+
+    TERMINAL_INFO="Support Themes"
+    echo -e "${YELLOW} '${TERMINAL_INFO}' ${NORMAL}"
 
     # https://github.com/pages-themes/minimal
 
@@ -139,16 +154,60 @@ deploy () {
 
 }
 
-publish () {
+release () {
     echo -e "${ONWHITE} - ${NORMAL}"
 
+    TERMINAL_INFO="Tag and push a release."
+    echo -e "${YELLOW} '${TERMINAL_INFO}' ${NORMAL}"
 
+    set -e
 
-    echo -e "${YELLOW} 'paplay ' ${NORMAL}"
+    TERMINAL_INFO="Make sure we're in the project root."
+    echo -e "${YELLOW} '${TERMINAL_INFO}' ${NORMAL}"
 
-    paplay /usr/share/sounds/ubuntu/stereo/dialog-information.ogg
+    cd $(dirname "$0")/..
 
-    paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+    pwd
+
+    TERMINAL_INFO="Make sure the darn thing works"
+    echo -e "${YELLOW} '${TERMINAL_INFO}' ${NORMAL}"
+
+    sudo bundle update
+
+    TERMINAL_INFO="Build a new gem archive."
+    echo -e "${YELLOW} '${TERMINAL_INFO}' ${NORMAL}"
+
+    rm -rf jekyll-theme-mozg-*.gem
+    gem build -q jekyll-theme-mozg.gemspec
+
+    TERMINAL_INFO="Make sure we're on the master branch."
+    echo -e "${YELLOW} '${TERMINAL_INFO}' ${NORMAL}"
+
+    (git branch | grep -q 'master') || {
+      echo "Only release from the master branch."
+      exit 1
+    }
+
+    TERMINAL_INFO="Figure out what version we're releasing."
+    echo -e "${YELLOW} '${TERMINAL_INFO}' ${NORMAL}"
+
+    tag=v`ls jekyll-theme-mozg-*.gem | sed 's/^jekyll-theme-mozg-\(.*\)\.gem$/\1/'`
+
+    TERMINAL_INFO="Make sure we haven't released this version before."
+    echo -e "${YELLOW} '${TERMINAL_INFO}' ${NORMAL}"
+
+    git fetch -t origin
+
+    (git tag -l | grep -q "$tag") && {
+      echo "Whoops, there's already a '${tag}' tag."
+      exit 1
+    }
+
+    TERMINAL_INFO="Tag it and bag it."
+    echo -e "${YELLOW} '${TERMINAL_INFO}' ${NORMAL}"
+
+    gem push jekyll-theme-mozg-*.gem && git tag "$tag" &&
+      git push origin master && git push origin "$tag"
 
 }
 
@@ -188,8 +247,20 @@ case $1 in
     deploy)
         echo "${BOLD} 1/3 | functionBefore...${NORMAL}"
         functionBefore ##
-        echo "${BOLD} 2/3 | publish...${NORMAL}"
+        echo "${BOLD} 2/3 | deploy...${NORMAL}"
         deploy
+        echo "${BOLD} 3/3 | functionAfter...${NORMAL}"
+        functionAfter ##
+        echo
+        echo "${BOLD}Process complete!${NORMAL}"
+        echo
+        ;;
+
+    release)
+        echo "${BOLD} 1/3 | functionBefore...${NORMAL}"
+        functionBefore ##
+        echo "${BOLD} 2/3 | release...${NORMAL}"
+        release
         echo "${BOLD} 3/3 | functionAfter...${NORMAL}"
         functionAfter ##
         echo
