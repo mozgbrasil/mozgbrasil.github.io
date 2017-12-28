@@ -94,7 +94,7 @@ deploy () {
 
     rougify style github > _sass/rouge.scss
 
-    TERMINAL_INFO="Add our own theme scss file for consistency of naming in `assets/style.scss`"
+    TERMINAL_INFO="Add our own theme scss file for consistency of naming in  assets/style.scss "
     echo -e "${YELLOW} '${TERMINAL_INFO}' ${NORMAL}"
 
     content='
@@ -107,7 +107,7 @@ deploy () {
 '
     echo "$content" >> _sass/jekyll-theme-primer.scss
 
-    TERMINAL_INFO="Add our own theme scss file for consistency of naming in `assets/style.scss`"
+    TERMINAL_INFO="Add our own theme scss file for consistency of naming in assets/style.scss"
     echo -e "${YELLOW} '${TERMINAL_INFO}' ${NORMAL}"
 
     content='
@@ -128,6 +128,8 @@ deploy () {
     cp -r node_modules/jquery-lazy assets/javascript
 
     cp -r node_modules/velocity-animate assets/javascript
+
+    cp -r node_modules/lunr assets/javascript
 
     find assets/ -type f -name '*.md'
 
