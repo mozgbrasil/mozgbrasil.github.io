@@ -25,7 +25,7 @@ Caso queira contribuir para melhoria da documentação de um Fork no repositóri
 
     cd ~/dados/public_html/git/automatic/mozgbrasil.github.io
 
-    bundle exec jekyll serve
+    bundle exec jekyll serve --verbose
 
 ### Backend
 
