@@ -8,8 +8,8 @@ exclude:
   #style: :compressed
 
 #theme: jekyll-theme-minimal
-theme: jekyll-theme-modernist
-#theme: jekyll-theme-mozg
+#theme: jekyll-theme-modernist
+theme: jekyll-theme-mozg
 
 # Build settings
 
