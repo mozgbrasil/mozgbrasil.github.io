@@ -5,32 +5,23 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <!-- Refer HTML5BP and https://developers.google.com/speed/docs/insights/ConfigureViewport -->
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-
 <!-- Site Properities -->
-{% comment %}
 {% seo %}
-{% endcomment %}
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
-
 <!-- TAGS GOOGLE -->
-
 <!-- Google Authorship Markup -->
 <link rel="author" href="https://plus.google.com/117231578401378218759?rel=author">
-
 <!-- Social: Google+ / Schema.org  -->
 <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
 <meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 <meta itemprop="image" content="{{ "/assets/images/logos/logo_32_32.png" | prepend: site.baseurl | prepend: site.url }}"/>
-
 <!-- publisher -->
 <link href="https://plus.google.com/117178438811960262290" rel="publisher" />
-
 <!-- Google+ JavaScript API -->
 <script type="text/javascript" async defer
 src="https://apis.google.com/js/platform.js?publisherid=117178438811960262290"></script>
-
 <!-- snippet-page-level ads -->
 <script type="text/javascript" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
@@ -39,23 +30,20 @@ src="https://apis.google.com/js/platform.js?publisherid=117178438811960262290"><
     enable_page_level_ads: true
   });
 </script>
-
 <!-- snippet-google-analytics -->
 {% include snippet-google-analytics.html %}
-
 <!-- /TAGS GOOGLE -->
-
 <!-- THEME -->
 {% comment %}
 <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
 {% endcomment %}
-<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css?6-5-0">
-<link rel="stylesheet" type="text/css" href="/assets/css/theme.css?6-5-0">
+<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/theme.css">
 <!--[if IE]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js?6-5-0" async></script>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" async></script>
 <script type="text/javascript" async>
 if (!window.html5) {
-    document.write('<script src="/assets/js/html5.js?6-5-0><\/script>');
+    document.write('<script src="/assets/js/html5.js><\/script>');
 }
 </script>
 <![endif]-->
