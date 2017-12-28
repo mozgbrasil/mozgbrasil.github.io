@@ -45,47 +45,20 @@ src="https://apis.google.com/js/platform.js?publisherid=117178438811960262290"><
 
 <!-- /TAGS GOOGLE -->
 
-<!-- TAGS TWITTER -->
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="{{ site.url }}">
-<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-{% if page.image %}
-<meta property="twitter:image" content="{{ site.url }}{{page.image }}">
-<meta property="twitter:image:src" content="{{ site.url }}{{page.image }}">
-{% else %}
-<meta property="twitter:image" content="{{ "/assets/images/backgrounds/background.jpg" | prepend: site.baseurl | prepend: site.url }}">
-<meta property="twitter:image:src" content="{{ "/assets/images/backgrounds/background.jpg" | prepend: site.baseurl | prepend: site.url }}">
-{% endif %}
-<meta name="twitter:creator" content="@{{ site.twitter_username }}">
 
-<!-- / TAGS TWITTER -->
-
-<!-- TAGS FACEBOOK -->
-
-<!-- https://developers.facebook.com/docs/web/tutorials/scrumptious/open-graph-object -->
-{% if site.facebook_app %}
-<meta property="fb:app_id" content="{{ site.facebook_app }}">
-{% endif %}
-<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-{% if page.image %}
-<meta property="og:image" content="{{ site.url }}{{page.image }}">
-{% else %}
-<meta property="og:image" content="{{ "/assets/images/logos/logo_32_32.png" | prepend: site.baseurl | prepend: site.url }}">
-{% endif %}
-<meta property="og:locale" content="pt_BR" />
-<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-<meta property="og:site_name" content="{{ site.title }}">
-{% if page.layout == 'post' %}
-<meta property="og:type" content="article" />
-{% else %}
-<meta property="og:type" content="website" />
-{% endif %}
-
-<!-- /TAGS FACEBOOK -->
 
 <!-- THEME -->
 <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
 <!-- THEME -->
+
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js?6-5-0" async></script>
+<script type="text/javascript" async>
+if (!window.html5) {
+    document.write('<script src="/assets/js/html5.js?6-5-0><\/script>');
+}
+</script>
+<![endif]-->
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/javascript/velocity-animate/velocity.js"></script>

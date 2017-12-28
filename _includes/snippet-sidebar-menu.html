@@ -33,8 +33,8 @@
       <a class="item" href="https://plus.google.com/117178438811960262290"><i class="icon google plus"></i>{{ site.plusgoogle_username }}</a>
       <a class="item" href="https://www.youtube.com/channel/UCiXR9cKwxNKMehSnqXvhtug"><i class="icon youtube"></i>{{ site.youtube_username }}</a>
       <a class="item" href="https://sites.google.com/site/mozgbrasil/"><i class="icon cloud"></i>mozgbrasil</a>
-      {% if site.twitter_username %}
-      <a class="item" href="https://twitter.com/{{ site.twitter_username }}"><i class="icon twitter"></i>{{ site.twitter_username }}</a>
+      {% if site.twitter.username %}
+      <a class="item" href="https://twitter.com/{{ site.twitter.username }}"><i class="icon twitter"></i>{{ site.twitter.username }}</a>
       {% endif %}
       <a class="item" href="https://mozgbrasil.wordpress.com/"><i class="icon wordpress"></i>mozgbrasil</a>
       {% if site.facebook_username %}
@@ -73,4 +73,3 @@
       <a class="item" href="{{ "/sitemap.xml" | prepend: site.baseurl }}"><i class="icon sitemap"></i>Sitemap</a>
    </div>
 </div>
-
