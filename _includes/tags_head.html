@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
 <!-- Site Properities -->
-
-
-
+{% comment %}
+{% seo %}
+{% endcomment %}
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -46,9 +46,11 @@ src="https://apis.google.com/js/platform.js?publisherid=117178438811960262290"><
 <!-- /TAGS GOOGLE -->
 
 <!-- THEME -->
+{% comment %}
 <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-<!-- THEME -->
-
+{% endcomment %}
+<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css?6-5-0">
+<link rel="stylesheet" type="text/css" href="/assets/css/theme.css?6-5-0">
 <!--[if IE]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js?6-5-0" async></script>
 <script type="text/javascript" async>
@@ -59,3 +61,4 @@ if (!window.html5) {
 <![endif]-->
 <script src="/assets/js/jquery.js"></script>
 <script src="/assets/javascript/velocity-animate/velocity.js"></script>
+<!-- THEME -->
