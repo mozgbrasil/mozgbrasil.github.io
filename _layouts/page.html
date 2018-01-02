@@ -8,33 +8,14 @@ layout: default
 {{ paginator | debug }}
 {% endcomment %}
 
-{% comment %}
-<div class="row area--white">
-    <div class="inner-container div--no-padding-top">
-        <div class="col-md-12">
-            <div class="section-success-copy">
-                <h1>
-                    {{ page.title }}
-                </h1>
-                <p class="font-large">
-                    {{ page.excerpt }}
-                </p>
-            </div>
-        </div>
+<div class="row">
+    <div class="col-md-12">
+        {{ content }}
     </div>
 </div>
-{% endcomment %}
-<div class="row area--white">
-    <div class="inner-container div--half-padding-bottom area--padding-large">
-        <div class="col-md-12">
-            {{ content }}
-        </div>
-    </div>
-</div>
-<div class="row area--white">
-    <div class="inner-container div--no-padding-top">
-        <div class="col-md-12 text-center">
-            {% include snippet-disqus.html %}
-        </div>
+<hr>
+<div class="row">
+    <div class="col-md-12 text-center">
+        {% include snippet-disqus.html %}
     </div>
 </div>

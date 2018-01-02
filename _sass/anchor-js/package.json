@@ -1,0 +1,90 @@
+{
+  "_args": [
+    [
+      "anchor-js@^4.0.0",
+      "/home/marcio/dados/public_html/git/automatic/mozgbrasil.github.io"
+    ]
+  ],
+  "_from": "anchor-js@>=4.0.0 <5.0.0",
+  "_id": "anchor-js@4.1.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/anchor-js",
+  "_nodeVersion": "6.9.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/anchor-js-4.1.0.tgz_1505887257329_0.11179426312446594"
+  },
+  "_npmUser": {
+    "email": "bbraun7@gmail.com",
+    "name": "bryanbraun"
+  },
+  "_npmVersion": "3.10.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "anchor-js",
+    "raw": "anchor-js@^4.0.0",
+    "rawSpec": "^4.0.0",
+    "scope": null,
+    "spec": ">=4.0.0 <5.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/anchor-js/-/anchor-js-4.1.0.tgz",
+  "_shasum": "0a8d904cf5e46b2a9601fe062b95fbf022242f53",
+  "_shrinkwrap": null,
+  "_spec": "anchor-js@^4.0.0",
+  "_where": "/home/marcio/dados/public_html/git/automatic/mozgbrasil.github.io",
+  "author": {
+    "name": "bryanbraun",
+    "url": "https://github.com/bryanbraun"
+  },
+  "bugs": {
+    "url": "https://github.com/bryanbraun/anchorjs/issues"
+  },
+  "dependencies": {},
+  "description": "A Javscript utility for adding deep anchor links to online docs.",
+  "devDependencies": {
+    "eslint": "~4.7.0",
+    "jasmine-core": "~2.8.0",
+    "karma": "~1.7.1",
+    "karma-cli": "~1.0.1",
+    "karma-jasmine": "~1.1.0",
+    "karma-phantomjs-launcher": "~1.0.4",
+    "phantomjs-prebuilt": "~2.1.15",
+    "uglify-js": "~3.1.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "0a8d904cf5e46b2a9601fe062b95fbf022242f53",
+    "tarball": "https://registry.npmjs.org/anchor-js/-/anchor-js-4.1.0.tgz"
+  },
+  "gitHead": "848ef8ca7e8bbd5edb032b6c3623f05aefb5ef0b",
+  "homepage": "https://github.com/bryanbraun/anchorjs",
+  "license": "MIT",
+  "main": "anchor.js",
+  "maintainers": [
+    {
+      "name": "bryanbraun",
+      "email": "bbraun7@gmail.com"
+    }
+  ],
+  "name": "anchor-js",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryanbraun/anchorjs.git"
+  },
+  "scripts": {
+    "add-banner": "node banner.js",
+    "jasmine": "karma start test/config.js --single-run",
+    "lint": "eslint anchor.js test/spec/AnchorSpec.js",
+    "release": "npm run uglify && npm run add-banner && cp anchor.js docs/anchor.js",
+    "test": "npm run lint && npm run jasmine",
+    "uglify": "uglifyjs anchor.js --compress --mangle --screw-ie8 --comments \"/Copyright/\" -o anchor.min.js"
+  },
+  "version": "4.1.0"
+}

@@ -2,18 +2,23 @@
 <!-- snippet-google-tag-manager -->
 {% include snippet-google-tag-manager.html %}
 
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/assets/css/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/assets/javascript/ie10-viewport-bug-workaround.min.js"></script>
+
+<!-- anchor -->
+
 {% if page.path contains '_posts' %}
 <!-- http://bryanbraun.github.io/anchorjs/#basic-usage -->
 <script src="{{ "assets/javascript/anchor-js/anchor.min.js" | relative_url }}"></script>
 <script>
-anchors.add('.article-body h1, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6');
+anchors.add('.anchorar h1, .anchorar h2, .anchorar h3, .anchorar h4, .anchorar h5, .anchorar h6');
 </script>
 {% endif %}
 
 {% comment %}
 <script src="/assets/js/internal/utils.js"></script>
 {% endcomment %}
-
-<script src="/assets/javascript/jquery-lazy/jquery.lazy.min.js"></script>
-<script src="/assets/css/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="/assets/js/application.js?6-5-0"></script>

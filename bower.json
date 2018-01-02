@@ -1,0 +1,13 @@
+{
+  "name": "@mozg/cms",
+  "description": "cms",
+  "main": "index.js",
+  "authors": [
+    "Marcio dos Santos Amorim"
+  ],
+  "license": "WTFPL",
+  "homepage": "https://github.com/mozgbrasil/mozgbrasil.github.io",
+  "dependencies": {
+    "ie10-viewport-bug-workaround": "^1.0.3"
+  }
+}

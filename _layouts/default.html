@@ -7,106 +7,61 @@ layout: compress
         {% include tags_head.html %}
     </head>
     <body>
-        <div class="site-wrapper blog-overview">
-            <nav class="navbar navbar-fixed-top navbar-transparent collapse" role="navigation">
-                <span role="button" aria-label="Toggle Navigation" class="navbar-toggle collapsed hidden-md-up x-button close" aria-exanded="false">
-                <span class="menu-lines"></span><span class="mobile-menu-text"> </span>
-                </span>
-                <div class="navbar-brand__logo-container text-center">
-                    <a href="/">
-                    <img src="/assets/images/logos/theme-logo-white.png" class="navbar-brand__logo navbar-brand__logo--mobile navbar-brand__logo-white--mobile hidden-md-up" alt="MOZG" title="MOZG">
-                    <img src="/assets/images/logos/theme-logo-green.png" class="navbar-brand__logo navbar-brand__logo--mobile navbar-brand__logo-green--mobile hidden-md-up" alt="MOZG" title="MOZG">
-                    </a>
-                </div>
-                <div class="navbar-inner">
-                    <a class="navbar-brand" href="/">
-                    <img src="/assets/images/logos/theme-logo-green.png" class="navbar-brand__logo-mozg logo-mozg--green" alt="Green MOZG Logo" title="MOZG">
-                    <img src="/assets/images/logos/theme-logo-white.png" class="navbar-brand__logo-mozg logo-mozg--white" alt="White MOZG Logo" title="MOZG">
-                    </a>
-                    {% assign variable = site.top_menu %}
-                    {% include {{variable}} %}
-                    {% comment %}
-                    <div class="main-navigation-right pull-right">
-                        <a class="menu__search-button" href="#"><i class="icon-theme-search-left"></i></a>
-                        <div class="btn-group">
-                            <span role="button" class="btn dropdown-toggle hidden-lg-up" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</span>
-                            <ul class="nav navbar-nav dropdown-menu">
-                                <div class="popover-arrow"></div>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" title="Developers">Developers</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" title="Support">Support</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" id class="btn ">Criar conta teste</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    {% endcomment %}
-                </div>
-            </nav>
-            <div class="header header--big header--left" style="background-color: grey">
-                <div class="header__image lazy" data-src="/assets/images/backgrounds/mascote-cerebrum-3d.png">
-                    <noscript>
-                        <div class="header__image" src="/assets/images/backgrounds/mascote-cerebrum-3d.png" style="background-image:url('/assets/images/backgrounds/mascote-cerebrum-3d.png');">
-                    </noscript>
-                    <div class="header__overlay">
-                    <div class="inner-container">
-                    <div class="header__page-title">
-                    <h1>&nbsp;</h1>
-                    <p class="blog__header-summary">&nbsp;</p>
-                    {% comment %}
-                    <div class="header__actions header__actions--padding">
-                    <a href="#" id="read" class="btn">Leia mais</a>
-                    </div>
-                    {% endcomment %}
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-                </div>
+
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default navbar-static-top ">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">MOZG</a>
             </div>
-            <div class="container-fluid">
-                <div class="content">
-                    {{ content }}
-                    {% comment %}
-                    <div class="row area--white">
-                        <div class="inner-container div--no-padding-top">
-                            <div class="col-md-12 text-center">
-                                <a href="#" id="view-older" class="btn btn-blog">Posts antigos</a>
-                            </div>
-                        </div>
-                    </div>
-                    {% endcomment %}
-                </div>
-            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                {% assign variable = site.top_menu %}
+                {% include {{variable}} %}
+            </div><!--/.nav-collapse -->
+          </div>
+        </nav>
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+          <div class="container">
+            <h1>{{ page.title }}</h1>
+            <p>{{ page.excerpt }}</p>
+          </div>
         </div>
-        <footer class="row footer area--dark">
-            <div class="inner-container">
-                <div class="row">
-                    <div>
-                        <div class="column col-md-2 col-md-offset-0 col-xs-6 col-xs-offset-0 footer__linklist">
+
+        <div class="container">
+            {{ content }}
+          <hr>
+        </div> <!-- /container -->
+
+        <footer>
+            <div class="footer" id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                            <h3> Páginas </h3>
                             <ul>
-                                <li class="footer-title">
-                                    <a href="#" class="footer-link">Páginas</a>
-                                </li>
                                 {% assign sorted_pages = site.pages | sort:"order" %}
                                 {% for node in sorted_pages %}
                                 {% if node.title %}
                                 {% if node.permalink == "" %}
-                                {% capture icon_tag %}home{% endcapture %}
+                                    {% capture icon_tag %}home{% endcapture %}
                                 {% elsif node.permalink == '/sobre-nos/' %}
-                                {% capture icon_tag %}copyright{% endcapture %}
+                                    {% capture icon_tag %}copyright{% endcapture %}
                                 {% elsif node.permalink == '/contato/' %}
-                                {% capture icon_tag %}at{% endcapture %}
+                                    {% capture icon_tag %}at{% endcapture %}
                                 {% elsif node.permalink == '/category/' %}
-                                {% capture icon_tag %}idea{% endcapture %}
+                                    {% capture icon_tag %}idea{% endcapture %}
                                 {% elsif node.permalink == '/tag/' %}
-                                {% capture icon_tag %}tag{% endcapture %}
+                                    {% capture icon_tag %}tag{% endcapture %}
                                 {% else %}
-                                {% capture icon_tag %}home{% endcapture %}
+                                    {% capture icon_tag %}home{% endcapture %}
                                 {% endif %}
                                 <li>
                                     <a class="footer-link" href="{{ node.url | prepend: site.baseurl }}"><i class="{{ icon_tag }} icon"></i>{{ node.title }}</a>
@@ -115,11 +70,9 @@ layout: compress
                                 {% endfor %}
                             </ul>
                         </div>
-                        <div class="column col-md-2 col-md-offset-0 col-xs-6 col-xs-offset-0 footer__linklist">
+                        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                            <h3> RSS & Feed </h3>
                             <ul>
-                                <li class="footer-title">
-                                    <a href="#" class="footer-link">RSS & Feed</a>
-                                </li>
                                 <li>
                                     <a class="footer-link" href="{{ "/sitemap.xml" | prepend: site.baseurl }}"><i class="icon sitemap"></i>Sitemap</a>
                                 </li>
@@ -128,11 +81,9 @@ layout: compress
                                 </li>
                             </ul>
                         </div>
-                        <div class="column col-md-2 col-md-offset-0 col-xs-6 col-xs-offset-0 footer__linklist">
+                        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                            <h3> Social </h3>
                             <ul>
-                                <li class="footer-title">
-                                    <a href="#" class="footer-link">Social</a>
-                                </li>
                                 <li>
                                     <a class="footer-link" href="https://twitter.com/{{ site.twitter.username }}"><i class="icon twitter"></i>twitter</a>
                                 </li>
@@ -156,19 +107,15 @@ layout: compress
                                 </li>
                             </ul>
                         </div>
-                        <div class="column col-md-2 col-md-offset-0 col-xs-6 col-xs-offset-0 footer__linklist">
+                        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                            <h3> Widgets </h3>
                             <ul>
-                                <li class="footer-title">
-                                    <a href="#" class="footer-link">Widgets</a>
-                                </li>
                                 {% include snippet-social-plugins.html %}
                             </ul>
                         </div>
-                        <div class="column col-md-2 col-md-offset-2 col-xs-6 footer__language-selector ">
+                        <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+                            <h3> Repositórios </h3>
                             <ul>
-                                <li class="footer-title">
-                                    <a href="#" class="footer-link">Repositórios</a>
-                                </li>
                                 <li>
                                     <a class="footer-link" href="https://bitbucket.org/mozgbrasil/">Bitbucket</a>
                                 </li>
@@ -184,20 +131,27 @@ layout: compress
                             </ul>
                         </div>
                     </div>
+                    <!--/.row-->
                 </div>
-                <div class="row">
-                    <div class="column col-md-4 col-md-offset-0 col-xs-12 footer-buttons footer__sub-text">
+                <!--/.container-->
+            </div>
+            <!--/.footer-->
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="pull-left"> Copyright © {{ site.time | date: '%Y' }} MOZG </p>
+                    <div class="pull-right">
                         &nbsp;
                     </div>
-                    <div class="footer__sub-text column col-md-4 col-md-offset-4 col-xs-12 text-right">
-                        <span class="footer-title">Copyright © {{ site.time | date: '%Y' }} MOZG</span>
-                    </div>
                 </div>
-                <div class="row">
+                <div class="container">
                     {% include snippet-google-ads.html %}
                 </div>
             </div>
+            <!--/.footer-bottom-->
         </footer>
+
         {% include tags_footer.html %}
+
     </body>
 </html>

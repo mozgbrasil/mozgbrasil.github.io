@@ -1,6 +1,9 @@
 
-//@import "bootstrap/dist/css/bootstrap.css";
-@import "bootstrap.css";
-@import "theme.css";
+// Bootstrap core CSS
+@import "bootstrap/dist/css/bootstrap.css";
+//@import "bootstrap.css";
+// Highlight
 @import "rouge";
+// Custom styles for this template
+@import "theme.css";
 

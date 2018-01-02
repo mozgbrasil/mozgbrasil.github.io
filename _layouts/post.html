@@ -8,17 +8,18 @@ layout: default
 {{ paginator | debug }}
 {% endcomment %}
 
-<div class="row area--white">
-    <div class="inner-container div--half-padding-bottom area--padding-large">
-        <div class="col-md-12 article-body">
+<div class="anchorar">
+
+    <div class="row">
+        <div class="col-md-12">
             {{ content }}
         </div>
     </div>
-</div>
-<div class="row area--white">
-    <div class="inner-container div--no-padding-top">
+    <hr>
+    <div class="row">
         <div class="col-md-12 text-center">
             {% include snippet-disqus.html %}
         </div>
     </div>
+
 </div>

@@ -68,31 +68,50 @@ array_repo_free:
 
 ---
 
-<div class="row area--white">
-    <div class="inner-container div--no-padding-top">
-        <div class="blog-list row">
+<div class="row">
+{% for item in page.array_repo_version %}
+  <div class="col-sm-6 col-md-4">
+      <div class="card">
+          <img class="card-img-top" src="/assets/images/free-stock-photos.gif">
+          <div class="card-block">
+              <figure class="profile">
+                  <img src="/assets/images/logos/theme-logo-white.png" class="profile-avatar" alt="">
+              </figure>
+              <h4 class="card-title mt-3">{{ item.title }}</h4>
+              <div class="meta">
+                  <a>&nbsp;</a>
+              </div>
+              <div class="card-text">
+                  {{ item.summary }}
+              </div>
+          </div>
+          <div class="card-footer">
+              <a href="{{ item.url | replace: '#', '-php_54#' }}" target="_blank" class="btn btn-info btn-sm">PHP 5.4-5.5</a> <a href="{{ item.url | replace: '#', '-php_56#' }}" target="_blank" class="btn btn-info btn-sm">PHP 5.6-7.0</a>
+          </div>
+      </div>
+  </div>
+{% endfor %}
 
-            {% for item in page.array_repo_version %}
-            <div class="blog-list__item column col-md-4 col-xs-12  text-center">
-                <span class="blog-list__item-image-container">
-                <img data-src="/assets/images/rocket.png" alt title class="lazy image--rounded image--margin"/>
-                </span>
-                <span class="blog-list__item-title">{{ item.title }}</span>
-                <span class="blog-list__item-summary">{{ item.summary }} <a href="{{ item.url | replace: '#', '-php_54#' }}" target="_blank" class="blog-list__item-link link--no-hover">PHP 5.4-5.5</a> <a href="{{ item.url | replace: '#', '-php_56#' }}" target="_blank" class="blog-list__item-link link--no-hover">PHP 5.6-7.0</a></span>
-            </div>
-            {% endfor %}
-
-
-            {% for item in page.array_repo_free %}
-            <div class="blog-list__item column col-md-4 col-xs-12  text-center">
-                <span class="blog-list__item-image-container">
-                <img data-src="/assets/images/rocket.png" alt title class="lazy image--rounded image--margin"/>
-                </span>
-                <span class="blog-list__item-title">{{ item.title }}</span>
-                <span class="blog-list__item-summary">{{ item.summary }} <a href="{{ item.url }}" target="_blank" class="blog-list__item-link link--no-hover">Free</a></span>
-            </div>
-            {% endfor %}
-
-        </div>
-    </div>
+{% for item in page.array_repo_free %}
+  <div class="col-sm-6 col-md-4">
+      <div class="card">
+          <img class="card-img-top" src="/assets/images/free-stock-photos.gif">
+          <div class="card-block">
+              <figure class="profile">
+                  <img src="/assets/images/logos/theme-logo-white.png" class="profile-avatar" alt="">
+              </figure>
+              <h4 class="card-title mt-3">{{ item.title }}</h4>
+              <div class="meta">
+                  <a>&nbsp;</a>
+              </div>
+              <div class="card-text">
+                  {{ item.summary }}
+              </div>
+          </div>
+          <div class="card-footer">
+              <a href="{{ item.url }}" target="_blank" class="btn btn-info btn-sm">Free</a>
+          </div>
+      </div>
+  </div>
+{% endfor %}
 </div>

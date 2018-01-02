@@ -1,11 +1,12 @@
 #
 
 exclude:
+  - bower_components
   - node_modules
   - script
 
-sass:
-  style: :compressed
+#sass:
+  #style: :compressed
 
 #theme: jekyll-theme-minimal
 #theme: jekyll-theme-modernist
@@ -26,7 +27,7 @@ permalink: /:categories/:title
 excerpt_separator: "[-----]"
 
 # html minify
-## http://jch.penibelst.de/
+    # http://jch.penibelst.de/
 
 compress_html:
   clippings: all
@@ -35,7 +36,7 @@ compress_html:
   ignore:
     envs: [local]
   blanklines: false
-  profile: true
+  profile: false
   startings: [html, head, body]
 
 # Site settings
@@ -50,7 +51,6 @@ tagline: Módulos para Magento
 email: suporte@mozg.com.br
 description: > # this means to ignore newlines until "baseurl:"
   Comercializamos módulos para Magento / Nossa motivação é atender o mercado de módulos para Magento oferecendo melhorias e um excelente suporte / Compre somente após testar o módulo / Atendimento de Segunda-Feira à Sexta-Feira, 09:00 às 12:00 e 14:00 às 18:00 / suporte@mozg.com.br / +55 11 977072339
-keywords: modulos, magento, correios, correios exporta facil, jamef, jadlog, template, ecommerce, connect, composer instalação
 
 github_username: mozgbrasil
 facebook_username: mozgbrasil
@@ -59,7 +59,7 @@ youtube_username: mozgbrasil
 
 top_menu: snippet-top-menu-2.html
 
-## jekyll-seo-tag
+# jekyll-seo-tag
 
 twitter:
   username: mozgbrasil
@@ -82,13 +82,13 @@ social:
 webmaster_verifications:
   google: google7b4e5e32dda0c66d
 
-## API Keys.
+# API Keys.
 
 google_api_key: "AIzaSyBngTQOddD3rxUGFNsh4JSC5gkEJPGo6BQ" # https://code.google.com/apis/console/ -> Project Name -> APIs -> Credenciais
 google_cse_id: "013400461319534586214:elspbzci0nc" # https://cse.google.com/ -> Google Custom Search Engine unique id
 google_analytics_ua: "UA-73869264-1" # https://www.google.com/analytics/web/ -> Google Analytics site specific id
 
-## Embeds
+# Embeds
 
 google_map_zoom: 16               # 1=Global zoom 18=Street Level
 google_map_view: satellite        # hybrid | satellite | roadmap

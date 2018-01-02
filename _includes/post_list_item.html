@@ -14,13 +14,24 @@
 {% when 12 %}{% capture var_color %}green{% endcapture %}
 {% endcase %}
 
-<div class="blog-list__item column col-md-4 col-xs-12  text-center">
-<a href="{{ post.url }}" target="_blank" class="blog-list__item-link link--no-hover">
-<span class="blog-list__item-image-container">
-<img data-src="/assets/images/rocket.png" alt title class="lazy image--rounded image--margin"/>
-</span>
-<span class="blog-list__item-title">{{ post.title }}</span>
-<span class="blog-list__item-title">{{ post.date | date: "%d %b/%Y %H:%M" }}</span>
-<span class="blog-list__item-summary">{{ post.excerpt | strip_html | newline_to_br }}</span>
-</a>
+<div class="col-sm-6 col-md-4">
+    <div class="card">
+        <img class="card-img-top" src="/assets/images/free-stock-photos.gif">
+        <div class="card-block">
+            <figure class="profile">
+                <img src="/assets/images/logos/theme-logo-white.png" class="profile-avatar" alt="">
+            </figure>
+            <h4 class="card-title mt-3">{{ post.title }}</h4>
+            <div class="meta">
+                <a>{{ post.excerpt | strip_html | newline_to_br }}</a>
+            </div>
+            <div class="card-text">
+                {{ item.summary }}
+            </div>
+        </div>
+        <div class="card-footer">
+            <small>{{ post.date | date: "%d %b/%Y %H:%M" }}</small>
+            <a href="{{ post.url }}" class="btn btn-info btn-sm">Clique aqui</a>
+        </div>
+    </div>
 </div>

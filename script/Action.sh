@@ -69,17 +69,20 @@ deploy () {
 
     echo -e "${ONWHITE} - ${NORMAL}"
 
-    TERMINAL_INFO='Install NPM dependencies to _sass directory and symlink to node_modules'
+    TERMINAL_INFO='Install NPM/Bower dependencies to _sass directory and symlink to node_modules'
     echo -e "${YELLOW} '${TERMINAL_INFO}' ${NORMAL}"
 
     pwd
 
+    rm -rf bower_components
     rm -rf node_modules
     rm -rf _sass/*
 
     npm install
 
-    cp -r node_modules _sass
+    bower update
+
+    cp -r node_modules/* _sass
     #rm -rf node_modules
 
     TERMINAL_INFO="Normalize.css is distributed as CSS, which Sass dosen't like. Convert to scss."
@@ -111,10 +114,13 @@ deploy () {
     echo -e "${YELLOW} '${TERMINAL_INFO}' ${NORMAL}"
 
     content='
-//@import "bootstrap/dist/css/bootstrap.css";
-@import "bootstrap.css";
-@import "theme.css";
+// Bootstrap core CSS
+@import "bootstrap/dist/css/bootstrap.css";
+//@import "bootstrap.css";
+// Highlight
 @import "rouge";
+// Custom styles for this template
+@import "theme.css";
 '
     echo "$content" >> _sass/jekyll-theme-mozg.scss
 
@@ -130,6 +136,10 @@ deploy () {
     cp -r node_modules/velocity-animate assets/javascript
 
     cp -r node_modules/lunr assets/javascript
+
+    cp -r bower_components/ie10-viewport-bug-workaround/dist/ie10-viewport-bug-workaround.css assets/css
+
+    cp -r bower_components/ie10-viewport-bug-workaround/dist/ie10-viewport-bug-workaround.min.js assets/javascript
 
     find assets/ -type f -name '*.md'
 
