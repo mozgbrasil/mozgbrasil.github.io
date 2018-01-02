@@ -15,6 +15,7 @@ sass:
 
 # Build settings
 
+include: ['.htaccess']
 highlighter: rouge
 markdown: kramdown
 redcarpet:
