@@ -20,6 +20,8 @@
   "dependencies": {
     "anchor-js": "^4.0.0",
     "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "jquery-lazy": "^1.7.7",
     "lunr": "^2.1.5",
     "popper.js": "^1.12.9"
   },

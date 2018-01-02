@@ -101,4 +101,6 @@ https://wiredcraft.com/blog/make-jekyll-fast/
 | ------------- |:-------------:|
 | ![GitHub PageSpeed](https://pagespeed-badges.herokuapp.com/?url=mozg.com.br&strat=desktop)      | ![GitHub PageSpeed](https://pagespeed-badges.herokuapp.com/?url=mozg.com.br&strat=mobile) |
 
+https://developers.google.com/speed/pagespeed/insights/?url=http://mozg.com.br/
+
 :cat2:
