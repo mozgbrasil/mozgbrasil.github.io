@@ -2,9 +2,9 @@
 
 # https://github.com/Flootah/flootah.com/blob/d53c52873fc1ab8f36ab68903a30bcec9d248800/.htaccess
 
-ErrorDocument 404 404.html
-ErrorDocument 403 403.html
-Options -Indexes
+#ErrorDocument 404 404.html
+#ErrorDocument 403 403.html
+#Options -Indexes
 
 # https://davidegan.me/adding-a-htaccess-file-to-a-jekyll-site/
 # Set browser caching
