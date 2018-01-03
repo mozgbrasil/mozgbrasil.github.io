@@ -82,7 +82,7 @@ deploy () {
 
     bower update
 
-    cp -r node_modules/* _sass
+    #cp -r node_modules/* _sass
     #rm -rf node_modules
 
     TERMINAL_INFO="Normalize.css is distributed as CSS, which Sass dosen't like. Convert to scss."

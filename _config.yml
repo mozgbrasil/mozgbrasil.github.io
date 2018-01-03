@@ -1,29 +1,38 @@
-#
-
-exclude:
-  - bower_components
-  - node_modules
-  - script
-
-sass:
-  style: :compressed
+# build settings
 
 #theme: jekyll-theme-minimal
 #theme: jekyll-theme-modernist
 #remote_theme: jekyll-theme-mozg
 #remote_theme: mozgbrasil/jekyll-theme-mozg
 
-# Build settings
+layout: default
+
+markdown: kramdown
+highlighter: rouge
+
+#kramdown:
+  #auto_ids: true
 
 include: ['.htaccess']
-highlighter: rouge
-markdown: kramdown
+
+exclude: ["403.html", "404.html", "bower_components", "node_modules", "script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json"]
+
+sass:
+  style: :compressed
+  # Where you keep your scss files
+  #sass_dir: assets/css/
+  # Where sass should look for other scss
+  #load_paths:
+    #- node_modules/
+
+plugins: ["jekyll-avatar", "jekyll-paginate"]
+
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
-plugins: [jekyll-paginate]
+
 paginate: 30
 paginate_path: "page:num"
-layout: default
+
 permalink: /:categories/:title
 excerpt_separator: "[-----]"
 
@@ -40,7 +49,7 @@ compress_html:
   profile: false
   startings: [html, head, body]
 
-# Site settings
+# site settings
 
 # mode: dev | production
 url: http://mozg.com.br
@@ -49,10 +58,10 @@ devurl: http://127.0.0.1:4000
 baseurl: "" # the subpath of your site, e.g. /blog/
 title: MOZG
 tagline: Módulos para Magento
-email: suporte@mozg.com.br
 description: > # this means to ignore newlines until "baseurl:"
   Comercializamos módulos para Magento / Nossa motivação é atender o mercado de módulos para Magento oferecendo melhorias e um excelente suporte / Compre somente após testar o módulo / Atendimento de Segunda-Feira à Sexta-Feira, 09:00 às 12:00 e 14:00 às 18:00 / suporte@mozg.com.br / +55 11 977072339
 
+email: suporte@mozg.com.br
 github_username: mozgbrasil
 facebook_username: mozgbrasil
 plusgoogle_username: mozgbrasil
