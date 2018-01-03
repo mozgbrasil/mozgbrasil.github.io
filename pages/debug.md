@@ -12,7 +12,7 @@ excerpt: "Debug"
 
 <hr>
 
-{{ debug }}
+{{ jekyll | debug }}
 
 <hr>
 

@@ -41,15 +41,7 @@ excerpt_separator: "[-----]"
 # html minify
     # http://jch.penibelst.de/
 
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  ignore:
-    envs: [local]
-  blanklines: false
-  profile: false
-  startings: [html, head, body]
+
 
 # site settings
 
