@@ -8,7 +8,11 @@ excerpt: "Debug"
 
 <hr>
 
-03/01/2018 13:00:30
+{{ site.versao }}
+
+<hr>
+
+{{ debug }}
 
 <hr>
 
