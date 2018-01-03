@@ -12,6 +12,10 @@ excerpt: "Debug"
 
 <hr>
 
+{{ jekyll }}
+
+{{ jekyll.environment }}
+
 {{ jekyll | debug }}
 
 <hr>

@@ -41,7 +41,15 @@ excerpt_separator: "[-----]"
 # html minify
     # http://jch.penibelst.de/
 
-
+compress_html:
+  clippings: all
+  comments: all
+  #endings: all # FIX: (Local) - kramdown-1.16.2/lib/kramdown/element.rb:489:in `initialize': stack level too deep (SystemStackError)
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
 
 # site settings
 
