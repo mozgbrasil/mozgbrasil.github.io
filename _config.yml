@@ -27,7 +27,37 @@ sass:
   #load_paths:
     #- node_modules/
 
-plugins: ["jekyll-seo-tag", "jekyll-paginate", "jekyll-avatar"]
+plugins: ["jekyll-mentions", "jekyll-github-metadata", "jekyll-seo-tag", "jekyll-paginate", "jekyll-avatar"]
+
+# plugins: jekyll-mentions
+
+jekyll-mentions:
+  base_url: https://twitter.com
+
+# plugins: jekyll-seo-tag
+
+twitter:
+  username: mozgbrasil
+
+facebook:
+  app_id: 190289028000894 # https://developers.facebook.com/
+  publisher: 190289028000894
+  admins: 190289028000894
+
+social:
+  name: Mozg Brasil
+  links:
+    - https://twitter.com/mozgbrasil
+    - https://www.facebook.com/mozgbrasil
+    - https://www.linkedin.com/in/mozgbrasil
+    - https://plus.google.com/117178438811960262290
+    - https://github.com/mozgbrasil
+    - https://keybase.io/mozgbrasil
+
+webmaster_verifications:
+  google: google7b4e5e32dda0c66d
+
+# --
 
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
@@ -70,29 +100,6 @@ plusgoogle_username: mozgbrasil
 youtube_username: mozgbrasil
 
 top_menu: snippet-top-menu-2.html
-
-# jekyll-seo-tag
-
-twitter:
-  username: mozgbrasil
-
-facebook:
-  app_id: 190289028000894 # https://developers.facebook.com/
-  publisher: 190289028000894
-  admins: 190289028000894
-
-social:
-  name: Mozg Brasil
-  links:
-    - https://twitter.com/mozgbrasil
-    - https://www.facebook.com/mozgbrasil
-    - https://www.linkedin.com/in/mozgbrasil
-    - https://plus.google.com/117178438811960262290
-    - https://github.com/mozgbrasil
-    - https://keybase.io/mozgbrasil
-
-webmaster_verifications:
-  google: google7b4e5e32dda0c66d
 
 # API Keys.
 

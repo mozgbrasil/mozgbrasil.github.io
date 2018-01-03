@@ -8,6 +8,10 @@ excerpt: "Debug"
 
 <hr>
 
+Hey @benbalter, what do you think of this?
+
+<hr>
+
 {{ site.versao }}
 
 <hr>
@@ -17,6 +21,10 @@ excerpt: "Debug"
 {{ jekyll.environment }}
 
 {{ jekyll | debug }}
+
+<hr>
+
+
 
 <hr>
 
@@ -30,15 +38,18 @@ excerpt: "Debug"
 
 <hr>
 
-{{ site | debug }}
+
 
 <hr>
 
-{{ page | debug }}
+
 
 <hr>
 
 {% comment %}
+{{ site.github }}
+{{ site | debug }}
+{{ page | debug }}
 {{ site.posts | debug }}
 {{ paginator | debug }}
 {% endcomment %}

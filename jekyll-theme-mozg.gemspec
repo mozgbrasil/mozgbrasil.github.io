@@ -18,9 +18,10 @@ Gem::Specification.new do |s|
     s.license       = "MIT"
 
     s.add_dependency "jekyll", "~> 3.6"
+    s.add_runtime_dependency "jekyll-mentions", "~> 1.2"
+    s.add_runtime_dependency "jekyll-github-metadata", "~> 2.9"
     s.add_runtime_dependency "jekyll-paginate", "~> 1.1"
     s.add_runtime_dependency "jekyll-avatar", "~> 0.5"
     s.add_runtime_dependency "jekyll-seo-tag", "~> 2.3"
-    s.add_runtime_dependency "jekyll-github-metadata", "~> 2.9"
     s.add_development_dependency "rubocop", "~> 0.52"
 end
