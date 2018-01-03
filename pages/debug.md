@@ -8,10 +8,6 @@ excerpt: "Debug"
 
 <hr>
 
-Hey @benbalter, what do you think of this?
-
-<hr>
-
 {{ site.versao }}
 
 <hr>
@@ -24,7 +20,9 @@ Hey @benbalter, what do you think of this?
 
 <hr>
 
+[https://github.com/jekyll/jekyll-mentions](https://github.com/jekyll/jekyll-mentions)
 
+Hey @mozgbrasil, what do you think of this?
 
 <hr>
 
