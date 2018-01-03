@@ -25,7 +25,7 @@ sass:
   #load_paths:
     #- node_modules/
 
-plugins: ["jekyll-avatar", "jekyll-paginate"]
+plugins: ["jekyll-seo-tag", "jekyll-paginate", "jekyll-avatar"]
 
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
