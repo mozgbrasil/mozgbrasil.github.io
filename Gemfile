@@ -4,7 +4,7 @@ source 'https://rubygems.org' do
   gem "jekyll-seo-tag" # FIX: Dependency Error: Yikes! It looks like you don't have
   gem "jekyll-paginate" # FIX: Dependency Error: Yikes! It looks like you don't have
   gem "jekyll-avatar" # FIX: Dependency Error: Yikes! It looks like you don't have
-  #gem 'github-pages', group: :jekyll_plugins
+  #gem 'github-pages', group: :jekyll_plugins # WHY: Porque com esse suporte é exibido na variavel global "{{ site.theme }}" o retorno como "jekyll-theme-primer" ?
 end
 
 ## Info
