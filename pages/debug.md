@@ -8,6 +8,10 @@ excerpt: "Debug"
 
 <hr>
 
+03/01/2018 12:20:28
+
+<hr>
+
 [https://github.com/benbalter/jekyll-avatar/blob/master/README.md](https://github.com/benbalter/jekyll-avatar/blob/master/README.md)
 
 {% avatar mozgbrasil %}
