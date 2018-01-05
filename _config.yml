@@ -19,8 +19,8 @@ include: ['.htaccess']
 
 exclude: ["403.html", "404.html", "bower_components", "node_modules", "script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json"]
 
-#sass:
-  #style: :compressed
+sass:
+  style: :compressed
   # Where you keep your scss files
   #sass_dir: assets/css/
   # Where sass should look for other scss
