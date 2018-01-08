@@ -489,24 +489,6 @@ Geralmente é exibido a pagina 404 após a instalação de módulos, onde é nec
 
 Para habilitar o modo de manutenção no Magento, basta criar um arquivo vazio na raiz de sua loja Magento nomeado como "maintenance.flag"
 
-# Reexecutar os scripts de setup do módulo
-
-Execute o comando a seguir no MySQL para reexecutar os scripts de setup
-
-    -- add table prefix if you have one
-    DROP TABLE IF EXISTS mozg_boxpacker_packing_comment_store;
-    DROP TABLE IF EXISTS mozg_boxpacker_packing_comment;
-    DROP TABLE IF EXISTS mozg_boxpacker_packing_store;
-    DROP TABLE IF EXISTS mozg_boxpacker_packing;
-    DROP TABLE IF EXISTS mozg_api_debug;
-    DROP TABLE IF EXISTS mozg_event_data;
-    DROP TABLE IF EXISTS mozg_event_data_queue;
-    DROP TABLE IF EXISTS mozg_order_payment;
-    SELECT * FROM `core_resource` WHERE `code` like '%mozg%';
-    DELETE FROM core_resource WHERE code like '%mozg%';
-    SELECT * FROM `core_config_data` WHERE `path` like '%mozg%';
-    DELETE FROM core_config_data WHERE path like '%mozg%';
-
 # Como redefinir a senha do administrador em Magento?
 
     UPDATE `admin_user` SET `password` = MD5('123456a') WHERE `username` = 'admin';
