@@ -15,6 +15,9 @@ highlighter: rouge
 #kramdown:
   #auto_ids: true
 
+includes:
+- assets
+
 include: ['.htaccess']
 
 exclude: ["403.html", "404.html", "bower_components", "node_modules", "script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json"]

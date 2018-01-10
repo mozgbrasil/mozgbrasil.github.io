@@ -19,7 +19,19 @@
 <meta itemprop="image" content="{{ "/assets/images/logos/logo_32_32.png" | prepend: site.baseurl | prepend: site.url }}"/>
 
 <!-- THEME -->
-<link rel="preload" href="/assets/css/style.css" as="style">
+<style>
+{% include_absolute assets/css/bootstrap/dist/css/bootstrap.css %}
+{% include_absolute assets/css/theme.css %}
+</style>
+{% comment %}
+<style>
+@import "/assets/css/bootstrap/dist/css/bootstrap.css";
+@import "/assets/css/theme.css";
+</style>
+{% endcomment %}
+{% comment %}
+<link rel="stylesheet" href="/assets/css/style.css">
+{% endcomment %}
 
 <!-- publisher -->
 <link href="https://plus.google.com/117178438811960262290" rel="publisher" />
