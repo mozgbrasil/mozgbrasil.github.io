@@ -91,6 +91,10 @@ https://cards-dev.twitter.com/validator
 
 https://wiredcraft.com/blog/make-jekyll-fast/
 
+### plugin
+
+https://github.com/tnhu/jekyll-include-absolute-plugin
+
 ## License
 
 [Comercial License](LICENSE.txt)
