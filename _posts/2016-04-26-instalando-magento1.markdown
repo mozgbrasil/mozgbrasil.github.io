@@ -4,7 +4,7 @@ title:  "Instalando o Magento1 usando o Composer"
 date:   2016-04-26 14:01:02
 category: magento
 author: Marcio Amorim
-tags: [magento2, php]
+tags: [magento, php]
 excerpt: "Nesse artigo será exibido detalhadamente os processos feito via terminal para a instalação usando o Composer"
 ---
 
@@ -33,7 +33,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	# https://razbakov.com/blog/install-magento-via-composer
 	#
 	# Quando aparecer "please define your magento root dir [root]"
-	# 
+	#
 	# tecle ENTER, isso irá instalar o Magento nessa pasta root
 
 	composer require magento-hackathon/magento-composer-installer ~3.0 ;\
@@ -217,7 +217,7 @@ No magento edite o arquivo index.php e retire o comentário # devendo ficar como
 
 # Ativar modo desenvolvedor no Magento
 
-Edite o arquivo .htacces e adicione 
+Edite o arquivo .htacces e adicione
 
 	SetEnv MAGE_IS_DEVELOPER_MODE "true"
 

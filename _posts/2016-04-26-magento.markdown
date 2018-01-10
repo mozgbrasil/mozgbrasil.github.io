@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Magento"
+date:   2016-04-26 14:01:01
+category: magento
+author: Marcio Amorim
+tags: [magento, php]
+excerpt: "Vamo falar de Magento"
+---
+
+Ola
+
+Sempre utilize como base as referências presentes na documentação da plataforma
+
+https://magento.com/resources/technical
+
+Sugiro ler a documentação do Magento 1 para uma melhor experiencia no uso da plataforma
+
+http://docs.magento.com/m1/ce/user_guide/Magento_Community_Edition_User_Guide.html
