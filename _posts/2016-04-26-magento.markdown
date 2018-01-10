@@ -17,3 +17,9 @@ https://magento.com/resources/technical
 Sugiro ler a documentação do Magento 1 para uma melhor experiencia no uso da plataforma
 
 http://docs.magento.com/m1/ce/user_guide/Magento_Community_Edition_User_Guide.html
+
+Assuntos relativo ao funcionamento da plataforma Magento, sugiro postar a informação nos FÓRUM da Comunidade Magento em
+
+http://www.comunidademagento.com.br/forum/  
+
+Assuntos relativo a módulos de terceiros, sugiro entrar em contato com o desenvolvedor do módulo  
