@@ -91,6 +91,8 @@ https://cards-dev.twitter.com/validator
 
 https://wiredcraft.com/blog/make-jekyll-fast/
 
+https://github.com/dimitri-koenig/jekyll-gulp-optimizations
+
 ### plugin
 
 https://github.com/tnhu/jekyll-include-absolute-plugin
