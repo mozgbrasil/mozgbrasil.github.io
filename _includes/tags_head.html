@@ -25,27 +25,22 @@
 </style>
 {% else %}
 
+{% comment %}
+{% endcomment %}
+<link rel="stylesheet" href="/assets/css/style.css">
+
+{% comment %}
 {% capture styles %}
     {% include_absolute /assets/css/bootstrap/dist/css/bootstrap.css %}
     {% include_absolute /assets/css/theme.css %}
 {% endcapture %}
 
 <style>
-{{ styles }}
+{{ styles | scssify }}
 </style>
+{% endcomment %}
 
-{% comment %}
-<link rel="stylesheet" href="/assets/css/style.css">
-{% endcomment %}
-{% comment %}
-<style>
-@import "/assets/css/bootstrap/dist/css/bootstrap.css";
-@import "/assets/css/theme.css";
-</style>
-{% endcomment %}
 {% endif %}
-
-
 
 <!-- publisher -->
 <link href="https://plus.google.com/117178438811960262290" rel="publisher" />
