@@ -24,22 +24,7 @@
 {% include style.css %}
 </style>
 {% else %}
-
-{% comment %}
-{% endcomment %}
 <link rel="stylesheet" href="/assets/css/style.css">
-
-{% comment %}
-{% capture styles %}
-    {% include_absolute /assets/css/bootstrap/dist/css/bootstrap.css %}
-    {% include_absolute /assets/css/theme.css %}
-{% endcapture %}
-
-<style>
-{{ styles | scssify }}
-</style>
-{% endcomment %}
-
 {% endif %}
 
 <!-- publisher -->
