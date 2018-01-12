@@ -20,9 +20,29 @@
 
 <!-- THEME -->
 {% if jekyll.environment == "production" %}
-<link rel="stylesheet" href="/assets/css/style.css">
+<style>
+{% include style.css %}
+</style>
 {% else %}
 
+{% capture styles %}
+    {% include_absolute /assets/css/bootstrap/dist/css/bootstrap.css %}
+    {% include_absolute /assets/css/theme.css %}
+{% endcapture %}
+
+<style>
+{{ styles }}
+</style>
+
+{% comment %}
+<link rel="stylesheet" href="/assets/css/style.css">
+{% endcomment %}
+{% comment %}
+<style>
+@import "/assets/css/bootstrap/dist/css/bootstrap.css";
+@import "/assets/css/theme.css";
+</style>
+{% endcomment %}
 {% endif %}
 
 
