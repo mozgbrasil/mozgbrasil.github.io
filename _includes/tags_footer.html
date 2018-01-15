@@ -14,8 +14,7 @@ Placed at the end of the document so the pages load faster
 <script src="/assets/javascript/ie10-viewport-bug-workaround.min.js"></script>
 
 <!-- anchor -->
-{{ page.path }}
-{% if page.path contains '_posts' %}
+{% if page.path contains '_posts' OR page.path contains 'page' %}
 <!-- http://bryanbraun.github.io/anchorjs/#basic-usage -->
 <script src="{{ "assets/javascript/anchor-js/anchor.min.js" | relative_url }}"></script>
 <script>
