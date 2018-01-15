@@ -12,6 +12,20 @@ Ola
 
 Abaixo varias dicas para o Magento
 
+## Erro: Modelo base "pedroteixeira_correios/source_postMethods" não encontrado para o atributo "postmethods"
+
+Esse erro é exibido quando o módulo PedroTeixeira_Correios está ausente do Magento devido a um atributo relacionado ao módulo
+
+A seguir temos uma instrução SQL que retorna o registro relacionado a esse módulo
+
+    SELECT * FROM `eav_attribute` WHERE `source_model` like '%pedroteixeira%'
+
+Vemos que se trata de um registro "multiselect" que é usado para o campo "Serviços de Entrega" que é exibido no gerenciamento de produtos
+
+A seguir temos uma instrução SQL que altera o registro relacionando a um modelo de dados nativo do Magento
+
+    UPDATE `eav_attribute` SET `source_model` = 'eav/entity_attribute_source_table' WHERE `source_model` like '%pedroteixeira%'
+
 # Configuração não está sendo salva no Magento
 
 Analisando o log do servidor em /var/log/apache2/error.log
