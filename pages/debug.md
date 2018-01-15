@@ -6,9 +6,14 @@ order: 0
 excerpt: "Debug"
 ---
 
+
 <hr>
 
--*
+<hr>
+
+<hr>
+
+{{ page.path }}
 
 <hr>
 
@@ -37,14 +42,6 @@ Hey @mozgbrasil, what do you think of this?
 <hr>
 
 {{ site.theme }}
-
-<hr>
-
-
-
-<hr>
-
-
 
 <hr>
 
