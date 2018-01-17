@@ -12,6 +12,12 @@ Ola
 
 Abaixo varias dicas para o Magento
 
+## Erro: dl(): Dynamically loaded extensions aren't enabled
+
+Execute o seguinte comando no terminal, para visualizar a existencia da extensão "ionCube PHP Loader" nesse ambiente denominado PHP CLI
+
+    php -v
+
 ## Erro: Modelo base "pedroteixeira_correios/source_postMethods" não encontrado para o atributo "postmethods"
 
 Esse erro é exibido quando o módulo PedroTeixeira_Correios está ausente do Magento devido a um atributo relacionado ao módulo
