@@ -168,6 +168,10 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
         sudo mv composer.phar /usr/local/bin/composer
 
+    ## FIX: [RuntimeException] /home/???/.composer/cache/vcs does not exist and could not be created.
+    ## Cannot create cache directory /home/???/.composer/cache/repo/https---packagist.org/, or directory is not writable. Proceeding without cache
+    ##  [RuntimeException] Can not clone git@bitbucket.org:???/???.git to access package information. The "/home/???/.composer/cache/vcs  
+  " directory is not writable by the current user.
     ## FIX: https://github.com/thomaszbz/native-dockerfiles-typo3/issues/19
 
         sudo chown -R $USER $HOME/.composer
