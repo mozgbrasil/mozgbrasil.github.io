@@ -12,6 +12,24 @@ Ola
 
 Abaixo varias dicas para o Magento
 
+## Erro: Call to a member function getFullActionName() on null /???/app/code/local/Cerebrum/Telencephalon/Model/Adminhtml/Observer.php
+
+Faça o seguinte
+
+Guarde o arquivo
+
+/app/code/local/Cerebrum/Telencephalon/Model/Adminhtml/Observer.php
+
+Renomeando o mesmo
+
+Efetue download do arquivo
+
+https://github.com/cerebrumgit/magento1-telencephalon-php56/raw/master/app/code/local/Cerebrum/Telencephalon/Model/Adminhtml/Observer.php
+
+E coloque em
+
+/app/code/local/Cerebrum/Telencephalon/Model/Adminhtml/
+
 ## Erro: dl(): Dynamically loaded extensions aren't enabled
 
 Execute o seguinte comando no terminal, para visualizar a existencia da extensão "ionCube PHP Loader" nesse ambiente denominado PHP CLI
