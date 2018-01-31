@@ -14,7 +14,7 @@ excerpt: "Visualize os artigos classificado por Tags"
     <div class=" {% if inverted == '0' %} inverted {% endif %}">
         <h1 id="btn-groups" class="page-header">
             <a id="{{ tag.first }}"></a>
-            <a class="" href="/tag/#{{ tag.first }}"">{{ tag.first | capitalize }}</a>
+            <a class="" href="/tags/#{{ tag.first }}"">{{ tag.first | capitalize }}</a>
         </h1>
         {% for post in site.tags[tag.first] %}
         <div id="callout-btn-group-tooltips" class="bs-callout bs-callout-warning">

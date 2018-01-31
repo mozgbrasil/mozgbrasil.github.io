@@ -44,17 +44,17 @@ De lá para cá a **plataforma Magento** vem se firmando como um padrão da ind�
 
 Em fevereiro de 2011, o grupo [eBay](http://www.ebay.com/ "eBay") adquiriu parte das ações da Magento e concluiu a compra da empresa em junho do mesmo ano, passando a ser o controlador majoritário da empresa.
 
-Em abril de 2014 a empresa _aheadWorks_ especializada no desenvolvimento de extensões para a plataforma, divulgou a sua pesquisa anual sobre plataformas de e-commerce](https://www.guiadeecommerce.com.br/plataformas-de-ecommerce/ "Visite nossa seção de artigos sobre Plataformas de E-commerce") e constatou que pelo terceiro ano consecutivo a Magento se destaca como sistema de e-commerce open source mais usado no mundo, com uma participação de 33,8% no universo analisado.
+Em abril de 2014 a empresa _aheadWorks_ especializada no desenvolvimento de extensões para a plataforma, divulgou a sua pesquisa anual sobre plataformas de e-commerce](https://mozg.com.br/tags/#magento "Visite nossa seção de artigos sobre Plataformas de E-commerce") e constatou que pelo terceiro ano consecutivo a Magento se destaca como sistema de e-commerce open source mais usado no mundo, com uma participação de 33,8% no universo analisado.
 
-![O que é plataforma Magento](https://www.guiadeecommerce.com.br/wp-content/uploads/2014/06/o-que-e-plataforma-magento.jpg)
+![O que é plataforma Magento](/assets/images/o-que-e-plataforma-magento.jpg)
 
 Plataforma Magento ocupa liderança do mercado open source pelo terceiro ano consecutivo
 
-No Brasil a plataforma vem conquistando cada vez mais adeptos em função da sua versatilidade e quantidade de recursos, o que fez com que vários [fornecedores de plataforma Magento](https://www.guiadeecommerce.com.br/fornecedores-e-desenvolvedores-de-plataforma-magento/ "Conheça nosso catálogo de fornecedores e desenvolvedores de plataformas Magento") surgissem no país.
+No Brasil a plataforma vem conquistando cada vez mais adeptos em função da sua versatilidade e quantidade de recursos, o que fez com que vários [fornecedores de plataforma Magento](https://mozg.com.br/tags/#magento "Conheça nosso catálogo de fornecedores e desenvolvedores de plataformas Magento") surgissem no país.
 
 ### Definindo o que é Magento e quais os recursos que oferece
 
-O **Magento** é a [plataforma de e-commerce open source](https://www.guiadeecommerce.com.br/plataformas-de-e-commerce-open-source/ "Plataformas de e-commerce open source"), desenvolvida na linguagem PHP e distribuída livremente no site da empresa e na comunidade de desenvolvedores que trabalha no sentido de aprimorar e acrescentar novos recursos ao sistema.
+O **Magento** é a [plataforma de e-commerce open source](https://mozg.com.br/tags/#magento "Plataformas de e-commerce open source"), desenvolvida na linguagem PHP e distribuída livremente no site da empresa e na comunidade de desenvolvedores que trabalha no sentido de aprimorar e acrescentar novos recursos ao sistema.
 
 Por se tratar de uma plataforma de e-commerce open source, qualquer pessoa que possua sólidos conhecimentos de programação (o código é bem sofisticado) pode promover alterações e desenvolver novas funções para o sistema. Dessa forma, não existe limites para a customização da plataforma, o que contribuiu em muito para sua aceitação pelo mercado.
 
@@ -62,7 +62,7 @@ Para fazer o download do código da plataforma Magento [clique aqui](http://www.
 
 ### Características da arquitetura da plataforma Magento
 
-![Saiba o que é Magento e quais são as características e recursos de uma das mais conhecidas plataformas open source do mundo](https://www.guiadeecommerce.com.br/wp-content/uploads/2014/06/o-que-e-magento.jpg)
+![Saiba o que é Magento e quais são as características e recursos de uma das mais conhecidas plataformas open source do mundo](/assets/images/o-que-e-magento.jpg)
 
 O que é Magento, suas características e recursos
 
@@ -76,8 +76,8 @@ As _Extensões Magento_ podem ser gratuitas ou pagas. No primeiro caso, você en
 
 Outro destaque na plataforma Magento fica por conta das templates, módulos que alteram o design da loja e permitem uma customização muito grande. Em sites especializados como o [**Theme Forest**](http://themeforest.net/category/ecommerce/magento?ref=cursodeecommerce "Conheça as templates da Theme Forest") você encontra centenas de templates que podem ser adquiridas e instaladas na sua loja, dando um toque exclusivo ao seu projeto.
 
-A robustez da plataforma também traz alguns problemas, porque ela se torna extremamente exigente em termos de desempenho do provedor de hospedagem. Como a plataforma trabalha com muitas requisições ao banco de dados, é preciso escolher um bom [provedor de hospedagem para Magento](https://www.guiadeecommerce.com.br/como-escolher-um-provedor-para-loja-magento/ "Como escolher um provedor para loja Magento"), caso contrário a loja poderá ficar lenta e até mesmo chegar a sair do ar.
+A robustez da plataforma também traz alguns problemas, porque ela se torna extremamente exigente em termos de desempenho do provedor de hospedagem. Como a plataforma trabalha com muitas requisições ao banco de dados, é preciso escolher um bom [provedor de hospedagem para Magento](http://www.cloudways.com/en/?id=35053 "Como escolher um provedor para loja Magento"), caso contrário a loja poderá ficar lenta e até mesmo chegar a sair do ar.
 
-Diante de tudo isso, podemos garantir que o **[Magento](https://www.guiadeecommerce.com.br/tag/magento/ "Leia também outros artigos sobre a Plataforma Magento")** , é sem dúvida alguma uma das melhores plataformas de comércio eletrônico do mercado, tanto que no [**curso de e-commerce**](https://www.cursodeecommerce.com.br/curso/curso-como-montar-uma-loja-virtual/ "Conheça nosso Curso de E-commerce") que ministramos sempre damos um destaque especial a essa plataforma.
+Diante de tudo isso, podemos garantir que o **[Magento](https://mozg.com.br/tags/#magento "Leia também outros artigos sobre a Plataforma Magento")** , é sem dúvida alguma uma das melhores plataformas de comércio eletrônico do mercado, tanto que no [**curso de e-commerce**](https://www.cursodeecommerce.com.br/curso/curso-como-montar-uma-loja-virtual/ "Conheça nosso Curso de E-commerce") que ministramos sempre damos um destaque especial a essa plataforma.
 
-Agora que você já sabe _**o que é Magento**_ e conhece o poder dessa plataforma, pense na possibilidade de adotar essa solução no [planejamento do seu e-commerce](https://www.guiadeecommerce.com.br/planejamento-de-ecommerce/ "Conheça nossa seção de artigos sobre Planejamento no E-commerce"). Mantenha-se atualizado sobre a plataforma Magento, assinando nosso [Boletim Informativo](https://mozg.com.br/feed.xml).
+Agora que você já sabe _**o que é Magento**_ e conhece o poder dessa plataforma, pense na possibilidade de adotar essa solução no [planejamento do seu e-commerce](https://mozg.com.br/tags/#magento "Conheça nossa seção de artigos sobre Planejamento no E-commerce"). Mantenha-se atualizado sobre a plataforma Magento, assinando nosso [Boletim Informativo](https://mozg.com.br/feed.xml).
