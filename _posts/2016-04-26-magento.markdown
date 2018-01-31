@@ -12,15 +12,15 @@ Ola
 
 Sempre utilize como base as referências presentes na documentação da plataforma
 
-https://magento.com/resources/technical
+[https://magento.com/resources/technical](https://magento.com/resources/technical "Manual Magento")
 
 Sugiro ler a documentação do Magento 1 para uma melhor experiencia no uso da plataforma
 
-http://docs.magento.com/m1/ce/user_guide/Magento_Community_Edition_User_Guide.html
+[http://docs.magento.com/m1/ce/user_guide/Magento_Community_Edition_User_Guide.html](http://docs.magento.com/m1/ce/user_guide/Magento_Community_Edition_User_Guide.html "Manual Magento")
 
 Assuntos relativo ao funcionamento da plataforma Magento, sugiro postar a informação nos FÓRUM da Comunidade Magento em
 
-http://www.comunidademagento.com.br/forum/  
+[Comunidade Magento](http://www.comunidademagento.com.br/forum/ "Comunidade Magento")
 
 Assuntos relativo a módulos de terceiros, sugiro entrar em contato com o desenvolvedor do módulo  
 
