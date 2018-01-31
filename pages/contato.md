@@ -3,7 +3,7 @@ layout: page
 title: Contato
 permalink: /contato/
 order: 4
-excerpt: "Fale conosco e tire suas dúvidas"
+excerpt: "Fale conosco e tire suas dúvidas, para um melhor suporte seja o mais detalhista possível descrevendo sua necessidade ou ocorrência"
 ---
 
 <div class="container bs-docs-container">

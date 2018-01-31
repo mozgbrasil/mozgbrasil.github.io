@@ -5,7 +5,7 @@ date:   2016-04-26 14:01:01
 category: magento
 author: Marcio Amorim
 tags: [magento, php]
-excerpt: "Vamo falar de Magento"
+excerpt: "Você sabe o que é Magento? Ela é a plataformas de e-commerce open source mais usada no momento. Saiba o que é Magento e quais seus recursos nesta matéria."
 ---
 
 Ola
@@ -23,3 +23,61 @@ Assuntos relativo ao funcionamento da plataforma Magento, sugiro postar a inform
 http://www.comunidademagento.com.br/forum/  
 
 Assuntos relativo a módulos de terceiros, sugiro entrar em contato com o desenvolvedor do módulo  
+
+--
+
+# O que é Magento – Conheça a plataforma de e-commerce Magento
+
+Se você ainda não sabe **o que é Magento** e está pensando em criar uma loja virtual, para tudo que está fazendo e leia este artigo.
+
+Em termos de **plataforma de e-commerce**, pode-se afirmar sem medo de exageros que o sistema _Magento_ é uma das mais soluções mais completas do mercado.
+
+É claro que existem outros **sistemas de e-commerce** bastante sofisticados e completos no mercado, mas pensar em montar um e-commerce sem saber exatamente _o que é Magento_ e o que o sistema oferece é cometer um grande erro.
+
+### Um pouco da história da Magento
+
+Para quem deseja saber o que é Magento, vamos começar pela história do projeto. O projeto [**Magento**](http://magento.com/ "Magento") nasceu por iniciativa da Varien em 2007, no rastro de outras iniciativas de desenvolvimento de [sistemas de e-commerce no formato open source](https://www.albertovalle.com.br/loja-virtual-open-source/ "Lojas virtuais Open Source") como a _osCommerce_ e a _Prestashop_, pioneiras neste segmento.
+
+Em 2008 a empresa lançou a primeira versão aberta do sistema que ficou conhecida como _Magento Community Edition – CE_.
+
+De lá para cá a **plataforma Magento** vem se firmando como um padrão da indústria e em função de seus recursos tecnológicos e soluções avançadas para e-commerce, conta hoje com usuários do porte da Samsung, Nokia, GoodYear, Nike, Olympus, Ford e outras grandes marcas.
+
+Em fevereiro de 2011, o grupo [eBay](http://www.ebay.com/ "eBay") adquiriu parte das ações da Magento e concluiu a compra da empresa em junho do mesmo ano, passando a ser o controlador majoritário da empresa.
+
+Em abril de 2014 a empresa _aheadWorks_ especializada no desenvolvimento de extensões para a plataforma, divulgou a sua pesquisa anual sobre plataformas de e-commerce](https://www.guiadeecommerce.com.br/plataformas-de-ecommerce/ "Visite nossa seção de artigos sobre Plataformas de E-commerce") e constatou que pelo terceiro ano consecutivo a Magento se destaca como sistema de e-commerce open source mais usado no mundo, com uma participação de 33,8% no universo analisado.
+
+![O que é plataforma Magento](https://www.guiadeecommerce.com.br/wp-content/uploads/2014/06/o-que-e-plataforma-magento.jpg)
+
+Plataforma Magento ocupa liderança do mercado open source pelo terceiro ano consecutivo
+
+No Brasil a plataforma vem conquistando cada vez mais adeptos em função da sua versatilidade e quantidade de recursos, o que fez com que vários [fornecedores de plataforma Magento](https://www.guiadeecommerce.com.br/fornecedores-e-desenvolvedores-de-plataforma-magento/ "Conheça nosso catálogo de fornecedores e desenvolvedores de plataformas Magento") surgissem no país.
+
+### Definindo o que é Magento e quais os recursos que oferece
+
+O **Magento** é a [plataforma de e-commerce open source](https://www.guiadeecommerce.com.br/plataformas-de-e-commerce-open-source/ "Plataformas de e-commerce open source"), desenvolvida na linguagem PHP e distribuída livremente no site da empresa e na comunidade de desenvolvedores que trabalha no sentido de aprimorar e acrescentar novos recursos ao sistema.
+
+Por se tratar de uma plataforma de e-commerce open source, qualquer pessoa que possua sólidos conhecimentos de programação (o código é bem sofisticado) pode promover alterações e desenvolver novas funções para o sistema. Dessa forma, não existe limites para a customização da plataforma, o que contribuiu em muito para sua aceitação pelo mercado.
+
+Para fazer o download do código da plataforma Magento [clique aqui](http://www.magentocommerce.com/download "Clique aqui para ir para a página de download da plataforma Magento")
+
+### Características da arquitetura da plataforma Magento
+
+![Saiba o que é Magento e quais são as características e recursos de uma das mais conhecidas plataformas open source do mundo](https://www.guiadeecommerce.com.br/wp-content/uploads/2014/06/o-que-e-magento.jpg)
+
+O que é Magento, suas características e recursos
+
+Uma das principais características da _plataforma Magento_ é sua arquitetura modular, ou seja o sistema como um todo é composto por diversos módulos independentes que reunidos fazem compõem o sistema.
+
+Para quem ainda não sabe o que é Magento e qual a diferença que isso faz em termos técnicos, posso garantir que esse é um dos pontos chave para o sucesso da plataforma que desde 2011 se tornou líder no mercado de plataformas open source.
+
+Os módulos são conhecidos como **Extensões Magento**, ou plugins para Magento e são um dos pontos fortes da plataforma. através deles podemos incorporar novas funções à loja e com isso torná-la mais interessante para que a visita e também mais funcional para quem administra.
+
+As _Extensões Magento_ podem ser gratuitas ou pagas. No primeiro caso, você encontrará diversas delas no [Magento Connect](http://www.magentocommerce.com/magento-connect/ "Magento Connect"), o diretório oficial de plugins Magento. Lá também você encontrará algumas extensões pagas, desenvolvidas por empresas e programadores independentes.
+
+Outro destaque na plataforma Magento fica por conta das templates, módulos que alteram o design da loja e permitem uma customização muito grande. Em sites especializados como o [**Theme Forest**](http://themeforest.net/category/ecommerce/magento?ref=cursodeecommerce "Conheça as templates da Theme Forest") você encontra centenas de templates que podem ser adquiridas e instaladas na sua loja, dando um toque exclusivo ao seu projeto.
+
+A robustez da plataforma também traz alguns problemas, porque ela se torna extremamente exigente em termos de desempenho do provedor de hospedagem. Como a plataforma trabalha com muitas requisições ao banco de dados, é preciso escolher um bom [provedor de hospedagem para Magento](https://www.guiadeecommerce.com.br/como-escolher-um-provedor-para-loja-magento/ "Como escolher um provedor para loja Magento"), caso contrário a loja poderá ficar lenta e até mesmo chegar a sair do ar.
+
+Diante de tudo isso, podemos garantir que o **[Magento](https://www.guiadeecommerce.com.br/tag/magento/ "Leia também outros artigos sobre a Plataforma Magento")** , é sem dúvida alguma uma das melhores plataformas de comércio eletrônico do mercado, tanto que no [**curso de e-commerce**](https://www.cursodeecommerce.com.br/curso/curso-como-montar-uma-loja-virtual/ "Conheça nosso Curso de E-commerce") que ministramos sempre damos um destaque especial a essa plataforma.
+
+Agora que você já sabe _**o que é Magento**_ e conhece o poder dessa plataforma, pense na possibilidade de adotar essa solução no [planejamento do seu e-commerce](https://www.guiadeecommerce.com.br/planejamento-de-ecommerce/ "Conheça nossa seção de artigos sobre Planejamento no E-commerce"). Mantenha-se atualizado sobre a plataforma Magento, assinando nosso [Boletim Informativo](https://mozg.com.br/feed.xml).

@@ -5,7 +5,7 @@ date:   2017-02-06 15:04:03
 category: magento
 author: Marcio Amorim
 tags: [magento, loggi]
-excerpt: "Veja as funcionalidades do módulo Magento Loggi"
+excerpt: "Veja as funcionalidades do módulo Magento Loggi, com suporte ao Cálculo do frete e Solicitação de coleta."
 ---
 
 <h1>Magento Loggi</h1>

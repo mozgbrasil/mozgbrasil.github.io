@@ -5,7 +5,7 @@ date:   2017-02-06 15:04:02
 category: magento
 author: Marcio Amorim
 tags: [magento, jamef]
-excerpt: "Veja as funcionalidades do módulo Magento Jamef"
+excerpt: "Veja as funcionalidades do módulo Magento Jamef, com suporte ao Cálculo do frete e Rastreamento do objeto."
 ---
 
 <h1>Magento Jamef</h1>

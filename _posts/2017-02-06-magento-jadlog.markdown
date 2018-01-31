@@ -5,7 +5,7 @@ date:   2017-02-06 15:04:01
 category: magento
 author: Marcio Amorim
 tags: [magento, jadlog]
-excerpt: "Veja as funcionalidades do módulo Magento Jadlog"
+excerpt: "Veja as funcionalidades do módulo Magento Jadlog, com suporte ao Cálculo do frete e Rastreamento do objeto."
 ---
 
 <h1>Magento Jadlog</h1>

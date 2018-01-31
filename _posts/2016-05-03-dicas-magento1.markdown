@@ -42,13 +42,13 @@ Esse erro é exibido quando o módulo PedroTeixeira_Correios está ausente do Ma
 
 A seguir temos uma instrução SQL que retorna o registro relacionado a esse módulo
 
-    SELECT * FROM `eav_attribute` WHERE `source_model` like '%pedroteixeira%'
+    SELECT * FROM eav_attribute WHERE source_model like '%pedroteixeira%'
 
 Vemos que se trata de um registro "multiselect" que é usado para o campo "Serviços de Entrega" que é exibido no gerenciamento de produtos
 
 A seguir temos uma instrução SQL que altera o registro relacionando a um modelo de dados nativo do Magento
 
-    UPDATE `eav_attribute` SET `source_model` = 'eav/entity_attribute_source_table' WHERE `source_model` like '%pedroteixeira%'
+    UPDATE eav_attribute SET source_model = 'eav/entity_attribute_source_table' WHERE source_model like '%pedroteixeira%'
 
 # Configuração não está sendo salva no Magento
 
@@ -497,7 +497,7 @@ Devido a demora da importação podemos efetuar analise do andamento do processa
 
 # Como redefinir a senha do administrador em Magento?
 
-    UPDATE `admin_user` SET `password` = MD5('NEWPASSWORD') WHERE `username` = 'ADMINUSERNAME';
+    UPDATE admin_user SET password = MD5('NEWPASSWORD') WHERE username = 'ADMINUSERNAME';
 
 # Exibir cabeçalho "Esta é uma loja de demonstração. ..."
 
@@ -513,7 +513,7 @@ Para habilitar o modo de manutenção no Magento, basta criar um arquivo vazio n
 
 # Como redefinir a senha do administrador em Magento?
 
-    UPDATE `admin_user` SET `password` = MD5('123456a') WHERE `username` = 'admin';
+    UPDATE admin_user SET password = MD5('123456a') WHERE username = 'admin';
 
 # Problemas com caracteres
 

@@ -3,7 +3,7 @@ layout: page
 title: Catálogo
 permalink: /catalogo/
 order: 3
-excerpt: "Instale nossos módulos sem compromisso."
+excerpt: "Instale nossos módulos sem compromisso e só pague após testar e comprovar a qualidade dos nossos produtos."
 
 array_repo_version:
   - title: 'Pacote completo'
