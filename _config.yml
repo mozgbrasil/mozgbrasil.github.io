@@ -78,7 +78,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 title: MOZG
 tagline: Módulos para Magento
 description: > # this means to ignore newlines until "baseurl:"
-  Comercializamos módulos para Magento / Nossa motivação é atender o mercado de módulos para Magento oferecendo melhorias e um excelente suporte / Compre somente após testar o módulo / Atendimento de Segunda-Feira à Sexta-Feira, 09:00 às 12:00 e 14:00 às 18:00 / suporte@mozg.com.br / +55 11 977072339
+  Desenvolvemos o seu projeto usando a plataforma Magento / Comercializamos módulos para Magento / Nossa motivação é atender o mercado de módulos para Magento oferecendo melhorias e um excelente suporte / Compre somente após testar o módulo / Atendimento de Segunda-Feira à Sexta-Feira, 09:00 às 12:00 e 14:00 às 18:00 / suporte@mozg.com.br / +55 11 977072339
 
 email: suporte@mozg.com.br
 github_username: mozgbrasil
