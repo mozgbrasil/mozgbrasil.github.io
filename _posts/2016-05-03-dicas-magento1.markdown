@@ -119,7 +119,15 @@ Monte um ambiente de teste com o MAGENTO "Cru" e instale somente o módulo suspe
 
 Se apresentar algum problema informe o desenvolvedor do módulo para analise da ocorrência.
 
-Em seguida você pode estar colocando cada módulo de terceiro e testando, dessa forma é possível encontrar a causa do problema.
+Em seguida você pode estar colocando cada requerimento como módulos de terceiros ou template em seu projeto e testando a cada requerimento, dessa forma é possível encontrar a causa do problema.
+
+Dessa forma é possivel saber se o conflito parte de algo relativo a arquivo ou banco de dados.
+
+Outra possibilidade
+
+Baixe o seu projeto e reproduza em seu ambiente local
+
+Se funcionar é um indicativo relativo a algo no seu servidor como o uso de Cache ou falta de permissão nos arquivos
 
 ## COMPARAÇÔES DE PROJETOS
 
