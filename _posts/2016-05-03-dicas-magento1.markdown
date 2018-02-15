@@ -36,9 +36,21 @@ Execute o seguinte comando no terminal, para visualizar a existencia da extensã
 
     php -v
 
+## Erro: Modelo base "coolbabyconfig/category_attribute_source_type_yesno" não encontrado para o atributo "bs_menuadvanced"
+
+Esse erro é exibido devido a ausência do módulo "Etheme_Coolbabyconfig" e por haver um atributo no banco de dados relacionado ao módulo
+
+A seguir temos uma instrução SQL que retorna o registro relacionado a esse módulo
+
+    SELECT * FROM eav_attribute WHERE source_model like '%coolbabyconfig%'
+
+A seguir temos uma instrução SQL que altera o registro relacionando a um modelo de dados nativo do Magento
+
+    UPDATE eav_attribute SET source_model = NULL WHERE source_model like '%coolbabyconfig%'
+
 ## Erro: Modelo base "pedroteixeira_correios/source_postMethods" não encontrado para o atributo "postmethods"
 
-Esse erro é exibido quando o módulo PedroTeixeira_Correios está ausente do Magento devido a um atributo relacionado ao módulo
+Esse erro é exibido devido a ausência do módulo "PedroTeixeira_Correios" e por haver um atributo no banco de dados relacionado ao módulo
 
 A seguir temos uma instrução SQL que retorna o registro relacionado a esse módulo
 
