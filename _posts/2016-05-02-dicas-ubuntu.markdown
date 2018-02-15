@@ -12,6 +12,18 @@ Ola
 
 Abaixo varias dicas para o uso no Linux
 
+# Efetuar login no SSH com chave ppk
+
+https://askubuntu.com/questions/818929/login-ssh-with-ppk-file-on-ubuntu-terminal
+
+	sudo apt-get install putty-tools
+
+	puttygen yourkey.ppk -O private-openssh -o yourkey.pem
+
+	chmod 400 yourkey.pem
+
+	ssh -i yourkey.pem serverusername@server-ip
+
 # Conectar via SFTP pelo nautilus
 
 	sftp://marcio@192.168.0.7
