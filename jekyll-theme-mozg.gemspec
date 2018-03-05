@@ -23,5 +23,5 @@ Gem::Specification.new do |s|
     s.add_runtime_dependency "jekyll-paginate", "~> 1.1"
     s.add_runtime_dependency "jekyll-avatar", "~> 0.5"
     s.add_runtime_dependency "jekyll-seo-tag", "~> 2.3"
-    s.add_development_dependency "rubocop", "~> 0.52"
+    #s.add_development_dependency "rubocop", "~> 0.52"# Potential security vulnerability found in the rubocop dependency
 end
