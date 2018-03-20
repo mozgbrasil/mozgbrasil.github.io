@@ -46,7 +46,7 @@ A seguir temos uma instrução SQL que retorna o registro relacionado a esse mó
 
 A seguir temos uma instrução SQL que altera o registro relacionando a um modelo de dados nativo do Magento
 
-    UPDATE eav_attribute SET source_model = NULL WHERE source_model like '%coolbabyconfig%'
+    UPDATE eav_attribute SET source_model = 'eav/entity_attribute_source_table' WHERE source_model like '%coolbabyconfig%'
 
 ## Erro: Modelo base "pedroteixeira_correios/source_postMethods" não encontrado para o atributo "postmethods"
 
@@ -61,6 +61,18 @@ Vemos que se trata de um registro "multiselect" que é usado para o campo "Servi
 A seguir temos uma instrução SQL que altera o registro relacionando a um modelo de dados nativo do Magento
 
     UPDATE eav_attribute SET source_model = 'eav/entity_attribute_source_table' WHERE source_model like '%pedroteixeira%'
+
+## Modelo base "idecheckoutvm/customer_attribute_source_pessoa_view" não encontrado para o atributo "tipo_pessoa"
+
+Esse erro é exibido devido a ausência do módulo "Ideasa_IdeCheckoutvm" e por haver um atributo no banco de dados relacionado ao módulo
+
+A seguir temos uma instrução SQL que retorna o registro relacionado a esse módulo
+
+    SELECT * FROM eav_attribute WHERE source_model like '%idecheckoutvm%'
+
+A seguir temos uma instrução SQL que altera o registro relacionando a um modelo de dados nativo do Magento
+
+    UPDATE eav_attribute SET source_model = 'eav/entity_attribute_source_table' WHERE source_model like '%idecheckoutvm%'
 
 # Configuração não está sendo salva no Magento
 
