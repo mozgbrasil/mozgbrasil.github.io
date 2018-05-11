@@ -1,12 +1,197 @@
 ---
 layout: post
 title:  "Ambiente de desenvolvimento e execução no Ubuntu"
-date:   2016-04-25 17:36:05
+date:   2018-04-27 15:06:00
 category: ubuntu
 author: Marcio Amorim
 tags: [magento2, php]
 excerpt: "Nesse artigo será exibido detalhadamente os processos feito via terminal para a instalação dos programas"
 ---
+
+# Ubuntu 18.04
+
+## Suporte ao SSH
+
+sudo apt install net-tools
+
+sudo apt install openssh-server && sudo service ssh start
+
+### Conectar ao SSH "Secure SHell"
+
+	ssh marcio@192.168.0.2
+    ssh marcio@192.168.0.6
+
+### Download via SCP "Secure Copy"
+
+	scp -r marcio@192.168.0.3:/home/marcio/Imagens/ /home/marcio/Imagens/
+
+### Upload via SCP "Secure Copy"
+
+	scp -r /home/marcio/Imagens/ marcio@192.168.0.3:/home/marcio/Imagens/
+
+## Sobre o Ubuntu
+
+Para começar a atualização do Ubuntu do sistema, primeiro precisamos atualizar a lista de índice de pacotes. Abra o terminal e digite:
+
+    sudo apt update
+
+Podemos instalar a atualização para todos os pacotes de uma só vez:
+A forma a seguir vai atualizar todas as versões dos pacotes instalados, sem remover pacotes.
+
+    sudo apt upgrade
+
+Tudo feito. Seu sistema Ubuntu agora está totalmente atualizado.
+
+Durante a atualização inicial do sistema, alguns dos pacotes podem se tornar obsoletos e, portanto, não são mais necessários. Para remover todos os pacotes desnecessários, execute:
+
+    sudo apt autoremove
+
+## Sobre instalar codecs e extras de terceiros
+
+Devido a questões de direitos autorais, o Ubuntu 18.04 não fornece acesso padrão a vários codecs de mídia. Você pode, no entanto, instalá-los facilmente abrindo seu terminal e executando:
+
+    sudo apt install ubuntu-restricted-extras
+
+Com o pacote Ubuntu Restricted Extras instalado, você poderá reproduzir MP3, MPEG4, AVI e alguns outros arquivos de mídia.
+
+É recomendado instalar a versão irrestrita do libavcodec também para evitar um problema ao executar tarefas de mídia com editores de vídeo ou transcodificadores.
+
+    sudo apt install libavcodec-extra
+
+## UFW ( Uncomplicated Firewall ) é um firewall padrão no Ubuntu 18.04 Bionic Beaver Linux.
+
+Por padrão, o UFW está desativado. Você pode verificar o status do seu firewall executando o seguinte comando:
+
+    sudo ufw status
+
+Para habilitar a execução do firewall:
+
+    sudo ufw enable
+
+## Sobre instalar o Google Chrome
+
+A maneira mais simples de instalar um pacote externo, como neste caso o navegador da web Google Chrome, é usar o comando gdebi.
+
+    sudo apt install gdebi-core
+
+Em seguida, use o comando wget para baixar o pacote do Google Chrome:
+
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+Para instalar o pacote do Google Chrome no Ubuntu 18.04 Bionic Beaver usando o comando gdebi é tão simples quanto:
+
+    sudo gdebi google-chrome-stable_current_amd64.deb
+
+## Sobre instalar o navegador do Chromium
+
+O navegador Chromium é uma parte do repositório do Ubuntu 18.04, portanto, a instalação do Chromium Browser no Ubuntu 18.04 é simples como a execução de um único comando. Abra o terminal e digite:
+
+    sudo apt install chromium-browser
+
+## Sobre instalar o Dropbox
+
+O comando a seguir instalará o pacote de transição do Dropbox:
+
+    sudo apt install nautilus-dropbox
+
+## Sobre instalar o Visual Studio Code
+
+    wget "https://go.microsoft.com/fwlink/?LinkID=760868" -O visual_studio_code_amd64.deb
+
+    sudo gdebi visual_studio_code_amd64.deb
+
+## Sobre instalar o Sublime Text
+
+### Adicionar Repositório de Texto Sublime
+
+Para iniciar o Sublime Text no Ubuntu 18.04, primeiro adicione a chave de assinatura e o repositório Sublime Text:
+
+    wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+    sudo apt-add-repository "deb https://download.sublimetext.com/ apt/stable/"
+
+Depois que o repositório Sublime Text estiver no lugar, insira o comando abaixo para instalá-lo:
+
+    sudo apt install sublime-text
+
+## Sobre instalar o GitKraken 3.5
+
+    wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
+
+    sudo gdebi gitkraken-amd64.deb
+
+    # FIX:
+
+	sudo apt install libgnome-keyring-common libgnome-keyring-dev libcanberra-gtk-module
+
+## Sobre Docker e Docker-compose
+
+https://github.com/docker/docker-ce
+
+https://store.docker.com/editions/community/docker-ce-server-ubuntu
+
+<!--
+
+https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-repository
+
+https://docs.docker.com/compose/install/#install-compose
+
+https://medium.com/magento-meetup-sp/magento-2-docker-no-mac-e-linux-3adf8b994cd6
+
+-->
+
+    sudo apt update
+
+    sudo apt install apt-transport-https ca-certificates curl software-properties-common
+
+
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+    sudo apt-key fingerprint 0EBFCD88
+
+
+<!--sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"-->
+
+    sudo echo 'deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic nightly' > /etc/apt/sources.list.d/docker.list
+
+    sudo apt update
+
+    sudo apt install docker-ce docker-compose
+
+
+    docker --version
+
+	sudo docker info
+
+	sudo docker search ubuntu
+
+    sudo docker container ls
+
+
+    sudo docker run hello-world
+
+    sudo usermod -aG docker $(whoami)
+
+## ~/dados/www
+
+    mkdir -p ~/dados/www
+
+    echo "<?php phpinfo(); ?>" | sudo tee ~/dados/www/phpinfo.php > /dev/null
+
+    cat > ~/dados/www/.htaccess <<- _EOF_
+    # enable directory browsing
+    Options +Indexes
+    _EOF_
+
+## Pesquisa sobre programas
+
+    apt search filezilla
+    apt search docker-*
+
+## Instalando adicionais
+
+    sudo apt install screenfetch filezilla git keepassx meld curl
+
+<!--
 
 Ola
 
@@ -178,6 +363,8 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 # Local Desktop
 
+    sudo apt install filezilla git keepassx meld curl vlc
+
     sudo apt install build-essential ubuntu-restricted-extras python-software-properties filezilla git nautilus-dropbox p7zip-full keepassx meld curl gufw gimp gimp-plugin-registry shutter ffmpeg lame links links2 elinks lynx openssh-server ruby-dev nodejs nodejs-legacy chromium-browser inkscape jq npm nmap ntp vlc browser-plugin-vlc gedit-plugins kdenlive kde-runtime pavucontrol gifsicle && sudo service ssh start
 
     git config --global credential.helper cache
@@ -287,3 +474,4 @@ Instalar o Pulse Audio Volume Control e configurar
                             Collum -> Security Groups
                                     Launc Wizard
                                         Inbound -> Edit -> Add -> Custom TCP Rule = 80
+-->
