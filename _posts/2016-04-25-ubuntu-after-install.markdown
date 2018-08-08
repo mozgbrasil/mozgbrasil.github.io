@@ -137,15 +137,11 @@ https://github.com/docker/docker-ce
 
 https://store.docker.com/editions/community/docker-ce-server-ubuntu
 
-<!--
-
 https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-repository
 
 https://docs.docker.com/compose/install/#install-compose
 
 https://medium.com/magento-meetup-sp/magento-2-docker-no-mac-e-linux-3adf8b994cd6
-
--->
 
     sudo apt update
 
@@ -158,8 +154,6 @@ https://medium.com/magento-meetup-sp/magento-2-docker-no-mac-e-linux-3adf8b994cd
 
 
     sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) nightly"
-
-    <!--sudo echo 'deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic nightly' > /etc/apt/sources.list.d/docker.list-->
 
     sudo apt update
 
