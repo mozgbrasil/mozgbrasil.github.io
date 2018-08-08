@@ -46,6 +46,14 @@ Durante a atualização inicial do sistema, alguns dos pacotes podem se tornar o
 
     sudo apt autoremove
 
+Para analise do Kernel
+
+    dmesg
+
+Para analise da Bios
+
+    sudo dmidecode -t bios
+
 ## Sobre instalar codecs e extras de terceiros
 
 Devido a questões de direitos autorais, o Ubuntu 18.04 não fornece acesso padrão a vários codecs de mídia. Você pode, no entanto, instalá-los facilmente abrindo seu terminal e executando:
@@ -149,9 +157,9 @@ https://medium.com/magento-meetup-sp/magento-2-docker-no-mac-e-linux-3adf8b994cd
     sudo apt-key fingerprint 0EBFCD88
 
 
-<!--sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"-->
+    sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) nightly"
 
-    sudo echo 'deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic nightly' > /etc/apt/sources.list.d/docker.list
+    <!--sudo echo 'deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic nightly' > /etc/apt/sources.list.d/docker.list-->
 
     sudo apt update
 
@@ -171,13 +179,13 @@ https://medium.com/magento-meetup-sp/magento-2-docker-no-mac-e-linux-3adf8b994cd
 
     sudo usermod -aG docker $(whoami)
 
-## ~/dados/www
+## ~/dados/mount/www
 
-    mkdir -p ~/dados/www
+    mkdir -p ~/dados/mount/www
 
-    echo "<?php phpinfo(); ?>" | sudo tee ~/dados/www/phpinfo.php > /dev/null
+    echo "<?php phpinfo(); ?>" | sudo tee ~/dados/mount/www/phpinfo.php > /dev/null
 
-    cat > ~/dados/www/.htaccess <<- _EOF_
+    cat > ~/dados/mount/www/.htaccess <<- _EOF_
     # enable directory browsing
     Options +Indexes
     _EOF_
@@ -189,7 +197,9 @@ https://medium.com/magento-meetup-sp/magento-2-docker-no-mac-e-linux-3adf8b994cd
 
 ## Instalando adicionais
 
-    sudo apt install screenfetch filezilla git keepassx meld curl
+    sudo apt install p7zip-full screenfetch filezilla git keepassx meld curl
+
+    git config --global credential.helper cache
 
 <!--
 
