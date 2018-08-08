@@ -10,22 +10,15 @@ excerpt: "Nesse artigo será exibido detalhadamente os processos feito via termi
 
 # Ubuntu 18.04
 
-## Suporte ao SSH
 
-```
-sudo apt install net-tools
-
-sudo apt install openssh-server && sudo service ssh start
-```
-
-### Conectar ao SSH "Secure SHell"
+## Conectar ao SSH "Secure SHell"
 
 ```
 ssh marcio@192.168.0.2
 ssh marcio@192.168.0.6
 ```
 
-### Download via SCP "Secure Copy"
+## Download via SCP "Secure Copy"
 
 ```
 scp -r marcio@192.168.0.3:/home/marcio/Imagens/ /home/marcio/Imagens/
