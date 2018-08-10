@@ -33,8 +33,6 @@ excerpt: "Debug"
 
 Hey @mozgbrasil, what do you think of this?
 
-Version: {{ JekyllMentions.VERSION }}
-
 <hr>
 
 [https://github.com/benbalter/jekyll-avatar/blob/master/README.md](https://github.com/benbalter/jekyll-avatar/blob/master/README.md)
