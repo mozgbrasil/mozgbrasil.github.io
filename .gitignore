@@ -10,4 +10,4 @@ _drafts
 Gemfile.lock
 assets/**/*.html
 assets/**/*.md
-0htaccess
+.htaccess
