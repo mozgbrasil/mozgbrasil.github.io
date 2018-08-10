@@ -33,7 +33,7 @@ excerpt: "Debug"
 
 Hey @mozgbrasil, what do you think of this?
 
-{{ JekyllMentions.VERSION }}
+Version: {{ JekyllMentions.VERSION }}
 
 <hr>
 
