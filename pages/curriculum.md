@@ -68,7 +68,7 @@ Analista Programador Jr / CLT
 
 01/04/2002 até 18/09/2003
 
-Participei do desenvolvimento de uma série de aplicações de uso interno e externo todas escritas na linguagem Coldfusion em conjunto com o Gerenciador de Banco de Dados SQL Server.
+Participei do desenvolvimento de uma série de aplicações de uso interno e externo todas escritas na linguagem [Coldfusion](https://www.adobe.com/products/coldfusion-family.html "Coldfusion") em conjunto com o Gerenciador de Banco de Dados [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2017 "SQL Server")
 
 Dentre as aplicações externas vou citar o site da [atrevida](http://www.atrevida.com.br/ "atrevida") e o site de assinaturas.
 
@@ -80,4 +80,4 @@ Programador Trainee / CLT
 
 09/04/2001 até 21/03/2002
 
-Participei do desenvolvimento dos portais Nihonsite de propriedade da (PIC) e Conexão RH de propriedade da (Telesp Celular), em ambas aplicações foram utilizado as linguagens ASP e Coldfusion em conjunto com os Gerenciadores de Banco de Dados: SQL Server e Oracle.
+Participei do desenvolvimento dos portais Nihonsite de propriedade da (PIC) e Conexão RH de propriedade da (Telesp Celular), em ambas aplicações foram utilizado as linguagens ASP e [Coldfusion](https://www.adobe.com/products/coldfusion-family.html "Coldfusion") em conjunto com os Gerenciadores de Banco de Dados: [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2017 "SQL Server") e [Oracle Database](https://www.oracle.com/database/technologies/index.html "Oracle Database")
