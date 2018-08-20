@@ -38,13 +38,13 @@ Desenvolver Web PHP / Senior / PJ
 
 04/2005 até 13/08/2018
 
-Em 13 anos prestando serviços a CEREBRUM posso destacar algumas passagens dessa trajetória
+Em 13 anos prestando serviços a [CEREBRUM](https://www.cerebrum.com.br/sobre-nos/ "CEREBRUM") posso destacar algumas passagens dessa trajetória
 
-Desde 2005 a [CEREBRUM](https://www.cerebrum.com.br/sobre-nos/ "Magento") vem se especializando exclusivamente em comércio eletrônico com foco desde 2008 na renomada plataforma de comércio eletrônico Magento eCommerce
+Desde 2005 a [CEREBRUM](https://www.cerebrum.com.br/sobre-nos/ "CEREBRUM") vem se especializando exclusivamente em comércio eletrônico com foco desde 2008 na renomada plataforma de comércio eletrônico [Magento eCommerce](https://magento.com/ "Magento")
 
 No período entre 2005 e 2008 alem de prestação de serviços relacionada a desenvolvimento de sistemas web a terceiros, desenvolvemos por conta própria sistemas de criação de sites e loja virtual, tendo alguns grandes clientes como [Oregon Scientific](https://www.oregonscientific.com.br/ "Magento")
 
-Com o destaque da plataforma Magento entendemos que seria impossível competir com uma plataforma tão poderosa e tão dinâmica, foi então que decidimos encerrar nossas atividades de aluguel do nosso sistema de loja virtual e começamos a focar exclusivamente em Magento, e dai já se vai 10 anos com foco exclusivo na plataforma Magento atendendo diversos clientes em todo o Brasil na prestação de serviço das diversas areas envolvidas no e-Commerce, como a construção do projeto, construção de templates, construção de módulos, etc...
+Com o destaque da plataforma [Magento](https://magento.com/ "Magento") entendemos que seria impossível competir com uma plataforma tão poderosa e tão dinâmica, foi então que decidimos encerrar nossas atividades de aluguel do nosso sistema de loja virtual e começamos a focar exclusivamente em Magento, e dai já se vai 10 anos com foco exclusivo na plataforma Magento atendendo diversos clientes em todo o Brasil na prestação de serviço das diversas areas envolvidas no e-Commerce, como a construção do projeto, construção de templates, construção de módulos, etc...
 
 Em 02/2016 devido a a necessidade do aperfeiçoamento tecnológicas, foi criado a [MOZG](http://mozg.com.br/ "MOZG"), nesse período estava se popularizando o uso do [Composer](https://getcomposer.org/ "Composer") tendo grande destaque após o lançamento do [Magento 2](https://github.com/magento/magento2 "Magento 2"), e com todo o mérito devido as diversas automação que o [Composer](https://getcomposer.org/ "Composer") proporciona, então foi decidido internamente a reconstrução dos módulos que já existiam a fim de oferecer um melhor produto e uma melhor forma de disponibilização dos módulos, oque realmente foi um grande sucesso, minimizando falhas humanas tanto na instalação como na atualização das dependências usadas no projeto Magento, acessando o menu [Catálogo](http://mozg.com.br/catalogo/ "Catálogo") é possível conhecer os produtos desenvolvido
 
