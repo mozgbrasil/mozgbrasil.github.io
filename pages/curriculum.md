@@ -50,7 +50,7 @@ Em 02/2016 devido a a necessidade do aperfeiçoamento tecnológicas, foi criado 
 
 Para o site da MOZG o mesmo está usando o serviço [GithubPages](https://pages.github.com/ "GithubPages") que utiliza como tecnologia para o gerenciamento do conteúdo o servidor [Jekyll](https://jekyllrb.com/ "Jekyll") alem do uso do [Bootstrap](https://getbootstrap.com/ "Bootstrap") para a criação da estrutura do site e para o uso das bibliotecas de javascript está sendo usado as tecnologias como [Node.js](https://nodejs.org/en/ "Node.js") e [NPM](https://www.npmjs.com/ "NPM")
 
-No repositorio da [MOZG](https://github.com/mozgbrasil "MOZG") é possivel visualizar alem do módulos para Magento, algumas diversidades de tecnologias, como o uso do [Bash Shell Scripting](https://github.com/mozgbrasil/bash-shell-scripts-public "Bash"), como o uso do [Docker](https://github.com/mozgbrasil/docker "Docker") e a construção de aplicativos na [Heroku](https://www.heroku.com/ "Heroku") como é o caso do aplicativo [Heroku-Magento](https://github.com/mozgbrasil/heroku-magento "Heroku-Magento") que utiliza o Composer sendo uma obrigatoriedade pela Heroku, recentemente a criação do aplicativo [Heroku-Node](https://github.com/mozgbrasil/heroku-node "Heroku-Node") que utiliza [ExpressJs](https://expressjs.com/ "Heroku-Node")
+No repositorio da [MOZG](https://github.com/mozgbrasil "MOZG") é possivel visualizar alem do módulos para Magento, algumas diversidades de tecnologias, como o uso do [Bash Shell Scripting](https://github.com/mozgbrasil/bash-shell-scripts-public "Bash"), como o uso do [Docker](https://github.com/mozgbrasil/docker "Docker") e a construção de aplicativos na [Heroku](https://www.heroku.com/ "Heroku") como é o caso do aplicativo [Heroku-Magento](https://github.com/mozgbrasil/heroku-magento "Heroku-Magento") que utiliza o Composer sendo uma obrigatoriedade pela Heroku, recentemente a criação do aplicativo [Heroku-Node](https://github.com/mozgbrasil/heroku-node "Heroku-Node") que utiliza [ExpressJs](https://expressjs.com/ "ExpressJs")
 
 ## Sombre Reptile
 
@@ -58,7 +58,7 @@ Desenvolver Web Coldfusion
 
 01/10/2003 até 15/07/2004
 
-Participei do desenvolvimento de aplicações para a intranet da reformulação do Site Institucional e do Portal de Comunicações da Petroquímica União situada "PQU" no Polo Petroquímico de Capuava, em Santo André. http://www.utc.com.br/
+Participei do desenvolvimento de aplicações para a intranet da reformulação do Site Institucional e do Portal de Comunicações da Petroquímica União situada ["PQU"](http://www.utc.com.br/ "PQU") no Polo Petroquímico de Capuava, em Santo André.
 
 ## Símbolo Editora e Comunicação Integrada S/A.
 
@@ -68,9 +68,9 @@ Analista Programador Jr / CLT
 
 Desenvolvimento de uma série de aplicações de uso interno e externo todas escritas na linguagem Coldfusion em conjunto com o Gerenciador de Banco de Dados SQL Server.
 
-Dentre as aplicações externas vou citar o site da atrevida http://www.atrevida.com.br e o site de assinaturas.
+Dentre as aplicações externas vou citar o site da [atrevida](http://www.atrevida.com.br/ "atrevida") e o site de assinaturas.
 
-Para o site da dietaja http://www.dietaja.com.br/ foi criado um gerenciador de conteúdo com diversos recursos.
+Para o site da [dietaja](http://www.dietaja.com.br/ "dietaja") foi criado um gerenciador de conteúdo com diversos recursos.
 
 ## PIC - Projetos de Informação e Consultoria Ltda.
 
