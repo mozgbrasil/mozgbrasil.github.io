@@ -58,7 +58,7 @@ Desenvolver Web Coldfusion
 
 01/10/2003 até 15/07/2004
 
-Participei do desenvolvimento de aplicações para a intranet da reformulação do Site Institucional e do Portal de Comunicações da Petroquímica União situada ["PQU"](http://www.utc.com.br/ "PQU") no Polo Petroquímico de Capuava, em Santo André.
+Participei do desenvolvimento de aplicações para a intranet e reformulação do Site Institucional e do Portal de Comunicações da Petroquímica União situada ["PQU"](http://www.utc.com.br/ "PQU") no Polo Petroquímico de Capuava, em Santo André.
 
 ## Símbolo Editora e Comunicação Integrada S/A.
 
@@ -70,7 +70,7 @@ Desenvolvimento de uma série de aplicações de uso interno e externo todas esc
 
 Dentre as aplicações externas vou citar o site da [atrevida](http://www.atrevida.com.br/ "atrevida") e o site de assinaturas.
 
-Para o site da [dietaja](http://www.dietaja.com.br/ "dietaja") foi criado um gerenciador de conteúdo com diversos recursos.
+Para o site da [dietaja](http://www.dietaja.com.br/ "dietaja") foi criado um gerenciador de conteúdo com necessidades exclusiva ao projeto.
 
 ## PIC - Projetos de Informação e Consultoria Ltda.
 
