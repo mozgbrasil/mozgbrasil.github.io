@@ -36,7 +36,7 @@ Concluído a 3ª serie do 2º grau em 1999
 
 Desenvolver Web PHP / Senior / PJ
 
-04/2005 até 13/08/2018
+04/2005 até 08/2018
 
 Em 13 anos prestando serviços a [CEREBRUM](https://www.cerebrum.com.br/sobre-nos/ "CEREBRUM") posso destacar algumas passagens dessa trajetória
 
