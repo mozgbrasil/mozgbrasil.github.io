@@ -8,8 +8,14 @@ excerpt: "Conheça um pouco mais sobre a história da CEREBRUM, atuando no merca
 
 # A CEREBRUM
 
-No mercado brasileiro desde 2005 a [CEREBRUM](https://www.cerebrum.com.br/ "Magento") vem se especializando exclusivamente em comércio eletrônico com foco desde 2008 na renomada plataforma de comércio eletrônico Magento Ecommerce.
+No mercado brasileiro desde 2005 a [CEREBRUM](https://www.cerebrum.com.br/ "Magento") vem se especializando exclusivamente em comércio eletrônico com foco desde 2008 na renomada plataforma de comércio eletrônico Magento eCommerce.
 
 ## A MOZG
 
 É a colaboradora de desenvolvimento da CEREBRUM.
+
+Em 02/2016 devido a a necessidade do aperfeiçoamento tecnológicas, foi criado a MOZG, nesse período estava se popularizando o uso do [Composer](https://getcomposer.org/ "Composer") tendo grande destaque após o lançamento do [Magento 2](https://github.com/magento/magento2 "Magento 2"), como todo o mérito devido as diversas automação que o [Composer](https://getcomposer.org/ "Composer") proporciona, então foi decidido internamente a reconstrução dos módulos que já existiam a fim de oferecer um melhor produto e uma melhor forma de disponibilização dos módulos, oque realmente foi um grande sucesso, minimizando falhas humanas tanto na instalação como na atualização das dependências usadas no projeto Magento, acessando o menu [Catalogo](http://mozg.com.br/catalogo/ "Catalogo") é possível conhecer os produtos desenvolvido
+
+Para o site da MOZG o mesmo está usando o serviço [GithubPages](https://pages.github.com/ "GithubPages") que utiliza como tecnologia para o gerenciamento do conteúdo o servidor [Jekyll](https://jekyllrb.com/ "Jekyll") alem do uso do [Bootstrap](https://getbootstrap.com/ "Bootstrap") para a criação da estrutura do site e para o uso das bibliotecas de javascript está sendo usado as tecnologias como [Node.js](https://nodejs.org/en/ "Node.js") e [NPM](https://www.npmjs.com/ "NPM")
+
+No repositorio da [MOZG](https://github.com/mozgbrasil "MOZG") é possivel visualizar alem do módulos para Magento, algumas diversidades de tecnologias, como o uso do [Bash Shell Scripting](https://github.com/mozgbrasil/bash-shell-scripts-public "Bash"), como o uso do [Docker](https://github.com/mozgbrasil/docker "Docker") e a construção de aplicativos na [Heroku](https://www.heroku.com/ "Heroku") como é o caso do aplicativo [Heroku-Magento](https://github.com/mozgbrasil/heroku-magento "Heroku-Magento") que utiliza o Composer sendo uma obrigatoriedade pela Heroku, recentemente a criação do aplicativo [Heroku-Node](https://github.com/mozgbrasil/heroku-node "Heroku-Node") que utiliza [ExpressJs](https://expressjs.com/ "Heroku-Node")
