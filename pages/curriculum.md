@@ -68,7 +68,7 @@ Analista Programador Jr / CLT
 
 01/04/2002 até 18/09/2003
 
-Desenvolvimento de uma série de aplicações de uso interno e externo todas escritas na linguagem Coldfusion em conjunto com o Gerenciador de Banco de Dados SQL Server.
+Participei do desenvolvimento de uma série de aplicações de uso interno e externo todas escritas na linguagem Coldfusion em conjunto com o Gerenciador de Banco de Dados SQL Server.
 
 Dentre as aplicações externas vou citar o site da [atrevida](http://www.atrevida.com.br/ "atrevida") e o site de assinaturas.
 
