@@ -6,6 +6,8 @@ order: 2
 excerpt: "Respeito e compromisso, prezando por desenvolver tecnologia que agreguem valor, automação e lucratividade."
 ---
 
+# Curriculum
+
 Marcio dos Santos Amorim  
 Av. Campanella, 1297, apto. 14, Itaquera  
 CEP. 08220-831 - São Paulo - SP  
@@ -90,7 +92,7 @@ Auxiliar administrativo / CLT
 
 01/09/1999 até 28/04/2000
 
-Com o fechamento da CASIL fui convidado pelos administradores a atuar na mesma função com a mesma equipe de contabilidade
+Com o fechamento da CASIL fui convidado pelos administradores a atuar na mesma função com a mesma equipe de contabilidade mas na DIMETAL que se trata de uma das empresas da família Salles Leite
 
 ## CASIL S/A
 
@@ -98,7 +100,7 @@ Mensageiro / CLT
 
 02/01/1998 até 31/08/1999
 
-Iniciei como mensageiro e logo fui trabalhar como trainee no setor de tecnologia devido a necessidade do colégio de processamento de processamento de dados, tambem no setor de contabilidade efetuando procedimentos como lançamentos, conciliações entre outros
+Iniciei como mensageiro e logo fui trabalhar como estagiário no setor de tecnologia devido a necessidade do colégio de processamento de dados, atuando também no setor de contabilidade efetuando procedimentos como lançamentos, conciliações entre outros
 
 ## AMESP Saúde Ltda.
 
