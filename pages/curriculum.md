@@ -40,7 +40,7 @@ Desenvolver Web PHP / Senior / PJ
 
 Em 13 anos prestando serviços a [CEREBRUM](https://www.cerebrum.com.br/sobre-nos/ "CEREBRUM") destaco algumas passagens dessa trajetória
 
-No período entre 2005 e 2008 alem de prestação de serviços relacionada a desenvolvimento de sistemas web a terceiros, desenvolvemos por conta própria sistemas de criação de sites e loja virtuais usando a linguagem [Coldfusion](https://www.adobe.com/products/coldfusion-family.html "Coldfusion"), atendendo diversos clientes de diveros portes como [Oregon Scientific](https://www.oregonscientific.com.br/ "Magento")
+No período entre 2005 e 2008 alem de prestação de serviços relacionada a desenvolvimento de sistemas web a terceiros, desenvolvemos por conta própria sistemas de criação de sites e loja virtuais usando como linguagem backend o  [Coldfusion](https://www.adobe.com/products/coldfusion-family.html "Coldfusion"), atendendo diversos clientes de diveros portes como [Oregon Scientific](https://www.oregonscientific.com.br/ "Magento")
 
 Desde 2005 a [CEREBRUM](https://www.cerebrum.com.br/sobre-nos/ "CEREBRUM") vem se especializando exclusivamente em comércio eletrônico com foco desde 2008 na renomada plataforma de comércio eletrônico [Magento eCommerce](https://magento.com/ "Magento")
 
