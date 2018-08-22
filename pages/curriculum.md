@@ -3,7 +3,7 @@ layout: page
 title: Curriculum
 permalink: /curriculum/
 order: 2
-excerpt: "Curriculum"
+excerpt: "Respeito e compromisso, prezando por desenvolver tecnologia que agreguem valor, automação e lucratividade."
 ---
 
 Marcio dos Santos Amorim  
@@ -38,13 +38,15 @@ Desenvolver Web PHP / Senior / PJ
 
 04/2005 até 08/2018
 
-Em 13 anos prestando serviços a [CEREBRUM](https://www.cerebrum.com.br/sobre-nos/ "CEREBRUM") posso destacar algumas passagens dessa trajetória
+Em 13 anos prestando serviços a [CEREBRUM](https://www.cerebrum.com.br/sobre-nos/ "CEREBRUM") destaco algumas passagens dessa trajetória
+
+No período entre 2005 e 2008 alem de prestação de serviços relacionada a desenvolvimento de sistemas web a terceiros, desenvolvemos por conta própria sistemas de criação de sites e loja virtuais usando a linguagem [Coldfusion](https://www.adobe.com/products/coldfusion-family.html "Coldfusion"), atendendo diversos clientes de diveros portes como [Oregon Scientific](https://www.oregonscientific.com.br/ "Magento")
 
 Desde 2005 a [CEREBRUM](https://www.cerebrum.com.br/sobre-nos/ "CEREBRUM") vem se especializando exclusivamente em comércio eletrônico com foco desde 2008 na renomada plataforma de comércio eletrônico [Magento eCommerce](https://magento.com/ "Magento")
 
-No período entre 2005 e 2008 alem de prestação de serviços relacionada a desenvolvimento de sistemas web a terceiros, desenvolvemos por conta própria sistemas de criação de sites e loja virtual, tendo alguns grandes clientes como [Oregon Scientific](https://www.oregonscientific.com.br/ "Magento")
+Em 2008 com o destaque da plataforma [Magento](https://magento.com/ "Magento") entendemos que seria impossível competir com uma plataforma tão poderosa e tão dinâmica, foi então que decidimos encerrar nossas atividades de aluguel do nosso sistema de loja virtual e começamos a focar exclusivamente em [Magento](https://magento.com/ "Magento"), a transformação na [CEREBRUM](https://www.cerebrum.com.br/sobre-nos/ "CEREBRUM") ocorreu de forma radical desde a troca do sistema operacional onde passamos a adotar o Linux [Ubuntu](https://www.ubuntu.com/ "Ubuntu") como também a adoção da nova linguagem de programação sendo o [PHP](http://php.net/ "PHP"), e dai já se vai 10 anos com foco exclusivo na prestação de serviços das mais diversas áreas envolvidas da plataforma [Magento](https://magento.com/ "Magento") atendendo diversos clientes de diversos segmentos em todo o Brasil
 
-Com o destaque da plataforma [Magento](https://magento.com/ "Magento") entendemos que seria impossível competir com uma plataforma tão poderosa e tão dinâmica, foi então que decidimos encerrar nossas atividades de aluguel do nosso sistema de loja virtual e começamos a focar exclusivamente em [Magento](https://magento.com/ "Magento"), a transformação na [CEREBRUM](https://www.cerebrum.com.br/sobre-nos/ "CEREBRUM") ocorreu de forma radical desde a troca do sistema operacional onde passamos a adotar o Linux [Ubuntu](https://www.ubuntu.com/ "Ubuntu") como também a adoção da nova linguagem de programação sendo o [PHP](http://php.net/ "PHP"), e dai já se vai 10 anos com foco exclusivo na prestação de serviços das mais diversas áreas envolvidas da plataforma [Magento](https://magento.com/ "Magento") atendendo diversos clientes em todo o Brasil
+Sou responsável pelo desenvolvimento do maior portfólio de módulos para Magento no Brasil, atendendo centenas ou até milhares de clientes em todo o Brasil prestando suporte técnico de alto nível e sempre muito compromisso, dentre os módulos desenvolvido posso destacar: Cielo, Braspag, eRede, Itaú, Bradesco, Banco do Brasil, Correios, Correios Exporta-Fácil, Jadlog, Jamef, Loggi, Cálculo de Frete na Página do Produto, entre outros, todos os módulos e suas estatisticas podem ser vista acessando o [Packagist](https://packagist.org/packages/mozgbrasil/ "Packagist")
 
 Em 02/2016 devido a necessidade do aperfeiçoamento tecnológico, foi criado a [MOZG](http://mozg.com.br/ "MOZG"), nesse período estava se popularizando o uso do [Composer](https://getcomposer.org/ "Composer") tendo grande destaque após o lançamento do [Magento 2](https://github.com/magento/magento2 "Magento 2"), e com todo o mérito devido as diversas automação que o [Composer](https://getcomposer.org/ "Composer") proporciona, então foi decidido internamente a reconstrução dos módulos que já existiam a fim de oferecer um melhor produto e uma melhor forma de disponibilização dos módulos, oque realmente é um grande sucesso, minimizando falhas humanas tanto na instalação como na atualização das dependências usadas no projeto [Magento](https://magento.com/ "Magento"), acessando o menu [Catálogo](http://mozg.com.br/catalogo/ "Catálogo") é possível conhecer ou testar os produtos desenvolvido
 

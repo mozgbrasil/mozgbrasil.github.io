@@ -11,3 +11,4 @@ Gemfile.lock
 assets/**/*.html
 assets/**/*.md
 .htaccess
+_trash
