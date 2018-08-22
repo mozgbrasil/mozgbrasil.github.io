@@ -83,3 +83,25 @@ Programador Trainee / CLT
 09/04/2001 até 21/03/2002
 
 Participei do desenvolvimento dos portais Nihonsite de propriedade da (PIC) e Conexão RH de propriedade da (Telesp Celular), em ambas aplicações foram utilizado as linguagens ASP e [Coldfusion](https://www.adobe.com/products/coldfusion-family.html "Coldfusion") em conjunto com os Gerenciadores de Banco de Dados: [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2017 "SQL Server") e [Oracle Database](https://www.oracle.com/database/technologies/index.html "Oracle Database")
+
+## Dimetal - Distribuidora de produtos metalurgicos
+
+Auxiliar administrativo / CLT
+
+01/09/1999 até 28/04/2000
+
+Com o fechamento da CASIL fui convidado pelos administradores a atuar na mesma função com a mesma equipe de contabilidade
+
+## CASIL S/A
+
+Mensageiro / CLT
+
+02/01/1998 até 31/08/1999
+
+Iniciei como mensageiro e logo fui trabalhar como trainee no setor de tecnologia devido a necessidade do colégio de processamento de processamento de dados, tambem no setor de contabilidade efetuando procedimentos como lançamentos, conciliações entre outros
+
+## AMESP Saúde Ltda.
+
+Office Boy / CLT
+
+12/07/1996 até 09/09/1997
