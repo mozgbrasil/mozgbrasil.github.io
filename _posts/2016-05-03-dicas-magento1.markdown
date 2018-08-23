@@ -30,12 +30,6 @@ E coloque em
 
 /app/code/local/Cerebrum/Telencephalon/Model/Adminhtml/
 
-## Erro: dl(): Dynamically loaded extensions aren't enabled
-
-Execute o seguinte comando no terminal, para visualizar a existencia da extensão "ionCube PHP Loader" nesse ambiente denominado PHP CLI
-
-    php -v
-
 ## Erro: Modelo base "coolbabyconfig/category_attribute_source_type_yesno" não encontrado para o atributo "bs_menuadvanced"
 
 Esse erro é exibido devido a ausência do módulo "Etheme_Coolbabyconfig" e por haver um atributo no banco de dados relacionado ao módulo
