@@ -50,7 +50,7 @@ layout: compress
                                 {% assign sorted_pages = site.pages | sort:"order" %}
                                 {% for node in sorted_pages %}
                                 {% if node.title %}
-                                {% if node.title != "Debug" || node.title != "Curriculum" %}
+                                {% if node.title != "Debug" %}
                                 <li>
                                     <a class="footer-link" href="{{ node.url | prepend: site.baseurl }}"><i class="{{ icon_tag }} icon"></i>{{ node.title }}</a>
                                 </li>
