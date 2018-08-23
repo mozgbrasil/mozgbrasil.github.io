@@ -216,23 +216,6 @@ sudo usermod -aG docker $(whoami)
 
 Em seguida reinicie a maquina para efeito da adição do novo usuário docker
 
-## Sobre Android Studio
-
-https://github.com/docker/docker-ce
-
-https://store.docker.com/editions/community/docker-ce-server-ubuntu
-
-https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-repository
-
-https://docs.docker.com/compose/install/#install-compose
-
-https://medium.com/magento-meetup-sp/magento-2-docker-no-mac-e-linux-3adf8b994cd6
-
-```
-
-sudo usermod -aG docker $(whoami)
-```
-
 ## ~/dados/mount/www
 
 ```
