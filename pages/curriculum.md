@@ -38,7 +38,7 @@ Concluído a 3ª serie do 2º grau em 1999
 
 Desenvolver Web PHP / Senior / PJ
 
-04/2005 até 08/2018
+04/2005 até 13/08/2018
 
 Em 13 anos prestando serviços a [CEREBRUM](https://www.cerebrum.com.br/sobre-nos/ "CEREBRUM") destaco algumas passagens dessa trajetória
 
@@ -48,7 +48,7 @@ Desde 2005 a [CEREBRUM](https://www.cerebrum.com.br/sobre-nos/ "CEREBRUM") vem s
 
 Em 2008 com o destaque da plataforma [Magento](https://magento.com/ "Magento") entendemos que seria impossível competir com uma plataforma tão poderosa e tão dinâmica, foi então que decidimos encerrar nossas atividades de aluguel do nosso sistema de loja virtual e começamos a focar exclusivamente em [Magento](https://magento.com/ "Magento"), a transformação na [CEREBRUM](https://www.cerebrum.com.br/sobre-nos/ "CEREBRUM") ocorreu de forma radical desde a troca do sistema operacional onde passamos a adotar o Linux [Ubuntu](https://www.ubuntu.com/ "Ubuntu") como também a adoção da nova linguagem de programação sendo o [PHP](http://php.net/ "PHP"), e dai já se vai 10 anos com foco exclusivo na prestação de serviços das mais diversas áreas envolvidas da plataforma [Magento](https://magento.com/ "Magento") atendendo diversos clientes de diversos segmentos em todo o Brasil como: [Charmed Laços](https://www.charmedlacos.com.br/ "Charmed Laços"), [Facchini](https://pecas.facchini.com.br/ "Facchini"), [Bilheteria Express](https://www.bilheteriaexpress.com.br/ "BilheteriaExpress"), [Arca Center](https://www.arcacenter.com.br/ "Arca Center"), [Livraria Chamada](https://livraria.chamada.com.br/ "Livraria Chamada")
 
-Sou o desenvolvedor de um grande portfólio de módulos para Magento atendendo centenas ou até milhares de clientes em todo o Brasil e exterior prestando suporte técnico de alto nível e sempre muito compromisso, dentre os módulos desenvolvido posso destacar: Cielo, Braspag, eRede, Itaú, Bradesco, Banco do Brasil, Correios, Correios Exporta-Fácil, Jadlog, Jamef, Loggi, Cálculo de Frete na Página do Produto, entre outros, todos os módulos e suas estatisticas podem ser vista acessando o [Packagist](https://packagist.org/packages/mozgbrasil/ "Packagist")
+Sou o desenvolvedor de um grande portfólio de módulos para Magento atendendo centenas ou até milhares de clientes em todo o Brasil e exterior prestando suporte técnico de alto nível e sempre muito compromisso, dentre os módulos desenvolvido posso destacar: Cielo, Braspag, eRede, Itaú, Bradesco, Banco do Brasil, Correios, Correios Exporta-Fácil, Jadlog, Jamef, Loggi, Cálculo de Frete na Página do Produto, entre outros, todos os módulos e suas estatística podem ser vista acessando o [Packagist](https://packagist.org/packages/mozgbrasil/ "Packagist")
 
 Em 02/2016 devido a necessidade do aperfeiçoamento tecnológico, foi criado a [MOZG](http://mozg.com.br/ "MOZG"), nesse período estava se popularizando o uso do [Composer](https://getcomposer.org/ "Composer") tendo grande destaque após o lançamento do [Magento 2](https://github.com/magento/magento2 "Magento 2"), e com todo o mérito devido as diversas automação que o [Composer](https://getcomposer.org/ "Composer") proporciona, então foi decidido internamente a reconstrução dos módulos que já existiam a fim de oferecer um melhor produto e uma melhor forma de disponibilização dos módulos, oque realmente é um grande sucesso, minimizando falhas humanas tanto na instalação como na atualização das dependências usadas no projeto [Magento](https://magento.com/ "Magento"), acessando o menu [Catálogo](http://mozg.com.br/catalogo/ "Catálogo") é possível conhecer ou testar os produtos desenvolvido
 
@@ -100,10 +100,12 @@ Mensageiro / CLT
 
 02/01/1998 até 31/08/1999
 
-Iniciei como mensageiro e logo fui trabalhar como estagiário no setor de tecnologia devido a necessidade do colégio de processamento de dados, atuando também no setor de contabilidade efetuando procedimentos como lançamentos, conciliações entre outros
+Iniciando como mensageiro em pouco tempo fui trabalhar como estagiário no setor de tecnologia devido a necessidade do colégio de processamento de dados ao qual eu me graduei, atuei também no setor de contabilidade efetuando procedimentos como: classificação de contas, lançamentos, conciliações entre outros serviços do setor
 
 ## AMESP Saúde Ltda.
 
 Office Boy / CLT
 
 12/07/1996 até 09/09/1997
+
+Prestando serviços gerais internos e externos
