@@ -16,7 +16,7 @@ Cel. (11) 97707-2339 - E-mail hackin88@yahoo.com.br
 
 # Objetivo
 
-Análise e Desenvolvimento de Sistemas Sênior
+Analista e Desenvolvedor de Sistemas Sênior
 
 # Formação Acadêmica
 
@@ -36,7 +36,7 @@ Concluído a 3ª serie do 2º grau em 1999
 
 ## CEREBRUM
 
-Análista e Desenvolvedor de Sistemas Sênior / PJ
+Analista e Desenvolvedor de Sistemas Sênior / PJ
 
 04/2005 até 13/08/2018
 
