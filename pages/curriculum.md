@@ -1,3 +1,10 @@
+---
+layout: page
+title: Curriculum
+permalink: /curriculum/
+order: 2
+excerpt: "Ética e compromisso, prezando por desenvolver tecnologia que agreguem valor, automação e lucratividade."
+---
 
 # Curriculum
 
