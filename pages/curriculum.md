@@ -11,7 +11,7 @@ excerpt: "Ética e compromisso, prezando por desenvolver tecnologia que agreguem
 Marcio dos Santos Amorim  
 Av. Campanella, 1297, apto. 14, Itaquera  
 CEP. 08220-831 - São Paulo - SP  
-Cel. (11) 97707-2339 - E-mail hackin88@yahoo.com.br  
+Cel. (11) 97707-2339 - E-mail hackin88@gmail.com  
 37 anos - Nacionalidade Brasileira - Solteiro
 
 # Objetivo
