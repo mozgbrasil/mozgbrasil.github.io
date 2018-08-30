@@ -40,7 +40,7 @@ Analista e Desenvolvedor de Sistemas Sênior / PJ
 
 04/2005 até 13/08/2018
 
-Em 13 anos prestando serviços a [CEREBRUM](https://www.cerebrum.com.br/sobre-nos/ "CEREBRUM") destaco algumas passagens dessa trajetória
+Em 13 anos prestando serviços a [CEREBRUM](https://www.cerebrum.com.br/sobre-nos/ "CEREBRUM") como empreendedor e desenvolvedor destaco algumas passagens dessa trajetória
 
 No período entre 2005 e 2008 alem de prestação de serviços relacionada a desenvolvimento de sistemas web a terceiros, desenvolvemos por conta própria sistemas de criação de sites e loja virtuais usando como linguagem backend o  [Coldfusion](https://www.adobe.com/products/coldfusion-family.html "Coldfusion"), atendendo diversos clientes de diveros portes como [Oregon Scientific](https://www.oregonscientific.com.br/ "Magento")
 
