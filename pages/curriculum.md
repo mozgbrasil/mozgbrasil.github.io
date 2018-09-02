@@ -28,9 +28,9 @@ Concluído a 3ª serie do 2º grau em 1999
 
 ## Impacta Tecnologia
 
-* ICS - Impacta Certified Specialist - Web-Master e-commerce developer - 03/08/2000
+* ICS - [Impacta](https://www.impacta.com.br/) Certified Specialist - Web-Master e-commerce developer - 03/08/2000
 
-* ICS - Impacta Certified Specialist - 2324 - Administrando Microsoft SQL Server 2000 Database - 01/07/2002
+* ICS - [Impacta](https://www.impacta.com.br/) Certified Specialist - 2324 - Administrando Microsoft SQL Server 2000 Database - 01/07/2002
 
 # Experiência profissional
 
@@ -48,9 +48,13 @@ Desde 2005 a [CEREBRUM](https://www.cerebrum.com.br/sobre-nos/ "CEREBRUM") vem s
 
 Em 2008 com o destaque da plataforma [Magento](https://magento.com/ "Magento") entendemos que seria impossível competir com uma plataforma tão poderosa e tão dinâmica, foi então que decidimos encerrar nossas atividades de aluguel do nosso sistema de loja virtual e começamos a focar exclusivamente em [Magento](https://magento.com/ "Magento"), a transformação na [CEREBRUM](https://www.cerebrum.com.br/sobre-nos/ "CEREBRUM") ocorreu de forma radical desde a troca do sistema operacional onde passamos a adotar o Linux [Ubuntu](https://www.ubuntu.com/ "Ubuntu") como também a adoção da nova linguagem de programação sendo o [PHP](http://php.net/ "PHP"), e dai já se vai 10 anos com foco exclusivo na prestação de serviços das mais diversas áreas envolvidas da plataforma [Magento](https://magento.com/ "Magento") atendendo diversos clientes de diversos segmentos em todo o Brasil
 
-Sou o desenvolvedor de um grande portfólio de módulos para Magento atendendo centenas ou até milhares de clientes em todo o Brasil e exterior prestando suporte técnico de alto nível e sempre muito compromisso, dentre os módulos desenvolvido posso destacar: Cielo, Braspag, eRede, Itaú, Bradesco, Banco do Brasil, Correios, Correios Exporta-Fácil, Jadlog, Jamef, Loggi, Cálculo de Frete na Página do Produto, entre outros, todos os módulos e suas estatística podem ser vista acessando o [Packagist](https://packagist.org/packages/mozgbrasil/ "Packagist")
+Sou o desenvolvedor de um grande portfólio de módulos para [Magento](https://magento.com/ "Magento")  atendendo centenas ou até milhares de clientes em todo o Brasil e exterior prestando suporte técnico de alto nível e sempre muito compromisso, dentre os módulos desenvolvido posso destacar: [Cielo](https://www.cielo.com.br/), [Braspag](https://www.braspag.com.br/), [Rede](https://www.userede.com.br/), [Itaú](https://www.itau.com.br/), [Bradesco](https://banco.bradesco/html/classic/index.shtm), [Banco do Brasil](Banco do Brasil), [Correios](http://www.correios.com.br/), [Correios Exporta-Fácil](https://www.correios.com.br/a-a-z/exporta-facil), [Jadlog](http://www.jadlog.com.br/), [Jamef](http://www.jamef.com.br/), [Loggi](https://www.loggi.com/), [ClearSale](https://br.clear.sale/), entre outros, todos os módulos e suas estatística podem ser vista acessando o [Packagist](https://packagist.org/packages/mozgbrasil/ "Packagist")
 
-Em 02/2016 devido a necessidade do aperfeiçoamento tecnológico, foi criado a [MOZG](http://mozg.com.br/ "MOZG"), nesse período estava se popularizando o uso do [Composer](https://getcomposer.org/ "Composer") tendo grande destaque após o lançamento do [Magento 2](https://github.com/magento/magento2 "Magento 2"), e com todo o mérito devido as diversas automação que a ferramenta proporciona, então foi decidido internamente a reconstrução dos módulos que já existiam a fim de oferecer um melhor produto e uma melhor forma de disponibilização dos módulos, oque realmente é um grande sucesso, minimizando falhas humanas tanto na instalação como na atualização das dependências usadas no projeto [Magento](https://magento.com/ "Magento"), acessando o menu [Catálogo](http://mozg.com.br/catalogo/ "Catálogo") é possível conhecer ou testar os produtos desenvolvido
+Seguindo os padrões de desenvolvimento imposto pela própria plataforma Magento como o uso de [Design Pattern](https://pt.wikipedia.org/wiki/Padr%C3%A3o_de_projeto_de_software) a fim de obter benefícios como código mais enxuto, limpo, organizado, aumentando a qualidade e diminuindo a complexidade do código, outro padrão usado no Magento é o uso do [MVC](https://pt.wikipedia.org/wiki/MVC) que é um padrão de arquitetura de software distinguindo a aplicação em 3 camadas, a  camada de interação do usuário(view), a camada de manipulação dos dados(model) e a camada de controle(controller), outro padrão usado no Magento é o [ORM](https://pt.wikipedia.org/wiki/Mapeamento_objeto-relacional) "Object Relational Mapping" sendo uma camada que mapeia o modelo de objetos da aplicação e o modelo relacional da base de dados não havendo necessidade de escrever código SQL sendo uma técnica usado pelo ganho de produtividade, outro padrão usado no Magento é [OOP](https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_orientada_a_objetos) "Object Oriented Programming" comummente conhecido como [POO](https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_orientada_a_objetos) Programação Orientada a Objetos se tratando de um estilo de programação que permite os desenvolvedores agruparem tarefas semelhantes em "classes" sendo uma forma especial de programar mais próximo de como expressaríamos as coisas na vida real diferente da programação procedural que se trata de um programa que utiliza uma seqüência de instruções ...
+
+Em 02/2016 devido a necessidade do aperfeiçoamento tecnológico, foi criado a [MOZG](http://mozg.com.br/ "MOZG"), nesse período estava se popularizando o uso do [Composer](https://getcomposer.org/ "Composer") tendo grande destaque após o lançamento do [Magento 2](https://github.com/magento/magento2 "Magento 2"), e com todo o mérito devido as diversas automação que o [Composer](https://getcomposer.org/ "Composer") como gerenciamento de dependências e carregamento das bibliotecas tendo a possibilidade do aproveitamento de mais de 200 milhões de bibliotecas somente no [Packagist](https://packagist.org/ "Packagist") também mais de 3.562 mil módulos para Magento em [PackagesFiregento](http://packages.firegento.com/ "PackagesFiregento") também milhares de bibliotecas e módulos para Magento em [GitHub](https://github.com/search?q=magento-module&type=Repositories "GitHub"), com tanta evolução tecnológica então foi decidido internamente a reconstrução dos módulos que já existiam a fim de oferecer um melhor produto com uma melhor forma de disponibilização dos módulos, minimizando falhas humanas tanto na instalação como na atualização das dependências usadas no projeto [Magento](https://magento.com/ "Magento"), acessando o menu [Catálogo](http://mozg.com.br/catalogo/ "Catálogo") é possível conhecer ou testar os módulos para a plataforma Magento que eu desenvolvi
+
+Os módulos do [Catálogo](http://mozg.com.br/catalogo/ "Catálogo") utiliza uma biblioteca base denominada [MozgFramework](https://github.com/mozgbrasil/php-framework-php_56#mozgframework "MozgFramework") estando a mesma de acordo com as especificações [PSR-4](https://www.php-fig.org/psr/psr-4/) que utiliza [Namespaces](http://php.net/manual/en/language.namespaces.php "Namespaces") facilitando o carregamento automático das classes via "autoload" ao invés de inclusão manual de arquivos
 
 Para o gerenciamento dos registro referente as atualizações dos módulos foi desenvolvido uma aplicação em [PHP](http://php.net/ "PHP") sobre o [Google App Engine](https://cloud.google.com/appengine/ "GAE") que utiliza para armazenamento dos dados o [Google Cloud Datastore](https://cloud.google.com/datastore/docs/concepts/overview?hl=pt "Datastore") dessa forma não gerando custos e aproveitando os recursos do Google
 
@@ -109,112 +113,3 @@ Office Boy / CLT
 12/07/1996 até 09/09/1997
 
 Prestando serviços gerais internos e externos
-
-
-{% comment %}
-
-# Curriculum
-
-Marcio dos Santos Amorim  
-Av. Campanella, 1297, apto. 14, Itaquera  
-CEP. 08220-831 - São Paulo - SP  
-Cel. (11) 97707-2339 - E-mail hackin88@yahoo.com.br  
-37 anos - Nacionalidade Brasileira - Solteiro
-
-# Objetivo
-
-Analista e Desenvolvedor de Sistemas Sênior
-
-# Formação Acadêmica
-
-Colégio Integrado Santa Inês S/C Ltda. (1997-1999)  
-Curso de Processamento de Dados  
-Concluído a 3ª serie do 2º grau em 1999
-
-# Formação profissional
-
-## Impacta Tecnologia
-
-* ICS - Impacta Certified Specialist - Web-Master e-commerce developer - 03/08/2000
-
-* ICS - Impacta Certified Specialist - 2324 - Administrando Microsoft SQL Server 2000 Database - 01/07/2002
-
-# Experiência profissional
-
-## CEREBRUM
-
-Analista e Desenvolvedor de Sistemas Sênior / PJ
-
-04/2005 até 13/08/2018
-
-Em 13 anos prestando serviços a [CEREBRUM](https://www.cerebrum.com.br/sobre-nos/) destaco algumas passagens dessa trajetória
-
-No período entre 2005 e 2008 alem de prestação de serviços relacionada a desenvolvimento de sistemas web a terceiros, desenvolvemos por conta própria sistemas de criação de sites e loja virtuais usando como linguagem backend o  [Coldfusion], atendendo diversos clientes de diveros portes como (https://www.oregonscientific.com.br/ "Magento")
-
-Desde 2005 a [CEREBRUM](https://www.cerebrum.com.br/sobre-nos/) vem se especializando exclusivamente em comércio eletrônico com foco desde 2008 na renomada plataforma de comércio eletrônico [Magento eCommerce]
-
-Em 2008 com o destaque da plataforma [Magento] entendemos que seria impossível competir com uma plataforma tão poderosa e tão dinâmica, foi então que decidimos encerrar nossas atividades de aluguel do nosso sistema de loja virtual e começamos a focar exclusivamente em [Magento], a transformação na [CEREBRUM](https://www.cerebrum.com.br/sobre-nos/) ocorreu de forma radical desde a troca do sistema operacional onde passamos a adotar o Linux [Ubuntu] como também a adoção da nova linguagem de programação sendo o [PHP], e dai já se vai 10 anos com foco exclusivo na prestação de serviços das mais diversas áreas envolvidas da plataforma [Magento] atendendo diversos clientes de diversos segmentos em todo o Brasil
-
-Sou o desenvolvedor de um grande portfólio de módulos para Magento atendendo centenas ou até milhares de clientes em todo o Brasil e exterior prestando suporte técnico de alto nível e sempre muito compromisso, dentre os módulos desenvolvido posso destacar: Cielo, Braspag, eRede, Itaú, Bradesco, Banco do Brasil, Correios, Correios Exporta-Fácil, Jadlog, Jamef, Loggi, Cálculo de Frete na Página do Produto, entre outros, todos os módulos e suas estatística podem ser vista acessando o [Packagist]
-
-Em 02/2016 devido a necessidade do aperfeiçoamento tecnológico, foi criado a [MOZG](http://mozg.com.br/), nesse período estava se popularizando o uso do [Composer] tendo grande destaque após o lançamento do [Magento 2], e com todo o mérito devido as diversas automação que a ferramenta proporciona, então foi decidido internamente a reconstrução dos módulos que já existiam a fim de oferecer um melhor produto e uma melhor forma de disponibilização dos módulos, oque realmente é um grande sucesso, minimizando falhas humanas tanto na instalação como na atualização das dependências usadas no projeto [Magento], acessando o menu [Catálogo](http://mozg.com.br/catalogo/) é possível conhecer ou testar os produtos desenvolvido
-
-Para o gerenciamento dos registro referente as atualizações dos módulos foi desenvolvido uma aplicação em [PHP] sobre o [Google App Engine] que utiliza para armazenamento dos dados o [Google Cloud Datastore] dessa forma não gerando custos e aproveitando os recursos do Google
-
-Para o site da [MOZG](http://mozg.com.br/) o mesmo está usando o serviço [GithubPages] que utiliza como tecnologia para o gerenciamento do conteúdo, o servidor [Jekyll] alem do uso do [Bootstrap] para a criação da estrutura do site e para o uso das diversas bibliotecas de javascript está sendo usado as tecnologias como [Node.js]
-
-No repositorio da [MOZG](https://github.com/mozgbrasil) é possivel visualizar alem dos módulos para Magento, algumas diversidades de tecnologias, como o uso do [Bash Shell Scripting], como o uso do [Docker] a construção de aplicativos na [Heroku] como é o caso do aplicativo (https://github.com/mozgbrasil/heroku-magento) que utiliza o [Composer] para a implantação na [Heroku] e recentemente a criação do aplicativo (https://github.com/mozgbrasil/heroku-node) que utiliza [ExpressJs] e que utiliza o [NPM] para a implantação na [Heroku]
-
-## Sombre Reptile
-
-Desenvolver Web Coldfusion
-
-01/10/2003 até 15/07/2004
-
-Participei do desenvolvimento de aplicações para a intranet e reformulação do Site Institucional e do Portal de Comunicações da Petroquímica União situada (http://www.utc.com.br/) no Polo Petroquímico de Capuava, em Santo André.
-
-## Símbolo Editora e Comunicação Integrada S/A.
-
-Analista Programador Jr / CLT
-
-01/04/2002 até 18/09/2003
-
-Participei do desenvolvimento de uma série de aplicações de uso interno e externo todas escritas na linguagem [Coldfusion] em conjunto com o Gerenciador de Banco de Dados [SQL Server]
-
-Dentre as aplicações externas vou citar o site da (http://www.atrevida.com.br/) e o site de assinaturas.
-
-Para o site da (http://www.dietaja.com.br/) foi criado um gerenciador de conteúdo com necessidades exclusiva ao projeto.
-
-## PIC - Projetos de Informação e Consultoria Ltda.
-
-Programador Trainee / CLT
-
-09/04/2001 até 21/03/2002
-
-Participei do desenvolvimento dos portais Nihonsite de propriedade da (PIC) e Conexão RH de propriedade da (Telesp Celular), em ambas aplicações foram utilizado as linguagens ASP e [Coldfusion](https://www.adobe.com/products/coldfusion-family.html) em conjunto com os Gerenciadores de Banco de Dados: [SQL Server] e [Oracle Database]
-
-## Dimetal - Distribuidora de produtos metalurgicos
-
-Auxiliar administrativo / CLT
-
-01/09/1999 até 28/04/2000
-
-Com o fechamento da CASIL fui convidado pelos administradores a atuar na mesma função com a mesma equipe de contabilidade mas na DIMETAL que se trata de uma das empresas da família Salles Leite
-
-## CASIL S/A
-
-Mensageiro / CLT
-
-02/01/1998 até 31/08/1999
-
-Iniciando como mensageiro em pouco tempo fui trabalhar como estagiário no setor de tecnologia devido a necessidade do colégio de processamento de dados ao qual eu me graduei, atuei também no setor de contabilidade efetuando procedimentos como: classificação de contas, lançamentos, conciliações entre outros serviços do setor
-
-## AMESP Saúde Ltda.
-
-Office Boy / CLT
-
-12/07/1996 até 09/09/1997
-
-Prestando serviços gerais internos e externos
-
-{% endcomment %}
