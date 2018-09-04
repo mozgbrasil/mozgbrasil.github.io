@@ -50,7 +50,7 @@ layout: compress
                                 {% assign sorted_pages = site.pages | sort:"order" %}
                                 {% for node in sorted_pages %}
                                 {% if node.title %}
-                                {% if node.title != "Debug" %}
+                                {% if node.title != "Debug" or node.title != "Curriculum" %}
                                 <li>
                                     <a class="footer-link" href="{{ node.url | prepend: site.baseurl }}"><i class="{{ icon_tag }} icon"></i>{{ node.title }}</a>
                                 </li>
@@ -66,7 +66,7 @@ layout: compress
                                     <a class="footer-link" href="https://twitter.com/{{ site.twitter.username }}"><i class="icon twitter"></i>twitter</a>
                                 </li>
                                 <li>
-                                    <a class="footer-link" class="item" href="https://www.youtube.com/channel/UCiXR9cKwxNKMehSnqXvhtug"><i class="icon youtube"></i>youtube</a>
+                                    <a class="footer-link" class="item" href="https://www.youtube.com/channel/UCiXR9cKwxNKMehSnqXvhtug/videos"><i class="icon youtube"></i>youtube</a>
                                 </li>
                                 <li>
                                     <a class="footer-link" href="https://www.facebook.com/{{ site.facebook_username }}"><i class="icon facebook"></i>facebook</a>
