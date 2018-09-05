@@ -20,8 +20,9 @@ Analista e Desenvolvedor de Sistemas Sênior
 
 # Formação Acadêmica
 
-Colégio Integrado Santa Inês S/C Ltda. (1997-1999)  
-Curso de Processamento de Dados  
+Colégio Integrado Santa Inês S/C Ltda.
+Curso de Processamento de Dados
+01/1997 até 12/1999  
 Concluído a 3ª serie do 2º grau em 1999
 
 # Formação profissional
@@ -62,13 +63,13 @@ Para o site da [MOZG](http://mozg.com.br/ "MOZG") o mesmo está usando o serviç
 
 No repositorio da [MOZG](https://github.com/mozgbrasil "MOZG") é possivel visualizar alem dos módulos para Magento, algumas diversidades de tecnologias, como o uso do [Bash Shell Scripting](https://github.com/mozgbrasil/bash-shell-scripts-public "Bash"), como o uso do [Docker](https://github.com/mozgbrasil/docker "Docker") a construção de aplicativos na [Heroku](https://www.heroku.com/ "Heroku") como é o caso do aplicativo [Heroku-Magento](https://github.com/mozgbrasil/heroku-magento "Heroku-Magento") que utiliza o [Composer](https://getcomposer.org/ "Composer") para a implantação na [Heroku](https://www.heroku.com/ "Heroku") e recentemente a criação do aplicativo [Heroku-Node](https://github.com/mozgbrasil/heroku-node "Heroku-Node") que utiliza [ExpressJs](https://expressjs.com/ "ExpressJs") e que utiliza o [NPM](https://www.npmjs.com/ "NPM") para a implantação na [Heroku](https://www.heroku.com/ "Heroku")
 
-Atendemos centenas ou até milhares de clientes em todo o Brasil, gerando milhares de reais em receita para os nossos clientes por intermédio principalmente dos nossos Módulos de Pagamentos para Magento 1.x como Cielo, Braspag, Rede, Banco do Brasil, Banco Bradesco e Itaú.
+Atendemos centenas ou até milhares de clientes em todo o Brasil, gerando milhares de reais em receita para os nossos clientes por intermédio de consultoria, criação de projeto e principalmente pelo uso dos nossos Módulos de Pagamentos para Magento 1.x como Cielo, Braspag, Rede, Banco do Brasil, Banco Bradesco e Itaú.
 
-Decorrente da plena estabilidade dos nossos atuais Módulos para Magento 1.x,  baixíssima demanda de suporte e atualmente diversas opções de Módulos para Magento 1.x gratuito no mercado, optamos por paralisar as nossas operações com os nossos devidos compromissos assumidos para buscar novos desafios como colaborador, freelancer ou consultor.
+Decorrente da plena estabilidade dos nossos produtos e baixíssima demanda de suporte e devido atualmente haver diversas opções minimalista de produtos semelhantes gratuito no mercado, optamos por paralisar as nossas operações com os nossos devidos compromissos assumidos para buscar novos desafios como colaborador, freelancer ou consultor.
 
 ## Sombre Reptile
 
-Desenvolver Web Coldfusion
+Analista Programador
 
 01/10/2003 até 15/07/2004
 
