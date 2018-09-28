@@ -69,7 +69,11 @@ Atendemos centenas ou até milhares de clientes em todo o Brasil, gerando milhar
 
 Decorrente da plena estabilidade dos nossos produtos e baixíssima demanda de suporte e devido atualmente haver diversas opções minimalista de produtos semelhantes gratuito no mercado, optamos por paralisar as nossas operações com os nossos devidos compromissos assumidos para buscar novos desafios como colaborador, freelancer ou consultor.
 
-Atualmente venho utilizando a o [Laravel Framework](https://laravel.com/ "Laravel") onde venho disponibilizando o seguinte projeto [Heroku-Laravel](https://github.com/mozgbrasil/heroku-laravel "Heroku-Laravel"), também venho adotando o uso do ["Scrum"](https://pt.wikipedia.org/wiki/Scrum_(desenvolvimento_de_software) "Scrum") que se trata de uma metodologia ágil para gestão e planejamento de projetos de software, usando o serviço ["GitScrum"](https://site.gitscrum.com/ "GitScrum"), também venho adotando o uso do ["TDD"](https://pt.wikipedia.org/wiki/Test_Driven_Development "TDD") que se trata de uma forma de desenvolvimento de software orientado a testes, atualmente usando a tecnologia [PHPUnit](https://phpunit.de/ "PHPUnit")
+Também venho utilizando o [Laravel Framework](https://laravel.com/ "Laravel") onde venho disponibilizando o seguinte projeto [Heroku-Laravel](https://github.com/mozgbrasil/heroku-laravel "Heroku-Laravel"), também venho adotando o uso do ["Scrum"](https://pt.wikipedia.org/wiki/Scrum_(desenvolvimento_de_software) "Scrum") que se trata de uma metodologia ágil para gestão e planejamento de projetos de software, usando o serviço ["GitScrum"](https://site.gitscrum.com/ "GitScrum"), também venho adotando o uso do ["TDD"](https://pt.wikipedia.org/wiki/Test_Driven_Development "TDD") que se trata de uma forma de desenvolvimento de software orientado a testes, atualmente usando a tecnologia [PHPUnit](https://phpunit.de/ "PHPUnit")
+
+Também venho utilizando o [React Native](https://facebook.github.io/react-native/) onde venho disponibilizando o seguinte projeto [react-native-app](https://github.com/mozgbrasil/react-native-app)
+
+Também venho utilizando o [React](https://reactjs.org/) onde venho disponibilizando o seguinte projeto [heroku-react-app](https://github.com/mozgbrasil/heroku-react-app)
 
 ## Sombre Reptile
 
