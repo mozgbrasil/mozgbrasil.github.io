@@ -59,6 +59,16 @@ Em 2016 devido a necessidade do aperfeiçoamento tecnológico, foi criado a [MOZ
 
 Os módulos do [Catálogo](http://mozg.com.br/catalogo/ "Catálogo") utiliza uma biblioteca base denominada [Mozg Framework](https://github.com/mozgbrasil/php-framework-php_56#mozgframework "Mozg Framework") que utiliza dependência parcial do  [Zend Framework](https://github.com/mozgbrasil/php-framework-php_56/blob/master/composer.json#L46 "Zend Framework") também [Symfony Framework](https://github.com/mozgbrasil/php-framework-php_56/blob/master/composer.json#L51 "Symfony Framework") também [Doctrine](https://github.com/mozgbrasil/php-framework-php_56/blob/master/composer.json#L59 "Doctrine") entre outras dependência como especificado no [Manifesto](https://github.com/mozgbrasil/php-framework-php_56/blob/master/composer.json "Manifesto"), estando a biblioteca de acordo com as especificações [PSR-4](https://www.php-fig.org/psr/psr-4/) utilizando [Namespaces](http://php.net/manual/en/language.namespaces.php "Namespaces") facilitando o carregamento automático das classes via "autoload" ao invés de inclusão manual de arquivos
 
+Veja também alguns videos de alguns produtos para Magento
+
+https://github.com/mozgbrasil/magento-cielo-php_56#v%C3%ADdeos-demonstrativo
+
+https://github.com/mozgbrasil/magento-correios-php_56/blob/master/README_Correios.md#v%C3%ADdeos-demonstrativo
+
+Veja mais videos no seguinte canal
+
+https://www.youtube.com/channel/UCiXR9cKwxNKMehSnqXvhtug/videos
+
 Para o gerenciamento dos registro referente as atualizações dos módulos foi desenvolvido uma aplicação em [PHP](http://php.net/ "PHP") sobre o [Google App Engine](https://cloud.google.com/appengine/ "GAE") que utiliza para armazenamento dos dados o [Google Cloud Datastore](https://cloud.google.com/datastore/docs/concepts/overview?hl=pt "Datastore") dessa forma não gerando custos e aproveitando os recursos do Google
 
 Para o site da [MOZG](http://mozg.com.br/ "MOZG") o mesmo está usando o serviço [GithubPages](https://pages.github.com/ "GithubPages") que utiliza como tecnologia para o gerenciamento do conteúdo, o servidor [Jekyll](https://jekyllrb.com/ "Jekyll") alem do uso do [Bootstrap](https://getbootstrap.com/ "Bootstrap") para a criação da estrutura do site e para o uso das diversas bibliotecas de javascript está sendo usado as tecnologias como [Node.js](https://nodejs.org/en/ "Node.js") e [NPM](https://www.npmjs.com/ "NPM") e algumas das mais utilizadas bibliotecas como [PrototypeJs](http://prototypejs.org/ "MOZG"), [jQuery](https://jquery.com/ "jQuery")
