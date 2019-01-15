@@ -1,5 +1,5 @@
 ---
-layout: compress
+#layout: compress
 ---
 <!DOCTYPE html>
 <html lang="pt" class="no-js">
@@ -7,39 +7,110 @@ layout: compress
         {% include tags_head.html %}
     </head>
     <body>
-
-        <!-- Static navbar -->
-        <nav class="navbar navbar-default navbar-static-top ">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="/">MOZG</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                {% assign variable = site.top_menu %}
-                {% include {{variable}} %}
-            </div><!--/.nav-collapse -->
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary mb-4">
+          <a class="navbar-brand" href="/">
+            <img src="/assets/images/logos/logo_32_32.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            MOZG
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item {% if page.url == '/' %} active{% endif %}">
+                  <a href="/" class="nav-link {% if page.url == '/' %} active{% endif %}">Visão geral</a>
+              </li>
+              <li class="nav-item {% if page.url == '/sobre-nos/' %} active{% endif %}">
+                  <a href="/sobre-nos/" class="nav-link {% if page.url == '/sobre-nos/' %} active{% endif %}">Sobre Nós</a>
+              </li>
+              <li class="nav-item {% if page.url == '/catalogo/' %} active{% endif %} dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catálogo</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown03">
+                  <a class="dropdown-item" href="/catalogo_magento1/">Magento 1</a>
+                  {% comment %}
+                  <a class="dropdown-item" href="/catalogo_magento2/">Magento 2</a>
+                  <a class="dropdown-item" href="/apps/">Aplicativos</a>
+                  {% endcomment %}
+                </div>
+              </li>
+              <li class="nav-item {% if page.url == '/artigos/' %} active{% endif %}">
+                  <a href="/artigos/" class="nav-link {% if page.url == '/artigos/' %} active{% endif %}">Artigos</a>
+              </li>
+              <li class="nav-item {% if page.url == '/contato/' %} active{% endif %}">
+                  <a href="/contato/" class="nav-link {% if page.url == '/contato/' %} active{% endif %}">Contato</a>
+              </li>
+            </ul>
           </div>
         </nav>
-
-        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <!-- /navbar -->
+        {% if page.url == '/' %}
+        <!-- carousel -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" ><rect fill="#777" width="100%" height="100%"/></svg>
+              <div class="container">
+                <div class="carousel-caption text-left">
+                  <h1>Contrate nossos serviços</h1>
+                  <p>Com experiência em mais de 20 anos em desenvolvimento de softwares atendemos diversas empresas no Brasil.</p>
+                  <p><a class="btn btn-lg btn-primary" href="https://api.whatsapp.com/send?phone=5511977072339&text=" role="button">+55 11 977072339</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" ><rect fill="#777" width="100%" height="100%"/></svg>
+              <div class="container">
+                <div class="carousel-caption text-left">
+                  <h1>Magento</h1>
+                  <p>Desde 2008 com foco exclusivo na plataforma Magento conseguimos desenvolver o maior catálogo de módulos para Magento 1</p>
+                  <p><a class="btn btn-lg btn-primary" href="/catalogo_magento1/" role="button">Veja mais</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" ><rect fill="#777" width="100%" height="100%"/></svg>
+              <div class="container">
+                <div class="carousel-caption text-left">
+                  <h1>React</h1>
+                  <p>O React é uma biblioteca JavaScript de código aberto para criar interfaces de usuário. É mantido pelo Facebook, Instagram e uma comunidade de desenvolvedores individuais e outras empresas.</p>
+                  <p><a class="btn btn-lg btn-primary" href="https://heroku-react-app-mozg.herokuapp.com/" role="button">Acesse nosso aplicativo</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
+        <!-- carousel -->
+        {% else %}
+        <!-- jumbotron -->
         <div class="jumbotron">
           <div class="container">
             <h1>{{ page.title }}</h1>
             <p>{{ page.excerpt }}</p>
           </div>
         </div>
-
+        <!-- /jumbotron -->
+        {% endif %}
+        <!-- main -->
         <div class="container">
             {{ content }}
           <hr>
-        </div> <!-- /container -->
-
+        </div>
+        <!-- /main -->
+        <!-- footer -->
         <footer>
             <div class="footer" id="footer">
                 <div class="container">
@@ -129,6 +200,9 @@ layout: compress
                                 <li>
                                     <a class="footer-link" href="http://www.cloudways.com/en/?id=35053">Cloudways</a>
                                 </li>
+                                <li>
+                                    <a class="footer-link" href="https://reactjs.org/"><i class="icon sitemap"></i>React</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -137,7 +211,6 @@ layout: compress
                 <!--/.container-->
             </div>
             <!--/.footer-->
-
             <div class="footer-bottom">
                 <div class="container">
                     <p class="pull-left"> Copyright © {{ site.time | date: '%Y' }} MOZG </p>
@@ -153,8 +226,7 @@ layout: compress
             </div>
             <!--/.footer-bottom-->
         </footer>
-
+        <!-- /footer -->
         {% include tags_footer.html %}
-
     </body>
 </html>

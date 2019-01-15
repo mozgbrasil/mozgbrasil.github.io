@@ -1,4 +1,3 @@
-
 <!-- Standard Meta -->
 <link rel="alternate" href="https://mozg.com.br/" />
 <meta charset="utf-8" />
@@ -17,7 +16,6 @@
 <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
 <meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 <meta itemprop="image" content="{{ "/assets/images/logos/logo_32_32.png" | prepend: site.baseurl | prepend: site.url }}"/>
-
 <!-- THEME -->
 {% if jekyll.environment == "production" %}
 <style>
@@ -26,13 +24,11 @@
 {% else %}
 <link rel="stylesheet" href="/assets/css/style.css">
 {% endif %}
-
 <!-- publisher -->
 <link href="https://plus.google.com/117178438811960262290" rel="publisher" />
 <!-- Google+ JavaScript API -->
 <script type="text/javascript" async defer
 src="https://apis.google.com/js/platform.js?publisherid=117178438811960262290"></script>
-
 {% comment %}
 <!-- snippet-page-level ads -->
 <script type="text/javascript" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -43,7 +39,6 @@ src="https://apis.google.com/js/platform.js?publisherid=117178438811960262290"><
   });
 </script>
 {% endcomment %}
-
 <!-- snippet-google-analytics -->
 {% include snippet-google-analytics.html %}
 <!-- /TAGS GOOGLE -->

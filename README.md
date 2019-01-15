@@ -17,15 +17,29 @@ Caso queira contribuir para melhoria da documentação de um Fork no repositóri
 
 ## Característica técnica
 
-### Node ->
+### SDK - Jekyll
 
-    npm update
+    sudo apt install ruby-dev
+    sudo gem install jekyll
+    sudo gem install github-pages
+    sudo gem install rouge
+    sudo gem install bundler
+    sudo bundle install
+    sudo gem update --system
+    ruby --version
+    gem --version
+    bundle -v
+    jekyll -v 
 
 ### Jekyll -> Execução em ambiente local
 
-    cd ~/dados/public_html/git/automatic/mozgbrasil.github.io
+    cd ~/dados/git/projects/mozgbrasil.github.io
 
     bundle exec jekyll serve --verbose
+
+### Node ->
+
+    npm update
 
 ### Backend
 
