@@ -85,8 +85,6 @@ Sobre o uso do ["TDD"](https://pt.wikipedia.org/wiki/Test_Driven_Development "TD
 
 Seguindo as tendências, venho utilizando o [Laravel Framework](https://laravel.com/ "Laravel") e disponibilizando o seguinte projeto [Heroku-Laravel](https://github.com/mozgbrasil/heroku-laravel "Heroku-Laravel") e para o [React Native](https://facebook.github.io/react-native/) venho disponibilizando o seguinte projeto [react-native-app](https://github.com/mozgbrasil/react-native-app) e para o [React](https://reactjs.org/) venho disponibilizando o seguinte projeto [heroku-react-app](https://github.com/mozgbrasil/heroku-react-app) podendo ser visualizado clicando no link a seguir [Heroku](https://heroku-react-app-mozg.herokuapp.com/)
 
-Estou buscando uma oportunidade de trabalho, tenho formação técnica em processamento de dados, excelentes cursos em uma das mais renomadas escolas de tecnologia do Brasil (Impacta), tenho perfil autodidata conforme meu histórico profissional, experiencia como empreendedor, com uma trajetória composta de muitas adversidade, me tornando um profissional com ampla bagagem tecnológica e importantes diferenciais, pretendo oferecer meus serviços prezando pela ética e empenho, conto com sua confiança.
-
 ## Sombre Reptile
 
 Analista Programador
