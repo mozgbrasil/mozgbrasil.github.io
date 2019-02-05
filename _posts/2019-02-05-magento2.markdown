@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Instalando o Magento2"
+title:  "Magento2"
 date:   2016-04-26 14:01:03
 category: magento2
 author: Marcio Amorim
 tags: [magento2, php]
-excerpt: "Nesse artigo será exibido detalhadamente os processos feito via terminal para a instalação do Magento2"
+excerpt: "Nesse artigo será exibido detalhadamente os processos feito via terminal para a instalação do Magento2 e diversas dicas"
 ---
 
 [phpinfo]:http://ec2-54-232-215-118.sa-east-1.compute.amazonaws.com/public_html/phpinfo.php
