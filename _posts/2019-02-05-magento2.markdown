@@ -30,42 +30,42 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 	# Get the metapackage
 
-	composer create-project --repository=https://repo.magento.com/ magento/project-community-edition magento2 -vvv
-	mv magento2/{.[!.],}* .
-	ls
+		composer create-project --repository=https://repo.magento.com/ magento/project-community-edition magento2 -vvv
+		mv magento2/{.[!.],}* .
+		ls
 
 	# Set file permissions
 
-	find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
-	find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
-		# Ubuntu
-		sudo chown -R :www-data . 
-		sudo chmod u+x bin/magento
+		find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
+		find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
+			# Ubuntu
+			sudo chown -R :www-data . 
+			sudo chmod u+x bin/magento
 
 	# MySQL
 
-	mysqladmin -h 'mysql' -u root -p CREATE "magento230dev02"
+		mysqladmin -h 'mysql' -u root -p CREATE "magento230dev02"
 
-	mysql -h 'mysql' -u 'root' -p 'magento-007' < 'database_2018.07.20_15.17.53.sql' ;
+		mysql -h 'mysql' -u 'root' -p 'magento-007' < 'database_2018.07.20_15.17.53.sql' ;
 
 	# Install Magento
 
-	php bin/magento setup:install \
-	--base-url=https://magento.devilbox/ \
-	--db-host=127.0.0.1 \
-	--db-name=magento230dev02 \
-	--db-user=root \
-	--db-password= \
-	--backend-frontname=admin \
-	--admin-firstname=Marcio \
-	--admin-lastname=Amorim \
-	--admin-email=mailer@mozg.com.br \
-	--admin-user=admin \
-	--admin-password=123456a \
-	--language=pt_BR \
-	--currency=BRL \
-	--timezone=America/Sao_Paulo \
-	--use-rewrites=1
+		php bin/magento setup:install \
+		--base-url=https://magento.devilbox/ \
+		--db-host=127.0.0.1 \
+		--db-name=magento230dev02 \
+		--db-user=root \
+		--db-password= \
+		--backend-frontname=admin \
+		--admin-firstname=Marcio \
+		--admin-lastname=Amorim \
+		--admin-email=mailer@mozg.com.br \
+		--admin-user=admin \
+		--admin-password=123456a \
+		--language=pt_BR \
+		--currency=BRL \
+		--timezone=America/Sao_Paulo \
+		--use-rewrites=1
 
 # Pós Install Magento
 
