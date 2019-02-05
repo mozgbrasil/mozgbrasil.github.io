@@ -44,9 +44,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 	# MySQL
 
-		mysqladmin -h 'mysql' -u root -p CREATE "magento230dev02"
-
-		mysql -h 'mysql' -u 'root' -p 'magento-007' < 'database_2018.07.20_15.17.53.sql' ;
+		mysqladmin -h 'mysql' -u root -p CREATE "magento230dev02"		
 
 	# Install Magento
 
@@ -124,13 +122,15 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 	# https://magenticians.com/why-magento-2-is-slow/
 
-	Backend
+		php bin/magento setup:static-content:deploy --jobs 4
 
-		STORES -> Configuration -> CATALOG -> Catalog -> Storefront -> Use Flat Catalog Category -> Select Yes and click Save Config.
-
-		STORES -> Configuration -> ADVANCED -> Developer -> JavaScript Settings and set both Merge JavaScript Files and Minify JavaScript Files to Yes and click Save Config.
-
-		STORES -> Configuration -> ADVANCED -> Developer -> CSS Settings and set both Merge CSS Files and Minify CSS Files to Yes and click Save Config.
+		php bin/magento config:set catalog/frontend/flat_catalog_product 1
+		# php bin/magento config:set dev/js/enable_js_bundling 1 # Production
+		php bin/magento config:set dev/js/merge_files 1
+		php bin/magento config:set dev/js/minify_files 1
+		php bin/magento config:set dev/css/merge_css_files 1
+		php bin/magento config:set dev/css/minify_files 1
+		php bin/magento config:set dev/static/sign 1
 
 	# https://magento.stackexchange.com/questions/198084/magento-2-2-often-extremely-slow-100-processor-usage-after-setupupgrade
 
@@ -190,6 +190,8 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	./n98-magerun2.phar sys:check
 
 # SQL Útil
+
+	mysql -h 'mysql' -u 'root' -p 'magento-007' < 'database_2018.07.20_15.17.53.sql' ;
 
 	mysql -h 'mysql' -u 'root' -p 'magento230dev03' -e "
 	SELECT * FROM core_config_data WHERE path = 'web/seo/use_rewrites';
