@@ -1,0 +1,413 @@
+---
+layout: post
+title:  "Instalando o Magento2"
+date:   2016-04-26 14:01:03
+category: magento2
+author: Marcio Amorim
+tags: [magento2, php]
+excerpt: "Nesse artigo será exibido detalhadamente os processos feito via terminal para a instalação do Magento2"
+---
+
+[phpinfo]:http://ec2-54-232-215-118.sa-east-1.compute.amazonaws.com/public_html/phpinfo.php
+[crowdin]:https://crowdin.com/project/magento-2/pt-BR
+
+Ola
+
+Execute os comandos efetuando as devidas alterações personalizando para seu projeto
+
+# Criação de diretório e atualização do Composer
+
+	cd ~/dados/public_html
+	pwd
+	ls
+	mkdir magento-2.3.0-dev03
+	cd magento-2.3.0-dev03
+	composer --version && sudo composer self-update && composer clear-cache
+
+# Install Magento
+
+	# https://devdocs.magento.com/guides/v2.3/install-gde/composer.html
+
+	# Get the metapackage
+
+	composer create-project --repository=https://repo.magento.com/ magento/project-community-edition magento2 -vvv
+	mv magento2/{.[!.],}* .
+	ls
+
+	# Set file permissions
+
+	find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
+	find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
+		# Ubuntu
+		sudo chown -R :www-data . 
+		sudo chmod u+x bin/magento
+
+	# MySQL
+
+	mysqladmin -h 'mysql' -u root -p CREATE "magento230dev02"
+
+	mysql -h 'mysql' -u 'root' -p 'magento-007' < 'database_2018.07.20_15.17.53.sql' ;
+
+	# Install Magento
+
+	php bin/magento setup:install \
+	--base-url=https://magento.devilbox/ \
+	--db-host=127.0.0.1 \
+	--db-name=magento230dev02 \
+	--db-user=root \
+	--db-password= \
+	--backend-frontname=admin \
+	--admin-firstname=Marcio \
+	--admin-lastname=Amorim \
+	--admin-email=mailer@mozg.com.br \
+	--admin-user=admin \
+	--admin-password=123456a \
+	--language=pt_BR \
+	--currency=BRL \
+	--timezone=America/Sao_Paulo \
+	--use-rewrites=1
+
+# Pós Install Magento
+
+	echo -e "\e[1;33m --( pwd )-- \e[0m" ;\
+	pwd ;\
+	echo -e "\e[1;33m --( bin/magento cache:disable )-- \e[0m" ;\
+	php bin/magento cache:disable ;\
+	echo -e "\e[1;33m --( bin/magento cache:clean )-- \e[0m" ;\
+	php bin/magento cache:clean ;\
+	echo -e "\e[1;33m --( bin/magento cache:flush )-- \e[0m" ;\
+	php bin/magento cache:flush ;\
+	echo -e "\e[1;33m --( bin/magento cache:status )-- \e[0m" ;\
+	php bin/magento cache:status ;\
+	echo -e "\e[1;33m --( bin/magento deploy:mode:show )-- \e[0m" ;\
+	php bin/magento deploy:mode:show ;\
+	echo -e "\e[1;33m --( bin/magento deploy:mode:set developer )-- \e[0m" ;\
+	php bin/magento deploy:mode:set developer ;\
+	echo -e "\e[1;33m --( bin/magento indexer:reindex )-- \e[0m" ;\
+	php bin/magento indexer:reindex ;\
+	echo -e "\e[1;33m --( bin/magento indexer:status )-- \e[0m" ;\
+	php bin/magento indexer:status ;\
+	echo -e "\e[1;33m --( bin/magento maintenance:disable )-- \e[0m" ;\
+	#php bin/magento maintenance:disable ;\
+	echo -e "\e[1;33m --( bin/magento maintenance:status )-- \e[0m" ;\
+	php bin/magento maintenance:status ;\
+	echo -e "\e[1;33m --( bin/magento module:status )-- \e[0m" ;\
+	php bin/magento module:status ;\
+	echo -e "\e[1;33m --( bin/magento setup:db:status )-- \e[0m" ;\
+	php bin/magento setup:db:status ;\
+	echo -e "\e[1;33m --( bin/magento setup:upgrade )-- \e[0m" ;\
+	php bin/magento setup:upgrade ;\
+	echo -e "\e[1;33m --( bin/magento cron:run )-- \e[0m" ;\
+	php bin/magento cron:run ;\
+	echo -e "\e[1;33m --( update/cron.php )-- \e[0m" ;\
+	php update/cron.php ;\
+	echo -e "\e[1;33m --( bin/magento setup:cron:run )-- \e[0m" ;\
+	php bin/magento setup:cron:run ;\
+	echo -e "\e[1;33m --( bin/magento )-- \e[0m" ;\
+	php bin/magento ;\
+	echo -e "\e[1;33m --( index.php )-- \e[0m" ;\
+	php index.php
+
+# Performance
+
+	# Developer
+
+	# https://www.youtube.com/results?search_query=magento+2+speed+optimization
+
+	# https://www.goivvy.com/blog/speed-up-magento
+
+		mysql -h 'mysql' -u 'root' -p -e "
+		SHOW VARIABLES LIKE '%query_cache%';
+		"
+
+	# https://magento.stackexchange.com/questions/152221/why-magento-2-is-extremely-slow
+
+	# https://magenticians.com/why-magento-2-is-slow/
+
+	Backend
+
+		STORES -> Configuration -> CATALOG -> Catalog -> Storefront -> Use Flat Catalog Category -> Select Yes and click Save Config.
+
+		STORES -> Configuration -> ADVANCED -> Developer -> JavaScript Settings and set both Merge JavaScript Files and Minify JavaScript Files to Yes and click Save Config.
+
+		STORES -> Configuration -> ADVANCED -> Developer -> CSS Settings and set both Merge CSS Files and Minify CSS Files to Yes and click Save Config.
+
+	# https://magento.stackexchange.com/questions/198084/magento-2-2-often-extremely-slow-100-processor-usage-after-setupupgrade
+
+	# To force M2 to deploy the static data in developer mode in order to skip the long wait.
+
+		php bin/magento setup:static-content:deploy -f
+
+	# Production
+
+	# https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/js-bundling.html
+
+# Config Memcached
+
+	# https://devdocs.magento.com/guides/v2.3/config-guide/memcache/memcache_magento.html
+
+	# https://www.cloudways.com/blog/magento-2-memcached/
+
+	# How to check if memcached is running
+
+		ps aux | grep memcached
+
+	# How to check if memcached module is running
+
+		php -m | grep memcache
+
+	# Edit
+
+		cd localhost/htdocs/magento/magento-2.3.0-dev03
+
+		nano app/etc/env.php
+
+	# https://devdocs.magento.com/guides/v2.3/config-guide/redis/config-redis.html
+
+	# https://devdocs.magento.com/guides/v2.3/config-guide/redis/redis-session.html#result
+
+		php bin/magento setup:config:set --session-save=redis --session-save-redis-host=localhost --session-save-redis-log-level=3 --session-save-redis-db=2
+
+	# https://devdocs.magento.com/guides/v2.3/config-guide/redis/redis-pg-cache.html
+
+		php bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=127.0.0.1 --cache-backend-redis-db=0
+
+		php bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-redis-db=1
+
+	# Clean Cache
+
+		rm -fr var/cache/ var/composer_home/ var/log/ var/page_cache/ var/session/ var/tmp/ var/view_preprocessed/
+		php bin/magento cache:flush
+
+# n98-magerun2
+
+	wget https://files.magerun.net/n98-magerun2.phar
+	chmod +x ./n98-magerun2.phar
+	./n98-magerun2.phar --version
+	./n98-magerun2.phar
+	./n98-magerun2.phar db:status
+	./n98-magerun2.phar db:maintain:check-tables
+	./n98-magerun2.phar sys:check
+
+# SQL Útil
+
+	mysql -h 'mysql' -u 'root' -p 'magento230dev03' -e "
+	SELECT * FROM core_config_data WHERE path = 'web/seo/use_rewrites';
+	UPDATE core_config_data SET value = '1' WHERE path = 'web/seo/use_rewrites';
+	SELECT * FROM core_config_data WHERE path = 'web/seo/use_rewrites';
+	"
+
+	mysql -h 'mysql' -u 'root' -p 'magento230dev02' -e "
+    SELECT * FROM core_config_data WHERE path like '%base_url%';
+    UPDATE core_config_data SET value = 'https://magento-dev02.devilbox/' WHERE path like '%secure/base_url%';
+    SELECT * FROM core_config_data WHERE path like '%secure/base_url%';
+    "
+
+# Install Sample Data
+
+	# https://devdocs.magento.com/guides/v2.3/install-gde/install/sample-data-after-magento.html
+
+		php -d memory_limit=-1 bin/magento sampledata:deploy
+		php bin/magento setup:upgrade
+
+# Magento PWA Studio
+
+	# https://magento-research.github.io/pwa-studio/
+
+	# https://magento-research.github.io/pwa-studio/venia-pwa-concept/setup/
+
+		cd /shared/httpd/localhost/htdocs/magento
+		git clone https://github.com/magento-research/pwa-studio.git
+		cd pwa-studio/
+		npm install
+		cp packages/venia-concept/.env.dist packages/venia-concept/.env
+		nano .env
+		npm run watch:all
+
+		cd pwa-studio/packages/venia-concept
+		npm run validate-queries
+
+	# NOTE
+
+		NOTE: Manual static content deployment is not required in "default" and "developer" modes.               
+		In "default" and "developer" modes static contents are being deployed automatically on demand.           
+		If you still want to deploy in these modes, use -f option: 'bin/magento setup:static-content:deploy -f'
+
+# Install/Uninstall Extensions
+
+	# https://github.com/rafaelstz/traducao_magento2_pt_br#via-composer
+
+		composer require rafaelstz/traducao_magento2_pt_br:dev-master -vvv
+		php bin/magento setup:static-content:deploy pt_BR -f
+		php bin/magento cache:flush
+
+	# https://github.com/Smile-SA/magento2-module-debug-toolbar
+
+		composer require --dev smile/module-debug-toolbar -vvv
+		php bin/magento setup:upgrade
+		php bin/magento setup:config:set "smile_debugtoolbar/configuration/enabled" 1
+
+	# https://github.com/kumarbikash411/Booking
+
+		composer config repositories.kumarbikash411-booking git git@github.com:kumarbikash411/Booking.git -vvv
+		composer require kumarbikash411/Booking:dev-master -vvv
+		php bin/magento setup:upgrade
+
+	# https://github.com/blackbird-agency/magento-2-disabled-reports
+
+		composer require blackbird/module-disable-reports -vvv
+		php bin/magento setup:upgrade
+
+	# https://packagist.org/packages/techspot/
+
+		composer require techspot/addresslabel -vvv
+		composer require techspot/brcustomer -vvv
+		composer require techspot/brestimateshipping -vvv
+		composer require techspot/documentupload -vvv
+		composer require techspot/sendquote -vvv
+		php bin/magento setup:upgrade
+
+
+	# Pos Install
+
+		php bin/magento setup:static-content:deploy -f pt_BR
+
+	# Uninstall
+
+		cat composer.json
+		composer remove mageplaza/module-webhook -vvv
+		composer remove rafaelstz/traducao_magento2_pt_br -vvv
+		composer validate -vvv
+		composer update
+		# composer dump-autoload
+		php bin/magento setup:upgrade
+		php bin/magento cache:flush
+
+	# Clean Cache
+
+		rm -fr var/cache/ var/composer_home/ var/log/ var/page_cache/ var/session/ var/tmp/ var/view_preprocessed/
+		php bin/magento cache:flush
+
+	# Module
+
+		php bin/magento module:status
+
+	# Optimization in localhost 
+
+		php bin/magento setup:upgrade
+		php bin/magento setup:static-content:deploy -f
+		php bin/magento cache:flush
+
+	# To search for files in /target_directory and all its sub-directories, that have been modified in the last 60 minutes:
+
+		find . -type f -mmin -60
+
+
+# (`*`) Re-Install Magento
+
+	# diff -qr /home/marcio/dados/freebies/Magento-CE-2.3.0-2018-11-27-10-18-29/ /home/marcio/dados/mount/www/localhost/htdocs/magento/magento-2.3.0-dev03/
+
+		cd localhost/htdocs/magento/magento-2.3.0-dev03
+
+		rm app/etc/config.php
+		rm app/etc/env.php
+		rm -fr generated/code/
+
+		rm -fr pub/media/theme
+		rm -fr pub/static/deployed_version.txt
+		rm -fr pub/static/frontend
+
+	# Clean Cache
+
+		rm -fr var/cache/ var/composer_home/ var/log/ var/page_cache/ var/session/ var/tmp/ var/view_preprocessed/
+		php bin/magento cache:flush
+
+		mysqladmin -h 'mysql' -u root -p DROP "magento230dev03";
+		mysqladmin -h 'mysql' -u root -p CREATE "magento230dev03";
+
+	# Na necessidade de acessar o MySQL Client e ver os processos
+
+		mysql -h 'mysql' -u 'root' -p
+
+		show processlist;
+
+# Dica
+
+* Não utilizar o opcache em desenvolvimento pois não é exibido a alteração
+
+# Registros Cron
+
+A tabela `cron_schedule` armazena as tarefas a executar e executadas
+
+	TRUNCATE `cron_schedule`;
+	SELECT * FROM `cron_schedule`;
+	SELECT * FROM `cron_schedule` WHERE `job_code` like '%mozg%' AND `status` != 'success';
+
+# Reexecutar os scripts de setup do módulo
+
+	-- add table prefix if you have one
+	DROP TABLE IF EXISTS mozg_boxpacker_packing;
+	SELECT * FROM `setup_module` WHERE `module` like '%mozg%';
+	DELETE FROM setup_module WHERE module like '%mozg%';
+	DELETE FROM core_config_data WHERE path like '%mozg%';
+
+# Limpando arquivos de cache
+
+	rm -R -f ./var/log \
+	./var/report \
+	./var/cache \
+	./var/di \
+	./var/generation \
+	./var/page_cache \
+	./pub/static/*
+
+
+{% comment %}
+
+# Apresentação
+
+Veja na apresentação os processos executados
+
+Foi feito acesso via terminal ao servidor da amazon onde na execução dos comandos foi feito a instalação do Magento 2 sobre o [Servidor][phpinfo]
+
+<div class="">
+    <a class="fab google-red" data-g-action="Anthem - Video Start"
+        data-g-event="Home" data-g-label="For Enterprise"
+        data-glue-modal-disabled-on-mobile="true" data-glue-modal-trigger=
+        "ss-yt-7vXrTYFPJt0" href=
+        "https://www.youtube.com/watch?v=7vXrTYFPJt0">
+        <svg class="icon-fab-video"
+            enable-background="new 0 0 32 32" height="24px" version="1.1" viewbox=
+            "0 0 32 32" width="24px" x="0px" xml:space="preserve" xmlns=
+            "http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y=
+            "0px">
+            <path d=
+                "M28.8,3.8c-1-0.3-6.9-0.6-12.8-0.6c-5.9,0-11.8,0.3-12.8,0.6C0.7,4.6,0,10.2,0,16s0.7,11.4,3.2,12.2c1,0.3,6.9,0.6,12.8,0.6 c5.9,0,11.8-0.3,12.8-0.6C31.3,27.4,32,21.8,32,16S31.3,4.7,28.8,3.8 M12.8,22.4V9.6l8.8,6.4L12.8,22.4z">
+            </path>
+        </svg>
+        <img alt="" class="icon-fab-video" height="24" src=
+            "//www.google.com/ads/images/icons/icon-fab-video.png" width="24">
+    </a>
+    <div data-glue-modal="ss-yt-7vXrTYFPJt0" data-rs-modal="" id=
+        "ss-yt-7vXrTYFPJt0">
+        <iframe allowfullscreen="" frameborder="0" height="100%" src=
+            "https://www.youtube.com/embed/7vXrTYFPJt0?enablejsapi=1&amp;rel=0" type=
+            "text/html" width="100%"></iframe>
+    </div>
+</div>
+
+https://mirasvit.com/blog/7-ways-to-improve-your-magento-2-site-speed.html
+
+http://devdocs.magento.com/guides/v2.0/config-guide/memcache/memcache_ubuntu.html
+
+http://devdocs.magento.com/guides/v2.0/config-guide/redis/config-redis.html
+
+composer require magento2translations/language_pt_br:dev-master ;\
+composer require adyen/module-payment ;\
+composer require bleez/smtp ;\
+composer require vpietri/adm-quickdevbar ;\
+composer require mozgbrasil/framework-php56 --ignore-platform-reqs
+
+composer require mozgbrasil/magento2-bundle-php56 --ignore-platform-reqs
+
+{% endcomment %}
