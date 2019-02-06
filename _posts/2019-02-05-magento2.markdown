@@ -122,8 +122,6 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 	# https://magenticians.com/why-magento-2-is-slow/
 
-		php bin/magento setup:static-content:deploy --jobs 4
-
 		php bin/magento config:set catalog/frontend/flat_catalog_product 1
 		# php bin/magento config:set dev/js/enable_js_bundling 1 # Production
 		php bin/magento config:set dev/js/merge_files 1
@@ -131,6 +129,8 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 		php bin/magento config:set dev/css/merge_css_files 1
 		php bin/magento config:set dev/css/minify_files 1
 		php bin/magento config:set dev/static/sign 1
+
+		php bin/magento setup:static-content:deploy -f --jobs 4
 
 	# https://magento.stackexchange.com/questions/198084/magento-2-2-often-extremely-slow-100-processor-usage-after-setupupgrade
 
@@ -176,7 +176,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 	# Clean Cache
 
-		rm -fr var/cache/ var/composer_home/ var/log/ var/page_cache/ var/session/ var/tmp/ var/view_preprocessed/
+		rm -fr var/backups/ var/cache/ var/composer_home/ var/log/ var/page_cache/ var/session/ var/tmp/ var/view_preprocessed/
 		php bin/magento cache:flush
 
 # n98-magerun2
@@ -199,9 +199,9 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	SELECT * FROM core_config_data WHERE path = 'web/seo/use_rewrites';
 	"
 
-	mysql -h 'mysql' -u 'root' -p 'magento230dev02' -e "
+	mysql -h 'mysql' -u 'root' -p 'magento230dev03' -e "
     SELECT * FROM core_config_data WHERE path like '%base_url%';
-    UPDATE core_config_data SET value = 'https://magento-dev02.devilbox/' WHERE path like '%secure/base_url%';
+    UPDATE core_config_data SET value = 'https://magentodev03.devilbox/' WHERE path like '%secure/base_url%';
     SELECT * FROM core_config_data WHERE path like '%secure/base_url%';
     "
 
@@ -287,7 +287,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 	# Clean Cache
 
-		rm -fr var/cache/ var/composer_home/ var/log/ var/page_cache/ var/session/ var/tmp/ var/view_preprocessed/
+		rm -fr var/backups/ var/cache/ var/composer_home/ var/log/ var/page_cache/ var/session/ var/tmp/ var/view_preprocessed/
 		php bin/magento cache:flush
 
 	# Module
@@ -321,7 +321,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 	# Clean Cache
 
-		rm -fr var/cache/ var/composer_home/ var/log/ var/page_cache/ var/session/ var/tmp/ var/view_preprocessed/
+		rm -fr var/backups/ var/cache/ var/composer_home/ var/log/ var/page_cache/ var/session/ var/tmp/ var/view_preprocessed/ pub/static/*
 		php bin/magento cache:flush
 
 		mysqladmin -h 'mysql' -u root -p DROP "magento230dev03";
@@ -352,16 +352,6 @@ A tabela `cron_schedule` armazena as tarefas a executar e executadas
 	SELECT * FROM `setup_module` WHERE `module` like '%mozg%';
 	DELETE FROM setup_module WHERE module like '%mozg%';
 	DELETE FROM core_config_data WHERE path like '%mozg%';
-
-# Limpando arquivos de cache
-
-	rm -R -f ./var/log \
-	./var/report \
-	./var/cache \
-	./var/di \
-	./var/generation \
-	./var/page_cache \
-	./pub/static/*
 
 
 {% comment %}
