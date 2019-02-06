@@ -132,10 +132,18 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 		php bin/magento setup:static-content:deploy -f --jobs 4
 
+
 	# https://magento.stackexchange.com/questions/198084/magento-2-2-often-extremely-slow-100-processor-usage-after-setupupgrade
 
 	# To force M2 to deploy the static data in developer mode in order to skip the long wait.
 
+		php bin/magento setup:static-content:deploy -f
+
+	# Remount
+
+		rm -fr var/backups/ var/cache/ var/composer_home/ var/log/ var/page_cache/ var/session/ var/tmp/ var/view_preprocessed/ pub/static/*
+		php bin/magento cache:flush
+		# Recompile the pub static folder
 		php bin/magento setup:static-content:deploy -f
 
 	# Production
@@ -269,7 +277,6 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 		composer require techspot/sendquote -vvv
 		php bin/magento setup:upgrade
 
-
 	# Pos Install
 
 		php bin/magento setup:static-content:deploy -f pt_BR
@@ -303,7 +310,6 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	# To search for files in /target_directory and all its sub-directories, that have been modified in the last 60 minutes:
 
 		find . -type f -mmin -60
-
 
 # (`*`) Re-Install Magento
 
