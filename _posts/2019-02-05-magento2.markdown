@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Magento2"
-date:   2016-04-26 14:01:03
+date:   2019-02-05 10:33:03
 category: magento2
 author: Marcio Amorim
 tags: [magento2, php]
@@ -25,6 +25,21 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	composer --version && sudo composer self-update && composer clear-cache
 
 # Install Magento
+
+	# Requirements
+
+		echo -e "\e[1;33m --( disk space usage )-- \e[0m"
+		df -h
+		echo -e "\e[1;33m --( Git Version )-- \e[0m"
+		git --version
+		echo -e "\e[1;33m --( Composer Version )-- \e[0m"
+		composer -V
+		echo -e "\e[1;33m --( PHP Version (7.1.3+, 7.2.x) )-- \e[0m"
+		php -v
+		echo -e "\e[1;33m --( MySQL Version (5.6, 5.7) )-- \e[0m"
+		mysql -V
+		echo -e "\e[1;33m --( Info CPU (min: 8 cores) )-- \e[0m"
+		lscpu
 
 	# https://devdocs.magento.com/guides/v2.3/install-gde/composer.html
 
@@ -141,7 +156,8 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 	# Remount
 
-		rm -fr var/backups/ var/cache/ var/composer_home/ var/log/ var/page_cache/ var/session/ var/tmp/ var/view_preprocessed/ pub/static/*
+		rm -rf pub/static/* 
+		rm -rf var/*
 		php bin/magento cache:flush
 		# Recompile the pub static folder
 		php bin/magento setup:static-content:deploy -f
@@ -184,18 +200,9 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 	# Clean Cache
 
-		rm -fr var/backups/ var/cache/ var/composer_home/ var/log/ var/page_cache/ var/session/ var/tmp/ var/view_preprocessed/
+		rm -rf pub/static/*
+		rm -rf var/*
 		php bin/magento cache:flush
-
-# n98-magerun2
-
-	wget https://files.magerun.net/n98-magerun2.phar
-	chmod +x ./n98-magerun2.phar
-	./n98-magerun2.phar --version
-	./n98-magerun2.phar
-	./n98-magerun2.phar db:status
-	./n98-magerun2.phar db:maintain:check-tables
-	./n98-magerun2.phar sys:check
 
 # SQL Útil
 
@@ -245,19 +252,82 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 # Install/Uninstall Extensions
 
-	# https://github.com/rafaelstz/traducao_magento2_pt_br#via-composer
+	# https://github.com/topics/magento2?o=desc&s=updated
+	# https://packagist.org/?query=magento2
 
-		composer require rafaelstz/traducao_magento2_pt_br:dev-master -vvv
-		php bin/magento setup:static-content:deploy pt_BR -f
-		php bin/magento cache:flush
+	# https://github.com/netz98/n98-magerun2
+
+		wget https://files.magerun.net/n98-magerun2.phar
+		chmod +x ./n98-magerun2.phar
+		./n98-magerun2.phar --version
+		./n98-magerun2.phar
+		./n98-magerun2.phar db:status
+		./n98-magerun2.phar db:maintain:check-tables
+		./n98-magerun2.phar sys:check
+
+	# https://github.com/gwillem/magento-malware-scanner
+
+		wget https://mwscan.s3.amazonaws.com/mwscan.txt
+		grep -Erlf mwscan.txt .
 
 	# https://github.com/Smile-SA/magento2-module-debug-toolbar
 
 		composer require --dev smile/module-debug-toolbar -vvv
 		php bin/magento setup:upgrade
-		php bin/magento setup:config:set "smile_debugtoolbar/configuration/enabled" 1
+		php bin/magento setup:static-content:deploy -f
+		php bin/magento config:set smile_debugtoolbar/configuration/enabled 1
 
-	# https://github.com/kumarbikash411/Booking
+	# https://github.com/ho-nl/magento2-Ho_Templatehints
+
+		composer require --dev honl/magento2-templatehints:dev-master -vvv
+		php bin/magento setup:upgrade
+		php bin/magento setup:static-content:deploy -f
+
+	# https://github.com/php-cuong/magento2-regions-manager
+
+		composer require php-cuong/magento2-regions-manager
+		php bin/magento setup:upgrade
+		php bin/magento setup:static-content:deploy -f
+
+	# https://github.com/AydinHassan/m2-opcache-monitor
+
+		composer require trash-panda/m2-opcache-monitor
+		php bin/magento setup:upgrade
+		php bin/magento setup:static-content:deploy -f
+
+	# https://github.com/magestat/magento2-split-order
+
+		composer require magestat/module-split-order -vvv
+		php bin/magento setup:upgrade
+		php bin/magento setup:static-content:deploy -f
+
+	# https://github.com/mcspronko/banner-widget
+
+		composer config repositories.pronko git https://github.com/mcspronko/banner-widget
+		composer require pronko/banner-widget:dev-master -vvv
+		php bin/magento setup:upgrade
+		php bin/magento setup:static-content:deploy -f
+
+	# https://github.com/mailchimp/mc-magento2
+
+		composer require mailchimp/mc-magento2 -vvv
+		php bin/magento setup:upgrade
+		php bin/magento setup:static-content:deploy -f
+
+	# https://github.com/kiwicommerce/magento2-cron-scheduler
+
+		composer require kiwicommerce/module-cron-scheduler -vvv
+		php -f bin/magento setup:upgrade
+		php -f bin/magento mirasvit:profiler:enable -f
+
+	# https://packagist.org/packages/magento2translations/language_pt_br
+	# https://github.com/rafaelstz/traducao_magento2_pt_br#via-composer
+
+		composer require rafaelstz/traducao_magento2_pt_br:dev-master -vvv
+		php bin/magento setup:static-content:deploy pt_BR -f
+		php bin/magento cache:clean
+
+	# https://github.com/kumarbikash411/Booking ??? [Deprecated]
 
 		composer config repositories.kumarbikash411-booking git git@github.com:kumarbikash411/Booking.git -vvv
 		composer require kumarbikash411/Booking:dev-master -vvv
@@ -268,6 +338,8 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 		composer require blackbird/module-disable-reports -vvv
 		php bin/magento setup:upgrade
 
+	# https://github.com/cichondev/module-customers-extra-fields ??? Semelhante
+	# https://github.com/eduardoddias/Magento-SystemCode_BrazilCustomerAttributes ??? Semelhante
 	# https://packagist.org/packages/techspot/
 
 		composer require techspot/addresslabel -vvv
@@ -279,7 +351,9 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 	# Pos Install
 
-		php bin/magento setup:static-content:deploy -f pt_BR
+		rm -rf pub/static/* 
+		rm -rf var/*
+		php bin/magento setup:static-content:deploy -f
 
 	# Uninstall
 
@@ -294,14 +368,14 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 	# Clean Cache
 
-		rm -fr var/backups/ var/cache/ var/composer_home/ var/log/ var/page_cache/ var/session/ var/tmp/ var/view_preprocessed/
+		rm -rf var/*
 		php bin/magento cache:flush
 
 	# Module
 
 		php bin/magento module:status
 
-	# Optimization in localhost 
+	# Optimization in localhost - https://www.youtube.com/watch?v=jPYm0Bz5FqA
 
 		php bin/magento setup:upgrade
 		php bin/magento setup:static-content:deploy -f
@@ -322,12 +396,11 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 		rm -fr generated/code/
 
 		rm -fr pub/media/theme
-		rm -fr pub/static/deployed_version.txt
-		rm -fr pub/static/frontend
 
 	# Clean Cache
 
-		rm -fr var/backups/ var/cache/ var/composer_home/ var/log/ var/page_cache/ var/session/ var/tmp/ var/view_preprocessed/ pub/static/*
+		rm -rf pub/static/*
+		rm -rf var/*
 		php bin/magento cache:flush
 
 		mysqladmin -h 'mysql' -u root -p DROP "magento230dev03";
@@ -339,7 +412,11 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 		show processlist;
 
-# Dica
+# Links
+
+
+
+# Dicas
 
 * Não utilizar o opcache em desenvolvimento pois não é exibido a alteração
 
@@ -362,48 +439,9 @@ A tabela `cron_schedule` armazena as tarefas a executar e executadas
 
 {% comment %}
 
-# Apresentação
-
-Veja na apresentação os processos executados
-
-Foi feito acesso via terminal ao servidor da amazon onde na execução dos comandos foi feito a instalação do Magento 2 sobre o [Servidor][phpinfo]
-
-<div class="">
-    <a class="fab google-red" data-g-action="Anthem - Video Start"
-        data-g-event="Home" data-g-label="For Enterprise"
-        data-glue-modal-disabled-on-mobile="true" data-glue-modal-trigger=
-        "ss-yt-7vXrTYFPJt0" href=
-        "https://www.youtube.com/watch?v=7vXrTYFPJt0">
-        <svg class="icon-fab-video"
-            enable-background="new 0 0 32 32" height="24px" version="1.1" viewbox=
-            "0 0 32 32" width="24px" x="0px" xml:space="preserve" xmlns=
-            "http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y=
-            "0px">
-            <path d=
-                "M28.8,3.8c-1-0.3-6.9-0.6-12.8-0.6c-5.9,0-11.8,0.3-12.8,0.6C0.7,4.6,0,10.2,0,16s0.7,11.4,3.2,12.2c1,0.3,6.9,0.6,12.8,0.6 c5.9,0,11.8-0.3,12.8-0.6C31.3,27.4,32,21.8,32,16S31.3,4.7,28.8,3.8 M12.8,22.4V9.6l8.8,6.4L12.8,22.4z">
-            </path>
-        </svg>
-        <img alt="" class="icon-fab-video" height="24" src=
-            "//www.google.com/ads/images/icons/icon-fab-video.png" width="24">
-    </a>
-    <div data-glue-modal="ss-yt-7vXrTYFPJt0" data-rs-modal="" id=
-        "ss-yt-7vXrTYFPJt0">
-        <iframe allowfullscreen="" frameborder="0" height="100%" src=
-            "https://www.youtube.com/embed/7vXrTYFPJt0?enablejsapi=1&amp;rel=0" type=
-            "text/html" width="100%"></iframe>
-    </div>
-</div>
-
-https://mirasvit.com/blog/7-ways-to-improve-your-magento-2-site-speed.html
-
-http://devdocs.magento.com/guides/v2.0/config-guide/memcache/memcache_ubuntu.html
-
-http://devdocs.magento.com/guides/v2.0/config-guide/redis/config-redis.html
-
 composer require magento2translations/language_pt_br:dev-master ;\
 composer require adyen/module-payment ;\
 composer require bleez/smtp ;\
-composer require vpietri/adm-quickdevbar ;\
 composer require mozgbrasil/framework-php56 --ignore-platform-reqs
 
 composer require mozgbrasil/magento2-bundle-php56 --ignore-platform-reqs
