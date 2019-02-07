@@ -295,6 +295,12 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 		php bin/magento setup:upgrade
 		php bin/magento setup:static-content:deploy -f
 
+	# https://github.com/magehost/performance-dashboard
+
+		composer require magehost/performance-dashboard
+		php bin/magento setup:upgrade
+		php bin/magento setup:static-content:deploy -f
+
 	# https://github.com/magestat/magento2-split-order
 
 		composer require magestat/module-split-order -vvv
