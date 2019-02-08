@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ambiente de desenvolvimento e execução no Ubuntu"
-date:   2018-04-27 15:06:00
+date:   2019-02-08 11:54:46
 category: ubuntu
 author: Marcio Amorim
 tags: [magento2, php]
@@ -243,6 +243,48 @@ sudo apt install p7zip-full screenfetch filezilla git keepassx meld curl
 
 git config --global credential.helper cache
 ```
+
+## Como criar a SSH Key
+
+    ssh-keygen -t rsa
+
+## Como obter a SSH Key
+
+    cat ~/.ssh/id_rsa.pub
+
+# Efetuar login no SSH com chave ppk
+
+https://askubuntu.com/questions/818929/login-ssh-with-ppk-file-on-ubuntu-terminal
+
+	sudo apt-get install putty-tools
+
+	puttygen yourkey.ppk -O private-openssh -o yourkey.pem
+
+	chmod 400 yourkey.pem
+
+	ssh -i yourkey.pem serverusername@server-ip
+
+# Conectar via SFTP pelo nautilus
+
+	sftp://marcio@192.168.0.4
+
+# Conectar via Samba pelo nautilus
+
+	smb://192.168.0.4
+
+# Conectar via ssh pelo terminal
+
+	ssh marcio@192.168.0.4
+
+# Obter a versão do PHP via terminal
+
+	php -r \@phpinfo\(\)\; | grep 'PHP Version' -m 1
+
+	php -i | grep 'PHP Version' -m 1
+
+# Execução comando condicional em linha
+
+	sh -c 'if [ "$TRAVIS_PHP_VERSION" = "5.4" ] || [ "$TRAVIS_PHP_VERSION" = "5.5" ]; then echo '0'; else echo '1'; fi;'
 
 <!--
 

@@ -27,6 +27,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 # Install Magento
 
 	# Requirements
+	# https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements-tech.html
 
 		echo -e "\e[1;33m --( disk space usage )-- \e[0m"
 		df -h
@@ -41,9 +42,8 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 		echo -e "\e[1;33m --( Info CPU (min: 8 cores) )-- \e[0m"
 		lscpu
 
-	# https://devdocs.magento.com/guides/v2.3/install-gde/composer.html
-
 	# Get the metapackage
+	# https://devdocs.magento.com/guides/v2.3/install-gde/composer.html
 
 		composer create-project --repository=https://repo.magento.com/ magento/project-community-edition magento2 -vvv
 		mv magento2/{.[!.],}* .
@@ -349,10 +349,19 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 		composer require magefan/module-rocketjavascript
 
-	# https://github.com/UltimateModuleCreator/Umc_Base
+	# ###
+	# Module Creator
 
-		composer config repositories.ultimatemodulecreator-umc-base git git@github.com:UltimateModuleCreator/Umc_Base.git
-		composer require ultimatemodulecreator/umc-base:dev-master --dev
+		https://mage2gen.com/load/c6103687-4faa-4766-807e-1f89587453d8
+		https://mage2gen.com/download/c6103687-4faa-4766-807e-1f89587453d8.tar
+
+	# https://github.com/UltimateModuleCreator/umc
+
+		mkdir umc
+		cd umc
+		git clone https://github.com/UltimateModuleCreator/umc.git .
+		composer install
+		cp .env.dist .env
 
 	# https://github.com/cichondev/module-customers-extra-fields ??? Semelhante
 	# https://github.com/eduardoddias/Magento-SystemCode_BrazilCustomerAttributes ??? Semelhante
@@ -371,11 +380,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 		php bin/magento setup:static-content:deploy pt_BR -f
 		php bin/magento cache:clean
 
-	# https://github.com/kumarbikash411/Booking ??? [Deprecated]
-
-		composer config repositories.kumarbikash411-booking git git@github.com:kumarbikash411/Booking.git -vvv
-		composer require kumarbikash411/Booking:dev-master -vvv
-
+	# ###
 	# Pós Install
 	# Optimization in localhost - https://www.youtube.com/watch?v=jPYm0Bz5FqA
 
@@ -437,7 +442,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 # Links
 
-
+https://webkul.com/blog/multi-website-setup-in-magento-2/
 
 # Dicas
 
