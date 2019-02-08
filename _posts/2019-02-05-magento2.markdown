@@ -147,7 +147,6 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 		php bin/magento setup:static-content:deploy -f --jobs 4
 
-
 	# https://magento.stackexchange.com/questions/198084/magento-2-2-often-extremely-slow-100-processor-usage-after-setupupgrade
 
 	# To force M2 to deploy the static data in developer mode in order to skip the long wait.
@@ -165,6 +164,15 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	# Production
 
 	# https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/js-bundling.html
+
+
+	# Deploy
+
+		php bin/magento setup:upgrade
+		php bin/magento setup:di:compile
+		php bin/magento setup:static-content:deploy
+		bin/magento cache:flush
+		bin/magento cache:enable
 
 # Config Memcached
 
@@ -250,6 +258,18 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 		In "default" and "developer" modes static contents are being deployed automatically on demand.           
 		If you still want to deploy in these modes, use -f option: 'bin/magento setup:static-content:deploy -f'
 
+# Local Dev
+
+	marcio@marcio-Inspiron-5548:
+		ssh marcio@192.168.0.4
+
+	marcio@marcio-Inspiron-7520:
+		cd ~/dados/git/clone/devilbox-2019-02-05
+		./shell.sh
+			cd /shared/httpd/localhost/htdocs/magento-2.3.0-dev03
+
+	# https://magentodev03.devilbox/
+
 # Install/Uninstall Extensions
 
 	# https://github.com/topics/magento2?o=desc&s=updated
@@ -272,59 +292,77 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 	# https://github.com/Smile-SA/magento2-module-debug-toolbar
 
-		composer require --dev smile/module-debug-toolbar -vvv
-		php bin/magento setup:upgrade
-		php bin/magento setup:static-content:deploy -f
-		php bin/magento config:set smile_debugtoolbar/configuration/enabled 1
+		composer require smile/module-debug-toolbar --dev -vvv
+
+		# php bin/magento config:set smile_debugtoolbar/configuration/enabled 1
 
 	# https://github.com/ho-nl/magento2-Ho_Templatehints
 
-		composer require --dev honl/magento2-templatehints:dev-master -vvv
-		php bin/magento setup:upgrade
-		php bin/magento setup:static-content:deploy -f
-
-	# https://github.com/php-cuong/magento2-regions-manager
-
-		composer require php-cuong/magento2-regions-manager
-		php bin/magento setup:upgrade
-		php bin/magento setup:static-content:deploy -f
+		composer require honl/magento2-templatehints:dev-master --dev -vvv
 
 	# https://github.com/AydinHassan/m2-opcache-monitor
 
 		composer require trash-panda/m2-opcache-monitor
-		php bin/magento setup:upgrade
-		php bin/magento setup:static-content:deploy -f
 
 	# https://github.com/magehost/performance-dashboard
 
 		composer require magehost/performance-dashboard
-		php bin/magento setup:upgrade
-		php bin/magento setup:static-content:deploy -f
 
 	# https://github.com/magestat/magento2-split-order
 
 		composer require magestat/module-split-order -vvv
-		php bin/magento setup:upgrade
-		php bin/magento setup:static-content:deploy -f
 
 	# https://github.com/mcspronko/banner-widget
 
 		composer config repositories.pronko git https://github.com/mcspronko/banner-widget
 		composer require pronko/banner-widget:dev-master -vvv
-		php bin/magento setup:upgrade
-		php bin/magento setup:static-content:deploy -f
 
 	# https://github.com/mailchimp/mc-magento2
 
 		composer require mailchimp/mc-magento2 -vvv
-		php bin/magento setup:upgrade
-		php bin/magento setup:static-content:deploy -f
 
 	# https://github.com/kiwicommerce/magento2-cron-scheduler
 
 		composer require kiwicommerce/module-cron-scheduler -vvv
-		php -f bin/magento setup:upgrade
-		php -f bin/magento mirasvit:profiler:enable -f
+
+	# https://github.com/blackbird-agency/magento-2-disabled-reports
+
+		composer require blackbird/module-disable-reports -vvv
+
+	# https://packagist.org/packages/auroraextensions/magecroncloudfunctions
+
+		composer require auroraextensions/magecroncloudfunctions
+
+	# https://packagist.org/packages/bangerkuwranger/magento2-google-cloud-storage
+
+		composer require bangerkuwranger/magento2-google-cloud-storage
+
+	# https://packagist.org/packages/magefan/module-cli
+
+		composer require magefan/module-cli --dev
+
+	# https://packagist.org/packages/magefan/module-conflict-detector
+
+		composer require magefan/module-conflict-detector --dev
+
+	# https://packagist.org/packages/magefan/module-rocketjavascript
+
+		composer require magefan/module-rocketjavascript
+
+	# https://github.com/UltimateModuleCreator/Umc_Base
+
+		composer config repositories.ultimatemodulecreator-umc-base git git@github.com:UltimateModuleCreator/Umc_Base.git
+		composer require ultimatemodulecreator/umc-base:dev-master --dev
+
+	# https://github.com/cichondev/module-customers-extra-fields ??? Semelhante
+	# https://github.com/eduardoddias/Magento-SystemCode_BrazilCustomerAttributes ??? Semelhante
+	# https://packagist.org/packages/techspot/
+
+		composer require techspot/addresslabel -vvv
+		composer require techspot/brcustomer -vvv
+		composer require techspot/brestimateshipping -vvv
+		composer require techspot/documentupload -vvv
+		composer require techspot/sendquote -vvv
 
 	# https://packagist.org/packages/magento2translations/language_pt_br
 	# https://github.com/rafaelstz/traducao_magento2_pt_br#via-composer
@@ -337,29 +375,13 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 		composer config repositories.kumarbikash411-booking git git@github.com:kumarbikash411/Booking.git -vvv
 		composer require kumarbikash411/Booking:dev-master -vvv
+
+	# Pós Install
+	# Optimization in localhost - https://www.youtube.com/watch?v=jPYm0Bz5FqA
+
 		php bin/magento setup:upgrade
-
-	# https://github.com/blackbird-agency/magento-2-disabled-reports
-
-		composer require blackbird/module-disable-reports -vvv
-		php bin/magento setup:upgrade
-
-	# https://github.com/cichondev/module-customers-extra-fields ??? Semelhante
-	# https://github.com/eduardoddias/Magento-SystemCode_BrazilCustomerAttributes ??? Semelhante
-	# https://packagist.org/packages/techspot/
-
-		composer require techspot/addresslabel -vvv
-		composer require techspot/brcustomer -vvv
-		composer require techspot/brestimateshipping -vvv
-		composer require techspot/documentupload -vvv
-		composer require techspot/sendquote -vvv
-		php bin/magento setup:upgrade
-
-	# Pos Install
-
-		rm -rf pub/static/* 
-		rm -rf var/*
 		php bin/magento setup:static-content:deploy -f
+		# php bin/magento cache:flush
 
 	# Uninstall
 
@@ -374,18 +396,13 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 	# Clean Cache
 
+		rm -rf pub/static/* 
 		rm -rf var/*
 		php bin/magento cache:flush
 
 	# Module
 
 		php bin/magento module:status
-
-	# Optimization in localhost - https://www.youtube.com/watch?v=jPYm0Bz5FqA
-
-		php bin/magento setup:upgrade
-		php bin/magento setup:static-content:deploy -f
-		php bin/magento cache:flush
 
 	# To search for files in /target_directory and all its sub-directories, that have been modified in the last 60 minutes:
 
