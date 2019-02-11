@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ativando o Zend Guard Loader sob o servidor web"
+title:  "Zend Guard Loader"
 date:   2016-04-26 14:01:01
 category: ubuntu
 author: Marcio Amorim
