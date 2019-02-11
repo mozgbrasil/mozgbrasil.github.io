@@ -59,26 +59,32 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 	# MySQL
 
-		mysqladmin -h 'mysql' -u root -p CREATE "magento230dev02"		
+		# mysqladmin -h 'mysql' -u root -p DROP "magento230dev03";
+
+		mysqladmin -h 'mysql' -u root -p CREATE "magento230dev02"
 
 	# Install Magento
 
-		php bin/magento setup:install \
-		--base-url=https://magento.devilbox/ \
-		--db-host=127.0.0.1 \
-		--db-name=magento230dev02 \
-		--db-user=root \
-		--db-password= \
-		--backend-frontname=admin \
-		--admin-firstname=Marcio \
-		--admin-lastname=Amorim \
-		--admin-email=mailer@mozg.com.br \
-		--admin-user=admin \
-		--admin-password=123456a \
-		--language=pt_BR \
-		--currency=BRL \
-		--timezone=America/Sao_Paulo \
-		--use-rewrites=1
+```
+php bin/magento setup:install \
+--base-url=https://magento.devilbox/ \
+--db-host=127.0.0.1 \
+--db-name=magento230dev02 \
+--db-user=root \
+--db-password= \
+--backend-frontname=admin \
+--admin-firstname=Marcio \
+--admin-lastname=Amorim \
+--admin-email=mailer@mozg.com.br \
+--admin-user=admin \
+--admin-password=123456a \
+--language=pt_BR \
+--currency=BRL \
+--timezone=America/Sao_Paulo \
+--use-rewrites=1
+```
+
+		php index.php
 
 # Pós Install Magento
 
@@ -111,11 +117,11 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	echo -e "\e[1;33m --( bin/magento setup:upgrade )-- \e[0m" ;\
 	php bin/magento setup:upgrade ;\
 	echo -e "\e[1;33m --( bin/magento cron:run )-- \e[0m" ;\
-	php bin/magento cron:run ;\
+	# php bin/magento cron:run ;\
 	echo -e "\e[1;33m --( update/cron.php )-- \e[0m" ;\
-	php update/cron.php ;\
+	# php update/cron.php ;\
 	echo -e "\e[1;33m --( bin/magento setup:cron:run )-- \e[0m" ;\
-	php bin/magento setup:cron:run ;\
+	# php bin/magento setup:cron:run ;\
 	echo -e "\e[1;33m --( bin/magento )-- \e[0m" ;\
 	php bin/magento ;\
 	echo -e "\e[1;33m --( index.php )-- \e[0m" ;\
@@ -132,6 +138,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 		mysql -h 'mysql' -u 'root' -p -e "
 		SHOW VARIABLES LIKE '%query_cache%';
 		"
+	# https://devdocs.magento.com/guides/v2.3/extension-dev-guide/build/optimal-dev-environment.html
 
 	# https://magento.stackexchange.com/questions/152221/why-magento-2-is-extremely-slow
 
@@ -157,9 +164,8 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 		rm -rf pub/static/* 
 		rm -rf var/*
-		php bin/magento cache:flush
-		# Recompile the pub static folder
-		php bin/magento setup:static-content:deploy -f
+		php bin/magento cache:flush		
+		php bin/magento setup:static-content:deploy -f # Recompile the pub static folder
 
 	# Production
 
@@ -190,7 +196,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 	# Edit
 
-		cd localhost/htdocs/magento/magento-2.3.0-dev03
+		cd /shared/httpd/localhost/htdocs/magento-2.3.0-dev03
 
 		nano app/etc/env.php
 
@@ -222,7 +228,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	SELECT * FROM core_config_data WHERE path = 'web/seo/use_rewrites';
 	"
 
-	mysql -h 'mysql' -u 'root' -p 'magento230dev03' -e "
+	mysql -h 'mysql' -u 'root' -p 'magento230dev02' -e "
     SELECT * FROM core_config_data WHERE path like '%base_url%';
     UPDATE core_config_data SET value = 'https://magentodev03.devilbox/' WHERE path like '%secure/base_url%';
     SELECT * FROM core_config_data WHERE path like '%secure/base_url%';
@@ -265,6 +271,9 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 	marcio@marcio-Inspiron-7520:
 		cd ~/dados/git/clone/devilbox-2019-02-05
+
+		docker-compose down --remove-orphans && docker-compose up
+
 		./shell.sh
 			cd /shared/httpd/localhost/htdocs/magento-2.3.0-dev03
 
@@ -409,30 +418,23 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 		php bin/magento module:status
 
-	# To search for files in /target_directory and all its sub-directories, that have been modified in the last 60 minutes:
-
-		find . -type f -mmin -60
-
 # (`*`) Re-Install Magento
 
 	# diff -qr /home/marcio/dados/freebies/Magento-CE-2.3.0-2018-11-27-10-18-29/ /home/marcio/dados/mount/www/localhost/htdocs/magento/magento-2.3.0-dev03/
 
-		cd localhost/htdocs/magento/magento-2.3.0-dev03
+		cd /shared/httpd/localhost/htdocs/magento-2.3.0-dev03
 
 		rm app/etc/config.php
 		rm app/etc/env.php
-		rm -fr generated/code/
+		rm -fr generated/code/*
 
-		rm -fr pub/media/theme
+		rm -fr pub/media/theme/*
 
 	# Clean Cache
 
 		rm -rf pub/static/*
 		rm -rf var/*
 		php bin/magento cache:flush
-
-		mysqladmin -h 'mysql' -u root -p DROP "magento230dev03";
-		mysqladmin -h 'mysql' -u root -p CREATE "magento230dev03";
 
 	# Na necessidade de acessar o MySQL Client e ver os processos
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ambiente de desenvolvimento e execução no Ubuntu"
+title:  "Ubuntu"
 date:   2019-02-08 11:54:46
 category: ubuntu
 author: Marcio Amorim
