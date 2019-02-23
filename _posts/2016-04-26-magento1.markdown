@@ -30,15 +30,18 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	composer --version && sudo composer self-update && composer clear-cache
 
 # Download Magento
+
+  # https://docs.magento.com/m1/ce/user_guide/magento/system-requirements.html
+
 	# https://razbakov.com/blog/install-magento-via-composer
 	#
 	# Quando aparecer "please define your magento root dir [root]"
 	#
-	# tecle ENTER, isso irá instalar o Magento nessa pasta root
+	# altere para "magento" e tecle ENTER, isso irá instalar o Magento nessa pasta "magento"
 
 	composer require magento-hackathon/magento-composer-installer ~3.0 ;\
 	composer require aydin-hassan/magento-core-composer-installer ~1.2 ;\
-	composer require firegento/magento ~1.9.3.1 ;\
+	composer require firegento/magento ~1.9.4.0 ;\
 	composer update -vvv --profile
 
 <!--
@@ -62,26 +65,30 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 # Sample Data
 
-	cd root ;\
-	wget https://raw.githubusercontent.com/Vinai/compressed-magento-sample-data/1.9.1.0/compressed-no-mp3-magento-sample-data-1.9.1.0.tar.7z ;\
-	7za x compressed-no-mp3-magento-sample-data-1.9.1.0.tar.7z ;\
-	tar -xvf compressed-no-mp3-magento-sample-data-1.9.1.0.tar ;\
-	cp -ri magento-sample-data-1.9.1.0/media/* ./media/ ;\
-	mysql -h 'localhost' -u 'root' -p 'magento-1.9.3.2-dev35' < 'magento-sample-data-1.9.1.0/magento_sample_data_for_1.9.1.0.sql' ;\
-	rm -fr compressed-no-mp3-magento-sample-data-1.9.1.0.tar compressed-no-mp3-magento-sample-data-1.9.1.0.tar.7z magento-sample-data-1.9.1.0
+	cd root
+
+  git clone https://github.com/haifeng-ben-zhang/magento1.9.2.4-sample-data.git
+
+	cp -ri magento1.9.2.4-sample-data/media/* magento/media/
+
+  cp -ri magento1.9.2.4-sample-data/skin/* magento/skin/
+
+	mysql -h 'db4free.net' -P '3306' -u 'udb4free' -p'???' 'hdb4free' < 'magento1.9.2.4-sample-data/magento_sample_data_for_1.9.2.4.sql'
+
+	rm -fr magento1.9.2.4-sample-data
 
 # Instalar Magento
 
-	php -f install.php -- \
+	php -f magento/install.php -- \
 	--license_agreement_accepted "yes" \
 	--locale "pt_BR" \
 	--timezone "America/Sao_Paulo" \
 	--default_currency "BRL" \
-	--db_host "localhost" \
-	--db_name "magento-1.9.3.2-dev35" \
-	--db_user "root" \
+	--db_host "db4free.net:3306" \
+	--db_name "hdb4free" \
+	--db_user "udb4free" \
 	--db_pass "???" \
-	--url "http://127.0.0.1/public_html/magento-1.9.3.2-dev35/root/" \
+	--url "https://heroku-magento-mozg.herokuapp.com/magento/" \
 	--skip_url_validation "yes" \
 	--use_rewrites "yes" \
 	--use_secure "no" \
@@ -92,6 +99,8 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	--admin_email "mailer@mozg.com.br" \
 	--admin_username "admin" \
 	--admin_password "123456a"
+
+  # https://github.com/kalcaddle/KodExplorer#install
 
 # Permissões
 
@@ -111,6 +120,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	php shell/indexer.php --reindexall
 
 # Magento ./mage command-line
+
 	# Install Extensions via MagentoConect
 
 	echo -e "\e[1;33m --(Processo 1)-- \e[0m" ;\
@@ -145,10 +155,6 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 	composer require madalinoprea/magneto-debug ;\
 	composer require connect20/fooman_sameorderinvoicenumber ;\
 	composer require connect20/pedroteixeira_correios
-
-	# No uso do PHP 7
-
-	composer require inchoo/php7
 
 	# As Urls abaixo aponta para a descrição de cada módulo
 
@@ -229,13 +235,13 @@ Warning: include(StaLib/Logger.php): failed to open stream: No such file or dire
 
 O fato de existir o script abaixo em qualquer controller já dispara o erro acima
 
-	if (class_exists('\StaLib_Logger')) {}
+    if (class_exists('\StaLib_Logger')) {}
 
 # Visualizar erros do servidor
 
 No terminal pode ser o comando para a visualização do log de erro do servidor
 
-	tail -f /var/log/apache2/error.log
+	  tail -f /var/log/apache2/error.log
 
 # Dicas
 

@@ -286,7 +286,7 @@ https://askubuntu.com/questions/818929/login-ssh-with-ppk-file-on-ubuntu-termina
 
 	sh -c 'if [ "$TRAVIS_PHP_VERSION" = "5.4" ] || [ "$TRAVIS_PHP_VERSION" = "5.5" ]; then echo '0'; else echo '1'; fi;'
 
-<!--
+# # # # # # # 
 
 Ola
 
@@ -294,7 +294,7 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 # Atualização do sistema operacional
 
-    sudo apt update && sudo apt upgrade && sudo apt dist-upgrade && sudo apt autoremove
+    sudo apt update && sudo apt upgrade
 
 # Suporte a repositórios
 
@@ -306,82 +306,116 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
     apt-cache search php-gd ;\
     apt-cache show php-gd ;\
+
     apt search php7.0-*
+    apt search gitkraken
 
-# TODO http://askubuntu.com/questions/761713/how-can-i-downgrade-from-php-7-to-php-5-6-on-ubuntu-16-04
+# Local Desktop
 
-# Ubuntu 17.04 - Local Server - PHP 5.6
+    sudo apt install filezilla git keepassx meld curl vlc
 
-    sudo apt install mysql-server mysql-client php5.6 php5.6-cli php5.6-curl php5.6-sqlite3 php5.6-mcrypt php5.6-mbstring php5.6-gd php5.6-intl php5.6-xsl php5.6-zip php5.6-soap php5.6-common php5.6-json php5.6-mysql php-gettext php5.6-cgi libapache2-mod-php5.6 php-pear php5.6-fpm php5.6-bcmath memcached php-memcache phpmyadmin
+    sudo apt install build-essential ubuntu-restricted-extras python-software-properties filezilla git nautilus-dropbox p7zip-full keepassx meld curl gufw gimp gimp-plugin-registry shutter ffmpeg lame links links2 elinks lynx openssh-server ruby-dev nodejs nodejs-legacy chromium-browser inkscape jq npm nmap ntp vlc browser-plugin-vlc gedit-plugins kdenlive kde-runtime pavucontrol gifsicle preload gnome-tweaks && sudo service ssh start
 
-# Symlink WWW
+	sudo add-apt-repository ppa:linrunner/tlp
+	sudo apt-get update
+	sudo apt-get install tlp tlp-rdw
+	sudo tlp start
 
-    mkdir -p ~/dados/public_html ;\
-    sudo ln -s ~/dados/public_html /var/www/html ;\
-    echo "<?php phpinfo(); ?>" | sudo tee ~/dados/public_html/phpinfo.php > /dev/null ;\
-    php -l ~/dados/public_html/phpinfo.php ;\
-    curl -I http://127.0.0.1/public_html/phpinfo.php ;\
-    curl -I --compress http://127.0.0.1/public_html/phpinfo.php ;\
-    GET -Used http://127.0.0.1/public_html/phpinfo.php
+	sudo apt-get install indicator-cpufreq
 
-# FIX: Apache Enable Module
+    git config --global credential.helper cache
 
-#NOTICE: Not enabling PHP 5.6 FPM by default.
-#NOTICE: To enable PHP 5.6 FPM in Apache2 do:
-#NOTICE: a2enmod proxy_fcgi setenvif
-#NOTICE: a2enconf php5.6-fpm
-#NOTICE: You are seeing this message because you have apache2 package installed.
+    # vlc http://avenard.org/iptv/playlist-tpg-vlc.m3u
 
-    sudo a2enmod proxy_fcgi setenvif actions rewrite
+# Dica:
 
-    sudo a2enconf php5.6-fpm
+## Caso
+
+Configurações de Som -> Entrada -> Volume de entrada fica desativado
+
+## Solução
+
+Instalar o Pulse Audio Volume Control e configurar
+
+# Webserver
+
+	# https://www.howtoforge.com/tutorial/install-apache-with-php-and-mysql-on-ubuntu-18-04-lamp/
+	# https://hostadvice.com/how-to/how-to-setup-varnish-http-cache-on-an-ubuntu-18-04-vps-or-dedicated-server/
+	# https://e-tinet.com/linux/servidor-apache/
+	# https://serverfault.com/questions/904065/switch-apache-from-prefork-to-event-in-ubuntu-16-get-php-7-working
+
+    sudo apt install mysql-server mysql-client phpmyadmin php7.2 php7.2-mysql php7.2-curl php7.2-gd php7.2-intl php-pear php-imagick php7.2-imap php-memcache  php7.2-pspell php7.2-recode php7.2-sqlite3 php7.2-tidy php7.2-xmlrpc php7.2-xsl php7.2-mbstring php-gettext php7.2-opcache php-apcu php-memcache install php7.2-zip php7.2-soap php7.2-common php7.2-json php7.2-cgi php-pear php7.2-fpm php7.2-bcmath phpmyadmin varnish
+
+	# Open http://localhost/phpmyadmin/
+
+	sudo a2dismod mpm_prefork # This disables the prefork MPM. Only one MPM can run at a time.
+    sudo a2enmod mpm_event # Enable event MPM. You could also enable mpm_worker.
+	sudo a2enmod proxy_fcgi setenvif actions rewrite ssl http2
+	sudo a2ensite default-ssl
+    sudo a2enconf php7.2-fpm
 
     sudo nano /etc/apache2/sites-available/000-default.conf
 
-        <Directory "/var/www/html">
-        AllowOverride All
-        </Directory>
-
-# Config PHP-FPM (FPM : FastCGI Process Manager
-# http://www.server-world.info/en/note?os=Ubuntu_16.04&p=httpd&f=16
+```
+<Directory "/var/www/html">
+	AllowOverride All
+</Directory>
+```
 
     sudo nano /etc/apache2/sites-enabled/000-default.conf
 
         # add into <VirtualHost> - </VirtualHost>
 
-                <FilesMatch "\.php$">
-                    SetHandler "proxy:fcgi://127.0.0.1:9000/"
-                </FilesMatch>
-        </VirtualHost>
+```
+<FilesMatch "\.php$">
+SetHandler "proxy:fcgi://127.0.0.1:9000/"
+</FilesMatch>
 
-    sudo nano /etc/php/5.6/fpm/pool.d/www.conf
+    sudo nano /etc/php/7.2/fpm/pool.d/www.conf
 
-        # line 36: change
+        # line 36: search "listen ="
 
         listen = 127.0.0.1:9000
+
+Em seguida executei as instruções "Restart: apache & php-fpm"
+
+# FIX: Apache - Acesso aos arquivos de log
+
+    sudo usermod -g www-data $USER
+
+# Symlink WWW
+
+    sudo ln -s ~/dados/mount/www/localhost/htdocs /var/www/html
+	mv index.php index2.php
+    echo "<?php phpinfo(); ?>" | sudo tee ~/dados/public_html/phpinfo.php > /dev/null
+    php -l ~/dados/public_html/phpinfo.php
+    curl -I http://127.0.0.1/public_html/phpinfo.php 
+    curl -I --compress http://127.0.0.1/public_html/phpinfo.php
+    GET -Used http://127.0.0.1/public_html/phpinfo.php
 
 ## FIX: PHP Fatal error:  Call to undefined function mcrypt_module_open
 
     sudo php5enmod mcrypt  
 
 # To activate the new configuration, you need to run:
-  sudo systemctl restart apache2
+
+	sudo systemctl restart apache2
 
 # FIX: Apache
 
     No Magento2 no processo de instalação é exibido o retorno
 
-    "$HTTP_RAW_POST_DATA is deprecated from PHP 5.6 onwards and will stop the installer from running. Please open your php.ini file and set always_populate_raw_post_data to -1.",
+    "$HTTP_RAW_POST_DATA is deprecated from PHP 7.2 onwards and will stop the installer from running. Please open your php.ini file and set always_populate_raw_post_data to -1.",
     pesquise por
     ";always_populate_raw_post_data = -1"
     e retire o comentário ";"
 
         sudo nano /etc/php/7.0/cli/php.ini
-        sudo nano /etc/php/5.6/apache2/php.ini
+        sudo nano /etc/php/7.2/apache2/php.ini
 
         ou
 
-        sudo nano /etc/php/5.6/fpm/php.ini
+        sudo nano /etc/php/7.2/fpm/php.ini
 
     Atualize para
 
@@ -398,34 +432,36 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
     Atualize "KeepAliveTimeout 5" para "KeepAliveTimeout 2"
 
-# FIX: Apache - Acesso aos arquivos de log
-
-    sudo usermod -g www-data $USER
-
 # FIX: pdo_mysql extension is not installed
 
     sudo phpenmod pdo_mysql
 
     #sudo phpdismod pdo_mysql
 
-# Restart Apache
+# Restart: apache & php-fpm
 
-    echo -e "\e[1;31m --(Processo 1)-- \e[0m" ;\
-    apache2 -v ;\
-    echo -e "\e[1;31m --(Processo 2)-- \e[0m" ;\
-    sudo apache2ctl configtest ;\
-    echo -e "\e[1;31m --(Processo 3)-- \e[0m" ;\
-    sudo apachectl fullstatus ;\
-    echo -e "\e[1;31m --(Processo 4)-- \e[0m" ;\
-    sudo apachectl -M ;\
-    echo -e "\e[1;31m --(Processo 5)-- \e[0m" ;\
-    service --status-all ;\
-    echo -e "\e[1;31m --(Processo 6)-- \e[0m" ;\
-    sudo service apache2 restart ;\
-    echo -e "\e[1;31m --(Processo 7)-- \e[0m" ;\
-    sudo service php5.6-fpm restart ;\
-    echo -e "\e[1;31m --(Processo 8)-- \e[0m" ;\
-    sudo service php5.6-fpm status
+    echo -e "\e[1;31m --(apache2 -v)-- \e[0m" 
+    apache2 -v
+    echo -e "\e[1;31m --(apache2ctl configtest )-- \e[0m" 
+    sudo apache2ctl configtest
+    echo -e "\e[1;31m --(apachectl fullstatus )-- \e[0m" 
+    sudo apachectl fullstatus
+    echo -e "\e[1;31m --(apachectl -M )-- \e[0m" 
+    sudo apachectl -M
+    echo -e "\e[1;31m --(apachectl -V )-- \e[0m" 
+    sudo apachectl -V
+	  echo -e "\e[1;31m --(mysql status)-- \e[0m" 
+	  sudo service mysql status
+	  echo -e "\e[1;31m --(php7.2-fpm status)-- \e[0m" 
+	  sudo service php7.2-fpm status
+    echo -e "\e[1;31m --(status-all)-- \e[0m" 
+    service --status-all
+
+    echo -e "\e[1;31m --(apache2 restart )-- \e[0m"
+    sudo service apache2 restart 
+    echo -e "\e[1;31m --(php7.2-fpm restart)-- \e[0m" 
+    sudo service php7.2-fpm restart
+    
 
 # Versions
 
@@ -456,26 +492,6 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
         sudo chown -R $USER $HOME/.composer
 
-# Local Desktop
-
-    sudo apt install filezilla git keepassx meld curl vlc
-
-    sudo apt install build-essential ubuntu-restricted-extras python-software-properties filezilla git nautilus-dropbox p7zip-full keepassx meld curl gufw gimp gimp-plugin-registry shutter ffmpeg lame links links2 elinks lynx openssh-server ruby-dev nodejs nodejs-legacy chromium-browser inkscape jq npm nmap ntp vlc browser-plugin-vlc gedit-plugins kdenlive kde-runtime pavucontrol gifsicle && sudo service ssh start
-
-    git config --global credential.helper cache
-
-    # vlc http://avenard.org/iptv/playlist-tpg-vlc.m3u
-
-# Dica:
-
-## Caso
-
-Configurações de Som -> Entrada -> Volume de entrada fica desativado
-
-## Solução
-
-Instalar o Pulse Audio Volume Control e configurar
-
 # Sublime - text editor
 
     sudo add-apt-repository ppa:webupd8team/sublime-text-3 && sudo apt-get update && sudo apt-get install sublime-text-installer
@@ -498,48 +514,11 @@ Instalar o Pulse Audio Volume Control e configurar
 
     sudo gem install jekyll && sudo gem install github-pages && sudo gem install rouge && jekyll -v && ruby --version && gem --version
 
-# Google Chrome
-
-    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb ;\
-    sudo dpkg -i --force-depends google-chrome-stable_current_amd64.deb ;\
-    sudo apt-get install -f
-
-# Google Web Designer
-
-    wget https://dl.google.com/linux/direct/google-webdesigner_current_amd64.deb ;\
-    sudo dpkg -i --force-depends google-webdesigner_current_amd64.deb ;\
-    sudo apt-get install -f
-
-# TeamViewer
-
-# https://www.teamviewer.com/pt/download/
-
-    wget https://download.teamviewer.com/download/teamviewer_i386.deb ;\
-    sudo dpkg -i teamviewer_i386.deb -y ;\
-    sudo apt-get install -f
-
-# Open Broadcaster Software
-
-    sudo add-apt-repository ppa:obsproject/obs-studio && sudo apt-get update && sudo apt-get install obs-studio
-
-# OS Update
-
-    echo -e "\e[1;31m --(Processo 1)-- \e[0m" ;\
-    sudo apt update ;\
-    echo -e "\e[1;31m --(Processo 2)-- \e[0m" ;\
-    apt list --upgradable ;\
-    echo -e "\e[1;31m --(Processo 3)-- \e[0m" ;\
-    sudo apt upgrade ;\
-    echo -e "\e[1;31m --(Processo 4)-- \e[0m" ;\
-    sudo apt dist-upgrade ;\
-    echo -e "\e[1;31m --(Processo 5)-- \e[0m" ;\
-    sudo apt autoremove
-
 # Dica: Samba
 
     # Após criar uma pasta e compartilhar pelo Nautilus só deve funcionar a autenticação após ser criado o devido usuário no Samba
 
-    sudo smbpasswd -a marcio
+    sudo smbpasswd -a $USER
 
 # Montando ambiente na Amazon
 
@@ -569,4 +548,31 @@ Instalar o Pulse Audio Volume Control e configurar
                             Collum -> Security Groups
                                     Launc Wizard
                                         Inbound -> Edit -> Add -> Custom TCP Rule = 80
--->
+
+# How to check if php-fpm is running
+
+	php-fpm --test
+	php-fpm
+
+	ps aux | grep php-fpm
+
+	netstat -lntp
+
+# Monitorando Apache
+# Visualizar erros do servidor
+
+No terminal pode ser o comando para a visualização do log de erro do servidor
+
+	tail -f /var/log/apache2/error.log
+
+# Monitorando MySQL
+
+Na necessidade de acessar o MySQL Client e ver os processos
+
+    mysql -h 'localhost' -u root -p
+
+    show processlist;
+
+ou melhor ainda
+
+	mysqladmin -u root -p -i 1 processlist
