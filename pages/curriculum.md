@@ -79,14 +79,12 @@ Atendemos centenas ou até milhares de clientes em todo o Brasil, gerando milhar
 
 Decorrente da plena estabilidade dos nossos produtos e baixíssima demanda de suporte e devido atualmente haver diversas opções minimalista de produtos semelhantes gratuito no mercado, optamos por paralisar as nossas operações com os nossos devidos compromissos assumidos para buscar novos desafios como colaborador, freelancer ou consultor.
 
-A fim de apresentar todos os módulos que desenvolvi para a plataforma [Magento1](https://magento.com/ "Magento"), venho apresentando o seguinte projeto, caso queira acesse o [frontend](http://heroku-magento-mozg.herokuapp.com/magento/index.php/admin/ "Magento1") e caso queira acesse o [backend](http://heroku-magento-mozg.herokuapp.com/magento/index.php/admin/ "Magento1"), no processo de autenticação para o campo usuário informe "admin" e para senha informe "123456a", após se logar veja que é exibido o menu "∞ MOZG ∞" e seus submenu contendo os diversos métodos que menciono
+A fim de apresentar todos os módulos que desenvolvi para a plataforma [Magento1](https://magento.com/ "Magento"), venho apresentando o seguinte projeto, caso queira acesse o [frontend](http://heroku-magento-mozg.herokuapp.com/magento/index.php/ "Magento1") e caso queira acesse o [backend](http://heroku-magento-mozg.herokuapp.com/magento/index.php/admin/ "Magento1"), no processo de autenticação para o campo usuário informe "admin" e para senha informe "123456a", após se logar veja que é exibido o menu "∞ MOZG ∞" e seus submenu contendo os diversos métodos que menciono
 
 Desde meados de 2018 venho explorando novas tendências como o [React](https://reactjs.org/ "React") e o seu universo e tambem tenho retornado ao uso do [Magento 2](https://github.com/magento/magento2 "Magento 2")
 
 Venho desenvolvendo o seguinte [Portfólio](https://heroku-react-app-mozg.herokuapp.com/ "Portfólio") utilizando como camada frontend o [React](https://reactjs.org/ "React") e como camada backend o [Node.js](https://nodejs.org/en/ "Node.js") tudo rodando sobre a infraestrutura da [Heroku](https://www.heroku.com/ "Heroku")
 
-
-ssss
 
 
 ## Sombre Reptile

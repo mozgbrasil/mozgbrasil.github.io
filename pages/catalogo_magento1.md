@@ -72,6 +72,27 @@ array_repo_free:
 ---
 
 <div class="row">
+  <div class="col-sm-6">
+    <div class="card ">
+      <div class="card-body">
+        <h5 class="card-title">Frontend</h5>
+        <p class="card-text">Cique abaixo para acesso ao frontend do Magento</p>
+        <a href="http://heroku-magento-mozg.herokuapp.com/magento/index.php/" class="btn btn-primary">Clique aqui</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card ">
+      <div class="card-body">
+        <h5 class="card-title">Backend</h5>
+        <p class="card-text">Cique abaixo para acesso ao backend do Magento</p>
+        <a href="http://heroku-magento-mozg.herokuapp.com/magento/index.php/admin/" class="btn btn-primary" title='No processo de autenticação para o campo usuário informe "admin" e para senha informe "123456a", após a autenticação será exibido o menu "∞ MOZG ∞" e seus submenu contendo os diversos métodos'>Clique aqui</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
 {% for item in page.array_repo_version %}
   <div class="col-sm-6 col-md-4">
       <div class="card">

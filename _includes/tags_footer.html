@@ -22,10 +22,18 @@ Placed at the end of the document so the pages load faster
 {% if test  %}
 <!-- http://bryanbraun.github.io/anchorjs/#basic-usage -->
 <script src="{{ "assets/javascript/anchor-js/anchor.min.js" | relative_url }}"></script>
-<script>
+<script type="text/javascript">
 anchors.add('.anchorar h1, .anchorar h2, .anchorar h3, .anchorar h4, .anchorar h5, .anchorar h6');
 </script>
 {% endif %}
+
+<script type="text/javascript">
+function setJSS(){
+
+}
+
+window.addEventListener('load', setJSS, false);
+</script>
 
 {% comment %}
 <script src="/assets/js/internal/utils.js"></script>
