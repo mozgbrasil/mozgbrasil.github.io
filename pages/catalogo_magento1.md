@@ -110,7 +110,7 @@ array_repo_free:
               </div>
           </div>
           <div class="card-footer">
-              <a href="{{ item.url | replace: '#', '-php_54#' }}" target="_blank" class="btn btn-info btn-sm">PHP 5.4-5.5</a> <a href="{{ item.url | replace: '#', '-php_56#' }}" target="_blank" class="btn btn-info btn-sm">PHP 5.6-7.0</a> <a href="{{ item.url | replace: '#', '-php_71#' }}" target="_blank" class="btn btn-info btn-sm">PHP 7.1</a>
+              <a href="{{ item.url | replace: '#', '-php_54#' }}" target="_blank" class="btn btn-info btn-sm">PHP 5.4-5.5</a> <a href="{{ item.url | replace: '#', '-php_56#' }}" target="_blank" class="btn btn-info btn-sm">PHP 5.6-7.0</a> <a href="{{ item.url | replace: '#', '-php_71#' }}" target="_blank" class="btn btn-info btn-sm">PHP 7.1</a> <a href="{{ item.url | replace: '#', '-php_72#' }}" target="_blank" class="btn btn-info btn-sm">PHP 7.2</a>
           </div>
       </div>
   </div>
