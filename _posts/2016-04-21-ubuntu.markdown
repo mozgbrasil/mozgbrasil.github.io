@@ -221,7 +221,7 @@ Em seguida reinicie a maquina para efeito da adição do novo usuário docker
 ```
 mkdir -p ~/dados/mount/www
 
-echo "<?php phpinfo(); ?>" | sudo tee ~/dados/mount/www/phpinfo.php > /dev/null
+echo "<?php phpinfo(); ?>" phpinfo.php
 
 cat > ~/dados/mount/www/.htaccess <<- _EOF_
 # enable directory browsing
