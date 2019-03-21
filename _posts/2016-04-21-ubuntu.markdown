@@ -312,16 +312,15 @@ Execute os comandos efetuando as devidas alterações personalizando para seu pr
 
 # Local Desktop
 
-    sudo apt install filezilla git keepassx meld curl vlc
 
-    sudo apt install build-essential ubuntu-restricted-extras python-software-properties filezilla git nautilus-dropbox p7zip-full keepassx meld curl gufw gimp gimp-plugin-registry shutter ffmpeg lame links links2 elinks lynx openssh-server ruby-dev nodejs nodejs-legacy chromium-browser inkscape jq npm nmap ntp vlc browser-plugin-vlc gedit-plugins kdenlive kde-runtime pavucontrol gifsicle preload gnome-tweaks && sudo service ssh start
+    sudo apt install build-essential ubuntu-restricted-extras python-software-properties filezilla git nautilus-dropbox p7zip-full keepassx meld curl gufw gimp gimp-plugin-registry shutter ffmpeg lame links links2 elinks lynx openssh-server ruby-dev nodejs nodejs-legacy chromium-browser inkscape jq npm nmap ntp vlc browser-plugin-vlc gedit-plugins kdenlive kde-runtime pavucontrol gifsicle preload gnome-tweaks linux-tools-generic && sudo service ssh start
 
-	sudo add-apt-repository ppa:linrunner/tlp
-	sudo apt-get update
-	sudo apt-get install tlp tlp-rdw
-	sudo tlp start
+	  sudo add-apt-repository ppa:linrunner/tlp
+	  sudo apt-get update
+	  sudo apt-get install tlp tlp-rdw
+	  sudo tlp start
 
-	sudo apt-get install indicator-cpufreq
+	  sudo apt-get install indicator-cpufreq
 
     git config --global credential.helper cache
 
@@ -339,19 +338,19 @@ Instalar o Pulse Audio Volume Control e configurar
 
 # Webserver
 
-	# https://www.howtoforge.com/tutorial/install-apache-with-php-and-mysql-on-ubuntu-18-04-lamp/
-	# https://hostadvice.com/how-to/how-to-setup-varnish-http-cache-on-an-ubuntu-18-04-vps-or-dedicated-server/
-	# https://e-tinet.com/linux/servidor-apache/
-	# https://serverfault.com/questions/904065/switch-apache-from-prefork-to-event-in-ubuntu-16-get-php-7-working
+	  # https://www.howtoforge.com/tutorial/install-apache-with-php-and-mysql-on-ubuntu-18-04-lamp/
+	  # https://hostadvice.com/how-to/how-to-setup-varnish-http-cache-on-an-ubuntu-18-04-vps-or-dedicated-server/
+	  # https://e-tinet.com/linux/servidor-apache/
+	  # https://serverfault.com/questions/904065/switch-apache-from-prefork-to-event-in-ubuntu-16-get-php-7-working
 
     sudo apt install mysql-server mysql-client phpmyadmin php7.2 php7.2-mysql php7.2-curl php7.2-gd php7.2-intl php-pear php-imagick php7.2-imap php-memcache  php7.2-pspell php7.2-recode php7.2-sqlite3 php7.2-tidy php7.2-xmlrpc php7.2-xsl php7.2-mbstring php-gettext php7.2-opcache php-apcu php-memcache install php7.2-zip php7.2-soap php7.2-common php7.2-json php7.2-cgi php-pear php7.2-fpm php7.2-bcmath phpmyadmin varnish
 
-	# Open http://localhost/phpmyadmin/
+	  # Open http://localhost/phpmyadmin/
 
-	sudo a2dismod mpm_prefork # This disables the prefork MPM. Only one MPM can run at a time.
+	  sudo a2dismod mpm_prefork # This disables the prefork MPM. Only one MPM can run at a time.
     sudo a2enmod mpm_event # Enable event MPM. You could also enable mpm_worker.
-	sudo a2enmod proxy_fcgi setenvif actions rewrite ssl http2
-	sudo a2ensite default-ssl
+	  sudo a2enmod proxy_fcgi setenvif actions rewrite ssl http2
+	  sudo a2ensite default-ssl
     sudo a2enconf php7.2-fpm
 
     sudo nano /etc/apache2/sites-available/000-default.conf
@@ -386,7 +385,7 @@ Em seguida executei as instruções "Restart: apache & php-fpm"
 # Symlink WWW
 
     sudo ln -s ~/dados/mount/www/localhost/htdocs /var/www/html
-	mv index.php index2.php
+	  mv index.php index2.php
     echo "<?php phpinfo(); ?>" | sudo tee ~/dados/public_html/phpinfo.php > /dev/null
     php -l ~/dados/public_html/phpinfo.php
     curl -I http://127.0.0.1/public_html/phpinfo.php 
