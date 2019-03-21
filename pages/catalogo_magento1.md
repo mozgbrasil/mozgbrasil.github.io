@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Catálogo
+title: Catálogo Magento1
 permalink: /catalogo_magento1/
 order: 3
 excerpt: "Instale nossos módulos sem compromisso e só pague após testar e comprovar a qualidade dos nossos produtos."
