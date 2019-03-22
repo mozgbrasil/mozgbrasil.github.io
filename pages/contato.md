@@ -32,9 +32,8 @@ excerpt: "Fale conosco e tire suas dúvidas, para um melhor suporte seja o mais 
 
 <a class="glue-filter-result card">
 <div class="card-inner">
-<p>
-<a href="tel:+5511977072339">(11) 97707-2339</a>
-</p>
+<p><a href="mailto:suporte@mozg.com.br">suporte@mozg.com.br</a></p>
+<p><a href="tel:+5511977072339">(11) 97707-2339</a></p>
 </div>
 </a>
 
