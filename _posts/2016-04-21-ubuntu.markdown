@@ -10,25 +10,141 @@ excerpt: "Nesse artigo será exibido detalhadamente os processos feito via termi
 
 # Ubuntu 18.04
 
+## After Install
 
-## Conectar ao SSH "Secure SHell"
+## apt install
+
+    sudo apt install build-essential ubuntu-restricted-extras linux-tools-generic libavcodec-extra net-tools gdebi-core gnome-tweaks git p7zip-full meld curl gufw lame openssh-server jq preload indicator-cpufreq
+    sudo service ssh start
+
+    sudo add-apt-repository ppa:linrunner/tlp
+    sudo apt update && sudo apt install tlp tlp-rdw smartmontools && sudo tlp start
+    # sudo tlp-stat
+
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    sudo gdebi google-chrome-stable_current_amd64.deb
+
+    git config --global credential.helper cache
+
+## snap install
+
+	# https://snapcraft.io/store
+
+    snap list
+    snap version
+
+	sudo snap install gitkraken
+    sudo snap install obs-studio
+    sudo snap install opera
+    sudo snap install chromium
+    sudo snap install okular
+    sudo snap install vlc
+    sudo snap install ffmpeg
+    sudo snap install screencloud
+    sudo snap install docker
+    sudo snap install nmap
+    sudo snap install circleci
+    sudo snap install sftpclient
+    sudo snap install keepassxc
+
+	sudo snap install atom --classic 
+    sudo snap install brackets --classic 
+    sudo snap install google-cloud-sdk --classic 
+    sudo snap install aws-cli --classic 
+    sudo snap install heroku --classic 
+    sudo snap install ruby --classic
+	sudo snap install node --channel=10/stable --classic
+
+	#sudo snap install mysql --beta
+
+    # By default the docker daemon always runs as the root user, therefore you need to prepend sudo to your Docker command(s).
+    # 1. Create the docker group.
+    sudo groupadd docker
+    # 2. Add your user to the docker group.
+    sudo usermod -aG docker $USER
+    # 3. Log out and log back in so that your group membership is re-evaluated.
+    # 4. Verify that you can run docker commands without sudo.
+    docker run hello-world
+    # more ...
+    docker info
+    docker search ubuntu
+    docker container ls
+
+    # version(s)
+
+    docker version
+    docker-compose version
+    docker-machine version
+    node --version
+    npm --version
+    ruby --version
+    gem --version
+    aws --version
+    heroku --version
+
+## Plugins - https://atom.io/packages
+
+composer global require friendsofphp/php-cs-fixer
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+
+apm install php-cs-fixer open-on-bitbucket php-hyperclick atom-autocomplete-php project-manager pigments atom-beautify minimap git-plus
+
+## Jekyll
+
+    sudo gem install jekyll
+    sudo gem install github-pages
+    sudo gem install rouge
+    jekyll -v
+
+## Dica:
+
+    # Após criar uma pasta e compartilhar pelo Nautilus só deve funcionar a autenticação após ser criado o devido usuário no Samba
+    sudo smbpasswd -a $USER
+
+## Devilbox
+
+    cd ~/dados/containers_docker
+    git clone https://github.com/cytopia/devilbox
+    cd devilbox
+    cp env-example .env
+    touch touch.txt
+    echo "commit - $(date '+%d/%m/%Y %H:%M:%S')" > touch.txt
+
+    diff --brief --recursive tmp/devilbox-2019-03-07 devilbox
+    meld tmp/devilbox-2019-03-07 devilbox
+
+    cd devilbox
+    docker-compose up
+
+## run devilbox
+
+    cd ~/dados/containers_docker/devilbox
+    docker-compose down --remove-orphans && docker-compose up
+
+    ./shell.sh
+    cd /shared/httpd/localhost/htdocs/mozgbrasil/magento2
+
+## Virtual Hosts
+
+    mkdir -p ~/dados/mount/www/localhost/htdocs/
+
+    sudo nano /etc/hosts
+        127.0.0.1 localhost.loc
+
+    cd ~/dados/mount/www/localhost/htdocs/
+
+    ln -s /home/marcio/dados/mozgbrasil
+
+    echo "<?php phpinfo(); ?>" > phpinfo.php
 
 ```
-ssh marcio@192.168.0.2
-ssh marcio@192.168.0.6
+cat > .htaccess <<- _EOF_
+# enable directory browsing
+Options +Indexes
+_EOF_
 ```
 
-## Download via SCP "Secure Copy"
 
-```
-scp -r marcio@192.168.0.3:/home/marcio/Imagens/ /home/marcio/Imagens/
-```
-
-### Upload via SCP "Secure Copy"
-
-```
-scp -r /home/marcio/Imagens/ marcio@192.168.0.3:/home/marcio/Imagens/
-```
 
 ## Sobre o Ubuntu
 
@@ -65,21 +181,6 @@ Para analise da Bios
 sudo dmidecode -t bios
 ```
 
-## Sobre instalar codecs e extras de terceiros
-
-Devido a questões de direitos autorais, o Ubuntu 18.04 não fornece acesso padrão a vários codecs de mídia. Você pode, no entanto, instalá-los facilmente abrindo seu terminal e executando:
-
-```
-sudo apt install ubuntu-restricted-extras
-```
-
-Com o pacote Ubuntu Restricted Extras instalado, você poderá reproduzir MP3, MPEG4, AVI e alguns outros arquivos de mídia.
-
-É recomendado instalar a versão irrestrita do libavcodec também para evitar um problema ao executar tarefas de mídia com editores de vídeo ou transcodificadores.
-
-```
-sudo apt install libavcodec-extra
-```
 
 ## UFW ( Uncomplicated Firewall ) é um firewall padrão no Ubuntu 18.04 Bionic Beaver Linux.
 
@@ -95,153 +196,29 @@ Para habilitar a execução do firewall:
 sudo ufw enable
 ```
 
-## Sobre instalar o Google Chrome
-
-A maneira mais simples de instalar um pacote externo, como neste caso o navegador da web Google Chrome, é usar o comando gdebi.
+## Sincronia entre maquinas locais
 
 ```
-sudo apt install gdebi-core
+rsync --archive --compress --verbose --progress /home/marcio/dados/downloads/ marcio@192.168.0.2:/home/marcio/dados/downloads/
 ```
 
-Em seguida, use o comando wget para baixar o pacote do Google Chrome:
+## Conectar ao SSH "Secure SHell"
 
 ```
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+ssh marcio@192.168.0.2
+ssh marcio@192.168.0.6
 ```
 
-Para instalar o pacote do Google Chrome no Ubuntu 18.04 Bionic Beaver usando o comando gdebi é tão simples quanto:
+## Download via SCP "Secure Copy"
 
 ```
-sudo gdebi google-chrome-stable_current_amd64.deb
+scp -r marcio@192.168.0.3:/home/marcio/Imagens/ /home/marcio/Imagens/
 ```
 
-## Sobre instalar o navegador do Chromium
-
-O navegador Chromium é uma parte do repositório do Ubuntu 18.04, portanto, a instalação do Chromium Browser no Ubuntu 18.04 é simples como a execução de um único comando. Abra o terminal e digite:
+### Upload via SCP "Secure Copy"
 
 ```
-sudo apt install chromium-browser
-```
-
-## Sobre instalar o Dropbox
-
-O comando a seguir instalará o pacote de transição do Dropbox:
-
-```
-sudo apt install nautilus-dropbox
-```
-
-## Sobre instalar o Visual Studio Code
-
-```
-wget "https://go.microsoft.com/fwlink/?LinkID=760868" -O visual_studio_code_amd64.deb
-
-sudo gdebi visual_studio_code_amd64.deb
-```
-
-## Sobre instalar o Sublime Text
-
-### Adicionar Repositório de Texto Sublime
-
-Para iniciar o Sublime Text no Ubuntu 18.04, primeiro adicione a chave de assinatura e o repositório Sublime Text:
-
-```
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-sudo apt-add-repository "deb https://download.sublimetext.com/ apt/stable/"
-```
-
-Depois que o repositório Sublime Text estiver no lugar, insira o comando abaixo para instalá-lo:
-
-```
-sudo apt install sublime-text
-```
-
-## Sobre instalar o GitKraken 3.5
-
-```
-wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
-
-sudo gdebi gitkraken-amd64.deb
-```
-
-# FIX:
-
-```
-sudo apt install libgnome-keyring-common libgnome-keyring-dev libcanberra-gtk-module
-```
-
-## Sobre Docker e Docker-compose
-
-https://github.com/docker/docker-ce
-
-https://store.docker.com/editions/community/docker-ce-server-ubuntu
-
-https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-repository
-
-https://docs.docker.com/compose/install/#install-compose
-
-https://medium.com/magento-meetup-sp/magento-2-docker-no-mac-e-linux-3adf8b994cd6
-
-```
-sudo apt update
-
-sudo apt install apt-transport-https ca-certificates curl software-properties-common
-
-
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-
-sudo apt-key fingerprint 0EBFCD88
-
-
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) nightly"
-
-sudo apt update
-
-sudo apt install docker-ce docker-compose
-
-
-docker --version
-
-sudo docker info
-
-sudo docker search ubuntu
-
-sudo docker container ls
-
-
-sudo docker run hello-world
-
-sudo usermod -aG docker $(whoami)
-```
-
-Em seguida reinicie a maquina para efeito da adição do novo usuário docker
-
-## ~/dados/mount/www
-
-```
-mkdir -p ~/dados/mount/www
-
-echo "<?php phpinfo(); ?>" phpinfo.php
-
-cat > ~/dados/mount/www/.htaccess <<- _EOF_
-# enable directory browsing
-Options +Indexes
-_EOF_
-```
-
-## Pesquisa sobre programas
-
-```
-apt search filezilla
-apt search docker-*
-```
-
-## Instalando adicionais
-
-```
-sudo apt install p7zip-full screenfetch filezilla git keepassx meld curl
-
-git config --global credential.helper cache
+scp -r /home/marcio/Imagens/ marcio@192.168.0.3:/home/marcio/Imagens/
 ```
 
 ## Como criar a SSH Key
@@ -252,7 +229,7 @@ git config --global credential.helper cache
 
     cat ~/.ssh/id_rsa.pub
 
-# Efetuar login no SSH com chave ppk
+## Efetuar login no SSH com chave ppk
 
 https://askubuntu.com/questions/818929/login-ssh-with-ppk-file-on-ubuntu-terminal
 
@@ -268,73 +245,23 @@ https://askubuntu.com/questions/818929/login-ssh-with-ppk-file-on-ubuntu-termina
 
 	sftp://marcio@192.168.0.4
 
-# Conectar via Samba pelo nautilus
+## Conectar via Samba pelo nautilus
 
 	smb://192.168.0.4
 
-# Conectar via ssh pelo terminal
+## Conectar via ssh pelo terminal
 
 	ssh marcio@192.168.0.4
 
-# Obter a versão do PHP via terminal
+## Obter a versão do PHP via terminal
 
 	php -r \@phpinfo\(\)\; | grep 'PHP Version' -m 1
 
 	php -i | grep 'PHP Version' -m 1
 
-# Execução comando condicional em linha
+## Execução comando condicional em linha
 
 	sh -c 'if [ "$TRAVIS_PHP_VERSION" = "5.4" ] || [ "$TRAVIS_PHP_VERSION" = "5.5" ]; then echo '0'; else echo '1'; fi;'
-
-# # # # # # # 
-
-Ola
-
-Execute os comandos efetuando as devidas alterações personalizando para seu projeto
-
-# Atualização do sistema operacional
-
-    sudo apt update && sudo apt upgrade
-
-# Suporte a repositórios
-
-    sudo add-apt-repository ppa:ondrej/php && sudo apt-get update ;\
-    sudo add-apt-repository ppa:nijel/phpmyadmin && sudo apt-get update ;\
-    sudo add-apt-repository ppa:kdenlive/kdenlive-stable && sudo apt-get update
-
-# Pesquisa sobre programas
-
-    apt-cache search php-gd ;\
-    apt-cache show php-gd ;\
-
-    apt search php7.0-*
-    apt search gitkraken
-
-# Local Desktop
-
-
-    sudo apt install build-essential ubuntu-restricted-extras python-software-properties filezilla git nautilus-dropbox p7zip-full keepassx meld curl gufw gimp gimp-plugin-registry shutter ffmpeg lame links links2 elinks lynx openssh-server ruby-dev nodejs nodejs-legacy chromium-browser inkscape jq npm nmap ntp vlc browser-plugin-vlc gedit-plugins kdenlive kde-runtime pavucontrol gifsicle preload gnome-tweaks linux-tools-generic && sudo service ssh start
-
-	  sudo add-apt-repository ppa:linrunner/tlp
-	  sudo apt-get update
-	  sudo apt-get install tlp tlp-rdw
-	  sudo tlp start
-
-	  sudo apt-get install indicator-cpufreq
-
-    git config --global credential.helper cache
-
-    # vlc http://avenard.org/iptv/playlist-tpg-vlc.m3u
-
-# Dica:
-
-## Caso
-
-Configurações de Som -> Entrada -> Volume de entrada fica desativado
-
-## Solução
-
-Instalar o Pulse Audio Volume Control e configurar
 
 # Webserver
 
@@ -394,7 +321,7 @@ Em seguida executei as instruções "Restart: apache & php-fpm"
 
 ## FIX: PHP Fatal error:  Call to undefined function mcrypt_module_open
 
-    sudo php5enmod mcrypt  
+    sudo php5enmod mcrypt
 
 # To activate the new configuration, you need to run:
 
@@ -490,63 +417,6 @@ Em seguida executei as instruções "Restart: apache & php-fpm"
     ## FIX: https://github.com/thomaszbz/native-dockerfiles-typo3/issues/19
 
         sudo chown -R $USER $HOME/.composer
-
-# Sublime - text editor
-
-    sudo add-apt-repository ppa:webupd8team/sublime-text-3 && sudo apt-get update && sudo apt-get install sublime-text-installer
-
-    ## Plugins - https://packagecontrol.io/
-    ## Sublime Menu: (Tools > Command Palette…) search for "Package"
-
-# Atom - text editor
-
-    sudo add-apt-repository ppa:webupd8team/atom -y && sudo apt-get update && sudo apt-get install atom
-
-    ## Plugins - https://atom.io/packages
-
-    composer global require friendsofphp/php-cs-fixer
-    export PATH="$PATH:$HOME/.composer/vendor/bin"
-
-    apm install php-cs-fixer open-on-bitbucket php-hyperclick atom-autocomplete-php project-manager pigments atom-beautify minimap git-plus
-
-# Jekyll
-
-    sudo gem install jekyll && sudo gem install github-pages && sudo gem install rouge && jekyll -v && ruby --version && gem --version
-
-# Dica: Samba
-
-    # Após criar uma pasta e compartilhar pelo Nautilus só deve funcionar a autenticação após ser criado o devido usuário no Samba
-
-    sudo smbpasswd -a $USER
-
-# Montando ambiente na Amazon
-
-    https://console.aws.amazon.com/
-
-        AWS Management Console
-
-            Compute      
-                EC2
-                Virtual Servers in the Cloud
-
-                    Create Instance
-                        Launch Instance
-
-                        Step 1:
-                            Ubuntu Server 14.04 LTS -> Select
-
-                        Step 2:
-                            t2.micro -> Review and Launch
-                            Launch
-                            Create a new key pair: Name = cerkeypair -> Download Key Pair -> Launch Instance
-                            View Instances
-
-                        Step 3:
-                            Instances
-                            Select
-                            Collum -> Security Groups
-                                    Launc Wizard
-                                        Inbound -> Edit -> Add -> Custom TCP Rule = 80
 
 # How to check if php-fpm is running
 
