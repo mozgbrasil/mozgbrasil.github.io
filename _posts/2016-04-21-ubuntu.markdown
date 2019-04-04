@@ -12,9 +12,9 @@ excerpt: "Nesse artigo será exibido detalhadamente os processos feito via termi
 
 ## After Install
 
-## apt install
+    ### PPA (Personal Package Archives)
 
-    sudo apt install build-essential ubuntu-restricted-extras linux-tools-generic libavcodec-extra net-tools gdebi-core gnome-tweaks git p7zip-full meld curl gufw lame openssh-server jq preload indicator-cpufreq
+    sudo apt install build-essential ubuntu-restricted-extras linux-tools-generic libavcodec-extra net-tools gdebi-core gnome-tweaks git p7zip-full meld curl gufw lame openssh-server jq preload indicator-cpufreq python-pip python3-pip
     sudo service ssh start
 
     sudo add-apt-repository ppa:linrunner/tlp
@@ -25,15 +25,28 @@ excerpt: "Nesse artigo será exibido detalhadamente os processos feito via termi
     sudo gdebi google-chrome-stable_current_amd64.deb
 
     git config --global credential.helper cache
+    git config --global user.email "USR@gmail.com"
+    git config --global user.name "USR"
+    git config --global http.postBuffer 157286400 # FIX: Error: fatal: The remote end hung up unexpectedly, https://confluence.atlassian.com/stashkb/git-push-fails-fatal-the-remote-end-hung-up-unexpectedly-282988530.html
+    git config --global --list
 
-## snap install
+    ssh -T git@github.com
 
-	# https://snapcraft.io/store
+    # FIX: git@github.com: Permission denied (publickey)
+    # Obter a SSH Key 'cat ~/.ssh/id_rsa.pub' e adicionar em https://github.com/settings/keys
+
+    # https://pypi.org/
+
+    pip3 install awscli --upgrade --user
+    pip install awsebcli --upgrade --user
+    pip install aws-sam-cli --upgrade --user
+
+    ### https://snapcraft.io/store
 
     snap list
     snap version
 
-	sudo snap install gitkraken
+  	sudo snap install gitkraken
     sudo snap install obs-studio
     sudo snap install opera
     sudo snap install chromium
@@ -47,15 +60,56 @@ excerpt: "Nesse artigo será exibido detalhadamente os processos feito via termi
     sudo snap install sftpclient
     sudo snap install keepassxc
 
-	sudo snap install atom --classic 
-    sudo snap install brackets --classic 
-    sudo snap install google-cloud-sdk --classic 
-    sudo snap install aws-cli --classic 
-    sudo snap install heroku --classic 
+  	sudo snap install atom --classic
+    sudo snap install brackets --classic
+    sudo snap install google-cloud-sdk --classic
+    sudo snap install heroku --classic
     sudo snap install ruby --classic
-	sudo snap install node --channel=10/stable --classic
+  	sudo snap install node --channel=10/stable --classic
 
-	#sudo snap install mysql --beta
+    # Plugins - https://atom.io/packages
+
+    #composer global require friendsofphp/php-cs-fixer
+    #export PATH="$PATH:$HOME/.composer/vendor/bin"
+
+    apm install \
+        atom-beautify \
+        highlight-selected \
+        file-icons pigments \
+        open-recent \
+        autoclose-html \
+        color-picker \
+        linter \
+        linter-ui-default \
+        intentions \
+        busy-signal \
+        linter-php \
+        linter-csslint \
+        atom-clock \
+        editorconfig \
+        script \
+        pretty-json \
+        markdown-writer \
+        markdown-preview-plus \
+        sort-lines \
+        atom-html-preview \
+        turbo-javascript \
+        auto-indent
+
+    # https://www.npmjs.com/
+
+    # https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
+    # Global Node Modules without sudo
+    wget https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh
+    bash ./install.sh
+    command -v nvm # To verify that nvm has been installed
+    nvm install node
+
+    npm config list
+    npm list -g --depth 0
+    npm install -g clever-tools
+
+	# Docker setup
 
     # By default the docker daemon always runs as the root user, therefore you need to prepend sudo to your Docker command(s).
     # 1. Create the docker group.
@@ -70,24 +124,20 @@ excerpt: "Nesse artigo será exibido detalhadamente os processos feito via termi
     docker search ubuntu
     docker container ls
 
-    # version(s)
+    # Version(s)
 
+    python -V
+    pip -V
     docker version
     docker-compose version
     docker-machine version
+    nvm --version
     node --version
     npm --version
     ruby --version
     gem --version
     aws --version
     heroku --version
-
-## Plugins - https://atom.io/packages
-
-composer global require friendsofphp/php-cs-fixer
-export PATH="$PATH:$HOME/.composer/vendor/bin"
-
-apm install php-cs-fixer open-on-bitbucket php-hyperclick atom-autocomplete-php project-manager pigments atom-beautify minimap git-plus
 
 ## Jekyll
 
@@ -315,7 +365,7 @@ Em seguida executei as instruções "Restart: apache & php-fpm"
 	  mv index.php index2.php
     echo "<?php phpinfo(); ?>" | sudo tee ~/dados/public_html/phpinfo.php > /dev/null
     php -l ~/dados/public_html/phpinfo.php
-    curl -I http://127.0.0.1/public_html/phpinfo.php 
+    curl -I http://127.0.0.1/public_html/phpinfo.php
     curl -I --compress http://127.0.0.1/public_html/phpinfo.php
     GET -Used http://127.0.0.1/public_html/phpinfo.php
 
@@ -366,28 +416,28 @@ Em seguida executei as instruções "Restart: apache & php-fpm"
 
 # Restart: apache & php-fpm
 
-    echo -e "\e[1;31m --(apache2 -v)-- \e[0m" 
+    echo -e "\e[1;31m --(apache2 -v)-- \e[0m"
     apache2 -v
-    echo -e "\e[1;31m --(apache2ctl configtest )-- \e[0m" 
+    echo -e "\e[1;31m --(apache2ctl configtest )-- \e[0m"
     sudo apache2ctl configtest
-    echo -e "\e[1;31m --(apachectl fullstatus )-- \e[0m" 
+    echo -e "\e[1;31m --(apachectl fullstatus )-- \e[0m"
     sudo apachectl fullstatus
-    echo -e "\e[1;31m --(apachectl -M )-- \e[0m" 
+    echo -e "\e[1;31m --(apachectl -M )-- \e[0m"
     sudo apachectl -M
-    echo -e "\e[1;31m --(apachectl -V )-- \e[0m" 
+    echo -e "\e[1;31m --(apachectl -V )-- \e[0m"
     sudo apachectl -V
-	  echo -e "\e[1;31m --(mysql status)-- \e[0m" 
+	  echo -e "\e[1;31m --(mysql status)-- \e[0m"
 	  sudo service mysql status
-	  echo -e "\e[1;31m --(php7.2-fpm status)-- \e[0m" 
+	  echo -e "\e[1;31m --(php7.2-fpm status)-- \e[0m"
 	  sudo service php7.2-fpm status
-    echo -e "\e[1;31m --(status-all)-- \e[0m" 
+    echo -e "\e[1;31m --(status-all)-- \e[0m"
     service --status-all
 
     echo -e "\e[1;31m --(apache2 restart )-- \e[0m"
-    sudo service apache2 restart 
-    echo -e "\e[1;31m --(php7.2-fpm restart)-- \e[0m" 
+    sudo service apache2 restart
+    echo -e "\e[1;31m --(php7.2-fpm restart)-- \e[0m"
     sudo service php7.2-fpm restart
-    
+
 
 # Versions
 
@@ -412,7 +462,7 @@ Em seguida executei as instruções "Restart: apache & php-fpm"
 
     ## FIX: [RuntimeException] /home/???/.composer/cache/vcs does not exist and could not be created.
     ## Cannot create cache directory /home/???/.composer/cache/repo/https---packagist.org/, or directory is not writable. Proceeding without cache
-    ##  [RuntimeException] Can not clone git@bitbucket.org:???/???.git to access package information. The "/home/???/.composer/cache/vcs  
+    ##  [RuntimeException] Can not clone git@bitbucket.org:???/???.git to access package information. The "/home/???/.composer/cache/vcs
   " directory is not writable by the current user.
     ## FIX: https://github.com/thomaszbz/native-dockerfiles-typo3/issues/19
 

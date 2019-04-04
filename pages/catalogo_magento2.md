@@ -6,17 +6,11 @@ order: 3
 excerpt: "Instale nossos módulos sem compromisso e só pague após testar e comprovar a qualidade dos nossos produtos."
 
 array_repo_version:
-  - title: 'Pacote completo'
-    url: 'https://github.com/mozgbrasil/magento-bundle#mozgbundle'
-    summary: ''
-  - title: 'Correios & Correios Exporta Fácil'
-    url: 'https://github.com/mozgbrasil/magento-correios#mozgcorreios'
+  - title: 'EM BREVE'
+    url: '#'
     summary: ''
 
 array_repo_free:
-  - title: 'Pacote de tradução (Free)'
-    url: 'https://github.com/mozgbrasil/magento-locale-pt_br#mozgmagentolocale'
-    summary: ''
 
 ---
 
