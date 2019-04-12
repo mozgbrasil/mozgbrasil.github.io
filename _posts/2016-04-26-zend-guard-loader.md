@@ -8,7 +8,7 @@ tags: [magento2, php]
 excerpt: "Nesse artigo será exibido detalhadamente o processo usado para ativar o Zend Guard Loader no servidor"
 ---
 
-[phpinfo]:http://ec2-54-232-215-118.sa-east-1.compute.amazonaws.com/public_html/phpinfo.php
+[phpinfo]: http://ec2-54-232-215-118.sa-east-1.compute.amazonaws.com/public_html/phpinfo.php
 
 Ola
 
@@ -26,11 +26,11 @@ Esse comando deve exibir a versão do PHP e a presença da extensão de servidor
 
 Acesse
 
-http://www.zend.com/en/products/loader/downloads
+<http://www.zend.com/en/products/loader/downloads>
 
 Deve ser feito o download do Zend Guard Loader baseado na versão do PHP do seu servidor
 
-ou 
+ou
 
     wget http://downloads.zend.com/guard/7.0.0/zend-loader-php5.6-linux-x86_64.tar.gz
 
@@ -40,13 +40,13 @@ Ao efetuar o download e extração do "Zend Guard Loader", leia o arquivo o "REA
 
 Veja que o processo é super simples devendo apenas editar os arquivos que aplicam o suporte da extensão de servidor para o ambiente cliente e web do PHP
 
-	sudo nano /etc/php/5.6/cli/php.ini
+    sudo nano /etc/php/5.6/cli/php.ini
 
-	sudo nano /etc/php/5.6/apache2/php.ini
+    sudo nano /etc/php/5.6/apache2/php.ini
 
 e informar o conteúdo baseado no modelo a seguir
 
-	[zendloader]
+    [zendloader]
     zend_extension=/home/marcio/dados/softwares/zend-loader-php5.6-linux-x86_64/ZendGuardLoader.so
     zend_extension=/home/marcio/dados/softwares/zend-loader-php5.6-linux-x86_64/opcache.so
 
@@ -54,9 +54,9 @@ Voce só deve alterar o caminho correspondente a seu ambiente
 
 Em seguida reiniciamos o servidor
 
-	sudo service apache2 restart
+    sudo service apache2 restart
 
-Obs. 
+Obs.
 
 Na ocorrência de problemas certifique se foi informado o caminho correto em "zend_extension"
 
@@ -66,15 +66,15 @@ Certifique se de ter reiniciado o servidor
 
 Devido o "Zend Guard Loader" se tratar de ferramenta de terceiros, dúvidas ou problemas sugiro entrar em contato direto com a Zend, abrindo uma interação no forum do "Zend Guard Loader"
 
-http://forums.zend.com/viewforum.php?f=57&sid=8556b95ded7978a11c27ca31de8592d4
+<http://forums.zend.com/viewforum.php?f=57&sid=8556b95ded7978a11c27ca31de8592d4>
 
 Para usuários do "Zend Server" o módulo "Zend Guard Loader" já vem instalado no servidor, necessitando somente de ativar o mesmo.
 
-http://www.zend.com/en/products/server/
+<http://www.zend.com/en/products/server/>
 
 Veja que esses procedimentos está documentado em
 
-http://files.zend.com/help/Zend-Guard/content/installing_zend_guard_loader.htm
+<http://files.zend.com/help/Zend-Guard/content/installing_zend_guard_loader.htm>
 
 # Processos executados sobre o Servidor Apache
 
@@ -110,15 +110,15 @@ Foi feito acesso via terminal ao servidor da amazon onde na execução dos coman
 
 Executando o seguinte comando temos o resultado se está ativo o recurso no ambiente client
 
-	php -i | grep -i 'Zend Guard Loader'
+    php -i | grep -i 'Zend Guard Loader'
 
 Executando o seguinte comando temos o resultado se está ativo o recurso no ambiente web
 
     echo "<?php phpinfo(); ?>" >> phpinfo.php
 
-	curl -v --silent http://SEU_DNS/phpinfo.php 2>&1 | grep 'Zend Guard Loader'
+    curl -v --silent http://SEU_DNS/phpinfo.php 2>&1 | grep 'Zend Guard Loader'
 
-## [core:notice] [pid 16387] AH00051: child pid 16530 exit signal Segmentation fault (11), possible coredump in /etc/apache2
+## [core:notice][pid 16387] AH00051: child pid 16530 exit signal Segmentation fault (11), possible coredump in /etc/apache2
 
 Esse erro foi gerado devido a mal configuração do módulo Zend Guard Loader
 
@@ -126,7 +126,7 @@ No manual do Zend Guard Loader tem a instrução para usar as 2 bibliotecas que 
 
 Para efeito de teste ao comentar o uso da biblioteca "opcache.so" vemos que foi gerado o erro
 
-[Fri Jun 23 11:57:58.914258 2017] [core:notice] [pid 16387] AH00051: child pid 16530 exit signal Segmentation fault (11), possible coredump in /etc/apache2
+[Fri Jun 23 11:57:58.914258 2017][core:notice] [pid 16387] AH00051: child pid 16530 exit signal Segmentation fault (11), possible coredump in /etc/apache2
 
 Abaixo temos uma demonstração dessa ocorrência
 
@@ -166,7 +166,7 @@ Nesse tipo de eventualidade, desative o Zend Opache ou entre em contato com sua 
 
 Esse erro ocorre devido a ausência do Zend Guard Loader no ambiente PHP CLI
 
-No terminal ao digitar o comando 
+No terminal ao digitar o comando
 
     php -v
 

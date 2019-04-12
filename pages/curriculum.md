@@ -8,10 +8,10 @@ excerpt: "Ética e compromisso, prezando por desenvolver tecnologia que agreguem
 
 # Curriculum
 
-Marcio dos Santos Amorim  
-Av. Campanella, 1297, apto. 14, Itaquera  
-CEP. 08220-831 - São Paulo - SP  
-Cel. (11) 97707-2339 - E-mail hackin88@gmail.com  
+Marcio dos Santos Amorim
+Av. Campanella, 1297, apto. 14, Itaquera
+CEP. 08220-831 - São Paulo - SP
+Cel. (11) 97707-2339 - E-mail hackin88@gmail.com
 37 anos - Nacionalidade Brasileira - Solteiro
 
 # Objetivo
@@ -22,16 +22,16 @@ Analista e Desenvolvedor de Sistemas Sênior
 
 Colégio Integrado Santa Inês S/C Ltda.
 Curso de Processamento de Dados
-01/1997 até 12/1999  
+01/1997 até 12/1999
 Concluído a 3ª serie do 2º grau em 1999
 
 # Formação profissional
 
 ## Impacta Tecnologia
 
-* ICS - [Impacta](https://www.impacta.com.br/) Certified Specialist - Web-Master e-commerce developer - 03/08/2000
+-   ICS - [Impacta](https://www.impacta.com.br/) Certified Specialist - Web-Master e-commerce developer - 03/08/2000
 
-* ICS - [Impacta](https://www.impacta.com.br/) Certified Specialist - 2324 - Administrando Microsoft SQL Server 2000 Database - 01/07/2002
+-   ICS - [Impacta](https://www.impacta.com.br/) Certified Specialist - 2324 - Administrando Microsoft SQL Server 2000 Database - 01/07/2002
 
 # Experiência profissional
 
@@ -59,9 +59,9 @@ Os módulos do [Catálogo](http://mozg.com.br/catalogo/ "Catálogo") utiliza uma
 
 Veja alguns videos de alguns produtos para Magento
 
-[https://github.com/mozgbrasil/magento-cielo-php_56#v%C3%ADdeos-demonstrativo](https://github.com/mozgbrasil/magento-cielo-php_56#v%C3%ADdeos-demonstrativo)
+<https://github.com/mozgbrasil/magento-cielo-php_56#v%C3%ADdeos-demonstrativo>
 
-[https://github.com/mozgbrasil/magento-correios-php_56/blob/master/README_Correios.md#v%C3%ADdeos-demonstrativo](https://github.com/mozgbrasil/magento-correios-php_56/blob/master/README_Correios.md#v%C3%ADdeos-demonstrativo)
+<https://github.com/mozgbrasil/magento-correios-php_56/blob/master/README_Correios.md#v%C3%ADdeos-demonstrativo>
 
 Para o gerenciamento dos registro referente as atualizações dos módulos foi desenvolvido uma aplicação em [PHP](http://php.net/ "PHP") sobre o [Google App Engine](https://cloud.google.com/appengine/ "GAE") que utiliza para armazenamento dos dados o [Google Cloud Datastore](https://cloud.google.com/datastore/docs/concepts/overview?hl=pt "Datastore") dessa forma não gerando custos e aproveitando os recursos do Google
 

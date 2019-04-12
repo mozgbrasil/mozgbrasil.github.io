@@ -27,6 +27,7 @@ excerpt: "Fale conosco e tire suas dúvidas, para um melhor suporte seja o mais 
         </div>
     </div>
     <hr class="half-rule">
+
 </div>
 {% comment %}
 <div class="cols-row featuredcontent-list" rs-no-results-filter="">
