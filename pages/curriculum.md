@@ -81,7 +81,11 @@ Venho desenvolvendo o seguinte [projeto](https://reactjs-portfolio.herokuapp.com
 
 Venho desenvolvendo o seguinte projeto usando como base a plataforma [Magento 2](https://magento.com/ "Magento 2"), e utilizando automação como [integração contínua](https://aws.amazon.com/pt/devops/continuous-integration/ "integração contínua") e efetuando a implantação no serviço [Elastic Beanstalk](https://aws.amazon.com/pt/elasticbeanstalk/ "Elastic Beanstalk") resultando no [frontend](http://648050603631-test-webapp011.us-east-2.elasticbeanstalk.com/magento/ "frontend") e [backend](http://648050603631-test-webapp011.us-east-2.elasticbeanstalk.com/magento/admin/ "backend"), também efetuando a implantação no serviço [Heroku](https://www.heroku.com/ "Heroku") resultando no [frontend](http://648050603631-test-webapp011.us-east-2.elasticbeanstalk.com/magento/ "frontend") e [backend](http://648050603631-test-webapp011.us-east-2.elasticbeanstalk.com/magento/admin/ "backend")
 
-Venho desenvolvendo a extensão [Mozg\Stremio](https://github.com/mozgbrasil/stremio-dublados#mozgstremio "Magento 2") para a plataforma [Stremio](https://www.stremio.com/) utilizando a tecnologia [Node.js](https://nodejs.org/en/ "Node.js") onde disponibilizo um catálogo contendo 5630 filmes dublado
+Venho desenvolvendo a seguinte extensão [Mozg\Stremio](https://github.com/mozgbrasil/stremio-dublados#mozgstremio "Magento 2") para a plataforma [Stremio](https://www.stremio.com/) utilizando [Express](https://expressjs.com/ "ExpressJs") sob [Node.js](https://nodejs.org/en/ "Node.js") onde disponibilizo um catálogo contendo 222 de canais de iptv, sendo obtido esses registros através de técnica de [Crawler](https://pt.wikipedia.org/wiki/Rastreador_web)
+
+Venho desenvolvendo o seguinte [projeto](http://35.225.85.117:3000/ "Portfólio") utilizando [Express](https://expressjs.com/ "ExpressJs") sob [Node.js](https://nodejs.org/en/ "Node.js") alocado no servidor [Google Compute Engine](https://cloud.google.com/compute/), se tratando de aplicação gerenciadora de múltiplos projetos
+
+...
 
 ## Sombre Reptile
 
