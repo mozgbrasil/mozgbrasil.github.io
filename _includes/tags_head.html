@@ -18,9 +18,25 @@
 <meta itemprop="image" content="{{ "/assets/images/logos/logo_32_32.png" | prepend: site.baseurl | prepend: site.url }}"/>
 <!-- THEME -->
 {% if jekyll.environment == "production" %}
+
+{% comment %}
+<!-- head - GooglePageSpeed - inline - descomentar ao alterar o css, depois salvar no aruivo, usando essa tecnica se não fica super lento a renderização -->
+{% capture styles %}
+  {% include_absolute /assets/css/bootstrap-4.2.1-dist/css/bootstrap.css %}
+  {% include_absolute /assets/css/theme.css %}
+{% endcapture %}
 <style>
-{% include style.css %}
+{{ styles | scssify }}
 </style>
+{% endcomment %}
+
+{% capture styles %}
+  {% include style.css %}
+{% endcapture %}
+<style>
+{{ styles }}
+</style>
+
 {% else %}
 <link rel="stylesheet" href="/assets/css/style.css">
 {% endif %}

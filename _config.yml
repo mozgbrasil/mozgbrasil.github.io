@@ -36,6 +36,9 @@ jekyll-mentions:
 
 # plugins: jekyll-seo-tag
 
+sass:
+  style: compressed
+
 twitter:
   username: mozgbrasil
 
