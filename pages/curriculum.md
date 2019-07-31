@@ -8,10 +8,10 @@ excerpt: "Ética e compromisso, prezando por desenvolver tecnologia que agreguem
 
 # Curriculum
 
-Marcio dos Santos Amorim
-Av. Campanella, 1297, apto. 14, Itaquera
-CEP. 08220-831 - São Paulo - SP
-Cel. (11) 97707-2339 - E-mail hackin88@gmail.com
+Marcio dos Santos Amorim  
+Av. Campanella, 1297, apto. 14, Itaquera  
+CEP. 08220-831 - São Paulo - SP  
+Cel. (11) 97707-2339 - E-mail hackin88@gmail.com  
 37 anos - Nacionalidade Brasileira - Solteiro
 
 # Objetivo
@@ -20,9 +20,9 @@ Analista e Desenvolvedor de Sistemas Sênior
 
 # Formação Acadêmica
 
-Colégio Integrado Santa Inês S/C Ltda.
-Curso de Processamento de Dados
-01/1997 até 12/1999
+Colégio Integrado Santa Inês S/C Ltda.  
+Curso de Processamento de Dados  
+01/1997 até 12/1999  
 Concluído a 3ª serie do 2º grau em 1999
 
 # Formação profissional
@@ -73,7 +73,7 @@ Decorrente da plena estabilidade dos nossos produtos, baixíssima demanda de sup
 
 Desde meados de 2018 venho explorando novas tendências como o [React](https://reactjs.org/ "React") e o seu universo e tambem tenho retornado ao uso do [Magento 2](https://github.com/magento/magento2 "Magento 2")
 
-Venho desenvolvendo o seguinte projeto [MOZG](http://mozg.com.br/ "MOZG") o mesmo está usando o serviço [GithubPages](https://pages.github.com/ "GithubPages") que utiliza como tecnologia para o gerenciamento do conteúdo, o [Jekyll](https://jekyllrb.com/ "Jekyll") que utiliza o sistema [Liquid](https://help.shopify.com/en/themes/liquid "Shopify") sendo uma linguagem de templates criada pelo Shopify e escrita em Ruby, alem do uso do [Bootstrap](https://getbootstrap.com/ "Bootstrap") para a criação da estrutura do site e para o uso das diversas bibliotecas de javascript está sendo usado as tecnologias como [Node.js](https://nodejs.org/en/ "Node.js") e [NPM](https://www.npmjs.com/ "NPM") e algumas das mais utilizadas bibliotecas como [PrototypeJs](http://prototypejs.org/ "PrototypeJs"), [jQuery](https://jquery.com/ "jQuery")
+Venho desenvolvendo o seguinte projeto [MOZG](http://mozg.com.br/ "MOZG") usando a linguagem de templates [Liquid](https://shopify.github.io/liquid/ "Shopify") no [Jekyll](https://jekyllrb.com/ "Jekyll") que é um gerador de site estático que é executado na linguagem de programação [Ruby](https://www.ruby-lang.org/pt/), também o uso do serviço [GithubPages](https://pages.github.com/ "GithubPages"), também para a criação da estrutura do site o uso do [Bootstrap](https://getbootstrap.com/ "Bootstrap"), e para o uso das diversas bibliotecas de javascript usando os devidos gerenciadores como [NPM](https://www.npmjs.com/ "NPM") e [Yarn](https://yarnpkg.com/ "Yarn") sob o [Node.js](https://nodejs.org/en/ "Node.js"), também o uso de algumas das mais utilizadas bibliotecas como [PrototypeJs](http://prototypejs.org/ "PrototypeJs"), [jQuery](https://jquery.com/ "jQuery")
 
 Venho desenvolvendo o seguinte projeto [frontend](http://magento1mozg.herokuapp.com/magento/index.php/ "frontend") e [backend](http://magento1mozg.herokuapp.com/magento/index.php/admin/ "backend")  utilizando a plataforma Magento 1, o projeto está sendo usado para automação de integração continua e usado para exibir todos os módulos que desenvolvi para a plataforma [Magento 1](https://magento.com/ "Magento1"), o projeto é baseado no meu aplicativo [deploy-magento](https://github.com/mozgbrasil/deploy-magento "deploy-magento") que utiliza o [Composer](https://getcomposer.org/ "Composer") para a implantação na [Heroku](https://www.heroku.com/ "Heroku")
 
