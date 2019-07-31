@@ -25,6 +25,11 @@ Curso de Processamento de Dados
 01/1997 até 12/1999  
 Concluído a 3ª serie do 2º grau em 1999
 
+# Idiomas
+
+Inglês / Intermediário, para leitura e escrita  
+Espanhol / Básico, para leitura e escrita
+
 # Formação profissional
 
 ## Impacta Tecnologia
