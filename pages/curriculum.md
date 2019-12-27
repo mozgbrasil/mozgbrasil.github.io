@@ -11,12 +11,38 @@ excerpt: "Ética e compromisso, prezando por desenvolver tecnologia que agreguem
 Marcio dos Santos Amorim  
 Av. Campanella, 1297, apto. 14, Itaquera  
 CEP. 08220-831 - São Paulo - SP  
-Cel. (11) 97707-2339 - E-mail hackin88@gmail.com  
-37 anos - Nacionalidade Brasileira - Solteiro
+Cel. (11) 97707-2339 - E-mail mozgbrasil@gmail.com  
+38 anos - Nacionalidade Brasileira - Solteiro
 
 # Objetivo
 
-Analista e Desenvolvedor de Sistemas Sênior
+- Analista e Desenvolvedor de Sistemas Sênior
+
+# Resumo das qualificações.
+
+- Desenvolvimento com metodologias ágeis
+
+- Amplo conhecimento em bancos de dados relacionais e não relacionais
+
+- Conhecimento em aplicações escaláveis e infraestrutura
+
+- Amplo conhecimento em UX e UI Design
+
+- Conhecimento em ETL, BI, Dashboards
+
+# Qualificações Técnicas
+
+- Desenvolvimento: Node.js, ReactJS, AngularJS, PHP, Ruby on Rails, HTML5, CSS3, Ajax, Jquery, Frameworks Javascript e CSS, Bootstrap, ASP, Coldfusion ...
+
+- Metodologias: Scrum, KanBan, Git, GitFlow
+
+- Infraestrutura: Heroku, Clever, Zeit.co, Openshift, AWS, Azure, Google Cloud Plataform
+
+- Ferramentas: Google Apps, Trello, FreshDesk, Slack, Magento
+
+- Banco de Dados: SQL Server, MySQL, PostgreSQL, MongoDB, ORACLE
+
+- Sistemas Operacionais: Linux, Windows e OSX
 
 # Formação Acadêmica
 
@@ -25,20 +51,31 @@ Curso de Processamento de Dados
 01/1997 até 12/1999  
 Concluído a 3ª serie do 2º grau em 1999
 
-# Idiomas
-
-Inglês / Intermediário, para leitura e escrita  
-Espanhol / Básico, para leitura e escrita
-
 # Formação profissional
 
 ## Impacta Tecnologia
 
--   ICS - [Impacta](https://www.impacta.com.br/) Certified Specialist - Web-Master e-commerce developer - 03/08/2000
+- ICS - [Impacta](https://www.impacta.com.br/) Certified Specialist - Web-Master e-commerce developer - 03/08/2000
 
--   ICS - [Impacta](https://www.impacta.com.br/) Certified Specialist - 2324 - Administrando Microsoft SQL Server 2000 Database - 01/07/2002
+- ICS - [Impacta](https://www.impacta.com.br/) Certified Specialist - 2324 - Administrando Microsoft SQL Server 2000 Database - 01/07/2002
+
+# Idiomas
+
+- Português / Fluente, para leitura, fala e escrita
+
+- Inglês / Intermediário, para leitura, fala e escrita
+
+- Espanhol / Básico, para leitura, fala e escrita
 
 # Experiência profissional
+
+## Fundação Carlos Alberto Vanzolini - GTE - Gestão de Tecnologias em Educação
+
+Analista e Desenvolvedor de Sistemas Sênior / PJ
+
+07/08/2019 até 31/12/2019
+
+Como prestador de serviço com contrato temporario, participei do desenvolvimento no projeto [Escola Digital](https://escoladigital.org.br/ "Escola Digital") se tratando de projeto cultural e educativo desenvolvido como tecnologia para o frontend o ReactJS e diversas dependências como o Redux, Webpack, Babel entre diversas outras e como tecnologia para backend o PHP Laravel Lumen como base para o uso das API REST, também o uso do banco de dados PostgreSQL, também o uso do serviços ElasticSearch para processamento do mecanismo de busca, também o uso do serviços Redis para processamento em background, também o uso do NodeJS para processamento de dados, também o uso de fluxo de trabalho GitFlow para o sistema de controle de versão Git 
 
 ## CEREBRUM Comércio e Desenvolvimento de Sistemas de Informática Ltda ME
 
@@ -89,8 +126,6 @@ Venho desenvolvendo o seguinte projeto usando como base a plataforma [Magento 2]
 Venho desenvolvendo a seguinte extensão [Mozg\Stremio](https://github.com/mozgbrasil/stremio-dublados#mozgstremio "Magento 2") para a plataforma [Stremio](https://www.stremio.com/) utilizando [Express](https://expressjs.com/ "ExpressJs") sob [Node.js](https://nodejs.org/en/ "Node.js") onde disponibilizo um catálogo contendo 222 de canais de iptv, sendo obtido esses registros através de técnica de [Crawler](https://pt.wikipedia.org/wiki/Rastreador_web)
 
 Venho desenvolvendo o seguinte [projeto](http://35.194.61.252:3000/ "Portfólio") utilizando [Express](https://expressjs.com/ "ExpressJs") sob [Node.js](https://nodejs.org/en/ "Node.js") hospedado no servidor [Google Compute Engine](https://cloud.google.com/compute/), se tratando de aplicação gerenciadora de múltiplos projetos
-
-...
 
 ## Sombre Reptile
 
