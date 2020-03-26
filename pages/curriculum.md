@@ -8,11 +8,11 @@ excerpt: "Ética e compromisso, prezando por desenvolver tecnologia que agreguem
 
 # Curriculum
 
-Marcio dos Santos Amorim  
-Av. Campanella, 1297, apto. 14, Itaquera  
+[Marcio dos Santos Amorim](https://github.com/mozgbrasil)  
+[Av. Campanella, 1297](https://www.google.com/maps/place/Av.+Campanella,+1297+-+Jardim+Itapemirim,+S%C3%A3o+Paulo+-+SP/data=!4m2!3m1!1s0x94ce66ced8e61d11:0x4e5491d98f877e9e?sa=X&ved=2ahUKEwjVv-XXgLboAhXEH7kGHZjeCfkQ8gEwAHoECAsQAQ), apto. 14, Itaquera  
 CEP. 08220-831 - São Paulo - SP  
-Cel. (11) 97707-2339 - E-mail mozgbrasil@gmail.com  
-38 anos - Nacionalidade Brasileira - Solteiro
+Cel. [(11) 97707-2339](https://www.impacta.com.br/) - e-mail: <mozgbrasil@gmail.com>  
+Brasileiro - 38 anos - Solteiro
 
 # Objetivo
 
@@ -26,23 +26,23 @@ Cel. (11) 97707-2339 - E-mail mozgbrasil@gmail.com
 
 - Conhecimento em aplicações escaláveis e infraestrutura
 
-- Amplo conhecimento em UX e UI Design
+- Amplo conhecimento em [UX](https://pt.wikipedia.org/wiki/Experi%C3%AAncia_do_usu%C3%A1rio) e [UI Design](https://pt.wikipedia.org/wiki/Design_de_interface_de_usu%C3%A1rio)
 
-- Conhecimento em ETL, BI, Dashboards
+- Conhecimento em [ETL](https://pt.wikipedia.org/wiki/Extract,_transform,_load), [BI](https://pt.wikipedia.org/wiki/Intelig%C3%AAncia_empresarial), [Dashboards](https://en.wikipedia.org/wiki/Dashboard_(business))
 
 # Qualificações Técnicas
 
-- Desenvolvimento: Node.js, ReactJS, AngularJS, PHP, Ruby on Rails, HTML5, CSS3, Ajax, Jquery, Frameworks Javascript e CSS, Bootstrap, ASP, Coldfusion ...
+- Desenvolvimento: [Node.js](https://nodejs.org/en/), [React](https://reactjs.org/), [Angular](https://angular.io/), [PHP](https://www.php.net/), [Ruby on Rails](https://rubyonrails.org/), [HTML5](https://pt.wikipedia.org/wiki/HTML5), [CSS3](https://pt.wikipedia.org/wiki/CSS3), [Ajax](https://pt.wikipedia.org/wiki/Ajax_(programa%C3%A7%C3%A3o)), [Jquery](https://jquery.com/), Frameworks Javascript e CSS, [Bootstrap](https://getbootstrap.com/), [ASP](https://pt.wikipedia.org/wiki/ASP), [Coldfusion](https://www.adobe.com/br/products/coldfusion-family.html) ...
 
-- Metodologias: Scrum, KanBan, Git, GitFlow
+- Metodologias: [Scrum](https://pt.wikipedia.org/wiki/Scrum_(desenvolvimento_de_software)), [KanBan](https://pt.wikipedia.org/wiki/Kanban), [Git](https://pt.wikipedia.org/wiki/Git), [GitFlow](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04)
 
-- Infraestrutura: Heroku, Clever, Zeit.co, Openshift, AWS, Azure, Google Cloud Plataform
+- Infraestrutura: [Heroku](https://www.heroku.com/), [Clever Cloud](https://www.clever-cloud.com/en/), [Zeit.co](https://zeit.co/), [Openshift](https://www.openshift.com/), [AWS (Amazon Web Services)](https://aws.amazon.com/pt/), [Microsoft Azure](https://azure.microsoft.com/pt-br/), [Google Cloud Platform](https://cloud.google.com/)
 
-- Ferramentas: Google Apps, Trello, FreshDesk, Slack, Magento
+- Ferramentas: [Google Apps](https://gsuite.google.com/), [Trello](https://trello.com/), [FreshDesk](https://freshdesk.com/lp/, [Slack](https://slack.com/), [Magento](https://magento.com/)
 
-- Banco de Dados: SQL Server, MySQL, PostgreSQL, MongoDB, ORACLE
+- Banco de Dados: [Microsoft SQL Server](https://pt.wikipedia.org/wiki/Microsoft_SQL_Server), [MySQL](https://pt.wikipedia.org/wiki/MySQL), [PostgreSQL](https://pt.wikipedia.org/wiki/PostgreSQL), [MongoDB](https://pt.wikipedia.org/wiki/MongoDB), [Oracle Database](https://pt.wikipedia.org/wiki/Oracle_(banco_de_dados))
 
-- Sistemas Operacionais: Linux, Windows e OSX
+- Sistemas Operacionais: [Linux](https://pt.wikipedia.org/wiki/Linux), [Windows](https://pt.wikipedia.org/wiki/Microsoft_Windows) e [macOS](https://pt.wikipedia.org/wiki/MacOS)
 
 # Formação Acadêmica
 
@@ -67,7 +67,7 @@ Concluído a 3ª serie do 2º grau em 1999
 
 - Espanhol / Básico, para leitura, fala e escrita
 
-# Experiência profissional
+# Experiência profissional  
 
 ## Fundação Carlos Alberto Vanzolini - GTE - Gestão de Tecnologias em Educação
 
@@ -75,7 +75,11 @@ Analista e Desenvolvedor de Sistemas Sênior / PJ
 
 07/08/2019 até 31/12/2019
 
-Como prestador de serviço com contrato temporario, participei do desenvolvimento no projeto [Escola Digital](https://escoladigital.org.br/ "Escola Digital") se tratando de projeto cultural e educativo desenvolvido como tecnologia para o frontend o ReactJS e diversas dependências como o Redux, Webpack, Babel entre diversas outras e como tecnologia para backend o PHP Laravel Lumen como base para o uso das API REST, também o uso do banco de dados PostgreSQL, também o uso do serviços ElasticSearch para processamento do mecanismo de busca, também o uso do serviços Redis para processamento em background, também o uso do NodeJS para processamento de dados, também o uso de fluxo de trabalho GitFlow para o sistema de controle de versão Git 
+Como prestador de serviço com contrato temporario pela [Vanzolini - GTE](https://www.vanzolini-gte.org.br/) participei do desenvolvimento no projeto [Escola Digital](https://escoladigital.org.br/ "Escola Digital") se tratando de projeto cultural e educativo desenvolvido como tecnologia para o frontend o [React](https://reactjs.org/ "React") e diversas dependências como o [Redux](https://redux.js.org/ "Redux"), [Webpack](https://webpack.js.org/ "Webpack"), [Babel](https://babeljs.io/ "Babel") entre diversas outras e como tecnologia para backend o [PHP Laravel Lumen](https://lumen.laravel.com/ "PHP Laravel Lumen") como base para o uso das [API REST](https://pt.wikipedia.org/wiki/REST "API REST"), também o uso do banco de dados [PostgreSQL](https://www.postgresql.org/ "PostgreSQL"), também o uso do serviços [ElasticSearch](https://www.elastic.co/ "ElasticSearch") para processamento do mecanismo de busca, também o uso do serviços [Redis](https://redis.io/ "Redis") para processamento em background, também o uso do [Node.js](https://nodejs.org/en/ "Node.js") para processamento de dados, também o uso de fluxo de trabalho [GitFlow](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04 "GitFlow") para o sistema de controle de versão [Git](https://pt.wikipedia.org/wiki/Git "Git")
+
+Desde 02/2020 pessoalmente
+
+Venho desenvolvendo o seguinte [projeto](https://mozg.com.br/react-labs/ "Labs") utilizando como camada frontend o [React](https://reactjs.org/ "React") e como camada backend o [Node.js](https://nodejs.org/en/ "Node.js") tudo rodando sobre a infraestrutura do [Github](https://github.com/ "Github") usando o serviço [GithubPages](https://pages.github.com/ "GithubPages"), o projeto é usado como um laboratório de aplicações
 
 ## CEREBRUM Comércio e Desenvolvimento de Sistemas de Informática Ltda ME
 
@@ -101,9 +105,9 @@ Os módulos do [Catálogo](http://mozg.com.br/catalogo/ "Catálogo") utiliza uma
 
 Veja alguns videos de alguns produtos para Magento
 
-<https://github.com/mozgbrasil/magento-cielo-php_56#v%C3%ADdeos-demonstrativo>
+[Video](https://github.com/mozgbrasil/magento-cielo-php_56#v%C3%ADdeos-demonstrativo)
 
-<https://github.com/mozgbrasil/magento-correios-php_56/blob/master/README_Correios.md#v%C3%ADdeos-demonstrativo>
+[Video](https://github.com/mozgbrasil/magento-correios-php_56/blob/master/README_Correios.md#v%C3%ADdeos-demonstrativo)
 
 Para o gerenciamento dos registro referente as atualizações dos módulos foi desenvolvido uma aplicação em [PHP](http://php.net/ "PHP") sobre o [Google App Engine](https://cloud.google.com/appengine/ "GAE") que utiliza para armazenamento dos dados o [Google Cloud Datastore](https://cloud.google.com/datastore/docs/concepts/overview?hl=pt "Datastore") dessa forma não gerando custos e aproveitando os recursos do Google
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sobre Nós
+title: Sobre
 permalink: /sobre-nos/
 order: 2
 excerpt: "Conheça um pouco mais sobre a história da MOZG"
