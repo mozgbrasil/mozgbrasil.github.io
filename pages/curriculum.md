@@ -11,7 +11,7 @@ excerpt: "Ética e compromisso, prezando por desenvolver tecnologia que agreguem
 [Marcio dos Santos Amorim](https://github.com/mozgbrasil)  
 [Av. Campanella, 1297](https://www.google.com/maps/place/Av.+Campanella,+1297+-+Jardim+Itapemirim,+S%C3%A3o+Paulo+-+SP/data=!4m2!3m1!1s0x94ce66ced8e61d11:0x4e5491d98f877e9e?sa=X&ved=2ahUKEwjVv-XXgLboAhXEH7kGHZjeCfkQ8gEwAHoECAsQAQ), apto. 14, Itaquera  
 CEP. 08220-831 - São Paulo - SP  
-Cel. [(11) 97707-2339](https://www.impacta.com.br/) - e-mail: <mozgbrasil@gmail.com>  
+Cel. [(11) 97707-2339](https://api.whatsapp.com/send?phone=5511977072339&text=) - e-mail: <mozgbrasil@gmail.com>  
 Brasileiro - 38 anos - Solteiro
 
 # Objetivo
@@ -32,7 +32,7 @@ Brasileiro - 38 anos - Solteiro
 
 # Qualificações Técnicas
 
-- Desenvolvimento: [Node.js](https://nodejs.org/en/), [React](https://reactjs.org/), [Angular](https://angular.io/), [PHP](https://www.php.net/), [Ruby on Rails](https://rubyonrails.org/), [HTML5](https://pt.wikipedia.org/wiki/HTML5), [CSS3](https://pt.wikipedia.org/wiki/CSS3), [Ajax](https://pt.wikipedia.org/wiki/Ajax_(programa%C3%A7%C3%A3o)), [Jquery](https://jquery.com/), Frameworks Javascript e CSS, [Bootstrap](https://getbootstrap.com/), [ASP](https://pt.wikipedia.org/wiki/ASP), [Coldfusion](https://www.adobe.com/br/products/coldfusion-family.html) ...
+- Desenvolvimento: [Node.js](https://nodejs.org/en/), [React](https://reactjs.org/), [Angular](https://angular.io/), [PHP](https://www.php.net/), [Ruby on Rails](https://rubyonrails.org/), [HTML5](https://pt.wikipedia.org/wiki/HTML5), [CSS3](https://pt.wikipedia.org/wiki/CSS3), [ASP](https://pt.wikipedia.org/wiki/ASP), [Coldfusion](https://www.adobe.com/br/products/coldfusion-family.html), Frameworks Javascript e CSS, [Bootstrap](https://getbootstrap.com/), [Jquery](https://jquery.com/), [Ajax](https://pt.wikipedia.org/wiki/Ajax_(programa%C3%A7%C3%A3o))  ...
 
 - Metodologias: [Scrum](https://pt.wikipedia.org/wiki/Scrum_(desenvolvimento_de_software)), [KanBan](https://pt.wikipedia.org/wiki/Kanban), [Git](https://pt.wikipedia.org/wiki/Git), [GitFlow](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04)
 
