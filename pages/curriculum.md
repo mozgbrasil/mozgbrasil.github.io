@@ -79,7 +79,7 @@ Como prestador de serviço com contrato temporario pela [Vanzolini - GTE](https:
 
 Desde 02/2020 pessoalmente
 
-Venho desenvolvendo o seguinte [projeto](https://mozg.com.br/react-labs/ "Labs") utilizando como camada frontend o [React](https://reactjs.org/ "React") e como camada backend o [Node.js](https://nodejs.org/en/ "Node.js") tudo rodando sobre a infraestrutura do [Github](https://github.com/ "Github") usando o serviço [GithubPages](https://pages.github.com/ "GithubPages"), o projeto é usado como um laboratório de aplicações
+Venho desenvolvendo o seguinte [projeto](https://mozg.com.br/react-labs/ "App") utilizando como camada frontend o [React](https://reactjs.org/ "React") rodando sobre a infraestrutura do [Github](https://github.com/ "Github") usando o serviço [GithubPages](https://pages.github.com/ "GithubPages"), e o seguinte [projeto](https://express.mozgbrasil.now.sh/ "Api") utilizando como camada backend o [Node.js](https://nodejs.org/en/ "Node.js") rodando sobre a infraestrutura do [Zeit.co](https://zeit.co/)
 
 ## CEREBRUM Comércio e Desenvolvimento de Sistemas de Informática Ltda ME
 
