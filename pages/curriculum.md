@@ -8,10 +8,10 @@ excerpt: "Ética e compromisso, prezando por desenvolver tecnologia que agreguem
 
 # Curriculum
 
-[Marcio dos Santos Amorim](https://github.com/mozgbrasil)  
-[Av. Campanella, 1297](https://www.google.com/maps/place/Av.+Campanella,+1297+-+Jardim+Itapemirim,+S%C3%A3o+Paulo+-+SP/data=!4m2!3m1!1s0x94ce66ced8e61d11:0x4e5491d98f877e9e?sa=X&ved=2ahUKEwjVv-XXgLboAhXEH7kGHZjeCfkQ8gEwAHoECAsQAQ), apto. 14, Itaquera  
-CEP. 08220-831 - São Paulo - SP  
-Cel. [(11) 97707-2339](https://api.whatsapp.com/send?phone=5511977072339&text=) - e-mail: <mozgbrasil@gmail.com>  
+[Marcio dos Santos Amorim](https://github.com/mozgbrasil)
+[Av. Campanella, 1297](https://www.google.com/maps/place/Av.+Campanella,+1297+-+Jardim+Itapemirim,+S%C3%A3o+Paulo+-+SP/data=!4m2!3m1!1s0x94ce66ced8e61d11:0x4e5491d98f877e9e?sa=X&ved=2ahUKEwjVv-XXgLboAhXEH7kGHZjeCfkQ8gEwAHoECAsQAQ), apto. 14, Itaquera
+CEP. 08220-831 - São Paulo - SP
+Cel. [(11) 97707-2339](https://api.whatsapp.com/send?phone=5511977072339&text=) - e-mail: <mozgbrasil@gmail.com>
 Brasileiro - 38 anos - Solteiro
 
 # Objetivo
@@ -46,9 +46,9 @@ Brasileiro - 38 anos - Solteiro
 
 # Formação Acadêmica
 
-Colégio Integrado Santa Inês S/C Ltda.  
-Curso de Processamento de Dados  
-01/1997 até 12/1999  
+Colégio Integrado Santa Inês S/C Ltda.
+Curso de Processamento de Dados
+01/1997 até 12/1999
 Concluído a 3ª serie do 2º grau em 1999
 
 # Formação profissional
@@ -67,7 +67,7 @@ Concluído a 3ª serie do 2º grau em 1999
 
 - Espanhol / Básico, para leitura, fala e escrita
 
-# Experiência profissional  
+# Experiência profissional
 
 ## Fundação Carlos Alberto Vanzolini - GTE - Gestão de Tecnologias em Educação
 
@@ -75,11 +75,11 @@ Analista e Desenvolvedor de Sistemas Sênior / PJ
 
 07/08/2019 até 31/12/2019
 
-Como prestador de serviço com contrato temporario pela [Vanzolini - GTE](https://www.vanzolini-gte.org.br/) participei do desenvolvimento no projeto [Escola Digital](https://escoladigital.org.br/ "Escola Digital") se tratando de projeto cultural e educativo desenvolvido como tecnologia para o frontend o [React](https://reactjs.org/ "React") e diversas dependências como o [Redux](https://redux.js.org/ "Redux"), [Webpack](https://webpack.js.org/ "Webpack"), [Babel](https://babeljs.io/ "Babel") entre diversas outras e como tecnologia para backend o [PHP Laravel Lumen](https://lumen.laravel.com/ "PHP Laravel Lumen") como base para o uso das [API REST](https://pt.wikipedia.org/wiki/REST "API REST"), também o uso do banco de dados [PostgreSQL](https://www.postgresql.org/ "PostgreSQL"), também o uso do serviços [ElasticSearch](https://www.elastic.co/ "ElasticSearch") para processamento do mecanismo de busca, também o uso do serviços [Redis](https://redis.io/ "Redis") para processamento em background, também o uso do [Node.js](https://nodejs.org/en/ "Node.js") para processamento de dados, também o uso de fluxo de trabalho [GitFlow](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04 "GitFlow") para o sistema de controle de versão [Git](https://pt.wikipedia.org/wiki/Git "Git")
+Como prestador de serviço com contrato temporario pela [Vanzolini - GTE](https://www.vanzolini-gte.org.br/) participei do desenvolvimento no projeto [Escola Digital](https://escoladigital.org.br/ "Escola Digital") se tratando de projeto cultural e educativo desenvolvido como tecnologia para o frontend o [React](https://reactjs.org/ "React") e diversas dependências como o [Redux](https://redux.js.org/ "Redux"), [Webpack](https://webpack.js.org/ "Webpack"), [Babel](https://babeljs.io/ "Babel") entre diversas outras e como tecnologia para backend o [PHP Laravel Lumen](https://lumen.laravel.com/ "PHP Laravel Lumen") como base para o uso das [API REST](https://pt.wikipedia.org/wiki/REST "API REST"), também o uso do banco de dados [PostgreSQL](https://www.postgresql.org/ "PostgreSQL"), também o uso do serviços [ElasticSearch](https://www.elastic.co/ "ElasticSearch") para processamento do mecanismo de busca, também o uso do serviços [Redis](https://redis.io/ "Redis") para processamento em background, também o uso do [Node.js](https://nodejs.org/en/ "Node.js") para processamento de dados, também o uso de fluxo de trabalho [GitFlow](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04 "GitFlow") para o sistema de controle de versão [Git](https://pt.wikipedia.org/wiki/Git "Git"), também o uso do gerenciador de projetos [Trello](https://trello.com/)
 
 Desde 02/2020 pessoalmente
 
-Venho desenvolvendo o seguinte [projeto](https://mozg.com.br/react-labs/ "App") utilizando como camada frontend o [React](https://reactjs.org/ "React") rodando sobre a infraestrutura do [Github](https://github.com/ "Github") usando o serviço [GithubPages](https://pages.github.com/ "GithubPages"), e o seguinte [projeto](https://express.mozgbrasil.now.sh/ "Api") utilizando como camada backend o [Node.js](https://nodejs.org/en/ "Node.js") rodando sobre a infraestrutura do [Zeit.co](https://zeit.co/)
+Venho desenvolvendo o seguinte [projeto](https://mozg.com.br/react-labs/ "App") utilizando como camada frontend o [React](https://reactjs.org/ "React") rodando sobre a infraestrutura do [Github](https://github.com/ "Github") usando o serviço [GithubPages](https://pages.github.com/ "GithubPages"), e o seguinte [projeto](https://express.mozgbrasil.now.sh/ "Api") utilizando como camada backend o [Node.js](https://nodejs.org/en/ "Node.js") rodando sobre a infraestrutura do [Heroku](https://limitless-peak-33910.herokuapp.com/), também aproveitando o projeto para funcionar como [Extensão de navegador](https://en.wikipedia.org/wiki/Browser_extension) onde venho disponibilizando a seguinte extensão para [Firefox](https://addons.mozilla.org/pt-BR/firefox/addon/marcio-dos/)
 
 ## CEREBRUM Comércio e Desenvolvimento de Sistemas de Informática Ltda ME
 
