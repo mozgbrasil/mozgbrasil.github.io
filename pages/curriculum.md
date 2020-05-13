@@ -9,9 +9,13 @@ excerpt: "Ética e compromisso, prezando por desenvolver tecnologia que agreguem
 # Curriculum
 
 [Marcio dos Santos Amorim](https://github.com/mozgbrasil)
+
 [Av. Campanella, 1297](https://www.google.com/maps/place/Av.+Campanella,+1297+-+Jardim+Itapemirim,+S%C3%A3o+Paulo+-+SP/data=!4m2!3m1!1s0x94ce66ced8e61d11:0x4e5491d98f877e9e?sa=X&ved=2ahUKEwjVv-XXgLboAhXEH7kGHZjeCfkQ8gEwAHoECAsQAQ), apto. 14, Itaquera
+
 CEP. 08220-831 - São Paulo - SP
+
 Cel. [(11) 97707-2339](https://api.whatsapp.com/send?phone=5511977072339&text=) - e-mail: <mozgbrasil@gmail.com>
+
 Brasileiro - 38 anos - Solteiro
 
 # Objetivo
@@ -47,8 +51,11 @@ Brasileiro - 38 anos - Solteiro
 # Formação Acadêmica
 
 Colégio Integrado Santa Inês S/C Ltda.
+
 Curso de Processamento de Dados
+
 01/1997 até 12/1999
+
 Concluído a 3ª serie do 2º grau em 1999
 
 # Formação profissional
@@ -79,7 +86,7 @@ Como prestador de serviço com contrato temporario pela [Vanzolini - GTE](https:
 
 Desde 02/2020 pessoalmente
 
-Venho desenvolvendo o seguinte [projeto](https://mozg.com.br/react-labs/ "App") utilizando como camada frontend o [React](https://reactjs.org/ "React") rodando sobre a infraestrutura do [Github](https://github.com/ "Github") usando o serviço [GithubPages](https://pages.github.com/ "GithubPages"), e o seguinte [projeto](https://express.mozgbrasil.now.sh/ "Api") utilizando como camada backend o [Node.js](https://nodejs.org/en/ "Node.js") rodando sobre a infraestrutura do [Heroku](https://limitless-peak-33910.herokuapp.com/), também aproveitando o projeto para funcionar como [Extensão de navegador](https://en.wikipedia.org/wiki/Browser_extension) onde venho disponibilizando a seguinte extensão para [Firefox](https://addons.mozilla.org/pt-BR/firefox/addon/marcio-dos/)
+Venho desenvolvendo o seguinte [projeto](https://mozg.com.br/react-labs/ "App") utilizando como camada frontend o [React](https://reactjs.org/ "React") rodando sobre a infraestrutura do [Github](https://github.com/ "Github") usando o serviço [GithubPages](https://pages.github.com/ "GithubPages"), e o seguinte [projeto](https://express.mozgbrasil.now.sh/ "Api") utilizando como camada backend o [Node.js](https://nodejs.org/en/ "Node.js") rodando sobre a infraestrutura do [Heroku](https://limitless-peak-33910.herokuapp.com/), também aproveitando o projeto para funcionar como [Extensão de navegador](https://en.wikipedia.org/wiki/Browser_extension) onde venho disponibilizando a seguinte extensão para [Firefox](https://addons.mozilla.org/pt-BR/firefox/addon/mozg-react/)
 
 ## CEREBRUM Comércio e Desenvolvimento de Sistemas de Informática Ltda ME
 
