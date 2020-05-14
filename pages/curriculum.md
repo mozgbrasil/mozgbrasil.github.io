@@ -22,7 +22,7 @@ Brasileiro - 38 anos - Solteiro
 
 - Analista e Desenvolvedor de Sistemas Sênior
 
-# Resumo das qualificações.
+# Resumo das qualificações
 
 - Desenvolvimento com metodologias ágeis
 
@@ -42,7 +42,7 @@ Brasileiro - 38 anos - Solteiro
 
 - Infraestrutura: [Heroku](https://www.heroku.com/), [Clever Cloud](https://www.clever-cloud.com/en/), [Zeit.co](https://zeit.co/), [Openshift](https://www.openshift.com/), [AWS (Amazon Web Services)](https://aws.amazon.com/pt/), [Microsoft Azure](https://azure.microsoft.com/pt-br/), [Google Cloud Platform](https://cloud.google.com/)
 
-- Ferramentas: [Google Apps](https://gsuite.google.com/), [Trello](https://trello.com/), [FreshDesk](https://freshdesk.com/lp/, [Slack](https://slack.com/), [Magento](https://magento.com/)
+- Ferramentas: [Google Apps](https://gsuite.google.com/), [Trello](https://trello.com/), [FreshDesk](<https://freshdesk.com/lp/,> [Slack](https://slack.com/), [Magento](https://magento.com/)
 
 - Banco de Dados: [Microsoft SQL Server](https://pt.wikipedia.org/wiki/Microsoft_SQL_Server), [MySQL](https://pt.wikipedia.org/wiki/MySQL), [PostgreSQL](https://pt.wikipedia.org/wiki/PostgreSQL), [MongoDB](https://pt.wikipedia.org/wiki/MongoDB), [Oracle Database](https://pt.wikipedia.org/wiki/Oracle_(banco_de_dados))
 
@@ -146,7 +146,7 @@ Analista Programador
 
 Participei do desenvolvimento de aplicações para a intranet e reformulação do Site Institucional e do Portal de Comunicações da Petroquímica União situada ["PQU"](http://www.utc.com.br/ "PQU") no Polo Petroquímico de Capuava, em Santo André.
 
-## Símbolo Editora e Comunicação Integrada S/A.
+## Símbolo Editora e Comunicação Integrada S/A
 
 Analista Programador Jr / CLT
 
@@ -158,7 +158,7 @@ Dentre as aplicações externas vou citar o site da [Atrevida](http://www.atrevi
 
 Para o site da [DietaJá](http://www.dietaja.com.br/ "DietaJá") foi criado um gerenciador de conteúdo com necessidades exclusiva ao projeto.
 
-## PIC - Projetos de Informação e Consultoria Ltda.
+## PIC - Projetos de Informação e Consultoria Ltda
 
 Programador Trainee / CLT
 
@@ -182,7 +182,7 @@ Mensageiro / CLT
 
 Iniciando como mensageiro em pouco tempo fui trabalhar como estagiário no setor de tecnologia devido a necessidade do colégio de processamento de dados ao qual eu me graduei, atuei também no setor de contabilidade efetuando procedimentos como: classificação de contas, lançamentos, conciliações entre outros serviços do setor
 
-## AMESP Saúde Ltda.
+## AMESP Saúde Ltda
 
 Office Boy / CLT
 
