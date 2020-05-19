@@ -8,12 +8,9 @@ excerpt: "Ética e compromisso, prezando por desenvolver tecnologia que agreguem
 
 # Curriculum
 
-[Marcio dos Santos Amorim](https://github.com/mozgbrasil)
-
-[Av. Campanella, 1297](https://www.google.com/maps/place/Av.+Campanella,+1297+-+Jardim+Itapemirim,+S%C3%A3o+Paulo+-+SP/data=!4m2!3m1!1s0x94ce66ced8e61d11:0x4e5491d98f877e9e?sa=X&ved=2ahUKEwjVv-XXgLboAhXEH7kGHZjeCfkQ8gEwAHoECAsQAQ), apto. 14, Itaquera
-
-CEP. 08220-831 - São Paulo - SP
-
+[Marcio dos Santos Amorim](https://github.com/mozgbrasil) \
+[Av. Campanella, 1297](https://www.google.com/maps/place/Av.+Campanella,+1297+-+Jardim+Itapemirim,+S%C3%A3o+Paulo+-+SP/data=!4m2!3m1!1s0x94ce66ced8e61d11:0x4e5491d98f877e9e?sa=X&ved=2ahUKEwjVv-XXgLboAhXEH7kGHZjeCfkQ8gEwAHoECAsQAQ), apto. 14, Itaquera \
+CEP. 08220-831 - São Paulo - SP \
 Cel. [(11) 97707-2339](https://api.whatsapp.com/send?phone=5511977072339&text=) - e-mail: <mozgbrasil@gmail.com>
 
 Brasileiro - 38 anos - Solteiro
@@ -42,7 +39,7 @@ Brasileiro - 38 anos - Solteiro
 
 - Infraestrutura: [Heroku](https://www.heroku.com/), [Clever Cloud](https://www.clever-cloud.com/en/), [Zeit.co](https://zeit.co/), [Openshift](https://www.openshift.com/), [AWS (Amazon Web Services)](https://aws.amazon.com/pt/), [Microsoft Azure](https://azure.microsoft.com/pt-br/), [Google Cloud Platform](https://cloud.google.com/)
 
-- Ferramentas: [Google Apps](https://gsuite.google.com/), [Trello](https://trello.com/), [FreshDesk](<https://freshdesk.com/lp/,> [Slack](https://slack.com/), [Magento](https://magento.com/)
+- Ferramentas: [Google Apps](https://gsuite.google.com/), [Trello](https://trello.com/), [FreshDesk](https://freshdesk.com/), [Slack](https://slack.com/), [Magento](https://magento.com/)
 
 - Banco de Dados: [Microsoft SQL Server](https://pt.wikipedia.org/wiki/Microsoft_SQL_Server), [MySQL](https://pt.wikipedia.org/wiki/MySQL), [PostgreSQL](https://pt.wikipedia.org/wiki/PostgreSQL), [MongoDB](https://pt.wikipedia.org/wiki/MongoDB), [Oracle Database](https://pt.wikipedia.org/wiki/Oracle_(banco_de_dados))
 
