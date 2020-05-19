@@ -71,6 +71,10 @@ array_repo_free:
 
 ---
 
+<div class="alert alert-danger" role="alert">
+  Para informações entre em contato no e-mail <a href="mailto:ajuda@cerebrum.com.br" class="btn btn-primary">ajuda@cerebrum.com.br</a>
+</div>
+
 <div class="row">
   <div class="col-sm-6">
     <div class="card ">

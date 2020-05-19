@@ -75,7 +75,7 @@ h5 {
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 3rem;
+  bottom: 8rem;
   z-index: 10;
 }
 
@@ -145,6 +145,10 @@ h5 {
 
 .card-inverse .btn {
     border: 1px solid rgba(0, 0, 0, .05);
+}
+
+.card-header {
+    color: black;
 }
 
 .profile {
@@ -332,3 +336,8 @@ https://bootsnipp.com/snippets/33WGq
 .lh-100 { line-height: 1; }
 .lh-125 { line-height: 1.25; }
 .lh-150 { line-height: 1.5; }
+
+
+.alert {
+    margin-bottom: 0px;
+}

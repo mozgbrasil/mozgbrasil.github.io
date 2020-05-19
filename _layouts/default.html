@@ -3,124 +3,172 @@ layout: compress
 ---
 <!DOCTYPE html>
 <html lang="pt" class="no-js">
-    <head>
-        {% include tags_head.html %}
-    </head>
-    <body>
-        <!-- header -->
-        <header id="header">
+
+<head>
+    {% include tags_head.html %}
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header">
         <nav class="navbar navbar-expand-md navbar-dark bg-primary mb-1">
-          <div class="text-center">
-            <a class="navbar-brand" href="/">
-              <img src="/assets/images/logos/logo_32_32.png" width="30" height="30" class="d-inline-block align-top" alt="">
-              MOZG
-            </a>
-            <p><span class="badge badge-dark">GitHub Pages / Jekyll</span></p>
-          </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarsExample03">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item {% if page.url == '/' %} active{% endif %}">
-                  <a href="/" class="nav-link {% if page.url == '/' %} active{% endif %}">Visão geral</a>
-              </li>
-              <li class="nav-item {% if page.url == '/sobre-nos/' %} active{% endif %}">
-                  <a href="/sobre-nos/" class="nav-link {% if page.url == '/sobre-nos/' %} active{% endif %}">Sobre</a>
-              </li>
-              <li class="nav-item {% if page.url == '/catalogo/' %} active{% endif %} dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catálogo</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown03">
-                  <a class="dropdown-item" href="/catalogo_magento1/">Magento 1</a>
-                  <a class="dropdown-item" href="/catalogo_magento2/">Magento 2</a>
-                </div>
-              </li>
-              <li class="nav-item {% if page.url == '/artigos/' %} active{% endif %}">
-                  <a href="/artigos/" class="nav-link {% if page.url == '/artigos/' %} active{% endif %}">Artigos</a>
-              </li>
-              <li class="nav-item {% if page.url == '/contato/' %} active{% endif %}">
-                  <a href="/contato/" class="nav-link {% if page.url == '/contato/' %} active{% endif %}">Contato</a>
-              </li>
-              <li class="nav-item {% if page.url == '/catalogo/' %} active{% endif %} dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projetos</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown03">
-                  <a class="dropdown-item" href="https://mozg.com.br/react-labs/">APP / React® / GitHub Pages</a>
-                  <a class="dropdown-item" href="https://express.mozgbrasil.now.sh/">API / Node.js® / Express / ZEIT Now</a>
-                  {% comment %}
-                  <a class="dropdown-item" href="/apps/">Aplicativos</a>
-                  {% endcomment %}
-                </div>
-              </li>
-            </ul>
-          </div>
+            <div class="text-center">
+                <a class="navbar-brand" href="/">
+                    <img src="/assets/images/logos/logo_32_32.png" width="30" height="30"
+                        class="d-inline-block align-top" alt="">
+                    MOZG
+                </a>
+                <p><span class="badge badge-dark">GitHub Pages / Jekyll</span></p>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
+                aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item {% if page.url == '/' %} active{% endif %}">
+                        <a href="/" class="nav-link {% if page.url == '/' %} active{% endif %}">Visão geral</a>
+                    </li>
+                    <li class="nav-item {% if page.url == '/sobre-nos/' %} active{% endif %}">
+                        <a href="/sobre-nos/"
+                            class="nav-link {% if page.url == '/sobre-nos/' %} active{% endif %}">Sobre</a>
+                    </li>
+                    <li class="nav-item {% if page.url == '/catalogo/' %} active{% endif %} dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Catálogo</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown03">
+                            <a class="dropdown-item" href="/catalogo_magento1/">Magento 1</a>
+                        </div>
+                    </li>
+                    <li class="nav-item {% if page.url == '/artigos/' %} active{% endif %}">
+                        <a href="/artigos/"
+                            class="nav-link {% if page.url == '/artigos/' %} active{% endif %}">Artigos</a>
+                    </li>
+                    <li class="nav-item {% if page.url == '/contato/' %} active{% endif %}">
+                        <a href="/contato/"
+                            class="nav-link {% if page.url == '/contato/' %} active{% endif %}">Contato</a>
+                    </li>
+                    <li class="nav-item {% if page.url == '/catalogo/' %} active{% endif %} dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Projetos</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown03">
+                            <a class="dropdown-item" href="https://mozg.com.br/react-labs/">APP / React® / GitHub
+                                Pages</a>
+                            <a class="dropdown-item" href="https://express.mozgbrasil.now.sh/">API / Node.js® / Express
+                                / ZEIT Now</a>
+                            {% comment %}
+                            <a class="dropdown-item" href="/apps/">Aplicativos</a>
+                            {% endcomment %}
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        </header>
-        <!-- /header -->
-        {% if page.url == '/' %}
-        <!-- carousel -->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
+    </header>
+    <!-- /header -->
+    {% if page.url == '/' %}
+    <!-- carousel -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
+        </ol>
+        <div class="carousel-inner">
             <div class="carousel-item active">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" ><rect fill="#777" width="100%" height="100%"/></svg>
-              <div class="container">
-                <div class="carousel-caption text-left">
-                  <h1>Você veio ao lugar certo</h1>
-                  <p>Com experiência em mais de 20 anos em desenvolvimento de softwares atendendo diversas empresas no Brasil.</p>
-                  <p><a class="btn btn-lg btn-primary" href="/curriculum/" role="button">Veja mais</a></p>
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                    <rect fill="#777" width="100%" height="100%" /></svg>
+                <div class="container">
+                    <div class="carousel-caption text-left">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="alert alert-success font-weight-bold" role="alert">
+                                    Você veio ao lugar certo
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Com experiência em mais de 20 anos em desenvolvimento de softwares
+                                    atendendo diversas
+                                    empresas no Brasil.</p>
+                                <a class="btn btn-lg btn-primary" href="/curriculum/" role="button">Veja mais</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="carousel-item">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" ><rect fill="#777" width="100%" height="100%"/></svg>
-              <div class="container">
-                <div class="carousel-caption text-left">
-                  <h1>Magento</h1>
-                  <p>Desde 2008 com foco exclusivo na plataforma Magento desenvolvendo o maior catálogo de módulos para Magento 1</p>
-                  <p><a class="btn btn-lg btn-primary" href="/catalogo_magento1/" role="button">Veja mais</a></p>
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                    <rect fill="#777" width="100%" height="100%" /></svg>
+                <div class="container">
+                    <div class="carousel-caption text-left">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="alert alert-success font-weight-bold" role="alert">
+                                    Magento
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Desde 2008 com foco exclusivo na plataforma Magento desenvolvendo o
+                                    maior catálogo de módulos
+                                    para Magento 1</p>
+                                <a class="btn btn-lg btn-primary" href="/catalogo_magento1/" role="button">Veja mais</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="carousel-item">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" ><rect fill="#777" width="100%" height="100%"/></svg>
-              <div class="container">
-                <div class="carousel-caption text-left">
-                  <h1>React</h1>
-                  <p>O React é uma biblioteca JavaScript de código aberto para criar interfaces de usuário. É mantido pelo Facebook, Instagram e uma comunidade de desenvolvedores individuais e outras empresas.</p>
-                  <p>Eu não podia ficar de fora e já estou desenvolvendo o seguinte aplicativo.</p>
-                  <p><a class="btn btn-lg btn-primary" href="https://heroku-react-app-mozg.herokuapp.com/" role="button">Acesse o aplicativo</a></p>
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                    <rect fill="#777" width="100%" height="100%" /></svg>
+                <div class="container">
+                    <div class="carousel-caption text-left">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="alert alert-success font-weight-bold" role="alert">
+                                    React
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">O React é uma biblioteca JavaScript de código aberto para criar
+                                    interfaces de usuário. É
+                                    mantido pelo Facebook, Instagram e uma comunidade de desenvolvedores individuais e
+                                    outras
+                                    empresas.</p>
+                                <p>Eu não podia ficar de fora e já estou desenvolvendo o seguinte aplicativo.</p>
+                                <a class="btn btn-lg btn-primary" href="https://heroku-react-app-mozg.herokuapp.com/"
+                                    role="button">Acesse o aplicativo</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-          </a>
-          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Próximo</span>
-          </a>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
         </div>
         <!-- carousel -->
         {% else %}
         <!-- jumbotron -->
         <div class="jumbotron">
-          <div class="container">
-            <h1>{{ page.title }}</h1>
-            <p>{{ page.excerpt }}</p>
-          </div>
+            <div class="container">
+                <h1>{{ page.title }}</h1>
+                <p>{{ page.excerpt }}</p>
+            </div>
         </div>
         <!-- /jumbotron -->
         {% endif %}
         <!-- main -->
         <div class="container">
             {{ content }}
-          <hr>
+            <hr>
         </div>
         <!-- /main -->
         <!-- footer -->
@@ -136,7 +184,8 @@ layout: compress
                                 {% if node.title %}
                                 {% if node.title != "Debug" and node.title != "Curriculum" %}
                                 <li>
-                                    <a class="footer-link" href="{{ node.url | prepend: site.baseurl }}"><i class="{{ icon_tag }} icon"></i>{{ node.title }}</a>
+                                    <a class="footer-link" href="{{ node.url | prepend: site.baseurl }}"><i
+                                            class="{{ icon_tag }} icon"></i>{{ node.title }}</a>
                                 </li>
                                 {% endif %}
                                 {% endif %}
@@ -147,25 +196,34 @@ layout: compress
                             <h3> Social </h3>
                             <ul>
                                 <li>
-                                    <a class="footer-link" href="https://twitter.com/{{ site.twitter.username }}"><i class="icon twitter"></i>twitter</a>
+                                    <a class="footer-link" href="https://twitter.com/{{ site.twitter.username }}"><i
+                                            class="icon twitter"></i>twitter</a>
                                 </li>
                                 <li>
-                                    <a class="footer-link" class="item" href="https://www.youtube.com/channel/UCiXR9cKwxNKMehSnqXvhtug/videos"><i class="icon youtube"></i>youtube</a>
+                                    <a class="footer-link" class="item"
+                                        href="https://www.youtube.com/channel/UCiXR9cKwxNKMehSnqXvhtug/videos"><i
+                                            class="icon youtube"></i>youtube</a>
                                 </li>
                                 <li>
-                                    <a class="footer-link" href="https://www.facebook.com/{{ site.facebook_username }}"><i class="icon facebook"></i>facebook</a>
+                                    <a class="footer-link"
+                                        href="https://www.facebook.com/{{ site.facebook_username }}"><i
+                                            class="icon facebook"></i>facebook</a>
                                 </li>
                                 <li>
-                                    <a class="footer-link" href="https://plus.google.com/117231578401378218759"><i class="icon google plus"></i>plus.google</a>
+                                    <a class="footer-link" href="https://plus.google.com/117231578401378218759"><i
+                                            class="icon google plus"></i>plus.google</a>
                                 </li>
                                 <li>
-                                    <a class="footer-link" href="https://mozgbrasil.wordpress.com/"><i class="icon wordpress"></i>wordpress</a>
+                                    <a class="footer-link" href="https://mozgbrasil.wordpress.com/"><i
+                                            class="icon wordpress"></i>wordpress</a>
                                 </li>
                                 <li>
-                                    <a class="footer-link" href="http://mozgbrasil.blogspot.com.br/"><i class="icon google"></i>blogspot</a>
+                                    <a class="footer-link" href="http://mozgbrasil.blogspot.com.br/"><i
+                                            class="icon google"></i>blogspot</a>
                                 </li>
                                 <li>
-                                    <a class="footer-link" href="http://mozg.negocio.site"><i class="icon google"></i>business.google</a>
+                                    <a class="footer-link" href="http://mozg.negocio.site"><i
+                                            class="icon google"></i>business.google</a>
                                 </li>
                             </ul>
                         </div>
@@ -173,7 +231,8 @@ layout: compress
                             <h3> Widgets </h3>
                             <ul>
                                 <li>
-                                    <a class="footer-link" href="{{ "/sitemap.xml" | prepend: site.baseurl }}"><i class="icon sitemap"></i>Sitemap</a>
+                                    <a class="footer-link" href="{{ "/sitemap.xml" | prepend: site.baseurl }}"><i
+                                            class="icon sitemap"></i>Sitemap</a>
                                 </li>
                                 <li>
                                     <a class="footer-link" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
@@ -189,30 +248,33 @@ layout: compress
                                     <a class="footer-link" href="https://github.com/mozgbrasil/">GitHub</a>
                                 </li>
                                 <li>
-                                  <a class="footer-link" href="https://gitlab.com/mozgbrasil">Gitlab</a>
+                                    <a class="footer-link" href="https://gitlab.com/mozgbrasil">Gitlab</a>
                                 </li>
                                 <li>
-                                  <a class="footer-link" href="https://bitbucket.org/mozgbrasil/">Bitbucket</a>
+                                    <a class="footer-link" href="https://bitbucket.org/mozgbrasil/">Bitbucket</a>
                                 </li>
                                 <li>
-                                    <a class="footer-link" href="https://packagist.org/packages/mozgbrasil/">Packagist</a>
+                                    <a class="footer-link"
+                                        href="https://packagist.org/packages/mozgbrasil/">Packagist</a>
                                 </li>
                                 <li>
                                     <a class="footer-link" href="https://www.npmjs.com/~mozg">NPM</a>
                                 </li>
                                 <li>
-                                  <a class="footer-link" href="https://launchpad.net/~mozgbrasil">Launchpad</a>
-                              </li>
+                                    <a class="footer-link" href="https://launchpad.net/~mozgbrasil">Launchpad</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12">
                             <h3> Parceiros </h3>
                             <ul>
                                 <li>
-                                    <a class="footer-link" href="https://www.cerebrum.com.br/"><i class="icon sitemap"></i>CEREBRUM</a>
+                                    <a class="footer-link" href="https://www.cerebrum.com.br/"><i
+                                            class="icon sitemap"></i>CEREBRUM</a>
                                 </li>
                                 <li>
-                                    <a class="footer-link" href="https://www.comunidademagento.com.br/">Comunidade Magento</a>
+                                    <a class="footer-link" href="https://www.comunidademagento.com.br/">Comunidade
+                                        Magento</a>
                                 </li>
                                 <li>
                                     <a class="footer-link" href="https://magento.com/">Magento</a>
@@ -221,7 +283,8 @@ layout: compress
                                     <a class="footer-link" href="http://www.cloudways.com/en/?id=35053">Cloudways</a>
                                 </li>
                                 <li>
-                                    <a class="footer-link" href="https://reactjs.org/"><i class="icon sitemap"></i>React</a>
+                                    <a class="footer-link" href="https://reactjs.org/"><i
+                                            class="icon sitemap"></i>React</a>
                                 </li>
                             </ul>
                         </div>
@@ -234,7 +297,7 @@ layout: compress
             <div class="footer-bottom">
                 <div class="container">
                     <p class="pull-left"> Copyright © 2016-{{ site.time | date: '%Y' }} MOZG </p>
-                  </div>
+                </div>
                 <div class="container">
                     {% comment %}
                     {% include snippet-google-ads.html %}
@@ -245,5 +308,6 @@ layout: compress
         </footer>
         <!-- /footer -->
         {% include tags_footer.html %}
-    </body>
+</body>
+
 </html>
