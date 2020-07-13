@@ -24,6 +24,13 @@ layout: compress
 
     {% include snippet-scroll-top.html %}
 
+    {% if jekyll.environment == "production" %}
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNT4KQ"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    {% endif %}
+
     <header class=" ">
         <nav class="navbar navbar-expand-md navbar-dark mb-1">
             <div class="text-center">
@@ -345,10 +352,7 @@ layout: compress
             </a>
         </div>
     </footer>
-    {% if jekyll.environment == "production" %}
-        {% include snippet-google-ads.html %}
-        {% include snippet-google-tag-manager.html %}
-    {% endif %}
+
     {% comment %}
     {% endcomment %}
 </body>

@@ -42,27 +42,50 @@ prepend: site.baseurl | prepend: site.url }}"
 <link href="https://plus.google.com/117178438811960262290" rel="publisher" />
 
 {% if jekyll.environment == "production" %}
-<!-- Google+ JavaScript API -->
-<script
-  type="text/javascript"
-  async
-  defer
-  src="https://apis.google.com/js/platform.js?publisherid=117178438811960262290"
-></script>
-<!-- snippet-page-level ads -->
+
+<!-- https://www.google.com/adsense/new/u/0/pub-7927094983433027/myads/sites -->
+
 <script
   data-ad-client="ca-pub-7927094983433027"
   async
   src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
 ></script>
+
+<!-- https://analytics.google.com/analytics/web/#/a73869264w111913189p116897200/admin/tracking/tracking-code/ -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=UA-73869264-1"
+></script>
 <script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-7927094983433027",
-    enable_page_level_ads: true,
-  });
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "UA-73869264-1");
 </script>
-<!-- snippet-google-analytics -->
-{% include snippet-google-analytics.html %} {% endif %}
+
+<!-- https://tagmanager.google.com/?hl=en#/container/accounts/491416460/containers/2618425/workspaces/6 -->
+
+<!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-PNT4KQ");
+</script>
+<!-- End Google Tag Manager -->
+
+{% endif %}
 
 <!-- Theme -->
 
