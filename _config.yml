@@ -39,7 +39,6 @@ sass:
 
 plugins:
   [
-    "jekyll-feed",
     "jekyll-mentions",
     "jekyll-github-metadata",
     "jekyll-seo-tag",
