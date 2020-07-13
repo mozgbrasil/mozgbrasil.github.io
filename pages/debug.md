@@ -3,12 +3,23 @@ layout: page
 title: Debug
 permalink: /debug/
 order: 0
-excerpt: 'Debug'
+excerpt: "Debug"
 ---
 
 <hr>
 
 <hr>
+
+{% assign sorted_pages = site.pages | sort:"order" %}
+{% for node in sorted_pages %}
+{% if node.title %}
+{% if node.title != "Debug" and node.title != "Curriculum" %}
+
+{{ node.url }} - {{ node.title }}
+
+{% endif %}
+{% endif %}
+{% endfor %}
 
 <hr>
 
