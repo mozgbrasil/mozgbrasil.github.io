@@ -1,11 +1,13 @@
+# @prettier
+
 # build settings
 
-versao: 10/08/2018 12:01:28
+versao: 13/07/2018 17:15:24
 
-#theme: jekyll-theme-minimal
-#theme: jekyll-theme-modernist
-#remote_theme: jekyll-theme-mozg
-#remote_theme: mozgbrasil/jekyll-theme-mozg
+# theme: jekyll-theme-minimal
+# theme: jekyll-theme-modernist
+# remote_theme: jekyll-theme-mozg
+# remote_theme: mozgbrasil/jekyll-theme-mozg
 
 layout: default
 
@@ -13,11 +15,19 @@ markdown: kramdown
 highlighter: rouge
 
 #kramdown:
-  #auto_ids: true
+#auto_ids: true
 
-include: ['.htaccess']
+include: [".htaccess"]
 
-exclude: ["403.html", "404.html", "script", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md"] # , "bower_components", "bower.json", "node_modules", "package.json", "vendor"
+exclude: [
+    "403.html",
+    "404.html",
+    "script",
+    "Gemfile",
+    "Gemfile.lock",
+    "Rakefile",
+    "readme.md",
+  ] # , "bower_components", "bower.json", "node_modules", "package.json", "vendor"
 
 sass:
   style: :compressed
@@ -25,9 +35,17 @@ sass:
   #sass_dir: assets/css/
   # Where sass should look for other scss
   #load_paths:
-    #- node_modules/
+  #- node_modules/
 
-plugins: ["jekyll-mentions", "jekyll-github-metadata", "jekyll-seo-tag", "jekyll-paginate", "jekyll-avatar"]
+plugins:
+  [
+    "jekyll-feed",
+    "jekyll-mentions",
+    "jekyll-github-metadata",
+    "jekyll-seo-tag",
+    "jekyll-paginate",
+    "jekyll-avatar",
+  ]
 
 # plugins: jekyll-mentions
 
@@ -35,9 +53,6 @@ jekyll-mentions:
   base_url: https://twitter.com
 
 # plugins: jekyll-seo-tag
-
-sass:
-  style: compressed
 
 twitter:
   username: mozgbrasil
@@ -63,7 +78,14 @@ webmaster_verifications:
 # --
 
 redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+  extensions:
+    [
+      "no_intra_emphasis",
+      "fenced_code_blocks",
+      "autolink",
+      "tables",
+      "with_toc_data",
+    ]
 
 paginate: 30
 paginate_path: "page:num"
@@ -81,7 +103,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 title: MOZG
 tagline: Desenvolvedor de softwares
 description: > # this means to ignore newlines until "baseurl:"
-    Este projeto foi criado por Marcio dos Santos Amorim, desenvolvedor de softwares desde 1999 / Atendimento de Segunda-Feira à Sexta-Feira, 09:00 às 12:00 e 14:00 às 18:00 / suporte@mozg.com.br / +55 11 977072339
+  Este projeto foi criado por Marcio dos Santos Amorim, desenvolvedor de softwares desde 1999 / Atendimento de Segunda-Feira à Sexta-Feira, 09:00 às 12:00 e 14:00 às 18:00 / suporte@mozg.com.br / +55 11 977072339
 
 email: suporte@mozg.com.br
 github_username: mozgbrasil
@@ -99,6 +121,6 @@ google_analytics_ua: "UA-73869264-1" # https://www.google.com/analytics/web/ -> 
 
 # Embeds
 
-google_map_zoom: 16               # 1=Global zoom 18=Street Level
-google_map_view: satellite        # hybrid | satellite | roadmap
-google_map_height: 450            # Default map height. Width adjusts to container.
+google_map_zoom: 16 # 1=Global zoom 18=Street Level
+google_map_view: satellite # hybrid | satellite | roadmap
+google_map_height: 450 # Default map height. Width adjusts to container.
