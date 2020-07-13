@@ -3,9 +3,8 @@ layout: page
 title: Debug
 permalink: /debug/
 order: 0
-excerpt: "Debug"
+excerpt: 'Debug'
 ---
-
 
 <hr>
 

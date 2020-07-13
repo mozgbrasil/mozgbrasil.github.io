@@ -17,7 +17,7 @@ highlighter: rouge
 
 include: ['.htaccess']
 
-exclude: ["403.html", "404.html", "bower_components", "node_modules", "script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json"]
+exclude: ["403.html", "404.html", "script", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md"] # , "bower_components", "bower.json", "node_modules", "package.json", "vendor"
 
 sass:
   style: :compressed
@@ -79,9 +79,9 @@ mode: production
 devurl: http://127.0.0.1:4000
 baseurl: "" # the subpath of your site, e.g. /blog/
 title: MOZG
-tagline: Módulos para Magento
+tagline: Desenvolvedor de softwares
 description: > # this means to ignore newlines until "baseurl:"
-  Desenvolvemos o seu projeto usando a plataforma Magento / Comercializamos módulos para Magento / Nossa motivação é atender o mercado de módulos para Magento oferecendo melhorias e um excelente suporte / Compre somente após testar o módulo / Atendimento de Segunda-Feira à Sexta-Feira, 09:00 às 12:00 e 14:00 às 18:00 / suporte@mozg.com.br / +55 11 977072339
+Este projeto foi criado por Marcio dos Santos Amorim, desenvolvedor de softwares desde 1999 / Atendimento de Segunda-Feira à Sexta-Feira, 09:00 às 12:00 e 14:00 às 18:00 / suporte@mozg.com.br / +55 11 977072339
 
 email: suporte@mozg.com.br
 github_username: mozgbrasil

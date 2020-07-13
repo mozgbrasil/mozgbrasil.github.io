@@ -3,60 +3,101 @@
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <!-- Refer HTML5BP and https://developers.google.com/speed/docs/insights/ConfigureViewport -->
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+/>
 <!-- Site Properities -->
-{% seo %}
-<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-<!-- TAGS GOOGLE -->
+{% seo %} <link rel="alternate" type="application/rss+xml" title="{{ site.title
+}}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
 <!-- Google Authorship Markup -->
-<link rel="author" href="https://plus.google.com/117231578401378218759?rel=author">
+<link
+    rel="author"
+    href="https://plus.google.com/117231578401378218759?rel=author"
+/>
 <!-- Social: Google+ / Schema.org  -->
-<meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
-<meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-<meta itemprop="image" content="{{ "/assets/images/logos/logo_32_32.png" | prepend: site.baseurl | prepend: site.url }}"/>
-<!-- THEME -->
+<meta
+    itemprop="name"
+    content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
+/>
+<meta
+    itemprop="description"
+    content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
+/>
+<meta itemprop="image" content="{{ "/assets/images/logos/logo_32_32.png" |
+prepend: site.baseurl | prepend: site.url }}" />
+<!-- publisher -->
+<link href="https://plus.google.com/117178438811960262290" rel="publisher" />
+
 {% if jekyll.environment == "production" %}
+<!-- Google+ JavaScript API -->
+<script
+    type="text/javascript"
+    async
+    defer
+    src="https://apis.google.com/js/platform.js?publisherid=117178438811960262290"
+></script>
+<!-- snippet-page-level ads -->
+<script
+    data-ad-client="ca-pub-7927094983433027"
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+></script>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: 'ca-pub-7927094983433027',
+        enable_page_level_ads: true,
+    });
+</script>
+<!-- snippet-google-analytics -->
+{% include snippet-google-analytics.html %} {% endif %} {% comment %} {%
+endcomment %}
 
-{% comment %}
-<!-- head - GooglePageSpeed - inline - descomentar ao alterar o css, depois salvar no aruivo, usando essa tecnica se não fica super lento a renderização -->
-<!-- The tag `include_absolute` on line 25 in `_includes/tags_head.html` is not a recognized Liquid tag. -->
-<!-- Coloquei dessa forma assign tmp = ", para omitir o erro acima, para usar deve remover dessa forma em ambiente local -->
-{% capture styles %}
-  {% assign tmp = "include_absolute /assets/css/bootstrap-4.2.1-dist/css/bootstrap.css" %}
-  {% assign c = "include_absolute /assets/css/theme.css" %}
-{% endcapture %}
+<!-- Theme -->
+{% if jekyll.environment == "production" %} {% capture styles %} {% include
+style.css %} {% endcapture %}
 <style>
-{{ styles | scssify }}
-</style>
-{% endcomment %}
-
-{% capture styles %}
-  {% include style.css %}
-{% endcapture %}
-<style>
-{{ styles }}
+    {{ styles }}
 </style>
 
 {% else %}
-<link rel="stylesheet" href="/assets/css/style.css">
+<link
+    rel="stylesheet"
+    href="/assets/css/style.css"
+/><!-- _sass/jekyll-theme-mozg.scss -->
 {% endif %}
-<!-- publisher -->
-<link href="https://plus.google.com/117178438811960262290" rel="publisher" />
-<!-- Google+ JavaScript API -->
-<script type="text/javascript" async defer
-src="https://apis.google.com/js/platform.js?publisherid=117178438811960262290"></script>
-{% comment %}
-<!-- snippet-page-level ads -->
-<script type="text/javascript" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-7927094983433027",
-    enable_page_level_ads: true
-  });
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script
+    type="text/javascript"
+    src="/node_modules/jquery/dist/jquery.min.js"
+></script>
+<script
+    type="text/javascript"
+    src="/node_modules/bootstrap/dist/js/bootstrap.min.js"
+></script>
+
+<!-- anchor -->
+{% if page.path contains '_posts' %} {% assign test = true %} {% endif %} {% if
+page.path contains 'page' %} {% assign test = true %} {% endif %} {% if test %}
+<script
+    type="text/javascript"
+    src="/node_modules/anchor-js/anchor.min.js"
+></script>
+<script type="text/javascript">
+    window.addEventListener(
+        'load',
+        function () {
+            anchors.add(
+                '.anchorar h1, .anchorar h2, .anchorar h3, .anchorar h4, .anchorar h5, .anchorar h6'
+            );
+        },
+        false
+    );
 </script>
+{% endif %} {% comment %}
+<script src="/assets/js/internal/utils.js"></script>
 {% endcomment %}
-<!-- snippet-google-analytics -->
-{% include snippet-google-analytics.html %}
-<!-- /TAGS GOOGLE -->

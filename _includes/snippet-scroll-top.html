@@ -1,0 +1,47 @@
+<style>
+    .scroll-top {
+        position: fixed;
+        display: block;
+        bottom: 1.5625rem;
+        right: 1.5625rem;
+        z-index: 999;
+        background: rgba(255, 255, 255, 0.9);
+        height: 2.375rem;
+        width: 2.375rem;
+        line-height: 2.25rem;
+        text-align: center;
+        font-size: 0.875rem;
+        border-radius: 100%;
+        box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.05);
+        transition: 0.5s all ease;
+        transform: translateY(4.25rem);
+        color: #788487;
+    }
+
+    .scroll-top.scroll-top-visible {
+        transform: translateY(0);
+    }
+
+    .scroll-top:hover {
+        transform: translateY(-0.3125rem);
+    }
+
+    @media (max-width: 767.98px) {
+        .scroll-top {
+            display: none;
+        }
+    }
+</style>
+<script>
+    //
+    // Scroll to top
+    //
+    $(window).on('scroll', function () {
+        if ($(this).scrollTop() > 300) {
+            $('.scroll-top').addClass('scroll-top-visible');
+        } else {
+            $('.scroll-top').removeClass('scroll-top-visible');
+        }
+    });
+</script>
+<a class="scroll-top" href="#top"><i class="fas fa-angle-up"></i></a>

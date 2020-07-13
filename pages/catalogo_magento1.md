@@ -102,11 +102,11 @@ array_repo_free:
       <div class="card">
           <img class="card-img-top" src="/assets/images/free-stock-photos.gif">
           <div class="card-block">
-              <figure class="profile">
-                  <img src="/assets/images/logos/theme-logo-white.png" class="profile-avatar" alt="">
+              <figure class="card-profile">
+                  <img src="/assets/images/logos/theme-logo-white.png" class="card-profile-avatar" alt="">
               </figure>
               <h4 class="card-title mt-3">{{ item.title }}</h4>
-              <div class="meta">
+              <div class="card-meta">
                   <a>&nbsp;</a>
               </div>
               <div class="card-text">
@@ -125,11 +125,11 @@ array_repo_free:
       <div class="card">
           <img class="card-img-top" src="/assets/images/free-stock-photos.gif">
           <div class="card-block">
-              <figure class="profile">
-                  <img src="/assets/images/logos/theme-logo-white.png" class="profile-avatar" alt="">
+              <figure class="card-profile">
+                  <img src="/assets/images/logos/theme-logo-white.png" class="card-profile-avatar" alt="">
               </figure>
               <h4 class="card-title mt-3">{{ item.title }}</h4>
-              <div class="meta">
+              <div class="card-meta">
                   <a>&nbsp;</a>
               </div>
               <div class="card-text">
