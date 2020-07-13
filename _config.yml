@@ -52,8 +52,6 @@ plugins:
 jekyll-mentions:
   base_url: https://twitter.com
 
-# plugins: jekyll-seo-tag
-
 twitter:
   username: mozgbrasil
 
