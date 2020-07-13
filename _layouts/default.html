@@ -224,10 +224,20 @@ layout: compress
                             {% for node in sorted_pages %}
                             {% if node.title %}
                             {% if node.title != "Debug" and node.title != "Curriculum" %}
+
+                            {% if node.url contains 'node_modules' %}
+                            {% assign has_node_modules = "yes" %}
+                            {% else %}
+                            {% assign has_node_modules = "no" %}
+                            {% endif %}
+
+                            {% if has_node_modules == "no" %}
                             <li>
                                 <a class="footer-link" href="{{ node.url | prepend: site.baseurl }}"><i
                                         class="{{ icon_tag }} icon"></i>{{ node.title }}</a>
                             </li>
+                            {% endif %}
+
                             {% endif %}
                             {% endif %}
                             {% endfor %}

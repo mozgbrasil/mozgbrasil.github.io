@@ -15,8 +15,17 @@ excerpt: "Debug"
 {% if node.title %}
 {% if node.title != "Debug" and node.title != "Curriculum" %}
 
+{% if node.url contains 'node_modules' %}
+{% assign has_node_modules = "yes" %}
+{% else %}
+{% assign has_node_modules = "no" %}
+{% endif %}
+
+{% if has_node_modules == "no" %}
+
 {{ node.url }} - {{ node.title }}
 
+{% endif %}
 {% endif %}
 {% endif %}
 {% endfor %}
