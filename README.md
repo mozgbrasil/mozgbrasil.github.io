@@ -1,4 +1,5 @@
 [checkmark]: https://raw.githubusercontent.com/mozgbrasil/mozgbrasil.github.io/master/assets/images/logos/logo_32_32.png "MOZG"
+
 ![valid XHTML][checkmark]
 
 # http://mozgbrasil.github.io/
@@ -21,12 +22,8 @@ Caso queira contribuir para melhoria da documentação de um Fork no repositóri
 
 [Comercial License](LICENSE.txt)
 
-## Badges
+## Performance
 
-| Desktop       | Mobile        |
-| ------------- |:-------------:|
-| ![GitHub PageSpeed](https://pagespeed-badges.herokuapp.com/?url=mozg.com.br&strat=desktop)      | ![GitHub PageSpeed](https://pagespeed-badges.herokuapp.com/?url=mozg.com.br&strat=mobile) |
-
-https://developers.google.com/speed/pagespeed/insights/?url=http://mozg.com.br/
+https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fmozg.com.br%2F
 
 :cat2:

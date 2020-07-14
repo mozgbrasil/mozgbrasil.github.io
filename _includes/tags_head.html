@@ -41,7 +41,7 @@ prepend: site.baseurl | prepend: site.url }}"
 <!-- publisher -->
 <link href="https://plus.google.com/117178438811960262290" rel="publisher" />
 
-{% if jekyll.environment == "production" %}
+{% if jekyll.environment == "production" %} {% comment %}
 
 <!-- https://www.google.com/adsense/new/u/0/pub-7927094983433027/myads/sites -->
 
@@ -50,6 +50,8 @@ prepend: site.baseurl | prepend: site.url }}"
   async
   src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
 ></script>
+
+{% endcomment %}
 
 <!-- https://analytics.google.com/analytics/web/#/a73869264w111913189p116897200/admin/tracking/tracking-code/ -->
 
