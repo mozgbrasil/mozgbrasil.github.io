@@ -1,0 +1,44 @@
+{
+  "extensions": {
+    "recommendations": [],
+    "unwantedRecommendations": []
+  },
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "launch": {
+    "compounds": [],
+    "configurations": []
+  },
+  "settings": {
+    "[shellscript]": {
+      "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.stylelint": true,
+      "source.fixAll.tslint": true,
+      "source.organizeImports": false
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.renderWhitespace": "all",
+    "editor.wordWrap": "on",
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "files.exclude": {},
+    "files.trimTrailingWhitespace": true,
+    "files.watcherExclude": {},
+    "remote.containers.defaultExtensions": [],
+    "remote.SSH.defaultExtensions": [],
+    "search.exclude": {}
+  },
+  "tasks": {
+    "tasks": [],
+    "version": "2.0.0"
+  }
+}
