@@ -12,3 +12,4 @@ assets/**/*.html
 assets/**/*.md
 .htaccess
 _trash
+vscode.code-workspace
