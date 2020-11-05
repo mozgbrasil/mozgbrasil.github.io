@@ -6,7 +6,7 @@ order: 2
 excerpt: "Ética e compromisso, prezando por desenvolver tecnologia que agreguem valor, automação e lucratividade."
 ---
 
-## Curriculum
+# Curriculum
 
 [Marcio dos Santos Amorim](https://github.com/mozgbrasil)<br/>
 [Av. Campanella, 1297](https://www.google.com/maps/place/Av.+Campanella,+1297+-+Jardim+Itapemirim,+S%C3%A3o+Paulo+-+SP/data=!4m2!3m1!1s0x94ce66ced8e61d11:0x4e5491d98f877e9e?sa=X&ved=2ahUKEwjVv-XXgLboAhXEH7kGHZjeCfkQ8gEwAHoECAsQAQ), apto. 14, Itaquera<br/>
@@ -14,11 +14,11 @@ CEP. 08220-831 - São Paulo - SP<br/>
 Cel. [(11) 97707-2339](https://api.whatsapp.com/send?phone=5511977072339&text=) - e-mail: <mozgbrasil@gmail.com><br/>
 Brasileiro - 39 anos - Solteiro
 
-## Objetivo
+# Objetivo
 
 - Analista e Desenvolvedor de Sistemas Sênior
 
-## Resumo das qualificações
+# Resumo das qualificações
 
 - Desenvolvimento com metodologias ágeis
 
@@ -30,7 +30,7 @@ Brasileiro - 39 anos - Solteiro
 
 - Conhecimento em [ETL](https://pt.wikipedia.org/wiki/Extract,_transform,_load), [BI](https://pt.wikipedia.org/wiki/Intelig%C3%AAncia_empresarial), [Dashboards](<https://en.wikipedia.org/wiki/Dashboard_(business)>)
 
-## Qualificações Técnicas
+# Qualificações Técnicas
 
 - Desenvolvimento: [Node.js](https://nodejs.org/en/), [React](https://reactjs.org/), [Angular](https://angular.io/), [PHP](https://www.php.net/), [Ruby](https://www.ruby-lang.org/pt/), [Python](https://www.python.org/), [HTML5](https://pt.wikipedia.org/wiki/HTML5), [CSS3](https://pt.wikipedia.org/wiki/CSS3), [ASP](https://pt.wikipedia.org/wiki/ASP), [Coldfusion](https://www.adobe.com/br/products/coldfusion-family.html), Frameworks Javascript e CSS, [Bootstrap](https://getbootstrap.com/), [Jquery](https://jquery.com/), [Ajax](<https://pt.wikipedia.org/wiki/Ajax_(programa%C3%A7%C3%A3o)>) ...
 
@@ -48,7 +48,7 @@ Brasileiro - 39 anos - Solteiro
 
 - Containers: [Docker](https://www.docker.com/)
 
-## Formação Acadêmica
+# Formação Acadêmica
 
 Colégio Integrado Santa Inês S/C Ltda.
 
@@ -58,15 +58,15 @@ Curso de Processamento de Dados
 
 Concluído a 3ª serie do 2º grau em 1999
 
-## Formação profissional
+# Formação profissional
 
-### Impacta Tecnologia
+## Impacta Tecnologia
 
 - ICS - [Impacta](https://www.impacta.com.br/) Certified Specialist - Web-Master e-commerce developer - 03/08/2000
 
 - ICS - [Impacta](https://www.impacta.com.br/) Certified Specialist - 2324 - Administrando Microsoft SQL Server 2000 Database - 01/07/2002
 
-## Idiomas
+# Idiomas
 
 - Português / Fluente, para leitura, fala e escrita
 
@@ -74,9 +74,9 @@ Concluído a 3ª serie do 2º grau em 1999
 
 - Espanhol / Básico, para leitura, fala e escrita
 
-## Experiência profissional
+# Experiência profissional
 
-### SUPPORTCOMM S/A
+## SUPPORTCOMM S/A
 
 Analista e Desenvolvedor de Sistemas Sênior / PJ
 
@@ -92,7 +92,7 @@ Participei do desenvolvimento no projeto [ddvg-front-end](http://hom.vivo.ddivul
 
 Para o fluxo de desenvolvimento era utilizado o [Jira](https://pt.wikipedia.org/wiki/Jira) em conjunto com o [Bitbucket](https://pt.wikipedia.org/wiki/Bitbucket) e [GitLab](https://pt.wikipedia.org/wiki/GitLab) adotando a metodologia [GitFlow](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04 "GitFlow")
 
-### Fundação Carlos Alberto Vanzolini - GTE - Gestão de Tecnologias em Educação
+## Fundação Carlos Alberto Vanzolini - GTE - Gestão de Tecnologias em Educação
 
 Analista e Desenvolvedor de Sistemas Sênior / PJ
 
@@ -106,7 +106,7 @@ Venho desenvolvendo o seguinte [projeto](https://mozg.com.br/react-labs/ "App") 
 
 Venho desenvolvendo o seguinte [Aplicativo](https://play.google.com/store/apps/details?id=com.mozg.pegaso) utilizando o [React-Native](https://reactnative.dev/)
 
-### CEREBRUM Comércio Eletrônico Ltda ME
+## CEREBRUM Comércio Eletrônico Ltda ME
 
 Analista e Desenvolvedor de Sistemas Sênior / PJ
 
@@ -156,7 +156,7 @@ Venho desenvolvendo a seguinte extensão [Mozg\Stremio](https://github.com/mozgb
 
 Venho desenvolvendo o seguinte [projeto](http://35.194.61.252:3000/ "Portfólio") utilizando [Express](https://expressjs.com/ "ExpressJs") sob [Node.js](https://nodejs.org/en/ "Node.js") hospedado no servidor [Google Compute Engine](https://cloud.google.com/compute/), se tratando de aplicação gerenciadora de múltiplos projetos
 
-### Sombre Reptile
+## Sombre Reptile
 
 Analista Programador
 
@@ -164,7 +164,7 @@ Analista Programador
 
 Participei do desenvolvimento de aplicações para a intranet e reformulação do Site Institucional e do Portal de Comunicações da Petroquímica União situada ["PQU"](http://www.utc.com.br/ "PQU") no Polo Petroquímico de Capuava, em Santo André.
 
-### Símbolo Editora e Comunicação Integrada S/A
+## Símbolo Editora e Comunicação Integrada S/A
 
 Analista Programador Jr / CLT
 
@@ -176,7 +176,7 @@ Dentre as aplicações externas vou citar o site da [Atrevida](http://www.atrevi
 
 Para o site da [DietaJá](http://www.dietaja.com.br/ "DietaJá") foi criado um gerenciador de conteúdo com necessidades exclusiva ao projeto.
 
-### PIC - Projetos de Informação e Consultoria Ltda
+## PIC - Projetos de Informação e Consultoria Ltda
 
 Programador Trainee / CLT
 
@@ -184,7 +184,7 @@ Programador Trainee / CLT
 
 Participei do desenvolvimento dos portais Nihonsite de propriedade da (PIC) e Conexão RH de propriedade da (Telesp Celular), em ambas aplicações foram utilizado as linguagens ASP e [Coldfusion](https://www.adobe.com/products/coldfusion-family.html "Coldfusion") em conjunto com os Gerenciadores de Banco de Dados: [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2017 "SQL Server") e [Oracle Database](https://www.oracle.com/database/technologies/index.html "Oracle Database")
 
-### Dimetal - Distribuidora de produtos metalurgicos
+## Dimetal - Distribuidora de produtos metalurgicos
 
 Auxiliar administrativo / CLT
 
@@ -192,7 +192,7 @@ Auxiliar administrativo / CLT
 
 Com o fechamento da CASIL fui convidado pelos administradores a atuar na mesma função com a mesma equipe de contabilidade mas na DIMETAL que se trata de uma das empresas da família Salles Leite
 
-### CASIL S/A
+## CASIL S/A
 
 Mensageiro / CLT
 
@@ -200,7 +200,7 @@ Mensageiro / CLT
 
 Iniciando como mensageiro em pouco tempo fui trabalhar como estagiário no setor de tecnologia devido a necessidade do colégio de processamento de dados ao qual eu me graduei, atuei também no setor de contabilidade efetuando procedimentos como: classificação de contas, lançamentos, conciliações entre outros serviços do setor
 
-### AMESP Saúde Ltda
+## AMESP Saúde Ltda
 
 Office Boy / CLT
 
