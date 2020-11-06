@@ -8,10 +8,13 @@ excerpt: "Ética e compromisso, prezando por desenvolver tecnologia que agreguem
 
 # Curriculum
 
-[Marcio dos Santos Amorim](https://github.com/mozgbrasil)<br/>
-[Av. Campanella, 1297](https://www.google.com/maps/place/Av.+Campanella,+1297+-+Jardim+Itapemirim,+S%C3%A3o+Paulo+-+SP/data=!4m2!3m1!1s0x94ce66ced8e61d11:0x4e5491d98f877e9e?sa=X&ved=2ahUKEwjVv-XXgLboAhXEH7kGHZjeCfkQ8gEwAHoECAsQAQ), apto. 14, Itaquera<br/>
-CEP. 08220-831 - São Paulo - SP<br/>
-Cel. [(11) 97707-2339](https://api.whatsapp.com/send?phone=5511977072339&text=) - e-mail: <mozgbrasil@gmail.com><br/>
+[Marcio dos Santos Amorim](https://github.com/mozgbrasil)
+
+[Av. Campanella, 1297](https://www.google.com/maps/place/Av.+Campanella,+1297+-+Jardim+Itapemirim,+S%C3%A3o+Paulo+-+SP/data=!4m2!3m1!1s0x94ce66ced8e61d11:0x4e5491d98f877e9e?sa=X&ved=2ahUKEwjVv-XXgLboAhXEH7kGHZjeCfkQ8gEwAHoECAsQAQ), apto. 14, Itaquera
+CEP. 08220-831 - São Paulo - SP
+
+Cel. [(11) 97707-2339](https://api.whatsapp.com/send?phone=5511977072339&text=) - e-mail: <mozgbrasil@gmail.com>
+
 Brasileiro - 39 anos - Solteiro
 
 # Objetivo
