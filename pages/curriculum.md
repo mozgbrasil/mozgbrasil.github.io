@@ -56,7 +56,7 @@ Curso de Processamento de Dados
 
 01/1997 até 12/1999
 
-Concluído a 3ª serie do 2º grau em 1999
+Concluído a 3ª série do 2º grau em 1999
 
 # Formação profissional
 
@@ -82,15 +82,15 @@ Analista e Desenvolvedor de Sistemas Sênior / PJ
 
 22/07/2020 até 05/11/2020
 
-Como prestador de serviço com contrato temporario
+Como prestador de serviço com contrato temporário para [SupportComm](https://www.supportcomm.com.br/)
 
-Participei do desenvolvimento no projeto [ad-manager-api](https://api-manager.ddivulga.com/) se tratando de projeto back-end escrito em [Ruby](https://www.ruby-lang.org/pt/) com integração ao [PostgreSQL](https://www.postgresql.org/) que utiliza diversas dependências como o [puma](https://puma.io/), [rack](https://github.com/rack/rack), [sidekiq](https://sidekiq.org/), [sentry](https://sentry.io/) ...
+Participei do desenvolvimento no projeto [ad-manager-api](https://api-manager.ddivulga.com/) se tratando de projeto back-end para gerenciamento das campanhas promocionais, escrito em [Ruby](https://www.ruby-lang.org/pt/) com integração ao [PostgreSQL](https://www.postgresql.org/) e diversas dependências como o [puma](https://puma.io/), [rack](https://github.com/rack/rack), [sidekiq](https://sidekiq.org/), [sentry](https://sentry.io/) ...
 
 Participei do desenvolvimento no projeto [ad-manager-web](https://manager.ddivulga.com/) se tratando de projeto front-end para gerenciamento das campanhas promocionais utilizando [React](https://reactjs.org/ "React") e diversas dependências como o [Redux](https://redux.js.org/ "Redux"), [Material-UI](https://material-ui.com/pt/) ...
 
-Participei do desenvolvimento no projeto [ddvg-front-end](http://hom.vivo.ddivulga.com/) se tratando de projeto front-end para exibição das campanhas promocionais para diversas operadoras de celular como [Oi](http://oi.ddivulga.com/), [Vivo](http://vivo.ddivulga.com/) entre outras, utilizando [Gulp](https://gulpjs.com/) para o desenvolvimento front-end também o [Jenkins](https://www.jenkins.io/) ferramenta de integração contínua capaz de executar a compilação de projetos e execução de testes automatizados sempre que realizar commits para seu repositório de códigos, tudo de forma automatizada.
+Participei do desenvolvimento no projeto [ddvg-front-end](http://hom.vivo.ddivulga.com/) se tratando de projeto front-end para exibição das campanhas promocionais para diversas operadoras de celular como [Oi](http://oi.ddivulga.com/), [Vivo](http://vivo.ddivulga.com/) entre outras, utilizando [Gulp](https://gulpjs.com/) para o desenvolvimento front-end, também o [Jenkins](https://www.jenkins.io/) ferramenta de integração contínua capaz de executar a compilação de projetos e execução de testes automatizados sempre que realizar commits para seu repositório de códigos, tudo de forma automatizada.
 
-Para ambos projetos adicionei o suporte ao [workspace](https://code.visualstudio.com/docs/editor/multi-root-workspaces) do [VS Code](https://code.visualstudio.com/) a fim de adotar boas praticas como uso do [Prettier](https://prettier.io/), [Prettier](https://prettier.io/) e outras extensões e configurações agilizando o desenvolvimento e depuração do projeto, também adicionei o suporte ao [Docker](https://github.com/mozgbrasil/docker "Docker") pois é uma tendência no mercado a fim de criar container com os softwares usado no projeto usando as seguintes dependência [Redis](https://redis.io/), [RedisInsight](https://redislabs.com/redis-enterprise/redis-insight/), [PostgreSQL](https://www.postgresql.org/), [Adminer](https://www.adminer.org/), [pgAdmin](https://www.pgadmin.org/), [ruby:2.5.3](https://hub.docker.com/_/ruby), [Node.js](https://nodejs.org/en/ "Node.js") ...
+Para ambos projetos adicionei o suporte ao [workspace](https://code.visualstudio.com/docs/editor/multi-root-workspaces) do [VS Code](https://code.visualstudio.com/) a fim de adotar boas praticas como uso do [Prettier](https://prettier.io/), [Prettier](https://prettier.io/) e outras extensões e configurações agilizando o desenvolvimento e depuração do projeto, também adicionei o suporte ao [Docker](https://github.com/mozgbrasil/docker "Docker") pois é uma tendência que automatiza a criação de ambientes necessário para o desenvolvimento onde adicionei o uso de dependências como [Redis](https://redis.io/), [RedisInsight](https://redislabs.com/redis-enterprise/redis-insight/), [PostgreSQL](https://www.postgresql.org/), [Adminer](https://www.adminer.org/), [pgAdmin](https://www.pgadmin.org/), [ruby:2.5.3](https://hub.docker.com/_/ruby), [Node.js](https://nodejs.org/en/ "Node.js") ...
 
 Para o fluxo de desenvolvimento era utilizado o [Jira](https://pt.wikipedia.org/wiki/Jira) em conjunto com o [Bitbucket](https://pt.wikipedia.org/wiki/Bitbucket) e [GitLab](https://pt.wikipedia.org/wiki/GitLab) adotando a metodologia [GitFlow](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04 "GitFlow")
 
@@ -100,7 +100,9 @@ Analista e Desenvolvedor de Sistemas Sênior / PJ
 
 07/08/2019 até 31/12/2019
 
-Como prestador de serviço com contrato temporario pela [Vanzolini - GTE](https://www.vanzolini-gte.org.br/) participei do desenvolvimento no projeto [Escola Digital](https://escoladigital.org.br/ "Escola Digital") se tratando de projeto cultural e educativo desenvolvido como tecnologia para o front-end o [React](https://reactjs.org/ "React") e diversas dependências como o [Redux](https://redux.js.org/ "Redux"), [Webpack](https://webpack.js.org/ "Webpack"), [Babel](https://babeljs.io/ "Babel") entre diversas outras e como tecnologia para back-end o [PHP Laravel Lumen](https://lumen.laravel.com/ "PHP Laravel Lumen") como base para o uso das [API REST](https://pt.wikipedia.org/wiki/REST "API REST"), também o uso do banco de dados [PostgreSQL](https://www.postgresql.org/ "PostgreSQL"), também o uso do serviços [ElasticSearch](https://www.elastic.co/ "ElasticSearch") para processamento do mecanismo de busca, também o uso do serviços [Redis](https://redis.io/ "Redis") para processamento em background, também o uso do [Node.js](https://nodejs.org/en/ "Node.js") para processamento de dados, também o uso de fluxo de trabalho [GitFlow](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04 "GitFlow") para o sistema de controle de versão [Git](https://pt.wikipedia.org/wiki/Git "Git"), também o uso do gerenciador de projetos [Trello](https://trello.com/)
+Como prestador de serviço com contrato temporário pela [Vanzolini - GTE](https://www.vanzolini-gte.org.br/)
+
+Participei do desenvolvimento no projeto [Escola Digital](https://escoladigital.org.br/ "Escola Digital") se tratando de projeto cultural e educativo desenvolvido como tecnologia para o front-end o [React](https://reactjs.org/ "React") e diversas dependências como o [Redux](https://redux.js.org/ "Redux"), [Webpack](https://webpack.js.org/ "Webpack"), [Babel](https://babeljs.io/ "Babel") entre diversas outras e como tecnologia para back-end o [PHP Laravel Lumen](https://lumen.laravel.com/ "PHP Laravel Lumen") como base para o uso das [API REST](https://pt.wikipedia.org/wiki/REST "API REST"), também o uso do banco de dados [PostgreSQL](https://www.postgresql.org/ "PostgreSQL"), também o uso do serviços [ElasticSearch](https://www.elastic.co/ "ElasticSearch") para processamento do mecanismo de busca, também o uso do serviços [Redis](https://redis.io/ "Redis") para processamento em background, também o uso do [Node.js](https://nodejs.org/en/ "Node.js") para processamento de dados, também o uso de fluxo de trabalho [GitFlow](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04 "GitFlow") para o sistema de controle de versão [Git](https://pt.wikipedia.org/wiki/Git "Git"), também o uso do gerenciador de projetos [Trello](https://trello.com/)
 
 Desde 02/2020 pessoalmente
 
@@ -132,7 +134,7 @@ Em 2016 devido a necessidade de aperfeiçoamento tecnológico, criei o projeto [
 
 Os módulos do [Catálogo](http://mozg.com.br/catalogo/ "Catálogo") utiliza uma biblioteca base denominada [Mozg Framework](https://github.com/mozgbrasil/php-framework-php_56#mozgframework "Mozg Framework") que utiliza dependência parcial do [Zend Framework](https://github.com/mozgbrasil/php-framework-php_56/blob/master/composer.json#L46 "Zend Framework") também [Symfony Framework](https://github.com/mozgbrasil/php-framework-php_56/blob/master/composer.json#L51 "Symfony Framework") também [Doctrine](https://github.com/mozgbrasil/php-framework-php_56/blob/master/composer.json#L59 "Doctrine") entre outras dependência como especificado no [Manifesto](https://github.com/mozgbrasil/php-framework-php_56/blob/master/composer.json "Manifesto"), estando a biblioteca de acordo com as especificações [PSR-4](https://www.php-fig.org/psr/psr-4/) utilizando [Namespaces](http://php.net/manual/en/language.namespaces.php "Namespaces") facilitando o carregamento automático das classes via "autoload" ao invés de inclusão manual de arquivos, seguindo os padrões de desenvolvimento imposto pela própria plataforma Magento como o uso de [Design Pattern](https://pt.wikipedia.org/wiki/Padr%C3%A3o_de_projeto_de_software), [MVC](https://pt.wikipedia.org/wiki/MVC), [ORM](https://pt.wikipedia.org/wiki/Mapeamento_objeto-relacional), [OOP](https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_orientada_a_objetos) "Object Oriented Programming" comummente conhecido como [POO](https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_orientada_a_objetos)
 
-Veja alguns videos de alguns produtos para Magento
+Veja alguns vídeos de alguns produtos para Magento
 
 [Video](https://github.com/mozgbrasil/magento-cielo-php_56#v%C3%ADdeos-demonstrativo) [Video](https://github.com/mozgbrasil/magento-correios-php_56/blob/master/README_Correios.md#v%C3%ADdeos-demonstrativo)
 
@@ -186,7 +188,7 @@ Programador Trainee / CLT
 
 Participei do desenvolvimento dos portais Nihonsite de propriedade da (PIC) e Conexão RH de propriedade da (Telesp Celular), em ambas aplicações foram utilizado as linguagens ASP e [Coldfusion](https://www.adobe.com/products/coldfusion-family.html "Coldfusion") em conjunto com os Gerenciadores de Banco de Dados: [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2017 "SQL Server") e [Oracle Database](https://www.oracle.com/database/technologies/index.html "Oracle Database")
 
-## Dimetal - Distribuidora de produtos metalurgicos
+## Dimetal - Distribuidora de produtos metalúrgicos
 
 Auxiliar administrativo / CLT
 
