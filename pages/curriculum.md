@@ -1,16 +1,9 @@
----
-layout: page
-title: Curriculum
-permalink: /curriculum/
-order: 2
-excerpt: "Ética e compromisso, prezando por desenvolver tecnologia que agreguem valor, automação e lucratividade."
----
-
 # Curriculum
 
 [Marcio dos Santos Amorim](https://github.com/mozgbrasil)
 
 [Av. Campanella, 1297](https://www.google.com/maps/place/Av.+Campanella,+1297+-+Jardim+Itapemirim,+S%C3%A3o+Paulo+-+SP/data=!4m2!3m1!1s0x94ce66ced8e61d11:0x4e5491d98f877e9e?sa=X&ved=2ahUKEwjVv-XXgLboAhXEH7kGHZjeCfkQ8gEwAHoECAsQAQ), apto. 14, Itaquera
+
 CEP. 08220-831 - São Paulo - SP
 
 Cel. [(11) 97707-2339](https://api.whatsapp.com/send?phone=5511977072339&text=) - e-mail: <mozgbrasil@gmail.com>
@@ -95,7 +88,7 @@ Participei do desenvolvimento no projeto [ddvg-front-end](http://hom.vivo.ddivul
 
 Para ambos projetos adicionei o suporte ao [workspace](https://code.visualstudio.com/docs/editor/multi-root-workspaces) do [VS Code](https://code.visualstudio.com/) a fim de adotar boas praticas como uso do [Prettier](https://prettier.io/) entre outras extensões e configurações agilizando o desenvolvimento e depuração dos projetos, também adicionei o suporte ao [Docker](https://github.com/mozgbrasil/docker "Docker") devido a necessidade de automatizar a criação de ambientes necessário para o desenvolvimento onde adicionei o uso de dependências como [Redis](https://redis.io/), [RedisInsight](https://redislabs.com/redis-enterprise/redis-insight/), [PostgreSQL](https://www.postgresql.org/), [Adminer](https://www.adminer.org/), [pgAdmin](https://www.pgadmin.org/), [ruby:2.5.3](https://hub.docker.com/_/ruby), [Node.js](https://nodejs.org/en/ "Node.js") ...
 
-Para o fluxo de desenvolvimento era utilizado o [Jira](https://pt.wikipedia.org/wiki/Jira) em conjunto com o [Bitbucket](https://pt.wikipedia.org/wiki/Bitbucket) e [GitLab](https://pt.wikipedia.org/wiki/GitLab) adotando a metodologia [GitFlow](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04 "GitFlow")
+Para o fluxo de desenvolvimento foi utilizado o [Jira](https://pt.wikipedia.org/wiki/Jira) em conjunto com o [Bitbucket](https://pt.wikipedia.org/wiki/Bitbucket) e [GitLab](https://pt.wikipedia.org/wiki/GitLab) adotando a metodologia [GitFlow](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04 "GitFlow") para o sistema de controle de versão [Git](https://pt.wikipedia.org/wiki/Git "Git")
 
 ## Fundação Carlos Alberto Vanzolini - GTE - Gestão de Tecnologias em Educação
 
@@ -105,7 +98,9 @@ Analista e Desenvolvedor de Sistemas Sênior / PJ
 
 Como prestador de serviço com contrato temporário pela [Vanzolini - GTE](https://www.vanzolini-gte.org.br/)
 
-Participei do desenvolvimento no projeto [Escola Digital](https://escoladigital.org.br/ "Escola Digital") se tratando de projeto cultural e educativo desenvolvido como tecnologia para o front-end o [React](https://reactjs.org/ "React") e diversas dependências como o [Redux](https://redux.js.org/ "Redux"), [Webpack](https://webpack.js.org/ "Webpack"), [Babel](https://babeljs.io/ "Babel") entre diversas outras e como tecnologia para back-end o [PHP Laravel Lumen](https://lumen.laravel.com/ "PHP Laravel Lumen") como base para o uso das [API REST](https://pt.wikipedia.org/wiki/REST "API REST"), também o uso do banco de dados [PostgreSQL](https://www.postgresql.org/ "PostgreSQL"), também o uso do serviços [ElasticSearch](https://www.elastic.co/ "ElasticSearch") para processamento do mecanismo de busca, também o uso do serviços [Redis](https://redis.io/ "Redis") para processamento em background, também o uso do [Node.js](https://nodejs.org/en/ "Node.js") para processamento de dados, também o uso de fluxo de trabalho [GitFlow](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04 "GitFlow") para o sistema de controle de versão [Git](https://pt.wikipedia.org/wiki/Git "Git"), também o uso do gerenciador de projetos [Trello](https://trello.com/)
+Participei do desenvolvimento no projeto [Escola Digital](https://escoladigital.org.br/ "Escola Digital") se tratando de projeto cultural e educativo desenvolvido como tecnologia para o front-end o [React](https://reactjs.org/ "React") e diversas dependências como o [Redux](https://redux.js.org/ "Redux"), [Webpack](https://webpack.js.org/ "Webpack"), [Babel](https://babeljs.io/ "Babel") entre diversas outras e como tecnologia para back-end o [PHP Laravel Lumen](https://lumen.laravel.com/ "PHP Laravel Lumen") como base para o uso das [API REST](https://pt.wikipedia.org/wiki/REST "API REST"), também o uso do banco de dados [PostgreSQL](https://www.postgresql.org/ "PostgreSQL"), também o uso do serviços [ElasticSearch](https://www.elastic.co/ "ElasticSearch") para processamento do mecanismo de busca, também o uso do serviços [Redis](https://redis.io/ "Redis") para processamento em background, também o uso do [Node.js](https://nodejs.org/en/ "Node.js") para processamento de dados
+
+Para o fluxo de desenvolvimento foi utilizado o gerenciador de projetos [Trello](https://trello.com/) em conjunto com o [GitLab](https://pt.wikipedia.org/wiki/GitLab) adotando a metodologia [GitFlow](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04 "GitFlow") para o sistema de controle de versão [Git](https://pt.wikipedia.org/wiki/Git "Git")
 
 Desde 02/2020 pessoalmente
 
