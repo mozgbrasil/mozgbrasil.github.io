@@ -98,6 +98,12 @@ Para ambos projetos adicionei o suporte ao [workspace](https://code.visualstudio
 
 Para o fluxo de desenvolvimento foi utilizado o [Jira](https://pt.wikipedia.org/wiki/Jira) em conjunto com o [Bitbucket](https://pt.wikipedia.org/wiki/Bitbucket) ou [GitLab](https://pt.wikipedia.org/wiki/GitLab) adotando a metodologia [GitFlow](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04 "GitFlow") para o sistema de controle de versão [Git](https://pt.wikipedia.org/wiki/Git "Git") e o [VS Code](https://code.visualstudio.com/) como [IDE](https://pt.wikipedia.org/wiki/Ambiente_de_desenvolvimento_integrado)
 
+Em 2021 venho me aperfeiçoando e adotando novas prática para desenvolvimento em container [Docker](https://github.com/mozgbrasil/docker "Docker") com suporte a multiplataformas
+
+Venho desenvolvendo a seguinte extensão [Mozg\Stremio](https://9b7c457c25d2-stremio-addon.baby-beamup.club/) para a plataforma [Stremio](https://www.stremio.com/) utilizando como base o [Stremio Addon SDK](https://github.com/Stremio/stremio-addon-sdk) e integrando [TMDb](https://www.themoviedb.org/) a fim de extender a pesquisa por ano, conforme [GIF](https://raw.githubusercontent.com/mozgbrasil/stremio-addon/main/animation_2021-02-09_20-19-45.gif), a extensão nativa do Stremio só exibe os ultimos 15 anos, apliquei suporte para exibiir a lista para os ultimos 100 anos, o projeto se encontra disponivel de forma publica em [Mozg\Stremio](https://github.com/mozgbrasil/stremio-addon)
+
+Gostaria de conhecer o Stremio, efetue o [Download](https://www.stremio.com/downloads) após a instalação recomendo instalar as seguintes extensões [Torrentio](https://app.strem.io/shell-v4.4/#/addons/community/all?addon=https%3A%2F%2Ftorrentio.strem.fun%2Fmanifest.json), [Mico-Leão Dublado](https://app.strem.io/shell-v4.4/#/addons/community/all?addon=https%3A%2F%2Fstremio-brazilian-addon.herokuapp.com%2Fmanifest.json), [The Movie Database with Timeline filter](https://app.strem.io/shell-v4.4/#/addons/community/all?addon=https%3A%2F%2F9b7c457c25d2-stremio-addon.baby-beamup.club%2Fmanifest.json)
+
 ## Fundação Carlos Alberto Vanzolini - GTE - Gestão de Tecnologias em Educação
 
 Analista e Desenvolvedor de Sistemas Sênior / PJ
