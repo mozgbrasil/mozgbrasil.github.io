@@ -100,9 +100,7 @@ Para o fluxo de desenvolvimento foi utilizado o [Jira](https://pt.wikipedia.org/
 
 Em 2021 venho me aperfeiçoando e adotando novas prática para desenvolvimento em container [Docker](https://github.com/mozgbrasil/docker "Docker") com suporte a multiplataformas
 
-Venho desenvolvendo a seguinte extensão [Mozg\Stremio](https://9b7c457c25d2-stremio-addon.baby-beamup.club/) para a plataforma [Stremio](https://www.stremio.com/) utilizando como base o [Stremio Addon SDK](https://github.com/Stremio/stremio-addon-sdk) e integrando [TMDb](https://www.themoviedb.org/) a fim de extender a pesquisa por ano, conforme [GIF](https://raw.githubusercontent.com/mozgbrasil/stremio-addon/main/animation_2021-02-09_20-19-45.gif), a extensão nativa do Stremio só exibe os ultimos 15 anos, apliquei suporte para exibiir a lista para os ultimos 100 anos, o projeto se encontra disponivel de forma publica em [Mozg\Stremio](https://github.com/mozgbrasil/stremio-addon)
-
-Gostaria de conhecer o Stremio, efetue o [Download](https://www.stremio.com/downloads) após a instalação recomendo instalar as seguintes extensões [Torrentio](https://app.strem.io/shell-v4.4/#/addons/community/all?addon=https%3A%2F%2Ftorrentio.strem.fun%2Fmanifest.json), [Mico-Leão Dublado](https://app.strem.io/shell-v4.4/#/addons/community/all?addon=https%3A%2F%2Fstremio-brazilian-addon.herokuapp.com%2Fmanifest.json), [The Movie Database with Timeline filter](https://app.strem.io/shell-v4.4/#/addons/community/all?addon=https%3A%2F%2F9b7c457c25d2-stremio-addon.baby-beamup.club%2Fmanifest.json)
+Venho desenvolvendo a seguinte extensão [Stremio-Addon](https://9b7c457c25d2-stremio-addon.baby-beamup.club/) em [Node.js](https://nodejs.org/en/ "Node.js") para a plataforma [Stremio](https://www.stremio.com/) utilizando o [Stremio Addon SDK](https://github.com/Stremio/stremio-addon-sdk), o projeto está disponivel de forma publica em [Stremio-Addon](https://github.com/mozgbrasil/stremio-addon)
 
 ## Fundação Carlos Alberto Vanzolini - GTE - Gestão de Tecnologias em Educação
 
