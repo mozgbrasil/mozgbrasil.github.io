@@ -4,7 +4,7 @@
 
 # http://mozgbrasil.github.io/
 
-## Sinopse 1
+## Sinopse
 
 Site insitucional da MOZG
 
