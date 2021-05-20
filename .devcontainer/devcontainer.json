@@ -13,6 +13,10 @@
   // Set *default* container specific settings.json values on container create.
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash",
+    // "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[html]": {
+      "editor.defaultFormatter": "sissel.shopify-liquid"
+    },
     // https://github.com/baky0905/remote-container-python/blob/master/.devcontainer/devcontainer.json
     // ---------------- EDITOR SETTINGS
     "editor.acceptSuggestionOnEnter": "off",
@@ -129,7 +133,63 @@
   },
 
   // Add the IDs of extensions you want installed when the container is created.
-  "extensions": [],
+  "extensions": [
+    "alefragnani.project-manager",
+    "alexcvzz.vscode-sqlite",
+    "almenon.arepl",
+    "bat67.markdown-extension-pack",
+    "benspaulding.procfile",
+    "bungcip.better-toml",
+    "christian-kohler.path-intellisense",
+    "coenraads.bracket-pair-colorizer-2",
+    "dbaeumer.vscode-eslint",
+    "donjayamanne.githistory",
+    "eamodio.gitlens",
+    "ecmel.vscode-html-css",
+    "eg2.vscode-npm-script",
+    "equinusocio.vsc-community-material-theme",
+    "equinusocio.vsc-material-theme",
+    "esbenp.prettier-vscode",
+    "firefox-devtools.vscode-firefox-debug",
+    "formulahendry.code-runner",
+    "formulahendry.vscode-mysql",
+    "foxundermoon.shell-format",
+    "gamunu.vscode-yarn",
+    "github.vscode-pull-request-github",
+    "hoovercj.ruby-linter",
+    "humao.rest-client",
+    "johnpapa.vscode-peacock",
+    "kevinrose.vsc-python-indent",
+    "mhutchie.git-graph",
+    "mikestead.dotenv",
+    "misogi.ruby-rubocop",
+    "mongodb.mongodb-vscode",
+    "mhutchie.git-graph",
+    "ms-azuretools.vscode-docker",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "msjsdiag.debugger-for-chrome",
+    "natqe.reload",
+    "njpwerner.autodocstring",
+    "oderwat.indent-rainbow",
+    "perkovec.emoji",
+    "pkief.material-icon-theme",
+    "rebornix.ruby",
+    "ritwickdey.liveserver",
+    "robbowen.synthwave-vscode",
+    "rogalmic.bash-debug",
+    "shan.code-settings-sync",
+    "sissel.shopify-liquid",
+    "tht13.html-preview-vscode",
+    "timonwong.shellcheck",
+    "visualstudioexptteam.vscodeintellicode",
+    "vscode-icons-team.vscode-icons",
+    "wingrunr21.vscode-ruby",
+    "wmaurer.change-case",
+    "xxamxx.vscode-rubygems",
+    "yurydelendik.firefox-debug",
+    "yzhang.markdown-all-in-one"
+  ],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [
@@ -138,6 +198,8 @@
     // Live reload server
     35729
   ],
+
+  "mounts": ["source=volume-ruby-bundle,target=/usr/local/bundle,type=volume"],
 
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": "sh .devcontainer/post-create.sh",

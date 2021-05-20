@@ -1,36 +1,36 @@
 /** @type {import('prettier').Options} */
 module.exports = {
   //   endOfLine: 'lf',
-  arrowParens: 'always',
+  arrowParens: "always",
   bracketSpacing: true,
-  htmlWhitespaceSensitivity: 'css',
+  htmlWhitespaceSensitivity: "css",
   insertPragma: false,
   jsxBracketSameLine: false,
   //   jsxSingleQuote: true,
   printWidth: 80,
-  proseWrap: 'preserve',
-  quoteProps: 'as-needed',
+  proseWrap: "preserve",
+  quoteProps: "as-needed",
   requirePragma: false,
   semi: true,
   //   singleQuote: true,
   tabWidth: 2,
-  trailingComma: 'all', // all, es5
+  trailingComma: "all", // all, es5
   useTabs: false,
   vueIndentScriptAndStyle: false,
   overrides: [
     {
-      files: '*.{md}',
+      files: "*.{md}",
       options: {
-        proseWrap: 'never',
+        proseWrap: "never",
         singleQuote: false,
-        trailingComma: 'none',
+        trailingComma: "none",
       },
     },
     {
-      files: '*.{yml,yaml}',
+      files: "*.{yml,yaml}",
       options: {
         singleQuote: false,
-        trailingComma: 'none',
+        trailingComma: "none",
       },
     },
   ],

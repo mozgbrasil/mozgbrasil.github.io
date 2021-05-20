@@ -2,6 +2,8 @@
 
 # build settings
 
+repository: mozgbrasil/mozgbrasil.github.io
+
 versao: 13/07/2018 17:15:24
 
 # theme: jekyll-theme-minimal
@@ -17,7 +19,7 @@ highlighter: rouge
 #kramdown:
 #auto_ids: true
 
-include: [".htaccess"]
+include: [".htaccess", "node_modules"]
 
 exclude: [
     "403.html",
@@ -26,7 +28,7 @@ exclude: [
     "Gemfile",
     "Gemfile.lock",
     "Rakefile",
-    "readme.md",
+    "README.md"
   ] # , "bower_components", "bower.json", "node_modules", "package.json", "vendor"
 
 sass:
@@ -43,7 +45,7 @@ plugins:
     "jekyll-github-metadata",
     "jekyll-seo-tag",
     "jekyll-paginate",
-    "jekyll-avatar",
+    "jekyll-avatar"
   ]
 
 # plugins: jekyll-mentions
@@ -81,7 +83,7 @@ redcarpet:
       "fenced_code_blocks",
       "autolink",
       "tables",
-      "with_toc_data",
+      "with_toc_data"
     ]
 
 paginate: 30

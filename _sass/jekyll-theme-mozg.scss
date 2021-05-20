@@ -1,9 +1,13 @@
-// Libs
-// @import "/node_modules/normalize.css/normalize.css";
-@import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
-@import '/node_modules/aos/dist/aos.css';
-@import '/node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css';
+/*!
+ * @import "/node_modules/normalize.css/normalize.css";
+ */
+
+// @import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
+// @import "/node_modules/aos/dist/aos.css";
+// @import "/node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css";
+
 // Highlight
-@import 'rouge';
+@import "rouge";
+
 // Custom styles for this template
-@import 'theme.css';
+@import "extend";
