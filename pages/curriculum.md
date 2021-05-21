@@ -102,6 +102,14 @@ Em 2021 venho me aperfeiçoando e adotando novas prática para desenvolvimento e
 
 Venho desenvolvendo a seguinte extensão [Stremio-Addon](https://9b7c457c25d2-stremio-addon.baby-beamup.club/) em [Node.js](https://nodejs.org/en/ "Node.js") para a plataforma [Stremio](https://www.stremio.com/) utilizando o [Stremio Addon SDK](https://github.com/Stremio/stremio-addon-sdk), o projeto está disponivel de forma publica em [Stremio-Addon](https://github.com/mozgbrasil/stremio-addon)
 
+Apliquei o upgrade ao site Jekyll
+
+Criado nova versão do projeto em react usando CI e CD
+
+https://acid-react.netlify.app/
+
+https://acid-react.vercel.app/
+
 ## Fundação Carlos Alberto Vanzolini - GTE - Gestão de Tecnologias em Educação
 
 Analista e Desenvolvedor de Sistemas Sênior / PJ
