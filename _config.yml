@@ -123,3 +123,7 @@ google_analytics_ua: "UA-73869264-1" # https://www.google.com/analytics/web/ -> 
 google_map_zoom: 16 # 1=Global zoom 18=Street Level
 google_map_view: satellite # hybrid | satellite | roadmap
 google_map_height: 450 # Default map height. Width adjusts to container.
+
+# Fix: GitHub Metadata: No GitHub API authentication could be found. Some fields may be missing or have incorrect data.
+
+github: [metadata]
