@@ -8,16 +8,13 @@ excerpt: "Ética e compromisso, prezando por desenvolver tecnologia que agreguem
 
 # Curriculum
 
-[Marcio dos Santos Amorim](https://github.com/mozgbrasil)
-
-[Av. Campanella, 1297](https://www.google.com/maps/place/Av.+Campanella,+1297+-+Jardim+Itapemirim,+S%C3%A3o+Paulo+-+SP/data=!4m2!3m1!1s0x94ce66ced8e61d11:0x4e5491d98f877e9e?sa=X&ved=2ahUKEwjVv-XXgLboAhXEH7kGHZjeCfkQ8gEwAHoECAsQAQ), apto. 14, Itaquera
-
-CEP. 08220-831 - São Paulo - SP
-
-Cel. [(11) 97707-2339](https://api.whatsapp.com/send?phone=5511977072339&text=) - e-mail: <mozgbrasil@gmail.com>
-
-Brasileiro - 39 anos - Solteiro
-
+|  |
+| - |
+| [Marcio dos Santos Amorim](https://github.com/mozgbrasil) |
+| [Av. Campanella, 1297](https://www.google.com/maps/place/Av.+Campanella,+1297+-+Jardim+Itapemirim,+S%C3%A3o+Paulo+-+SP/data=!4m2!3m1!1s0x94ce66ced8e61d11:0x4e5491d98f877e9e?sa=X&ved=2ahUKEwjVv-XXgLboAhXEH7kGHZjeCfkQ8gEwAHoECAsQAQ), apto. 14, Itaquera |
+| CEP. 08220-831 - São Paulo - SP |
+| Cel. [(11) 97707-2339](https://api.whatsapp.com/send?phone=5511977072339&text=) - e-mail: <mozgbrasil@gmail.com> |
+| Brasileiro - 39 anos - Solteiro |
 # Objetivo
 
 - Analista e Desenvolvedor de Sistemas Sênior
@@ -104,37 +101,57 @@ Venho desenvolvendo a seguinte extensão [Stremio-Addon](https://9b7c457c25d2-st
 
 Venho desenvolvendo melhorias para o site institucional em Jekyll/Ruby
 
-Venho desenvolvendo projeto monorepo usando metodologias CI e CD
+Venho desenvolvendo projeto monorepo em Node.js usando metodologias CI e CD
 
-Utilizando "Continuous Integration"
+Utilizando "Continuous Integration" em
 
 https://github.com/mozgbrasil/acid-workspaces
-
-Com ação de espelhamento para
 
 https://bitbucket.org/mozgbrasil/acid-workspaces
 
 https://gitlab.com/mozgbrasil/acid-workspaces
 
-Configurado "Continuous Deployment/Delivery" em
+Utilizando "Continuous Deployment/Delivery" em
 
 https://vercel.com/
 
 https://netlify.com/
 
-Sendo entregue
+https://heroku.com/
+
+Sendo implantado
+
+https://acid-workspaces.vercel.app/
 
 https://acid-workspace-create-react-app.vercel.app/
 
+https://acid-workspace-create-react-app.vercel.app/api/go/date/
+
+https://acid-workspace-create-react-app.vercel.app/api/js/hello/
+
+https://acid-workspace-create-react-app.vercel.app/api/js/express/
+
+https://acid-workspace-create-react-app.vercel.app/api/rb/hello/
+
 https://acid-workspace-create-next-app.vercel.app/
 
-Sendo entregue
+Sendo implantado
+
+https://acid-workspaces.netlify.app/
 
 https://acid-workspace-create-react-app.netlify.app/
 
 https://acid-workspace-create-react-app.netlify.app/.netlify/functions/server
 
+Sendo implantado
 
+https://acid-workspaces.herokuapp.com/
+
+https://acid-create-react-app.herokuapp.com/
+
+https://acid-create-next-app.herokuapp.com/
+
+https://acid-create-express-app.herokuapp.com/
 
 ## Fundação Carlos Alberto Vanzolini - GTE - Gestão de Tecnologias em Educação
 

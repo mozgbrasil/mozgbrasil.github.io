@@ -59,6 +59,12 @@ layout: compress
               </ul>
             </li>
             {% endcomment %}
+            <li class="nav-item {% if page.url == '/contato/' %} active{% endif %}">
+              <a href="/curriculum/" class="nav-link {% if page.url == '/contato/' %} active{% endif %}">Curriculum</a>
+            </li>
+            <li class="nav-item {% if page.url == '/artigos/' %} active{% endif %}">
+              <a href="/artigos/" class="nav-link {% if page.url == '/artigos/' %} active{% endif %}">Artigos</a>
+            </li>
             <li class="nav-item dropdown {% if page.url == '/catalogo/' %} active{% endif %}">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -72,26 +78,19 @@ layout: compress
                 </li>
               </ul>
             </li>
-            <li class="nav-item {% if page.url == '/artigos/' %} active{% endif %}">
-              <a href="/artigos/" class="nav-link {% if page.url == '/artigos/' %} active{% endif %}">Artigos</a>
-            </li>
-            <li class="nav-item {% if page.url == '/contato/' %} active{% endif %}">
-              <a href="/curriculum/" class="nav-link {% if page.url == '/contato/' %} active{% endif %}">Curriculum</a>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Em breve</a>
             </li>
             <li class="nav-item {% if page.url == '/contato/' %} active{% endif %}">
               <a href="/contato/" class="nav-link {% if page.url == '/contato/' %} active{% endif %}">Contato</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Em breve</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
           </ul>
+          {% comment %}
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
+          {% endcomment %}
         </div>
       </div>
     </nav>
