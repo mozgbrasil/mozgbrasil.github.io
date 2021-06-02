@@ -6,5 +6,5 @@ if [ -f Gemfile ]; then
     bundle install
 else
     # If there's no Gemfile, install Jekyll
-    sudo gem install jekyll
+    echo "sudo gem install jekyll"
 fi

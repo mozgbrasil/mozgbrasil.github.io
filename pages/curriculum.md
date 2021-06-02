@@ -145,6 +145,8 @@ https://acid-workspace-create-react-app.netlify.app/
 
 https://acid-workspace-create-react-app.netlify.app/.netlify/functions/server
 
+https://acid-workspace-create-next-app.netlify.app/
+
 Sendo implantado
 
 https://acid-workspaces.herokuapp.com/
@@ -154,6 +156,8 @@ https://acid-create-react-app.herokuapp.com/
 https://acid-create-next-app.herokuapp.com/
 
 https://acid-create-express-app.herokuapp.com/
+
+https://acid-create-next-app.herokuapp.com/
 
 ## Fundação Carlos Alberto Vanzolini - GTE - Gestão de Tecnologias em Educação
 
