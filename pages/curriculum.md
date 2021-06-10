@@ -8,82 +8,61 @@ excerpt: "Ética e compromisso, prezando por desenvolver tecnologia que agreguem
 
 # Curriculum
 
-[Marcio dos Santos Amorim](https://github.com/mozgbrasil)
+- [Marcio dos Santos Amorim](https://github.com/mozgbrasil)
+- [Av. Campanella, 1297](https://www.google.com/maps/place/Av.+Campanella,+1297+-+Jardim+Itapemirim,+S%C3%A3o+Paulo+-+SP/data=!4m2!3m1!1s0x94ce66ced8e61d11:0x4e5491d98f877e9e?sa=X&ved=2ahUKEwjVv-XXgLboAhXEH7kGHZjeCfkQ8gEwAHoECAsQAQ), apto. 14, Itaquera
+- CEP. 08220-831 - São Paulo - SP
+- Cel. [(11) 97707-2339](https://api.whatsapp.com/send?phone=5511977072339&text=) - e-mail: <mozgbrasil@gmail.com>
+- Brasileiro - 39 anos - Solteiro
 
-[Av. Campanella, 1297](https://www.google.com/maps/place/Av.+Campanella,+1297+-+Jardim+Itapemirim,+S%C3%A3o+Paulo+-+SP/data=!4m2!3m1!1s0x94ce66ced8e61d11:0x4e5491d98f877e9e?sa=X&ved=2ahUKEwjVv-XXgLboAhXEH7kGHZjeCfkQ8gEwAHoECAsQAQ), apto. 14, Itaquera
-
-CEP. 08220-831 - São Paulo - SP
-
-Cel. [(11) 97707-2339](https://api.whatsapp.com/send?phone=5511977072339&text=) - e-mail: <mozgbrasil@gmail.com>
-
-Brasileiro - 39 anos - Solteiro
 # Objetivo
 
-- Analista e Desenvolvedor de Sistemas Sênior
+- Análise e Desenvolvimento de Sistemas
 
 # Resumo das qualificações
 
 - Desenvolvimento com metodologias ágeis
-
-- Amplo conhecimento em bancos de dados relacionais e não relacionais
-
+- Amplo conhecimento em bancos de dados [relacionais](https://pt.wikipedia.org/wiki/Banco_de_dados_relacional) e [não relacionais](https://pt.wikipedia.org/wiki/NoSQL)
 - Conhecimento em aplicações escaláveis e infraestrutura
-
 - Amplo conhecimento em [UX](https://pt.wikipedia.org/wiki/Experi%C3%AAncia_do_usu%C3%A1rio) e [UI Design](https://pt.wikipedia.org/wiki/Design_de_interface_de_usu%C3%A1rio)
-
 - Conhecimento em [ETL](https://pt.wikipedia.org/wiki/Extract,_transform,_load), [BI](https://pt.wikipedia.org/wiki/Intelig%C3%AAncia_empresarial), [Dashboards](<https://en.wikipedia.org/wiki/Dashboard_(business)>)
 
 # Qualificações Técnicas
 
 - Desenvolvimento: [Node.js](https://nodejs.org/en/), [React](https://reactjs.org/), [Angular](https://angular.io/), [PHP](https://www.php.net/), [Ruby](https://www.ruby-lang.org/pt/), [Python](https://www.python.org/), [HTML5](https://pt.wikipedia.org/wiki/HTML5), [CSS3](https://pt.wikipedia.org/wiki/CSS3), [ASP](https://pt.wikipedia.org/wiki/ASP), [Coldfusion](https://www.adobe.com/br/products/coldfusion-family.html), Frameworks Javascript e CSS, [Bootstrap](https://getbootstrap.com/), [Jquery](https://jquery.com/), [Ajax](<https://pt.wikipedia.org/wiki/Ajax_(programa%C3%A7%C3%A3o)>) ...
-
 - Metodologias: [Scrum](<https://pt.wikipedia.org/wiki/Scrum_(desenvolvimento_de_software)>), [KanBan](https://pt.wikipedia.org/wiki/Kanban), [Git](https://pt.wikipedia.org/wiki/Git), [GitFlow](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04)
-
 - Infraestrutura: [Heroku](https://www.heroku.com/), [Clever Cloud](https://www.clever-cloud.com/en/), [Zeit.co](https://zeit.co/), [Openshift](https://www.openshift.com/), [AWS (Amazon Web Services)](https://aws.amazon.com/pt/), [Microsoft Azure](https://azure.microsoft.com/pt-br/), [Google Cloud Platform](https://cloud.google.com/)
-
 - Ferramentas: [Google Apps](https://gsuite.google.com/), [Trello](https://trello.com/), [FreshDesk](https://freshdesk.com/), [Slack](https://slack.com/), [Magento](https://magento.com/), [Jira](https://pt.wikipedia.org/wiki/Jira), [GitLab](https://pt.wikipedia.org/wiki/GitLab), [GitHub](https://pt.wikipedia.org/wiki/GitHub), [Bitbucket](https://pt.wikipedia.org/wiki/Bitbucket), [Sentry](https://sentry.io/), [VS Code](https://code.visualstudio.com/)
-
-- Bancos de dados relacionais: [Microsoft SQL Server](https://pt.wikipedia.org/wiki/Microsoft_SQL_Server), [MySQL](https://pt.wikipedia.org/wiki/MySQL), [PostgreSQL](https://pt.wikipedia.org/wiki/PostgreSQL), [Oracle Database](<https://pt.wikipedia.org/wiki/Oracle_(banco_de_dados)>),
-
+- Bancos de dados relacionais: [Microsoft SQL Server](https://pt.wikipedia.org/wiki/Microsoft_SQL_Server), [MySQL](https://pt.wikipedia.org/wiki/MySQL), [PostgreSQL](https://pt.wikipedia.org/wiki/PostgreSQL), [Oracle Database](<https://pt.wikipedia.org/wiki/Oracle_(banco_de_dados)>)
 - Bancos de dados não-relacionais: [ElasticSearch](https://www.elastic.co/), [Redis](https://redis.io/ "Redis"), [MongoDB](https://pt.wikipedia.org/wiki/MongoDB)
-
 - Sistemas Operacionais: [Linux](https://pt.wikipedia.org/wiki/Linux), [Windows](https://pt.wikipedia.org/wiki/Microsoft_Windows) e [macOS](https://pt.wikipedia.org/wiki/MacOS)
-
 - Containers: [Docker](https://www.docker.com/)
 
 # Formação Acadêmica
 
-Colégio Integrado Santa Inês S/C Ltda.
-
-Curso de Processamento de Dados
-
-01/1997 até 12/1999
-
-Concluído a 3ª série do 2º grau em 1999
+- Colégio Integrado Santa Inês S/C Ltda.
+- Curso de Processamento de Dados
+- 01/1997 até 12/1999
+- Concluído a 3ª série do 2º grau em 1999
 
 # Formação profissional
 
 ## Impacta Tecnologia
 
 - ICS - [Impacta](https://www.impacta.com.br/) Certified Specialist - Web-Master e-commerce developer - 03/08/2000
-
 - ICS - [Impacta](https://www.impacta.com.br/) Certified Specialist - 2324 - Administrando Microsoft SQL Server 2000 Database - 01/07/2002
 
 # Idiomas
 
 - Português / Fluente, para leitura, fala e escrita
-
 - Inglês / Intermediário, para leitura, fala e escrita
-
 - Espanhol / Básico, para leitura, fala e escrita
 
 # Experiência profissional
 
 ## SUPPORTCOMM S/A
 
-Analista e Desenvolvedor de Sistemas Sênior / PJ
-
-22/07/2020 até 05/11/2020
+- Analista e Desenvolvedor de Sistemas Sênior / PJ
+- 22/07/2020 até 05/11/2020
 
 Como prestador de serviço com contrato temporário para [SupportComm](https://www.supportcomm.com.br/)
 
@@ -99,71 +78,49 @@ Para o fluxo de desenvolvimento foi utilizado o [Jira](https://pt.wikipedia.org/
 
 Em 2021 venho me aperfeiçoando e adotando novas prática para desenvolvimento em container [Docker](https://github.com/mozgbrasil/docker "Docker") com suporte a multiplataformas
 
-Venho desenvolvendo a seguinte extensão [Stremio-Addon](https://9b7c457c25d2-stremio-addon.baby-beamup.club/) em [Node.js](https://nodejs.org/en/ "Node.js") para a plataforma [Stremio](https://www.stremio.com/) utilizando o [Stremio Addon SDK](https://github.com/Stremio/stremio-addon-sdk), o projeto está disponivel de forma publica em [Stremio-Addon](https://github.com/mozgbrasil/stremio-addon)
+Venho desenvolvendo a seguinte extensão [Stremio-Addon](https://9b7c457c25d2-stremio-addon.baby-beamup.club/) em [Node.js](https://nodejs.org/en/ "Node.js") para a plataforma [Stremio](https://www.stremio.com/) utilizando o [Stremio Addon SDK](https://github.com/Stremio/stremio-addon-sdk), o projeto está disponível de forma publica em [Stremio-Addon](https://github.com/mozgbrasil/stremio-addon)
 
-Venho desenvolvendo melhorias para o site institucional em Jekyll/Ruby
+Venho desenvolvendo melhorias para o site institucional em [Jekyll](<https://en.wikipedia.org/wiki/Jekyll_(software)>)/[Ruby](<https://pt.wikipedia.org/wiki/Ruby_(linguagem_de_programa%C3%A7%C3%A3o)>)
 
-Venho desenvolvendo projeto monorepo em Node.js usando metodologias CI e CD
+Venho desenvolvendo projeto monorepo em Node.js usando metodologias "Continuous Integration ([CI](https://pt.wikipedia.org/wiki/Integra%C3%A7%C3%A3o_cont%C3%ADnua))" e "Continuous Delivery ([CD](https://pt.wikipedia.org/wiki/Entrega_cont%C3%ADnua))" em diversas "Platform as a Service ([PaaS](https://pt.wikipedia.org/wiki/Plataforma_como_servi%C3%A7o))"
 
-Utilizando "Continuous Integration" em
+Utilizando "Continuous Integration ([CI](https://pt.wikipedia.org/wiki/Integra%C3%A7%C3%A3o_cont%C3%ADnua))" em repositórios privado no [github](https://github.com/mozgbrasil/acid-workspaces), [bitbucket](https://bitbucket.org/mozgbrasil/acid-workspaces) e [gitlab](https://gitlab.com/mozgbrasil/acid-workspaces)
 
-https://github.com/mozgbrasil/acid-workspaces
+Utilizando "Continuous Delivery ([CD](https://pt.wikipedia.org/wiki/Entrega_cont%C3%ADnua))" nas seguintes "Platform as a Service ([PaaS](https://pt.wikipedia.org/wiki/Plataforma_como_servi%C3%A7o))"
 
-https://bitbucket.org/mozgbrasil/acid-workspaces
-
-https://gitlab.com/mozgbrasil/acid-workspaces
-
-Utilizando "Continuous Deployment/Delivery" em
-
-https://vercel.com/
-
-https://netlify.com/
-
-https://heroku.com/
+- https://vercel.com/
+- https://netlify.com/
+- https://heroku.com/
 
 Sendo implantado
 
-https://acid-workspaces.vercel.app/
-
-https://acid-workspace-create-react-app.vercel.app/
-
-https://acid-workspace-create-react-app.vercel.app/api/go/date/
-
-https://acid-workspace-create-react-app.vercel.app/api/js/hello/
-
-https://acid-workspace-create-react-app.vercel.app/api/js/express/
-
-https://acid-workspace-create-react-app.vercel.app/api/rb/hello/
-
-https://acid-workspace-create-next-app.vercel.app/
+- https://acid-workspaces.vercel.app/
+- https://acid-workspace-create-react-app.vercel.app/
+- https://acid-workspace-create-react-app.vercel.app/api/go/date/
+- https://acid-workspace-create-react-app.vercel.app/api/js/hello/
+- https://acid-workspace-create-react-app.vercel.app/api/js/express/
+- https://acid-workspace-create-react-app.vercel.app/api/rb/hello/
+- https://acid-workspace-create-next-app.vercel.app/
 
 Sendo implantado
 
-https://acid-workspaces.netlify.app/
-
-https://acid-workspace-create-react-app.netlify.app/
-
-https://acid-workspace-create-react-app.netlify.app/.netlify/functions/server
-
-https://acid-workspace-create-next-app.netlify.app/
+- https://acid-workspaces.netlify.app/
+- https://acid-workspace-create-react-app.netlify.app/
+- https://acid-workspace-create-react-app.netlify.app/.netlify/functions/server
+- https://acid-workspace-create-next-app.netlify.app/
 
 Sendo implantado
 
-https://acid-workspaces.herokuapp.com/
-
-https://acid-create-react-app.herokuapp.com/
-
-https://acid-create-next-app.herokuapp.com/
-
-https://acid-create-express-app.herokuapp.com/
-
-https://acid-create-next-app.herokuapp.com/
+- https://acid-workspaces.herokuapp.com/
+- https://acid-create-react-app.herokuapp.com/
+- https://acid-create-next-app.herokuapp.com/
+- https://acid-create-express-app.herokuapp.com/
+- https://acid-create-next-app.herokuapp.com/
 
 ## Fundação Carlos Alberto Vanzolini - GTE - Gestão de Tecnologias em Educação
 
-Analista e Desenvolvedor de Sistemas Sênior / PJ
-
-07/08/2019 até 31/12/2019
+- Analista e Desenvolvedor de Sistemas Sênior / PJ
+- 07/08/2019 até 31/12/2019
 
 Como prestador de serviço com contrato temporário pela [Vanzolini - GTE](https://www.vanzolini-gte.org.br/)
 
@@ -171,21 +128,16 @@ Participei do desenvolvimento no projeto [Escola Digital](https://escoladigital.
 
 Para o fluxo de desenvolvimento foi utilizado o gerenciador de projetos [Trello](https://trello.com/) em conjunto com o [GitLab](https://pt.wikipedia.org/wiki/GitLab) adotando a metodologia [GitFlow](https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04 "GitFlow") para o sistema de controle de versão [Git](https://pt.wikipedia.org/wiki/Git "Git") e o [VS Code](https://code.visualstudio.com/) como [IDE](https://pt.wikipedia.org/wiki/Ambiente_de_desenvolvimento_integrado)
 
-Desde 02/2020 pessoalmente
-
-Venho desenvolvendo o seguinte [projeto](https://mozg.com.br/react-labs/ "App") utilizando como camada front-end o [React](https://reactjs.org/ "React") rodando sobre a infraestrutura do [Github](https://github.com/ "Github") usando o serviço [GithubPages](https://pages.github.com/ "GithubPages"), e o seguinte [projeto](https://express.mozgbrasil.now.sh/ "Api") utilizando como camada back-end o [Node.js](https://nodejs.org/en/ "Node.js") rodando sobre a infraestrutura do [Heroku](https://limitless-peak-33910.herokuapp.com/), também aproveitando o projeto para funcionar como [Extensão de navegador](https://en.wikipedia.org/wiki/Browser_extension) onde venho disponibilizando a seguinte extensão para [Firefox](https://addons.mozilla.org/pt-BR/firefox/addon/mozg-react/)
+Desde 02/2020 venho desenvolvendo o seguinte [projeto](https://mozg.com.br/react-labs/ "App") utilizando como camada front-end o [React](https://reactjs.org/ "React") rodando sobre a infraestrutura do [Github](https://github.com/ "Github") usando o serviço [GithubPages](https://pages.github.com/ "GithubPages"), e o seguinte [projeto](https://express.mozgbrasil.now.sh/ "Api") utilizando como camada back-end o [Node.js](https://nodejs.org/en/ "Node.js") rodando sobre a infraestrutura do [Heroku](https://limitless-peak-33910.herokuapp.com/), também aproveitando o projeto para funcionar como [Extensão de navegador](https://en.wikipedia.org/wiki/Browser_extension) onde venho disponibilizando a seguinte extensão para [Firefox](https://addons.mozilla.org/pt-BR/firefox/addon/mozg-react/)
 
 Venho desenvolvendo o seguinte [Aplicativo](https://play.google.com/store/apps/details?id=com.mozg.pegaso) utilizando o [React-Native](https://reactnative.dev/)
 
 ## CEREBRUM Comércio Eletrônico Ltda ME
 
-Analista e Desenvolvedor de Sistemas Sênior / PJ
+- Analista e Desenvolvedor de Sistemas Sênior / PJ
+- 04/2005 até 13/08/2018
 
-04/2005 até 13/08/2018
-
-Se tratando da minha empresa
-
-Em 13 anos prestando serviços a [CEREBRUM](https://www.cerebrum.com.br/sobre-nos/ "CEREBRUM") como empreendedor e desenvolvedor destaco algumas passagens dessa trajetória
+Se trata da minha empresa, onde nesse período de 13 anos como empreendedor e desenvolvedor destaco algumas passagens dessa trajetória
 
 No período entre 2005 e 2008 alem de prestação de serviços relacionada a desenvolvimento de sistemas web a terceiros como o projeto para gerenciamento gráfico especificamente de embalagens para a [Santim Artes Gráficas](http://www.santim.com.br/), também o projeto para gerenciamento imobiliário para a [Rarus Flats](https://www.rarusflats.com.br/) onde foi usado a tecnologia [Adobe Flex](https://pt.wikipedia.org/wiki/Adobe_Flex), também desenvolvemos por conta própria sistemas de criação de sites e loja virtuais usando como linguagem back-end o [Coldfusion](https://www.adobe.com/products/coldfusion-family.html "Coldfusion"), atendendo diversos clientes de diversos portes como [Oregon Scientific](https://www.oregonscientific.com.br/ "Oregon Scientific")
 
@@ -229,17 +181,15 @@ Venho desenvolvendo o seguinte [projeto](http://35.194.61.252:3000/ "Portfólio"
 
 ## Sombre Reptile
 
-Analista Programador
-
-01/10/2003 até 15/07/2004
+- Analista Programador
+- 01/10/2003 até 15/07/2004
 
 Participei do desenvolvimento de aplicações para a intranet e reformulação do Site Institucional e do Portal de Comunicações da Petroquímica União situada ["PQU"](http://www.utc.com.br/ "PQU") no Polo Petroquímico de Capuava, em Santo André.
 
 ## Símbolo Editora e Comunicação Integrada S/A
 
-Analista Programador Jr / CLT
-
-01/04/2002 até 18/09/2003
+- Analista Programador Jr / CLT
+- 01/04/2002 até 18/09/2003
 
 Participei do desenvolvimento de uma série de aplicações de uso interno e externo todas escritas na linguagem [Coldfusion](https://www.adobe.com/products/coldfusion-family.html "Coldfusion") em conjunto com o Gerenciador de Banco de Dados [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2017 "SQL Server")
 
@@ -249,32 +199,28 @@ Para o site da [DietaJá](http://www.dietaja.com.br/ "DietaJá") foi criado um g
 
 ## PIC - Projetos de Informação e Consultoria Ltda
 
-Programador Trainee / CLT
-
-09/04/2001 até 21/03/2002
+- Programador Trainee / CLT
+- 09/04/2001 até 21/03/2002
 
 Participei do desenvolvimento dos portais Nihonsite de propriedade da (PIC) e Conexão RH de propriedade da (Telesp Celular), em ambas aplicações foram utilizado as linguagens ASP e [Coldfusion](https://www.adobe.com/products/coldfusion-family.html "Coldfusion") em conjunto com os Gerenciadores de Banco de Dados: [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2017 "SQL Server") e [Oracle Database](https://www.oracle.com/database/technologies/index.html "Oracle Database")
 
 ## Dimetal - Distribuidora de produtos metalúrgicos
 
-Auxiliar administrativo / CLT
-
-01/09/1999 até 28/04/2000
+- Auxiliar administrativo / CLT
+- 01/09/1999 até 28/04/2000
 
 Com o fechamento da CASIL fui convidado pelos administradores a atuar na mesma função com a mesma equipe de contabilidade mas na DIMETAL que se trata de uma das empresas da família Salles Leite
 
 ## CASIL S/A
 
-Mensageiro / CLT
-
-02/01/1998 até 31/08/1999
+- Mensageiro / CLT
+- 02/01/1998 até 31/08/1999
 
 Iniciando como mensageiro em pouco tempo fui trabalhar como estagiário no setor de tecnologia devido a necessidade do colégio de processamento de dados ao qual eu me graduei, atuei também no setor de contabilidade efetuando procedimentos como: classificação de contas, lançamentos, conciliações entre outros serviços do setor
 
 ## AMESP Saúde Ltda
 
-Office Boy / CLT
-
-12/07/1996 até 09/09/1997
+- Office Boy / CLT
+- 12/07/1996 até 09/09/1997
 
 Prestando serviços gerais internos e externos

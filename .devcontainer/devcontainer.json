@@ -12,11 +12,30 @@
 
   // Set *default* container specific settings.json values on container create.
   "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash",
-    // "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "[html]": {
-      "editor.defaultFormatter": "sissel.shopify-liquid"
+    //
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.stylelint": true,
+      "source.fixAll.tslint": true,
+      "source.organizeImports": false
     },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.wordWrap": "on",
+    //
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
+    "[html]": {
+      "editor.defaultFormatter": "sissel.shopify-liquid",
+      "editor.formatOnSave": true
+    },
+    "cSpell.language": "en,pt",
+    "git.autofetch": true,
+    "eslint.alwaysShowStatus": true,
+    "liquid.format": true,
     // https://github.com/baky0905/remote-container-python/blob/master/.devcontainer/devcontainer.json
     // ---------------- EDITOR SETTINGS
     "editor.acceptSuggestionOnEnter": "off",
@@ -175,6 +194,7 @@
     "rogalmic.bash-debug",
     "shan.code-settings-sync",
     "sissel.shopify-liquid",
+    "streetsidesoftware.code-spell-checker-portuguese-brazilian",
     "tht13.html-preview-vscode",
     "timonwong.shellcheck",
     "visualstudioexptteam.vscodeintellicode",
@@ -182,8 +202,7 @@
     "wingrunr21.vscode-ruby",
     "wmaurer.change-case",
     "xxamxx.vscode-rubygems",
-    "yurydelendik.firefox-debug",
-    "yzhang.markdown-all-in-one"
+    "yurydelendik.firefox-debug"
   ],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
