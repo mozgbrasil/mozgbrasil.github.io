@@ -68,6 +68,35 @@
   border: 2px dotted #cd1821;
 } */
 
+/* https://getbootstrap.com/docs/4.4/layout/overview/#responsive-breakpoints */
+/* Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) {
+  * {
+    border: 1px solid purple;
+  }
+} */
+
+/* Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) {
+  * {
+    border: 1px solid green;
+  }
+} */
+
+/* Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) {
+  * {
+    border: 1px solid blue;
+  }
+} */
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) {
+  * {
+    border: 1px solid orangered;
+  }
+} */
+
 /* https://fonts.googleapis.com/css2?family=Catamaran&display=swap  */
 
 /* tamil */
@@ -166,11 +195,21 @@ body {
   /* font-size: 1.1rem; */
 }
 
-header,
-main,
-footer {
+header {
   border-bottom: 1px solid #cccccc;
-  border-top: 1px solid #dddddd;
+}
+
+main {
+  border-bottom: 1px solid #cccccc;
+}
+
+footer {
+  background-color: #00112c;
+  /* min-height: 100%; */
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 header {
@@ -246,6 +285,18 @@ header {
   border-radius: 0.28571429rem;
   box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
 }
+
+/* .cards:nth-child(1) {
+    background-color: rgba(255, 255, 180, 0.5);
+}
+.card:nth-child(2) {
+    background-color: rgba(255, 180, 255, 0.5);
+    margin: 10px;
+}
+.card:nth-child(3) {
+    background-color: rgba(180, 255, 255, 0.5);
+    margin: 20px;
+} */
 
 .card-block {
   font-size: 1em;
