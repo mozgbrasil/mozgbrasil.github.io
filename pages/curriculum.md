@@ -95,19 +95,24 @@ Utilizando "Continuous Delivery ([CD](https://pt.wikipedia.org/wiki/Entrega_cont
 Sendo implantado
 
 - https://acid-workspaces.vercel.app/
+- https://acid-workspaces.vercel.app/api/js/express/
 - https://acid-workspace-create-react-app.vercel.app/
+- https://acid-workspace-create-react-app.vercel.app/api/js/express/
 - https://acid-workspace-create-react-app.vercel.app/api/go/date/
 - https://acid-workspace-create-react-app.vercel.app/api/js/hello/
-- https://acid-workspace-create-react-app.vercel.app/api/js/express/
 - https://acid-workspace-create-react-app.vercel.app/api/rb/hello/
 - https://acid-workspace-create-next-app.vercel.app/
+- https://acid-workspace-react-labs.vercel.app/
 
 Sendo implantado
 
 - https://acid-workspaces.netlify.app/
 - https://acid-workspace-create-react-app.netlify.app/
-- https://acid-workspace-create-react-app.netlify.app/.netlify/functions/server
+- https://acid-workspace-create-react-app.netlify.app/.netlify/functions/express
+- https://acid-workspace-create-react-app.netlify.app/.netlify/functions/hello
+- https://acid-workspace-create-react-app.netlify.app/.netlify/functions/lambd
 - https://acid-workspace-create-next-app.netlify.app/
+- https://acid-workspace-react-labs.netlify.app/
 
 Sendo implantado
 
@@ -115,7 +120,8 @@ Sendo implantado
 - https://acid-create-react-app.herokuapp.com/
 - https://acid-create-next-app.herokuapp.com/
 - https://acid-create-express-app.herokuapp.com/
-- https://acid-create-next-app.herokuapp.com/
+- https://acid-react-labs.herokuapp.com/
+- https://acid-express-labs.herokuapp.com/
 
 ## Fundação Carlos Alberto Vanzolini - GTE - Gestão de Tecnologias em Educação
 
