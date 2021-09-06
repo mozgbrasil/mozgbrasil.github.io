@@ -1,0 +1,7 @@
+<div class="bs-callout bs-callout-info">
+    <ul class="nav nav-pills" role="tablist">
+        {% for category in site.categories limit:site.recent_items %}
+            <li role="presentation" class="active"><a class="" href="/categorias/#{{ category | first }}">{{ category | first }} <span class="badge">{{ category | last | size }}</span></a></li>
+        {% endfor %}
+    </ul>
+</div>

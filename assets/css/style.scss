@@ -1,0 +1,85 @@
+---
+---
+
+// @import "{{ site.theme }}";
+// _sass/themes/mozth001/mozth001.scss
+// @import "themes/mozth001/mozth001";
+
+@import "themes/default/variables";
+
+@import "lib/bootstrap-5.1.0/bootstrap";
+// @import "lib/bootstrap-4.1.2/bootstrap";
+
+// @import "lib/fontawesome-free-5.15.4/fontawesome";
+@import "lib/font-awesome-4.6.3/font-awesome";
+
+// @import "themes/default/default";
+
+// @import "themes/gsdk/gsdk";
+
+@import "lib/aos-2.3.4/aos";
+
+@import "themes/mozth001/mozth001";
+
+// Scaffolding
+// -------------------------
+
+// html {
+//   position: relative;
+//   min-height: 100%;
+// }
+
+// body {
+//   //   padding-top: 80px;
+//   margin-bottom: 75px;
+// }
+
+// footer {
+//   position: absolute;
+//   bottom: 0;
+//   width: 100%;
+
+//   p,
+//   ul {
+//     margin-bottom: 0;
+//   }
+// }
+
+// Input Fields
+// -------------------------
+
+// textarea {
+//   resize: vertical;
+// }
+
+// Navbar
+// -------------------------
+
+.navbar-nav img {
+  width: 30px;
+  height: 30px;
+  margin: -15px 15px -15px;
+}
+
+// Alerts
+// -------------------------
+
+.alert {
+  margin-top: 20px;
+}
+
+// Thumbnails
+// -------------------------
+
+.thumbnail {
+  padding: 0;
+  border-radius: 0;
+  box-shadow: 0 0 5px #ccc, inset 0 0 0 #000;
+}
+
+// Font Icons
+// -------------------------
+
+.fa {
+  margin-right: 6px;
+}

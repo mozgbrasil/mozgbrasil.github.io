@@ -1,0 +1,225 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.177.0/containers/jekyll
+{
+  "name": "Jekyll (Community)",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      // Enable Node.js: pick the latest LTS version
+      "NODE_VERSION": "lts/*"
+    }
+  },
+
+  // Set *default* container specific settings.json values on container create.
+  "settings": {
+    //
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.stylelint": true,
+      "source.fixAll.tslint": true,
+      "source.organizeImports": false
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.wordWrap": "on",
+    //
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
+    "[html]": {
+      "editor.defaultFormatter": "sissel.shopify-liquid",
+      "editor.formatOnSave": true
+    },
+    "cSpell.language": "en,pt",
+    "git.autofetch": true,
+    "eslint.alwaysShowStatus": true,
+    "liquid.format": true,
+    // https://github.com/baky0905/remote-container-python/blob/master/.devcontainer/devcontainer.json
+    // ---------------- EDITOR SETTINGS
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.cursorStyle": "line",
+    "editor.cursorWidth": 5,
+    "editor.cursorBlinking": "solid",
+    "editor.fontWeight": "500",
+    // "editor.fontFamily": "Fira Code",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    // "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "editor.lineHeight": 22,
+    "editor.letterSpacing": 0.5,
+    "editor.minimap.enabled": false,
+    "editor.parameterHints.enabled": true,
+    "editor.renderWhitespace": "selection",
+    "editor.renderControlCharacters": true,
+    "editor.snippetSuggestions": "bottom",
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.suggest.localityBonus": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "on",
+    "editor.wordBasedSuggestions": false,
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": false
+    },
+    "editor.quickSuggestionsDelay": 2,
+    "editor.tokenColorCustomizations": {
+      "comments": "#aaa",
+      "types": "#f66",
+      "textMateRules": [
+        {
+          "scope": "variable.parameter",
+          "settings": {
+            "fontStyle": "bold",
+            "foreground": "#FF0000"
+          }
+        }
+      ],
+      "functions": {
+        "fontStyle": "italic"
+      }
+    },
+    // ---------------- WORKBENCH SETTINGS
+    "workbench.colorTheme": "SynthWave '84",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "right",
+    "workbench.settings.editor": "json",
+    "workbench.startupEditor": "none",
+    "workbench.colorCustomizations": {
+      "contrastActiveBorder": "#0ff"
+    },
+    // ---------------- EXPLORER SETTINGS
+    "explorer.openEditors.visible": 0,
+    "breadcrumbs.enabled": true,
+    "peacock.favoriteColors": [
+      {
+        "name": "Angular Red",
+        "value": "#b52e31"
+      },
+      {
+        "name": "Auth0 Orange",
+        "value": "#eb5424"
+      },
+      {
+        "name": "Azure Blue",
+        "value": "#007fff"
+      },
+      {
+        "name": "C# Purple",
+        "value": "#68217A"
+      },
+      {
+        "name": "Gatsby Purple",
+        "value": "#639"
+      },
+      {
+        "name": "Go Cyan",
+        "value": "#5dc9e2"
+      },
+      {
+        "name": "Java Blue-Gray",
+        "value": "#557c9b"
+      },
+      {
+        "name": "JavaScript Yellow",
+        "value": "#f9e64f"
+      },
+      {
+        "name": "Mandalorian Blue",
+        "value": "#1857a4"
+      },
+      {
+        "name": "Node Green",
+        "value": "#215732"
+      },
+      {
+        "name": "React Blue",
+        "value": "#00b3e6"
+      },
+      {
+        "name": "Something Different",
+        "value": "#832561"
+      },
+      {
+        "name": "Vue Green",
+        "value": "#42b883"
+      }
+    ]
+  },
+
+  // Add the IDs of extensions you want installed when the container is created.
+  "extensions": [
+    "alefragnani.project-manager",
+    "alexcvzz.vscode-sqlite",
+    "almenon.arepl",
+    "bat67.markdown-extension-pack",
+    "benspaulding.procfile",
+    "bungcip.better-toml",
+    "christian-kohler.path-intellisense",
+    "coenraads.bracket-pair-colorizer-2",
+    "dbaeumer.vscode-eslint",
+    "ecmel.vscode-html-css",
+    "EditorConfig.EditorConfig",
+    "eg2.vscode-npm-script",
+    "equinusocio.vsc-community-material-theme",
+    "equinusocio.vsc-material-theme",
+    "esbenp.prettier-vscode",
+    "firefox-devtools.vscode-firefox-debug",
+    "formulahendry.code-runner",
+    "formulahendry.vscode-mysql",
+    "foxundermoon.shell-format",
+    "gamunu.vscode-yarn",
+    "github.vscode-pull-request-github",
+    "hoovercj.ruby-linter",
+    "humao.rest-client",
+    "johnpapa.vscode-peacock",
+    "kevinrose.vsc-python-indent",
+    "mikestead.dotenv",
+    "misogi.ruby-rubocop",
+    "mongodb.mongodb-vscode",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "natqe.reload",
+    "njpwerner.autodocstring",
+    "oderwat.indent-rainbow",
+    "perkovec.emoji",
+    "pkief.material-icon-theme",
+    "rebornix.ruby",
+    "ritwickdey.liveserver",
+    "robbowen.synthwave-vscode",
+    "rogalmic.bash-debug",
+    "shan.code-settings-sync",
+    "sissel.shopify-liquid",
+    "streetsidesoftware.code-spell-checker-portuguese-brazilian",
+    "streetsidesoftware.code-spell-checker",
+    "tht13.html-preview-vscode",
+    "timonwong.shellcheck",
+    "visualstudioexptteam.vscodeintellicode",
+    "vscode-icons-team.vscode-icons",
+    "WakaTime.vscode-wakatime",
+    "wingrunr21.vscode-ruby",
+    "wmaurer.change-case",
+    "xxamxx.vscode-rubygems",
+    "yurydelendik.firefox-debug"
+  ],
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [
+    // Jekyll server
+    4000,
+    // Live reload server
+    35729
+  ],
+
+  "mounts": ["source=volume-ruby-bundle,target=/usr/local/bundle,type=volume"],
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "sh .devcontainer/post-create.sh",
+
+  // Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+  "remoteUser": "vscode"
+}

@@ -1,0 +1,7 @@
+<div class="bs-callout bs-callout-info">
+    <ul class="nav nav-pills" role="tablist">
+        {% for tag in site.tags limit:site.recent_items %}
+            <li role="presentation" class="active"><a class="" href="/tags/#{{ tag | first }}">{{ tag | first }} <span class="badge">{{ tag | last | size }}</span></a></li>
+        {% endfor %}
+    </ul>
+</div>

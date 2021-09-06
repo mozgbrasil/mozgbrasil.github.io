@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{% comment %}
+{{ site | debug }}
+{{ page | debug }}
+{{ site.posts | debug }}
+{{ paginator | debug }}
+{% endcomment %}
+
+<div class="anchorar">
+    <div class="row">
+        <div class="col-md-12">
+            {{ content }}
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            {% include snippet-disqus.html %}
+        </div>
+    </div>
+</div>

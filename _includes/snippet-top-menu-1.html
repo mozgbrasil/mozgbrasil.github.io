@@ -1,0 +1,57 @@
+<div class="ui container">
+    <div class="ui large inverted secondary network menu">
+        <div class="item">
+            <div class="ui logo shape">
+                <div class="sides">
+                    <div class="active ui side">
+                        <a class="ui logo icon image" href="/">
+                            <img class="ui image" height="40" src="https://0.gravatar.com/avatar/38385ec9b5375a77513a4dad6aebca08?s=180g" width="40">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="view-ui item">
+            <i class="sidebar icon"></i>
+            Menu
+        </a>
+        <div class="right menu">
+            <div class="item" style="width:170px !important;">
+                {% include snippet-facebook-like-button.html %}
+                <img class="ui image" height="2" src="/assets/images/template/1x1px.png" width="1">
+                {% include snippet-facebook-send-button.html %}
+            </div>
+            <div class="item" style="width:190px !important;">
+                {% include snippet-twitter-follow-button.html %}
+                {% include snippet-twitter-tweet-button.html %}
+            </div>
+            <div class="item" style="width:60px !important; margin-top:-22px;">
+                {% include snippet-github.html %}
+            </div>
+            <div class="item" style="width:310px !important; margin-top:-22px;">
+                {% include snippet-google-custom-search.html %}
+            </div>
+            {% comment %}
+            {% assign sorted_pages = site.pages | sort:"order" %}
+            {% for node in sorted_pages %}
+            {% if node.title %}
+            {% if node.permalink == "" %}
+            {% capture icon_tag %}home{% endcapture %}
+            {% elsif node.permalink == '/about/' %}
+            {% capture icon_tag %}copyright{% endcapture %}
+            {% elsif node.permalink == '/contact/' %}
+            {% capture icon_tag %}at{% endcapture %}
+            {% elsif node.permalink == '/category/' %}
+            {% capture icon_tag %}idea{% endcapture %}
+            {% elsif node.permalink == '/tag/' %}
+            {% capture icon_tag %}tag{% endcapture %}
+            {% else %}
+            {% capture icon_tag %}home{% endcapture %}
+            {% endif %}
+            <a class="item" href="{{ node.url | prepend: site.baseurl }}"><i class="{{ icon_tag }} icon"></i>{{ node.title }}</a>
+            {% endif %}
+            {% endfor %}
+            {% endcomment %}
+        </div>
+    </div>
+</div>
