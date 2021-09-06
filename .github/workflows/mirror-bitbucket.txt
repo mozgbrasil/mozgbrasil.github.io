@@ -1,0 +1,20 @@
+# https://github.com/wearerequired/git-mirror-action
+#
+# https://github.com/mozgbrasil/acid-workspaces/settings/secrets/actions
+#
+# SSH_PRIVATE_KEY=$(cat ~/.ssh/id_rsa)
+
+name: 👇️ Mirror to Bitbucket Repo
+
+on: [push, delete, create]
+
+jobs:
+  git-mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: wearerequired/git-mirror-action@v1
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        with:
+          source-repo: "git@github.com:mozgbrasil/acid-workspaces.git"
+          destination-repo: "git@bitbucket.org:mozgbrasil/acid-workspaces.git"

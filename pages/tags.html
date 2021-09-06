@@ -1,0 +1,26 @@
+---
+layout: page
+title: Tags
+permalink: /tags/
+description: Posts recentes listados por tags.
+order: 9
+excerpt: "Visualize os artigos classificado por Tags"
+---
+
+{% include site-tags.html %}
+
+{% for tag in site.tags %}
+{% capture inverted %}{{ forloop.index | modulo:2 }}{% endcapture %}
+    <div class=" {% if inverted == '0' %} inverted {% endif %}">
+        <h1 id="btn-groups" class="page-header">
+            <a id="{{ tag.first }}"></a>
+            <a class="" href="/tags/#{{ tag.first }}"">{{ tag.first | capitalize }}</a>
+        </h1>
+        {% for post in site.tags[tag.first] %}
+        <div id="callout-btn-group-tooltips" class="bs-callout bs-callout-warning">
+            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+            <p>{{ post.excerpt | strip_html | newline_to_br }}</p>
+        </div>
+        {% endfor %}
+    </div>
+{% endfor %}

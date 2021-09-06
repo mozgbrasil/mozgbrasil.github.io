@@ -1,0 +1,26 @@
+---
+layout: page
+title: Categorias
+permalink: /categorias/
+description: Posts recentes listados por categoria.
+order: 8
+excerpt: "Visualize os artigos classificado por Categorias, utilize também o nosso feed para sempre estar atualizado"
+---
+
+{% include site-categories.html %}
+
+{% for category in site.categories %}
+{% capture inverted %}{{ forloop.index | modulo:2 }}{% endcapture %}
+    <div class=" {% if inverted == '0' %} inverted {% endif %}">
+        <h1 id="btn-groups" class="page-header">
+            <a id="{{ category.first }}"></a>
+            <a class="" href="/category/#{{ category.first }}">{{ category.first | capitalize }}</a>
+        </h1>
+        {% for post in site.categories[category.first] %}
+        <div id="callout-btn-group-tooltips" class="bs-callout bs-callout-warning">
+            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+            <p>{{ post.excerpt | strip_html | newline_to_br }}</p>
+        </div>
+        {% endfor %}
+    </div>
+{% endfor %}

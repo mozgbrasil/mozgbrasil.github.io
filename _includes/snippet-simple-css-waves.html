@@ -1,0 +1,188 @@
+<!-- https://codepen.io/goodkatz/pen/LYPGxQz -->
+<style>
+    /*! CSS Used from: Embedded */
+
+    .main-waves {
+        bottom: 0;
+        position: absolute;
+        text-align: center;
+        /* background: linear-gradient(
+            60deg,
+            rgba(84, 58, 183, 1) 0%,
+            rgba(0, 172, 193, 1) 100%
+        ); */
+        color: white;
+    }
+
+    .main-waves h1 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        letter-spacing: 2px;
+        font-size: 48px;
+    }
+
+    .main-waves .logo {
+        width: 50px;
+        fill: white;
+        padding-right: 15px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .main-waves .inner-main-waves {
+        height: 60vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-waves .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-waves .waves {
+        position: relative;
+        width: 100%;
+        height: 15vh;
+        min-height: 100px;
+        max-height: 150px;
+    }
+
+    .main-waves .parallax > use {
+        animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+    }
+
+    .main-waves .parallax > use:nth-child(1) {
+        animation-delay: -2s;
+        animation-duration: 7s;
+    }
+
+    .main-waves .parallax > use:nth-child(2) {
+        animation-delay: -3s;
+        animation-duration: 10s;
+    }
+
+    .main-waves .parallax > use:nth-child(3) {
+        animation-delay: -4s;
+        animation-duration: 13s;
+    }
+
+    .main-waves .parallax > use:nth-child(4) {
+        animation-delay: -5s;
+        animation-duration: 20s;
+    }
+
+    @media (max-width: 768px) {
+        .main-waves .waves {
+            height: 40px;
+            min-height: 40px;
+        }
+
+        .main-waves h1 {
+            font-size: 24px;
+        }
+    }
+
+    /*! CSS Used keyframes */
+    @keyframes move-forever {
+        0% {
+            transform: translate3d(-90px, 0, 0);
+        }
+
+        100% {
+            transform: translate3d(85px, 0, 0);
+        }
+    }
+
+    /*! CSS Used fontfaces */
+    /* @font-face {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Lato Light'), local('Lato-Light'),
+            url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwaPGR_p.woff2)
+                format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+            U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Lato Light'), local('Lato-Light'),
+            url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPGQ.woff2)
+                format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+            U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+            U+2212, U+2215, U+FEFF, U+FFFD;
+    } */
+
+    .main-waves h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 0px !important;
+    }
+</style>
+<div class="main-waves w-100">
+    <div class="inner-main-waves justify-content-center p-2">
+        {% comment %}
+        <div data-aos="zoom-in-down">
+            <img
+                src="/assets/images/logos/Russian_Army_Star.svg"
+                width="100"
+                class="d-inline-block align-top"
+                alt=""
+            />
+        </div>
+        <div data-aos="zoom-in-up">
+            <h1>O futuro chegou</h1>
+        </div>
+        {% endcomment %}
+    </div>
+
+    <div class=" ">
+        <svg
+            class="waves"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+        >
+            <defs>
+                <path
+                    id="gentle-wave"
+                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                ></path>
+            </defs>
+            <g class="parallax">
+                <use
+                    xlink:href="#gentle-wave"
+                    x="48"
+                    y="0"
+                    fill="rgba(255,255,255,0.7"
+                ></use>
+                <use
+                    xlink:href="#gentle-wave"
+                    x="48"
+                    y="3"
+                    fill="rgba(255,255,255,0.5)"
+                ></use>
+                <use
+                    xlink:href="#gentle-wave"
+                    x="48"
+                    y="5"
+                    fill="rgba(255,255,255,0.3)"
+                ></use>
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff"></use>
+            </g>
+        </svg>
+    </div>
+</div>

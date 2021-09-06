@@ -1,0 +1,7 @@
+{
+  "name": "Mozg",
+  "short_name": "Mozg Push",
+  "start_url": "/",
+  "display": "standalone",
+  "gcm_sender_id": "0178c901-be8a-4f5d-91c6-3af1dc5c8897"
+}
