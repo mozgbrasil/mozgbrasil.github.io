@@ -103,7 +103,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 title: MOZG
 tagline: Desenvolvedor de softwares
 description: > # this means to ignore newlines until "baseurl:"
-  Este projeto foi criado por Marcio dos Santos Amorim, desenvolvedor de softwares desde 1999 / Atendimento de Segunda-Feira à Sexta-Feira, 09:00 às 12:00 e 14:00 às 18:00 / suporte@mozg.com.br /
+  Este projeto foi criado por Marcio dos Santos Amorim, desenvolvedor de softwares desde 1999 / Atendimento de Segunda-Feira à Sexta-Feira, 09:00 às 12:00 e 14:00 às 18:00 / suporte@mozg.com.br / +55 11 977072339
 
 email: suporte@mozg.com.br
 github_username: mozgbrasil

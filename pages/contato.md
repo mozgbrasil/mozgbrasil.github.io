@@ -13,7 +13,7 @@ excerpt: "Fale conosco e tire suas dúvidas, para um melhor suporte seja o mais 
                 <h1 id="ancor-a-mozg" class="page-header"><a class="anchorjs-link " href="#ancor-a-mozg"></a>Fale conosco</h1>
                 <p class="lead">Qualquer dúvida não deixe de nos comunicar.</p>
                 <div class="alert alert-danger" role="alert">
-  Para informações entre em contato no e-mail <a href="mailto:suporte@mozg.com.br" class="btn btn-primary">suporte@mozg.com.br</a>
+  Para informações entre em contato no e-mail <a href="mailto:suporte@mozg.com.br" class="btn btn-primary">suporte@mozg.com.br</a> <a href="https://api.whatsapp.com/send?phone=5511977072339&text=" class="btn btn-primary">+55 11 977072339</a>
 </div>
             </div>
         </div>
