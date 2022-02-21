@@ -1,4 +1,4 @@
-# reanudar
+# Curriculum
 
 - [Marcio dos Santos Amorim](https://github.com/mozgbrasil)
 - Itaquera - Sao Paulo - SP - Brasil
