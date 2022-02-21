@@ -1,11 +1,3 @@
----
-layout: page
-title: Curriculum
-permalink: /curriculum_en/
-order: 2
-excerpt: "Ethics and commitment, striving to develop technology that adds value, automation and profitability."
----
-
 # Curriculum
 
 - [Marcio dos Santos Amorim](https://github.com/mozgbrasil)
@@ -65,7 +57,7 @@ excerpt: "Ethics and commitment, striving to develop technology that adds value,
 
 Always looking for my professional improvement in 02/2021 I developed the following extension [Stremio-Addon](https://github.com/mozgbrasil/stremio-addon) in [Node.js](https://nodejs.org/en/ "Node.js") for the [Stremio](https://www.stremio.com/) platform using the [Stremio Addon SDK](https://github.com/Stremio/stremio-addon-sdk), the project is publicly available at [Stremio-Addon](https://github.com/mozgbrasil/stremio-addon)
 
-I've been adopting new practices for container development using [Docker](https://github.com/mozgbrasil/docker "Docker") with multiplatform support, I've also been developing improvements for the institutional website [MOZG](https:/ /mozg.com.br/) which uses [Ruby](<https://pt.wikipedia.org/wiki/Ruby_(linguagem_de_programa%C3%A7%C3%A3o)>)/[Jekyll](<https:// /en.wikipedia.org/wiki/Jekyll_(software)>) and also adding deployments to the "Projects" menu of the site, using methodologies such as "([CI](https://pt.wikipedia.org/wiki/Integra% C3%A7%C3%A3o_cont%C3%ADnua)) Continuous Integration" as repositories on [GitHub](https://github.com/mozgbrasil/acid-workspaces), [Bitbucket](https://bitbucket.org/ mozgbrasil/acid-workspaces) and [GitLab](https://gitlab.com/mozgbrasil/acid-workspaces) and "([CD](https://pt.wikipedia.org/wiki/Entrega_cont%C3%ADnua) ) Continuous Delivery" in several "([PaaS](https://pt.wikipedia.org/wiki/Plataforma_como_servi%C3%A7o)) Platform as a Service", such as: [Vercel] (https://vercel.com/), [Netlify](https://netlify.com/), [Heroku](https://heroku.com/), [Google Cloud Platform](https://cloud .google.com/)
+I've been adopting new practices for container development using [Docker](https://github.com/mozgbrasil/docker "Docker") with multiplatform support, I've also been developing improvements for the institutional website [MOZG](https:/ /mozg.com.br/) which uses [Ruby](<https://pt.wikipedia.org/wiki/Ruby_(linguagem_de_programa%C3%A7%C3%A3o)>)/[Jekyll](<https:// /en.wikipedia.org/wiki/Jekyll_(software)>) and also adding deployments to the "Projects" menu of the site, using methodologies such as "([CI](https://pt.wikipedia.org/wiki/Integra% C3%A7%C3%A3o_cont%C3%ADnua)) Continuous Integration" as repositories on [GitHub](https://github.com/mozgbrasil/acid-workspaces), [Bitbucket](https://bitbucket.org/ mozgbrasil/acid-workspaces) and [GitLab](https://gitlab.com/mozgbrasil/acid-workspaces) and "([CD](https://pt.wikipedia.org/wiki/Entrega_cont%C3%ADnua) ) Continuous Delivery" in several "([PaaS](https://pt.wikipedia.org/wiki/Plataforma_como_servi%C3%A7o)) Platform as a Service", such as: [Vercel](https://vercel.com/), [Netlify](https://netlify.com/), [Heroku](https://heroku.com/), [Google Cloud Platform](https://cloud .google.com/)
 
 Recently I have been exploring the use of [Next.js](https://nextjs.org/), according to the project present in the "Projects" menu of the [MOZG] website(https://mozg.com.br/)
 
