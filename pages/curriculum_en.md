@@ -50,6 +50,15 @@
 
 # Professional experience
 
+## MJV Soluções em Tecnologia LTDA
+
+- Specialist-Technology Advisor
+- 09/20/2021 to date
+
+I participated in the development of the Banco Santander vehicle insurance project called [Auto-Compara](https://www.autocompara.com.br/) using [Nestjs](https://nestjs.com/) as back-end end and [Angular](https://angular.io/) as frontend
+
+I have been working on the development of the vehicle insurance project of Banco Bradesco called [Bradesco Seguros](https://play.google.com/store/apps/details?id=br.com.bradseg.bscellular&hl=pt_BR&gl=US) using [Expressjs](https://expressjs.com/pt-br/) as backend and [Angular](https://angular.io/) as frontend for mobile devices
+
 ## MOZG Commerce and Development of Computer Systems
 
 - Full Stack Developer

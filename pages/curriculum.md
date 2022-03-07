@@ -58,10 +58,19 @@ excerpt: "Ética e compromisso, prezando por desenvolver tecnologia que agreguem
 
 # Experiência profissional
 
+## MJV Soluções em Tecnologia LTDA
+
+- Assessor Especialista-Tecnologia
+- 20/09/2021 até o momento
+
+Participei do desenvolvimento do projeto de seguro de veículos do Banco Santander denominado [Auto-Compara](https://www.autocompara.com.br/) utilizando o [Nestjs](https://nestjs.com/) como back-end e o [Angular](https://angular.io/) como frontend
+
+Venho atuando no desenvolvimento do projeto de seguro de veículos do Banco Bradesco denominado [Bradesco Seguros](https://play.google.com/store/apps/details?id=br.com.bradseg.bscelular&hl=pt_BR&gl=US) utilizando o [Expressjs](https://expressjs.com/pt-br/) como back-end e o [Angular](https://angular.io/) como frontend para dispositivos móveis
+
 ## MOZG Comércio e Desenvolvimento de Sistemas de Informática
 
 - Full Stack Developer
-- 02/2021 até o momento
+- 02/2021 até 09/2021
 
 Buscando sempre meu aprimoramento profissional em 02/2021 desenvolvi a seguinte extensão [Stremio-Addon](https://github.com/mozgbrasil/stremio-addon) em [Node.js](https://nodejs.org/en/ "Node.js") para a plataforma [Stremio](https://www.stremio.com/) utilizando o [Stremio Addon SDK](https://github.com/Stremio/stremio-addon-sdk), o projeto está disponível de forma publica em [Stremio-Addon](https://github.com/mozgbrasil/stremio-addon)
 
