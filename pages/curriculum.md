@@ -67,6 +67,11 @@ Participei do desenvolvimento do projeto de seguro de veículos do Banco Santand
 
 Venho atuando no desenvolvimento do projeto de seguro de veículos do Banco Bradesco denominado [Bradesco Seguros](https://play.google.com/store/apps/details?id=br.com.bradseg.bscelular&hl=pt_BR&gl=US) utilizando o [Expressjs](https://expressjs.com/pt-br/) como back-end e o [Angular](https://angular.io/) como frontend para dispositivos móveis
 
+Desenvolvem e implantam sistemas informatizados dimensionando requisitos e funcionalidade do sistema ,
+especificando sua arquitetura, escolhendo ferramentas de desenvolvimento, especificando programas, codificando aplicativos . Administram
+ambiente informatizado, prestam suporte técnico ao cliente e o treinam, elaboram documentaçao técnica. Estabelecem padroes, coordenam projetos
+e oferecem soluçoes para ambientes informatizados e pesquisam tecnologias em informática.
+
 ## MOZG Comércio e Desenvolvimento de Sistemas de Informática
 
 - Full Stack Developer
