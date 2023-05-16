@@ -63,14 +63,9 @@ excerpt: "Ética e compromisso, prezando por desenvolver tecnologia que agreguem
 - Assessor Especialista-Tecnologia
 - 20/09/2021 até o momento
 
-Participei do desenvolvimento do projeto de seguro de veículos do Banco Santander denominado [Auto-Compara](https://www.autocompara.com.br/) utilizando o [Nestjs](https://nestjs.com/) como back-end e o [Angular](https://angular.io/) como frontend
+Participei do desenvolvimento do projeto de seguro de veículos do Banco Santander denominado [Auto-Compara](https://www.autocompara.com.br/) utilizando as seguintes tecnologias: no back-end [Nestjs](https://nestjs.com/), no front-end [Angular](https://angular.io/), [Capacitor](https://capacitorjs.com/), [Ionic](https://ionicframework.com/), [RxJS](https://rxjs.dev/), [NGRX](https://ngrx.io/) ...
 
-Venho atuando no desenvolvimento do projeto de seguro de veículos do Banco Bradesco denominado [Bradesco Seguros](https://play.google.com/store/apps/details?id=br.com.bradseg.bscelular&hl=pt_BR&gl=US) utilizando o [Expressjs](https://expressjs.com/pt-br/) como back-end e o [Angular](https://angular.io/) como frontend para dispositivos móveis
-
-Desenvolvem e implantam sistemas informatizados dimensionando requisitos e funcionalidade do sistema ,
-especificando sua arquitetura, escolhendo ferramentas de desenvolvimento, especificando programas, codificando aplicativos . Administram
-ambiente informatizado, prestam suporte técnico ao cliente e o treinam, elaboram documentaçao técnica. Estabelecem padroes, coordenam projetos
-e oferecem soluçoes para ambientes informatizados e pesquisam tecnologias em informática.
+Desde 1 de fev. de 2022 venho atuando no desenvolvimento do projeto de seguros do Banco Bradesco denominado [Bradesco Seguros](https://play.google.com/store/apps/details?id=br.com.bradseg.bscelular&hl=pt_BR&gl=US) utilizando as seguintes tecnologias: no back-end o [Expressjs](https://expressjs.com/pt-br/), no front-end [Angular](https://angular.io/), [Capacitor](https://capacitorjs.com/), [Ionic](https://ionicframework.com/), [RxJS](https://rxjs.dev/), [NGRX](https://ngrx.io/) ...
 
 ## MOZG Comércio e Desenvolvimento de Sistemas de Informática
 
