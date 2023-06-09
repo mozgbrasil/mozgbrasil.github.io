@@ -38,7 +38,7 @@ excerpt: "Ética e compromisso, prezando por desenvolver tecnologia que agreguem
 
 # Formação Acadêmica
 
-- Colégio Integrado Santa Inês S/C Ltda.
+Colégio Integrado Santa Inês S/C Ltda.
 - Curso de Processamento de Dados
 - 01/1997 até 12/1999
 - Concluído a 3ª série do 2º grau em 1999

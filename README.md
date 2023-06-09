@@ -92,6 +92,7 @@ code --new-window .
 
 - https://wiredcraft.com/blog/make-jekyll-fast/
 - https://github.com/dimitri-koenig/jekyll-gulp-optimizations
+- https://dillinger.io/
 
 ### plugin
 
