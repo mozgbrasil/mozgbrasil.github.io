@@ -269,7 +269,7 @@ Sobre o React Native
                                     {% assign sorted_pages = site.pages | sort:"order" %}
                                     {% for node in sorted_pages %}
                                         {% if node.title %}
-                                            {% if node.title != "Debug" and node.title != "Curriculum" and node.title != "Catálogo Magento1"  %}
+                                            {% if node.title != "Debug" and node.title != "Curriculum" and node.title != "Catálogo Magento1" and node.title != "1.0.1 (2021-09-29)"  %}
                                                 {% if node.url contains 'node_modules' %}
                                                     {% assign has_node_modules = "yes" %}
                                                 {% else %}
