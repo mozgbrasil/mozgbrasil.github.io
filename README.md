@@ -28,7 +28,7 @@ Caso queira contribuir para melhoria da documentação de um Fork no repositóri
 
 ## Executando local
 
-```
+```bash
 git clone ☝️
 
 cd <directory>
@@ -38,7 +38,7 @@ code --new-window .
 
 ## Executando no container
 
-```
+```bash
 ├── Terminal
 │   ├── Run Task
 │       ├── Serve
