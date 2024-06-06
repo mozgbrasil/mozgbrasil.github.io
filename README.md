@@ -31,9 +31,15 @@ Caso queira contribuir para melhoria da documentação de um Fork no repositóri
 ```bash
 git clone ☝️
 
-cd <directory>
-
+cd /home/marcio/dados/git-clones/pessoal/mozgbrasil.github.io/
 code --new-window .
+
+ruby --version
+bundle --version
+
+bundle install
+
+JEKYLL_ENV=production bundle exec jekyll serve --watch --verbose
 ```
 
 ## Executando no container
@@ -56,13 +62,15 @@ code --new-window .
 ### Backend
 
 - https://pages.github.com/
+- https://pages.github.com/versions/
 - http://jekyllrb.com/
 - https://talk.jekyllrb.com/
 - https://github.com/jekyll/jekyll/wiki/Themes
 - http://jekyllthemes.org/
 - https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/
 - https://github.com/plusjade/jekyll-bootstrap/blob/master/_plugins/debug.rb
-- ### Frontend
+
+### Frontend
 
 - http://getbootstrap.com/
 

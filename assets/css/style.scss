@@ -4,21 +4,14 @@
 // @import "{{ site.theme }}";
 // _sass/themes/mozth001/mozth001.scss
 // @import "themes/mozth001/mozth001";
-
 @import "themes/default/variables";
-
-@import "lib/bootstrap-5.1.0/bootstrap";
+@import "lib/bootstrap-5.3.3/bootstrap";
 // @import "lib/bootstrap-4.1.2/bootstrap";
-
 // @import "lib/fontawesome-free-5.15.4/fontawesome";
-@import "lib/font-awesome-4.6.3/font-awesome";
-
+@import "lib/fontawesome-free-6.5.2-web/scss/fontawesome";
 // @import "themes/default/default";
-
 // @import "themes/gsdk/gsdk";
-
 @import "lib/aos-2.3.4/aos";
-
 @import "themes/mozth001/mozth001";
 
 // Scaffolding
