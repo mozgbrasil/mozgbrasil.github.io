@@ -14,5 +14,4 @@ _site
 .bundle
 .sass-cache
 test-site/
-vendor/
 tmp/

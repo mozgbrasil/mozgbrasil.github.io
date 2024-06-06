@@ -37,6 +37,7 @@ code --new-window .
 ruby --version
 bundle --version
 
+rm Gemfile.lock
 bundle install
 
 JEKYLL_ENV=production bundle exec jekyll serve --watch --verbose
