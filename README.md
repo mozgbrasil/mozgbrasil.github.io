@@ -12,9 +12,7 @@ Site insitucional da MOZG
 
 ## Motivação
 
-Documentar as instruções dos módulos da MOZG para o Magento
-
-Atender o mercado de módulos para Magento oferecendo um excelente suporte
+Portfólio pessoal
 
 ## Contribuição
 
@@ -25,33 +23,6 @@ Caso queira contribuir para melhoria da documentação de um Fork no repositóri
 - https://www.docker.com/
 - https://code.visualstudio.com/
 - https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
-
-## Executando local
-
-```bash
-git clone ☝️
-
-cd /home/marcio/dados/git-clones/pessoal/mozgbrasil.github.io/
-code --new-window .
-
-ruby --version
-bundle --version
-
-rm Gemfile.lock
-bundle install
-
-JEKYLL_ENV=production bundle exec jekyll serve --watch --verbose
-```
-
-## Executando no container
-
-```bash
-├── Terminal
-│   ├── Run Task
-│       ├── Serve
-│       ├── OR
-│       ├── Build
-```
 
 ## Links
 
