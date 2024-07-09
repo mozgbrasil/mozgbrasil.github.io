@@ -5,7 +5,7 @@
 ```bash
 git clone ☝️
 
-cd /home/marcio/dados/git-clones/pessoal/mozgbrasil.github.io/
+cd /home/marcio/dados/mozgbrasil.github.io/
 code --new-window .
 
 ruby --version
