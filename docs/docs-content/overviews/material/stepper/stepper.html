@@ -1,0 +1,327 @@
+<div class="docs-markdown"><p>Angular Material&#39;s stepper provides a wizard-like workflow by dividing content into logical steps.</p>
+<p>Material stepper builds on the foundation of the CDK stepper that is responsible for the logic
+that drives a stepped workflow. Material stepper extends the CDK stepper and has Material Design
+styling.</p>
+
+        <h3 id="stepper-variants" class="docs-header-link">
+          <span header-link="stepper-variants"></span>
+          Stepper variants
+        </h3>
+      <p>There are two stepper variants: <code>horizontal</code> and <code>vertical</code>. You can switch between the two using
+the <code>orientation</code> attribute.</p>
+<div material-docs-example="stepper-overview"></div>
+
+<div material-docs-example="stepper-vertical"></div>
+
+
+        <h3 id="labels" class="docs-header-link">
+          <span header-link="labels"></span>
+          Labels
+        </h3>
+      <p>If a step&#39;s label is only text, then the <code>label</code> attribute can be used.</p>
+<div material-docs-example="stepper-overview"
+                             file="stepper-overview-example.html"
+                             region="label"></div>
+
+<p>For more complex labels, add a template with the <code>matStepLabel</code> directive inside the
+<code>mat-step</code>.</p>
+<div material-docs-example="stepper-editable"
+                             file="stepper-editable-example.html"
+                             region="step-label"></div>
+
+
+        <h4 id="label-position" class="docs-header-link">
+          <span header-link="label-position"></span>
+          Label position
+        </h4>
+      <p>For a horizontal <code>mat-stepper</code> it&#39;s possible to define the position of the label. <code>end</code> is the
+default value, while <code>bottom</code> will place it under the step icon instead of at its side.
+This behaviour is controlled by <code>labelPosition</code> property.</p>
+<div material-docs-example="stepper-label-position-bottom"
+                             file="stepper-label-position-bottom-example.html"
+                             region="label-position"></div>
+
+
+        <h4 id="header-position" class="docs-header-link">
+          <span header-link="header-position"></span>
+          Header position
+        </h4>
+      <p>If you&#39;re using a horizontal stepper, you can control where the stepper&#39;s content is positioned
+using the <code>headerPosition</code> input. By default it&#39;s on top of the content, but it can also be placed
+under it.</p>
+<div material-docs-example="stepper-header-position"></div>
+
+
+        <h3 id="stepper-buttons" class="docs-header-link">
+          <span header-link="stepper-buttons"></span>
+          Stepper buttons
+        </h3>
+      <p>There are two button directives to support navigation between different steps:
+<code>matStepperPrevious</code> and <code>matStepperNext</code>.</p>
+<div material-docs-example="stepper-label-position-bottom"
+                             file="stepper-label-position-bottom-example.html"
+                             region="buttons"></div>
+
+
+        <h3 id="linear-stepper" class="docs-header-link">
+          <span header-link="linear-stepper"></span>
+          Linear stepper
+        </h3>
+      <p>The <code>linear</code> attribute can be set on <code>mat-stepper</code> to create a linear stepper that requires the
+user to complete previous steps before proceeding to following steps. For each <code>mat-step</code>, the
+<code>stepControl</code> attribute can be set to the top level <code>AbstractControl</code> that is used to check the
+validity of the step.</p>
+<p>There are two possible approaches. One is using a single form for stepper, and the other is
+using a different form for each step.</p>
+<p>Alternatively, if you don&#39;t want to use the Angular forms, you can pass in the <code>completed</code> property
+to each of the steps which won&#39;t allow the user to continue until it becomes <code>true</code>. Note that if
+both <code>completed</code> and <code>stepControl</code> are set, the <code>stepControl</code> will take precedence.</p>
+
+        <h4 id="using-a-single-form" class="docs-header-link">
+          <span header-link="using-a-single-form"></span>
+          Using a single form
+        </h4>
+      <p>When using a single form for the stepper, <code>matStepperPrevious</code> and <code>matStepperNext</code> have to be
+set to <code>type=&quot;button&quot;</code> in order to prevent submission of the form before all steps
+are completed.</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> [<span class="hljs-attr">formGroup</span>]=<span class="hljs-string">&quot;formGroup&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">mat-stepper</span> <span class="hljs-attr">formArrayName</span>=<span class="hljs-string">&quot;formArray&quot;</span> <span class="hljs-attr">linear</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">mat-step</span> <span class="hljs-attr">formGroupName</span>=<span class="hljs-string">&quot;0&quot;</span> [<span class="hljs-attr">stepControl</span>]=<span class="hljs-string">&quot;formArray.get([0])&quot;</span>&gt;</span>
+      ...
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">mat-button</span> <span class="hljs-attr">matStepperNext</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>&gt;</span>Next<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">mat-step</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">mat-step</span> <span class="hljs-attr">formGroupName</span>=<span class="hljs-string">&quot;1&quot;</span> [<span class="hljs-attr">stepControl</span>]=<span class="hljs-string">&quot;formArray.get([1])&quot;</span>&gt;</span>
+      ...
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">mat-button</span> <span class="hljs-attr">matStepperPrevious</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>&gt;</span>Back<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">mat-button</span> <span class="hljs-attr">matStepperNext</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>&gt;</span>Next<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">mat-step</span>&gt;</span>
+    ...
+  <span class="hljs-tag">&lt;/<span class="hljs-name">mat-stepper</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</code></pre>
+
+        <h4 id="using-a-different-form-for-each-step" class="docs-header-link">
+          <span header-link="using-a-different-form-for-each-step"></span>
+          Using a different form for each step
+        </h4>
+      <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">mat-stepper</span> <span class="hljs-attr">orientation</span>=<span class="hljs-string">&quot;vertical&quot;</span> <span class="hljs-attr">linear</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">mat-step</span> [<span class="hljs-attr">stepControl</span>]=<span class="hljs-string">&quot;formGroup1&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">form</span> [<span class="hljs-attr">formGroup</span>]=<span class="hljs-string">&quot;formGroup1&quot;</span>&gt;</span>
+      ...
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">mat-step</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">mat-step</span> [<span class="hljs-attr">stepControl</span>]=<span class="hljs-string">&quot;formGroup2&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">form</span> [<span class="hljs-attr">formGroup</span>]=<span class="hljs-string">&quot;formGroup2&quot;</span>&gt;</span>
+      ...
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">mat-step</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">mat-stepper</span>&gt;</span>
+</code></pre>
+
+        <h3 id="types-of-steps" class="docs-header-link">
+          <span header-link="types-of-steps"></span>
+          Types of steps
+        </h3>
+      
+        <h4 id="optional-step" class="docs-header-link">
+          <span header-link="optional-step"></span>
+          Optional step
+        </h4>
+      <p>If completion of a step in linear stepper is not required, then the <code>optional</code> attribute can be set
+on <code>mat-step</code>.</p>
+<div material-docs-example="stepper-optional"
+                             file="stepper-optional-example.html"
+                             region="optional"></div>
+
+
+
+        <h4 id="editable-step" class="docs-header-link">
+          <span header-link="editable-step"></span>
+          Editable step
+        </h4>
+      <p>By default, steps are editable, which means users can return to previously completed steps and
+edit their responses. <code>editable=&quot;false&quot;</code> can be set on <code>mat-step</code> to change the default.</p>
+<div material-docs-example="stepper-editable"
+                             file="stepper-editable-example.html"
+                             region="editable"></div>
+
+
+        <h4 id="completed-step" class="docs-header-link">
+          <span header-link="completed-step"></span>
+          Completed step
+        </h4>
+      <p>By default, the <code>completed</code> attribute of a step returns <code>true</code> if the step is valid (in case of
+linear stepper) and the user has interacted with the step. The user, however, can also override
+this default <code>completed</code> behavior by setting the <code>completed</code> attribute as needed.</p>
+
+        <h4 id="overriding-icons" class="docs-header-link">
+          <span header-link="overriding-icons"></span>
+          Overriding icons
+        </h4>
+      <p>By default, the step headers will use the <code>create</code> and <code>done</code> icons from the Material design icon
+set via <code>&lt;mat-icon&gt;</code> elements. If you want to provide a different set of icons, you can do so
+by placing a <code>matStepperIcon</code> for each of the icons that you want to override. The <code>index</code>,
+<code>active</code>, and <code>optional</code> values of the individual steps are available through template variables:</p>
+<div material-docs-example="stepper-states"
+                             file="stepper-states-example.html"
+                             region="override-icons"></div>
+
+<p>Note that you aren&#39;t limited to using the <code>mat-icon</code> component when providing custom icons.</p>
+
+        <h3 id="controlling-the-stepper-animation" class="docs-header-link">
+          <span header-link="controlling-the-stepper-animation"></span>
+          Controlling the stepper animation
+        </h3>
+      <p>You can control the duration of the stepper&#39;s animation using the <code>animationDuration</code> input. If you
+want to disable the animation completely, you can do so by setting the properties to <code>0ms</code>.</p>
+<div material-docs-example="stepper-animations"></div>
+
+
+        <h4 id="step-states" class="docs-header-link">
+          <span header-link="step-states"></span>
+          Step States
+        </h4>
+      <p>You can set the state of a step to whatever you want. The given state by default maps to an icon.
+However, it can be overridden the same way as mentioned above.</p>
+<div material-docs-example="stepper-states"
+                             file="stepper-states-example.html"
+                             region="states"></div>
+
+<p>In order to use the custom step states, you must add the <code>displayDefaultIndicatorType</code> option to
+the global default stepper options which can be specified by providing a value for
+<code>STEPPER_GLOBAL_OPTIONS</code> in your application&#39;s root module.</p>
+<pre><code class="language-ts"><span class="hljs-meta">@NgModule</span>({
+  <span class="hljs-attr">providers</span>: [
+    {
+      <span class="hljs-attr">provide</span>: STEPPER_GLOBAL_OPTIONS,
+      <span class="hljs-attr">useValue</span>: { <span class="hljs-attr">displayDefaultIndicatorType</span>: <span class="hljs-literal">false</span> }
+    }
+  ]
+})
+</code></pre>
+<div material-docs-example="stepper-states"></div>
+
+
+        <h3 id="error-state" class="docs-header-link">
+          <span header-link="error-state"></span>
+          Error State
+        </h3>
+      <p>If you want to show an error when the user moved past a step that hasn&#39;t been filled out correctly,
+you can set the error message through the <code>errorMessage</code> input and configure the stepper to show
+errors via the <code>showError</code> option in the <code>STEPPER_GLOBAL_OPTIONS</code> injection token. Note that since
+<code>linear</code> steppers prevent a user from advancing past an invalid step to begin with, this setting
+will not affect steppers marked as <code>linear</code>.</p>
+<pre><code class="language-ts"><span class="hljs-meta">@NgModule</span>({
+  <span class="hljs-attr">providers</span>: [
+    {
+      <span class="hljs-attr">provide</span>: STEPPER_GLOBAL_OPTIONS,
+      <span class="hljs-attr">useValue</span>: { <span class="hljs-attr">showError</span>: <span class="hljs-literal">true</span> }
+    }
+  ]
+})
+</code></pre>
+<div material-docs-example="stepper-errors"></div>
+
+
+        <h3 id="lazy-rendering" class="docs-header-link">
+          <span header-link="lazy-rendering"></span>
+          Lazy rendering
+        </h3>
+      <p>By default, the stepper will render all of it&#39;s content when it&#39;s initialized. If you have some
+content that you want to defer until the particular step is opened, you can put it inside
+an <code>ng-template</code> with the <code>matStepContent</code> attribute.</p>
+<div material-docs-example="stepper-lazy-content"></div>
+
+
+        <h3 id="responsive-stepper" class="docs-header-link">
+          <span header-link="responsive-stepper"></span>
+          Responsive stepper
+        </h3>
+      <p>If your app supports a wide variety of screens and a stepper&#39;s layout doesn&#39;t fit a particular
+screen size, you can control its <code>orientation</code> dynamically to change the layout based on the
+viewport.</p>
+<div material-docs-example="stepper-responsive"></div>
+
+
+        <h3 id="keyboard-interaction" class="docs-header-link">
+          <span header-link="keyboard-interaction"></span>
+          Keyboard interaction
+        </h3>
+      <table>
+<thead>
+<tr>
+<th>Keyboard shortcut</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><kbd>Left Arrow</kbd></td>
+<td>Focus the previous step header.</td>
+</tr>
+<tr>
+<td><kbd>Right Arrow</kbd></td>
+<td>Focus the next step header.</td>
+</tr>
+<tr>
+<td><kbd>Enter</kbd></td>
+<td>Select the focused step.</td>
+</tr>
+<tr>
+<td><kbd>Space</kbd></td>
+<td>Select the focused step.</td>
+</tr>
+</tbody></table>
+
+        <h3 id="localizing-labels" class="docs-header-link">
+          <span header-link="localizing-labels"></span>
+          Localizing labels
+        </h3>
+      <p>Labels used by the stepper are provided through <code>MatStepperIntl</code>. Localization of these messages
+can be done by providing a subclass with translated values in your application root module.</p>
+<pre><code class="language-ts"><span class="hljs-meta">@NgModule</span>({
+  <span class="hljs-attr">imports</span>: [MatStepperModule],
+  <span class="hljs-attr">providers</span>: [
+    {<span class="hljs-attr">provide</span>: MatStepperIntl, <span class="hljs-attr">useClass</span>: MyIntl},
+  ],
+})
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyApp</span> </span>{}
+</code></pre>
+<div material-docs-example="stepper-intl"></div>
+
+
+        <h3 id="accessibility" class="docs-header-link">
+          <span header-link="accessibility"></span>
+          Accessibility
+        </h3>
+      <p>The stepper is treated as a tabbed view for accessibility purposes, so it is given
+<code>role=&quot;tablist&quot;</code> by default. The header of step that can be clicked to select the step
+is given <code>role=&quot;tab&quot;</code>, and the content that can be expanded upon selection is given
+<code>role=&quot;tabpanel&quot;</code>. <code>aria-selected</code> attribute of step header is automatically set based on
+step selection change.</p>
+<p>The stepper and each step should be given a meaningful label via <code>aria-label</code> or <code>aria-labelledby</code>.</p>
+<p>Prefer vertical steppers when building for small screen sizes, as horizontal
+steppers typically take up significantly more horizontal space thus introduce
+horizontal scrolling. Applications with multiple scrolling dimensions make
+content harder to consume for some users. See the <a href="#responsive-stepper">Responsive Stepper section</a>
+above for an example on building a stepper that adjusts its layout based on
+viewport size.</p>
+
+        <h4 id="forms" class="docs-header-link">
+          <span header-link="forms"></span>
+          Forms
+        </h4>
+      <p>Steppers often contain forms and form controls. If validation errors inside of a
+stepper&#39;s form prevents moving to another step, make sure that your form
+controls communicate error messages to assistive technology. This helps the user
+know why they can&#39;t advance to another step. You can accomplish this by using
+<code>&lt;mat-error&gt;</code> with <code>&lt;mat-form-field&gt;</code>, or by using an ARIA live region.</p>
+<p>When a step contains a forms validation error, <code>MatStepper</code> will display the
+error in the step&#39;s header if specified. See the <a href="#error-state">Error State section</a>
+for an example of a stepper with an error message. For non-linear steppers, you
+should use an ARIA live region to announce error messages when users navigate
+away from a step with an error message.</p>
+</div>
