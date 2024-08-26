@@ -1,0 +1,166 @@
+<div class="docs-markdown"><p><code>&lt;mat-form-field&gt;</code> is a component used to wrap several Angular Material components and apply common
+<a href="https://material.io/guidelines/components/text-fields.html">Text field</a> styles such as the
+underline, floating label, and hint messages.</p>
+<p>In this document, &quot;form field&quot; refers to the wrapper component <code>&lt;mat-form-field&gt;</code> and
+&quot;form field control&quot; refers to the component that the <code>&lt;mat-form-field&gt;</code> is wrapping
+(e.g. the input, textarea, select, etc.)</p>
+<p>The following Angular Material components are designed to work inside a <code>&lt;mat-form-field&gt;</code>:</p>
+<ul>
+<li><a href="https://material.angular.io/components/input/overview"><code>&lt;input matNativeControl&gt;</code> &amp; <code>&lt;textarea matNativeControl&gt;</code></a></li>
+<li><a href="https://material.angular.io/components/select/overview"><code>&lt;select matNativeControl&gt;</code></a></li>
+<li><a href="https://material.angular.io/components/select/overview"><code>&lt;mat-select&gt;</code></a></li>
+<li><a href="https://material.angular.io/components/chips/overview"><code>&lt;mat-chip-list&gt;</code></a></li>
+</ul>
+<div material-docs-example="form-field-overview"></div>
+
+
+        <h3 id="form-field-appearance-variants" class="docs-header-link">
+          <span header-link="form-field-appearance-variants"></span>
+          Form field appearance variants
+        </h3>
+      <p><code>mat-form-field</code> supports two different appearance variants which can be set via the <code>appearance</code>
+input: <code>fill</code> and <code>outline</code>. The <code>fill</code> appearance displays the form field with a filled background
+box and an underline, while the <code>outline</code> appearance shows the form field with a border all the way
+around.</p>
+<p>Out of the box, if you do not specify an <code>appearance</code> for the <code>&lt;mat-form-field&gt;</code> it will default to
+<code>fill</code>. However, this can be configured using a global provider to choose a different default
+appearance for your app.</p>
+<pre><code class="language-ts"><span class="hljs-meta">@NgModule</span>({
+  <span class="hljs-attr">providers</span>: [
+    {<span class="hljs-attr">provide</span>: MAT_FORM_FIELD_DEFAULT_OPTIONS, <span class="hljs-attr">useValue</span>: {<span class="hljs-attr">appearance</span>: <span class="hljs-string">&#x27;outline&#x27;</span>}}
+  ]
+})
+</code></pre>
+<div material-docs-example="form-field-appearance"></div>
+
+
+        <h3 id="floating-label" class="docs-header-link">
+          <span header-link="floating-label"></span>
+          Floating label
+        </h3>
+      <p>The floating label is a text label displayed on top of the form field control when
+the control does not contain any text or when <code>&lt;select matNativeControl&gt;</code> does not show any option
+text. By default, when text is present the floating label floats above the form field control. The
+label for a form field can be specified by adding a <code>mat-label</code> element.</p>
+<p>If the form field control is marked with a <code>required</code> attribute, an asterisk will be appended to the
+label to indicate the fact that it is a required field. If unwanted, this can be disabled by
+setting the <code>hideRequiredMarker</code> property on <code>&lt;mat-form-field&gt;</code></p>
+<p>The <code>floatLabel</code> property of <code>&lt;mat-form-field&gt;</code> can be used to change this default floating
+behavior. It can be set to <code>always</code> to float the label even when no text is present in the form
+field control, or to <code>auto</code> to restore the default behavior.</p>
+<div material-docs-example="form-field-label"></div>
+
+<p>The floating label behavior can be adjusted globally by providing a value for
+<code>MAT_FORM_FIELD_DEFAULT_OPTIONS</code> in your application&#39;s root module. Like the <code>floatLabel</code> input,
+the option can be either set to <code>always</code> or <code>auto</code>.</p>
+<pre><code class="language-ts"><span class="hljs-meta">@NgModule</span>({
+  <span class="hljs-attr">providers</span>: [
+    {<span class="hljs-attr">provide</span>: MAT_FORM_FIELD_DEFAULT_OPTIONS, <span class="hljs-attr">useValue</span>: {<span class="hljs-attr">floatLabel</span>: <span class="hljs-string">&#x27;always&#x27;</span>}}
+  ]
+})
+</code></pre>
+
+        <h3 id="hint-labels" class="docs-header-link">
+          <span header-link="hint-labels"></span>
+          Hint labels
+        </h3>
+      <p>Hint labels are additional descriptive text that appears below the form field&#39;s underline. A
+<code>&lt;mat-form-field&gt;</code> can have up to two hint labels; one start-aligned (left in an LTR language, right
+in RTL), and one end-aligned.</p>
+<p>Hint labels are specified in one of two ways: either by using the <code>hintLabel</code> property of
+<code>&lt;mat-form-field&gt;</code>, or by adding a <code>&lt;mat-hint&gt;</code> element inside the form field. When adding a hint
+via the <code>hintLabel</code> property, it will be treated as the start hint. Hints added via the
+<code>&lt;mat-hint&gt;</code> hint element can be added to either side by setting the <code>align</code> property on
+<code>&lt;mat-hint&gt;</code> to either <code>start</code> or <code>end</code>. Attempting to add multiple hints to the same side will
+raise an error.</p>
+<div material-docs-example="form-field-hint"></div>
+
+
+        <h3 id="error-messages" class="docs-header-link">
+          <span header-link="error-messages"></span>
+          Error messages
+        </h3>
+      <p>Error messages can be shown under the form field underline by adding <code>mat-error</code> elements inside the
+form field. Errors are hidden initially and will be displayed on invalid form fields after the user
+has interacted with the element or the parent form has been submitted. Since the errors occupy the
+same space as the hints, the hints are hidden when the errors are shown.</p>
+<p>If a form field can have more than one error state, it is up to the consumer to toggle which
+messages should be displayed. This can be done with CSS, <code>@if</code> or <code>@switch</code>. Multiple error
+messages can be shown at the same time if desired, but the <code>&lt;mat-form-field&gt;</code> only reserves enough
+space to display one error message at a time. Ensuring that enough space is available to display
+multiple errors is up to the user.</p>
+<div material-docs-example="form-field-error"></div>
+
+
+        <h3 id="prefix--suffix" class="docs-header-link">
+          <span header-link="prefix--suffix"></span>
+          Prefix &amp; suffix
+        </h3>
+      <p>Custom content can be included before and after the input tag, as a prefix or suffix. It will be
+included within the visual container that wraps the form control as per the Material specification.</p>
+<p>Adding the <code>matPrefix</code> directive to an element inside the <code>&lt;mat-form-field&gt;</code> will designate it as
+the prefix. Similarly, adding <code>matSuffix</code> will designate it as the suffix.</p>
+<p>If the prefix/suffix content is purely text-based, it is recommended to use the <code>matTextPrefix</code> or
+<code>matTextSuffix</code> directives which ensure that the text is aligned with the form control.</p>
+<div material-docs-example="form-field-prefix-suffix"></div>
+
+
+        <h3 id="custom-form-field-controls" class="docs-header-link">
+          <span header-link="custom-form-field-controls"></span>
+          Custom form field controls
+        </h3>
+      <p>In addition to the form field controls that Angular Material provides, it is possible to create
+custom form field controls that work with <code>&lt;mat-form-field&gt;</code> in the same way. For additional
+information on this see the guide on
+<a href="/guide/creating-a-custom-form-field-control">Creating Custom mat-form-field Controls</a>.</p>
+
+        <h3 id="theming" class="docs-header-link">
+          <span header-link="theming"></span>
+          Theming
+        </h3>
+      <p><code>&lt;mat-form-field&gt;</code> has a <code>color</code> property which can be set to <code>primary</code>, <code>accent</code>, or <code>warn</code>. This
+will set the color of the form field underline and floating label based on the theme colors
+of your app.</p>
+<div material-docs-example="form-field-theming"></div>
+
+
+        <h3 id="accessibility" class="docs-header-link">
+          <span header-link="accessibility"></span>
+          Accessibility
+        </h3>
+      <p>By itself, <code>MatFormField</code> does not apply any additional accessibility treatment to a control.
+However, several of the form field&#39;s optional features interact with the control contained within
+the form field.</p>
+<p>When you provide a label via <code>&lt;mat-label&gt;</code>, <code>MatFormField</code> automatically associates this label with
+the field&#39;s control via a native <code>&lt;label&gt;</code> element, using the <code>for</code> attribute to reference the
+control&#39;s ID.</p>
+<p>If a floating label is specified, it will be automatically used as the label for the form
+field control. If no floating label is specified, the user should label the form field control
+themselves using <code>aria-label</code>, <code>aria-labelledby</code> or <code>&lt;label for=...&gt;</code>.</p>
+<p>When you provide informational text via <code>&lt;mat-hint&gt;</code> or <code>&lt;mat-error&gt;</code>, <code>MatFormField</code> automatically
+adds these elements&#39; IDs to the control&#39;s <code>aria-describedby</code> attribute. Additionally, <code>MatError</code>
+applies <code>aria-live=&quot;polite&quot;</code> by default such that assistive technology will announce errors when
+they appear.</p>
+
+        <h3 id="troubleshooting" class="docs-header-link">
+          <span header-link="troubleshooting"></span>
+          Troubleshooting
+        </h3>
+      
+        <h4 id="error-a-hint-was-already-declared-for-align" class="docs-header-link">
+          <span header-link="error-a-hint-was-already-declared-for-align"></span>
+          Error: A hint was already declared for align=&quot;...&quot;
+        </h4>
+      <p>This error occurs if you have added multiple hints for the same side. Keep in mind that the
+<code>hintLabel</code> property adds a hint to the start side.</p>
+
+        <h4 id="error-mat-form-field-must-contain-a-matformfieldcontrol" class="docs-header-link">
+          <span header-link="error-mat-form-field-must-contain-a-matformfieldcontrol"></span>
+          Error: mat-form-field must contain a MatFormFieldControl
+        </h4>
+      <p>This error occurs when you have not added a form field control to your form field. If your form
+field contains a native <code>&lt;input&gt;</code> or <code>&lt;textarea&gt;</code> element, make sure you&#39;ve added the <code>matInput</code>
+directive to it and have imported <code>MatInputModule</code>. Other components that can act as a form field
+control include <code>&lt;mat-select&gt;</code>, <code>&lt;mat-chip-list&gt;</code>, and any custom form field controls you&#39;ve
+created.</p>
+</div>
