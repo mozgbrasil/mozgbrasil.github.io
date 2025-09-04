@@ -1,0 +1,28 @@
+name: Lighthouse CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  lhci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Serve site
+        run: |
+          npx -y http-server -p 8080 . &
+          echo $! > server.pid
+          sleep 2
+      - name: Run Lighthouse
+        run: |
+          npx -y @lhci/cli autorun --collect.url=http://localhost:8080 --upload.target=temporary-public-storage
+      - name: Stop server
+        if: always()
+        run: kill $(cat server.pid)
