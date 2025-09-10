@@ -3,12 +3,9 @@ name: mozgbrasil.github.io CI/CD 🚀
 on:
   push:
     branches: [main, master]
-    paths:
-      - './**'
-      - '.github/workflows/**'
+  pull_request:
+    branches: [main, master]
   workflow_dispatch:
-  schedule:
-    - cron: '0 4 * * *' # Diariamente às 04:00 UTC
 
 permissions:
   contents: write
