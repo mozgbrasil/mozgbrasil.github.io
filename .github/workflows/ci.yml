@@ -33,7 +33,7 @@ jobs:
           echo "Autenticação bem-sucedida!"
 
   linkChecker:
-    name: linkChecker 🔗
+    name: lycheeverse/lychee 🔗
     runs-on: ubuntu-latest
     permissions:
       issues: write # required for peter-evans/create-issue-from-file
@@ -55,7 +55,7 @@ jobs:
           labels: report, automated issue
 
   lighthouse:
-    name: lighthouse 🚦
+    name: treosh/lighthouse-ci 🚦
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
