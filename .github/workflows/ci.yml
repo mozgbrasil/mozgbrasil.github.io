@@ -36,158 +36,47 @@ jobs:
           git ls-remote $REMOTE_URL
           echo "Autenticação bem-sucedida!"
 
-  # linkChecker:
-  #   # needs: test
-  #   name: linkChecker 🔗
-  #   runs-on: ubuntu-latest
-  #   permissions:
-  #     issues: write # required for peter-evans/create-issue-from-file
-  #   steps:
-  #     - uses: actions/checkout@v4
+  linkChecker:
+    # needs: test
+    name: linkChecker 🔗
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write # required for peter-evans/create-issue-from-file
+    steps:
+      - uses: actions/checkout@v4
 
-  #     - name: Link Checker
-  #       id: lychee
-  #       uses: lycheeverse/lychee-action@v2
-  #       with:
-  #         args: 'projects/mozgbrasil.github.io/index.html'
+      - name: Link Checker
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: 'projects/mozgbrasil.github.io/index.html'
 
-  #     - name: Create Issue From File
-  #       if: steps.lychee.outputs.exit_code != 0
-  #       uses: peter-evans/create-issue-from-file@v5
-  #       with:
-  #         title: Link Checker Report
-  #         content-filepath: ./lychee/out.md
-  #         labels: report, automated issue
+      - name: Create Issue From File
+        if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Link Checker Report
+          content-filepath: ./lychee/out.md
+          labels: report, automated issue
 
-  # lighthouse:
-  #   name: lighthouse 🚦
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v4
-  #     - name: Audit URLs using Lighthouse
-  #       uses: treosh/lighthouse-ci-action@v12
-  #       with:
-  #         urls: |
-  #           https://mozgbrasil.github.io/
-  #           https://mozg.com.br/
-  #         budgetPath: ./budget.json # test performance budgets
-  #         uploadArtifacts: true # save results as an action artifacts
-  #         temporaryPublicStorage: true # upload lighthouse report to the temporary storage
+  lighthouse:
+    name: lighthouse 🚦
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          urls: |
+            https://mozgbrasil.github.io/
+            https://mozg.com.br/
+          budgetPath: ./budget.json # test performance budgets
+          uploadArtifacts: true # save results as an action artifacts
+          temporaryPublicStorage: true # upload lighthouse report to the temporary storage
 
-  # lowlighter:
-  #   name: lowlighter/metrics 🖼️
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout repository
-  #       uses: actions/checkout@v3
-  #       with:
-  #         fetch-depth: 0
 
-  #     - name: 🗃️ Base content - Default metrics
-  #       uses: lowlighter/metrics@master
-  #       with:
-  #         filename: ./metrics/metrics.base.svg
-  #         token: ${{ secrets.GH_TOKEN }}
-  #         base: header, activity, community, repositories, metadata
-  #         output_action: none
-  #         delay: 120
-  #         user: mozgbrasil
-  #         plugins_errors_fatal: yes
-  #       if: ${{ success() || failure() }}
 
-  #     - name: ⏰ WakaTime - WakaTime
-  #       uses: lowlighter/metrics@master
-  #       with:
-  #         filename: ./metrics/metrics.plugin.wakatime.svg
-  #         token: ${{ secrets.GH_TOKEN }}
-  #         base: ''
-  #         plugin_wakatime: yes
-  #         plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
-  #         plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
-  #         output_action: none
-  #         delay: 120
-  #         user: mozgbrasil
-  #         plugins_errors_fatal: yes
-  #       if: ${{ success() || failure() }}
-
-  # - name: Generate GitHub Metrics **
-  #   uses: lowlighter/metrics@latest
-  #   with:
-  #     token: ${{ secrets.GH_TOKEN }}
-  #     user: mozgbrasil
-  #     template: classic
-  #     base: header, activity, repositories, metadata
-  #     config_timezone: America/Sao_Paulo
-  #     config_twemoji: yes
-  #     repositories_affiliations: owner, collaborator
-  #     repositories_forks: no
-  #     plugin_languages: yes
-  #     plugin_languages_ignored: html, css, scss
-  #     plugin_languages_limit: 10
-  #     plugin_languages_sections: most-used
-  #     plugin_languages_details: bytes-size, percentage
-  #     plugin_stars: yes
-  #     plugin_stars_limit: 5
-  #     plugin_followup: yes
-  #     plugin_followup_sections: repositories
-  #     plugin_isocalendar: yes
-  #     plugin_isocalendar_duration: full-year
-  #     output_action: commit
-  #     committer_branch: main
-  #     committer_message: 'chore(metrics): update profile metrics v19'
-  #     filename: projects/github-profile/metrics/metrics.svg
-
-  # - name: Generate WakaTime Metrics **
-  #   if: steps.check_wakatime.outputs.wakatime_enabled == 'true'
-  #   uses: lowlighter/metrics@latest
-  #   with:
-  #     token: ${{ secrets.GH_TOKEN }}
-  #     user: mozgbrasil
-  #     template: classic
-  #     plugin_wakatime: yes
-  #     plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
-  #     plugin_wakatime_days: 7
-  #     plugin_wakatime_sections: time, languages, editors, projects
-  #     plugin_wakatime_limit: 5
-  #     output_action: commit
-  #     committer_branch: main
-  #     committer_message: 'chore(metrics): update wakatime v19'
-  #     filename: projects/github-profile/metrics/wakatime.svg
-
-  # generate-metrics:
-  #   runs-on: ubuntu-latest
-  #   needs: test-token
-  #   steps:
-  #     - name: Checkout Repository
-  #       uses: actions/checkout@v4
-  #       with:
-  #         fetch-depth: 0
-
-  #     - name: Check for Changes in Scripts or Dependencies
-  #       id: changes
-  #       run: |
-  #         git fetch origin main --depth=1
-  #         CHANGED=$(git diff --name-only origin/main projects/github-profile/package.json projects/github-profile/package-lock.json projects/github-profile/scripts/)
-  #         echo "changed=$CHANGED" >> $GITHUB_OUTPUT
-
-  #     - name: Setup Node.js
-  #       if: steps.changes.outputs.changed != ''
-  #       uses: actions/setup-node@v3
-  #       with:
-  #         node-version: '20'
-
-  #     - name: Install Dependencies
-  #       if: steps.changes.outputs.changed != ''
-  #       run: npm install
-  #       working-directory: projects/github-profile
-
-  #     - name: Run Node Scripts (PR/Issues, Commits, README)
-  #       if: steps.changes.outputs.changed != ''
-  #       run: |
-  #         node scripts/generate-pr-issue.js
-  #         node scripts/generate-commits-streak.js
-  #         node scripts/update-readme.js
-  #       working-directory: projects/github-profile
+  
 
   # - name: Commit & Push Updates
   #   run: |
