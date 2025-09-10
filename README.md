@@ -1,8 +1,6 @@
 # Site do Marcio (GitHub Pages)
 
-[![Deploy to GitHub Pages](https://github.com/mozgbrasil/mozgbrasil.github.io/actions/workflows/pages.yml/badge.svg)](https://github.com/mozgbrasil/mozgbrasil.github.io/actions/workflows/pages.yml)
-[![Lighthouse CI](https://github.com/mozgbrasil/mozgbrasil.github.io/actions/workflows/lighthouse.yml/badge.svg)](https://github.com/mozgbrasil/mozgbrasil.github.io/actions/workflows/lighthouse.yml)
-[![Link Checker](https://github.com/mozgbrasil/mozgbrasil.github.io/actions/workflows/link-check.yml/badge.svg)](https://github.com/mozgbrasil/mozgbrasil.github.io/actions/workflows/link-check.yml)
+ [![mozgbrasil.github.io CI/CD 🚀](https://github.com/mozgbrasil/mozgbrasil.github.io/actions/workflows/ci.yml/badge.svg)](https://github.com/mozgbrasil/mozgbrasil.github.io/actions/workflows/ci.yml)
 
 Site pessoal/portfólio publicado em https://mozg.com.br/
 
