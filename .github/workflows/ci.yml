@@ -37,7 +37,6 @@ jobs:
           echo "Autenticação bem-sucedida!"
 
   linkChecker:
-    # needs: test
     name: linkChecker 🔗
     runs-on: ubuntu-latest
     permissions:
@@ -49,7 +48,7 @@ jobs:
         id: lychee
         uses: lycheeverse/lychee-action@v2
         with:
-          args: 'projects/mozgbrasil.github.io/index.html'
+          fail: false
 
       - name: Create Issue From File
         if: steps.lychee.outputs.exit_code != 0
@@ -73,127 +72,3 @@ jobs:
           budgetPath: ./budget.json # test performance budgets
           uploadArtifacts: true # save results as an action artifacts
           temporaryPublicStorage: true # upload lighthouse report to the temporary storage
-
-
-
-  
-
-  # - name: Commit & Push Updates
-  #   run: |
-  #     git config user.name "github-actions[bot]"
-  #     git config user.email "github-actions[bot]@users.noreply.github.com"
-  #     git add projects/github-profile/metrics/* README.md
-  #     git commit -m "chore: update metrics and README v19" || echo "No changes"
-  #     git push origin main
-
-  # github-pages:
-  #   needs: lowlighter
-  #   name: Deploy GitHub Pages 🌐
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v4
-  #       with:
-  #         fetch-depth: 0
-  #         token: ${{ secrets.GH_TOKEN }}
-
-  #     - name: Configure Git
-  #       run: |
-  #         git config user.name "github-actions[bot]"
-  #         git config user.email "github-actions[bot]@users.noreply.github.com"
-
-  #     # Copia a pasta projects/mozgbrasil.github.io para mozgbrasil/mozgbrasil.github.io.git
-  #     - name: Sync projects/mozgbrasil.github.io to mozgbrasil/mozgbrasil.github.io.git
-  #       env:
-  #         GIT_TOKEN: ${{ secrets.GH_TOKEN }}
-  #       run: |
-  #         # Clona o repositório mozgbrasil/mozgbrasil.github.io.git em um diretório temporário
-  #         git clone https://x-access-token:${GIT_TOKEN}@github.com/mozgbrasil/mozgbrasil.github.io.git temp-repo
-  #         cd temp-repo
-  #         # Configura identidade do Git para o repositório clonado
-  #         git config user.name "github-actions[bot]"
-  #         git config user.email "github-actions[bot]@users.noreply.github.com"
-  #         # Remove todos os arquivos existentes (exceto .git) para garantir sincronização completa
-  #         find . -maxdepth 1 -not -path './.git' -not -path . -exec rm -rf {} +
-  #         # Copia a pasta projects/mozgbrasil.github.io do repositório original
-  #         cp -r ../projects/mozgbrasil.github.io/* .
-  #         # Adiciona todos os arquivos
-  #         git add .
-  #         # Verifica se há alterações para commit
-  #         if git diff --cached --quiet; then
-  #           echo "Nenhuma alteração para commit no repositório mozgbrasil/mozgbrasil.github.io.git"
-  #         else
-  #           git commit -m "chore: sync projects/github-profile to mozgbrasil/mozgbrasil.github.io.git"
-  #           git push origin main
-  #         fi
-  #         # Volta ao diretório original e remove o temporário
-  #         cd ..
-  #         rm -rf temp-repo
-
-  #     # Copia a pasta projects/github-profile para mozgbrasil/mozgbrasil.git
-  #     - name: Sync projects/github-profile to mozgbrasil/mozgbrasil.git
-  #       env:
-  #         GIT_TOKEN: ${{ secrets.GH_TOKEN }}
-  #       run: |
-  #         # Clona o repositório mozgbrasil/mozgbrasil.git em um diretório temporário
-  #         git clone https://x-access-token:${GIT_TOKEN}@github.com/mozgbrasil/mozgbrasil.git temp-repo
-  #         cd temp-repo
-  #         # Configura identidade do Git para o repositório clonado
-  #         git config user.name "github-actions[bot]"
-  #         git config user.email "github-actions[bot]@users.noreply.github.com"
-  #         # Remove todos os arquivos existentes (exceto .git) para garantir sincronização completa
-  #         find . -maxdepth 1 -not -path './.git' -not -path . -exec rm -rf {} +
-  #         # Copia a pasta projects/github-profile do repositório original
-  #         cp -r ../projects/github-profile/* .
-  #         # Adiciona todos os arquivos
-  #         git add .
-  #         # Verifica se há alterações para commit
-  #         if git diff --cached --quiet; then
-  #           echo "Nenhuma alteração para commit no repositório mozgbrasil/mozgbrasil.git"
-  #         else
-  #           git commit -m "chore: sync projects/github-profile to mozgbrasil/mozgbrasil.git"
-  #           git push origin main
-  #         fi
-  #         # Volta ao diretório original e remove o temporário
-  #         cd ..
-  #         rm -rf temp-repo
-
-  #     - name: Notify Slack
-  #       if: success()
-  #       uses: rtCamp/action-slack-notify@v2
-  #       env:
-  #         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-
-  # -----------------------------
-  # 3️⃣ CodeQL Analysis
-  # -----------------------------
-  # codeql-analysis:
-  #   name: CodeQL Analysis 🕵️‍♂️
-  #   runs-on: ubuntu-latest
-  #   strategy:
-  #     fail-fast: false
-  #     matrix:
-  #       language: [javascript, python, java, csharp, cpp, php, ruby]
-  #   steps:
-  #     - uses: actions/checkout@v4
-
-  #     - name: Cache CodeQL DB
-  #       uses: actions/cache@v3
-  #       with:
-  #         path: .codeql-db-${{ matrix.language }}
-  #         key: codeql-${{ matrix.language }}-${{ github.sha }}
-  #         restore-keys: codeql-${{ matrix.language }}-
-
-  #     - name: Initialize CodeQL
-  #       uses: github/codeql-action/init@v3
-  #       with:
-  #         languages: ${{ matrix.language }}
-  #         queries: security-extended,security-and-quality
-  #         db-location: .codeql-db-${{ matrix.language }}
-
-  #     - name: Autobuild
-  #       uses: github/codeql-action/autobuild@v3
-
-  #     - name: Perform CodeQL Analysis
-  #       uses: github/codeql-action/analyze@v3
-  #       with:
-  #         category: '/language:${{ matrix.language }}'
