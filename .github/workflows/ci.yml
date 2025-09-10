@@ -24,7 +24,43 @@ env:
 
 jobs:
 
+  # linkChecker:
+  #   # needs: test
+  #   name: linkChecker 🔗
+  #   runs-on: ubuntu-latest
+  #   permissions:
+  #     issues: write # required for peter-evans/create-issue-from-file
+  #   steps:
+  #     - uses: actions/checkout@v4
 
+  #     - name: Link Checker
+  #       id: lychee
+  #       uses: lycheeverse/lychee-action@v2
+  #       with:
+  #         args: 'projects/mozgbrasil.github.io/index.html'
+
+  #     - name: Create Issue From File
+  #       if: steps.lychee.outputs.exit_code != 0
+  #       uses: peter-evans/create-issue-from-file@v5
+  #       with:
+  #         title: Link Checker Report
+  #         content-filepath: ./lychee/out.md
+  #         labels: report, automated issue
+
+  # lighthouse:
+  #   name: lighthouse 🚦
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - name: Audit URLs using Lighthouse
+  #       uses: treosh/lighthouse-ci-action@v12
+  #       with:
+  #         urls: |
+  #           https://mozgbrasil.github.io/
+  #           https://mozg.com.br/
+  #         budgetPath: ./budget.json # test performance budgets
+  #         uploadArtifacts: true # save results as an action artifacts
+  #         temporaryPublicStorage: true # upload lighthouse report to the temporary storage
 
 
   lowlighter:
