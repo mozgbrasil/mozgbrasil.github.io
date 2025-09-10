@@ -1,6 +1,6 @@
 # Site do Marcio (GitHub Pages)
 
- [![mozgbrasil.github.io CI/CD 🚀](https://github.com/mozgbrasil/mozgbrasil.github.io/actions/workflows/ci.yml/badge.svg)](https://github.com/mozgbrasil/mozgbrasil.github.io/actions/workflows/ci.yml)
+[![mozgbrasil.github.io CI/CD 🚀](https://github.com/mozgbrasil/mozgbrasil.github.io/actions/workflows/ci.yml/badge.svg)](https://github.com/mozgbrasil/mozgbrasil.github.io/actions/workflows/ci.yml)
 
 Site pessoal/portfólio publicado em https://mozg.com.br/
 
