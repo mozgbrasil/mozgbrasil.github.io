@@ -1,4 +1,4 @@
-name: repo Full CI/CD 🚀
+name: mozgbrasil.github.io CI/CD 🚀
 
 on:
   push:
@@ -23,6 +23,18 @@ env:
   NODE_OPTIONS: '--max_old_space_size=4096'
 
 jobs:
+  test:
+    name: check GH_TOKEN
+    runs-on: ubuntu-latest
+    steps:
+      - name: Teste autenticação
+        run: |
+          pwd
+          ls -la
+          REMOTE_URL=https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/mozgbrasil/mozgbrasil.git
+          echo "Tentando autenticar..."
+          git ls-remote $REMOTE_URL
+          echo "Autenticação bem-sucedida!"
 
   # linkChecker:
   #   # needs: test
@@ -62,7 +74,6 @@ jobs:
   #         uploadArtifacts: true # save results as an action artifacts
   #         temporaryPublicStorage: true # upload lighthouse report to the temporary storage
 
-
   # lowlighter:
   #   name: lowlighter/metrics 🖼️
   #   runs-on: ubuntu-latest
@@ -99,49 +110,49 @@ jobs:
   #         plugins_errors_fatal: yes
   #       if: ${{ success() || failure() }}
 
-      # - name: Generate GitHub Metrics **
-      #   uses: lowlighter/metrics@latest
-      #   with:
-      #     token: ${{ secrets.GH_TOKEN }}
-      #     user: mozgbrasil
-      #     template: classic
-      #     base: header, activity, repositories, metadata
-      #     config_timezone: America/Sao_Paulo
-      #     config_twemoji: yes
-      #     repositories_affiliations: owner, collaborator
-      #     repositories_forks: no
-      #     plugin_languages: yes
-      #     plugin_languages_ignored: html, css, scss
-      #     plugin_languages_limit: 10
-      #     plugin_languages_sections: most-used
-      #     plugin_languages_details: bytes-size, percentage
-      #     plugin_stars: yes
-      #     plugin_stars_limit: 5
-      #     plugin_followup: yes
-      #     plugin_followup_sections: repositories
-      #     plugin_isocalendar: yes
-      #     plugin_isocalendar_duration: full-year
-      #     output_action: commit
-      #     committer_branch: main
-      #     committer_message: 'chore(metrics): update profile metrics v19'
-      #     filename: projects/github-profile/metrics/metrics.svg
+  # - name: Generate GitHub Metrics **
+  #   uses: lowlighter/metrics@latest
+  #   with:
+  #     token: ${{ secrets.GH_TOKEN }}
+  #     user: mozgbrasil
+  #     template: classic
+  #     base: header, activity, repositories, metadata
+  #     config_timezone: America/Sao_Paulo
+  #     config_twemoji: yes
+  #     repositories_affiliations: owner, collaborator
+  #     repositories_forks: no
+  #     plugin_languages: yes
+  #     plugin_languages_ignored: html, css, scss
+  #     plugin_languages_limit: 10
+  #     plugin_languages_sections: most-used
+  #     plugin_languages_details: bytes-size, percentage
+  #     plugin_stars: yes
+  #     plugin_stars_limit: 5
+  #     plugin_followup: yes
+  #     plugin_followup_sections: repositories
+  #     plugin_isocalendar: yes
+  #     plugin_isocalendar_duration: full-year
+  #     output_action: commit
+  #     committer_branch: main
+  #     committer_message: 'chore(metrics): update profile metrics v19'
+  #     filename: projects/github-profile/metrics/metrics.svg
 
-      # - name: Generate WakaTime Metrics **
-      #   if: steps.check_wakatime.outputs.wakatime_enabled == 'true'
-      #   uses: lowlighter/metrics@latest
-      #   with:
-      #     token: ${{ secrets.GH_TOKEN }}
-      #     user: mozgbrasil
-      #     template: classic
-      #     plugin_wakatime: yes
-      #     plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
-      #     plugin_wakatime_days: 7
-      #     plugin_wakatime_sections: time, languages, editors, projects
-      #     plugin_wakatime_limit: 5
-      #     output_action: commit
-      #     committer_branch: main
-      #     committer_message: 'chore(metrics): update wakatime v19'
-      #     filename: projects/github-profile/metrics/wakatime.svg
+  # - name: Generate WakaTime Metrics **
+  #   if: steps.check_wakatime.outputs.wakatime_enabled == 'true'
+  #   uses: lowlighter/metrics@latest
+  #   with:
+  #     token: ${{ secrets.GH_TOKEN }}
+  #     user: mozgbrasil
+  #     template: classic
+  #     plugin_wakatime: yes
+  #     plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
+  #     plugin_wakatime_days: 7
+  #     plugin_wakatime_sections: time, languages, editors, projects
+  #     plugin_wakatime_limit: 5
+  #     output_action: commit
+  #     committer_branch: main
+  #     committer_message: 'chore(metrics): update wakatime v19'
+  #     filename: projects/github-profile/metrics/wakatime.svg
 
   # generate-metrics:
   #   runs-on: ubuntu-latest
