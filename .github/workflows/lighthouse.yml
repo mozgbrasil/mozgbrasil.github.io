@@ -22,7 +22,7 @@ jobs:
           sleep 2
       - name: Run Lighthouse
         run: |
-          npx -y @lhci/cli autorun --collect.url=http://localhost:8080 --upload.target=temporary-public-storage
+          npx -y @lhci/cli autorun --collect.url=https://mozg.com.br/ --upload.target=temporary-public-storage
       - name: Stop server
         if: always()
         run: kill $(cat server.pid)

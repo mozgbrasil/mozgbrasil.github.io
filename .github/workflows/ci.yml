@@ -63,41 +63,41 @@ jobs:
   #         temporaryPublicStorage: true # upload lighthouse report to the temporary storage
 
 
-  lowlighter:
-    name: lowlighter/metrics 🖼️
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+  # lowlighter:
+  #   name: lowlighter/metrics 🖼️
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout repository
+  #       uses: actions/checkout@v3
+  #       with:
+  #         fetch-depth: 0
 
-      - name: 🗃️ Base content - Default metrics
-        uses: lowlighter/metrics@master
-        with:
-          filename: ./metrics/metrics.base.svg
-          token: ${{ secrets.GH_TOKEN }}
-          base: header, activity, community, repositories, metadata
-          output_action: none
-          delay: 120
-          user: mozgbrasil
-          plugins_errors_fatal: yes
-        if: ${{ success() || failure() }}
+  #     - name: 🗃️ Base content - Default metrics
+  #       uses: lowlighter/metrics@master
+  #       with:
+  #         filename: ./metrics/metrics.base.svg
+  #         token: ${{ secrets.GH_TOKEN }}
+  #         base: header, activity, community, repositories, metadata
+  #         output_action: none
+  #         delay: 120
+  #         user: mozgbrasil
+  #         plugins_errors_fatal: yes
+  #       if: ${{ success() || failure() }}
 
-      - name: ⏰ WakaTime - WakaTime
-        uses: lowlighter/metrics@master
-        with:
-          filename: ./metrics/metrics.plugin.wakatime.svg
-          token: ${{ secrets.GH_TOKEN }}
-          base: ''
-          plugin_wakatime: yes
-          plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
-          plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
-          output_action: none
-          delay: 120
-          user: mozgbrasil
-          plugins_errors_fatal: yes
-        if: ${{ success() || failure() }}
+  #     - name: ⏰ WakaTime - WakaTime
+  #       uses: lowlighter/metrics@master
+  #       with:
+  #         filename: ./metrics/metrics.plugin.wakatime.svg
+  #         token: ${{ secrets.GH_TOKEN }}
+  #         base: ''
+  #         plugin_wakatime: yes
+  #         plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
+  #         plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
+  #         output_action: none
+  #         delay: 120
+  #         user: mozgbrasil
+  #         plugins_errors_fatal: yes
+  #       if: ${{ success() || failure() }}
 
       # - name: Generate GitHub Metrics **
       #   uses: lowlighter/metrics@latest
