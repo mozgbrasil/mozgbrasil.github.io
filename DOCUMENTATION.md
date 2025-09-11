@@ -41,12 +41,14 @@ mozgbrasil.github.io/
 ### Configuração do Ambiente
 
 1. **Clone o repositório**
+
    ```bash
    git clone https://github.com/mozgbrasil/monorepo.git
    cd monorepo/projects/mozgbrasil.github.io
    ```
 
 2. **Servidor de desenvolvimento local**
+
    ```bash
    # Usando Python (simples)
    python3 -m http.server 8000
@@ -61,15 +63,18 @@ mozgbrasil.github.io/
 ## 🛠️ Estrutura de Arquivos
 
 ### Páginas Principais
+
 - `index.html` - Página inicial
 - `404.html` - Página de erro 404
 
 ### Assets
+
 - `assets/css/` - Estilos CSS
 - `assets/js/` - Scripts JavaScript
 - `assets/img/` - Imagens e ícones
 
 ### Configurações
+
 - `.nojekyll` - Desativa o processamento Jekyll
 - `robots.txt` - Instruções para robôs de busca
 - `sitemap.xml` - Mapa do site para SEO
@@ -82,6 +87,7 @@ O site é automaticamente implantado no GitHub Pages a cada push para o branch `
 ### Deploy Manual
 
 1. Faça commit das alterações:
+
    ```bash
    git add .
    git commit -m "Atualizações no site"
@@ -96,12 +102,14 @@ O site é automaticamente implantado no GitHub Pages a cada push para o branch `
 ## 🧪 Testes
 
 ### Testes Manuais
+
 - [ ] Verificar responsividade
 - [ ] Testar em diferentes navegadores
 - [ ] Validar HTML/CSS
 - [ ] Testar funcionalidades JavaScript
 
 ### Testes Automatizados
+
 ```bash
 # Executar validação HTML
 npm run test:html
@@ -116,11 +124,13 @@ npm run test:a11y
 ## 🔍 SEO e Acessibilidade
 
 ### Meta Tags
+
 - Título e descrição otimizados
 - Open Graph para compartilhamento
 - Twitter Cards
 
 ### Acessibilidade
+
 - Navegação por teclado
 - Contraste de cores adequado
 - Textos alternativos em imagens
@@ -129,12 +139,14 @@ npm run test:a11y
 ## 🔒 Segurança
 
 ### Headers de Segurança
+
 - CSP (Content Security Policy)
 - HSTS
 - XSS Protection
 - Frame Options
 
 ### Boas Práticas
+
 - Não armazenar dados sensíveis no código
 - Usar HTTPS em todas as requisições
 - Manter dependências atualizadas
