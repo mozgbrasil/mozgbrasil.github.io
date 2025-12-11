@@ -2,7 +2,9 @@
 
 ## 🌐 Visão Geral
 
-O site da Mozg Brasil é construído com tecnologias web modernas para fornecer uma experiência rápida, acessível e responsiva. Este documento descreve a estrutura, configuração e processos de desenvolvimento do site.
+O site da Mozg Brasil é construído com tecnologias web modernas para fornecer
+uma experiência rápida, acessível e responsiva. Este documento descreve a
+estrutura, configuração e processos de desenvolvimento do site.
 
 ## 🏗️ Estrutura do Projeto
 
@@ -57,8 +59,7 @@ mozgbrasil.github.io/
    npx live-server --port=8000
    ```
 
-3. **Acesse**
-   Abra `http://localhost:8000` no navegador.
+3. **Acesse** Abra `http://localhost:8000` no navegador.
 
 ## 🛠️ Estrutura de Arquivos
 
@@ -82,7 +83,8 @@ mozgbrasil.github.io/
 
 ## 🔄 Processo de Deploy
 
-O site é automaticamente implantado no GitHub Pages a cada push para o branch `main`.
+O site é automaticamente implantado no GitHub Pages a cada push para o branch
+`main`.
 
 ### Deploy Manual
 
@@ -160,13 +162,16 @@ npm run test:a11y
 
 ## 📄 Licença
 
-Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+Este projeto está licenciado sob a licença MIT - veja o arquivo
+[LICENSE](LICENSE) para detalhes.
 
 ## 📞 Suporte
 
-Para suporte, por favor abra uma [issue](https://github.com/mozgbrasil/monorepo/issues) ou entre em contato via [email](mailto:suporte@mozg.com.br).
+Para suporte, por favor abra uma
+[issue](https://github.com/mozgbrasil/monorepo/issues) ou entre em contato via
+[email](mailto:suporte@mozg.com.br).
 
 ---
 
-📅 **Última Atualização**: Setembro de 2025  
+📅 **Última Atualização**: Setembro de 2025\
 🏷 **Versão**: 1.0.0

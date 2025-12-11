@@ -2,7 +2,8 @@
 
 [![CI/CD](https://github.com/mozgbrasil/mozgbrasil.github.io/actions/workflows/ci.yml/badge.svg)](https://github.com/mozgbrasil/mozgbrasil.github.io/actions/workflows/ci.yml)
 
-Site pessoal e portfólio profissional de Marcio Amorim, desenvolvido com tecnologias web modernas e publicado no GitHub Pages.
+Site pessoal e portfólio profissional de Marcio Amorim, desenvolvido com
+tecnologias web modernas e publicado no GitHub Pages.
 
 🔗 **URL:** [https://mozg.com.br/](https://mozg.com.br/)
 
@@ -80,7 +81,8 @@ mozgbrasil.github.io/
 
 ## 🚀 Deploy
 
-O deploy é automatizado via GitHub Actions. Qualquer push para a branch `main` dispara o workflow de CI/CD que:
+O deploy é automatizado via GitHub Actions. Qualquer push para a branch `main`
+dispara o workflow de CI/CD que:
 
 1. Executa verificações de qualidade
 2. Testa os links internos
@@ -110,7 +112,8 @@ O projeto inclui verificações automatizadas:
 
 ## 📄 Licença
 
-Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+Este projeto está licenciado sob a licença MIT - veja o arquivo
+[LICENSE](LICENSE) para detalhes.
 
 ## 📬 Contato
 
