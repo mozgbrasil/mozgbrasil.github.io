@@ -102,6 +102,17 @@ O projeto inclui verificações automatizadas:
 - Testes de performance com Lighthouse
 - Verificação de links quebrados
 
+## CI
+
+No monorepo, este projeto entra na matriz como conteúdo estático:
+
+- `runtime`: vazio
+- `format/lint/test`: desabilitados
+- `deploy`: `pages`
+- `dist_dir`: `.`
+
+A publicação é feita diretamente a partir da raiz do projeto no deploy de Pages.
+
 ## 🤝 Como Contribuir
 
 1. Faça um fork do projeto

@@ -54,7 +54,7 @@ mozgbrasil.github.io/
    ```bash
    # Usando Python (simples)
    python3 -m http.server 8000
-   
+
    # Ou com live-server (instale via npm)
    npx live-server --port=8000
    ```
