@@ -1,134 +1,70 @@
-# Site Pessoal - Marcio Amorim
+# mozgbrasil.github.io
 
-[![CI/CD](https://github.com/mozgbrasil/mozgbrasil.github.io/actions/workflows/ci.yml/badge.svg)](https://github.com/mozgbrasil/mozgbrasil.github.io/actions/workflows/ci.yml)
+Landing pessoal e portfolio profissional de Marcio dos Santos Amorim,
+publicado em GitHub Pages com dominio customizado em
+[https://mozg.com.br/](https://mozg.com.br/).
 
-Site pessoal e portfólio profissional de Marcio Amorim, desenvolvido com
-tecnologias web modernas e publicado no GitHub Pages.
+## Visao geral
 
-🔗 **URL:** [https://mozg.com.br/](https://mozg.com.br/)
+Este projeto foi desenhado para comunicar posicionamento profissional, mostrar
+projetos-chave do monorepo e concentrar links publicos como GitHub, LinkedIn e
+curriculo.
 
-## ✨ Recursos
+## O que a landing destaca
 
-- **Design Responsivo** - Adapta-se a qualquer tamanho de tela
-- **Modo Escuro/Claro** - Suporte a preferências do sistema
-- **PWA** - Instalável como aplicativo em dispositivos móveis/desktop
-- **Otimizado para SEO** - Meta tags, sitemap e dados estruturados
-- **Performance** - Carregamento rápido com CSS/JS mínimos
-- **Acessibilidade** - Navegação por teclado e ARIA labels
+- atuacao em software desde 1999
+- fundacao do MOZG em fevereiro de 2016
+- experiencia em arquitetura, full stack, DevOps, automacao e observabilidade
+- projetos do monorepo que mostram execucao real, nao apenas lista de stack
+- metadados SEO e PWA alinhados com `mozg.com.br`
 
-## 🚀 Tecnologias
+## Stack
 
-- HTML5 semântico
-- CSS3 com variáveis para temas
-- JavaScript puro (Vanilla JS)
-- PWA (Service Worker, Web App Manifest)
-- GitHub Actions para CI/CD
-- Lighthouse para auditoria de performance
+- HTML5 semantico
+- CSS3 com variaveis de tema
+- JavaScript puro para tema, reveals e interacoes leves
+- PWA via `manifest.webmanifest`
+- GitHub Pages para publicacao
 
-## 🛠️ Como Executar Localmente
+## Estrutura principal
 
-### Pré-requisitos
-
-- Navegador moderno (Chrome, Firefox, Safari, Edge)
-- Node.js (opcional, para servidor de desenvolvimento)
-- Python (opcional, para servidor de desenvolvimento alternativo)
-
-### Usando Node.js
-
-```bash
-# Instale o http-server globalmente (caso ainda não tenha)
-npm install -g http-server
-
-# Execute o servidor
-http-server -p 8080 .
-```
-
-### Usando Python
-
-```bash
-# Python 3.x
-python3 -m http.server 8080
-
-# Python 2.x
-python -m SimpleHTTPServer 8080
-```
-
-### Acesse
-
-Abra o navegador em: [http://localhost:8080](http://localhost:8080)
-
-## 📁 Estrutura do Projeto
-
-```
+```text
 mozgbrasil.github.io/
-├── .github/
-│   └── workflows/       # GitHub Actions workflows
-├── assets/              # Recursos estáticos
-│   ├── favicon.svg      # Ícone do site
-│   ├── icon-192.svg     # Ícone PWA 192x192
-│   ├── icon-512.svg     # Ícone PWA 512x512
-│   ├── script.js        # Lógica JavaScript
-│   ├── styles.css       # Estilos CSS
-│   └── gamification.js  # Lógica de gamificação
-├── .nojekyll           # Desativa o processamento Jekyll
-├── budget.json         # Orçamento de performance
-├── index.html          # Página principal
-├── lychee.toml         # Configuração do Lychee (verificador de links)
-├── manifest.webmanifest # Configuração PWA
-├── robots.txt          # Instruções para web crawlers
-└── sitemap.xml         # Mapa do site para SEO
+├── assets/
+│   ├── favicon.svg
+│   ├── icon-192.svg
+│   ├── icon-512.svg
+│   ├── script.js
+│   └── styles.css
+├── index.html
+├── manifest.webmanifest
+├── robots.txt
+├── sitemap.xml
+└── README.md
 ```
 
-## 🚀 Deploy
+## Executar localmente
 
-O deploy é automatizado via GitHub Actions. Qualquer push para a branch `main`
-dispara o workflow de CI/CD que:
+Como o projeto e estatico, qualquer servidor simples resolve.
 
-1. Executa verificações de qualidade
-2. Testa os links internos
-3. Publica automaticamente no GitHub Pages
+```bash
+cd /Users/marcio/dados/monorepo/projects/mozgbrasil.github.io
+python3 -m http.server 8080
+```
 
-### Configuração do GitHub Pages
+Depois, abra `http://127.0.0.1:8080`.
 
-1. Acesse as configurações do repositório
-2. Navegue até "Pages" no menu lateral
-3. Em "Source", selecione "GitHub Actions"
+## Publicacao
 
-## 🧪 Testes
-
-O projeto inclui verificações automatizadas:
-
-- Validação de HTML/CSS
-- Testes de performance com Lighthouse
-- Verificação de links quebrados
-
-## CI
-
-No monorepo, este projeto entra na matriz como conteúdo estático:
+No monorepo, este projeto entra na matriz como conteudo estatico:
 
 - `runtime`: vazio
 - `format/lint/test`: desabilitados
 - `deploy`: `pages`
 - `dist_dir`: `.`
 
-A publicação é feita diretamente a partir da raiz do projeto no deploy de Pages.
+A publicacao e feita a partir da raiz do projeto no GitHub Pages.
 
-## 🤝 Como Contribuir
+## CI
 
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`)
-3. Commit suas mudanças (`git commit -am 'Adiciona nova feature'`)
-4. Push para a branch (`git push origin feature/nova-feature`)
-5. Abra um Pull Request
-
-## 📄 Licença
-
-Este projeto está licenciado sob a licença MIT - veja o arquivo
-[LICENSE](LICENSE) para detalhes.
-
-## 📬 Contato
-
-- 💻 Desenvolvedor Fullstack
-- 🌱 Java, Node.js e Python
-- 🔭 Projetos poliglotas
-- 📫 suporte@mozg.com.br
+No CI do monorepo, este projeto publica o diretório raiz em `mozgbrasil/mozgbrasil.github.io`.

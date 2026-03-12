@@ -1,191 +1,564 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR" data-theme="light">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Marcio Amorim — Desenvolvedor Fullstack</title>
+    <title>Marcio dos Santos Amorim | MOZG</title>
     <meta
       name="description"
-      content="Portfólio de Marcio — Desenvolvedor Fullstack. Projetos poliglotas em Java, Node.js e Python."
+      content="Site pessoal de Marcio dos Santos Amorim. Arquitetura de software, plataformas full stack, DevOps, automacao e produtos digitais multi-stack."
     />
-    <meta name="author" content="Marcio Amorim" />
+    <meta name="author" content="Marcio dos Santos Amorim" />
+    <meta name="theme-color" content="#f5ecdf" />
+    <link rel="canonical" href="https://mozg.com.br/" />
 
-    <!-- SEO / Open Graph -->
     <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Marcio Amorim — Desenvolvedor Fullstack"
-    />
+    <meta property="og:site_name" content="MOZG" />
+    <meta property="og:title" content="Marcio dos Santos Amorim | MOZG" />
     <meta
       property="og:description"
-      content="Projetos poliglotas em Java, Node.js e Python."
+      content="Arquitetura, produto e operacao para software que precisa sair do papel e continuar funcionando."
     />
-    <meta property="og:url" content="https://mozgbrasil.github.io/" />
-    <meta
-      property="og:image"
-      content="https://mozgbrasil.github.io/assets/icon-512.svg"
-    />
+    <meta property="og:url" content="https://mozg.com.br/" />
+    <meta property="og:image" content="https://mozg.com.br/assets/icon-512.svg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Marcio Amorim — Desenvolvedor Fullstack"
-    />
+    <meta name="twitter:title" content="Marcio dos Santos Amorim | MOZG" />
     <meta
       name="twitter:description"
-      content="Projetos poliglotas em Java, Node.js e Python."
+      content="Software Architect, Full Stack Engineer e Platform/DevOps com atuacao desde 1999."
     />
     <meta
       name="twitter:image"
-      content="https://mozgbrasil.github.io/assets/icon-512.svg"
+      content="https://mozg.com.br/assets/icon-512.svg"
     />
 
-    <!-- PWA / Theming -->
-    <meta name="theme-color" content="#0f172a" />
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/assets/icon-192.svg" />
-
-    <!-- Preload CSS for performance -->
     <link rel="preload" href="/assets/styles.css" as="style" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Sora:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/assets/styles.css" />
 
-    <!-- Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
-        "name": "Marcio Amorim",
-        "url": "https://mozgbrasil.github.io/",
-        "email": "mailto:suporte@mozg.com.br",
-        "jobTitle": "Desenvolvedor Fullstack",
-        "knowsAbout": ["Java", "Node.js", "Python", "Arquitetura", "DevOps"],
-        "sameAs": ["https://github.com/mozgbrasil"]
+        "name": "Marcio dos Santos Amorim",
+        "url": "https://mozg.com.br/",
+        "email": "mailto:mozgbrasil@gmail.com",
+        "jobTitle": "Software Architect",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "MOZG"
+        },
+        "knowsAbout": [
+          "Software Architecture",
+          "Platform Engineering",
+          "DevOps",
+          "Node.js",
+          "Python",
+          "Cloud",
+          "Observability",
+          "Automation"
+        ],
+        "sameAs": [
+          "https://github.com/mozgbrasil",
+          "https://www.linkedin.com/in/mozgbrasil/",
+          "https://mozg.com.br/"
+        ]
       }
     </script>
   </head>
   <body>
-    <header class="container header">
-      <a class="brand" href="/">Marcio</a>
-      <nav class="nav">
-        <a href="#projetos">Projetos</a>
-        <a href="#skills">Skills</a>
-        <a href="#contato">Contato</a>
-        <button id="theme-toggle" class="btn-ghost" aria-label="Alternar tema">
-          🌓
-        </button>
-      </nav>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Ir para o topo">
+          <span class="brand-mark">MOZG</span>
+          <span class="brand-copy">
+            <strong>Marcio dos Santos Amorim</strong>
+            <small>Software Architect | Full Stack | Platform &amp; DevOps</small>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Navegacao principal">
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#monorepo">Monorepo</a>
+          <a href="#contato">Contato</a>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            type="button"
+            aria-label="Ativar tema escuro"
+          >
+            <span data-theme-label>Tema escuro</span>
+          </button>
+        </nav>
+      </div>
     </header>
 
-    <main class="container">
-      <section class="hero">
-        <h1>Desenvolvedor Fullstack</h1>
-        <p>
-          Construo produtos rápidos, acessíveis e escaláveis. Poliglota: Java,
-          Node.js e Python.
-        </p>
-        <div class="actions">
-          <a
-            class="btn"
-            href="https://github.com/mozgbrasil?tab=repositories"
-            target="_blank"
-            rel="noopener"
-            >GitHub</a
-          >
-          <a class="btn-secondary" href="#projetos">Ver projetos</a>
+    <main id="top">
+      <section class="hero section">
+        <div class="container hero-layout reveal">
+          <div class="hero-copy">
+            <p class="eyebrow">Marcio dos Santos Amorim</p>
+            <h1>
+              Arquitetura, produto e operacao para software que precisa sair do
+              papel e continuar funcionando.
+            </h1>
+            <p class="lead">
+              Desenvolvedor desde 1999, fundador do MOZG desde fevereiro de
+              2016. Atuo entre fintech, e-commerce, plataformas multi-app,
+              automacao local, documentacao tecnica e observabilidade.
+            </p>
+
+            <div class="hero-actions">
+              <a
+                class="btn btn-primary"
+                href="https://github.com/mozgbrasil"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+              <a
+                class="btn btn-secondary"
+                href="https://mozg.com.br/assets/curriculum.pdf"
+                target="_blank"
+                rel="noopener"
+                >Curriculo</a
+              >
+              <a
+                class="btn btn-secondary"
+                href="https://www.linkedin.com/in/mozgbrasil/"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn</a
+              >
+              <a class="btn btn-ghost" href="#projetos">Ver projetos</a>
+            </div>
+
+            <ul class="signal-list" aria-label="Tecnologias e frentes de atuacao">
+              <li>Node.js</li>
+              <li>Python</li>
+              <li>Next.js</li>
+              <li>Kubernetes</li>
+              <li>Terraform</li>
+              <li>Observability</li>
+              <li>AI Ops</li>
+              <li>E-commerce</li>
+            </ul>
+          </div>
+
+          <aside class="hero-panel">
+            <div class="panel-shell">
+              <p class="panel-kicker">Posicionamento</p>
+              <h2>Do codigo a operacao</h2>
+              <p class="panel-text">
+                Gosto de aproximar estrategia, implementacao, testes,
+                infraestrutura e manutencao. A entrega fica melhor quando a
+                arquitetura conversa com a operacao desde o inicio.
+              </p>
+
+              <div class="fact-grid">
+                <article class="fact-card">
+                  <span class="fact-value">1999</span>
+                  <span class="fact-label">inicio da jornada em software</span>
+                </article>
+                <article class="fact-card">
+                  <span class="fact-value">2016</span>
+                  <span class="fact-label">fundacao do laboratorio MOZG</span>
+                </article>
+                <article class="fact-card fact-card-wide">
+                  <span class="fact-value">Fintech, e-commerce e corporate</span>
+                  <span class="fact-label"
+                    >experiencia em ambientes de alta criticidade</span
+                  >
+                </article>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="sobre" class="section">
+        <div class="container reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Sobre</p>
+            <h2>Uma carreira longa o bastante para ver padroes se repetirem.</h2>
+            <p>
+              Minha trajetoria comecou em funcoes operacionais e amadureceu ate
+              engenharia, arquitetura e DevOps. Isso me ajuda a enxergar o
+              software nao so como codigo, mas como processo, operacao e impacto
+              de negocio.
+            </p>
+          </div>
+
+          <div class="story-grid">
+            <article class="story-card">
+              <h3>Experiencia aplicada</h3>
+              <p>
+                Atuei em contextos com alta exigencia tecnica, incluindo
+                Santander, Bradesco e Fundacao Vanzolini (USP), sempre com foco
+                em confiabilidade, manutencao e entrega sustentavel.
+              </p>
+            </article>
+
+            <article class="story-card">
+              <h3>Perfil de execucao</h3>
+              <p>
+                Gosto de ligar arquitetura, produto, frontends, APIs,
+                documentacao, automacao, observabilidade e deploy. A melhor
+                stack e a que continua operavel depois do lancamento.
+              </p>
+            </article>
+
+            <article class="story-card">
+              <h3>MOZG como laboratorio</h3>
+              <p>
+                Desde fevereiro de 2016, o MOZG virou meu espaco para publicar
+                modulos, validar stacks, construir automacoes e transformar
+                necessidades recorrentes em ativos reutilizaveis.
+              </p>
+            </article>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <span class="timeline-year">1999</span>
+              <p>Inicio em desenvolvimento de software.</p>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-year">Fevereiro de 2016</span>
+              <p>Fundacao do MOZG como laboratorio de software.</p>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-year">2026</span>
+              <p>
+                Monorepo multi-stack com apps, infraestrutura, docs, operacao e
+                IA.
+              </p>
+            </article>
+          </div>
         </div>
       </section>
 
       <section id="projetos" class="section">
-        <h2>Projetos em Destaque</h2>
-        <div class="grid">
-          <article class="card">
-            <h3>Monorepo</h3>
+        <div class="container reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Projetos</p>
+            <h2>Alguns recortes do que eu venho construindo.</h2>
             <p>
-              Infra + templates para projetos poliglotas, CI/CD e
-              observabilidade.
+              Em vez de mostrar somente tecnologias, prefiro mostrar sistemas,
+              runtime e governanca. Cada projeto abaixo existe para resolver um
+              problema real de produto, plataforma ou operacao.
             </p>
-            <a
-              class="link"
-              href="https://github.com/mozgbrasil?tab=repositories"
-              target="_blank"
-              rel="noopener"
-              >Abrir no GitHub →</a
-            >
-          </article>
-          <article class="card">
-            <h3>APIs e Microsserviços</h3>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-topline">Workspace multi-stack</div>
+              <h3>Monorepo</h3>
+              <p>
+                Um unico workspace para apps, templates, docs, infraestrutura,
+                Helm, Terraform, GitHub Pages e governanca de qualidade.
+              </p>
+              <ul class="tag-list">
+                <li>CI por matriz</li>
+                <li>Helm</li>
+                <li>Terraform</li>
+                <li>AGENTS</li>
+              </ul>
+              <a
+                class="project-link"
+                href="https://github.com/mozgbrasil/monorepo"
+                target="_blank"
+                rel="noopener"
+                >Abrir repositorio</a
+              >
+            </article>
+
+            <article class="project-card">
+              <div class="project-topline">Plataforma SaaS</div>
+              <h3>Node Next Platform</h3>
+              <p>
+                Ambiente Nx com multiplos apps Next, broker de autenticacao,
+                contratos cross-app, smoke tests e stack Docker local.
+              </p>
+              <ul class="tag-list">
+                <li>Next.js</li>
+                <li>Nx</li>
+                <li>Playwright</li>
+                <li>Docker</li>
+              </ul>
+              <a
+                class="project-link"
+                href="https://github.com/mozgbrasil/monorepo/tree/main/projects/node-next"
+                target="_blank"
+                rel="noopener"
+                >Ver no monorepo</a
+              >
+            </article>
+
+            <article class="project-card">
+              <div class="project-topline">AI ops e automacao</div>
+              <h3>python-lumiere-synapse</h3>
+              <p>
+                Control plane local para fluxos de IA multimodal, publicacao,
+                operacao segura e orquestracao com guardrails.
+              </p>
+              <ul class="tag-list">
+                <li>Python</li>
+                <li>SQLite</li>
+                <li>LM Studio</li>
+                <li>ComfyUI</li>
+              </ul>
+              <a
+                class="project-link"
+                href="https://github.com/mozgbrasil/monorepo/tree/main/projects/python-lumiere-synapse"
+                target="_blank"
+                rel="noopener"
+                >Explorar projeto</a
+              >
+            </article>
+
+            <article class="project-card">
+              <div class="project-topline">CLI governado</div>
+              <h3>bash-simple</h3>
+              <p>
+                Runtime shell modular com catalogo, planos seguros, auditoria,
+                automacao e suporte a multiplos recursos do ambiente.
+              </p>
+              <ul class="tag-list">
+                <li>Bash</li>
+                <li>Runbook JSONL</li>
+                <li>Planning first</li>
+                <li>Tooling</li>
+              </ul>
+              <a
+                class="project-link"
+                href="https://github.com/mozgbrasil/monorepo/tree/main/projects/bash-simple"
+                target="_blank"
+                rel="noopener"
+                >Ver detalhes</a
+              >
+            </article>
+
+            <article class="project-card">
+              <div class="project-topline">Observabilidade</div>
+              <h3>node-monitoring</h3>
+              <p>
+                Monitoramento em tempo real com backend Express/WebSocket e
+                frontend Vite para dashboards e visao operacional.
+              </p>
+              <ul class="tag-list">
+                <li>Node.js</li>
+                <li>WebSocket</li>
+                <li>Vite</li>
+                <li>Realtime UI</li>
+              </ul>
+              <a
+                class="project-link"
+                href="https://github.com/mozgbrasil/monorepo/tree/main/projects/node-monitoring"
+                target="_blank"
+                rel="noopener"
+                >Ver dashboard</a
+              >
+            </article>
+
+            <article class="project-card">
+              <div class="project-topline">Design system e docs</div>
+              <h3>Web Components + VitePress</h3>
+              <p>
+                Componentes reutilizaveis, Storybook, documentacao tecnica e
+                distribuicao para ecossistemas web modernos.
+              </p>
+              <ul class="tag-list">
+                <li>Lit</li>
+                <li>Storybook</li>
+                <li>VitePress</li>
+                <li>Documentation</li>
+              </ul>
+              <a
+                class="project-link"
+                href="https://github.com/mozgbrasil/monorepo/tree/main/projects/node-web-components"
+                target="_blank"
+                rel="noopener"
+                >Abrir componentes</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="monorepo" class="section">
+        <div class="container reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Monorepo</p>
+            <h2>Um laboratorio multi-linguagem com a mesma barra de qualidade.</h2>
             <p>
-              APIs em Deno/.NET/Java/Node/PHP/Python/Ruby/Rust com testes,
-              métricas e deploy simples.
+              O monorepo e menos uma colecao de demos e mais um espaco continuo
+              de arquitetura, padronizacao, deploy, documentacao e evolucao
+              tecnica.
             </p>
-            <a
-              class="link"
-              href="https://github.com/mozgbrasil"
-              target="_blank"
-              rel="noopener"
-              >Repositórios →</a
-            >
-          </article>
+          </div>
+
+          <div class="atlas-grid">
+            <article class="atlas-card">
+              <h3>Apps e plataformas</h3>
+              <ul class="stack-list">
+                <li>Next.js, React, Angular e Web Components</li>
+                <li>PWAs, docs e apps publicados em GitHub Pages</li>
+                <li>Frontends com contratos e integracao cross-app</li>
+              </ul>
+            </article>
+
+            <article class="atlas-card">
+              <h3>APIs e backends</h3>
+              <ul class="stack-list">
+                <li>Node.js, Python, Go, Java, PHP, Ruby, Rust e Deno</li>
+                <li>REST, health checks, auth, testes e observabilidade</li>
+                <li>Templates e ambientes prontos para evolucao</li>
+              </ul>
+            </article>
+
+            <article class="atlas-card">
+              <h3>Infra e operacao</h3>
+              <ul class="stack-list">
+                <li>Docker, Kubernetes, Helm, Terraform e GitHub Actions</li>
+                <li>Prometheus, Grafana, Alertmanager e ELK</li>
+                <li>Runbooks, diagnostico e automacao de manutencao</li>
+              </ul>
+            </article>
+
+            <article class="atlas-card">
+              <h3>Ferramentas e governanca</h3>
+              <ul class="stack-list">
+                <li>CI por matriz para stacks diferentes</li>
+                <li>Documentacao tecnica e agentes locais por projeto</li>
+                <li>Padroes para qualidade, deploy e manutencao</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="monorepo-note">
+            <p>
+              A ideia central e simples: ter um workspace unico onde linguagens
+              e stacks diferentes convivem com rastreabilidade, padrao de
+              qualidade e contexto operacional compartilhado.
+            </p>
+          </div>
         </div>
       </section>
 
       <section id="dashboards" class="section">
-        <h2>Dashboards Interativos</h2>
-        <div class="grid-dashboards">
-          <img
-            src="https://raw.githubusercontent.com/mozgbrasil/mozgbrasil/refs/heads/main/metrics/streak_3d_live.svg"
-            alt="Heatmap 3D Live"
-          />
-          <img
-            src="https://raw.githubusercontent.com/mozgbrasil/mozgbrasil/refs/heads/main/metrics/commits_3d_live.svg"
-            alt="Commits 3D Live Streaming"
-          />
-          <img
-            src="https://raw.githubusercontent.com/mozgbrasil/mozgbrasil/refs/heads/main/metrics/pr_issue_chart.svg"
-            alt="PRs & Issues"
-          />
-          <img
-            src="https://raw.githubusercontent.com/mozgbrasil/mozgbrasil/refs/heads/main/metrics/metrics.svg"
-            alt="Metrics Overview"
-          />
-          <img
-            src="https://raw.githubusercontent.com/mozgbrasil/mozgbrasil/refs/heads/main/metrics/wakatime.svg"
-            alt="WakaTime"
-          />
+        <div class="container reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Dashboards</p>
+            <h2>Sinais vivos da atividade no GitHub.</h2>
+            <p>
+              Estes paines complementam a narrativa tecnica com atividade,
+              consistencia e areas de concentracao do trabalho recente.
+            </p>
+          </div>
+
+          <div class="metric-grid">
+            <figure class="metric-card">
+              <img
+                src="https://raw.githubusercontent.com/mozgbrasil/mozgbrasil/refs/heads/main/metrics/streak_3d_live.svg"
+                alt="Heatmap 3D de contribuicoes"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="metric-card">
+              <img
+                src="https://raw.githubusercontent.com/mozgbrasil/mozgbrasil/refs/heads/main/metrics/commits_3d_live.svg"
+                alt="Streaming 3D de commits"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="metric-card">
+              <img
+                src="https://raw.githubusercontent.com/mozgbrasil/mozgbrasil/refs/heads/main/metrics/pr_issue_chart.svg"
+                alt="Grafico de PRs e issues"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="metric-card">
+              <img
+                src="https://raw.githubusercontent.com/mozgbrasil/mozgbrasil/refs/heads/main/metrics/metrics.svg"
+                alt="Visao geral de metricas"
+                loading="lazy"
+              />
+            </figure>
+          </div>
         </div>
-        <pre></pre>
       </section>
 
-      <section id="skills" class="section">
-        <h2>Skills</h2>
-        <ul class="tags">
-          <li>Java</li>
-          <li>Node.js</li>
-          <li>Python</li>
-          <li>Docker</li>
-          <li>CI/CD</li>
-          <li>Cloud</li>
-        </ul>
-      </section>
+      <section id="contato" class="section section-cta">
+        <div class="container reveal">
+          <div class="cta-card">
+            <div class="cta-copy">
+              <p class="eyebrow">Contato</p>
+              <h2>
+                Se voce precisa conectar produto, codigo, infraestrutura e
+                operacao, podemos conversar.
+              </h2>
+              <p>
+                Trabalho bem em diagnostico tecnico, evolucao de plataforma,
+                organizacao de monorepo, automacao, observabilidade e melhoria
+                de entrega.
+              </p>
+            </div>
 
-      <section id="contato" class="section">
-        <h2>Contato</h2>
-        <p>📫 suporte@mozg.com.br</p>
+            <div class="cta-actions">
+              <a class="btn btn-primary" href="mailto:mozgbrasil@gmail.com"
+                >mozgbrasil@gmail.com</a
+              >
+              <a
+                class="btn btn-secondary"
+                href="https://www.linkedin.com/in/mozgbrasil/"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn</a
+              >
+              <a
+                class="btn btn-secondary"
+                href="https://github.com/mozgbrasil"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+              <a
+                class="btn btn-ghost"
+                href="https://mozg.com.br/assets/curriculum.pdf"
+                target="_blank"
+                rel="noopener"
+                >Abrir curriculo</a
+              >
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="container footer">
-      <small
-        >© <span id="year"></span> Marcio •
-        <a href="/sitemap.xml">sitemap</a></small
-      >
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          © <span id="year"></span> MOZG · Marcio dos Santos Amorim ·
+          <a href="/sitemap.xml">sitemap</a>
+        </p>
+        <p>
+          <a href="https://mozg.com.br/">mozg.com.br</a>
+        </p>
+      </div>
     </footer>
 
     <script defer src="/assets/script.js"></script>
-    <script>
-      // Atualiza ano no rodapé
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
   </body>
 </html>
