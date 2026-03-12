@@ -1,38 +1,38 @@
-const storageKey = "mozg-theme";
+const storageKey = 'mozg-theme';
 const root = document.documentElement;
-const themeToggle = document.getElementById("theme-toggle");
-const themeLabel = themeToggle?.querySelector("[data-theme-label]");
+const themeToggle = document.getElementById('theme-toggle');
+const themeLabel = themeToggle?.querySelector('[data-theme-label]');
 const themeMeta = document.querySelector('meta[name="theme-color"]');
-const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-const themeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const themeQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
 function updateThemeUi(theme) {
-  const isDark = theme === "dark";
+  const isDark = theme === 'dark';
   root.dataset.theme = theme;
 
   if (themeLabel) {
-    themeLabel.textContent = isDark ? "Tema claro" : "Tema escuro";
+    themeLabel.textContent = isDark ? 'Tema claro' : 'Tema escuro';
   }
 
   if (themeToggle) {
     themeToggle.setAttribute(
-      "aria-label",
-      isDark ? "Ativar tema claro" : "Ativar tema escuro",
+      'aria-label',
+      isDark ? 'Ativar tema claro' : 'Ativar tema escuro',
     );
   }
 
   if (themeMeta) {
-    themeMeta.setAttribute("content", isDark ? "#111315" : "#f5ecdf");
+    themeMeta.setAttribute('content', isDark ? '#0f172a' : '#edf4ff');
   }
 }
 
 function resolveInitialTheme() {
   const savedTheme = localStorage.getItem(storageKey);
-  if (savedTheme === "light" || savedTheme === "dark") {
+  if (savedTheme === 'light' || savedTheme === 'dark') {
     return savedTheme;
   }
 
-  return themeQuery.matches ? "dark" : "light";
+  return themeQuery.matches ? 'dark' : 'light';
 }
 
 function applyTheme(theme, persist = false) {
@@ -43,23 +43,23 @@ function applyTheme(theme, persist = false) {
   }
 }
 
-themeToggle?.addEventListener("click", () => {
-  const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
+themeToggle?.addEventListener('click', () => {
+  const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
   applyTheme(nextTheme, true);
 });
 
-themeQuery.addEventListener("change", (event) => {
+themeQuery.addEventListener('change', (event) => {
   if (!localStorage.getItem(storageKey)) {
-    applyTheme(event.matches ? "dark" : "light");
+    applyTheme(event.matches ? 'dark' : 'light');
   }
 });
 
 applyTheme(resolveInitialTheme());
 
-const revealItems = document.querySelectorAll(".reveal");
+const revealItems = document.querySelectorAll('.reveal');
 
 if (reducedMotion.matches) {
-  revealItems.forEach((item) => item.classList.add("is-visible"));
+  revealItems.forEach((item) => item.classList.add('is-visible'));
 } else {
   const observer = new IntersectionObserver(
     (entries) => {
@@ -68,20 +68,20 @@ if (reducedMotion.matches) {
           return;
         }
 
-        entry.target.classList.add("is-visible");
+        entry.target.classList.add('is-visible');
         observer.unobserve(entry.target);
       });
     },
     {
       threshold: 0.18,
-      rootMargin: "0px 0px -40px 0px",
+      rootMargin: '0px 0px -40px 0px',
     },
   );
 
   revealItems.forEach((item) => observer.observe(item));
 }
 
-const yearNode = document.getElementById("year");
+const yearNode = document.getElementById('year');
 
 if (yearNode) {
   yearNode.textContent = String(new Date().getFullYear());
