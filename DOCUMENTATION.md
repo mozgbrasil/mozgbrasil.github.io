@@ -1,177 +1,69 @@
-# Documentação do Site Mozg Brasil
+# Documentacao do Site MOZG
 
-## 🌐 Visão Geral
+## Visao geral
 
-O site da Mozg Brasil é construído com tecnologias web modernas para fornecer
-uma experiência rápida, acessível e responsiva. Este documento descreve a
-estrutura, configuração e processos de desenvolvimento do site.
+`mozgbrasil.github.io` e uma landing estatica, publicada via GitHub Pages, com
+foco em posicionamento profissional, portfolio e sinais publicos do monorepo.
+O projeto nao depende de etapa de build local e foi desenhado para continuar
+simples de operar.
 
-## 🏗️ Estrutura do Projeto
+## Estrutura real do projeto
 
-```
+```text
 mozgbrasil.github.io/
-├── .github/           # Configurações do GitHub
-│   └── workflows/     # Fluxos de CI/CD
-├── assets/            # Arquivos estáticos
-│   ├── css/          # Folhas de estilo
-│   ├── img/          # Imagens e ícones
-│   └── js/           # Scripts JavaScript
-├── .nojekyll         # Desativa o processamento Jekyll
-├── index.html        # Página principal
-├── manifest.json     # Configuração do PWA
-└── sitemap.xml      # Mapa do site para SEO
+├── assets/
+│   ├── favicon.svg
+│   ├── gamification.js
+│   ├── icon-192.svg
+│   ├── icon-512.svg
+│   ├── script.js
+│   └── styles.css
+├── index.html
+├── manifest.webmanifest
+├── robots.txt
+├── sitemap.xml
+├── PRIVACY.md
+├── budget.json
+└── README.md
 ```
 
-## 🛠️ Tecnologias Utilizadas
+## Componentes principais
 
-- **HTML5** - Estrutura semântica
-- **CSS3** - Estilização responsiva
-- **JavaScript** - Interatividade
-- **GitHub Pages** - Hospedagem
-- **GitHub Actions** - CI/CD
-- **PWA** - Suporte a Progressive Web App
+- `index.html`: markup semantico, SEO, Open Graph, Twitter Cards e JSON-LD
+- `assets/styles.css`: identidade visual, layout responsivo, tema claro/escuro e motion
+- `assets/script.js`: alternancia de tema, reveal on scroll, dashboard GitHub e cache local
+- `manifest.webmanifest`: metadata PWA e atalhos para canais publicos
+- `robots.txt` e `sitemap.xml`: indexacao e descoberta por mecanismos de busca
+- `PRIVACY.md`: postura de privacidade do portal estatico
+- `budget.json`: referencia de peso e governanca do front estatico
 
-## 🚀 Guia de Desenvolvimento
+## Desenvolvimento local
 
-### Pré-requisitos
-
-- Navegador moderno (Chrome, Firefox, Safari, Edge)
-- Git para controle de versão
-- Node.js (opcional para desenvolvimento local)
-- Editor de código (VS Code recomendado)
-
-### Configuração do Ambiente
-
-1. **Clone o repositório**
-
-   ```bash
-   git clone https://github.com/mozgbrasil/monorepo.git
-   cd monorepo/projects/mozgbrasil.github.io
-   ```
-
-2. **Servidor de desenvolvimento local**
-
-   ```bash
-   # Usando Python (simples)
-   python3 -m http.server 8000
-
-   # Ou com live-server (instale via npm)
-   npx live-server --port=8000
-   ```
-
-3. **Acesse** Abra `http://localhost:8000` no navegador.
-
-## 🛠️ Estrutura de Arquivos
-
-### Páginas Principais
-
-- `index.html` - Página inicial
-- `404.html` - Página de erro 404
-
-### Assets
-
-- `assets/css/` - Estilos CSS
-- `assets/js/` - Scripts JavaScript
-- `assets/img/` - Imagens e ícones
-
-### Configurações
-
-- `.nojekyll` - Desativa o processamento Jekyll
-- `robots.txt` - Instruções para robôs de busca
-- `sitemap.xml` - Mapa do site para SEO
-- `manifest.webmanifest` - Configuração do PWA
-
-## 🔄 Processo de Deploy
-
-O site é automaticamente implantado no GitHub Pages a cada push para o branch
-`main`.
-
-### Deploy Manual
-
-1. Faça commit das alterações:
-
-   ```bash
-   git add .
-   git commit -m "Atualizações no site"
-   git push origin main
-   ```
-
-2. O GitHub Actions irá:
-   - Construir o site
-   - Executar testes
-   - Fazer deploy para o GitHub Pages
-
-## 🧪 Testes
-
-### Testes Manuais
-
-- [ ] Verificar responsividade
-- [ ] Testar em diferentes navegadores
-- [ ] Validar HTML/CSS
-- [ ] Testar funcionalidades JavaScript
-
-### Testes Automatizados
+Como o projeto e estatico, qualquer servidor simples e suficiente:
 
 ```bash
-# Executar validação HTML
-npm run test:html
-
-# Validar CSS
-npm run test:css
-
-# Testes de acessibilidade
-npm run test:a11y
+cd /Users/marcio/dados/monorepo/projects/mozgbrasil.github.io
+python3 -m http.server 8080
 ```
 
-## 🔍 SEO e Acessibilidade
+Abra `http://127.0.0.1:8080`.
 
-### Meta Tags
+## Validacao recomendada
 
-- Título e descrição otimizados
-- Open Graph para compartilhamento
-- Twitter Cards
+Este projeto nao possui esteira local de `lint` ou `test` na matriz. Quando
+houver alteracoes relevantes, a validacao recomendada e manual:
 
-### Acessibilidade
+- revisar responsividade em mobile e desktop
+- testar alternancia de tema
+- testar navegacao por ancora e foco via teclado
+- validar carregamento de `manifest.webmanifest`, `robots.txt` e `sitemap.xml`
+- conferir comportamento de fallback do dashboard GitHub quando a API publica falhar
 
-- Navegação por teclado
-- Contraste de cores adequado
-- Textos alternativos em imagens
-- ARIA labels onde necessário
+## Publicacao e coerencia com outros canais
 
-## 🔒 Segurança
+- dominio principal: `https://mozg.com.br/`
+- portal complementar: `https://mozgbrasil.github.io/`
+- perfil README do GitHub: `projects/github-profile/README.md`
 
-### Headers de Segurança
-
-- CSP (Content Security Policy)
-- HSTS
-- XSS Protection
-- Frame Options
-
-### Boas Práticas
-
-- Não armazenar dados sensíveis no código
-- Usar HTTPS em todas as requisições
-- Manter dependências atualizadas
-
-## 🤝 Contribuição
-
-1. Faça um fork do repositório
-2. Crie uma branch para sua feature
-3. Faça commit das alterações
-4. Envie um Pull Request
-
-## 📄 Licença
-
-Este projeto está licenciado sob a licença MIT - veja o arquivo
-[LICENSE](LICENSE) para detalhes.
-
-## 📞 Suporte
-
-Para suporte, por favor abra uma
-[issue](https://github.com/mozgbrasil/monorepo/issues) ou entre em contato via
-[email](mailto:suporte@mozg.com.br).
-
----
-
-📅 **Última Atualização**: Setembro de 2025\
-🏷 **Versão**: 1.0.0
+Os tres pontos devem permanecer semanticamente coerentes: mesma narrativa
+profissional, mesmos links principais e o mesmo nivel de metadados publicos.

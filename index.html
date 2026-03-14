@@ -11,9 +11,14 @@
     />
     <meta name="author" content="Marcio dos Santos Amorim" />
     <meta name="theme-color" content="#edf4ff" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="format-detection" content="telephone=no,address=no,email=no" />
     <link rel="canonical" href="https://mozg.com.br/" />
 
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content="MOZG" />
     <meta property="og:title" content="Marcio dos Santos Amorim | MOZG" />
     <meta
@@ -26,6 +31,8 @@
       content="https://mozg.com.br/assets/icon-512.svg"
     />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@mozgbrasil" />
+    <meta name="twitter:creator" content="@Hackin88Mar" />
     <meta name="twitter:title" content="Marcio dos Santos Amorim | MOZG" />
     <meta
       name="twitter:description"
@@ -93,7 +100,43 @@
           "https://steamcommunity.com/id/mozgbrasil/",
           "https://www.xbox.com/pt-BR/play/user/MozgBrasil",
           "https://www.linkedin.com/in/mozgbrasil/",
+          "https://play.google.com/store/apps/dev?id=8685510812208806498",
           "https://mozg.com.br/"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://mozg.com.br/#website",
+            "url": "https://mozg.com.br/",
+            "name": "MOZG",
+            "inLanguage": "pt-BR",
+            "publisher": {
+              "@id": "https://mozg.com.br/#organization"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://mozg.com.br/#organization",
+            "name": "MOZG",
+            "url": "https://mozg.com.br/",
+            "logo": "https://mozg.com.br/assets/icon-512.svg",
+            "foundingDate": "2016-02",
+            "founder": {
+              "@type": "Person",
+              "name": "Marcio dos Santos Amorim"
+            },
+            "sameAs": [
+              "https://github.com/mozgbrasil",
+              "https://www.linkedin.com/in/mozgbrasil/",
+              "https://play.google.com/store/apps/dev?id=8685510812208806498",
+              "https://mozgbrasil.github.io/"
+            ]
+          }
         ]
       }
     </script>
@@ -115,6 +158,7 @@
           <a href="#sobre">Sobre</a>
           <a href="#projetos">Projetos</a>
           <a href="#monorepo">Monorepo</a>
+          <a href="#apps">Apps</a>
           <a href="#redes">Redes</a>
           <a href="#contato">Contato</a>
           <button
@@ -152,13 +196,7 @@
                 rel="noopener"
                 >GitHub</a
               >
-              <a
-                class="btn btn-secondary"
-                href="https://mozg.com.br/assets/curriculum.pdf"
-                target="_blank"
-                rel="noopener"
-                >Curriculo</a
-              >
+              <a class="btn btn-secondary" href="/curriculum.html">Curriculo</a>
               <a
                 class="btn btn-secondary"
                 href="https://www.linkedin.com/in/mozgbrasil/"
@@ -304,7 +342,7 @@
               <div class="project-topline">Workspace multi-stack</div>
               <h3>Monorepo</h3>
               <p>
-                Um unico workspace para apps, templates, docs, infraestrutura,
+                Um workspace privado para apps, templates, docs, infraestrutura,
                 Helm, Terraform, GitHub Pages e governanca de qualidade.
               </p>
               <ul class="tag-list">
@@ -378,12 +416,14 @@
               <div class="project-topline">Design system e docs</div>
               <h3>Web Components + VitePress</h3>
               <p>
-                Componentes reutilizaveis, Storybook, documentacao tecnica e
-                distribuicao para ecossistemas web modernos.
+                Componentes reutilizaveis com Storybook publicado, dossier
+                tecnico e distribuicao auditavel em npm para ecossistemas web
+                modernos.
               </p>
               <ul class="tag-list">
                 <li>Lit</li>
                 <li>Storybook</li>
+                <li>npm</li>
                 <li>VitePress</li>
                 <li>Documentation</li>
               </ul>
@@ -402,7 +442,8 @@
             <p>
               O monorepo e menos uma colecao de demos e mais um espaco continuo
               de arquitetura, padronizacao, deploy, documentacao e evolucao
-              tecnica.
+              tecnica. O workspace fonte e privado; as superficies publicas
+              aparecem nos sites, apps, APIs e artefatos derivados.
             </p>
           </div>
 
@@ -448,7 +489,8 @@
             <p>
               A ideia central e simples: ter um workspace unico onde linguagens
               e stacks diferentes convivem com rastreabilidade, padrao de
-              qualidade e contexto operacional compartilhado.
+              qualidade, contexto operacional compartilhado e dossiers publicos
+              coerentes para sites, apps, Storybook e distribuicao.
             </p>
           </div>
         </div>
@@ -555,6 +597,105 @@
           <p class="github-dashboard-status" data-github-status>
             Carregando sinais recentes da atividade publica no GitHub.
           </p>
+        </div>
+      </section>
+
+      <section id="apps" class="section">
+        <div class="container reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Apps</p>
+            <h2>Superfícies mobile com distribuição ativa.</h2>
+            <p>
+              Do workspace monorepo para distribuição no Android, com apps que
+              consolidam marca, catálogo e operação na mesma trilha de
+              qualidade, conectados ao perfil oficial do desenvolvedor no Google
+              Play.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-topline">Desenvolvimento por web app</div>
+              <h3>Mozg TWA</h3>
+              <p>
+                Aplicativo empacotado com Bubblewrap para disponibilizar a
+                experiencia principal da marca em Android com atualizacoes
+                rapidas e operacao consistente.
+              </p>
+              <ul class="tag-list">
+                <li>Bubblewrap</li>
+                <li>Android</li>
+                <li>Distribuicao PWA</li>
+                <li>Google Play</li>
+              </ul>
+              <p>
+                Base de codigo conectada a <strong>node-vitepress</strong> para
+                o site principal e <strong>mozgbrasil.github.io</strong> para a
+                camada complementar de portfolio.
+              </p>
+              <a
+                class="btn btn-secondary"
+                href="https://play.google.com/store/search?q=mozg%20twa&c=apps&hl=pt_BR"
+                target="_blank"
+                rel="noopener"
+                >Ver no Google Play</a
+              >
+            </article>
+
+            <article class="project-card">
+              <div class="project-topline">Desenvolvimento cross-platform</div>
+              <h3>Mozg Híbrido</h3>
+              <p>
+                Aplicativo principal para operação e distribuicao de conteudo
+                com arquitetura Angular e estratégia de atualização contínua.
+              </p>
+              <ul class="tag-list">
+                <li>Angular</li>
+                <li>Android</li>
+                <li>Monorepo</li>
+                <li>Produto interno</li>
+              </ul>
+              <p>
+                A superficie de app conversa com <strong>node-angular</strong>
+                para catalogo, filtros e readiness operacional.
+              </p>
+              <a
+                class="btn btn-secondary"
+                href="https://play.google.com/store/search?q=mozg%20h%C3%ADbrido%20angular&c=apps&hl=pt_BR"
+                target="_blank"
+                rel="noopener"
+                >Ver no Google Play</a
+              >
+            </article>
+
+            <article class="project-card">
+              <div class="project-topline">Distribuicao e rastreabilidade</div>
+              <h3>Perfil de desenvolvedor</h3>
+              <p>
+                Catalogo publico no Google Play que reúne as superficies Android
+                do laboratorio e reforca a coerencia entre marca, app e
+                publicacao.
+              </p>
+              <ul class="tag-list">
+                <li>Google Play</li>
+                <li>Android</li>
+                <li>Catalogo publico</li>
+                <li>Auditoria de release</li>
+              </ul>
+              <p>
+                Preparacao operacional apoiada por
+                <strong>zsh-enterprise</strong> para validacao local e revisão
+                humana antes de qualquer publicacao upstream.
+              </p>
+              <a
+                class="btn btn-secondary"
+                href="https://play.google.com/store/apps/dev?id=8685510812208806498"
+                target="_blank"
+                rel="noopener"
+                >Abrir perfil</a
+              >
+            </article>
+          </div>
         </div>
       </section>
 
@@ -1029,10 +1170,13 @@
                 >GitHub</a
               >
               <a
-                class="btn btn-ghost"
-                href="https://mozg.com.br/assets/curriculum.pdf"
+                class="btn btn-secondary"
+                href="https://play.google.com/store/apps/dev?id=8685510812208806498"
                 target="_blank"
                 rel="noopener"
+                >Google Play</a
+              >
+              <a class="btn btn-ghost" href="/curriculum.html"
                 >Abrir curriculo</a
               >
             </div>

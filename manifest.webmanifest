@@ -7,8 +7,31 @@
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "orientation": "portrait-primary",
   "background_color": "#edf4ff",
   "theme_color": "#edf4ff",
+  "categories": ["technology", "business", "productivity"],
+  "shortcuts": [
+    {
+      "name": "GitHub MOZG",
+      "short_name": "GitHub",
+      "url": "https://github.com/mozgbrasil",
+      "description": "Acessa o perfil e os repositórios públicos no GitHub."
+    },
+    {
+      "name": "LinkedIn",
+      "short_name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/mozgbrasil/",
+      "description": "Acessa o perfil profissional no LinkedIn."
+    },
+    {
+      "name": "Portal GitHub Pages",
+      "short_name": "Pages",
+      "url": "https://mozgbrasil.github.io/",
+      "description": "Acessa a landing complementar publicada em GitHub Pages."
+    }
+  ],
   "icons": [
     {
       "src": "/assets/icon-192.svg",

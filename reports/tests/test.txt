@@ -1,1 +1,1 @@
-ℹ️ Runtime none sem checks ou build habilitados
+ℹ️ Use build_cmd ou script local para validar testes em projetos bash
