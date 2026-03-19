@@ -77,8 +77,8 @@ text_candidate_files() {
       -path "$PROJECT_ROOT/.git" -prune -o \
       -type f \
       \( -name '*.css' -o -name '*.html' -o -name '*.js' -o -name '*.md' -o -name '*.svg' -o -name '*.txt' -o -name '*.webmanifest' -o -name '*.xml' \) \
-      -print \
-      | sort
+      -print |
+      sort
   } | awk '!seen[$0]++'
 }
 
@@ -87,12 +87,12 @@ validate_text_format() {
   echo "📦 format"
   while IFS= read -r path; do
     [[ -f "$path" ]] || continue
-    if find_text_issues "$path" > /dev/null 2>&1; then
+    if find_text_issues "$path" >/dev/null 2>&1; then
       echo "format issue in $path" >&2
       find_text_issues "$path" >&2 || true
       failed=1
     fi
-    if [[ -n "$(tail -c1 "$path" 2> /dev/null || true)" ]]; then
+    if [[ -n "$(tail -c1 "$path" 2>/dev/null || true)" ]]; then
       echo "missing trailing newline in $path" >&2
       failed=1
     fi
@@ -154,24 +154,24 @@ run_site_smoke() {
 echo "== mozgbrasil.github.io build =="
 
 case "$PHASE" in
-  format-only)
-    validate_text_format
-    ;;
-  lint-only)
-    run_lint_checks
-    ;;
-  test-only)
-    run_site_smoke
-    ;;
-  all)
-    validate_text_format
-    run_lint_checks
-    run_site_smoke
-    ;;
-  *)
-    echo "usage: bash scripts/build.sh [all|format-only|lint-only|test-only]" >&2
-    exit 2
-    ;;
+format-only)
+  validate_text_format
+  ;;
+lint-only)
+  run_lint_checks
+  ;;
+test-only)
+  run_site_smoke
+  ;;
+all)
+  validate_text_format
+  run_lint_checks
+  run_site_smoke
+  ;;
+*)
+  echo "usage: bash scripts/build.sh [all|format-only|lint-only|test-only]" >&2
+  exit 2
+  ;;
 esac
 
 echo "OK: static site checks passed."
