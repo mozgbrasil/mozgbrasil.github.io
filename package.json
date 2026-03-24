@@ -1,0 +1,30 @@
+{
+  "name": "@mozgbrasil/mozgbrasil-github-io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Public landing, portfolio and GitHub Pages identity surface for the MOZG laboratory.",
+  "packageManager": "npm@11.6.1",
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=11.0.0"
+  },
+  "directories": {
+    "doc": ".",
+    "test": "tests"
+  },
+  "config": {
+    "publicSite": "https://mozg.com.br/",
+    "publicProfile": "https://github.com/mozgbrasil",
+    "publicPortal": "https://mozgbrasil.github.io/"
+  },
+  "scripts": {
+    "format:check": "bash scripts/build.sh format-only",
+    "lint": "bash scripts/build.sh lint-only",
+    "test": "bash scripts/build.sh test-only",
+    "check": "bash scripts/build.sh check-only",
+    "check:full": "bash scripts/build.sh all",
+    "ci": "bash scripts/build.sh check-only"
+  },
+  "author": "Mozg Brasil",
+  "license": "MIT"
+}

@@ -90,6 +90,18 @@ if (yearNode) {
 const githubDashboard = document.querySelector('[data-github-dashboard]');
 const githubStatusNode = document.querySelector('[data-github-status]');
 const githubDashboardTtlMs = 30 * 60 * 1000;
+const requestContext = {
+  request_id:
+    typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function'
+      ? crypto.randomUUID()
+      : `mozg-${Date.now()}`,
+  x_request_timestamp: new Date().toISOString(),
+  x_request_path: window.location.pathname,
+  x_request_method: 'GET',
+};
+
+window.__MOZG_REQUEST_CONTEXT__ = requestContext;
+document.documentElement.dataset.requestId = requestContext.request_id;
 
 function safeLocalStorageGet(key) {
   try {
@@ -312,6 +324,10 @@ async function fetchGithubJson(url) {
   const response = await fetch(url, {
     headers: {
       Accept: 'application/vnd.github+json',
+      'X-Request-Id': requestContext.request_id,
+      'X-Request-Timestamp': requestContext.x_request_timestamp,
+      'X-Request-Path': requestContext.x_request_path,
+      'X-Request-Method': requestContext.x_request_method,
     },
     cache: 'no-store',
   });

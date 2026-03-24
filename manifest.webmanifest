@@ -30,6 +30,12 @@
       "short_name": "Pages",
       "url": "https://mozgbrasil.github.io/",
       "description": "Acessa a landing complementar publicada em GitHub Pages."
+    },
+    {
+      "name": "GitHub Sponsors",
+      "short_name": "Sponsors",
+      "url": "https://github.com/sponsors/mozgbrasil",
+      "description": "Acessa a superficie publica de apoio ao laboratorio MOZG."
     }
   ],
   "icons": [

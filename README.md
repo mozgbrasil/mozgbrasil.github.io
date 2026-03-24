@@ -7,8 +7,8 @@ publicado em GitHub Pages com dominio customizado em
 ## Visao geral
 
 Este projeto foi desenhado para comunicar posicionamento profissional, mostrar
-projetos-chave do monorepo e concentrar links publicos como GitHub, LinkedIn e
-curriculo.
+projetos-chave do monorepo e concentrar links publicos como GitHub, LinkedIn,
+Bluesky, GitHub Sponsors, Google Developers, OpenProfile e curriculo.
 
 O workspace fonte do monorepo e privado no GitHub. A superficie publica desta
 landing deve sempre apontar para sites, apps, portais e dossiers publicados.
@@ -51,8 +51,10 @@ A landing também referencia explicitamente os projetos de origem do ecossistema
 ## Requisitos
 
 - Bash
+- Node.js `24.13.0` para os checks agregados via `npm`
 - `rg` para a validacao shell local
 - qualquer servidor HTTP simples para inspecao manual
+- `.tool-versions` fixa `nodejs 24.13.0` para reduzir drift local
 
 ## Instalação
 
@@ -64,16 +66,28 @@ bash scripts/build.sh
 bash scripts/build.sh format-only
 bash scripts/build.sh lint-only
 bash scripts/build.sh test-only
+bash scripts/build.sh check-only
+npm run check
+npm run check:full
 ```
 
 ## Sinais operacionais e metadados
 
 - SEO publico com `canonical`, Open Graph, Twitter Cards e JSON-LD
-- PWA com atalhos rapidos para GitHub, LinkedIn e portal complementar
+- PWA com atalhos rapidos para GitHub, LinkedIn, GitHub Sponsors e portal complementar
 - dashboard client-side do GitHub com cache local e fallback resiliente
+- envelope client-side de request com `request_id`, `x_request_timestamp`, `x_request_path` e `x_request_method` para inspeção operacional no browser e nas chamadas à API pública do GitHub
 - alinhamento semantico com `projects/github-profile`
 - trilha mobile do desenvolvedor visivel no card de presença e links operacionais
 - referencia publica ao design system em Storybook e ao pacote distribuido no npm
+- links tecnicos adicionais para Bluesky, Google Developers, OpenProfile e apoio via Sponsors
+
+## Perfis publicos oficiais
+
+- `Bluesky`: <https://bsky.app/profile/mozgbrasil.bsky.social>
+- `GitHub Sponsors`: <https://github.com/sponsors/mozgbrasil>
+- `Google Developers`: <https://developers.google.com/profile/u/mozgbrasil>
+- `OpenProfile`: <https://openprofile.dev/profile/mozgbrasil>
 
 ## Estrutura principal
 
@@ -123,6 +137,9 @@ No CI do monorepo, este projeto:
 - valida referencias de assets e smoke estrutural com `bash scripts/build.sh test-only`;
 - publica o diretório raiz em `mozgbrasil/mozgbrasil.github.io`.
 
+Para o fluxo local canônico, prefira `bash scripts/build.sh all`.
+Quando quiser a mesma entrada por `package.json`, use `npm run check` ou `npm run check:full`.
+
 ## Contrato de qualidade local
 
 As fases do `build.sh` foram separadas para manter a governanca coerente com as
@@ -131,4 +148,18 @@ outras stacks do monorepo:
 - `format-only`: tabs, trailing spaces e newline final em HTML, CSS, JS, SVG,
   TXT, XML, Web App Manifest e metadata textual;
 - `lint-only`: metadata publica, manifesto, discovery e sinais obrigatorios da landing;
-- `test-only`: referencias locais de assets nas paginas publicas.
+- `test-only`: referencias locais de assets nas paginas publicas e o contrato
+  inicial em `tests/00-site-contract.test.js`.
+
+## Testes locais
+
+```bash
+cd /Users/marcio/dados/monorepo/projects/mozgbrasil.github.io
+node --test tests/*.test.js
+bash scripts/build.sh test-only
+npm test
+```
+
+O primeiro conjunto de testes valida a landing principal, o bootstrap do tema,
+os seletores essenciais do dashboard client-side e a navegacao publica minima
+sem depender de servidor externo.

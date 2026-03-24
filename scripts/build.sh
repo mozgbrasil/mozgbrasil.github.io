@@ -5,6 +5,12 @@ PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$PROJECT_ROOT"
 PHASE="${1:-all}"
 
+usage() {
+  cat <<'EOF'
+usage: bash scripts/build.sh [all|format-only|lint-only|test-only|check-only|help|--help]
+EOF
+}
+
 required_files=(
   "index.html"
   "curriculum.html"
@@ -151,6 +157,16 @@ run_site_smoke() {
   done < <(list_asset_references index.html curriculum.html)
 }
 
+run_unit_tests() {
+  echo "📦 unit tests"
+  if [[ ! -d "tests" ]]; then
+    echo "missing tests directory" >&2
+    exit 1
+  fi
+
+  node --test tests/*.test.js
+}
+
 echo "== mozgbrasil.github.io build =="
 
 case "$PHASE" in
@@ -162,14 +178,25 @@ lint-only)
   ;;
 test-only)
   run_site_smoke
+  run_unit_tests
+  ;;
+check-only)
+  validate_text_format
+  run_lint_checks
+  run_site_smoke
+  run_unit_tests
   ;;
 all)
   validate_text_format
   run_lint_checks
   run_site_smoke
+  run_unit_tests
+  ;;
+help|--help)
+  usage
   ;;
 *)
-  echo "usage: bash scripts/build.sh [all|format-only|lint-only|test-only]" >&2
+  usage >&2
   exit 2
   ;;
 esac
