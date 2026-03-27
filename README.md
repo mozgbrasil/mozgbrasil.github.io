@@ -51,10 +51,10 @@ A landing também referencia explicitamente os projetos de origem do ecossistema
 ## Requisitos
 
 - Bash
-- Node.js `24.13.0` para os checks agregados via `npm`
+- Node.js `24.14.1` para os checks agregados via `npm`
 - `rg` para a validacao shell local
 - qualquer servidor HTTP simples para inspecao manual
-- `.tool-versions` fixa `nodejs 24.13.0` para reduzir drift local
+- `.tool-versions` fixa `nodejs 24.14.1` para reduzir drift local
 
 ## Instalação
 
@@ -66,9 +66,16 @@ bash scripts/build.sh
 bash scripts/build.sh format-only
 bash scripts/build.sh lint-only
 bash scripts/build.sh test-only
+bash scripts/build.sh surface-only
+bash scripts/build.sh ready-only
 bash scripts/build.sh check-only
 npm run check
 npm run check:full
+npm run surface:json
+npm run surface:md
+npm run surface:ready
+npm run surface:links
+npm run surface:links:ndjson
 ```
 
 ## Sinais operacionais e metadados
@@ -77,6 +84,9 @@ npm run check:full
 - PWA com atalhos rapidos para GitHub, LinkedIn, GitHub Sponsors e portal complementar
 - dashboard client-side do GitHub com cache local e fallback resiliente
 - envelope client-side de request com `request_id`, `x_request_timestamp`, `x_request_path` e `x_request_method` para inspeção operacional no browser e nas chamadas à API pública do GitHub
+- superficie local `site-surface` com `supported_filters` por `page`, `category`, `host`, `section`, `search`, `limit` e `status`
+- exportacoes locais em `json`, `md` e `ndjson`, incluindo `npm run surface:links:ndjson`
+- readiness local em `npm run surface:ready` com checks pequenos para arquivos, secoes e superficies publicas centrais
 - alinhamento semantico com `projects/github-profile`
 - trilha mobile do desenvolvedor visivel no card de presença e links operacionais
 - referencia publica ao design system em Storybook e ao pacote distribuido no npm
@@ -150,6 +160,8 @@ outras stacks do monorepo:
 - `lint-only`: metadata publica, manifesto, discovery e sinais obrigatorios da landing;
 - `test-only`: referencias locais de assets nas paginas publicas e o contrato
   inicial em `tests/00-site-contract.test.js`.
+- `surface-only`: exporta e valida a superficie operacional local sem depender de servidor externo.
+- `ready-only`: confere o snapshot deterministico de readiness da landing.
 
 ## Testes locais
 
@@ -157,6 +169,9 @@ outras stacks do monorepo:
 cd /Users/marcio/dados/monorepo/projects/mozgbrasil.github.io
 node --test tests/*.test.js
 bash scripts/build.sh test-only
+bash scripts/build.sh surface-only
+npm run surface:ready
+npm run surface:links:ndjson
 npm test
 ```
 

@@ -23,6 +23,11 @@
     "test": "bash scripts/build.sh test-only",
     "check": "bash scripts/build.sh check-only",
     "check:full": "bash scripts/build.sh all",
+    "surface:json": "node scripts/site-surface.js --format=json",
+    "surface:md": "node scripts/site-surface.js --format=md",
+    "surface:ready": "node scripts/site-surface.js --view=readiness --format=json",
+    "surface:links": "node scripts/site-surface.js --view=links --format=json",
+    "surface:links:ndjson": "node scripts/site-surface.js --view=links --format=ndjson",
     "ci": "bash scripts/build.sh check-only"
   },
   "author": "Mozg Brasil",

@@ -7,7 +7,7 @@ PHASE="${1:-all}"
 
 usage() {
   cat <<'EOF'
-usage: bash scripts/build.sh [all|format-only|lint-only|test-only|check-only|help|--help]
+usage: bash scripts/build.sh [all|format-only|lint-only|test-only|surface-only|ready-only|check-only|help|--help]
 EOF
 }
 
@@ -23,6 +23,7 @@ required_files=(
   "assets/styles.css"
   "assets/script.js"
   "assets/gamification.js"
+  "scripts/site-surface.js"
 )
 
 find_text_issues() {
@@ -167,6 +168,13 @@ run_unit_tests() {
   node --test tests/*.test.js
 }
 
+run_surface_checks() {
+  echo "📦 surface"
+  node scripts/site-surface.js --format=json >/dev/null
+  node scripts/site-surface.js --view=links --format=ndjson >/dev/null
+  node scripts/site-surface.js --view=readiness --format=json >/dev/null
+}
+
 echo "== mozgbrasil.github.io build =="
 
 case "$PHASE" in
@@ -180,17 +188,25 @@ test-only)
   run_site_smoke
   run_unit_tests
   ;;
+surface-only)
+  run_surface_checks
+  ;;
+ready-only)
+  node scripts/site-surface.js --view=readiness --format=json >/dev/null
+  ;;
 check-only)
   validate_text_format
   run_lint_checks
   run_site_smoke
   run_unit_tests
+  run_surface_checks
   ;;
 all)
   validate_text_format
   run_lint_checks
   run_site_smoke
   run_unit_tests
+  run_surface_checks
   ;;
 help|--help)
   usage

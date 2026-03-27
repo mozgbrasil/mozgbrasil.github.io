@@ -14,13 +14,22 @@
 - `bash scripts/build.sh lint-only`
 - `bash scripts/build.sh test-only`
 - `bash scripts/build.sh check-only`
+- `bash scripts/build.sh surface-only`
+- `bash scripts/build.sh ready-only`
 - `npm run check`
 - `npm run check:full`
+- `npm run surface:json`
+- `npm run surface:md`
+- `npm run surface:ready`
+- `npm run surface:links`
+- `npm run surface:links:ndjson`
 
 ## Maintenance Rules
 
 - Preserve `.tool-versions` alinhado ao runtime local exigido pelos checks via `npm run check`.
 - Quando o contrato de runtime mudar, atualize `README.md`, `AGENTS.md` e `CLAUDE.md` na mesma rodada.
+- Preserve o envelope local com `request_id`, `x_request_timestamp`, `x_request_path` e `x_request_method`, mais exportacoes explicitas por `json`, `md` e `ndjson`.
+- Mantenha readiness local pequeno e deterministico para arquivos obrigatorios, secoes da landing e superficies publicas centrais.
 
 ## CI Notes
 

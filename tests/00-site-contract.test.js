@@ -2,11 +2,23 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
+const cp = require('node:child_process');
 
 const projectRoot = path.resolve(__dirname, '..');
 
 function readProjectFile(relativePath) {
   return fs.readFileSync(path.join(projectRoot, relativePath), 'utf8');
+}
+
+function runSurface(args = []) {
+  return cp.execFileSync(
+    process.execPath,
+    ['scripts/site-surface.js', ...args],
+    {
+      cwd: projectRoot,
+      encoding: 'utf8',
+    },
+  );
 }
 
 test('landing keeps public metadata and navigation anchors', () => {
@@ -60,8 +72,11 @@ test('build script runs site smoke and unit phases', () => {
 
   for (const snippet of [
     'test-only',
+    'surface-only',
+    'ready-only',
     'run_site_smoke',
     'run_unit_tests',
+    'run_surface_checks',
     'node --test tests/*.test.js',
   ]) {
     assert.match(
@@ -69,4 +84,45 @@ test('build script runs site smoke and unit phases', () => {
       new RegExp(snippet.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')),
     );
   }
+});
+
+test('site surface snapshot exposes request metadata, filters and readiness', () => {
+  const snapshot = JSON.parse(runSurface(['--format=json']));
+
+  assert.ok(snapshot.request.request_id.startsWith('mozg-site-'));
+  assert.equal(snapshot.request.x_request_path, '/surface');
+  assert.equal(snapshot.request.x_request_method, 'READ');
+  assert.equal(snapshot.surface.readiness_path, '/ready');
+  assert.ok(snapshot.surface.supported_filters.includes('page'));
+  assert.ok(snapshot.surface.export_formats.includes('ndjson'));
+  assert.equal(snapshot.readiness.status, 'ready');
+  assert.ok(snapshot.summary.links_total >= 20);
+});
+
+test('site surface links view supports filtering and ndjson export', () => {
+  const output = runSurface([
+    '--view=links',
+    '--format=ndjson',
+    '--category=mobile',
+    '--limit=3',
+  ]).trim();
+
+  const items = output.split('\n').map((line) => JSON.parse(line));
+
+  assert.ok(items.length >= 1);
+  assert.ok(items.length <= 3);
+  for (const item of items) {
+    assert.equal(item.category, 'mobile');
+  }
+});
+
+test('site surface readiness reports operational checks', () => {
+  const readiness = JSON.parse(
+    runSurface(['--view=readiness', '--format=json']),
+  );
+
+  assert.equal(readiness.status, 'ready');
+  assert.equal(readiness.endpoint, '/ready');
+  assert.ok(readiness.checks_total >= 4);
+  assert.ok(readiness.checks.every((entry) => entry.status === 'ready'));
 });
