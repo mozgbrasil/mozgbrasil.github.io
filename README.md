@@ -1,24 +1,24 @@
 # mozgbrasil.github.io
 
-Landing pessoal e portfolio profissional de Marcio dos Santos Amorim,
+Landing pessoal e portfólio profissional de Marcio dos Santos Amorim,
 publicado em GitHub Pages com dominio customizado em
 [https://mozg.com.br/](https://mozg.com.br/).
 
 ## Visao geral
 
 Este projeto foi desenhado para comunicar posicionamento profissional, mostrar
-projetos-chave do monorepo e concentrar links publicos como GitHub, LinkedIn,
-Bluesky, GitHub Sponsors, Google Developers, OpenProfile e curriculo.
+projetos-chave do monorepo e concentrar links públicos como GitHub, LinkedIn,
+Bluesky, GitHub Sponsors, Google Developers, OpenProfile e currículo.
 
-O workspace fonte do monorepo e privado no GitHub. A superficie publica desta
+O workspace fonte do monorepo é privado no GitHub. A superfície pública desta
 landing deve sempre apontar para sites, apps, portais e dossiers publicados.
 
 ## O que a landing destaca
 
 - atuacao em software desde 1999
 - fundacao do MOZG em fevereiro de 2016
-- experiencia em arquitetura, full stack, DevOps, automacao e observabilidade
-- projetos do monorepo que mostram execucao real, nao apenas lista de stack
+- experiencia em arquitetura, full stack, DevOps, automação e observabilidade
+- projetos do monorepo que mostram execução real, não apenas lista de stack
 - metadados SEO e PWA alinhados com `mozg.com.br`
 - destaque para o portfólio mobile no Google Play:
   - **Mozg TWA** (Bubblewrap)
@@ -26,7 +26,7 @@ landing deve sempre apontar para sites, apps, portais e dossiers publicados.
 
 ## Presença mobile do ecossistema
 
-O perfil do desenvolvedor no Google Play agrega os ativos de publicação:
+O perfil do desenvolvedor no Google Play agrega os ativos de públicação:
 
 - **Perfil oficial do desenvolvedor:** <https://play.google.com/store/apps/dev?id=8685510812208806498>
 - **Mozg TWA (Bubblewrap):** <https://play.google.com/store/search?q=site:www.mozg.com.br+Mozg+TWA>
@@ -38,27 +38,27 @@ A landing também referencia explicitamente os projetos de origem do ecossistema
 - `projects/node-angular` (catálogo operacional da storefront)
 - `projects/node-web-components` (design system público, Storybook e pacote npm)
 - `projects/github-profile` (espelho de identidade técnica e sinal no GitHub)
-- `mozg.com.br/projetos/*` (dossiers publicos do workspace privado)
+- `mozg.com.br/projetos/*` (dossiers públicos do workspace privado)
 
 ## Stack
 
 - HTML5 semantico
-- CSS3 com variaveis de tema
+- CSS3 com variáveis de tema
 - JavaScript puro para tema, reveals e interacoes leves
 - PWA via `manifest.webmanifest`
-- GitHub Pages para publicacao
+- GitHub Pages para públicação
 
 ## Requisitos
 
 - Bash
 - Node.js `24.14.1` para os checks agregados via `npm`
-- `rg` para a validacao shell local
-- qualquer servidor HTTP simples para inspecao manual
+- `rg` para a validação shell local
+- qualquer servidor HTTP simples para inspeção manual
 - `.tool-versions` fixa `nodejs 24.14.1` para reduzir drift local
 
 ## Instalação
 
-Nao ha etapa de install obrigatoria. O gate local oficial e:
+Não ha etapa de install obrigatoria. O gate local oficial e:
 
 ```bash
 cd /Users/marcio/dados/monorepo/projects/mozgbrasil.github.io
@@ -80,17 +80,17 @@ npm run surface:links:ndjson
 
 ## Sinais operacionais e metadados
 
-- SEO publico com `canonical`, Open Graph, Twitter Cards e JSON-LD
+- SEO público com `canonical`, Open Graph, Twitter Cards e JSON-LD
 - PWA com atalhos rapidos para GitHub, LinkedIn, GitHub Sponsors e portal complementar
 - dashboard client-side do GitHub com cache local e fallback resiliente
 - envelope client-side de request com `request_id`, `x_request_timestamp`, `x_request_path` e `x_request_method` para inspeção operacional no browser e nas chamadas à API pública do GitHub
-- superficie local `site-surface` com `supported_filters` por `page`, `category`, `host`, `section`, `search`, `limit` e `status`
+- superfície local `site-surface` com `supported_filters` por `page`, `category`, `host`, `section`, `search`, `limit` e `status`
 - exportacoes locais em `json`, `md` e `ndjson`, incluindo `npm run surface:links:ndjson`
-- readiness local em `npm run surface:ready` com checks pequenos para arquivos, secoes e superficies publicas centrais
+- readiness local em `npm run surface:ready` com checks pequenos para arquivos, seções e superfícies públicas centrais
 - alinhamento semantico com `projects/github-profile`
 - trilha mobile do desenvolvedor visivel no card de presença e links operacionais
-- referencia publica ao design system em Storybook e ao pacote distribuido no npm
-- links tecnicos adicionais para Bluesky, Google Developers, OpenProfile e apoio via Sponsors
+- referência pública ao design system em Storybook e ao pacote distribuído no npm
+- links técnicos adicionais para Bluesky, Google Developers, OpenProfile e apoio via Sponsors
 
 ## Perfis publicos oficiais
 
@@ -118,7 +118,7 @@ mozgbrasil.github.io/
 
 ## Executar localmente
 
-Como o projeto e estatico, qualquer servidor simples resolve.
+Como o projeto e estático, qualquer servidor simples resolve.
 
 ```bash
 cd /Users/marcio/dados/monorepo/projects/mozgbrasil.github.io
@@ -127,23 +127,23 @@ python3 -m http.server 8080
 
 Depois, abra `http://127.0.0.1:8080`.
 
-## Publicacao
+## Publicação
 
-No monorepo, este projeto entra na matriz como conteudo estatico shell-driven:
+No monorepo, este projeto entra na matriz como conteúdo estático shell-driven:
 
 - `runtime`: `bash`
-- `test`: validacao shell local via `bash scripts/build.sh`
+- `test`: validação shell local via `bash scripts/build.sh`
 - `deploy`: `pages`
 - `dist_dir`: `.`
 
-A publicacao e feita a partir da raiz do projeto no GitHub Pages.
+A públicação e feita a partir da raiz do projeto no GitHub Pages.
 
 ## CI
 
 No CI do monorepo, este projeto:
 
-- valida formato textual deterministico com `bash scripts/build.sh format-only`;
-- valida metadata, manifesto, discovery e contrato estatico com `bash scripts/build.sh lint-only`;
+- valida formato textual determinístico com `bash scripts/build.sh format-only`;
+- valida metadata, manifesto, discovery e contrato estático com `bash scripts/build.sh lint-only`;
 - valida referencias de assets e smoke estrutural com `bash scripts/build.sh test-only`;
 - publica o diretório raiz em `mozgbrasil/mozgbrasil.github.io`.
 
@@ -152,16 +152,16 @@ Quando quiser a mesma entrada por `package.json`, use `npm run check` ou `npm ru
 
 ## Contrato de qualidade local
 
-As fases do `build.sh` foram separadas para manter a governanca coerente com as
+As fases do `build.sh` foram separadas para manter a governança coerente com as
 outras stacks do monorepo:
 
 - `format-only`: tabs, trailing spaces e newline final em HTML, CSS, JS, SVG,
   TXT, XML, Web App Manifest e metadata textual;
-- `lint-only`: metadata publica, manifesto, discovery e sinais obrigatorios da landing;
-- `test-only`: referencias locais de assets nas paginas publicas e o contrato
+- `lint-only`: metadata pública, manifesto, discovery e sinais obrigatórios da landing;
+- `test-only`: referências locais de assets nas páginas públicas e o contrato
   inicial em `tests/00-site-contract.test.js`.
-- `surface-only`: exporta e valida a superficie operacional local sem depender de servidor externo.
-- `ready-only`: confere o snapshot deterministico de readiness da landing.
+- `surface-only`: exporta e valida a superfície operacional local sem depender de servidor externo.
+- `ready-only`: confere o snapshot determinístico de readiness da landing.
 
 ## Testes locais
 
@@ -176,5 +176,5 @@ npm test
 ```
 
 O primeiro conjunto de testes valida a landing principal, o bootstrap do tema,
-os seletores essenciais do dashboard client-side e a navegacao publica minima
+os seletores essenciais do dashboard client-side e a navegação pública mínima
 sem depender de servidor externo.
