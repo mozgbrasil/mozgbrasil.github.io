@@ -125,12 +125,15 @@ run_lint_checks() {
   assert_contains "index.html" "manifest.webmanifest"
   assert_contains "index.html" "/curriculum.html"
   assert_contains "index.html" "workspace fonte e privado"
+  assert_contains "index.html" "vw-access-button"
   assert_not_contains "index.html" "https://github.com/mozgbrasil/monorepo"
 
   assert_contains "curriculum.html" "https://mozg.com.br/curriculum.html"
   assert_contains "curriculum.html" "rel=\"canonical\""
   assert_contains "curriculum.html" "manifest.webmanifest"
   assert_contains "curriculum.html" "Marcio dos Santos Amorim"
+  assert_contains "curriculum.html" "vw-access-button"
+  assert_contains "curriculum.html" "/assets/script.js"
 
   echo "📦 manifest"
   assert_contains "manifest.webmanifest" "\"name\""
@@ -146,6 +149,8 @@ run_lint_checks() {
 
   echo "📦 static checks"
   assert_contains "assets/script.js" "localStorage"
+  assert_contains "assets/script.js" "https://vlibras.gov.br/app/vlibras-plugin.js"
+  assert_contains "assets/script.js" "https://vlibras.gov.br/app"
   assert_contains "assets/gamification.js" "document"
   assert_contains "assets/styles.css" ":root"
 }

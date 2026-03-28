@@ -36,6 +36,7 @@ test('landing keeps public metadata and navigation anchors', () => {
     'https://github.com/sponsors/mozgbrasil',
     'https://developers.google.com/profile/u/mozgbrasil',
     'https://openprofile.dev/profile/mozgbrasil',
+    'vw-access-button',
   ]) {
     assert.match(
       indexHtml,
@@ -59,12 +60,38 @@ test('client script keeps theme and dashboard bootstrap hooks', () => {
     'X-Request-Id',
     'localStorage',
     'IntersectionObserver',
+    'https://vlibras.gov.br/app/vlibras-plugin.js',
+    'new window.VLibras.Widget',
+    'https://vlibras.gov.br/app',
   ]) {
     assert.match(
       script,
       new RegExp(snippet.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')),
     );
   }
+});
+
+test('public pages expose VLibras widget bootstrap', () => {
+  const indexHtml = readProjectFile('index.html');
+  const curriculumHtml = readProjectFile('curriculum.html');
+
+  for (const html of [indexHtml, curriculumHtml]) {
+    for (const snippet of [
+      '<div vw class="enabled">',
+      'vw-access-button',
+      'vw-plugin-wrapper',
+    ]) {
+      assert.match(
+        html,
+        new RegExp(snippet.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')),
+      );
+    }
+  }
+
+  assert.match(
+    curriculumHtml,
+    /<script defer src="\/assets\/script\.js"><\/script>/,
+  );
 });
 
 test('build script runs site smoke and unit phases', () => {

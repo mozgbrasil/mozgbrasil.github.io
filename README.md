@@ -45,6 +45,7 @@ A landing também referencia explicitamente os projetos de origem do ecossistema
 - HTML5 semantico
 - CSS3 com variáveis de tema
 - JavaScript puro para tema, reveals e interacoes leves
+- VLibras para oferecer traducao automatica do conteudo para Libras
 - PWA via `manifest.webmanifest`
 - GitHub Pages para públicação
 
@@ -81,6 +82,7 @@ npm run surface:links:ndjson
 ## Sinais operacionais e metadados
 
 - SEO público com `canonical`, Open Graph, Twitter Cards e JSON-LD
+- widget VLibras nas páginas públicas para acessibilidade em Libras
 - PWA com atalhos rapidos para GitHub, LinkedIn, GitHub Sponsors e portal complementar
 - dashboard client-side do GitHub com cache local e fallback resiliente
 - envelope client-side de request com `request_id`, `x_request_timestamp`, `x_request_path` e `x_request_method` para inspeção operacional no browser e nas chamadas à API pública do GitHub

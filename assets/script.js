@@ -87,6 +87,53 @@ if (yearNode) {
   yearNode.textContent = String(new Date().getFullYear());
 }
 
+const vlibrasPluginUrl = 'https://vlibras.gov.br/app/vlibras-plugin.js';
+
+function loadExternalScript(src) {
+  const existingScript = document.querySelector(`script[src="${src}"]`);
+
+  if (existingScript) {
+    return Promise.resolve(existingScript);
+  }
+
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = src;
+    script.async = true;
+    script.addEventListener('load', () => resolve(script), { once: true });
+    script.addEventListener(
+      'error',
+      () => reject(new Error(`Nao foi possivel carregar ${src}.`)),
+      { once: true },
+    );
+    document.body.appendChild(script);
+  });
+}
+
+async function bootstrapVlibras() {
+  const vlibrasRoot = document.querySelector('[vw].enabled');
+
+  if (!vlibrasRoot || window.__MOZG_VLIBRAS_WIDGET__) {
+    return;
+  }
+
+  if (!window.VLibras?.Widget) {
+    try {
+      await loadExternalScript(vlibrasPluginUrl);
+    } catch {
+      return;
+    }
+  }
+
+  if (window.VLibras?.Widget && !window.__MOZG_VLIBRAS_WIDGET__) {
+    window.__MOZG_VLIBRAS_WIDGET__ = new window.VLibras.Widget(
+      'https://vlibras.gov.br/app',
+    );
+  }
+}
+
+bootstrapVlibras();
+
 const githubDashboard = document.querySelector('[data-github-dashboard]');
 const githubStatusNode = document.querySelector('[data-github-status]');
 const githubDashboardTtlMs = 30 * 60 * 1000;
