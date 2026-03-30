@@ -153,3 +153,17 @@ test('site surface readiness reports operational checks', () => {
   assert.ok(readiness.checks_total >= 4);
   assert.ok(readiness.checks.every((entry) => entry.status === 'ready'));
 });
+
+test('package metadata stays aligned with the public landing contract', () => {
+  const pkg = JSON.parse(readProjectFile('package.json'));
+
+  assert.equal(pkg.homepage, 'https://mozg.com.br/');
+  assert.equal(pkg.config.publicSite, 'https://mozg.com.br/');
+  assert.equal(pkg.config.publicPortal, 'https://mozgbrasil.github.io/');
+  assert.equal(pkg.bugs?.email, 'mozgbrasil@gmail.com');
+  assert.equal(pkg.bugs?.url, 'https://mozg.com.br/projetos/monorepo');
+  assert.doesNotMatch(
+    JSON.stringify(pkg),
+    /github\.com\/mozgbrasil\/monorepo/i,
+  );
+});

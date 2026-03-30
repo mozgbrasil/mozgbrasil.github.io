@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Public landing, portfolio and GitHub Pages identity surface for the MOZG laboratory.",
+  "homepage": "https://mozg.com.br/",
   "packageManager": "npm@11.6.1",
   "engines": {
     "node": ">=22.0.0",
@@ -16,6 +17,10 @@
     "publicSite": "https://mozg.com.br/",
     "publicProfile": "https://github.com/mozgbrasil",
     "publicPortal": "https://mozgbrasil.github.io/"
+  },
+  "bugs": {
+    "email": "mozgbrasil@gmail.com",
+    "url": "https://mozg.com.br/projetos/monorepo"
   },
   "scripts": {
     "format:check": "bash scripts/build.sh format-only",
