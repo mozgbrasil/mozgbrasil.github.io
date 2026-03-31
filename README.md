@@ -4,21 +4,26 @@ Landing pessoal e portfólio profissional de Marcio dos Santos Amorim,
 publicado em GitHub Pages com dominio customizado em
 [https://mozg.com.br/](https://mozg.com.br/).
 
-## Visao geral
+## Visão geral
 
 Este projeto foi desenhado para comunicar posicionamento profissional, mostrar
-projetos-chave do monorepo e concentrar links públicos como GitHub, LinkedIn,
+projetos-chave do ecossistema e concentrar links públicos como GitHub, LinkedIn,
 Bluesky, GitHub Sponsors, Google Developers, OpenProfile e currículo.
 
-O workspace fonte do monorepo é privado no GitHub. A superfície pública desta
-landing deve sempre apontar para sites, apps, portais e dossiers publicados.
+A superfície pública desta landing aponta para sites, apps, portais e
+componentes publicados, mantendo a narrativa profissional concentrada em
+superfícies úteis para o público.
+
+Nesta rodada, a landing ganhou também uma camada explícita de confiança pública,
+com política de devolução, contato institucional, prova social, jornada
+comercial e referência empresarial visível na própria superfície.
 
 ## O que a landing destaca
 
-- atuacao em software desde 1999
-- fundacao do MOZG em fevereiro de 2016
-- experiencia em arquitetura, full stack, DevOps, automação e observabilidade
-- projetos do monorepo que mostram execução real, não apenas lista de stack
+- atuação em software desde 1999
+- fundação do MOZG em fevereiro de 2016
+- experiência em arquitetura, full stack, DevOps, automação e observabilidade
+- projetos do ecossistema que mostram execução real, não apenas lista de stack
 - metadados SEO e PWA alinhados com `mozg.com.br`
 - destaque para o portfólio mobile no Google Play:
   - **Mozg TWA** (Bubblewrap)
@@ -26,28 +31,28 @@ landing deve sempre apontar para sites, apps, portais e dossiers publicados.
 
 ## Presença mobile do ecossistema
 
-O perfil do desenvolvedor no Google Play agrega os ativos de públicação:
+O perfil do desenvolvedor no Google Play agrega os ativos de publicação:
 
 - **Perfil oficial do desenvolvedor:** <https://play.google.com/store/apps/dev?id=8685510812208806498>
 - **Mozg TWA (Bubblewrap):** <https://play.google.com/store/search?q=site:www.mozg.com.br+Mozg+TWA>
 - **Mozg Híbrido (Angular):** <https://play.google.com/store/search?q=site:www.mozg.com.br+Mozg+H%C3%ADbrido>
 
-A landing também referencia explicitamente os projetos de origem do ecossistema:
+A landing também referencia explicitamente as principais superfícies do ecossistema:
 
-- `projects/node-vitepress` (site institucional e catálogo de presença digital)
-- `projects/node-angular` (catálogo operacional da storefront)
-- `projects/node-web-components` (design system público, Storybook e pacote npm)
-- `projects/github-profile` (espelho de identidade técnica e sinal no GitHub)
-- `mozg.com.br/projetos/*` (dossiers públicos do workspace privado)
+- `mozg.com.br` (site institucional e catálogo de presença digital)
+- `mozgbrasil.github.io` (portal complementar)
+- `@mozgbrasil/node-web-components` (design system público, Storybook e pacote npm)
+- `github.com/mozgbrasil` (perfil profissional e links públicos)
+- `mozg.com.br/projetos/*` (páginas públicas do ecossistema)
 
 ## Stack
 
-- HTML5 semantico
+- HTML5 semântico
 - CSS3 com variáveis de tema
-- JavaScript puro para tema, reveals e interacoes leves
-- VLibras para oferecer traducao automatica do conteudo para Libras
+- JavaScript puro para tema, reveals e interações leves
+- VLibras para oferecer tradução automática do conteúdo para Libras
 - PWA via `manifest.webmanifest`
-- GitHub Pages para públicação
+- GitHub Pages para publicação
 
 ## Requisitos
 
@@ -59,7 +64,7 @@ A landing também referencia explicitamente os projetos de origem do ecossistema
 
 ## Instalação
 
-Não ha etapa de install obrigatoria. O gate local oficial e:
+Não há etapa de install obrigatória. O gate local oficial é:
 
 ```bash
 cd /Users/marcio/dados/monorepo/projects/mozgbrasil.github.io
@@ -79,22 +84,23 @@ npm run surface:links
 npm run surface:links:ndjson
 ```
 
-## Sinais operacionais e metadados
+## Sinais públicos e metadados
 
 - SEO público com `canonical`, Open Graph, Twitter Cards e JSON-LD
 - widget VLibras nas páginas públicas para acessibilidade em Libras
-- PWA com atalhos rapidos para GitHub, LinkedIn, GitHub Sponsors e portal complementar
+- PWA com atalhos rápidos para GitHub, LinkedIn, GitHub Sponsors e portal complementar
 - dashboard client-side do GitHub com cache local e fallback resiliente
-- envelope client-side de request com `request_id`, `x_request_timestamp`, `x_request_path` e `x_request_method` para inspeção operacional no browser e nas chamadas à API pública do GitHub
+- envelope client-side de request com `request_id`, `x_request_timestamp`, `x_request_path` e `x_request_method` para inspeção confiável no browser e nas chamadas à API pública do GitHub
 - superfície local `site-surface` com `supported_filters` por `page`, `category`, `host`, `section`, `search`, `limit` e `status`
-- exportacoes locais em `json`, `md` e `ndjson`, incluindo `npm run surface:links:ndjson`
+- exportações locais em `json`, `md` e `ndjson`, incluindo `npm run surface:links:ndjson`
 - readiness local em `npm run surface:ready` com checks pequenos para arquivos, seções e superfícies públicas centrais
-- alinhamento semantico com `projects/github-profile`
-- trilha mobile do desenvolvedor visivel no card de presença e links operacionais
+- alinhamento semântico com `projects/github-profile`
+- trilha mobile do desenvolvedor visível no card de presença e links públicos
 - referência pública ao design system em Storybook e ao pacote distribuído no npm
 - links técnicos adicionais para Bluesky, Google Developers, OpenProfile e apoio via Sponsors
+- seção dedicada de confiança pública com contato, políticas, CNPJ de apoio comercial e prova social
 
-## Perfis publicos oficiais
+## Perfis públicos oficiais
 
 - `Bluesky`: <https://bsky.app/profile/mozgbrasil.bsky.social>
 - `GitHub Sponsors`: <https://github.com/sponsors/mozgbrasil>
@@ -120,7 +126,7 @@ mozgbrasil.github.io/
 
 ## Executar localmente
 
-Como o projeto e estático, qualquer servidor simples resolve.
+Como o projeto é estático, qualquer servidor simples resolve.
 
 ```bash
 cd /Users/marcio/dados/monorepo/projects/mozgbrasil.github.io
@@ -131,18 +137,18 @@ Depois, abra `http://127.0.0.1:8080`.
 
 ## Publicação
 
-No monorepo, este projeto entra na matriz como conteúdo estático shell-driven:
+No ecossistema MOZG, este projeto entra na matriz como conteúdo estático shell-driven:
 
 - `runtime`: `bash`
 - `test`: validação shell local via `bash scripts/build.sh`
 - `deploy`: `pages`
 - `dist_dir`: `.`
 
-A públicação e feita a partir da raiz do projeto no GitHub Pages.
+A publicação é feita a partir da raiz do projeto no GitHub Pages.
 
 ## CI
 
-No CI do monorepo, este projeto:
+No CI do ecossistema, este projeto:
 
 - valida formato textual determinístico com `bash scripts/build.sh format-only`;
 - valida metadata, manifesto, discovery e contrato estático com `bash scripts/build.sh lint-only`;
@@ -155,7 +161,7 @@ Quando quiser a mesma entrada por `package.json`, use `npm run check` ou `npm ru
 ## Contrato de qualidade local
 
 As fases do `build.sh` foram separadas para manter a governança coerente com as
-outras stacks do monorepo:
+outras stacks ativas:
 
 - `format-only`: tabs, trailing spaces e newline final em HTML, CSS, JS, SVG,
   TXT, XML, Web App Manifest e metadata textual;

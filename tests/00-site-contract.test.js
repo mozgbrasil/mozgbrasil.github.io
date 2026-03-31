@@ -31,11 +31,16 @@ test('landing keeps public metadata and navigation anchors', () => {
     'id="theme-toggle"',
     'data-github-dashboard',
     'href="#projetos"',
+    'href="#confianca"',
     'href="/curriculum.html"',
     'https://bsky.app/profile/mozgbrasil.bsky.social',
     'https://github.com/sponsors/mozgbrasil',
     'https://developers.google.com/profile/u/mozgbrasil',
     'https://openprofile.dev/profile/mozgbrasil',
+    'https://mozg.com.br/contato',
+    'https://mozg.com.br/politica-de-devolucao',
+    'https://br.trustpilot.com/review/mozg.com.br',
+    '07.361.259/0001-07',
     'vw-access-button',
   ]) {
     assert.match(
@@ -123,7 +128,7 @@ test('site surface snapshot exposes request metadata, filters and readiness', ()
   assert.ok(snapshot.surface.supported_filters.includes('page'));
   assert.ok(snapshot.surface.export_formats.includes('ndjson'));
   assert.equal(snapshot.readiness.status, 'ready');
-  assert.ok(snapshot.summary.links_total >= 20);
+  assert.ok(snapshot.summary.links_total >= 28);
 });
 
 test('site surface links view supports filtering and ndjson export', () => {
@@ -141,6 +146,19 @@ test('site surface links view supports filtering and ndjson export', () => {
   for (const item of items) {
     assert.equal(item.category, 'mobile');
   }
+});
+
+test('site surface supports trust links filtering', () => {
+  const payload = JSON.parse(
+    runSurface(['--view=links', '--format=json', '--category=trust']),
+  );
+
+  assert.ok(payload.items_total >= 1);
+  assert.ok(
+    payload.items.some(
+      (item) => item.url === 'https://br.trustpilot.com/review/mozg.com.br',
+    ),
+  );
 });
 
 test('site surface readiness reports operational checks', () => {
@@ -161,7 +179,7 @@ test('package metadata stays aligned with the public landing contract', () => {
   assert.equal(pkg.config.publicSite, 'https://mozg.com.br/');
   assert.equal(pkg.config.publicPortal, 'https://mozgbrasil.github.io/');
   assert.equal(pkg.bugs?.email, 'mozgbrasil@gmail.com');
-  assert.equal(pkg.bugs?.url, 'https://mozg.com.br/projetos/monorepo');
+  assert.equal(pkg.bugs?.url, 'https://mozg.com.br/contato');
   assert.doesNotMatch(
     JSON.stringify(pkg),
     /github\.com\/mozgbrasil\/monorepo/i,

@@ -124,7 +124,7 @@ run_lint_checks() {
   assert_contains "index.html" "twitter:card"
   assert_contains "index.html" "manifest.webmanifest"
   assert_contains "index.html" "/curriculum.html"
-  assert_contains "index.html" "workspace fonte e privado"
+  assert_contains "index.html" "superfícies públicas aparecem"
   assert_contains "index.html" "vw-access-button"
   assert_not_contains "index.html" "https://github.com/mozgbrasil/monorepo"
 

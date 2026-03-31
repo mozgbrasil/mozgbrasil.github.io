@@ -21,20 +21,28 @@ const requiredFiles = [
 const requiredSectionIds = [
   'sobre',
   'projetos',
-  'monorepo',
+  'ecossistema',
   'dashboards',
   'apps',
+  'confianca',
   'redes',
   'contato',
 ];
 const requiredPublicUrls = [
   'https://mozg.com.br/',
+  'https://mozg.com.br/contato',
+  'https://mozg.com.br/privacypolicy',
+  'https://mozg.com.br/politica-de-devolucao',
+  'https://mozg.com.br/finalizar-compra',
   'https://github.com/mozgbrasil',
   'https://www.linkedin.com/in/mozgbrasil/',
   'https://bsky.app/profile/mozgbrasil.bsky.social',
   'https://developers.google.com/profile/u/mozgbrasil',
   'https://openprofile.dev/profile/mozgbrasil',
   'https://play.google.com/store/apps/dev?id=8685510812208806498',
+  'https://br.trustpilot.com/review/mozg.com.br',
+  'https://brasilparticipativo.presidencia.gov.br/profiles/mozgbrasil/activity',
+  'https://www.npmjs.com/package/@mozgbrasil/node-web-components',
 ];
 
 function parseArgs(argv) {
@@ -132,6 +140,15 @@ function categorizeUrl(rawUrl) {
   }
   if (url.hostname === 'play.google.com') {
     return { category: 'mobile', host: url.hostname };
+  }
+  if (url.hostname === 'br.trustpilot.com') {
+    return { category: 'trust', host: url.hostname };
+  }
+  if (url.hostname === 'brasilparticipativo.presidencia.gov.br') {
+    return { category: 'civic', host: url.hostname };
+  }
+  if (url.hostname === 'www.npmjs.com') {
+    return { category: 'package', host: url.hostname };
   }
   if (url.hostname.includes('youtube.com')) {
     return { category: 'video', host: url.hostname };

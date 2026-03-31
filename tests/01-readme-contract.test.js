@@ -13,7 +13,7 @@ test('README keeps the official public profiles section', () => {
   const readme = readProjectFile('README.md');
 
   for (const snippet of [
-    '## Perfis publicos oficiais',
+    '## Perfis públicos oficiais',
     'https://bsky.app/profile/mozgbrasil.bsky.social',
     'https://github.com/sponsors/mozgbrasil',
     'https://developers.google.com/profile/u/mozgbrasil',
