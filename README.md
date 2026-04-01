@@ -1,7 +1,9 @@
 # mozgbrasil.github.io
 
-Landing pessoal e portfólio profissional de Marcio dos Santos Amorim,
-publicado em GitHub Pages com dominio customizado em
+Portal complementar e landing profissional de Marcio dos Santos Amorim,
+publicado em GitHub Pages em
+[https://mozgbrasil.github.io/](https://mozgbrasil.github.io/) e alinhado com a
+superfície principal em
 [https://mozg.com.br/](https://mozg.com.br/).
 
 ## Visão geral
@@ -87,18 +89,21 @@ npm run surface:links:ndjson
 ## Sinais públicos e metadados
 
 - SEO público com `canonical`, Open Graph, Twitter Cards e JSON-LD
+- Google Analytics 4 com o ID `G-WCNGF2YB71` nas páginas públicas principais
 - widget VLibras nas páginas públicas para acessibilidade em Libras
+- skip link e realce automático da seção ativa no menu superior para melhorar teclado, leitura e orientação
 - PWA com atalhos rápidos para GitHub, LinkedIn, GitHub Sponsors e portal complementar
-- dashboard client-side do GitHub com cache local e fallback resiliente
+- dashboard client-side do GitHub com cache local, `aria-live` e fallback resiliente
 - envelope client-side de request com `request_id`, `x_request_timestamp`, `x_request_path` e `x_request_method` para inspeção confiável no browser e nas chamadas à API pública do GitHub
 - superfície local `site-surface` com `supported_filters` por `page`, `category`, `host`, `section`, `search`, `limit` e `status`
 - exportações locais em `json`, `md` e `ndjson`, incluindo `npm run surface:links:ndjson`
-- readiness local em `npm run surface:ready` com checks pequenos para arquivos, seções e superfícies públicas centrais
+- readiness local em `npm run surface:ready` com checks pequenos para arquivos, seções, analytics, acessibilidade e superfícies públicas centrais
 - alinhamento semântico com `projects/github-profile`
 - trilha mobile do desenvolvedor visível no card de presença e links públicos
 - referência pública ao design system em Storybook e ao pacote distribuído no npm
 - links técnicos adicionais para Bluesky, Google Developers, OpenProfile e apoio via Sponsors
 - seção dedicada de confiança pública com contato, políticas, CNPJ de apoio comercial e prova social
+- `PRIVACY.md` alinhado com GA4, `localStorage`, GitHub público e VLibras
 
 ## Perfis públicos oficiais
 

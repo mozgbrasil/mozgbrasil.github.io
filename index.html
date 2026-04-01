@@ -54,6 +54,18 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/styles.css" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WCNGF2YB71"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-WCNGF2YB71');
+    </script>
 
     <script type="application/ld+json">
       {
@@ -150,6 +162,10 @@
     </script>
   </head>
   <body>
+    <div id="top"></div>
+    <a class="skip-link" href="#main-content"
+      >Pular para o conteúdo principal</a
+    >
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="#top" aria-label="Ir para o topo">
@@ -182,7 +198,7 @@
       </div>
     </header>
 
-    <main id="top">
+    <main id="main-content" tabindex="-1">
       <section class="hero section">
         <div class="container hero-layout reveal">
           <div class="hero-copy">
@@ -226,6 +242,7 @@
               <li>Kubernetes</li>
               <li>Terraform</li>
               <li>Observability</li>
+              <li>VLibras</li>
               <li>AI Ops</li>
               <li>E-commerce</li>
             </ul>
@@ -603,7 +620,13 @@
               >
             </article>
           </div>
-          <p class="github-dashboard-status" data-github-status>
+          <p
+            class="github-dashboard-status"
+            data-github-status
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+          >
             Carregando sinais recentes da atividade publica no GitHub.
           </p>
         </div>
@@ -1379,6 +1402,7 @@
         <p>
           <a href="https://mozg.com.br/">mozg.com.br</a>
         </p>
+        <p>Acessibilidade em Libras ativa via VLibras.</p>
       </div>
     </footer>
 

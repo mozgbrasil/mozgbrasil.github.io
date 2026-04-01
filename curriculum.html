@@ -49,6 +49,18 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/styles.css" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WCNGF2YB71"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-WCNGF2YB71');
+    </script>
     <style>
       .resume-shell {
         display: grid;
@@ -75,6 +87,9 @@
     </style>
   </head>
   <body>
+    <a class="skip-link" href="#main-content"
+      >Pular para o conteúdo principal</a
+    >
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="/" aria-label="Voltar para a home">
@@ -106,7 +121,7 @@
       </div>
     </header>
 
-    <main class="section">
+    <main id="main-content" class="section" tabindex="-1">
       <div class="container resume-shell">
         <section class="resume-card reveal">
           <p class="eyebrow">Curriculo online</p>
@@ -195,8 +210,26 @@
             superficies de documentacao.
           </p>
         </section>
+
+        <section class="resume-card reveal">
+          <h2>Acessibilidade</h2>
+          <p>
+            A acessibilidade em Libras fica ativa em toda a superfície pública
+            por meio do widget oficial do VLibras.
+          </p>
+        </section>
       </div>
     </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Curriculo público complementar do ecossistema MOZG.</p>
+        <p>
+          <a href="https://mozg.com.br/">mozg.com.br</a>
+        </p>
+        <p>Acessibilidade em Libras ativa via VLibras.</p>
+      </div>
+    </footer>
 
     <div vw class="enabled">
       <div vw-access-button class="active"></div>

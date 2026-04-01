@@ -30,6 +30,7 @@
 - Quando o contrato de runtime mudar, atualize `README.md`, `AGENTS.md` e `CLAUDE.md` na mesma rodada.
 - Preserve o envelope local com `request_id`, `x_request_timestamp`, `x_request_path` e `x_request_method`, mais exportacoes explícitas por `json`, `md` e `ndjson`.
 - Mantenha readiness local pequeno e determinístico para arquivos obrigatórios, secoes da landing e superfícies públicas centrais.
+- Trate `https://mozgbrasil.github.io/` como portal complementar explícito do ecossistema, mantendo esse URL presente na landing, no `site-surface`, nos atalhos PWA e nos contratos locais junto da superfície principal em `https://mozg.com.br/`.
 
 ## CI Notes
 

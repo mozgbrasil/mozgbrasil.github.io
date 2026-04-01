@@ -56,6 +56,83 @@ themeQuery.addEventListener('change', (event) => {
 
 applyTheme(resolveInitialTheme());
 
+const sectionNavLinks = Array.from(
+  document.querySelectorAll('.site-nav a[href^="#"]'),
+).filter((link) => {
+  const href = link.getAttribute('href');
+  return href && href.length > 1;
+});
+
+const sectionNavigation = sectionNavLinks
+  .map((link) => {
+    const href = link.getAttribute('href');
+    const targetId = href ? href.slice(1) : '';
+    const section = targetId ? document.getElementById(targetId) : null;
+
+    if (!section) {
+      return null;
+    }
+
+    return { link, section };
+  })
+  .filter(Boolean);
+
+function setCurrentSection(targetId) {
+  sectionNavigation.forEach(({ link, section }) => {
+    if (section.id === targetId) {
+      link.setAttribute('aria-current', 'location');
+      return;
+    }
+
+    link.removeAttribute('aria-current');
+  });
+}
+
+function syncCurrentSectionFromHash() {
+  if (!sectionNavigation.length) {
+    return;
+  }
+
+  const targetId = window.location.hash.replace(/^#/, '');
+  const sectionMatch = sectionNavigation.find(
+    ({ section }) => section.id === targetId,
+  );
+
+  if (sectionMatch) {
+    setCurrentSection(sectionMatch.section.id);
+    return;
+  }
+
+  setCurrentSection(sectionNavigation[0].section.id);
+}
+
+if (sectionNavigation.length) {
+  syncCurrentSectionFromHash();
+
+  const sectionObserver = new IntersectionObserver(
+    (entries) => {
+      const nextVisibleSection = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort(
+          (left, right) =>
+            right.intersectionRatio - left.intersectionRatio ||
+            left.boundingClientRect.top - right.boundingClientRect.top,
+        )[0];
+
+      if (nextVisibleSection?.target.id) {
+        setCurrentSection(nextVisibleSection.target.id);
+      }
+    },
+    {
+      rootMargin: '-34% 0px -48% 0px',
+      threshold: [0.18, 0.36, 0.6],
+    },
+  );
+
+  sectionNavigation.forEach(({ section }) => sectionObserver.observe(section));
+  window.addEventListener('hashchange', syncCurrentSectionFromHash);
+}
+
 const revealItems = document.querySelectorAll('.reveal');
 
 if (reducedMotion.matches) {
@@ -244,6 +321,12 @@ function setDashboardStatus(message) {
   }
 }
 
+function setDashboardBusy(isBusy) {
+  if (githubStatusNode) {
+    githubStatusNode.setAttribute('aria-busy', isBusy ? 'true' : 'false');
+  }
+}
+
 function buildGithubSummary(user, repos, events) {
   const safeRepos = Array.isArray(repos) ? repos : [];
   const safeEvents = Array.isArray(events) ? events : [];
@@ -391,6 +474,8 @@ async function hydrateGithubDashboard() {
     return;
   }
 
+  setDashboardBusy(true);
+
   const userName = githubDashboard.dataset.githubUser || 'mozgbrasil';
   const cacheKey = `mozg-github-dashboard:${userName}`;
   const cached = loadGithubCache(cacheKey);
@@ -398,6 +483,7 @@ async function hydrateGithubDashboard() {
   if (cached?.summary) {
     renderGithubSummary(cached.summary, { cached: true });
     if (Date.now() - Number(cached.cachedAt) < githubDashboardTtlMs) {
+      setDashboardBusy(false);
       return;
     }
   }
@@ -427,6 +513,7 @@ async function hydrateGithubDashboard() {
       setDashboardStatus(
         'Nao foi possivel atualizar o GitHub agora; mantendo o ultimo snapshot local.',
       );
+      setDashboardBusy(false);
       return;
     }
 
@@ -440,6 +527,8 @@ async function hydrateGithubDashboard() {
         ? error.message
         : 'Falha desconhecida ao consultar a API publica.',
     );
+  } finally {
+    setDashboardBusy(false);
   }
 }
 

@@ -6,7 +6,7 @@ cd "$PROJECT_ROOT"
 PHASE="${1:-all}"
 
 usage() {
-  cat <<'EOF'
+  cat << 'EOF'
 usage: bash scripts/build.sh [all|format-only|lint-only|test-only|surface-only|ready-only|check-only|help|--help]
 EOF
 }
@@ -94,12 +94,12 @@ validate_text_format() {
   echo "📦 format"
   while IFS= read -r path; do
     [[ -f "$path" ]] || continue
-    if find_text_issues "$path" >/dev/null 2>&1; then
+    if find_text_issues "$path" > /dev/null 2>&1; then
       echo "format issue in $path" >&2
       find_text_issues "$path" >&2 || true
       failed=1
     fi
-    if [[ -n "$(tail -c1 "$path" 2>/dev/null || true)" ]]; then
+    if [[ -n "$(tail -c1 "$path" 2> /dev/null || true)" ]]; then
       echo "missing trailing newline in $path" >&2
       failed=1
     fi
@@ -118,6 +118,7 @@ run_lint_checks() {
 
   echo "📦 html metadata"
   assert_contains "index.html" "https://mozg.com.br/"
+  assert_contains "index.html" "https://mozgbrasil.github.io/"
   assert_contains "index.html" "rel=\"canonical\""
   assert_contains "index.html" "application/ld+json"
   assert_contains "index.html" "og:title"
@@ -141,6 +142,7 @@ run_lint_checks() {
   assert_contains "manifest.webmanifest" "\"start_url\""
   assert_contains "manifest.webmanifest" "\"display\""
   assert_contains "manifest.webmanifest" "\"shortcuts\""
+  assert_contains "manifest.webmanifest" "https://mozgbrasil.github.io/"
 
   echo "📦 discovery"
   assert_contains "robots.txt" "Sitemap:"
@@ -175,51 +177,51 @@ run_unit_tests() {
 
 run_surface_checks() {
   echo "📦 surface"
-  node scripts/site-surface.js --format=json >/dev/null
-  node scripts/site-surface.js --view=links --format=ndjson >/dev/null
-  node scripts/site-surface.js --view=readiness --format=json >/dev/null
+  node scripts/site-surface.js --format=json > /dev/null
+  node scripts/site-surface.js --view=links --format=ndjson > /dev/null
+  node scripts/site-surface.js --view=readiness --format=json > /dev/null
 }
 
 echo "== mozgbrasil.github.io build =="
 
 case "$PHASE" in
-format-only)
-  validate_text_format
-  ;;
-lint-only)
-  run_lint_checks
-  ;;
-test-only)
-  run_site_smoke
-  run_unit_tests
-  ;;
-surface-only)
-  run_surface_checks
-  ;;
-ready-only)
-  node scripts/site-surface.js --view=readiness --format=json >/dev/null
-  ;;
-check-only)
-  validate_text_format
-  run_lint_checks
-  run_site_smoke
-  run_unit_tests
-  run_surface_checks
-  ;;
-all)
-  validate_text_format
-  run_lint_checks
-  run_site_smoke
-  run_unit_tests
-  run_surface_checks
-  ;;
-help|--help)
-  usage
-  ;;
-*)
-  usage >&2
-  exit 2
-  ;;
+  format-only)
+    validate_text_format
+    ;;
+  lint-only)
+    run_lint_checks
+    ;;
+  test-only)
+    run_site_smoke
+    run_unit_tests
+    ;;
+  surface-only)
+    run_surface_checks
+    ;;
+  ready-only)
+    node scripts/site-surface.js --view=readiness --format=json > /dev/null
+    ;;
+  check-only)
+    validate_text_format
+    run_lint_checks
+    run_site_smoke
+    run_unit_tests
+    run_surface_checks
+    ;;
+  all)
+    validate_text_format
+    run_lint_checks
+    run_site_smoke
+    run_unit_tests
+    run_surface_checks
+    ;;
+  help | --help)
+    usage
+    ;;
+  *)
+    usage >&2
+    exit 2
+    ;;
 esac
 
 echo "OK: static site checks passed."

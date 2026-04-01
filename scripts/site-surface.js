@@ -30,6 +30,7 @@ const requiredSectionIds = [
 ];
 const requiredPublicUrls = [
   'https://mozg.com.br/',
+  'https://mozgbrasil.github.io/',
   'https://mozg.com.br/contato',
   'https://mozg.com.br/privacypolicy',
   'https://mozg.com.br/politica-de-devolucao',
@@ -233,6 +234,9 @@ function buildReadiness(pages, links) {
   const fileMissing = requiredFiles.filter(
     (file) => !fs.existsSync(path.join(projectRoot, file)),
   );
+  const indexHtml = readText('index.html');
+  const curriculumHtml = readText('curriculum.html');
+  const privacySource = readText('PRIVACY.md');
   const indexSections = new Set(
     pages
       .find((page) => page.path === 'index.html')
@@ -254,6 +258,21 @@ function buildReadiness(pages, links) {
     scriptSource.includes('x_request_path') &&
     scriptSource.includes('x_request_method') &&
     scriptSource.includes('X-Request-Id');
+  const hasAnalytics =
+    indexHtml.includes('G-WCNGF2YB71') &&
+    curriculumHtml.includes('G-WCNGF2YB71');
+  const hasAccessibilitySignals =
+    indexHtml.includes('data-github-status') &&
+    indexHtml.includes('aria-live="polite"') &&
+    indexHtml.includes('role="status"') &&
+    indexHtml.includes('vw-access-button') &&
+    curriculumHtml.includes('vw-access-button') &&
+    scriptSource.includes('aria-busy');
+  const privacyDisclosesClientSignals =
+    privacySource.includes('Google Analytics 4') &&
+    privacySource.includes('localStorage') &&
+    privacySource.includes('GitHub') &&
+    privacySource.includes('VLibras');
 
   checks.push({
     name: 'required-files',
@@ -289,11 +308,32 @@ function buildReadiness(pages, links) {
   checks.push({
     name: 'dashboard-hooks',
     status:
-      readText('index.html').includes('data-github-dashboard') &&
-      readText('index.html').includes('data-github-status')
+      indexHtml.includes('data-github-dashboard') &&
+      indexHtml.includes('data-github-status')
         ? 'ready'
         : 'attention',
     detail: 'dashboard bootstrap hooks are present in index.html',
+  });
+  checks.push({
+    name: 'analytics-signals',
+    status: hasAnalytics ? 'ready' : 'attention',
+    detail: hasAnalytics
+      ? 'ga4 tag is present on the public pages'
+      : 'ga4 tag is missing from one of the public pages',
+  });
+  checks.push({
+    name: 'accessibility-signals',
+    status: hasAccessibilitySignals ? 'ready' : 'attention',
+    detail: hasAccessibilitySignals
+      ? 'vlibras and live status hooks are present'
+      : 'vlibras or live status hooks are incomplete',
+  });
+  checks.push({
+    name: 'privacy-disclosure',
+    status: privacyDisclosesClientSignals ? 'ready' : 'attention',
+    detail: privacyDisclosesClientSignals
+      ? 'privacy policy covers analytics, storage, github and vlibras'
+      : 'privacy policy is missing one or more client-side disclosures',
   });
 
   return {

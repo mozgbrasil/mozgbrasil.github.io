@@ -26,8 +26,12 @@ test('landing keeps public metadata and navigation anchors', () => {
 
   for (const snippet of [
     'https://mozg.com.br/',
+    'https://mozgbrasil.github.io/',
     'rel="canonical"',
     'application/ld+json',
+    'class="skip-link"',
+    'href="#main-content"',
+    'id="main-content"',
     'id="theme-toggle"',
     'data-github-dashboard',
     'href="#projetos"',
@@ -41,7 +45,13 @@ test('landing keeps public metadata and navigation anchors', () => {
     'https://mozg.com.br/politica-de-devolucao',
     'https://br.trustpilot.com/review/mozg.com.br',
     '07.361.259/0001-07',
+    'Acessibilidade em Libras ativa via VLibras.',
     'vw-access-button',
+    'googletagmanager.com/gtag/js?id=G-WCNGF2YB71',
+    "gtag('config', 'G-WCNGF2YB71')",
+    'role="status"',
+    'aria-live="polite"',
+    'aria-atomic="true"',
   ]) {
     assert.match(
       indexHtml,
@@ -58,6 +68,9 @@ test('client script keeps theme and dashboard bootstrap hooks', () => {
     "document.getElementById('theme-toggle')",
     "document.querySelector('[data-github-dashboard]')",
     "document.querySelector('[data-github-status]')",
+    'document.querySelectorAll(\'.site-nav a[href^="#"]\')',
+    "link.setAttribute('aria-current', 'location')",
+    "window.addEventListener('hashchange', syncCurrentSectionFromHash)",
     'request_id',
     'x_request_timestamp',
     'x_request_path',
@@ -65,6 +78,7 @@ test('client script keeps theme and dashboard bootstrap hooks', () => {
     'X-Request-Id',
     'localStorage',
     'IntersectionObserver',
+    'aria-busy',
     'https://vlibras.gov.br/app/vlibras-plugin.js',
     'new window.VLibras.Widget',
     'https://vlibras.gov.br/app',
@@ -80,8 +94,13 @@ test('public pages expose VLibras widget bootstrap', () => {
   const indexHtml = readProjectFile('index.html');
   const curriculumHtml = readProjectFile('curriculum.html');
 
+  assert.match(curriculumHtml, /Acessibilidade em Libras ativa via VLibras\./);
+
   for (const html of [indexHtml, curriculumHtml]) {
     for (const snippet of [
+      'class="skip-link"',
+      'href="#main-content"',
+      'id="main-content"',
       '<div vw class="enabled">',
       'vw-access-button',
       'vw-plugin-wrapper',
@@ -116,6 +135,20 @@ test('build script runs site smoke and unit phases', () => {
       new RegExp(snippet.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')),
     );
   }
+});
+
+test('manifest keeps the complementary portal shortcut visible', () => {
+  const manifest = JSON.parse(readProjectFile('manifest.webmanifest'));
+  const shortcutUrls = manifest.shortcuts.map((entry) => entry.url);
+
+  assert.ok(shortcutUrls.includes('https://mozgbrasil.github.io/'));
+  assert.ok(
+    manifest.shortcuts.some(
+      (entry) =>
+        entry.name === 'Portal GitHub Pages' &&
+        entry.url === 'https://mozgbrasil.github.io/',
+    ),
+  );
 });
 
 test('site surface snapshot exposes request metadata, filters and readiness', () => {
@@ -161,6 +194,17 @@ test('site surface supports trust links filtering', () => {
   );
 });
 
+test('site surface exposes the complementary portal as a first-class public link', () => {
+  const payload = JSON.parse(
+    runSurface(['--view=links', '--format=json', '--category=portal']),
+  );
+
+  assert.ok(payload.items_total >= 1);
+  assert.ok(
+    payload.items.some((item) => item.url === 'https://mozgbrasil.github.io/'),
+  );
+});
+
 test('site surface readiness reports operational checks', () => {
   const readiness = JSON.parse(
     runSurface(['--view=readiness', '--format=json']),
@@ -168,8 +212,17 @@ test('site surface readiness reports operational checks', () => {
 
   assert.equal(readiness.status, 'ready');
   assert.equal(readiness.endpoint, '/ready');
-  assert.ok(readiness.checks_total >= 4);
+  assert.ok(readiness.checks_total >= 7);
   assert.ok(readiness.checks.every((entry) => entry.status === 'ready'));
+  assert.ok(
+    readiness.checks.some((entry) => entry.name === 'analytics-signals'),
+  );
+  assert.ok(
+    readiness.checks.some((entry) => entry.name === 'accessibility-signals'),
+  );
+  assert.ok(
+    readiness.checks.some((entry) => entry.name === 'privacy-disclosure'),
+  );
 });
 
 test('package metadata stays aligned with the public landing contract', () => {
@@ -184,4 +237,26 @@ test('package metadata stays aligned with the public landing contract', () => {
     JSON.stringify(pkg),
     /github\.com\/mozgbrasil\/monorepo/i,
   );
+});
+
+test('privacy policy discloses client-side analytics, storage and accessibility', () => {
+  const privacy = readProjectFile('PRIVACY.md');
+
+  for (const snippet of [
+    'Google Analytics 4',
+    'G-WCNGF2YB71',
+    'localStorage',
+    'GitHub',
+    'request_id',
+    'x_request_timestamp',
+    'x_request_path',
+    'x_request_method',
+    'VLibras',
+    'https://mozg.com.br/contato',
+  ]) {
+    assert.match(
+      privacy,
+      new RegExp(snippet.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')),
+    );
+  }
 });
