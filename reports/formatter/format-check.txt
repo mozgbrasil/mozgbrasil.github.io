@@ -1,0 +1,7 @@
+
+> @mozgbrasil/mozgbrasil-github-io@1.0.0 format:check
+> bash scripts/build.sh format-only
+
+== mozgbrasil.github.io build ==
+📦 format
+OK: static site checks passed.

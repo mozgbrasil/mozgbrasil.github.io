@@ -1,1 +1,0 @@
-ℹ️ Use build_cmd ou script local para validar format/lint em projetos bash

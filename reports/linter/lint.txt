@@ -1,1 +1,11 @@
-ℹ️ Use build_cmd ou script local para validar format/lint em projetos bash
+
+> @mozgbrasil/mozgbrasil-github-io@1.0.0 lint
+> bash scripts/build.sh lint-only
+
+== mozgbrasil.github.io build ==
+📦 files
+📦 html metadata
+📦 manifest
+📦 discovery
+📦 static checks
+OK: static site checks passed.

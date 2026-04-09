@@ -69,7 +69,7 @@ A landing também referencia explicitamente as principais superfícies do ecossi
 Não há etapa de install obrigatória. O gate local oficial é:
 
 ```bash
-cd /Users/marcio/dados/monorepo/projects/mozgbrasil.github.io
+cd /Volumes/SSD/monorepo/projects/mozgbrasil.github.io
 bash scripts/build.sh
 bash scripts/build.sh format-only
 bash scripts/build.sh lint-only
@@ -134,7 +134,7 @@ mozgbrasil.github.io/
 Como o projeto é estático, qualquer servidor simples resolve.
 
 ```bash
-cd /Users/marcio/dados/monorepo/projects/mozgbrasil.github.io
+cd /Volumes/SSD/monorepo/projects/mozgbrasil.github.io
 python3 -m http.server 8080
 ```
 
@@ -179,7 +179,7 @@ outras stacks ativas:
 ## Testes locais
 
 ```bash
-cd /Users/marcio/dados/monorepo/projects/mozgbrasil.github.io
+cd /Volumes/SSD/monorepo/projects/mozgbrasil.github.io
 node --test tests/*.test.js
 bash scripts/build.sh test-only
 bash scripts/build.sh surface-only
