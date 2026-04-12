@@ -1,69 +1,44 @@
-name: "mozgbrasil.github.io CI/CD \U0001F680"
+name: mozgbrasil.github.io ci
+
 on:
-  push:
-    branches:
-      - main
-      - master
+  workflow_dispatch:
   pull_request:
     branches:
       - main
       - master
-  workflow_dispatch:
+    paths:
+      - 'projects/mozgbrasil.github.io/**'
+      - '.github/matrix.json'
+      - '.github/scripts/**'
+      - '.github/workflows/reusable-project-ci.yml'
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'projects/mozgbrasil.github.io/**'
+      - '.github/matrix.json'
+      - '.github/scripts/**'
+      - '.github/workflows/reusable-project-ci.yml'
+
 permissions:
-  contents: write
+  actions: write
+  contents: read
   id-token: write
-concurrency:
-  group: ${{ github.workflow }}
-  cancel-in-progress: true
-env:
-  NODE_OPTIONS: --max_old_space_size=4096
+
 jobs:
-  test:
-    name: check GH_TOKEN
-    runs-on: self-hosted
-    steps:
-      - name: Teste autenticação
-        run: |
-          pwd
-          ls -la
-          REMOTE_URL=https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/mozgbrasil/mozgbrasil.git
-          echo "Tentando autenticar..."
-          git ls-remote $REMOTE_URL
-          echo "Autenticação bem-sucedida!"
-  linkChecker:
-    needs:
-      - test
-    name: "lycheeverse/lychee \U0001F517"
-    runs-on: self-hosted
-    permissions:
-      issues: write # required for peter-evans/create-issue-from-file
-    steps:
-      - uses: actions/checkout@v4
-      - name: Link Checker
-        id: lychee
-        uses: lycheeverse/lychee-action@v2
-        with:
-          fail: false
-      - name: Create Issue From File
-        if: steps.lychee.outputs.exit_code != 0
-        uses: peter-evans/create-issue-from-file@v5
-        with:
-          title: Link Checker Report
-          content-filepath: ./lychee/out.md
-          labels: report, automated issue
-  lighthouse:
-    needs:
-      - test
-    name: "treosh/lighthouse-ci \U0001F6A6"
-    runs-on: self-hosted
-    steps:
-      - uses: actions/checkout@v4
-      - name: Audit URLs using Lighthouse
-        uses: treosh/lighthouse-ci-action@v12
-        with:
-          urls: |
-            https://mozgbrasil.github.io/
-            https://mozg.com.br/
-          budgetPath: ./budget.json # test performance budgets
-          uploadArtifacts: true # save results as an action artifacts
-          temporaryPublicStorage: true # upload lighthouse report to the temporary storage
+  ci:
+    uses: ./.github/workflows/reusable-project-ci.yml
+    with:
+      project_name: mozgbrasil.github.io
+      project_path: projects/mozgbrasil.github.io
+      runtime: bash
+      version: ''
+      format: true
+      lint: true
+      test: true
+      build_cmd: bash scripts/build.sh all
+      dist_dir: .
+      deploy: pages
+      gh_pages_repo: mozgbrasil/mozgbrasil.github.io
+    secrets: inherit

@@ -14,9 +14,9 @@ accept = [200, 204, 206, 429]
 exclude = [
   "^mailto:",
   "^tel:",
-  "^#",                # internal anchors
+  "^#",                       # internal anchors
   "^javascript:",
-  "^file://",          # local file URIs from generated markdown
+  "^file://",                 # local file URIs from generated markdown
   "^chrome:",
   "^edge:",
   "^about:",

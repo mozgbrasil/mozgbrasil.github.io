@@ -191,3 +191,7 @@ npm test
 O primeiro conjunto de testes valida a landing principal, o bootstrap do tema,
 os seletores essenciais do dashboard client-side e a navegação pública mínima
 sem depender de servidor externo.
+
+## Visual identity
+
+- Este frontend segue a linguagem visual macOS-like da rodada atual: wallpaper fluido em azul, superfícies translúcidas, shells arredondados e sensação de widgets leves.
