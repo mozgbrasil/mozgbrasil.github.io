@@ -9,67 +9,67 @@ TAP version 13
 # Subtest: landing keeps public metadata and navigation anchors
 ok 1 - landing keeps public metadata and navigation anchors
   ---
-  duration_ms: 1.850372
+  duration_ms: 1.726343
   ...
 # Subtest: client script keeps theme and dashboard bootstrap hooks
 ok 2 - client script keeps theme and dashboard bootstrap hooks
   ---
-  duration_ms: 0.33759
+  duration_ms: 0.296822
   ...
 # Subtest: public pages expose VLibras widget bootstrap
 ok 3 - public pages expose VLibras widget bootstrap
   ---
-  duration_ms: 0.442315
+  duration_ms: 0.508394
   ...
 # Subtest: build script runs site smoke and unit phases
 ok 4 - build script runs site smoke and unit phases
   ---
-  duration_ms: 1.045789
+  duration_ms: 0.989959
   ...
 # Subtest: manifest keeps the complementary portal shortcut visible
 ok 5 - manifest keeps the complementary portal shortcut visible
   ---
-  duration_ms: 0.377675
+  duration_ms: 0.309558
   ...
 # Subtest: site surface snapshot exposes request metadata, filters and readiness
 ok 6 - site surface snapshot exposes request metadata, filters and readiness
   ---
-  duration_ms: 38.319293
+  duration_ms: 35.915389
   ...
 # Subtest: site surface links view supports filtering and ndjson export
 ok 7 - site surface links view supports filtering and ndjson export
   ---
-  duration_ms: 43.606976
+  duration_ms: 33.99612
   ...
 # Subtest: site surface supports trust links filtering
 ok 8 - site surface supports trust links filtering
   ---
-  duration_ms: 37.796418
+  duration_ms: 37.413263
   ...
 # Subtest: site surface exposes the complementary portal as a first-class public link
 ok 9 - site surface exposes the complementary portal as a first-class public link
   ---
-  duration_ms: 36.963975
+  duration_ms: 34.747144
   ...
 # Subtest: site surface readiness reports operational checks
 ok 10 - site surface readiness reports operational checks
   ---
-  duration_ms: 36.187899
+  duration_ms: 36.198552
   ...
 # Subtest: package metadata stays aligned with the public landing contract
 ok 11 - package metadata stays aligned with the public landing contract
   ---
-  duration_ms: 0.377224
+  duration_ms: 0.396345
   ...
 # Subtest: privacy policy discloses client-side analytics, storage and accessibility
 ok 12 - privacy policy discloses client-side analytics, storage and accessibility
   ---
-  duration_ms: 0.334353
+  duration_ms: 0.293252
   ...
 # Subtest: README keeps the official public profiles section
 ok 13 - README keeps the official public profiles section
   ---
-  duration_ms: 1.737741
+  duration_ms: 1.585975
   ...
 1..13
 # tests 13
@@ -79,5 +79,5 @@ ok 13 - README keeps the official public profiles section
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 332.356995
+# duration_ms 289.069623
 OK: static site checks passed.
